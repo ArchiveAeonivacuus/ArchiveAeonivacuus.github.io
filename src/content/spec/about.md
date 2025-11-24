@@ -14,4 +14,3 @@ Wandering in the Aeonivacuum, even the gravel will become steepest cliff, and la
 
 ::github{repo="ArchiveAeonivacuus/ArchiveAeonivacuus.github.io"}
 
-> ### Sources of images used in this site
