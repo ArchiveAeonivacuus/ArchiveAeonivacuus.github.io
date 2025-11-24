@@ -1,0 +1,11 @@
+{
+	"rewrites": [
+		{ "source": "/sitemap-index.xml", "destination": "/sitemap-index.xml" }
+	],
+	"headers": [
+		{
+			"source": "/sitemap-index.xml",
+			"headers": [{ "key": "Content-Type", "value": "application/xml" }]
+		}
+	]
+}
