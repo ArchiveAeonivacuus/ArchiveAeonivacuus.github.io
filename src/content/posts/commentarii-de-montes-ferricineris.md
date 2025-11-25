@@ -3,8 +3,8 @@ title: Commentarii de Montes Ferricineris 铁灰山脉游记
 published: 2025-11-24
 description: ''
 image: ''
-tags: [瀛寰]
-category: '故事'
+tags: [故事][於留根][异相][土行妖]
+category: '瀛寰'
 draft: false 
 lang: ''
 ---
@@ -121,7 +121,7 @@ lang: ''
 [^8]: 灰山商埠：Emporium Cineris，铁灰山脉的人类聚落，主要进行贸易转运等业务。
 [^9]: 灰山聚落：Colonia Sevegrad，铁灰山脉的人类聚落。
 [^10]: 土行妖：俗名Zemljane，学名*Anthoterra beneficiumare Viatum*。是生活在地下的妖，主要以浮世根须附近生长的化能合成生物为食。多见于於留根洲的北部和南部，极少数也栖息在恩泽西陆。
-[^11]: “地矮子”：原<ruby>冚<rt>kǎn</rt></ruby>文为Durc Terra。
+[^11]: “地矮子”：原文为Durc Terra。
 [^12]: “高个”：原文为Visok。
 [^13]: 压留曼：Afrmann，在阿比兰洲西部。
 [^14]: 瑟达利奢那：原文为Starešena。
