@@ -1,5 +1,5 @@
 ---
-title: 巴提码头（Port Batıe）
+title: Port Batıe 巴提码头
 published: 2025-11-24
 description: ''
 image: ''
