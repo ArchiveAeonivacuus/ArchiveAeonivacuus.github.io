@@ -119,3 +119,54 @@
     }
     
 }
+
+/* 剧本外层容器 */
+.dialog-block {
+  display: grid;
+  /* 关键点 1：左侧固定宽度，右侧自适应。
+     6em 大约是 4-5 个中文字符的宽度，根据需要调整 */
+  grid-template-columns: 6em 1fr; 
+  /* 左右间距 */
+  gap: 1.5rem; 
+  /* 垂直间距 */
+  margin-bottom: 1.5rem; 
+  /* 关键点 2：基线对齐。
+     确保人名和右侧第一行文字在同一水平线上，解决“不对齐”问题 */
+  align-items: baseline; 
+}
+
+/* 左侧：人名样式 */
+.dialog-person {
+  font-weight: bold;
+  text-align: right; /* 人名右对齐，靠近台词，视觉引导更好 */
+  font-size: 0.9em;  /* 人名稍微小一点 */
+  line-height: 1.6;  /* 保持与正文一致的行高，确保对齐 */
+}
+
+/* 右侧：台词内容 */
+.dialog-content {
+  /* 确保内容里的 p 标签没有怪异的 margin 破坏对齐 */
+}
+
+.dialog-content > *:first-child {
+  margin-top: 0; /* 去掉第一个元素的上边距，确保和人名对其 */
+}
+
+.dialog-content > *:last-child {
+  margin-bottom: 0;
+}
+
+/* 移动端适配：屏幕太窄时变成上下结构 */
+@media (max-width: 600px) {
+  .dialog-block {
+    display: block; /* 取消 grid */
+  }
+  .dialog-person {
+    text-align: left;
+    margin-bottom: 0.25rem;
+  }
+  .dialog-content {
+    padding-left: 1rem; /* 稍微缩进一点台词 */
+    border-left: 2px solid #eee;
+  }
+}

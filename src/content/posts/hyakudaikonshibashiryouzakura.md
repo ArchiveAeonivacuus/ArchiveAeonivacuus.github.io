@@ -1,7 +1,7 @@
 ---
 title: 百代魂缚死灵樱
 published: 2025-11-25
-description: ''
+description: '结幽岛云雾缭绕，薄暮时节。死灵樱惨白，间立于旁。波涛静，时抚岸边。'
 image: ''
 tags: [故事, 瀛洲, 大瀛, 异相, 采花妖, 死灵樱]
 category: '瀛寰'
@@ -10,24 +10,14 @@ lang: ''
 ---
 
 <style>
-.dialog {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    row-gap: 4px;
-}
-.name {
-    font-weight: bold;
-}
-.line {
-    padding-left: 8px;
-}
+/* 删除了旧的 dialog/name/line 样式，保留内容样式 */
 .shi {
     text-align: center;
     font-family: KaiTi;
 }
 .ci {
-    margin-left: 2em;
-    margin-right: 2em;
+    /*margin-left: 2em;
+    margin-right: 2em;*/
     font-family: KaiTi;
 }
 .ci p {
@@ -65,54 +55,75 @@ lang: ''
 
 <span style="font-family: 'Asebi Mincho'; font-weight: bold;">造リ物</span>　结幽岛云雾缭绕，薄暮时节。死灵樱惨白，间立于旁。波涛静，时抚岸边。
 
-<div class="dialog">
-    <div class="name">璃</div>
-    <div class="line">（上，立状，随梆子吆喝）<br>
-        <div class="shi">寒岛结幽[^1]新月明，采花妖怪一人行。<br>彼方武士银披挂，来此得无商贾情[^2]？</div>
-        ——<ruby>来<rt style="font-family: 'Asebi Mincho'">ヲイ</rt></ruby><ruby>来<rt style="font-family: 'Asebi Mincho'"><div class="rotate-text">〱</div></rt></ruby>，接引灯芯，死灵樱上乘三合气[^3]具，百圆何如？
-    </div>
+:::dialog{p="璃"}
+
+（上，立状，随梆子吆喝）
+
+<div class="shi">
+
+寒岛结幽[^1]新月明，采花妖怪一人行。  
+彼方武士银披挂，来此得无商贾情[^2]？
+
 </div>
-<div class="dialog">
-    <div class="name">风见博之</div>
-    <div class="line">（上，寻状）<ruby>阿阿<rt style="font-family: 'Asebi Mincho'">アヽ</rt><ruby>，是此处。接引灯芯三本[^4]，三百圆非小可。少少贱一些罢。</div>
+
+——<ruby>来<rt style="font-family: 'Asebi Mincho'">ヲイ</rt></ruby><ruby>来<rt style="font-family: 'Asebi Mincho'"><span class="rotate-text">〱</span></rt></ruby>，接引灯芯，死灵樱上乘三合气[^3]具，百圆何如？
+:::
+
+:::dialog{p="风见博之"}
+（上，寻状）<ruby>阿阿<rt style="font-family: 'Asebi Mincho'">アヽ</rt><ruby>，是此处。接引灯芯三本[^4]，三百圆非小可。少少贱一些罢。
+:::
+
+:::dialog{p="璃"}
+武家是处处有所养，谁人不知？采花妖全仗死灵樱，与田舍者[^5]无异。烦恁照顾照顾生意，我也要养家则个。
+:::
+
+:::dialog{p="风见博之"}
+（叹状，三味线）你有所不知。曾是公家侍，却也落得这般境地！<br>
+
+<div class="shi">
+
+高远结幽寒甲瘦。霜冷滩涂、尤将长弓彀[^6]。曾是菅原麾下某[^7]，孤身今日林中叩。
+
+鬼手林樱寻血久[^8]，鉴影[^9]诸人、<ruby>恠<rt>guài</rt></ruby> [^10] <ruby>巉<rt>chán</rt></ruby>盘枝狩。买我千金风骨寿，灯笼接引残魂诱。
+
 </div>
-<div class="dialog">
-    <div class="name">璃</div>
-    <div class="line">武家是处处有所养，谁人不知？采花妖全仗死灵樱，与田舍者[^5]无异。烦恁照顾照顾生意，我也要养家则个。</div>
+
+船家载我来此地，奉告我此处可小有所为。我并非扰恁清闲，实则走投无路。鉴影会欲和恁往来，教我来此地探路，平定此地一怨灵。并无半点辱武魂，只是艰险，何乐不为！
+:::
+
+:::dialog{p="璃"}
+<ruby>唉唉诚如是<rt style="font-family: 'Asebi Mincho'">アヽマコトニ</rt></ruby>。此地艰险，所言不虚。夜半时分，有一孤魂徘徊，武家可有所知？（博之讶状，三味线）夜半时分。
+<div class="shi">
+
+月隐枝桠裂紫空[^11]，白花[^12]泣血缚残衷。<br>死灵樱树虬须下，逝影倩言啼咏中。<br>孤直亭亭渡航叟，飘摇瑟瑟接魂枫[^13]。<br>谁携符笔[^14]阴阳破？惟见前人袖染红。
+
 </div>
-<div class="dialog">
-    <div class="name">风见博之</div>
-    <div class="line">（叹状，三味线）你有所不知。曾是公家侍，却也落得这般境地！<br>
-        <div class="ci">
-            <p>高远结幽寒甲瘦。霜冷滩涂、尤将长弓彀[^6]。曾是菅原麾下某[^7]，孤身今日林中叩。</p>
-            <p>鬼手林樱寻血久[^8]，鉴影[^9]诸人、<ruby>恠<rt style="font-family: ''">guài</rt></ruby>[^10]<ruby>巉<rt style="font-family: ''">chán</rt></ruby>盘枝狩。买我千金风骨寿，灯笼接引残魂诱。</p>
-        </div>
-        船家载我来此地，奉告我此处可小有所为。我并非扰恁清闲，实则走投无路。鉴影会欲和恁往来，教我来此地探路，平定此地一怨灵。并无半点辱武魂，只是艰险，何乐不为！
-    </div>
+:::
+
+:::dialog{p="风见博之"}
+
+<ruby>噫呀罢了<rt style="font-family: 'Asebi Mincho'">イヤモウ</rt></ruby>，是我只知此地有法克怨灵[^15]，快些将买卖做妥，贱些儿与我罢。
+
+:::
+
+:::dialog{p="璃"}
+
+<ruby>是是<rt style="font-family: 'Asebi Mincho'">ハイハイ</rt></ruby>，便贱些儿与武家则个。（递状，博之与璃传钱状）虽是我也不好过活，武家那克怨灵，可有说法。
+<div class="shi">
+
+<span style="font-family: 'DFKai-SB'">花瓣に　迷魂のみや　寄るべしと<br>嚇かす者を　散りやらぬ花</span><br>幽玄死灵樱　只度苦厄迷魂情[^16] 　假若强折枝<br>飘飘白花终不散　未落终难安
+
 </div>
-<div class="dialog">
-    <div class="name">璃</div>
-    <div class="line">
-        <ruby>唉唉诚如是<rt style="font-family: 'Asebi Mincho'">アヽマコトニ</rt></ruby>。此地艰险，所言不虚。夜半时分，有一孤魂徘徊，武家可有所知？（博之讶状，三味线）夜半时分。
-        <div class="shi">月隐枝桠裂紫空[^11]，白花[^12]泣血缚残衷。<br>死灵樱树虬须下，逝影倩言啼咏中。<br>孤直亭亭渡航叟，飘摇瑟瑟接魂枫[^13]。<br>谁携符笔[^14]阴阳破？惟见前人袖染红。</div>
-    </div>
-</div>
-<div class="dialog">
-    <div class="name">风见博之</div>
-    <div class="line"><ruby>噫呀罢了<rt style="font-family: 'Asebi Mincho'">イヤモウ</rt></ruby>，是我只知此地有法克怨灵[^15]，快些将买卖做妥，贱些儿与我罢。</div>
-</div>
-<div class="dialog">
-    <div class="name">璃</div>
-    <div class="line">
-        <ruby>是是<rt style="font-family: 'Asebi Mincho'">ハイハイ</rt></ruby>，便贱些儿与武家则个。（递状，博之与璃传钱状）虽是我也不好过活，武家那克怨灵，可有说法。
-        <div class="shi"><span style="font-family: 'DFKai-SB'">花瓣に　迷魂のみや　寄るべしと<br>嚇かす者を　散りやらぬ花</span><br>幽玄死灵樱　只度苦厄迷魂情[^16] 　假若强折枝<br>飘飘白花终不散　未落终难安
-        </div>
-    </div>
-</div>
-<div class="dialog">
-    <div class="name">风见博之</div>
-    <div class="line"><ruby>呵阿<rt style="font-family: 'Asebi Mincho'">ゲエ</rt></ruby>，我偏偏要度尽了此间所有哀怨，来定了此间阴阳[^17]，不教四苦八苦，催人潸然！（言毕，狂风四起，璃下，博之执竹符笔见得[^18]）符笔一挥破<ruby>恠<rt>guài</rt></ruby><ruby>戢<rt>jí</rt></ruby>[^19]，定要赎尽残魂泣！（挥符笔状，下）</div>
-</div>
+
+:::
+
+:::dialog{p="风见博之"}
+
+&#0;<ruby>呵阿<rt style="font-family: 'Asebi Mincho'">ゲエ</rt></ruby>，我偏偏要度尽了此间所有哀怨，来定了此间阴阳[^17]，不教四苦八苦，催人潸然！
+
+（言毕，狂风四起，璃下，博之执竹符笔见得[^18]）符笔一挥破<ruby>恠<rt>guài</rt></ruby><ruby>戢<rt>jí</rt></ruby>[^19]，定要赎尽残魂泣！（挥符笔状，下）
+
+:::
 
 ## <span style="font-family: 'Asebi Mincho'">【中一】</span>
 
@@ -138,14 +149,28 @@ lang: ''
 
 <span style="font-family: 'Asebi Mincho'; font-weight: bold;">造リ物</span>　结幽岛电闪雷鸣，月上枝头。死灵樱惨白，间立于旁；一死灵樱猩红[^20]，使人不寒而栗。波涛汹涌，惊涛拍岸。
 
-<div class="dialog">
-    <div class="name">宫崎文</div>
-    <div class="line">（不见其人，先闻其声，笛声响后，随三味线哭诉）<br>
-        <div class="shi">海神怒涛吞孤岛，谎言缚我作祭表。<br>津波龙腾难平定，反育血染死灵樱。<br>斫去枝头成符兆[^21]，终教鬼怪投枪缴。<br>百年恨意化猩华，<ruby>恠<rt style="font-family: ''">guài</rt></ruby>枝缠魂无终了！</div>
-        （自猩红死灵樱枝间垂落，白衣染血，发鬘苍白，哀怨随太鼓念状）<ruby>嗬阿<rt style="font-family: 'Asebi Mincho'">ホヲ</rt></ruby>——<br>
-        <div class="shi">玄冥恶龙绵津见[^21]，翻了江海作<ruby>恚<rt style="font-family=''">huì</rt></ruby>乱。<br>要将苍生入孽渊，不悟无常海无边。<br>恶人道是神社过，祭我希冀魔障破[^22]。<br>枫松死樱交相和，岂容怨灵桠间卧[^23]？<br>炼成血染死灵樱，赤色花间接引晶[^24]。<br>独留宫崎残魂狞，百代魂缚离祖茔。</div>
-    </div>
+:::dialog{p="宫崎文"}
+（不见其人，先闻其声，笛声响后，随三味线哭诉）<br>
+<div class="shi">
+
+海神怒涛吞孤岛，谎言缚我作祭表。  
+津波龙腾难平定，反育血染死灵樱。  
+斫去枝头成符兆[^21]，终教鬼怪投枪缴。  
+百年恨意化猩华，<ruby>恠<rt style="font-family: ''">guài</rt></ruby>枝缠魂无终了！
+
 </div>
+（自猩红死灵樱枝间垂落，白衣染血，发鬘苍白，哀怨随太鼓念状）<ruby>嗬阿<rt style="font-family: 'Asebi Mincho'">ホヲ</rt></ruby>——<br>
+<div class="shi">
+
+玄冥恶龙绵津见[^21]，翻了江海作<ruby>恚<rt style="font-family=''">huì</rt></ruby>乱。  
+要将苍生入孽渊，不悟无常海无边。  
+恶人道是神社过，祭我希冀魔障破[^22]。  
+枫松死樱交相和，岂容怨灵桠间卧[^23]？  
+炼成血染死灵樱，赤色花间接引晶[^24]。  
+独留宫崎残魂狞，百代魂缚离祖茔。
+
+</div>
+:::
 
 <div class="temporary">……<br>尚在施工中，敬请期待！</div>
 

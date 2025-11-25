@@ -7,6 +7,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: [
+					"Source Han Serif SC VF",
 					"MiSans",
 					"Roboto",
 					"sans-serif",
