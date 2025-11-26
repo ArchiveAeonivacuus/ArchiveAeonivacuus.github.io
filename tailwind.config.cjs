@@ -8,9 +8,7 @@ module.exports = {
 			fontFamily: {
 				sans: [
 					"Source Han Serif SC VF",
-					"MiSans",
-					"Roboto",
-					"sans-serif",
+					"serif",
 					...defaultTheme.fontFamily.sans,
 				],
 			},
