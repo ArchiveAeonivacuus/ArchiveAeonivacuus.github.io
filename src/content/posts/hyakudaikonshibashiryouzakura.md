@@ -19,9 +19,10 @@ lang: ''
     /*margin-left: 2em;
     margin-right: 2em;*/
     font-family: KaiTi;
+    padding-left: 2em;
 }
 .ci p {
-    text-indent: 2em; /* 每个段落首行缩进两格 */
+    /* text-indent: 2em; /* 每个段落首行缩进两格 */
     margin: 0.5em 0; /* 段落间距 */
 }
 .rotate-text {
@@ -80,7 +81,7 @@ lang: ''
 :::dialog{p="风见博之"}
 （叹状，三味线）你有所不知。曾是公家侍，却也落得这般境地！<br>
 
-<div class="shi">
+<div class="ci">
 
 高远结幽寒甲瘦。霜冷滩涂、尤将长弓彀[^6]。曾是菅原麾下某[^7]，孤身今日林中叩。
 
@@ -95,7 +96,10 @@ lang: ''
 <ruby>唉唉诚如是<rt style="font-family: 'Asebi Mincho'">アヽマコトニ</rt></ruby>。此地艰险，所言不虚。夜半时分，有一孤魂徘徊，武家可有所知？（博之讶状，三味线）夜半时分。
 <div class="shi">
 
-月隐枝桠裂紫空[^11]，白花[^12]泣血缚残衷。<br>死灵樱树虬须下，逝影倩言啼咏中。<br>孤直亭亭渡航叟，飘摇瑟瑟接魂枫[^13]。<br>谁携符笔[^14]阴阳破？惟见前人袖染红。
+月隐枝桠裂紫空[^11]，白花[^12]泣血缚残衷。  
+死灵樱树虬须下，逝影倩言啼咏中。  
+孤直亭亭渡航叟，飘摇瑟瑟接魂枫[^13]。  
+谁携符笔[^14]阴阳破？惟见前人袖染红。
 
 </div>
 :::
@@ -111,7 +115,12 @@ lang: ''
 <ruby>是是<rt style="font-family: 'Asebi Mincho'">ハイハイ</rt></ruby>，便贱些儿与武家则个。（递状，博之与璃传钱状）虽是我也不好过活，武家那克怨灵，可有说法。
 <div class="shi">
 
-<span style="font-family: 'DFKai-SB'">花瓣に　迷魂のみや　寄るべしと<br>嚇かす者を　散りやらぬ花</span><br>幽玄死灵樱　只度苦厄迷魂情[^16] 　假若强折枝<br>飘飘白花终不散　未落终难安
+<span style="font-family: 'DFKai-SB'">
+花瓣に　迷魂のみや　寄るべしと  
+嚇かす者を　散りやらぬ花
+</span>  
+幽玄死灵樱　只度苦厄迷魂情[^16] 　假若强折枝  
+飘飘白花终不散　未落终难安
 
 </div>
 
@@ -119,7 +128,7 @@ lang: ''
 
 :::dialog{p="风见博之"}
 
-&#0;<ruby>呵阿<rt style="font-family: 'Asebi Mincho'">ゲエ</rt></ruby>，我偏偏要度尽了此间所有哀怨，来定了此间阴阳[^17]，不教四苦八苦，催人潸然！
+<ruby>呵阿<rt style="font-family: 'Asebi Mincho'">ゲエ</rt></ruby>，我偏偏要度尽了此间所有哀怨，来定了此间阴阳[^17]，不教四苦八苦，催人潸然！
 
 （言毕，狂风四起，璃下，博之执竹符笔见得[^18]）符笔一挥破<ruby>恠<rt>guài</rt></ruby><ruby>戢<rt>jí</rt></ruby>[^19]，定要赎尽残魂泣！（挥符笔状，下）
 
