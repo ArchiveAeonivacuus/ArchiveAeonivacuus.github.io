@@ -36,7 +36,7 @@ lang: ''
 }
 </style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>百代魂縛死靈櫻<rt>ひやくだいこんしばしりやうさくら</rt><ruby></span>
+# <span style="font-family: 'Asebi Mincho'"><ruby>百代魂縛死靈櫻<rt>ひやくだいこんしばしりやうざくら</rt><ruby></span>
 
 ## <span style="font-family: 'Asebi Mincho'">【上一】</span>
 
@@ -84,9 +84,9 @@ lang: ''
 
 <div class="ci">
 
-高远结幽寒甲瘦。霜冷滩涂、尤将长弓<ruby>彀<rt style="font-family: 'Asebi Mincho'">gòu</rt></ruby>[^6]。曾是菅原麾下某[^7]，孤身今日林中叩。
+高远结幽寒甲瘦。霜冷滩涂、尤将长弓<ruby>彀<rt style="font-family: ''">gòu</rt></ruby>[^6]。曾是菅原麾下某[^7]，孤身今日林中叩。
 
-鬼手林樱寻血久[^8]，鉴影[^9]诸人、<ruby>恠<rt>guài</rt></ruby> [^10] <ruby>巉<rt>chán</rt></ruby>盘枝狩。买我千金风骨寿，灯笼接引残魂诱。
+鬼手林樱寻血久[^8]，鉴影[^9]诸人、<ruby>恠<rt style="font-family: ''">guài</rt></ruby> [^10] <ruby>巉<rt style="font-family: ''">chán</rt></ruby>盘枝狩。买我千金风骨寿，灯笼接引残魂诱。
 
 </div>
 
@@ -134,6 +134,8 @@ lang: ''
 
 :::
 
+---
+
 ## <span style="font-family: 'Asebi Mincho'">【中一】</span>
 
 <table>
@@ -172,7 +174,12 @@ lang: ''
 
 <div class="shi">
 
-玄冥恶龙绵津见[^22]，翻了江海作<ruby>恚<rt style="font-family=''">huì</rt></ruby>乱。<br>要将苍生入孽渊，不悟无常海无边。<br>恶人道是神社过，祭我希冀魔障破[^23]。<br>枫松死樱交相和，岂容怨灵桠间卧[^24]？<br>炼成血染死灵樱，赤色花间接引晶[^25]。<br>独留宫崎残魂狞，百代魂缚离祖茔。
+玄冥恶龙绵津见[^22]，翻了江海作<ruby>恚<rt style="font-family=''">huì</rt></ruby>乱。
+要将苍生入孽渊，不悟无常海无边。
+恶人道是神社过，祭我希冀魔障破[^23]。
+枫松死樱交相和，岂容怨灵桠间卧[^24]？
+炼成血染死灵樱，赤色花间接引晶[^25]。
+独留宫崎残魂狞，百代魂缚离祖茔。
 
 </div>
 
@@ -254,6 +261,8 @@ lang: ''
 </div>
 恁随我来。（三人皆下）
 :::
+
+---
 
 ## <span style="font-family: 'Asebi Mincho'">【下一】</span>
 
@@ -341,6 +350,8 @@ lang: ''
 
 </div>
 
+---
+
 ## <span style="font-family: 'Asebi Mincho'">【終】</span>
 
 （博之插死灵樱木符笔于土中，璃拾灯芯残尘，染血白衣消散。堂幕[^49]皆降而骤暗，仅余符笔“赎魂”二字一闪）
@@ -355,7 +366,9 @@ lang: ''
 我执愈深　人心愈<ruby>恠<rt style="font-family: ''">guài</rt></ruby><br>阴阳循环　流转不止<br>
 </div>
 
-<span style="font-family: 'Asebi Mincho'">百代魂縛死靈櫻　至<sub>レ</sub>此終</span>
+<span style="font-family: 'Asebi Mincho'"><ruby>百代魂縛死靈櫻<rt>ひやくだいこんしばしりやうざくら</rt></ruby>　<ruby>至<rt>いた</rt></ruby><ruby><sub>レ</sub><rt>リテ</rt></ruby><ruby>此<rt>ここ</rt></ruby><ruby> <rt>ニ</rt></ruby><ruby>終<rt>おは</rt></ruby><ruby> <rt>リナリ</rt></ruby></span>
+
+<!-- 添加了训读 -->
 
 [^1]: 这个故事发生在大瀛的结幽岛。
 [^2]: 大意：来这里是要和我采花妖交易吗。大瀛人类与采花妖有频繁贸易往来。
