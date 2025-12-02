@@ -30,10 +30,6 @@ lang: ''
     transform: rotate(270deg);
     display: inline-block; 
 }
-.temporary {
-    text-align: center;
-    font-size: 50px;
-}
 </style>
 
 # <span style="font-family: 'Asebi Mincho'"><ruby>百代魂縛死靈櫻<rt>ひやくだいこんしばしりやうざくら</rt><ruby></span>

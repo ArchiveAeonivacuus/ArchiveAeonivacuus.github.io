@@ -28,3 +28,17 @@
     local('Source Han Serif JP'),
     url('/fonts/SourceHanSerifJP-Regular.ttf');
 }
+
+@font-face {
+  font-family: 'Source Han Serif Old';
+  src:
+    local('Source Han Serif Old'),
+    url('/fonts/SOURCEHANSERIFOLD-LIGHT.OTF') format("truetype");
+}
+
+@font-face {
+  font-family: 'Old English Onglisch';
+  src:
+    local('Old English Onglisch'),
+    url('/fonts/Old English Onglisch.otf') format("truetype");
+}
