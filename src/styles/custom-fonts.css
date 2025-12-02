@@ -42,3 +42,13 @@
     local('Old English Onglisch'),
     url('/fonts/Old English Onglisch.otf') format("truetype");
 }
+
+@font-face {
+  font-family: 'HighTowerText';
+  src:
+    url('/fonts/HTOWERT.TTF'),
+    url('/fonts/HTOWERTI.TTF');
+}
+p {
+  font-family: 'HighTowerText', italic;
+}
