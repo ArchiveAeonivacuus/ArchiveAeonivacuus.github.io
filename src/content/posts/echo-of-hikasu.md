@@ -33,7 +33,8 @@ lang: ''
 
 <div class="shi">
 
-<span style="font-family: 'Asebi Mincho'"><ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br><ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br><ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ<br><ruby>常世<rt>とこよ</rt></ruby><ruby>海<rt>うみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る</span>
+<span style="font-family: 'Asebi Mincho'"><ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br><ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br><ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ
+<br><ruby>常世<rt>とこよ</rt></ruby><ruby>海<rt>うみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る</span>
 
 暗潮忽起　波震晚意　怒涛翻天亡魂船<br>栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>唤降天威　御柱忽落　八百万神镇坤乾<br>海中幽冥　神官退治　尽扫顽瘴澄海田
 
@@ -82,7 +83,17 @@ lang: ''
 
 <div class="shi">
 
-<span style="font-family: 'Asebi Mincho'"><ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br><ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br><ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ<br><ruby>常世<rt>とこよ</rt></ruby><ruby>海<rt>うみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る</span>
+<span style="font-family: 'Asebi Mincho'">
+<ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>
+ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br>
+<ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br>
+<ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ<br>
+</span>
+<br>
+<span style="font-family: 'Asebi Mincho'">
+<ruby>常世海<rt>とこようみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る
+
+</span>
 
 暗潮忽起　波震晚意　怒涛翻天亡魂船<br>栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>唤降天威　御柱忽落　八百万神镇坤乾<br>海中幽冥　神官退治　尽扫顽瘴澄海田
 
@@ -146,7 +157,17 @@ lang: ''
 
 <div class="shi">
 
-<span style="font-family: 'Asebi Mincho'"><ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br><ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br><ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ<br><ruby>常世<rt>とこよ</rt></ruby><ruby>海<rt>うみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る</span>
+<span style="font-family: 'Asebi Mincho'">
+<ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>
+ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br>
+<ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br>
+<ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ<br>
+</span>
+<br>
+<span style="font-family: 'Asebi Mincho'">
+<ruby>常世海<rt>とこようみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る
+
+</span>
 
 暗潮忽起　波震晚意　怒涛翻天亡魂船<br>栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>唤降天威　御柱忽落　八百万神镇坤乾<br>海中幽冥　神官退治　尽扫顽瘴澄海田
 
@@ -274,7 +295,17 @@ lang: ''
 
 <div class="shi">
 
-<span style="font-family: 'Asebi Mincho'"><ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br><ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br><ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ<br><ruby>常世<rt>とこよ</rt></ruby><ruby>海<rt>うみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る</span>
+<span style="font-family: 'Asebi Mincho'">
+<ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>
+ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br>
+<ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br>
+<ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ<br>
+</span>
+<br>
+<span style="font-family: 'Asebi Mincho'">
+<ruby>常世海<rt>とこようみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る
+
+</span>
 
 暗潮忽起　波震晚意　怒涛翻天亡魂船<br>栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>唤降天威　御柱忽落　八百万神镇坤乾<br>海中幽冥　神官退治　尽扫顽瘴澄海田
 
