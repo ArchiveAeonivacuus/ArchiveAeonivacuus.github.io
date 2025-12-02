@@ -19,11 +19,6 @@ lang: ''
     padding-left: 2em;
     padding-right: 2em;
 }
-/*
-.ci p {
-    margin: 0.5em 0;
-}
-*/
 </style>
 
 # <span style="font-family: 'Asebi Mincho'"><ruby><span style="font-family: 'Source Han Serif Old'">瞱</span><rt>ひかす</rt></ruby>の山彦</span>
