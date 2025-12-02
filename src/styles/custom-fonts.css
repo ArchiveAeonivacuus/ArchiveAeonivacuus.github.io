@@ -40,5 +40,5 @@
   font-family: 'Old English Onglisch';
   src:
     local('Old English Onglisch'),
-    url('/fonts/Old English Onglisch.otf') format("truetype");
+    url('/fonts/Old\ English\ Onglisch.otf') format("truetype");
 }
