@@ -1,3 +1,5 @@
+@import url('https://cdn.jsdelivr.net/npm/@wc1font/source-han-serif-sc-vf/font.css');
+
 @font-face {
   font-family: "Asebi Mincho";
   src: 
@@ -5,8 +7,6 @@
     local('馬酔木明朝'),
     url("/fonts/AsebiMin-Light.otf") format("truetype");
 }
-
-@import url('https://cdn.jsdelivr.net/npm/@wc1font/source-han-serif-sc-vf/font.css');
 
 @font-face {
   font-family: 'KaiTi';
@@ -40,5 +40,5 @@
   font-family: 'Old English Onglisch';
   src:
     local('Old English Onglisch'),
-    url('/fonts/Old\ English\ Onglisch.otf') format("truetype");
+    url('/fonts/Old English Onglisch.otf') format("truetype");
 }
