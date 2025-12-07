@@ -19,6 +19,24 @@ lang: ''
     padding-left: 2em;
     padding-right: 2em;
 }
+
+@font-face {
+  font-family: 'Old English Onglisch';
+  src:
+    local('Old English Onglisch'),
+    url('/fonts/Old English Onglisch.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'HighTowerText';
+  src:
+    url('/fonts/HTOWERT.TTF'),
+    url('/fonts/HTOWERTI.TTF');
+}
+p {
+  font-family: 'HighTowerText', italic;
+}
+
 </style>
 
 # <span style="font-family: 'Asebi Mincho'"><ruby><span style="font-family: 'Source Han Serif Old'">瞱</span><rt>ひかす</rt></ruby>の山彦</span>
@@ -368,9 +386,9 @@ lang: ''
 [^23]: 大瀛一种有齿的木屐，齿可拆卸，上山卸下前齿，下山卸下后齿，这样便于攀登，走起山路来更为舒适。
 [^24]: 非常紧急。孔，很；亟，紧急。
 [^25]: 奇怪得没法用语言描述。妙，奇怪。
-[^26]: Cassock。质担主教、巫<ruby>㩵<rt>zá</rt></ruby>之正装。
+[^26]: <span style="font-family: 'HighTowerText'">Cassock</span>。质担主教、巫<ruby>㩵<rt>zá</rt></ruby>之正装。
 [^27]: 浮木、浮舟。星<ruby>槎<rt>chá</rt></ruby>大概是天外射来之物。
-[^28]: Yggdra。
+[^28]: <span style="font-family: 'HighTowerText'">Yggdra</span>。
 [^29]: 收太刀时应警惕四周，手不离刀柄，此为残心。
 [^30]: 搭弓。
 [^31]: 死灵樱之亚种也。花瓣为猩红色。
