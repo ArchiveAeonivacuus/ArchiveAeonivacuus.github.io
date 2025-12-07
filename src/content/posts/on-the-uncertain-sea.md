@@ -15,6 +15,23 @@ lang: ''
     text-align: center;
 }
 
+@font-face {
+  font-family: 'Old English Onglisch';
+  src:
+    local('Old English Onglisch'),
+    url('/fonts/Old English Onglisch.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'HighTowerText';
+  src:
+    url('/fonts/HTOWERT.TTF'),
+    url('/fonts/HTOWERTI.TTF');
+}
+p {
+  font-family: 'HighTowerText', italic;
+}
+
 </style>
 
 # <span style="font-family: Old English Onglisch">An Dın Uncértus Márınen</span>

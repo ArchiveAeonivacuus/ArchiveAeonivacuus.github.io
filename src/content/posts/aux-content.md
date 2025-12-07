@@ -13,18 +13,39 @@ lang: ''
 @import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
 </style> -->
 
+<style>
+
+@font-face {
+  font-family: 'Old English Onglisch';
+  src:
+    local('Old English Onglisch'),
+    url('/fonts/Old English Onglisch.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'HighTowerText';
+  src:
+    url('/fonts/HTOWERT.TTF'),
+    url('/fonts/HTOWERTI.TTF');
+}
+p {
+  font-family: 'HighTowerText', italic;
+}
+
+</style>
+
 # Aux Cóntent!
 # 我打心底高兴！
 
-“Hƿanar ıc ƿar blınd, neƿ ıc sēo.”（向时迷途今得见。）神甫在教堂里喃喃念着。
+“<span style="font-family: Old English Onglisch">Hƿanar ıc ƿar blınd, neƿ ıc sēo.</span>”（向时迷途今得见。）神甫在教堂里喃喃念着。
 
-萨利・以利斜别[^1]是本堂神甫大人……的马车夫。虽是驾车，他却当然认为自己比那费劲倒腾腿脚的人力车夫与三轮车踏夫[^2]高贵得多。甚至因为自己是为“本堂神甫大人”赶车，便又要比其他的马车夫还要高一等，乃至于瀛人都应当叫他一声“Místre Ilızabets（以利斜别先生）”。顺带一提，尽管他会和语，他却乐意和瀛人也说央语——因为他是央额列人。
+萨利・以利斜别[^1]是本堂神甫大人……的马车夫。虽是驾车，他却当然认为自己比那费劲倒腾腿脚的人力车夫与三轮车踏夫[^2]高贵得多。甚至因为自己是为“本堂神甫大人”赶车，便又要比其他的马车夫还要高一等，乃至于瀛人都应当叫他一声“<span style="font-family: Old English Onglisch">Místre Ilızabets</span>（以利斜别先生）”。顺带一提，尽管他会和语，他却乐意和瀛人也说央语——因为他是央额列人。
 
-每天早上花园不二等[^3]先生都会在去忘樱对外经理司上班的路上碰见已经买菜回来的以利斜别先生。尽管他不会几句央语，却能够大声地跟以利斜别先生说一句“Gránd Pleasánt, Místre Ilızabets!（您贵安，以利斜别先生！）”而以利斜别先生总会昂着头答应他一句“Aux Cóntent!（我打心底高兴！）”您瞧，除了以利斜别的名字，没有一个词不是斐令语的，不知道的还以为是本堂神甫大人和他的老相识安知・斐力[^4]在打招呼呢。
+每天早上花园不二等[^3]先生都会在去忘樱对外经理司上班的路上碰见已经买菜回来的以利斜别先生。尽管他不会几句央语，却能够大声地跟以利斜别先生说一句“<span style="font-family: Old English Onglisch">Gránd Pleasánt, Místre Ilızabets</span>!（您贵安，以利斜别先生！）”而以利斜别先生总会昂着头答应他一句“Aux Cóntent!（我打心底高兴！）”您瞧，除了以利斜别的名字，没有一个词不是斐令语的，不知道的还以为是本堂神甫大人和他的老相识安知・斐力[^4]在打招呼呢。
 
 花园不二等先生在忘樱对外经理司当会计，每天的工作是给“老爷”们的出入流水打打算盘，记记结余。偶尔受“老爷”们层层传下来的命令——公然地命令，给这里那里的数字改一改。他给挺多人服务，不过要说起来顶头上司其实是高桥德泽[^5]先生。他“受命”给许多人改过数字，给高桥先生可是一次都没有改过。“脾气！”花园先生这么议论自己的上司——当然，是背地里。“我要是他，怎么也得捞两个钱去吃樱桃！”吃樱桃在忘樱往往与艺妓、酒、夜晚联系在一起。忘樱人一提“<span style="font-family: 'Asebi Mincho'"><ruby>桜桃<rt>さくらぬぼう</rt></ruby></span>（sakuranbou）”，往往如是。去得多的连“sakuranbou”都懒得说，直接是一句“<span style="font-family: 'Asebi Mincho'">さくらぬ</span>（sakuran）”就决定了今夜的消费场所。
 
-今天似乎有些反常，还没走到上班的地方，一个洋人和一个瀛人把他拉到一旁。瀛人小声地，学着北族人说的假洋话：“Tű Místre Hanadzono?（你的花园先生？）”他以为是思根[^6]来的，吓出了冷汗，慌乱中不敢回答。黄脸尖下腮的瀛人却说：“Nocto Panıc-lo.（害怕的不要好）”他想了想，以蚊子一般的声音嘟囔：“Eı, eı.（是，是。）”黄脸尖腮塞给他一张票子：“Nacto, Sacran, Teddaı, Ongı.（晚上的，樱桃的，鉃台（酒馆名）的，央大人有请。）”还没等花园先生反应过来，二人就转身离开了。
+今天似乎有些反常，还没走到上班的地方，一个洋人和一个瀛人把他拉到一旁。瀛人小声地，学着北族人说的假洋话：“<span style="font-family: Old English Onglisch">Tű Místre Hanadzono?</span>（你的花园先生？）”他以为是思根[^6]来的，吓出了冷汗，慌乱中不敢回答。黄脸尖下腮的瀛人却说：“<span style="font-family: Old English Onglisch">Nocto Panıc-lo.</span>（害怕的不要好）”他想了想，以蚊子一般的声音嘟囔：“<span style="font-family: Old English Onglisch">Eı, eı.</span>（是，是。）”黄脸尖腮塞给他一张票子：“<span style="font-family: Old English Onglisch">Nacto, Sacran, Teddaı, Ongı.</span>（晚上的，樱桃的，鉃台（酒馆名）的，央大人有请。）”还没等花园先生反应过来，二人就转身离开了。
 
 花园先生倒是错愕：央人，找他？
 
@@ -42,7 +63,7 @@ lang: ''
 
 原来是以利斜别先生！这当儿以利斜别先生才搞明白：神甫是请他——一个瀛人与主教大人吃饭！他莫名丧了气，感觉自己不再神气了，蔫着脸挥手请花园先生进去，用和语说：“<span style="font-family: 'Asebi Mincho'">裏におはしたまへ。</span>（恭请您入内。）”
 
-花园先生都不用正眼瞧他，跟着他到了包间门口，小心翼翼地开门进去。包间里已有两个人坐着聊天，穿外国军装的正吸着烟，穿便服的端着杯子和他谈话。花园先生进门，他俩头都不抬，说了句“Ƿıllcoman”，一旁的通译站在阴影中，冷不丁一句“<span style="font-family: 'Asebi Mincho'">いらつしやへ</span>（欢迎）”吓了花园先生一跳。
+花园先生都不用正眼瞧他，跟着他到了包间门口，小心翼翼地开门进去。包间里已有两个人坐着聊天，穿外国军装的正吸着烟，穿便服的端着杯子和他谈话。花园先生进门，他俩头都不抬，说了句“<span style="font-family: Old English Onglisch">Ƿıllcoman</span>”，一旁的通译站在阴影中，冷不丁一句“<span style="font-family: 'Asebi Mincho'">いらつしやへ</span>（欢迎）”吓了花园先生一跳。
 
 包间外等候的以利斜别先生可是犯了大嘀咕，越想越不是滋味，只垂头站着。
 
@@ -60,10 +81,10 @@ lang: ''
 
 又到了下班时间，花园先生又溜了出去。中途走过转角，嚯，这不正是高桥先生！高桥先生私下向来对下属很友善，这次也亲切地向花园先生打了招呼，花园先生边迟疑地回应了他一声，边攥紧了包，好像怕高桥先生突然抢走包，发现了他的秘密。走到经理司对面，他呆滞地站了好一会才回头，不知是对谁威胁：“叫你装！迟早要你好看！”
 
-[^1]: Scharlıe Ilızabets。
+[^1]: <span style="font-family: Old English Onglisch">Scharlıe Ilızabets</span>。
 [^2]: 即三轮车夫。
 [^3]: <span style="font-family: 'Asebi Mincho'"><ruby>花園<rt>はなぞの</rt></ruby>　<ruby>不二等<rt>ふじとう</rt></ruby></span>/Hanazono Fujitou。
-[^4]: Andrea Felix。
+[^4]: <span style="font-family: HighTowerText">Andrea Felix</span>。
 [^5]: <span style="font-family: 'Asebi Mincho'"><ruby>高橋<rt>たかはし</rt></ruby>　<ruby>徳沢<rt>とくさは</rt></ruby></span>/Takawashi Tokusawa。
 [^6]: 巡捕犯人。
 [^7]: Loıaltı，意为忠诚，这名字是露呀提先生自己改的。

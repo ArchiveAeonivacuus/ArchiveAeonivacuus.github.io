@@ -8,9 +8,25 @@ category: '瀛寰'
 draft: false 
 lang: ''
 ---
-
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
+
+@font-face {
+  font-family: 'Old English Onglisch';
+  src:
+    local('Old English Onglisch'),
+    url('/fonts/Old English Onglisch.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'HighTowerText';
+  src:
+    url('/fonts/HTOWERT.TTF'),
+    url('/fonts/HTOWERTI.TTF');
+}
+p {
+  font-family: 'HighTowerText', italic;
+}
+
 </style>
 
 # Commentarii de Montes Ferricineris
@@ -21,7 +37,7 @@ lang: ''
 
 不过，却少有人去留意，那些开往大陆西方的船只。明明也在恩泽大陆[^3]，却仍然走水路。在那圣主真一的脚跟下，却横卧着恩泽难以遍布的恩泽西陆，这着实令人奇怪。
 
-邪恶物事遍地，硫磺岩浆横行，随处可见皆是荒芜与恶意，哪怕是圣日[^4]，这里也被浓浓黑云笼罩，如同冥王予实[^5]用巨手拒止着亡魂的逃逸一般。这文学家形容为炼狱的地方，便是恩泽大陆的西方。若是船长初来乍到，又有一张露末教廷最新发放的彩色地图，便能够在相应的地方找到一块棕色的焦土，处处点缀着橙色的岩浆，一行大字横贯西陆——“<span style="font-family: 'Manufacturing Consent'">Nān Hómo</span>”，这是央语，意思是“无人区”。
+邪恶物事遍地，硫磺岩浆横行，随处可见皆是荒芜与恶意，哪怕是圣日[^4]，这里也被浓浓黑云笼罩，如同冥王予实[^5]用巨手拒止着亡魂的逃逸一般。这文学家形容为炼狱的地方，便是恩泽大陆的西方。若是船长初来乍到，又有一张露末教廷最新发放的彩色地图，便能够在相应的地方找到一块棕色的焦土，处处点缀着橙色的岩浆，一行大字横贯西陆——“<span style="font-family: 'Old English Onglisch'">Nān Hómo</span>”，这是央语，意思是“无人区”。
 
 就是这样被打上“无人”标注的地上炼狱，却有少数船长带着船队来到这里偏远的港口——晶石港。可敬的察利・敷罗明可[^6]先生所提出的“树上萤火虫”模型告诉我们，船只应当尽可能贴岸航行，通过岸上的罗生来保证航行速度。然而，恩泽西陆与恩泽东陆之间陡峭的高差与息律差让船队不得不直线航行，从而绕开最为危险的地域。恩泽西陆与恩泽东陆自古以来也没有陆路商队通行，就是因为鲜有人能通过险象环生的西境峭壁。
 
@@ -116,7 +132,7 @@ lang: ''
 [^3]: 恩泽大陆：Continent Beneficiumus，於留根洲最主要的大陆。邪奴亚波列在其南端。
 [^4]: 圣日：Santdi，每周的第一天。对应大瀛七曜是日曜。
 [^5]: 予实：Odis，质担教与其他一些信仰的地府冥王。
-[^6]: 察利・敷罗明可：<span style="font-family: 'Manufacturing Consent'">Charlıe Flamenco</span>，著有《论不定之海现象——树上萤火虫模型》，是目前反映瀛寰世界基本状况最为准确的模型。
+[^6]: 察利・敷罗明可：<span style="font-family: 'Old English Onglisch'">Charlıe Flamenco</span>，著有《论不定之海现象——树上萤火虫模型》，是目前反映瀛寰世界基本状况最为准确的模型。
 [^7]: 土密利・可拉<ruby>䎎<rt>nà</rt></ruby>：作者自注为“Дмитри Краснов”。
 [^8]: 灰山商埠：Emporium Cineris，铁灰山脉的人类聚落，主要进行贸易转运等业务。
 [^9]: 灰山聚落：Colonia Sevegrad，铁灰山脉的人类聚落。
