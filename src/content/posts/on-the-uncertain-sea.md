@@ -54,16 +54,16 @@ p {
 <table style="border-collapse: collapse; width: 100%; font-family: 'Old English Onglisch';">
   <!-- 表头行 -->
   <tr>
-    <td style="border: 1px solid #ccc; padding: 8px; background-color: #f5f5f5;"></td>
-    <td style="border: 1px solid #ccc; padding: 8px; background-color: #f5f5f5; text-align: center;">
+    <td style="border: 1px; padding: 8px;"></td>
+    <td style="border: 1px; padding: 8px; text-align: center;">
       <div>Gordan</div>
       <div style="font-family: 'Source Han Serif Old'">葛弾号</div>
     </td>
-    <td style="border: 1px solid #ccc; padding: 8px; background-color: #f5f5f5; text-align: center;">
+    <td style="border: 1px; padding: 8px; text-align: center;">
       <div>St. Yıllıam</div>
       <div style="font-family: 'Source Han Serif Old'">維連神佑船隊</div>
     </td>
-    <td style="border: 1px solid #ccc; padding: 8px; background-color: #f5f5f5; text-align: center;">
+    <td style="border: 1px; padding: 8px; text-align: center;">
       <div>Pflicht</div>
       <div style="font-family: 'Source Han Serif Old'">敷力多号</div>
     </td>
@@ -71,53 +71,53 @@ p {
   
   <!-- 数据行 -->
   <tr>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: left; background-color: #f9f9f9;">
+    <td style="border: 1px; padding: 8px; text-align: left;">
       <div>lagnt</div>
       <div style="font-family: 'Source Han Serif Old'">全長</div>
     </td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">152Mt</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">154.3Mt per</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">150Mt</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">152Mt</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">154.3Mt per</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">150Mt</td>
   </tr>
   
   <tr>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: left; background-color: #f9f9f9;">
+    <td style="border: 1px; padding: 8px; text-align: left;">
       <div>yıddt</div>
       <div style="font-family: 'Source Han Serif Old'">寛</div>
     </td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">17.5Mt</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">18.2Mt per</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">16Mt</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">17.5Mt</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">18.2Mt per</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">16Mt</td>
   </tr>
   
   <tr>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: left; background-color: #f9f9f9;">
+    <td style="border: 1px; padding: 8px; text-align: left;">
       <div>foro drafton</div>
       <div style="font-family: 'Source Han Serif Old'">艏入水</div>
     </td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">2.7Mt</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">2.35Mt per</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">2.3Mt</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">2.7Mt</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">2.35Mt per</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">2.3Mt</td>
   </tr>
   
   <tr>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: left; background-color: #f9f9f9;">
+    <td style="border: 1px; padding: 8px; text-align: left;">
       <div>aftoro drafton</div>
       <div style="font-family: 'Source Han Serif Old'">艉入水</div>
     </td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">2.9Mt</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">2.57Mt per</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">2.6Mt</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">2.9Mt</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">2.57Mt per</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">2.6Mt</td>
   </tr>
   
   <tr>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: left; background-color: #f9f9f9;">
+    <td style="border: 1px; padding: 8px; text-align: left;">
       <div>vélo créatus</div>
       <div style="font-family: 'Source Han Serif Old'">計画速度</div>
     </td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">9Vl</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">9.4Vl</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">10Vl</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">9Vl</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">9.4Vl</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">10Vl</td>
   </tr>
   
   <!-- 分隔线 -->
@@ -126,43 +126,43 @@ p {
   </tr>
   
   <tr>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: left; background-color: #f9f9f9;">
+    <td style="border: 1px; padding: 8px; text-align: left;">
       <div>normalı forsopoyar</div>
       <div style="font-family: 'Source Han Serif Old'">常規航力</div>
     </td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">1500Fp</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">1473Fp</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">1550Fp</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">1500Fp</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">1473Fp</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">1550Fp</td>
   </tr>
   
   <tr>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: left; background-color: #f9f9f9;">
+    <td style="border: 1px; padding: 8px; text-align: left;">
       <div>normalo vélo</div>
       <div style="font-family: 'Source Han Serif Old'">常規速度</div>
     </td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">8.5Vl</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">8.93Vl</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">9.22Vl</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">8.5Vl</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">8.93Vl</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">9.22Vl</td>
   </tr>
   
   <tr>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: left; background-color: #f9f9f9;">
+    <td style="border: 1px; padding: 8px; text-align: left;">
       <div>forsopoyar grándethı</div>
       <div style="font-family: 'Source Han Serif Old'">最大航力</div>
     </td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">1700Fp</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">1638Fp</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">1820Fp</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">1700Fp</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">1638Fp</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">1820Fp</td>
   </tr>
   
   <tr>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: left; background-color: #f9f9f9;">
+    <td style="border: 1px; padding: 8px; text-align: left;">
       <div>vélo grándeth</div>
       <div style="font-family: 'Source Han Serif Old'">最大速度</div>
     </td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">9.1Vl</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">8.96Vl</td>
-    <td style="border: 1px solid #ccc; padding: 8px; text-align: center;">10.2Vl</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">9.1Vl</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">8.96Vl</td>
+    <td style="border: 1px; padding: 8px; text-align: center;">10.2Vl</td>
   </tr>
 </table>
 
