@@ -35,3 +35,28 @@
     local('Source Han Serif Old'),
     url('/fonts/SOURCEHANSERIFOLD-LIGHT.OTF') format("truetype");
 }
+
+/* Old English Onglisch - used inline in some posts */
+@font-face {
+  font-family: 'Old English Onglisch';
+  src:
+    local('Old English Onglisch'),
+    url('/fonts/Old English Onglisch.otf') format('opentype');
+  font-display: swap;
+}
+
+/* HighTowerText - regular and italic */
+@font-face {
+  font-family: 'HighTowerText';
+  src: url('/fonts/HTOWERT.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HighTowerText';
+  src: url('/fonts/HTOWERTI.TTF') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
