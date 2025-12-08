@@ -27,17 +27,17 @@ export function remarkExcerpt() {
 					"code",
 					"abbr",
 					"sub",
-					"sup"
+					"sup",
 				],
 				allowedAttributes: {
 					span: ["style", "class"],
 					ruby: ["style", "class"],
 					rt: ["style", "class"],
 					a: ["href", "title", "target", "rel"],
-					code: ["class"]
+					code: ["class"],
 				},
 				// only allow common safe URL schemes for links
-				allowedSchemes: ["http", "https", "mailto"]
+				allowedSchemes: ["http", "https", "mailto"],
 			});
 			// normalize whitespace
 			excerpt = excerpt.replace(/\s+/g, " ").trim();

@@ -20,24 +20,8 @@ lang: ''
     padding-right: 2em;
 }
 
-@font-face {
-  font-family: 'Old English Onglisch';
-  src:
-    local('Old English Onglisch'),
-    url('/fonts/Old English Onglisch.otf') format("truetype");
-}
-
-@font-face {
-  font-family: 'HighTowerText';
-  src:
-    url('/fonts/HTOWERT.TTF'),
-    url('/fonts/HTOWERTI.TTF');
-}
-p {
-  font-family: 'HighTowerText', italic;
-}
-
 </style>
+
 
 # <span style="font-family: 'Asebi Mincho'"><ruby><span style="font-family: 'Source Han Serif Old'">瞱</span><rt>ひかす</rt></ruby>の山彦</span>
 # <ruby>瞱<rt>yè</rt></ruby>花的回音

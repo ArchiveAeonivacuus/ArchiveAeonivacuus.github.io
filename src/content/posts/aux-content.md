@@ -13,27 +13,6 @@ lang: ''
 @import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
 </style> -->
 
-<style>
-
-@font-face {
-  font-family: 'Old English Onglisch';
-  src:
-    local('Old English Onglisch'),
-    url('/fonts/Old English Onglisch.otf') format("truetype");
-}
-
-@font-face {
-  font-family: 'HighTowerText';
-  src:
-    url('/fonts/HTOWERT.TTF'),
-    url('/fonts/HTOWERTI.TTF');
-}
-p {
-  font-family: 'HighTowerText', italic;
-}
-
-</style>
-
 # Aux Cóntent!
 # 我打心底高兴！
 

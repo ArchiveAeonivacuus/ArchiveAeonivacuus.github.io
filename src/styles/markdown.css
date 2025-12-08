@@ -1,8 +1,5 @@
 .custom-md {
     font-family: 'Source Han Serif', serif;
-    *:not([style*="font-family"]):not(code):not(pre):not(kbd) {
-        font-family: 'Source Han Serif', serif;
-    }
     h1 {
         @apply text-3xl;
     }

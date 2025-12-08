@@ -9,17 +9,6 @@ draft: false
 lang: ''
 ---
 
-<style>
-
-@font-face {
-  font-family: 'Old English Onglisch';
-  src:
-    local('Old English Onglisch'),
-    url('/fonts/Old English Onglisch.otf') format("truetype");
-}
-
-</style>
-
 巴提市（<span style="font-family: Old English Onglisch">Batıe Cíbıl</span>）是央额列最繁忙的港口城市，每天的吞吐量非常大。一旁史诺科郡（<span style="font-family: Old English Onglisch">Schnoc Contı</span>）伸出的岬角为它建设港口带来了便利条件，也为巴提带来了无尽的海外财富。提起巴提港口的繁华，连巴提港口最劳累的装卸工也会骄傲地挺起胸膛，用干活时允许的最大力气说：“大央帝国的舰队为国民带来了一切！”
 
 央额列的首都——杰科市（<span style="font-family: Old English Onglisch">Ğerco Cíbıl</span>）与巴提中间只隔了查尼史郡（<span style="font-family: Old English Onglisch">Zanısch Contı</span>）。从巴提码头坐一辆马车去杰科，只需要付5镑坐四天三夜的车，中间住三晚旅馆最少只需要3镑。路可以放在嘴里，也就是说一马车的六名乘客聊着天，杰科市很快就到了。

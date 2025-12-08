@@ -8,26 +8,6 @@ category: '瀛寰'
 draft: false 
 lang: ''
 ---
-<style>
-
-@font-face {
-  font-family: 'Old English Onglisch';
-  src:
-    local('Old English Onglisch'),
-    url('/fonts/Old English Onglisch.otf') format("truetype");
-}
-
-@font-face {
-  font-family: 'HighTowerText';
-  src:
-    url('/fonts/HTOWERT.TTF'),
-    url('/fonts/HTOWERTI.TTF');
-}
-p {
-  font-family: 'HighTowerText', italic;
-}
-
-</style>
 
 # Commentarii de Montes Ferricineris
 # 铁灰山脉游记
