@@ -10,19 +10,18 @@ lang: ''
 ---
 
 <style>
-/* 怪物猎人角色介绍系统 */
+/* 怪物猎人角色介绍系统 - 改进版 */
 .mh-hunter, .mh-other {
   --mh-bg: #f8f5e6;
   --mh-border: #8b4513;
   --mh-label-color: #654321;
   --mh-value-color: #222;
-  
   background: var(--mh-bg);
   border: 2px solid var(--mh-border);
   border-radius: 8px;
   padding: 16px;
   margin: 16px 0;
-  max-width: 600px;
+  max-width: 720px;
 }
 
 .mh-title {
@@ -34,50 +33,53 @@ lang: ''
   font-weight: bold;
 }
 
-/* 猎人专用标签生成 */
-.mh-hunter > div:not(.mh-title)::before {
+/* 统一的左侧标签布局：使用绝对定位的 ::before 保证多行内容对齐 */
+.mh-hunter > div:not(.mh-title),
+.mh-other > div:not(.mh-title) {
+  position: relative;
+  padding-left: 120px;
+  margin: 8px 0;
+  color: var(--mh-value-color);
+}
+
+.mh-hunter > div:not(.mh-title)::before,
+.mh-other > div:not(.mh-title)::before {
   content: attr(data-label) "：";
   color: var(--mh-label-color);
   font-weight: bold;
-  display: inline-block;
-  min-width: 100px;
-}
-
-.mh-hunter > div:not(.mh-title) {
-  color: var(--mh-value-color);
-  margin: 8px 0;
-  padding-left: 10px;
-}
-
-/* 装备部分特殊处理 */
-.mh-hunter .mh-equipment {
-  margin-top: 8px;
-  padding-left: 110px; /* 对齐其他字段 */
-}
-
-.mh-hunter .mh-equipment::before {
-  content: "装备" "：";
-  color: var(--mh-label-color);
-  font-weight: bold;
   position: absolute;
-  margin-left: -110px;
-  min-width: 100px;
+  left: 0;
+  top: 0;
+  width: 110px;
+  display: block;
 }
 
-.mh-equipment > div::before {
+/* 装备：防具作为一个独立框体，位于同一标签列 */
+.mh-equipment { }
+.mh-equipment .armor-box {
+  background:#fff;
+  border:1px dashed #cfcfcf;
+  padding:10px;
+  border-radius:6px;
+}
+.mh-equipment .armor-box > div {
+  margin:6px 0;
+}
+.mh-equipment .armor-box > div::before {
   content: attr(data-part) "：";
   color: var(--mh-label-color);
   font-weight: bold;
   display: inline-block;
-  min-width: 50px;
+  min-width: 60px;
   margin-right: 8px;
 }
 
+/* 连招：第一行与标签同行，后续多行自动对齐 */
 .mh-combo {
   background: #fff8dc;
   border-left: 3px solid #ffa500;
   padding: 8px;
-  margin: 8px 0 8px 110px;
+  white-space: pre-line;
 }
 
 .mh-description {
@@ -87,20 +89,18 @@ lang: ''
   line-height: 1.5;
 }
 
-/* 其他人物专用标签生成 */
-.mh-other > div:not(.mh-title)::before {
-  content: attr(data-label) "：";
-  color: var(--mh-label-color);
-  font-weight: bold;
-  display: inline-block;
-  min-width: 80px;
-}
-
-.mh-other > div:not(.mh-title) {
-  color: var(--mh-value-color);
-  margin: 8px 0;
-  padding-left: 10px;
-}
+/* 怪物表格封装样式 */
+.mh-monster-table { border-collapse: collapse; width: 100%; }
+.mh-monster-table th, .mh-monster-table td { border:1px solid #ddd; padding:8px; vertical-align: top; }
+.mh-monster-table thead th { background:#f3f3f3; }
+.monster-name { line-height:1.15; }
+.monster-name .cn { font-weight:700; }
+.monster-name .jp { font-family: 'Source Han Serif JP', serif; color:#444; font-size:0.95em; }
+.monster-tag { display:inline-block; width:10px; height:10px; border-radius:2px; margin-left:8px; vertical-align:middle; }
+.tag-large { background:#000; }
+.tag-small { background:#9e9e9e; }
+.tag-elder { background:#3b82f6; }
+.tag-special { background:#ef4444; }
 
 </style>
 
@@ -126,14 +126,16 @@ lang: ''
   <div data-label="种族">人类</div>
   <div data-label="武器类型">太刀</div>
   <div data-label="武器">飞龙刀【朱】</div>
-  <div class="mh-equipment">
-    <div data-part="头甲">火龙S头盔</div>
-    <div data-part="胸甲">火龙S铠甲</div>
-    <div data-part="腕甲">火龙S腕甲</div>
-    <div data-part="腰甲">火龙S腰甲</div>
-    <div data-part="腿甲">火龙S腿甲</div>
+  <div class="mh-equipment" data-label="装备">
+    <div class="armor-box">
+      <div data-part="头甲">火龙S头盔</div>
+      <div data-part="胸甲">火龙S铠甲</div>
+      <div data-part="腕甲">火龙S腕甲</div>
+      <div data-part="腰甲">火龙S腰甲</div>
+      <div data-part="腿甲">火龙S腿甲</div>
+    </div>
   </div>
-  <div class="mh-combo" data-label="连招"><br>纵斩连段<br>气刃三连斩连段（气刃值）<br>回避（精回）—武士道气刃无双斩连段<br>勇气状态后：刚气刃斩1（招架）—勇气气刃无双斩连段|此连段中，刚气刃斩1只能减弱伤害，不能完全免除。<br>勇气纳刀连段</div>
+  <div class="mh-combo" data-label="连招">纵斩连段<br>（气刃值）气刃三连斩连段<br>回避—（精回）武士道气刃无双斩连段<br>（勇气）弱勇气刚气刃斩连段<br>勇气纳刀连段</div>
   <div class="mh-description" data-label="人物介绍">小说主角。</div>
 </div>
     
@@ -151,14 +153,16 @@ lang: ''
   <div data-label="种族">人类</div>
   <div data-label="武器类型">未设定</div>
   <div data-label="武器">未设定</div>
-  <div class="mh-equipment">
-    <div data-part="头甲">未设定</div>
-    <div data-part="胸甲">未设定</div>
-    <div data-part="腕甲">未设定</div>
-    <div data-part="腰甲">未设定</div>
-    <div data-part="腿甲">未设定</div>
+  <div class="mh-equipment" data-label="装备">
+    <div class="armor-box">
+      <div data-part="头甲">未设定</div>
+      <div data-part="胸甲">未设定</div>
+      <div data-part="腕甲">未设定</div>
+      <div data-part="腰甲">未设定</div>
+      <div data-part="腿甲">未设定</div>
+    </div>
   </div>
-  <div class="mh-combo" data-label="连招"><br>未设定</div>
+  <div class="mh-combo" data-label="连招">未设定</div>
   <div class="mh-description" data-label="人物介绍">雪泽阿部缘的教官。是一名老猎人。</div>
 </div>
 
@@ -170,14 +174,16 @@ lang: ''
   <div data-label="种族">人类</div>
   <div data-label="武器类型">铳枪</div>
   <div data-label="武器">雷铳枪海龙</div>
-  <div class="mh-equipment">
-    <div data-part="头甲">海龙S头盔</div>
-    <div data-part="胸甲">海龙S铠甲</div>
-    <div data-part="腕甲">海龙S腕甲</div>
-    <div data-part="腰甲">海龙S腰甲</div>
-    <div data-part="腿甲">海龙S腿甲</div>
+  <div class="mh-equipment" data-label="装备">
+    <div class="armor-box">
+      <div data-part="头甲">海龙S头盔</div>
+      <div data-part="胸甲">海龙S铠甲</div>
+      <div data-part="腕甲">海龙S腕甲</div>
+      <div data-part="腰甲">海龙S腰甲</div>
+      <div data-part="腿甲">海龙S腿甲</div>
+    </div>
   </div>
-  <div class="mh-combo" data-label="连招"><br>突刺下砸连段<br>炮击连段<br>龙击炮连段<br>蓄力炮击连段<br>（月震值）深海月震击连段</div>
+  <div class="mh-combo" data-label="连招">突刺下砸连段<br>炮击连段<br>龙击炮连段<br>蓄力炮击连段<br>（月震值）深海月震击连段</div>
   <div class="mh-description" data-label="人物介绍">新大陆古龙调查团猎人，是雪泽阿部缘和平泽池荣怒的舍友。来自莫家村，擅长使用铳枪进行水战。攻击能够积攒月震值发动“深海月震击连段”。</div>
 </div>
 
@@ -187,14 +193,16 @@ lang: ''
   <div data-label="种族">人类</div>
   <div data-label="武器类型">盾斧</div>
   <div data-label="武器">未设定</div>
-  <div class="mh-equipment">
-    <div data-part="头甲">未设定</div>
-    <div data-part="胸甲">未设定</div>
-    <div data-part="腕甲">未设定</div>
-    <div data-part="腰甲">未设定</div>
-    <div data-part="腿甲">未设定</div>
+  <div class="mh-equipment" data-label="装备">
+    <div class="armor-box">
+      <div data-part="头甲">未设定</div>
+      <div data-part="胸甲">未设定</div>
+      <div data-part="腕甲">未设定</div>
+      <div data-part="腰甲">未设定</div>
+      <div data-part="腿甲">未设定</div>
+    </div>
   </div>
-  <div class="mh-combo" data-label="连招"><br>未设定</div>
+  <div class="mh-combo" data-label="连招">未设定</div>
   <div class="mh-description" data-label="人物介绍">新大陆古龙调查团猎人，猎人登记地点是旧大陆的东多尔玛，出身哪个村就不知道了。</div>
 </div>
 
@@ -204,15 +212,17 @@ lang: ''
   <div data-label="种族">人类</div>
   <div data-label="武器类型">弓箭</div>
   <div data-label="武器">未设定</div>
-  <div class="mh-equipment">
-    <div data-part="头甲">未设定</div>
-    <div data-part="胸甲">未设定</div>
-    <div data-part="腕甲">未设定</div>
-    <div data-part="腰甲">未设定</div>
-    <div data-part="腿甲">未设定</div>
+  <div class="mh-equipment" data-label="装备">
+    <div class="armor-box">
+      <div data-part="头甲">未设定</div>
+      <div data-part="胸甲">未设定</div>
+      <div data-part="腕甲">未设定</div>
+      <div data-part="腰甲">未设定</div>
+      <div data-part="腿甲">未设定</div>
+    </div>
   </div>
-  <div class="mh-combo" data-label="连招"><br>未设定</div>
-  <div class="mh-description">新大陆古龙调查团猎人，黑发灰眼，穿着长袍，比较东方。</div>
+  <div class="mh-combo" data-label="连招">未设定</div>
+  <div class="mh-description" data-label="人物介绍">新大陆古龙调查团猎人，黑发灰眼，穿着长袍，比较东方。</div>
 </div>
 
 8.  <b>希恩·拉法叶尔（Siœn Raphaël）</b>
@@ -221,14 +231,16 @@ lang: ''
   <div data-label="种族">人类</div>
   <div data-label="武器类型">大剑/太刀</div>
   <div data-label="武器">冷冻旗鱼</div>
-  <div class="mh-equipment">
-    <div data-part="头甲">蔷薇头饰alpha</div>
-    <div data-part="胸甲">蔷薇服装alpha</div>
-    <div data-part="腕甲">蔷薇腕甲alpha</div>
-    <div data-part="腰甲">蔷薇皮带alpha</div>
-    <div data-part="腿甲">蔷薇靴alpha</div>
+  <div class="mh-equipment" data-label="装备">
+    <div class="armor-box">
+      <div data-part="头甲">蔷薇头饰alpha</div>
+      <div data-part="胸甲">蔷薇服装alpha</div>
+      <div data-part="腕甲">蔷薇腕甲alpha</div>
+      <div data-part="腰甲">蔷薇皮带alpha</div>
+      <div data-part="腿甲">蔷薇靴alpha</div>
+    </div>
   </div>
-  <div class="mh-combo" data-label="连招"><br>真·蓄力斩连段<br>飞身跃入斩连段<br>神岚拖刀三连斩连段</div>
+  <div class="mh-combo" data-label="连招">真·蓄力斩连段<br>飞身跃入斩连段<br>神岚拖刀三连斩连段</div>
   <div class="mh-description" data-label="人物介绍">新大陆古龙调查团猎人，黑发灰眼，穿着长袍，比较东方。</div>
 </div>
 
@@ -238,31 +250,35 @@ lang: ''
   <div data-label="种族">人类</div>
   <div data-label="武器类型">大剑</div>
   <div data-label="武器">龙颚剑</div>
-  <div class="mh-equipment">
-    <div data-part="头甲">未设定</div>
-    <div data-part="胸甲">未设定</div>
-    <div data-part="腕甲">未设定</div>
-    <div data-part="腰甲">未设定</div>
-    <div data-part="腿甲">未设定</div>
+  <div class="mh-equipment" data-label="装备">
+    <div class="armor-box">
+      <div data-part="头甲">未设定</div>
+      <div data-part="胸甲">未设定</div>
+      <div data-part="腕甲">未设定</div>
+      <div data-part="腰甲">未设定</div>
+      <div data-part="腿甲">未设定</div>
+    </div>
   </div>
-  <div class="mh-combo" data-label="连招"><br>真·蓄力斩连段<br>飞身跃入斩连段</div>
+  <div class="mh-combo" data-label="连招">真·蓄力斩连段<br>飞身跃入斩连段</div>
   <div class="mh-description" data-label="人物介绍">新大陆古龙调查团猎人，也就是游戏里的调查组组长其人。</div>
 </div>
 
-10.  蕾姆·帕克林（Rem Paklien）
+10.   蕾姆·帕克林（Rem Pakline）
 <div class="mh-hunter">
   <div data-label="出身地">新大陆</div>
   <div data-label="种族">人类</div>
   <div data-label="武器类型">大剑</div>
   <div data-label="武器">防卫队炎刃型大剑2</div>
-  <div class="mh-equipment">
-    <div data-part="头甲">封印的龙骸布</div>
-    <div data-part="胸甲">惨爪alpha</div>
-    <div data-part="腕甲">未设定</div>
-    <div data-part="腰甲">未设定</div>
-    <div data-part="腿甲">未设定</div>
+  <div class="mh-equipment" data-label="装备">
+    <div class="armor-box">
+      <div data-part="头甲">封印的龙骸布</div>
+      <div data-part="胸甲">惨爪alpha</div>
+      <div data-part="腕甲">未设定</div>
+      <div data-part="腰甲">未设定</div>
+      <div data-part="腿甲">未设定</div>
+    </div>
   </div>
-  <div class="mh-combo" data-label="连招"><br>真·蓄力斩连段<br>飞身跃入斩连段</div>
+  <div class="mh-combo" data-label="连招">真·蓄力斩连段<br>飞身跃入斩连段</div>
   <div class="mh-description" data-label="人物介绍">新大陆古龙调查团猎人，女性，穿着清凉。是阿部缘在新大陆的启蒙导师。</div>
 </div>
 
@@ -270,7 +286,7 @@ lang: ''
 
 1.  <b>毁灭仁汨村的斩龙</b> 暂定是一头不明原因发狂的护死灭刃斩龙，是斩龙的唯一高度特化特殊个体。
 
-2.  <b>阿里村附近的怪物</b>
+2.  <b>阿里村附近的怪物</b> 其中<span style="color: #0075ff">蓝色</span>表示古龙，<span style="color: #ff0000">红色</span>表示特殊个体。
 
 <table style="border-collapse: collapse;">
   <thead>
@@ -305,13 +321,13 @@ lang: ''
     </tr>
     <tr>
       <td>泡狐龙<br><span style="font-family: 'Source Han Serif JP'">泡狐竜タマミツネ</span></td>
-      <td>霞龙<br><span style="font-family: 'Source Han Serif JP'">霞龍オオナズチ</span></td>
+      <td><span style="color: #0075ff">霞龙<br><span style="font-family: 'Source Han Serif JP'">霞龍オオナズチ</span></span></td>
       <td>绿迅龙<br><span style="font-family: 'Source Han Serif JP'">緑迅竜ナルガクルガ亜種</span></td>
     </tr>
     <tr>
       <td>武将矢蟹<br><span style="font-family: 'Source Han Serif JP'">矢蟹ブショウイザミ</span></td>
       <td></td>
-      <td>火神龙<br><span style="font-family: 'Source Han Serif JP'">火神龍アペフチ・カムイ</span></td>
+      <td><span style="color: #0075ff">火神龙<br><span style="font-family: 'Source Han Serif JP'">火神龍アペフチ・カムイ</span></span></td>
     </tr>
     <tr>
       <td></td>
@@ -319,7 +335,7 @@ lang: ''
       <td>守望火神龙<br><span style="font-family: 'Source Han Serif JP'">インカルン・アペフチ・カムイ</span></td>
     </tr>
     <tr>
-      <td rowspan="8">卯桥留山部雪原<br><ruby>卯橋留山部<rt>ウパㇱルヤンペ</rt></ruby>雪原</span></td>
+      <td rowspan="8">卯桥留山部雪原<br><span style="font-family: 'Source Han Serif JP'"><ruby>卯橋留山部<rt>ウパㇱルヤンペ</rt></ruby>雪原</span></td>
       <td>白熊兽<br><span style="font-family: 'Source Han Serif JP'">白熊獣アオアシラ亜種</span></td>
       <td>雹狐龙<br><span style="font-family: 'Source Han Serif JP'">雹狐竜タマミツネ亜種</span></td>
       <td>碎铳鹿<br><span style="font-family: 'Source Han Serif JP'">砕銃鹿エケエクス希少種</span></td>
@@ -341,23 +357,23 @@ lang: ''
     </tr>
     <tr>
       <td>风漂龙<br><span style="font-family: 'Source Han Serif JP'">風漂竜レイギエナ</span></td>
-      <td>钢龙<br><span style="font-family: 'Source Han Serif JP'">鋼龍クシャルダオラ</span></td>
+      <td><span style="color: #0075ff">钢龙<br><span style="font-family: 'Source Han Serif JP'">鋼龍クシャルダオラ</span></span></td>
       <td>巨兽<br><span style="font-family: 'Source Han Serif JP'">巨獣ガムート</span></td>
     </tr>
     <tr>
       <td>冰土砂龙<br><span style="font-family: 'Source Han Serif JP'">氷砕竜ボルボロス亜種</span></td>
-      <td>杀戟龙<br><span style="font-family: 'Source Han Serif JP'">殺戟龍シャチホコ</span></td>
+      <td><span style="color: #0075ff">杀戟龙<br><span style="font-family: 'Source Han Serif JP'">殺戟龍シャチホコ</span></span></td>
       <td>喙裂丹首鸟<br><span style="font-family: 'Source Han Serif JP'">喙裂けたグルスハケ</span></td>
     </tr>
     <tr>
       <td>雪狮子<br><span style="font-family: 'Source Han Serif JP'">雪獅子ドドブランゴ</span></td>
       <td></td>
-      <td>麒麟<br><span style="font-family: 'Source Han Serif JP'">幻獣キリン</span></td>
+      <td><span style="color: #0075ff">麒麟<br><span style="font-family: 'Source Han Serif JP'">幻獣キリン</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td>吹雪龙<br><span style="font-family: 'Source Han Serif JP'">吹雪龍メ・ウウェチ</span></td>
+      <td><span style="color: #0075ff">吹雪龙<br><span style="font-family: 'Source Han Serif JP'">吹雪龍メ・ウウェチ</span></span></td>
     </tr>
     <tr>
       <td rowspan="9">乌美怒振火山<br><span style="font-family: 'Source Han Serif JP'"><ruby>烏美怒振<rt>ウフイヌプリ</rt></ruby>火山</td>
@@ -377,36 +393,36 @@ lang: ''
     </tr>
     <tr>
       <td>岩蜗<br><span style="font-family: 'Source Han Serif JP'">岩蝸ルビマキマ</span></td>
-      <td>炎王龙<br><span style="font-family: 'Source Han Serif JP'">炎王龍テオ・テスカトル</span></td>
+      <td><span style="color: #0075ff">炎王龙<br><span style="font-family: 'Source Han Serif JP'">炎王龍テオ・テスカトル</span></span></td>
       <td>金火龙<br><span style="font-family: 'Source Han Serif JP'">金火竜リオレイア希少種</span></td>
     </tr>
     <tr>
       <td>铠龙<br><span style="font-family: 'Source Han Serif JP'">鎧竜グラビモス</span></td>
-      <td>炎妃龙<br><span style="font-family: 'Source Han Serif JP'">炎妃龍ナナ・テスカトリ</span></td>
+      <td><span style="color: #0075ff">炎妃龙<br><span style="font-family: 'Source Han Serif JP'">炎妃龍ナナ・テスカトリ</span></span></td>
       <td>银火龙<br><span style="font-family: 'Source Han Serif JP'">銀火竜リオレウス希少種</span></td>
     </tr>
     <tr>
       <td>将军镰蟹<br><span style="font-family: 'Source Han Serif JP'">鎌蟹ショウグンギザミ</span></td>
       <td></td>
-      <td>幼熔山龙<br><span style="font-family: 'Source Han Serif JP'">幼きゾラ・マグダラオス</span></td>
+      <td><span style="color: #0075ff">幼熔山龙<br><span style="font-family: 'Source Han Serif JP'">幼きゾラ・マグダラオス</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td>姬鬼龙<br><span style="font-family: 'Source Han Serif JP'">姫鬼龍フィジャ・サンクタ</span></td>
+      <td><span style="color: #0075ff">姬鬼龙<br><span style="font-family: 'Source Han Serif JP'">姫鬼龍フィジャ・サンクタ</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td>爆炎渊源姬鬼龙<br><span style="font-family: 'Source Han Serif JP'">爆炎の淵源フィジャ・サンクタ</span></td>
+      <td><span style="color: #ff0000">爆炎渊源姬鬼龙<br><span style="font-family: 'Source Han Serif JP'">爆炎の淵源フィジャ・サンクタ</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td>护死灭刃斩龙<br><span style="font-family: 'Source Han Serif JP'">護死滅刃ディノバルド</span></td>
+      <td><span style="color: #ff0000">护死灭刃斩龙<br><span style="font-family: 'Source Han Serif JP'">護死滅刃ディノバルド</span></span></td>
     </tr>
     <tr>
-      <td rowspan="9">琉绘山沙滩<br><ruby>琉絵山<rt>ルウェサン</rt></ruby>砂浜</span></td>
+      <td rowspan="9">琉绘山沙滩<br><span style="font-family: 'Source Han Serif JP'"><ruby>琉絵山<rt>ルウェサン</rt></ruby>砂浜</span></td>
       <td>啮鱼龙<br><span style="font-family: 'Source Han Serif JP'">噛魚竜アラマキトス</span></td>
       <td>白一角龙<br><span style="font-family: 'Source Han Serif JP'">白一角竜モノブロス亜種</span></td>
       <td>刺鲀龙<br><span style="font-family: 'Source Han Serif JP'">刺魨竜テトラヴァルヌ</span></td>
@@ -419,7 +435,7 @@ lang: ''
     <tr>
       <td>翔虎鸟<br><span style="font-family: 'Source Han Serif JP'">翔虎鳥ハリリタラサ</span></td>
       <td>千刃龙<br><span style="font-family: 'Source Han Serif JP'">千刃竜セレルギオス</span></td>
-      <td>痹蛸<br><span style="font-family: 'Source Han Serif JP'">痹蛸オクエペケセ</span></td>
+      <td>痹蛸<br><span style="font-family: 'Source Han Serif JP'">痺蛸オクエペケセ</span></td>
     </tr>
     <tr>
       <td>一角龙<br><span style="font-family: 'Source Han Serif JP'">一角竜モノブロス</span></td>
@@ -428,7 +444,7 @@ lang: ''
     </tr>
     <tr>
       <td>土砂龙<br><span style="font-family: 'Source Han Serif JP'">土砂竜ボルボロス</span></td>
-      <td>巨鲑龙<br><span style="font-family: 'Source Han Serif JP'">巨鮭龍カムイ・ペカンケル</span></td>
+      <td><span style="color: #0075ff">巨鲑龙<br><span style="font-family: 'Source Han Serif JP'">巨鮭龍カムイ・ペカンケル</span></span></td>
       <td>黑角龙<br><span style="font-family: 'Source Han Serif JP'">黒角竜ディアブロス亜種</span></td>
     </tr>
     <tr>
@@ -439,17 +455,17 @@ lang: ''
     <tr>
       <td></td>
       <td></td>
-      <td>载世巨鲑龙<br><span style="font-family: 'Source Han Serif JP'">世を載せるカムイ・ペカンケル</span></td>
+      <td><span style="color: #ff0000">载世巨鲑龙<br><span style="font-family: 'Source Han Serif JP'">世を載せるカムイ・ペカンケル</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td>溟波龙<br><span style="font-family: 'Source Han Serif JP'">溟波龍ネロミェール</span></td>
+      <td><span style="color: #0075ff">溟波龙<br><span style="font-family: 'Source Han Serif JP'">溟波龍ネロミェール</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td>古机龙<br><span style="font-family: 'Source Han Serif JP'">古機龍イォンネット</span></td>
+      <td><span style="color: #0075ff">古机龙<br><span style="font-family: 'Source Han Serif JP'">古機龍イォンネット</span></span></td>
     </tr>
   </tbody>
 </table>
@@ -460,9 +476,14 @@ lang: ''
    
 2.  <b>阿里村</b> 仁汨村的邻村。明日利玛的故乡。雪泽阿部缘和平泽池荣怒幸存下来后被阿里村的猎人小队接到了阿里村。
    
-3.  <b>龙通村</b> 以汉族为原型的村子。
+3.  <b>龙通村</b> 以汉族为原型的村子。因为怪猎世界观很缺少汉族名字的设定，所以不得不添加这个。
    
-4.  <b>新大陆古龙调查团的宿舍</b> 标准的是三人间，一般情况下有三张西式床具，还有武器架、道具箱等陈设。也有一些生活用具。
+4.  <b>古代树森林</b> 也就是MHW的古代树森林地图。下面是一些具体地名：
+> 临海平原：1区的开阔平原。
+> 毒蔓草树林：6区的树林。
+> 林荫隧道：7区的隧道。
+> 藤蔓树林：8区的树林。
+> 岩柱瀑布：9区的大斜坡和瀑布。
    
 
 ## 连段
@@ -475,6 +496,7 @@ lang: ''
 - 气刃值：需要消耗太刀的气刃值进行发动。
 - 气刃槽：需要消耗太刀的气刃槽等级进行发动。
 - 受击：受到攻击自动派生，但不是反击等动作。
+- 勇气：需要在勇气状态。
 
 ### 大剑
 
@@ -504,7 +526,7 @@ lang: ''
    
 7.  <b>勇气刚气刃斩连段</b> MHXX/GU的勇气风格太刀，在勇气模式下发动GP打出的连段，基本动作是（GP）—刚气刃斩1—刚气刃斩2—刚气刃斩3。
    
-8.  <b>勇气气刃无双斩连段</b> 原创动作。是弱化的勇气刚气刃斩连段。基本动作是（GP）—弱刚气刃斩1—气刃一文字斩—气刃无双斩。即使发动刚气刃斩1的GP效果，也只能抵消部分伤害，然后接速度相对较慢的气刃一文字斩和气刃无双斩。
+8.  <b>弱勇气刚气刃斩连段</b> 原创动作。是弱化的勇气刚气刃斩连段。基本动作是（GP）—弱刚气刃斩1—气刃一文字斩—气刃无双斩。即使发动刚气刃斩1的GP效果，也只能抵消部分伤害，然后接速度相对较慢的气刃一文字斩和气刃无双斩。
    
 9.  <b>飞翔踢连段</b> MHR加入的连段。基本动作是飞翔踢—下坠突刺/（气刃槽）气刃兜割。消耗一层气刃槽。
 
@@ -534,8 +556,24 @@ lang: ''
 
 7.  <b>蓄力炮击连段</b> MHP3加入的连段。可以蓄力炮击，蓄力炮击后还可以快速装填弹药。
 
-8.  <b>深海月震击连段</b> <span style="font-family: 'Source Han Serif JP'">深海月震撃連携</span> 原创动作。灵感来自大海龙跃出水面的动作。基本动作是下砸—（月震值）—新月踢—深海月震击。精准防御可以积攒月震值，月震值满后可以在下砸后派生新月踢，将铳枪狠狠插在地上，然后全力起跳，在空中朝着地面全弹发射把猎人炸起来，用盾牌重重砸在怪物身上起跳，没有继续派生则会落地。新月踢后可派生深海月震击，在空中甩一下铳枪装满弹，将铳枪重重扎到怪物身上，进行全弹+龙击炮射击后，挥起铳枪下砸落地。
+8.  <b>深海月震击连段</b> <span style="font-family: 'Source Han Serif JP'">深海月震撃連携</span> 原创动作。灵感来自大海龙跃出水面的动作。基本动作是下砸—（月震值）新月踢—深海月震击。精准防御可以积攒月震值，月震值满后可以在下砸后派生新月踢，将铳枪狠狠插在地上，然后全力起跳，在空中朝着地面发射一发把猎人炸起来，用盾牌重重砸在怪物身上起跳，没有继续派生则会落地。新月踢后可派生深海月震击，在空中甩一下铳枪快速装弹，下落时将铳枪重重扎到怪物身上，进行全弹+龙击炮射击后，挥起铳枪下砸，后跳落地。
 
 9.  <b>遮刺连段</b> <span style="font-family: 'Source Han Serif JP'">遮り突き連携</span> 原创动作。基本动作是防御突刺—位移遮刺。在防御突刺后可以刺向怪物，然后用盾牌击打怪物向后跳开。也可以向左向右位移。
 
-## 动作
+## 一些细节
+
+### 武器和用具等
+
+1.  <b>飞翔爪和投射器</b> 飞翔爪抓在怪物身上后，需要按收索钮收紧绳子来攀附到怪物身上。投射器分为单发和全弹发射两种模式，通过转动快慢机切换。另外，软化的具体原理是通过给怪物造成伤口来增加对这个部位的攻击力。
+
+2.  <b>气刃和气刃槽</b> 太刀上或隐或显，会有气刃槽结构，攻击获得的气刃值储存在这里。另外气刃槽等级升高后会发出不同颜色的光。
+
+3. <b>消耗品的设定</b> 诸如砥石、捕虫网、矿镐等，在旧大陆都是要自己准备的。而在新大陆古龙调查团，制式砥石、制式捕虫网、制式矿镐等，连同制式的道具袋一同由调查团统一发放，放在道具袋统一的位置。后来这种制度也随着黑龙的讨伐传回了旧大陆。
+
+4. <b>导虫笼</b> 导虫笼是新大陆古龙调查团统一配发的，据传是总司令所发明。需要追踪怪物时，可以将捡到的样本夹在样本夹上，导虫就会追踪怪物。其他事项同理。 
+
+5. <b>狩猎中的吃吃喝喝</b> 各种包装实际上都是使用生物材料制作的，扔在环境中就可以讲解。你也不想狩猎的时候还要收拾垃圾吧？另外，刚来新大陆的猎人可能还不习惯跑步喝药的作风。每个人都有自己的习惯——站着吃药吃得快，跑着吃药比较安全。
+  
+### 住宿
+
+1. <b>新大陆古龙调查团的宿舍</b> 标准的是三人间，一般情况下有三张西式床具，还有武器架、道具箱等陈设。也有一些生活用具。
