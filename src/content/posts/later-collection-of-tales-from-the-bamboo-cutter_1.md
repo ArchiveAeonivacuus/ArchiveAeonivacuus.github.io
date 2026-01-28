@@ -1,5 +1,5 @@
 ---
-title: 竹取拾遗物语——一-初来地上
+title: 竹取拾遗物语——一·初来地上
 published: 2025-12-30
 description: ''
 image: ''
