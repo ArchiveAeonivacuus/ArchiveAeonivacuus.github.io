@@ -353,13 +353,13 @@ lang: ''
 [^6]: 卖。
 [^7]: 是忘樱岛的一棵樱树，有一则关于踯躅一族孤女踯躅香织的传说。树前供奉着一首息律。其木所制护符据传能够辟邪。
 [^8]: 魂魄被死灵樱吸引，一般是先被渡航松从远处引来。
-[^9]: “皐月待つ　花橘の　香を嗅げば　昔の人の　袖の香ぞする”（丛锦待皐月　一来橘绿香　衷情难克已　怀旧袖中芳）句。
+[^9]: “<span style="font-family: 'MS Mincho'">皐月待つ　花橘の　香を嗅げば　昔の人の　袖の香ぞする</span>”（丛锦待皐月　一来橘绿香　衷情难克已　怀旧袖中芳）句。
 [^10]: 也有人唤息律为烟瘴。
-[^11]: <ruby style="font-family: 'Asebi Mincho'"><ruby>神月<rt>かむづき</rt></ruby>，大瀛诸神不似《古事记》中流窜出云，故而只有“神月”称，非“神无月”“神有月”。
+[^11]: <span style="font-family: 'Asebi Mincho'"><ruby>神月<rt>かむづき</rt></ruby></span>，大瀛诸神不似《古事记》中流窜出云，故而只有“神月”称，非“神无月”“神有月”。
 [^12]: 穹宇类聚落的息律维持部门。天规维持穹顶存在，保证中心区域息律的比良—娑加低（即息律环境低波动），保证生产生活。
 [^13]: <span  style="font-family: 'Asebi Mincho'"><ruby>糗<rt>はつたい</rt></ruby>・<ruby>麨<rt>むぎこがし</rt></ruby></span>，炒制面饼。
-[^14]: <ruby style="font-family: 'Asebi Mincho'">糒<rt>かれいひ</rt></ruby>），晒制饭团。
-[^15]: 《锖(qiāng)卫志・采<ruby>藚<rt>xù</rt></ruby>》：“<span style="font-family: 'Asebi Mincho'">上<ruby><sub>二</sub><rt>グル</rt></ruby>状書<ruby><sub>一</sub><rt>ヲ</rt></ruby><ruby>事<rt>こと</rt></ruby>、曰<ruby> <rt>ク</rt></ruby>災民<ruby> <rt>ニ</rt></ruby>有<ruby><sub>二</sub><rt>リ</rt></ruby>甚<ruby> <rt>キ</rt></ruby><ruby>者<rt>もの</rt></ruby><sub>一</sub>、<ruby>樹皮<rt>じゆひ</rt></ruby>且<ruby> <rt>ツ</rt></ruby><ruby>殍骨<rt>へうこつ</rt></ruby><ruby> <rt>モ</rt></ruby><ruby>亦<rt>また</rt></ruby>䑛<ruby><sub>レ</sub><rt>メテ</rt></ruby>石<ruby> <rt>ヲ</rt></ruby>而嚥<ruby> <rt>ム</rt></ruby></span>……”舔舐石头是为了增加咸味。
+[^14]: <ruby style="font-family: 'Asebi Mincho'">糒<rt>かれいひ</rt></ruby>，晒制饭团。
+[^15]: 《<ruby>锖<rt>qiāng</rt></ruby>卫志・采<ruby>藚<rt>xù</rt></ruby>》：“<span style="font-family: 'Asebi Mincho'">上<ruby><sub>二</sub><rt>グル</rt></ruby>状書<ruby><sub>一</sub><rt>ヲ</rt></ruby><ruby>事<rt>こと</rt></ruby>、曰<ruby> <rt>ク</rt></ruby>災民<ruby> <rt>ニ</rt></ruby>有<ruby><sub>二</sub><rt>リ</rt></ruby>甚<ruby> <rt>キ</rt></ruby><ruby>者<rt>もの</rt></ruby><sub>一</sub>、<ruby>樹皮<rt>じゆひ</rt></ruby>且<ruby> <rt>ツ</rt></ruby><ruby>殍骨<rt>へうこつ</rt></ruby><ruby> <rt>モ</rt></ruby><ruby>亦<rt>また</rt></ruby>䑛<ruby><sub>レ</sub><rt>メテ</rt></ruby>石<ruby> <rt>ヲ</rt></ruby>而嚥<ruby> <rt>ム</rt></ruby></span>……”舔舐石头是为了增加咸味。
 [^16]: 息律本无色，但从人的视角看，一般觉得息律越高，视野越紫。
 [^17]: 弯弯曲曲。
 [^18]: 大瀛阴阳道按照施术的性质特点分“流”，花魂混流意思是花流和魂流的特点兼而有之。
