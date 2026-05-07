@@ -1,5 +1,6 @@
 ---
-import "../styles/custom-fonts.css";
+// custom fonts are loaded conditionally: homepage loads them immediately,
+// other pages load them lazily via script to reduce first paint cost.
 
 import ConfigCarrier from "@components/ConfigCarrier.astro";
 import { profileConfig, siteConfig } from "@/config";
@@ -75,7 +76,38 @@ const bannerOffset =
 	  data-overlayscrollbars-initialize
 >
 	<head>
-		<link rel="stylesheet" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/@wc1font/source-han-serif-sc-vf/font.css" />
+		{isHomePage ? (
+			<>
+				<link rel="stylesheet" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/@wc1font/source-han-serif-sc-vf/font.css" />
+				<link rel="preload" href="/fonts/SourceHanSerifJP-Regular.ttf" as="font" type="font/ttf" crossorigin />
+				<link rel="preload" href="/fonts/AsebiMin-Light.otf" as="font" type="font/otf" crossorigin />
+				<link rel="stylesheet" href="/styles/custom-fonts.css" />
+			</>
+		) : (
+			<script is:inline>
+				(function(){
+					const loadFonts = () => {
+						const l = document.createElement('link');
+						l.rel = 'stylesheet';
+						l.href = '/styles/custom-fonts.css';
+						l.media = 'print';
+						l.onload = () => { l.media = 'all'; };
+						document.head.appendChild(l);
+
+						const cdn = document.createElement('link');
+						cdn.rel = 'stylesheet';
+						cdn.crossOrigin = 'anonymous';
+						cdn.href = 'https://cdn.jsdelivr.net/npm/@wc1font/source-han-serif-sc-vf/font.css';
+						document.head.appendChild(cdn);
+					};
+					if ('requestIdleCallback' in window) {
+						requestIdleCallback(loadFonts, {timeout:2000});
+					} else {
+						window.addEventListener('load', () => setTimeout(loadFonts, 1500));
+					}
+				})();
+			</script>
+		)}
 		<title>{pageTitle}</title>
 
 		<meta charset="UTF-8" />

@@ -1,11 +1,10 @@
-@import url('https://cdn.jsdelivr.net/npm/@wc1font/source-han-serif-sc-vf/font.css');
-
 @font-face {
   font-family: "Asebi Mincho";
   src: 
     local('Asebi Mincho'),
     local('馬酔木明朝'),
     url("/fonts/AsebiMin-Light.otf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -13,6 +12,7 @@
   src: 
     local('KaiTi'),
     url('/fonts/simkai.ttf');
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +20,7 @@
   src: 
     local('DFKai-SB'),
     url('/fonts/標楷體.ttf');
+  font-display: swap;
 }
 
 @font-face {
@@ -27,6 +28,7 @@
   src:
     local('Source Han Serif JP'),
     url('/fonts/SourceHanSerifJP-Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
