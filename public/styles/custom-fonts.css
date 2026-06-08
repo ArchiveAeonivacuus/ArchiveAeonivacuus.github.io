@@ -30,8 +30,7 @@
 	font-family: "Source Han Serif JP";
 	src:
 		local("Source Han Serif JP"),
-		url("/fonts/SourceHanSerifJP-Regular.woff2") format("woff2"),
-		url("/fonts/SourceHanSerifJP-Regular.ttf") format("truetype");
+		url("/fonts/SourceHanSerifJP-Regular.woff2") format("woff2");
 	font-display: swap;
 }
 
@@ -39,8 +38,7 @@
 	font-family: "Source Han Serif Old";
 	src:
 		local("Source Han Serif Old"),
-		url("/fonts/SOURCEHANSERIFOLD-LIGHT.woff2") format("woff2"),
-		url("/fonts/SOURCEHANSERIFOLD-LIGHT.OTF") format("opentype");
+		url("/fonts/SOURCEHANSERIFOLD-LIGHT.woff2") format("woff2");
 	font-display: swap;
 }
 
@@ -49,26 +47,21 @@
 	font-family: "Old English Onglisch";
 	src:
 		local("Old English Onglisch"),
-		url("/fonts/Old English Onglisch.woff2") format("woff2"),
-		url("/fonts/Old English Onglisch.otf") format("opentype");
+		url("/fonts/Old English Onglisch.woff2") format("woff2");
 	font-display: swap;
 }
 
 /* HighTowerText - regular and italic */
 @font-face {
 	font-family: "HighTowerText";
-	src:
-		url("/fonts/HTOWERT.woff2") format("woff2"),
-		url("/fonts/HTOWERT.TTF") format("truetype");
+	src: url("/fonts/HTOWERT.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
 	font-family: "HighTowerText";
-	src:
-		url("/fonts/HTOWERTI.woff2") format("woff2"),
-		url("/fonts/HTOWERTI.TTF") format("truetype");
+	src: url("/fonts/HTOWERTI.woff2") format("woff2");
 	font-weight: 400;
 	font-style: italic;
 	font-display: swap;
