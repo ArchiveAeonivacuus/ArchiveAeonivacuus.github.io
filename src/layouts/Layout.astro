@@ -1,6 +1,5 @@
 ---
-// custom fonts are loaded conditionally: homepage loads them immediately,
-// other pages load them lazily via script to reduce first paint cost.
+import "../styles/custom-fonts.css";
 
 import ConfigCarrier from "@components/ConfigCarrier.astro";
 import { profileConfig, siteConfig } from "@/config";
@@ -76,38 +75,7 @@ const bannerOffset =
 	  data-overlayscrollbars-initialize
 >
 	<head>
-		{isHomePage ? (
-			<>
-				<link rel="stylesheet" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/@wc1font/source-han-serif-sc-vf/font.css" />
-				<link rel="preload" href="/fonts/SourceHanSerifJP-Regular.woff2" as="font" type="font/woff2" crossorigin />
-				<link rel="preload" href="/fonts/AsebiMin-Light.woff2" as="font" type="font/woff2" crossorigin />
-				<link rel="stylesheet" href="/styles/custom-fonts.css" />
-			</>
-		) : (
-			<script is:inline>
-				(function(){
-					const loadFonts = () => {
-						const l = document.createElement('link');
-						l.rel = 'stylesheet';
-						l.href = '/styles/custom-fonts.css';
-						l.media = 'print';
-						l.onload = () => { l.media = 'all'; };
-						document.head.appendChild(l);
-
-						const cdn = document.createElement('link');
-						cdn.rel = 'stylesheet';
-						cdn.crossOrigin = 'anonymous';
-						cdn.href = 'https://cdn.jsdelivr.net/npm/@wc1font/source-han-serif-sc-vf/font.css';
-						document.head.appendChild(cdn);
-					};
-					if ('requestIdleCallback' in window) {
-						requestIdleCallback(loadFonts, {timeout:2000});
-					} else {
-						window.addEventListener('load', () => setTimeout(loadFonts, 1500));
-					}
-				})();
-			</script>
-		)}
+		<link rel="stylesheet" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/@wc1font/source-han-serif-sc-vf/font.css" />
 		<title>{pageTitle}</title>
 
 		<meta charset="UTF-8" />
@@ -172,54 +140,6 @@ const bannerOffset =
 			'page-width': `${PAGE_WIDTH}rem`,
 		}}></style>  <!-- defines global css variables. This will be applied to <html> <body> and some other elements idk why -->
 
-		<!-- Swup hook: update body class immediately on link click and load local font CSS when arriving home -->
-		<script is:inline>
-		(function(){
-			const toPath = (href) => { try { return new URL(href, location.origin).pathname; } catch(e){ return null; } };
-			const setHomeClass = (pathname) => {
-				if (!pathname) return;
-				const isHome = pathname === '/' || pathname === '';
-				if (document.body) document.body.classList.toggle('lg:is-home', isHome);
-			};
-			const loadFontsIfNeeded = (pathname) => {
-				// Only load the local font CSS when arriving at the home page
-				if (pathname !== '/' && pathname !== '') return;
-				if (!document.querySelector('link[href="/styles/custom-fonts.css"]')) {
-					const l = document.createElement('link');
-					l.rel = 'stylesheet';
-					l.href = '/styles/custom-fonts.css';
-					document.head.appendChild(l);
-				}
-				// preload key fonts (matches existing layout preloads)
-				const p1 = '/fonts/SourceHanSerifJP-Regular.woff2';
-				const p2 = '/fonts/AsebiMin-Light.woff2';
-				if (!document.querySelector(`link[rel="preload"][href="${p1}"]`)) {
-					const p = document.createElement('link'); p.rel='preload'; p.as='font'; p.href=p1; p.type='font/woff2'; p.crossOrigin='anonymous'; document.head.appendChild(p);
-				}
-				if (!document.querySelector(`link[rel="preload"][href="${p2}"]`)) {
-					const p = document.createElement('link'); p.rel='preload'; p.as='font'; p.href=p2; p.type='font/woff2'; p.crossOrigin='anonymous'; document.head.appendChild(p);
-				}
-			};
-
-			if (window.swup && typeof window.swup.on === 'function') {
-				window.swup.on('clickLink', (event) => {
-					const href = event?.detail?.url || (event?.delegateTarget && event.delegateTarget.href) || '';
-					const pathname = toPath(href);
-					setHomeClass(pathname);
-				});
-
-				window.swup.on('contentReplaced', () => {
-					setHomeClass(location.pathname);
-					loadFontsIfNeeded(location.pathname);
-				});
-			} else {
-				// non-swup: initialize on load
-				setHomeClass(location.pathname);
-				// if this initial page is home, ensure fonts are loaded as in original layout
-				loadFontsIfNeeded(location.pathname);
-			}
-		})();
-		</script>
 
 		<slot name="head"></slot>
 

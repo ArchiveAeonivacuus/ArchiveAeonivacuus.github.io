@@ -1,46 +1,39 @@
+@import url('https://cdn.jsdelivr.net/npm/@wc1font/source-han-serif-sc-vf/font.css');
+
 @font-face {
   font-family: "Asebi Mincho";
   src: 
     local('Asebi Mincho'),
     local('馬酔木明朝'),
-    url('/fonts/AsebiMin-Light.woff2') format('woff2'),
-    url('/fonts/AsebiMin-Light.otf') format('opentype');
-  font-display: swap;
+    url("/fonts/AsebiMin-Light.otf") format("truetype");
 }
 
 @font-face {
   font-family: 'KaiTi';
   src: 
     local('KaiTi'),
-    url('/fonts/simkai.woff2') format('woff2'),
-    url('/fonts/simkai.ttf') format('truetype');
-  font-display: swap;
+    url('/fonts/simkai.ttf');
 }
 
 @font-face {
   font-family: 'DFKai-SB';
   src: 
     local('DFKai-SB'),
-    url('/fonts/標楷體.woff2') format('woff2'),
-    url('/fonts/標楷體.ttf') format('truetype');
-  font-display: swap;
+    url('/fonts/標楷體.ttf');
 }
 
 @font-face {
   font-family: 'Source Han Serif JP';
   src:
     local('Source Han Serif JP'),
-    url('/fonts/SourceHanSerifJP-Regular.woff2') format('woff2'),
-    url('/fonts/SourceHanSerifJP-Regular.ttf') format('truetype');
-  font-display: swap;
+    url('/fonts/SourceHanSerifJP-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Source Han Serif Old';
   src:
     local('Source Han Serif Old'),
-    url('/fonts/SOURCEHANSERIFOLD-LIGHT.woff2') format('woff2'),
-    url('/fonts/SOURCEHANSERIFOLD-LIGHT.OTF') format('opentype');
+    url('/fonts/SOURCEHANSERIFOLD-LIGHT.OTF') format("truetype");
 }
 
 /* Old English Onglisch - used inline in some posts */
@@ -48,7 +41,6 @@
   font-family: 'Old English Onglisch';
   src:
     local('Old English Onglisch'),
-    url('/fonts/Old English Onglisch.woff2') format('woff2'),
     url('/fonts/Old English Onglisch.otf') format('opentype');
   font-display: swap;
 }
@@ -56,14 +48,14 @@
 /* HighTowerText - regular and italic */
 @font-face {
   font-family: 'HighTowerText';
-  src: url('/fonts/HTOWERT.woff2') format('woff2'), url('/fonts/HTOWERT.TTF') format('truetype');
+  src: url('/fonts/HTOWERT.TTF') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'HighTowerText';
-  src: url('/fonts/HTOWERTI.woff2') format('woff2'), url('/fonts/HTOWERTI.TTF') format('truetype');
+  src: url('/fonts/HTOWERTI.TTF') format('truetype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
