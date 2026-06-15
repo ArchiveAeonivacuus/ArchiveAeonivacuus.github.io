@@ -1,5 +1,5 @@
 ---
-title: 巴提码头 Port Batıe
+title: 巴提码头
 published: 2025-11-24
 description: ''
 image: ''
@@ -8,6 +8,9 @@ category: '瀛寰'
 draft: false 
 lang: ''
 ---
+
+# Port Batıe
+# 巴提码头
 
 巴提市（<span style="font-family: Old English Onglisch">Batıe Cíbıl</span>）是央额列最繁忙的港口城市，每天的吞吐量非常大。一旁史诺科郡（<span style="font-family: Old English Onglisch">Schnoc Contı</span>）伸出的岬角为它建设港口带来了便利条件，也为巴提带来了无尽的海外财富。提起巴提港口的繁华，连巴提港口最劳累的装卸工也会骄傲地挺起胸膛，用干活时允许的最大力气说：“大央帝国的舰队为国民带来了一切！”
 

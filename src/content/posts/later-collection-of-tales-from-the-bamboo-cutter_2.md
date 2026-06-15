@@ -29,6 +29,8 @@ lang: ''
 }
 </style>
 
+# <span style="font-family: 'Asebi Mincho'"><ruby>二<rt>に</rt></ruby>　<ruby>幽篁<rt>いうくわう</rt></ruby>の<ruby>仁術<rt>じんじゆつ</rt></ruby></span>
+
 辉夜姬来于地上元年十月十三，是日红叶尽染，山雾弥漫。
 
 有月兔名琴（<span style="font-family: Asebi Mincho">コト</span>），在地上呼为“因幡琴音”。琴者月使之随从也，元在月都时，训练不以为惯常，常问理解，思虑过多，不得校官之喜。以阵前临兵，欲销之后快。

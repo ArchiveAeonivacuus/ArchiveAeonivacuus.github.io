@@ -29,7 +29,7 @@ lang: ''
 }
 </style>
 
-## <span style="font-family: 'Asebi Mincho'"><ruby>六<rt>ろく</rt></ruby>　<ruby>相語<rt>あひかたら</rt></ruby>ふこと<ruby>御前<rt>ごぜん</rt></ruby>なり</span>
+# <span style="font-family: 'Asebi Mincho'"><ruby>六<rt>ろく</rt></ruby>　<ruby>相語<rt>あひかたら</rt></ruby>ふこと<ruby>御前<rt>ごぜん</rt></ruby>なり</span>
 
 辉夜姬来于地上次年六月初十。是日已至于伊势，若诹访与左大臣问答之日，细雨中。虽是大暑，竟感天寒。可见朝颜层叠，或咲或垂。池边迟莲，抑含抑开。
 

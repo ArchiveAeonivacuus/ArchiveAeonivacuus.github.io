@@ -29,7 +29,7 @@ lang: ''
 }
 </style>
 
-## <span style="font-family: 'Asebi Mincho'"><ruby>七<rt>しち</rt></ruby>　<ruby>両儀<rt>りやうぎ</rt></ruby>して<ruby>撥平<rt>はつへい</rt></ruby>せむと</span>
+# <span style="font-family: 'Asebi Mincho'"><ruby>七<rt>しち</rt></ruby>　<ruby>両儀<rt>りやうぎ</rt></ruby>して<ruby>撥平<rt>はつへい</rt></ruby>せむと</span>
 
 辉夜姬来于地上次年六月望，并六月晦。两日共书之。
 

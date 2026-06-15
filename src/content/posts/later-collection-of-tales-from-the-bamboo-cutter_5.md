@@ -29,7 +29,7 @@ lang: ''
 }
 </style>
 
-## <span style="font-family: 'Asebi Mincho'"><ruby>五<rt>ご</rt></ruby>　<ruby>問答<rt>もんだふ</rt></ruby>しに<ruby>来<rt>きた</rt></ruby>る<ruby>身代<rt>みがはり</rt></ruby></span>
+# <span style="font-family: 'Asebi Mincho'"><ruby>五<rt>ご</rt></ruby>　<ruby>問答<rt>もんだふ</rt></ruby>しに<ruby>来<rt>きた</rt></ruby>る<ruby>身代<rt>みがはり</rt></ruby></span>
 
 辉夜姬来于地上次年五月廿九。是日大雨倾盆，漫天如隐帷幕之中。
 

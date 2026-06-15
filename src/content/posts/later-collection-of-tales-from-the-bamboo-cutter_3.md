@@ -29,7 +29,7 @@ lang: ''
 }
 </style>
 
-## <span style="font-family: 'Asebi Mincho'"><ruby>三<rt>さん</rt></ruby>　<ruby>諏訪<rt>すわ</rt></ruby>の<ruby>勧請<rt>くわんじやう</rt></ruby></span>
+# <span style="font-family: 'Asebi Mincho'"><ruby>三<rt>さん</rt></ruby>　<ruby>諏訪<rt>すわ</rt></ruby>の<ruby>勧請<rt>くわんじやう</rt></ruby></span>
 
 辉夜姬来于地上次年五月初八，是日梅雨中。
 

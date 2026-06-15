@@ -1,5 +1,5 @@
 ---
-title: 我打心底高兴！ Aux Cóntent!
+title: 我打心底高兴！
 published: 2025-11-25
 description: ''
 image: ''

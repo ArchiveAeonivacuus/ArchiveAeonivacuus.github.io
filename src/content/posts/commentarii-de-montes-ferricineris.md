@@ -1,5 +1,5 @@
 ---
-title: 铁灰山脉游记 Commentarii de Montes Ferricineris
+title: 铁灰山脉游记
 published: 2025-11-24
 description: ''
 image: ''
