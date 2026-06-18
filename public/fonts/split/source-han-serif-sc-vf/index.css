@@ -1,0 +1,1049 @@
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0000.woff2') format('woff2');
+  unicode-range: U+0020-007F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0001.woff2') format('woff2');
+  unicode-range: U+0080-00FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0002.woff2') format('woff2');
+  unicode-range: U+0100-024F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0003.woff2') format('woff2');
+  unicode-range: U+0250-02AF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0004.woff2') format('woff2');
+  unicode-range: U+02B0-02FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0005.woff2') format('woff2');
+  unicode-range: U+0300-036F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0006.woff2') format('woff2');
+  unicode-range: U+0370-03FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0007.woff2') format('woff2');
+  unicode-range: U+0400-04FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0008.woff2') format('woff2');
+  unicode-range: U+1E00-1EFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0009.woff2') format('woff2');
+  unicode-range: U+2000-206F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0010.woff2') format('woff2');
+  unicode-range: U+2070-209F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0011.woff2') format('woff2');
+  unicode-range: U+20A0-20CF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0012.woff2') format('woff2');
+  unicode-range: U+2100-214F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0013.woff2') format('woff2');
+  unicode-range: U+2150-218F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0014.woff2') format('woff2');
+  unicode-range: U+2190-21FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0015.woff2') format('woff2');
+  unicode-range: U+2200-22FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0016.woff2') format('woff2');
+  unicode-range: U+2300-23FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0017.woff2') format('woff2');
+  unicode-range: U+2500-257F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0018.woff2') format('woff2');
+  unicode-range: U+2580-259F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0019.woff2') format('woff2');
+  unicode-range: U+25A0-25FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0020.woff2') format('woff2');
+  unicode-range: U+2600-26FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0021.woff2') format('woff2');
+  unicode-range: U+2700-27BF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0022.woff2') format('woff2');
+  unicode-range: U+3000-303F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0023.woff2') format('woff2');
+  unicode-range: U+3040-309F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0024.woff2') format('woff2');
+  unicode-range: U+30A0-30FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0025.woff2') format('woff2');
+  unicode-range: U+3100-312F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0026.woff2') format('woff2');
+  unicode-range: U+3190-319F;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0027.woff2') format('woff2');
+  unicode-range: U+3300-33FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0028.woff2') format('woff2');
+  unicode-range: U+4E00-4EFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0029.woff2') format('woff2');
+  unicode-range: U+4F00-4FFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0030.woff2') format('woff2');
+  unicode-range: U+5000-50FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0031.woff2') format('woff2');
+  unicode-range: U+5100-51FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0032.woff2') format('woff2');
+  unicode-range: U+5200-52FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0033.woff2') format('woff2');
+  unicode-range: U+5300-53FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0034.woff2') format('woff2');
+  unicode-range: U+5400-54FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0035.woff2') format('woff2');
+  unicode-range: U+5500-55FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0036.woff2') format('woff2');
+  unicode-range: U+5600-56FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0037.woff2') format('woff2');
+  unicode-range: U+5700-57FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0038.woff2') format('woff2');
+  unicode-range: U+5800-58FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0039.woff2') format('woff2');
+  unicode-range: U+5900-59FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0040.woff2') format('woff2');
+  unicode-range: U+5A00-5AFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0041.woff2') format('woff2');
+  unicode-range: U+5B00-5BFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0042.woff2') format('woff2');
+  unicode-range: U+5C00-5CFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0043.woff2') format('woff2');
+  unicode-range: U+5D00-5DFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0044.woff2') format('woff2');
+  unicode-range: U+5E00-5EFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0045.woff2') format('woff2');
+  unicode-range: U+5F00-5FFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0046.woff2') format('woff2');
+  unicode-range: U+6000-60FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0047.woff2') format('woff2');
+  unicode-range: U+6100-61FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0048.woff2') format('woff2');
+  unicode-range: U+6200-62FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0049.woff2') format('woff2');
+  unicode-range: U+6300-63FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0050.woff2') format('woff2');
+  unicode-range: U+6400-64FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0051.woff2') format('woff2');
+  unicode-range: U+6500-65FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0052.woff2') format('woff2');
+  unicode-range: U+6600-66FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0053.woff2') format('woff2');
+  unicode-range: U+6700-67FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0054.woff2') format('woff2');
+  unicode-range: U+6800-68FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0055.woff2') format('woff2');
+  unicode-range: U+6900-69FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0056.woff2') format('woff2');
+  unicode-range: U+6A00-6AFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0057.woff2') format('woff2');
+  unicode-range: U+6B00-6BFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0058.woff2') format('woff2');
+  unicode-range: U+6C00-6CFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0059.woff2') format('woff2');
+  unicode-range: U+6D00-6DFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0060.woff2') format('woff2');
+  unicode-range: U+6E00-6EFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0061.woff2') format('woff2');
+  unicode-range: U+6F00-6FFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0062.woff2') format('woff2');
+  unicode-range: U+7000-70FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0063.woff2') format('woff2');
+  unicode-range: U+7100-71FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0064.woff2') format('woff2');
+  unicode-range: U+7200-72FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0065.woff2') format('woff2');
+  unicode-range: U+7300-73FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0066.woff2') format('woff2');
+  unicode-range: U+7400-74FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0067.woff2') format('woff2');
+  unicode-range: U+7500-75FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0068.woff2') format('woff2');
+  unicode-range: U+7600-76FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0069.woff2') format('woff2');
+  unicode-range: U+7700-77FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0070.woff2') format('woff2');
+  unicode-range: U+7800-78FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0071.woff2') format('woff2');
+  unicode-range: U+7900-79FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0072.woff2') format('woff2');
+  unicode-range: U+7A00-7AFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0073.woff2') format('woff2');
+  unicode-range: U+7B00-7BFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0074.woff2') format('woff2');
+  unicode-range: U+7C00-7CFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0075.woff2') format('woff2');
+  unicode-range: U+7D00-7DFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0076.woff2') format('woff2');
+  unicode-range: U+7E00-7EFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0077.woff2') format('woff2');
+  unicode-range: U+7F00-7FFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0078.woff2') format('woff2');
+  unicode-range: U+8000-80FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0079.woff2') format('woff2');
+  unicode-range: U+8100-81FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0080.woff2') format('woff2');
+  unicode-range: U+8200-82FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0081.woff2') format('woff2');
+  unicode-range: U+8300-83FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0082.woff2') format('woff2');
+  unicode-range: U+8400-84FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0083.woff2') format('woff2');
+  unicode-range: U+8500-85FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0084.woff2') format('woff2');
+  unicode-range: U+8600-86FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0085.woff2') format('woff2');
+  unicode-range: U+8700-87FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0086.woff2') format('woff2');
+  unicode-range: U+8800-88FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0087.woff2') format('woff2');
+  unicode-range: U+8900-89FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0088.woff2') format('woff2');
+  unicode-range: U+8A00-8AFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0089.woff2') format('woff2');
+  unicode-range: U+8B00-8BFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0090.woff2') format('woff2');
+  unicode-range: U+8C00-8CFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0091.woff2') format('woff2');
+  unicode-range: U+8D00-8DFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0092.woff2') format('woff2');
+  unicode-range: U+8E00-8EFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0093.woff2') format('woff2');
+  unicode-range: U+8F00-8FFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0094.woff2') format('woff2');
+  unicode-range: U+9000-90FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0095.woff2') format('woff2');
+  unicode-range: U+9100-91FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0096.woff2') format('woff2');
+  unicode-range: U+9200-92FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0097.woff2') format('woff2');
+  unicode-range: U+9300-93FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0098.woff2') format('woff2');
+  unicode-range: U+9400-94FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0099.woff2') format('woff2');
+  unicode-range: U+9500-95FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0100.woff2') format('woff2');
+  unicode-range: U+9600-96FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0101.woff2') format('woff2');
+  unicode-range: U+9700-97FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0102.woff2') format('woff2');
+  unicode-range: U+9800-98FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0103.woff2') format('woff2');
+  unicode-range: U+9900-99FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0104.woff2') format('woff2');
+  unicode-range: U+9A00-9AFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0105.woff2') format('woff2');
+  unicode-range: U+9B00-9BFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0106.woff2') format('woff2');
+  unicode-range: U+9C00-9CFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0107.woff2') format('woff2');
+  unicode-range: U+9D00-9DFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0108.woff2') format('woff2');
+  unicode-range: U+9E00-9EFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0109.woff2') format('woff2');
+  unicode-range: U+9F00-9FFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0110.woff2') format('woff2');
+  unicode-range: U+F900-FAFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0111.woff2') format('woff2');
+  unicode-range: U+FF00-FFEF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0112.woff2') format('woff2');
+  unicode-range: U+3400-4DBF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0113.woff2') format('woff2');
+  unicode-range: U+20000-200FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0114.woff2') format('woff2');
+  unicode-range: U+20100-201FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0115.woff2') format('woff2');
+  unicode-range: U+20600-206FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0116.woff2') format('woff2');
+  unicode-range: U+20C00-20CFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0117.woff2') format('woff2');
+  unicode-range: U+21300-213FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0118.woff2') format('woff2');
+  unicode-range: U+21400-214FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0119.woff2') format('woff2');
+  unicode-range: U+21500-215FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0120.woff2') format('woff2');
+  unicode-range: U+22900-229FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0121.woff2') format('woff2');
+  unicode-range: U+23500-235FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0122.woff2') format('woff2');
+  unicode-range: U+23C00-23CFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0123.woff2') format('woff2');
+  unicode-range: U+23E00-23EFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0124.woff2') format('woff2');
+  unicode-range: U+24100-241FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0125.woff2') format('woff2');
+  unicode-range: U+24200-242FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0126.woff2') format('woff2');
+  unicode-range: U+24800-248FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0127.woff2') format('woff2');
+  unicode-range: U+24900-249FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0128.woff2') format('woff2');
+  unicode-range: U+24A00-24AFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0129.woff2') format('woff2');
+  unicode-range: U+25500-255FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0130.woff2') format('woff2');
+  unicode-range: U+25E00-25EFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0131.woff2') format('woff2');
+  unicode-range: U+26200-262FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0132.woff2') format('woff2');
+  unicode-range: U+26400-264FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0133.woff2') format('woff2');
+  unicode-range: U+26600-266FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0134.woff2') format('woff2');
+  unicode-range: U+26700-267FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0135.woff2') format('woff2');
+  unicode-range: U+26900-269FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0136.woff2') format('woff2');
+  unicode-range: U+26B00-26BFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0137.woff2') format('woff2');
+  unicode-range: U+26C00-26CFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0138.woff2') format('woff2');
+  unicode-range: U+27800-278FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0139.woff2') format('woff2');
+  unicode-range: U+27E00-27EFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0140.woff2') format('woff2');
+  unicode-range: U+27F00-27FFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0141.woff2') format('woff2');
+  unicode-range: U+28400-284FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0142.woff2') format('woff2');
+  unicode-range: U+28600-286FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0143.woff2') format('woff2');
+  unicode-range: U+28700-287FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0144.woff2') format('woff2');
+  unicode-range: U+28B00-28BFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0145.woff2') format('woff2');
+  unicode-range: U+28C00-28CFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0146.woff2') format('woff2');
+  unicode-range: U+28E00-28EFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0147.woff2') format('woff2');
+  unicode-range: U+29600-296FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0148.woff2') format('woff2');
+  unicode-range: U+29800-298FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Serif SC VF';
+  src: local('Noto Serif SC'), local('Noto Serif CJK SC'), local('Source Han Serif SC'), url('/fonts/split/source-han-serif-sc-vf/0149.woff2') format('woff2');
+  unicode-range: U+29F00-29FFF;
+  font-display: swap;
+}

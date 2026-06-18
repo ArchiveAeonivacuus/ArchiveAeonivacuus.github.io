@@ -16,6 +16,13 @@ FONTS_DIR = ROOT / "public" / "fonts"
 # 定义需要分片的字体及其 font-family 信息
 FONTS_TO_SPLIT = [
     {
+        "file": "NotoSerifSC-Regular.ttf",
+        "family": "Source Han Serif SC VF",
+        "local_names": ["'Noto Serif SC'", "'Noto Serif CJK SC'", "'Source Han Serif SC'"],
+        "style": "normal",
+        "weight": "normal",
+    },
+    {
         "file": "AsebiMin-Light.otf",
         "family": "Asebi Mincho",
         "local_names": ["'Asebi Mincho'", "'馬酔木明朝'"],
