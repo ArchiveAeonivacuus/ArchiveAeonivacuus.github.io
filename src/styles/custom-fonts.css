@@ -1,6 +1,7 @@
 /* Split fonts - loaded on demand via unicode-range */
 /* Source Han Serif SC VF: local Noto Serif SC first, then woff2 fallback */
 @import url('/fonts/split/source-han-serif-sc-vf/index.css');
+@import url('/fonts/split/source-han-serif-sc-vf-bold/index.css');
 @import url('/fonts/split/asebi-mincho/index.css');
 @import url('/fonts/split/kaiti/index.css');
 @import url('/fonts/split/dfkai-sb/index.css');
