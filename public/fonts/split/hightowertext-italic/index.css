@@ -1,0 +1,89 @@
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext-italic/0000.woff2') format('woff2');
+  unicode-range: U+0020-007F;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext-italic/0001.woff2') format('woff2');
+  unicode-range: U+0080-00FF;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext-italic/0002.woff2') format('woff2');
+  unicode-range: U+0100-024F;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext-italic/0003.woff2') format('woff2');
+  unicode-range: U+02B0-02FF;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext-italic/0004.woff2') format('woff2');
+  unicode-range: U+0370-03FF;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext-italic/0005.woff2') format('woff2');
+  unicode-range: U+2000-206F;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext-italic/0006.woff2') format('woff2');
+  unicode-range: U+20A0-20CF;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext-italic/0007.woff2') format('woff2');
+  unicode-range: U+2100-214F;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext-italic/0008.woff2') format('woff2');
+  unicode-range: U+2200-22FF;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext-italic/0009.woff2') format('woff2');
+  unicode-range: U+25A0-25FF;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}

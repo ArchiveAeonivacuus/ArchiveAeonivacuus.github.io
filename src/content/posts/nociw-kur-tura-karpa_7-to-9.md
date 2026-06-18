@@ -9,7 +9,7 @@ draft: false
 lang: ''
 ---
 
-# <span style="font-family: Source Han Serif">ノチウ　クㇽ　トゥラ　カㇻパ</span>
+# <span style="font-family: 'Source Han Serif JP'">ノチウ　クㇽ　トゥラ　カㇻパ</span>
 # nociw kur tura k=arpa
 # 我与星光同行
 

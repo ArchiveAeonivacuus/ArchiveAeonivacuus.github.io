@@ -16,5 +16,6 @@
 	"editor.codeActionsOnSave": {
 		"source.fixAll.biome": "explicit"
 	},
-	"frontMatter.dashboard.openOnStart": false
+	"frontMatter.dashboard.openOnStart": false,
+	"diffEditor.renderSideBySide": true
 }

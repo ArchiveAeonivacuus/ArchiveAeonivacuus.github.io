@@ -15,19 +15,6 @@ lang: ''
     text-align: center;
 }
 
-@font-face {
-  font-family: 'Old English Onglisch';
-  src:
-    local('Old English Onglisch'),
-    url('/fonts/Old English Onglisch.otf') format("truetype");
-}
-
-@font-face {
-  font-family: 'HighTowerText';
-  src:
-    url('/fonts/HTOWERT.TTF'),
-    url('/fonts/HTOWERTI.TTF');
-}
 p {
   font-family: 'HighTowerText', italic;
 }
@@ -36,10 +23,10 @@ p {
 
 # <span style="font-family: Old English Onglisch">An Dın Uncértus Márınen</span>
 # <span style="font-family: Old English Onglisch">– Módel Lampyrídæ An Tray.</span>
-# <span style="Source Han Serif Old">論不定之海現象——樹上螢火蟲模型</span>
+# <span style="font-family: 'Source Han Serif Old'">論不定之海現象——樹上螢火蟲模型</span>
 
 ## <span style="font-family: Old English Onglisch">Beı Charlıe Flamenco,</span>
-## <span style="Source Han Serif Old">察利·敷羅明可 著</span>
+## <span style="font-family: 'Source Han Serif Old'">察利·敷羅明可 著</span>
 
 ## <span style="font-family: Old English Onglisch">Toyan Cíbıl</span>
 ## <span style="font-family: Old English Onglisch">Iohan Murıe, Straso Céntrus</span>

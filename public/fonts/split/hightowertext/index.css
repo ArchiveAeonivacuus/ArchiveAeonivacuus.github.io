@@ -1,0 +1,79 @@
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext/0000.woff2') format('woff2');
+  unicode-range: U+0020-007F;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext/0001.woff2') format('woff2');
+  unicode-range: U+0080-00FF;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext/0002.woff2') format('woff2');
+  unicode-range: U+0100-024F;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext/0003.woff2') format('woff2');
+  unicode-range: U+02B0-02FF;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext/0004.woff2') format('woff2');
+  unicode-range: U+0370-03FF;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext/0005.woff2') format('woff2');
+  unicode-range: U+2000-206F;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext/0006.woff2') format('woff2');
+  unicode-range: U+20A0-20CF;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext/0007.woff2') format('woff2');
+  unicode-range: U+2100-214F;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext/0008.woff2') format('woff2');
+  unicode-range: U+2200-22FF;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HighTowerText;
+  src: url('/fonts/split/hightowertext/0009.woff2') format('woff2');
+  unicode-range: U+25A0-25FF;
+  font-weight: 400;
+  font-display: swap;
+}
