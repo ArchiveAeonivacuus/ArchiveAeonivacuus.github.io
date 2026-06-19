@@ -5,26 +5,27 @@ const id = "inject-comments";
 
 // 获取 localStorage 中 theme 的值
 function getSavedTheme() {
-	return window.localStorage.getItem("theme") || "dark";
+	return window.localStorage.getItem("theme") || "auto";
 }
 
-// 获取系统主题
-function getSystemTheme() {
-	return window.matchMedia("(prefers-color-scheme: dark)").matches
-		? "dark"
-		: "light";
+// 获取 giscus 主题名
+function getGiscusTheme() {
+	const saved = getSavedTheme();
+	if (saved === "dark") return "dark";
+	if (saved === "light") return "light";
+	// auto: 跟随系统
+	return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
 const Comments = () => {
 	const [mounted, setMounted] = React.useState(false);
-	const [theme, setTheme] = React.useState("light");
+	const [theme, setTheme] = React.useState("preferred_color_scheme");
 
 	React.useEffect(() => {
-		const theme = getSavedTheme() || getSystemTheme();
-		setTheme(theme);
+		setTheme(getGiscusTheme());
 		// 监听主题变化
 		const observer = new MutationObserver(() => {
-			setTheme(getSavedTheme());
+			setTheme(getGiscusTheme());
 		});
 		observer.observe(document.documentElement, {
 			attributes: true,
