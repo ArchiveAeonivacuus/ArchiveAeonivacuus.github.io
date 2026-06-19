@@ -143,10 +143,11 @@ const bannerOffset =
 
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
 
-		<!-- Critical font CSS: synchronous loading so @font-face declarations are available before first paint -->
-		<link rel="stylesheet" href="/fonts/split/source-han-serif-sc-vf/index.css" data-swup-persist/>
-		<link rel="stylesheet" href="/fonts/split/source-han-serif-sc-vf-bold/index.css" data-swup-persist/>
-		<!-- Non-critical font CSS: async loading to avoid render-blocking -->
+		<!-- Font CSS: async loading via preload to avoid render-blocking; data-swup-persist prevents removal on page transitions -->
+		<link rel="preload" href="/fonts/split/source-han-serif-sc-vf/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
+		<noscript><link rel="stylesheet" href="/fonts/split/source-han-serif-sc-vf/index.css"/></noscript>
+		<link rel="preload" href="/fonts/split/source-han-serif-sc-vf-bold/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
+		<noscript><link rel="stylesheet" href="/fonts/split/source-han-serif-sc-vf-bold/index.css"/></noscript>
 		<link rel="preload" href="/fonts/split/asebi-mincho/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
 		<noscript><link rel="stylesheet" href="/fonts/split/asebi-mincho/index.css"/></noscript>
 		<link rel="preload" href="/fonts/split/kaiti/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
@@ -392,6 +393,13 @@ function init() {
 init();
 
 const setup = () => {
+	// Configure SwupHeadPlugin to persist font CSS links during page transitions
+	// data-swup-persist only works for container content, not <head> elements
+	const headPlugin = window.swup.plugins.find((p: { name: string }) => p.name === 'SwupHeadPlugin') as { options: { persistTags: string } } | undefined;
+	if (headPlugin) {
+		headPlugin.options.persistTags = 'link[data-swup-persist]';
+	}
+
 	// TODO: temp solution to change the height of the banner
 /*
 	window.swup.hooks.on('animation:out:start', () => {
