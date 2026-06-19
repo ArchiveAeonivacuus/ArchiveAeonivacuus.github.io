@@ -16,7 +16,6 @@ import {
 import { defaultFavicons } from "../constants/icon";
 import type { Favicon } from "../types/config";
 import { pathsEqual, url } from "../utils/url-utils";
-import "katex/dist/katex.css";
 
 interface Props {
 	title?: string;
@@ -143,6 +142,27 @@ const bannerOffset =
 		<slot name="head"></slot>
 
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
+
+		<!-- Critical font CSS: synchronous loading so @font-face declarations are available before first paint -->
+		<link rel="stylesheet" href="/fonts/split/source-han-serif-sc-vf/index.css" data-swup-persist/>
+		<link rel="stylesheet" href="/fonts/split/source-han-serif-sc-vf-bold/index.css" data-swup-persist/>
+		<!-- Non-critical font CSS: async loading to avoid render-blocking -->
+		<link rel="preload" href="/fonts/split/asebi-mincho/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
+		<noscript><link rel="stylesheet" href="/fonts/split/asebi-mincho/index.css"/></noscript>
+		<link rel="preload" href="/fonts/split/kaiti/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
+		<noscript><link rel="stylesheet" href="/fonts/split/kaiti/index.css"/></noscript>
+		<link rel="preload" href="/fonts/split/dfkai-sb/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
+		<noscript><link rel="stylesheet" href="/fonts/split/dfkai-sb/index.css"/></noscript>
+		<link rel="preload" href="/fonts/split/source-han-serif-jp/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
+		<noscript><link rel="stylesheet" href="/fonts/split/source-han-serif-jp/index.css"/></noscript>
+		<link rel="preload" href="/fonts/split/source-han-serif-old/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
+		<noscript><link rel="stylesheet" href="/fonts/split/source-han-serif-old/index.css"/></noscript>
+		<link rel="preload" href="/fonts/split/old-english-onglisch/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
+		<noscript><link rel="stylesheet" href="/fonts/split/old-english-onglisch/index.css"/></noscript>
+		<link rel="preload" href="/fonts/split/hightowertext/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
+		<noscript><link rel="stylesheet" href="/fonts/split/hightowertext/index.css"/></noscript>
+		<link rel="preload" href="/fonts/split/hightowertext-italic/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
+		<noscript><link rel="stylesheet" href="/fonts/split/hightowertext-italic/index.css"/></noscript>
 
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}

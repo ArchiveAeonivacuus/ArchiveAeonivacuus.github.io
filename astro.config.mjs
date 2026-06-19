@@ -8,6 +8,7 @@ import swup from "@swup/astro";
 import { defineConfig } from "astro/config";
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
+import critters from "astro-critters";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeComponents from "rehype-components";/* Render the custom directive content */
 import rehypeKatex from "rehype-katex";
@@ -33,7 +34,7 @@ import mermaid from "astro-mermaid";
 export default defineConfig({
     site: "https://www.瀛寰.cn/",
     trailingSlash: "always",
-    integrations: [tailwind({
+    integrations: [critters(), tailwind({
         nesting: true,
 		}), swup({
         theme: false,
