@@ -37,7 +37,10 @@ lang: ''
 <span style="color:red">※声明：本作在属于东方project二创的同时，是站内小说《竹取拾遗物语》的外传，含有《竹取拾遗物语》的部分相关设定（二设内容），并包含对现实世界中本作所提到相关事物的考证和适当架空。</span>
 
 这篇文章同时也发布在哔哩哔哩，并参与2026年的辉夜日（9月8日）接龙：
-::bilibili{repo="https://space.bilibili.com/171245629/upload/opus"}
+
+:::hyperlink{href="https://space.bilibili.com/171245629/upload/opus" title="哔哩哔哩" avatar="https://www.bilibili.com/favicon.ico" description="竹取拾遗物语——外传·蓬莱山古文教室"}
+:::
+
 <!-- 到时候这个网址需要改成这篇文章的链接。 -->
 
 ---
