@@ -5,7 +5,7 @@ description: '八意永琳，曾经的“月之头脑”，或许现在也是。
 image: ''
 tags: [外传, 东方, 月都, 蓬莱山辉夜]
 category: '竹取拾遗物语'
-draft: false 
+draft: true
 lang: ''
 ---
 
