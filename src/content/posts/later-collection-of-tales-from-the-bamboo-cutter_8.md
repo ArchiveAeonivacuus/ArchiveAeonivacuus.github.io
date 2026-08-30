@@ -29,7 +29,7 @@ lang: ''
 }
 </style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>八<rt>はち</rt></ruby>　<ruby>現世<rt>うつしよ</rt></ruby>と<ruby>常世<rt>とこよ</rt></ruby>とは<ruby>比良坂<rt>ひらさか</rt></ruby>にて<ruby>分<rt>わ</rt></ruby>かつ
+# <span style="font-family: 'Asebi Mincho'"><ruby>八<rt>はち</rt></ruby>　<ruby>現世<rt>うつしよ</rt></ruby>と<ruby>常世<rt>とこよ</rt></ruby>とは<ruby>比良坂<rt>ひらさか</rt></ruby>にて<ruby>分<rt>わ</rt></ruby>かつ</span>
 
 辉夜姬来于地上十二年八月朔，是日持统帝禅位于皇太子，后所谓文武天皇。
 

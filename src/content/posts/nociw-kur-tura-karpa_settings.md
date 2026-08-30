@@ -188,7 +188,7 @@ lang: ''
   <div class="mh-description" data-label="人物介绍">新大陆古龙调查团猎人，是雪泽阿部缘和平泽池荣怒的舍友。来自莫家村，擅长使用铳枪进行水战。攻击能够积攒月震值发动“深海月震击连段”。</div>
 </div>
 
-6.  <b>竹内琴音（<span style="font-family: 'Source Han Serif JP'"><ruby>竹内<rt>たけうち</rt></ruby> <ruby>琴音<rt>おとね</rt></ruby></span>）</b>
+6.  <b>竹内琴音（<span style="font-family: 'Source Han Serif JP'"><ruby>竹内<rt>たけうち</rt></ruby> <ruby>琴音<rt>ことね</rt></ruby></span>）</b>
 <div class="mh-hunter">
   <div data-label="出身地">未知</div>
   <div data-label="种族">人类</div>
