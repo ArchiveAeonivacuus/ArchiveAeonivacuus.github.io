@@ -3,7 +3,7 @@
 这里是友情链接。
 
 特别感谢：
-:::hyperlink{href="https://www.sakimidare.top/" title="咲乱SakiMidare" avatar="http://q.qlogo.cn/headimg_dl?dst_uin=3285956207&spec=640" description="心臓は点滅するかしら……"}
+:::hyperlink{href="https://www.sakimidare.top/" title="咲乱SakiMidare" avatar="http://q.qlogo.cn/headimg_dl?dst_uin=3285956207&spec=640" description="<span style="font-family: 'Source Han Serif JP'">心臓は点滅するかしら……</span>"}
 :::
 没有他就没有这个博客。TT
 

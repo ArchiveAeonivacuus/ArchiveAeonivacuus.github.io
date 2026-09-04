@@ -29,7 +29,7 @@ lang: ''
 }
 </style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>追<rt>お</rt></ruby>はるる<ruby>罪者<rt>つみもの</rt></ruby>は<ruby>去<rt>さ</rt></ruby>るのみ</span>
+# <span style="font-family: 'Asebi Mincho'"><ruby>九<rt>きう</rt></ruby>　<ruby>追<rt>お</rt></ruby>はるる<ruby>罪者<rt>つみもの</rt></ruby>は<ruby>去<rt>さ</rt></ruby>るのみ</span>
 
 辉夜姬来于地上十三年腊月晦。是日落雪纷扬，积雪盈尺。翌日将明，新年在即。
 
