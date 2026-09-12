@@ -16,7 +16,7 @@ lang: ''
 }
 
 p {
-  font-family: 'HighTowerText', 'Source Han Serif SC', 'Source Han Serif SC VF', 'Source Han Serif JP', serif;
+  font-family: 'HighTowerText', 'Source Han Serif SC', 'Source Han Serif JP', serif;
 }
 
 </style>

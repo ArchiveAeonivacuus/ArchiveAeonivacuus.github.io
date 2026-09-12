@@ -7,7 +7,8 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: [
-					"Source Han Serif SC VF",
+					"Source Han Serif SC",
+					"Source Han Serif JP",
 					"serif",
 					...defaultTheme.fontFamily.sans,
 				],

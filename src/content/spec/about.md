@@ -1,5 +1,5 @@
 # About
-<p style="font-family: 'Source Han Serif SC VF'">
+<p style="font-family: 'Source Han Serif SC'">
 Wandering in the Aeonivacuum, even the gravel will become steepest cliff, and last forever.
 </p>
 

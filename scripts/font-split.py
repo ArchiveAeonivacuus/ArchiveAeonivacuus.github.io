@@ -16,8 +16,8 @@ FONTS_DIR = ROOT / "public" / "fonts"
 # 定义需要分片的字体及其 font-family 信息
 FONTS_TO_SPLIT = [
     {
-        "file": "SourceHanSerifJP-Regular.otf",
-        "family": "Source Han Serif SC VF",
+        "file": "SourceHanSerifSC-Regular.otf",
+        "family": "Source Han Serif SC",
         "local_names": ["'Source Han Serif SC'", "'Source Han Serif CJK SC'"],
         "style": "normal",
         "weight": "normal",
@@ -47,13 +47,6 @@ FONTS_TO_SPLIT = [
         "file": "標楷體.ttf",
         "family": "DFKai-SB",
         "local_names": ["DFKai-SB"],
-        "style": "normal",
-        "weight": "normal",
-    },
-    {
-        "file": "SourceHanSerifJP-Regular.otf",
-        "family": "Source Han Serif JP",
-        "local_names": ["'Source Han Serif JP'"],
         "style": "normal",
         "weight": "normal",
     },

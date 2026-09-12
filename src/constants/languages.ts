@@ -11,7 +11,7 @@ export const LANGUAGE_MAP: Record<string, LanguageConfig> = {
 		name: "中文 （简体）",
 		fontClass: "font-sc",
 		style:
-			"font-family: 'Source Han Serif SC VF', 'Source Han Serif SC', serif;",
+			"font-family: 'Source Han Serif SC', 'Source Han Serif JP', serif;",
 	},
 	zh_TW: {
 		code: "zh_TW",
@@ -41,7 +41,7 @@ export const LANGUAGE_MAP: Record<string, LanguageConfig> = {
 		code: "A-zh-iang",
 		name: "漢語（大瀛）",
 		fontClass: "font-zhiang",
-		style: "font-family: 'Source Han Serif Old', 'Source Han Serif JP', serif;",
+		style: "font-family: 'Source Han Serif JP', 'Source Han Serif Old', serif;",
 	},
 };
 
