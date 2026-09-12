@@ -28,7 +28,7 @@ const { badge, url, label } = Astro.props;
     >
         <div class="flex items-center justify-between relative mr-2">
             <div class="overflow-hidden text-left whitespace-nowrap overflow-ellipsis  ">
-                <slot></slot>
+                <Fragment set:html={Astro.slots.render("default")} />
             </div>
             { badge !== undefined && badge !== null && badge !== '' &&
                 <div class="transition px-2 h-7 ml-4 min-w-[2rem] rounded-lg text-sm font-bold

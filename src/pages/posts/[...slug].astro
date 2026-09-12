@@ -7,6 +7,7 @@ import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 import { getSortedPosts } from "@utils/content-utils";
+import { getCollection } from "astro:content";
 import { getDir, getPostUrlBySlug } from "@utils/url-utils";
 import { Icon } from "astro-icon/components";
 import { licenseConfig } from "src/config";
@@ -14,20 +15,60 @@ import ImageWrapper from "../../components/misc/ImageWrapper.astro";
 import PostMetadata from "../../components/PostMeta.astro";
 import { profileConfig, siteConfig } from "../../config";
 import { formatDateToYYYYMMDD } from "../../utils/date-utils";
+import { getBaseSlug, getLanguageSuffix, LANGUAGE_MAP } from "../../constants/languages";
+import { setPageLanguageOverride } from "@i18n/translation";
 import "katex/dist/katex.css";
 
 export async function getStaticPaths() {
-	const blogEntries = await getSortedPosts();
-	return blogEntries.map((entry) => ({
+	// 重要：这里必须拉取全量未经去重过滤的原始文章集合！
+	// 这样不仅能确保每一篇翻译版文章（如日文版）都拥有自己独立的详情页面，
+	// 还能确保传入组件的 allEntries 中完好包含全部语言的数据，使 translations 配对成功并显现切换条！
+	const rawBlogEntries = await getCollection("posts", ({ data }) => {
+		return import.meta.env.PROD ? data.draft !== true : true;
+	});
+	return rawBlogEntries.map((entry) => ({
 		params: { slug: entry.slug },
-		props: { entry },
+		props: { entry, allEntries: rawBlogEntries },
 	}));
 }
 
-const { entry } = Astro.props;
+const { entry, allEntries } = Astro.props;
 const { Content, headings } = await entry.render();
 
 const { remarkPluginFrontmatter } = await entry.render();
+
+// 获取当前文章的语言
+const currentLangCode = entry.data.lang || "zh_CN";
+
+// 2. 注册和强制重写当前渲染页面所需的语言包
+setPageLanguageOverride(currentLangCode);
+
+// 3. 【无缝双向关联（Translate-Key Based Matching）】
+// 凡是具有相同 translate_key 的文章，就是互相对应的翻译版本！
+// 如果文章没有配置 translate_key，代表无翻译版本，默认向下兼容不显示切换条。
+const currentTranslateKey = entry.data.translate_key;
+
+const translations = (currentTranslateKey && currentTranslateKey.trim() !== "")
+	? allEntries.filter((p) => {
+		return p.data.translate_key === currentTranslateKey;
+	}).map((p) => {
+		const langCode = p.data.lang || "zh_CN";
+		const config = LANGUAGE_MAP[langCode];
+		return {
+			slug: p.slug,
+			langCode,
+			title: p.data.title,
+			url: getPostUrlBySlug(p.slug),
+			config,
+		};
+	})
+	: [];
+
+// 按照配置中的顺序对多语言切换按键进行美观排序
+const sortedTranslations = translations.sort((a, b) => {
+	const keys = Object.keys(LANGUAGE_MAP);
+	return keys.indexOf(a.langCode) - keys.indexOf(b.langCode);
+});
 
 const jsonLd = {
 	"@context": "https://schema.org",
@@ -96,6 +137,33 @@ const jsonLd = {
                 ></PostMetadata>
                 {!entry.data.image && <div class="border-[var(--line-divider)] border-dashed border-b-[1px] mb-5"></div>}
             </div>
+
+            <!-- translation picker -->
+            {sortedTranslations.length > 1 && (
+                <div class="flex flex-wrap gap-2 mb-6 onload-animation border border-black/5 dark:border-white/5 bg-black/[0.02] dark:bg-white/[0.02] rounded-xl p-3 items-center">
+                    <div class="text-xs font-bold text-black/40 dark:text-white/40 uppercase tracking-wider flex items-center gap-1.5 mr-1">
+                        <Icon name="material-symbols:translate" class="text-base" />
+                        <span>Languages:</span>
+                    </div>
+                    {sortedTranslations.map((t) => {
+                        const isCurrent = t.langCode === currentLangCode;
+                        return (
+                            <a
+                                href={t.url}
+                                class:list={[
+                                    "px-3 py-1.5 text-sm rounded-lg transition-all border font-medium duration-200 active:scale-95",
+                                    isCurrent 
+                                        ? "bg-[var(--primary)] text-white border-transparent shadow-sm pointer-events-none" 
+                                        : "bg-transparent text-black/70 dark:text-white/75 border-black/10 dark:border-white/10 hover:bg-black/5 dark:hover:bg-white/5 hover:text-[var(--primary)] hover:border-[var(--primary)]"
+                                ]}
+                                style={t.config?.style || ""}
+                            >
+                                {t.config?.name || t.langCode}
+                            </a>
+                        );
+                    })}
+                </div>
+            )}
 
             <!-- always show cover as long as it has one -->
 

@@ -2,7 +2,7 @@
 title: 竹取拾遗物语——外传·蓬莱山古文教室
 published: 2026-09-08
 description: '八意永琳，曾经的“月之头脑”，或许现在也是。她望向桌子上一份一份的资料，仔细地确认着。'
-image: ''
+image: '/images/houraisan-classic-classroom.png'
 tags: [外传, 东方, 月都, 蓬莱山辉夜]
 category: '竹取拾遗物语'
 draft: false
@@ -41,11 +41,7 @@ lang: ''
 :::hyperlink{href="https://www.bilibili.com/opus/1245531925966225413?spm_id_from=333.1035.0.0" title="哔哩哔哩" avatar="https://www.bilibili.com/favicon.ico" description="竹取拾遗物语——外传·蓬莱山古文教室"}
 :::
 
-<!-- 到时候这个网址需要改成这篇文章的链接。 -->
-
 ---
-
-![封面图](/images/houraisan-classic-classroom.png "蓬莱山古文教室 - 封面图")
 
 八意永琳，曾经的“月之头脑”，或许现在也是。她望向桌子上一份一份的资料，仔细地确认着。
 

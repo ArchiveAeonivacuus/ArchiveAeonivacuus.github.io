@@ -16,14 +16,21 @@ FONTS_DIR = ROOT / "public" / "fonts"
 # 定义需要分片的字体及其 font-family 信息
 FONTS_TO_SPLIT = [
     {
-        "file": "NotoSerifSC-Regular.ttf",
+        "file": "SourceHanSerifJP-Regular.otf",
         "family": "Source Han Serif SC VF",
-        "local_names": ["'Noto Serif SC'", "'Noto Serif CJK SC'", "'Source Han Serif SC'"],
+        "local_names": ["'Source Han Serif SC'", "'Source Han Serif CJK SC'"],
         "style": "normal",
         "weight": "normal",
     },
     {
-        "file": "AsebiMin-Light.otf",
+        "file": "SourceHanSerifJP-Regular.otf",
+        "family": "Source Han Serif JP",
+        "local_names": ["'Source Han Serif JP'"],
+        "style": "normal",
+        "weight": "normal",
+    },
+    {
+        "file": "AsebiMin-Light.ttf",
         "family": "Asebi Mincho",
         "local_names": ["'Asebi Mincho'", "'馬酔木明朝'"],
         "style": "normal",
@@ -44,14 +51,14 @@ FONTS_TO_SPLIT = [
         "weight": "normal",
     },
     {
-        "file": "SourceHanSerifJP-Regular.ttf",
+        "file": "SourceHanSerifJP-Regular.otf",
         "family": "Source Han Serif JP",
         "local_names": ["'Source Han Serif JP'"],
         "style": "normal",
         "weight": "normal",
     },
     {
-        "file": "SOURCEHANSERIFOLD-LIGHT.OTF",
+        "file": "SourceHanSerifOld-Light.otf",
         "family": "Source Han Serif Old",
         "local_names": ["'Source Han Serif Old'"],
         "style": "normal",
@@ -173,6 +180,9 @@ def generate_unicode_ranges():
     
     # 片假名
     ranges.append((0x30A0, 0x30FF, "Katakana"))
+
+    # 片假名拼音扩展 (阿伊努语假名)
+    ranges.append((0x31F0, 0x31FF, "Katakana Phonetic Extensions"))
     
     # 注音符号
     ranges.append((0x3100, 0x312F, "Bopomofo"))
@@ -266,24 +276,24 @@ def split_font(font_info, unicode_ranges, output_dir):
         # 输出文件名
         out_file = out_dir / f"{chunk_index:04d}.woff2"
         
-        # 构建 pyftsubset 命令
-        cmd = [
-            "pyftsubset",
-            str(font_path),
-            f"--unicodes={unicode_str}",
-            f"--output-file={out_file}",
-            "--flavor=woff2",
-            "--layout-features=*",
-            "--name-IDs=*",
-            "--no-hinting",
-            "--desubroutinize",
-        ]
-        
         try:
-            result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
-            if result.returncode != 0:
-                print(f"    警告: 分片 {chunk_index} ({desc}) 失败: {result.stderr[:100]}")
-                continue
+            # 采用更快速、完全跨平台且免受子进程启动挂起/路径报错困扰的 Python 原生 fontTools 内联调用法
+            from fontTools.subset import main as ft_subset_main
+            
+            # 构造传递给 main() 的参数列表
+            subset_args = [
+                str(font_path),
+                f"--unicodes={unicode_str}",
+                f"--output-file={out_file}",
+                "--flavor=woff2",
+                "--layout-features=*",
+                "--name-IDs=*",
+                "--no-hinting",
+                "--desubroutinize",
+            ]
+            
+            # 执行内联切分，避免创建进程的资源消耗和挂起
+            ft_subset_main(subset_args)
             
             # 检查输出文件大小，跳过空/极小文件
             file_size = out_file.stat().st_size
@@ -338,6 +348,10 @@ def split_font(font_info, unicode_ranges, output_dir):
 
 
 def main():
+    # 临时屏蔽 fontTools 内部多余而繁杂的 Stderr/Stdout Meta subset 警告日志输出
+    import logging
+    logging.getLogger("fontTools.subset").setLevel(logging.ERROR)
+    
     print("=" * 60)
     print("字体分片工具 - Font Splitter")
     print("=" * 60)

@@ -32,6 +32,11 @@ const {
 	setOGTypeArticle,
 	headings = [],
 } = Astro.props;
+
+// 页面级临时语言重写（利用 Astro 单个页面级周期的环境作用域，在主布局渲染前强制重置页面级重写）
+import { setPageLanguageOverride } from "@i18n/translation";
+setPageLanguageOverride(lang || null);
+
 const hasBannerCredit =
 	siteConfig.banner.enable && siteConfig.banner.credit.enable;
 const hasBannerLink = !!siteConfig.banner.credit.url;

@@ -1,5 +1,5 @@
 .custom-md {
-    font-family: 'Source Han Serif SC VF', serif;
+    font-family: 'Source Han Serif SC VF', 'Source Han Serif SC', 'Source Han Serif JP', serif;
     h1 {
         @apply text-3xl;
     }

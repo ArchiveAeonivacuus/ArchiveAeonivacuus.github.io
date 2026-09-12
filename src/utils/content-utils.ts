@@ -2,6 +2,7 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import { getCategoryUrl } from "@utils/url-utils.ts";
+import { getBaseSlug } from "../constants/languages";
 
 // // Retrieve posts and sort them by publication date
 async function getRawSortedPosts() {
@@ -9,7 +10,29 @@ async function getRawSortedPosts() {
 		return import.meta.env.PROD ? data.draft !== true : true;
 	});
 
-	const sorted = allBlogPosts.sort((a, b) => {
+	// 【全站高精度 translate_key 去重（Translate-Key Based Deduplication）】
+	// 如果配置了同一个 translate_key，我们只在列表中展示默认（中文）的版本，过滤非默认翻译版
+	const uniquePosts: CollectionEntry<"posts">[] = [];
+	const seenTranslateKeys = new Set<string>();
+
+	for (const post of allBlogPosts) {
+		const key = post.data.translate_key;
+		if (key && key.trim() !== "") {
+			// 如果此 key 还没有加入过列表
+			if (!seenTranslateKeys.has(key)) {
+				// 我们优先保留主版本（通常 lang 是空，或者是默认的 zh_CN）
+				const group = allBlogPosts.filter(p => p.data.translate_key === key);
+				const mainPost = group.find(p => !p.data.lang || p.data.lang === "zh_CN") || group[0];
+				uniquePosts.push(mainPost);
+				seenTranslateKeys.add(key);
+			}
+		} else {
+			// 没有配置 translate_key 的文章完全保持原样，向下兼容不作任何过滤
+			uniquePosts.push(post);
+		}
+	}
+
+	const sorted = uniquePosts.sort((a, b) => {
 		const dateA = new Date(a.data.published);
 		const dateB = new Date(b.data.published);
 		return dateA > dateB ? -1 : 1;

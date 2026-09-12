@@ -1,2 +1,31 @@
 /* Split fonts - loaded asynchronously via <link> in Layout.astro */
 /* This file is kept for backward compatibility but imports have been moved to async loading */
+
+/* Latin fonts: Source Serif 4 (same latin source as Source Han Serif) for true upright + italic */
+@font-face {
+    font-family: 'Source Serif 4';
+    src: url('/fonts/SourceSerif4-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif 4';
+    src: url('/fonts/SourceSerif4-Italic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* Use real italic for latin letters; CJK falls back to Source Han Serif upright */
+i, em {
+    font-family: 'Source Serif 4', 'Source Han Serif SC VF', 'Source Han Serif SC', 'Source Han Serif JP', serif;
+    font-style: italic;
+}
+
+/* English pages: prefer Source Serif 4 for latin text, so quotes render as half-width curly quotes */
+html[lang="en"] body,
+html[lang="en"] .custom-md {
+    font-family: 'Source Serif 4', 'Source Han Serif SC VF', 'Source Han Serif SC', 'Source Han Serif JP', serif;
+}

@@ -38,11 +38,37 @@ const map: { [key: string]: Translation } = {
 	tr_tr: tr,
 };
 
+import { WORD_TRANSLATIONS } from "../constants/translations";
+
 export function getTranslation(lang: string): Translation {
 	return map[lang.toLowerCase()] || defaultTranslation;
 }
 
+// 页面级临时语言重写（利用 NodeJS 全局变量在 Astro 的每个单次渲染沙盒周期中进行隔离重写）
+let globalPageLangOverride: string | null = null;
+
+export function setPageLanguageOverride(lang: string | null) {
+	globalPageLangOverride = lang;
+}
+
+export function getCurrentPageLanguage(): string {
+	return globalPageLangOverride || siteConfig.lang || "zh_CN";
+}
+
+/**
+ * 智能翻译分类和标签，如果没定义该词的对应翻译，则完美回退到原始名字，100% 向下兼容
+ */
+export function translateWord(word: string | null | undefined, langCode: string): string {
+	if (!word) return "";
+	const cleanWord = word.trim();
+	const matched = WORD_TRANSLATIONS[cleanWord];
+	if (matched) {
+		return matched[langCode] || matched['zh_CN'] || cleanWord;
+	}
+	return cleanWord;
+}
+
 export function i18n(key: I18nKey): string {
-	const lang = siteConfig.lang || "en";
+	const lang = getCurrentPageLanguage();
 	return getTranslation(lang)[key];
 }

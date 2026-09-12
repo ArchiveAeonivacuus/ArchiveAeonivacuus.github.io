@@ -7,6 +7,7 @@ tags: [故事, 怪物猎人, 同人]
 category: '我与星光同行'
 draft: false 
 lang: ''
+translate_key: ''
 ---
 
 # <span style="font-family: 'Source Han Serif JP'">ノチウ　クㇽ　トゥラ　カㇻパ</span>

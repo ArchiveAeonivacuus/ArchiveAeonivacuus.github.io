@@ -51,6 +51,7 @@ tags: []
 category: ''
 draft: false 
 lang: ''
+translate_key: ''
 ---
 `
 
