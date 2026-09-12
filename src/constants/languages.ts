@@ -8,14 +8,13 @@ export interface LanguageConfig {
 export const LANGUAGE_MAP: Record<string, LanguageConfig> = {
 	zh_CN: {
 		code: "zh_CN",
-		name: "中文 （简体）",
+		name: "简体中文",
 		fontClass: "font-sc",
-		style:
-			"font-family: 'Source Han Serif SC', 'Source Han Serif JP', serif;",
+		style: "font-family: 'Source Han Serif SC', 'Source Han Serif JP', serif;",
 	},
 	zh_TW: {
 		code: "zh_TW",
-		name: "中文（繁體）",
+		name: "繁體中文",
 		fontClass: "font-tc",
 		style: "font-family: 'Source Han Serif Old', serif;",
 	},
@@ -33,13 +32,13 @@ export const LANGUAGE_MAP: Record<string, LanguageConfig> = {
 	},
 	"A-ong": {
 		code: "A-ong",
-		name: "Onglisch",
+		name: "Onglısch",
 		fontClass: "font-ong",
 		style: "font-family: 'Old English Onglisch', serif;",
 	},
-	"A-zh-iang": {
-		code: "A-zh-iang",
-		name: "漢語（大瀛）",
+	"A-zh_iang": {
+		code: "A-zh_iang",
+		name: "大瀛漢語",
 		fontClass: "font-zhiang",
 		style: "font-family: 'Source Han Serif JP', 'Source Han Serif Old', serif;",
 	},

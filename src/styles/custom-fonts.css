@@ -33,7 +33,7 @@ html[lang="en"] .custom-md {
 /* A-ong (Onglisch) pages: prefer Old English Onglisch */
 html[lang="A-ong"] body,
 html[lang="A-ong"] .custom-md {
-    font-family: 'Old English Onglisch', 'Source Han Serif SC', serif;
+    font-family: 'Old English Onglisch', 'Source Serif 4', 'Source Han Serif SC', serif;
 }
 
 /* A-zh_iang (大瀛漢語) pages: prefer Source Han Serif JP */

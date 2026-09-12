@@ -307,7 +307,7 @@ def split_font(font_info, unicode_ranges, output_dir):
             src_parts = []
             for local_name in font_info.get("local_names", []):
                 src_parts.append(f"local({local_name})")
-            src_parts.append(f"url('/fonts/{family_slug}{style_suffix}/{chunk_index:04d}.woff2') format('woff2')")
+            src_parts.append(f"url('/fonts/split/{family_slug}{style_suffix}/{chunk_index:04d}.woff2') format('woff2')")
             css_line += f"  src: {', '.join(src_parts)};\n"
             css_line += f"  unicode-range: {unicode_str};\n"
             
