@@ -98,6 +98,18 @@
         }
     }
 
+    /* 脚注引用/回跳：正文链接的 padding/负 margin/inline-block 会在
+       右上角数字与文字之间撑出空隙，这里恢复成普通行内元素。 */
+    sup > a[data-footnote-ref],
+    a[data-footnote-backref] {
+        display: inline;
+        padding: 0;
+        margin: 0;
+        background: none;
+        border: 0;
+        text-decoration: none;
+    }
+
     blockquote {
         @apply not-italic border-transparent relative;
         font-weight: inherit;
@@ -181,17 +193,19 @@
   text-align: center;
 }
 .shi:lang(zh) {
-  font-family: KaiTi, serif;
+  font-family: KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif;
 }
 
 .ci {
-  padding-left: 2em;
-  padding-right: 2em;
+  /* 左右整体留白，与正文区分开 */
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 .ci:lang(zh) {
-  font-family: KaiTi, serif;
+  font-family: KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif;
 }
 .ci p {
+  text-indent: 2em; /* 首行缩进两格 */
   margin: 0.5em 0;
 }
 
@@ -199,7 +213,7 @@
   text-align: center;
 }
 .spellcard:lang(zh) {
-  font-family: KaiTi, serif;
+  font-family: KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif;
 }
 
 .poet {
@@ -209,7 +223,7 @@
 
 .waka {
   text-align: center;
-  font-family: "DFKai-SB", serif;
+  font-family: "DFKai-SB", KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif;
 }
 
 /* 英文页面的诗体用斜体（原为 lantern_en 的局部 <style>） */
@@ -248,23 +262,28 @@ html[lang="en"] .shi {
 }
 
 /* ============================================================
-   行内字体指令：:jp[] :asebi[] :ong[] :olds[]
+   行内字体指令：:cn[] :jp[] :asebi[] :ong[] :olds[]
    :dfkai[] :ipa[] :ht[] :kai[] :msmincho[]
    ============================================================ */
+.ff-cn {
+  font-family: "Source Han Serif SC", serif;
+}
 .ff-jp {
   font-family: "Source Han Serif JP", serif;
 }
 .ff-asebi {
-  font-family: "Asebi Mincho", serif;
+  /* 缺 〱〲，回退思源宋体 */
+  font-family: "Asebi Mincho", "Source Han Serif JP", "Source Han Serif SC", serif;
 }
 .ff-ong {
   font-family: "Old English Onglisch", serif;
 }
 .ff-olds {
-  font-family: "Source Han Serif Old", serif;
+  font-family: "Source Han Serif Old", "Source Han Serif SC", serif;
 }
 .ff-dfkai {
-  font-family: "DFKai-SB", serif;
+  /* 標楷體缺 々〆〱〲〻〳〴〵：先回退楷体（々〆为楷体），再回退思源宋体 */
+  font-family: "DFKai-SB", KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif;
 }
 .ff-ipa {
   font-family: "Times New Roman", serif;
@@ -273,8 +292,9 @@ html[lang="en"] .shi {
   font-family: "HighTowerText", serif;
 }
 .ff-kai {
-  font-family: KaiTi, serif;
+  /* KaiTi 缺 〱〲〻〳〴〵，回退思源宋体 */
+  font-family: KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif;
 }
 .ff-msmincho {
-  font-family: "MS Mincho", serif;
+  font-family: "MS Mincho", "Source Han Serif JP", serif;
 }

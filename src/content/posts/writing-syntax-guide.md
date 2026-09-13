@@ -39,7 +39,7 @@ translate_key: ''
 | `:asebi[…]` | Asebi Mincho | `:olds[…]` | Source Han Serif Old |
 | `:dfkai[…]` | DFKai-SB | `:ipa[…]` | Times New Roman |
 | `:ht[…]` | HighTowerText | `:kai[…]` | KaiTi |
-| `:msmincho[…]` | MS Mincho | | |
+| `:msmincho[…]` | MS Mincho | `:cn[…]` | Source Han Serif SC |
 
 > Asebi Mincho / KaiTi / DFKai-SB / Old English Onglisch / HighTowerText 都只有单一字重，
 > 页面已关闭字体合成（`font-synthesis: none`），所以它们不会出现伪粗体。真正需要粗体的是正文思源宋体，已提供真粗体。
@@ -73,7 +73,7 @@ translate_key: ''
 :::
 ```
 
-可用：`:::shi`（诗，居中；中日文页面自动用楷体）、`:::ci`（词，楷体并左右缩进）、`:::spellcard`、`:::poet`（翁语字体居中）、`:::waka`。
+可用：`:::shi`（诗，居中；中日文页面自动用楷体）、`:::ci`（词，楷体，每段首行缩进两格）、`:::spellcard`、`:::poet`（翁语字体居中）、`:::waka`。
 
 > 容器内部一律按 Markdown 解析，所以 `{字|音}` / `:字体[]` 在盒子里也能用（旧的 `<div class="shi">` 紧跟正文时是 HTML 区块，Markdown 不解析，简写会失效）。
 >

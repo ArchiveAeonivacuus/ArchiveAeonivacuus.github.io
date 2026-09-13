@@ -311,8 +311,8 @@ function computeHtmlBlockLines(lines) {
 // ---------------------------------------------------------- style block
 const CANON = {
 	".shi": ["text-align:center", "font-family:kaiti"],
-	".ci": ["font-family:kaiti", "padding-left:2em", "padding-right:2em"],
-	".ci p": ["margin:0.5em0"],
+	".ci": ["font-family:kaiti"],
+	".ci p": ["text-indent:2em", "margin:0.5em0"],
 	".spellcard": ["text-align:center", "font-family:kaiti"],
 	".poet": ["text-align:center", "font-family:oldenglishonglisch"],
 	".waka": ["text-align:center", "font-family:dfkai-sb"],

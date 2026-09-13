@@ -135,6 +135,7 @@ export default defineConfig({
                         waka: ClassBox("waka"),
                         // 新增：行内字体指令，例如 :ong[Linselotte Guenther]
                         jp: FontSpan("ff-jp"),
+                        cn: FontSpan("ff-cn"),
                         asebi: FontSpan("ff-asebi"),
                         ong: FontSpan("ff-ong"),
                         olds: FontSpan("ff-olds"),

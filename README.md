@@ -90,7 +90,7 @@ In addition to Astro's default support for [GitHub Flavored Markdown](https://gi
 | `:asebi[…]` | Asebi Mincho | `:olds[…]` | Source Han Serif Old |
 | `:dfkai[…]` | DFKai-SB | `:ipa[…]` | Times New Roman |
 | `:ht[…]` | HighTowerText | `:kai[…]` | KaiTi |
-| `:msmincho[…]` | MS Mincho | | |
+| `:msmincho[…]` | MS Mincho | `:cn[…]` | Source Han Serif SC |
 
 **诗/词盒子** —— 用容器指令（等价于 `<div class="…">`）：
 
