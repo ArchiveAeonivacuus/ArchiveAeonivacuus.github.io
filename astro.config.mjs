@@ -121,6 +121,8 @@ export default defineConfig({
                 {
                     components: {
                         hyperlink: HyperlinkCardComponent,
+                        // 更短的单行卡片指令：::card{href="..." title="..." avatar="..." desc="..."}
+                        card: HyperlinkCardComponent,
                         github: GithubCardComponent,
                         dialog: DialogComponent,
                         // 新增：把 :::shi 映射为 <div class="shi">

@@ -287,7 +287,7 @@ lang: ''
 
 1.  <b>毁灭仁汨村的斩龙</b> 暂定是一头不明原因发狂的护死灭刃斩龙，是斩龙的唯一高度特化特殊个体。
 
-2.  <b>阿里村附近的怪物</b> 其中<span style="color: #0075ff">蓝色</span>表示古龙，<span style="color: #ff0000">红色</span>表示特殊个体。
+2.  <b>阿里村附近的怪物</b> 其中<span class="tx-blue">蓝色</span>表示古龙，<span class="tx-red">红色</span>表示特殊个体。
 
 <table style="border-collapse: collapse;">
   <thead>
@@ -322,18 +322,18 @@ lang: ''
     </tr>
     <tr>
       <td>泡狐龙<br><span class="ff-jp">泡狐竜タマミツネ</span></td>
-      <td><span style="color: #0075ff">霞龙<br><span class="ff-jp">霞龍オオナズチ</span></span></td>
+      <td><span class="tx-blue">霞龙<br><span class="ff-jp">霞龍オオナズチ</span></span></td>
       <td>绿迅龙<br><span class="ff-jp">緑迅竜ナルガクルガ亜種</span></td>
     </tr>
     <tr>
       <td>武将矢蟹<br><span class="ff-jp">矢蟹ブショウイザミ</span></td>
       <td></td>
-      <td><span style="color: #0075ff">火神龙<br><span class="ff-jp">火神龍アペフチ・カムイ</span></span></td>
+      <td><span class="tx-blue">火神龙<br><span class="ff-jp">火神龍アペフチ・カムイ</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><span style="color: #ff0000">守望火神龙<br><span class="ff-jp">インカルン・アペフチ・カムイ</span></span></td>
+      <td><span class="tx-red">守望火神龙<br><span class="ff-jp">インカルン・アペフチ・カムイ</span></span></td>
     </tr>
     <tr>
       <td rowspan="8">卯桥留山部雪原<br><span class="ff-jp"><ruby>卯橋留山部<rt>ウパㇱルヤンペ</rt></ruby>雪原</span></td>
@@ -358,23 +358,23 @@ lang: ''
     </tr>
     <tr>
       <td>风漂龙<br><span class="ff-jp">風漂竜レイギエナ</span></td>
-      <td><span style="color: #0075ff">钢龙<br><span class="ff-jp">鋼龍クシャルダオラ</span></span></td>
+      <td><span class="tx-blue">钢龙<br><span class="ff-jp">鋼龍クシャルダオラ</span></span></td>
       <td>巨兽<br><span class="ff-jp">巨獣ガムート</span></td>
     </tr>
     <tr>
       <td>冰土砂龙<br><span class="ff-jp">氷砕竜ボルボロス亜種</span></td>
-      <td><span style="color: #0075ff">杀戟龙<br><span class="ff-jp">殺戟龍シャチホコ</span></span></td>
-      <td><span style="color: #ff0000">喙裂丹首鸟<br><span class="ff-jp">喙裂けたグルスハケ</span></span></td>
+      <td><span class="tx-blue">杀戟龙<br><span class="ff-jp">殺戟龍シャチホコ</span></span></td>
+      <td><span class="tx-red">喙裂丹首鸟<br><span class="ff-jp">喙裂けたグルスハケ</span></span></td>
     </tr>
     <tr>
       <td>雪狮子<br><span class="ff-jp">雪獅子ドドブランゴ</span></td>
       <td></td>
-      <td><span style="color: #0075ff">麒麟<br><span class="ff-jp">幻獣キリン</span></span></td>
+      <td><span class="tx-blue">麒麟<br><span class="ff-jp">幻獣キリン</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><span style="color: #0075ff">吹雪龙<br><span class="ff-jp">吹雪龍メ・ウウェチ</span></span></td>
+      <td><span class="tx-blue">吹雪龙<br><span class="ff-jp">吹雪龍メ・ウウェチ</span></span></td>
     </tr>
     <tr>
       <td rowspan="9">乌美怒振火山<br><span class="ff-jp"><ruby>烏美怒振<rt>ウフイヌプリ</rt></ruby>火山</td>
@@ -394,33 +394,33 @@ lang: ''
     </tr>
     <tr>
       <td>岩蜗<br><span class="ff-jp">岩蝸ルビマキマ</span></td>
-      <td><span style="color: #0075ff">炎王龙<br><span class="ff-jp">炎王龍テオ・テスカトル</span></span></td>
+      <td><span class="tx-blue">炎王龙<br><span class="ff-jp">炎王龍テオ・テスカトル</span></span></td>
       <td>金火龙<br><span class="ff-jp">金火竜リオレイア希少種</span></td>
     </tr>
     <tr>
       <td>铠龙<br><span class="ff-jp">鎧竜グラビモス</span></td>
-      <td><span style="color: #0075ff">炎妃龙<br><span class="ff-jp">炎妃龍ナナ・テスカトリ</span></span></td>
+      <td><span class="tx-blue">炎妃龙<br><span class="ff-jp">炎妃龍ナナ・テスカトリ</span></span></td>
       <td>银火龙<br><span class="ff-jp">銀火竜リオレウス希少種</span></td>
     </tr>
     <tr>
       <td>将军镰蟹<br><span class="ff-jp">鎌蟹ショウグンギザミ</span></td>
       <td></td>
-      <td><span style="color: #0075ff">幼熔山龙<br><span class="ff-jp">幼きゾラ・マグダラオス</span></span></td>
+      <td><span class="tx-blue">幼熔山龙<br><span class="ff-jp">幼きゾラ・マグダラオス</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><span style="color: #0075ff">姬鬼龙<br><span class="ff-jp">姫鬼龍フィジャ・サンクタ</span></span></td>
+      <td><span class="tx-blue">姬鬼龙<br><span class="ff-jp">姫鬼龍フィジャ・サンクタ</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><span style="color: #ff0000">爆炎渊源姬鬼龙<br><span class="ff-jp">爆炎の淵源フィジャ・サンクタ</span></span></td>
+      <td><span class="tx-red">爆炎渊源姬鬼龙<br><span class="ff-jp">爆炎の淵源フィジャ・サンクタ</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><span style="color: #ff0000">护死灭刃斩龙<br><span class="ff-jp">護死滅刃ディノバルド</span></span></td>
+      <td><span class="tx-red">护死灭刃斩龙<br><span class="ff-jp">護死滅刃ディノバルド</span></span></td>
     </tr>
     <tr>
       <td rowspan="9">琉绘山沙滩<br><span class="ff-jp"><ruby>琉絵山<rt>ルウェサン</rt></ruby>砂浜</span></td>
@@ -445,7 +445,7 @@ lang: ''
     </tr>
     <tr>
       <td>土砂龙<br><span class="ff-jp">土砂竜ボルボロス</span></td>
-      <td><span style="color: #0075ff">巨鲑龙<br><span class="ff-jp">巨鮭龍カムイ・ペカンケル</span></span></td>
+      <td><span class="tx-blue">巨鲑龙<br><span class="ff-jp">巨鮭龍カムイ・ペカンケル</span></span></td>
       <td>黑角龙<br><span class="ff-jp">黒角竜ディアブロス亜種</span></td>
     </tr>
     <tr>
@@ -456,17 +456,17 @@ lang: ''
     <tr>
       <td></td>
       <td></td>
-      <td><span style="color: #ff0000">载世巨鲑龙<br><span class="ff-jp">世を載せるカムイ・ペカンケル</span></span></td>
+      <td><span class="tx-red">载世巨鲑龙<br><span class="ff-jp">世を載せるカムイ・ペカンケル</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><span style="color: #0075ff">溟波龙<br><span class="ff-jp">溟波龍ネロミェール</span></span></td>
+      <td><span class="tx-blue">溟波龙<br><span class="ff-jp">溟波龍ネロミェール</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><span style="color: #0075ff">古机龙<br><span class="ff-jp">古機龍イォンネット</span></span></td>
+      <td><span class="tx-blue">古机龙<br><span class="ff-jp">古機龍イォンネット</span></span></td>
     </tr>
   </tbody>
 </table>

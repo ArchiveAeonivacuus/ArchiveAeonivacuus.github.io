@@ -75,6 +75,10 @@ translate_key: ''
 
 可用：`:::shi`（诗，居中；中日文页面自动用楷体）、`:::ci`（词，楷体并左右缩进）、`:::spellcard`、`:::poet`（翁语字体居中）、`:::waka`。
 
+> 容器内部一律按 Markdown 解析，所以 `{字|音}` / `:字体[]` 在盒子里也能用（旧的 `<div class="shi">` 紧跟正文时是 HTML 区块，Markdown 不解析，简写会失效）。
+>
+> 两个注意点：① 每个 `:::shi` 必须有对应的 `:::` 收尾；② 正文行不要以 `:::` 开头，否则会被当成闭合围栏。`scripts/migrate-boxes.mjs` 已把旧写法批量迁移过来。
+
 :::shi
 
 雾霭飘自诃古棱，<br>
@@ -82,7 +86,21 @@ translate_key: ''
 
 :::
 
-## 四、原始 HTML 区块的例外
+## 四、链接卡片
+
+单行叶子指令 `::card{…}`，只有 `href` 必填：
+
+```markdown
+::card{href="https://example.com" title="标题" avatar="头像URL" desc="描述"}
+```
+
+- `title` 省略时用域名；`avatar` 省略时用 `<域名>/favicon.ico`；`desc` 省略时为空。
+- `desc` 是**纯文本**，不要塞 HTML（旧写法把带引号的 HTML 放进属性会把指令解析弄坏）。
+- 旧的 `::hyperlink{…}` / `:::hyperlink{…}` 仍兼容，但建议统一用 `::card`。
+
+::card{href="https://www.bilibili.com/" title="哔哩哔哩" desc="自动使用站点 favicon 作头像"}
+
+## 五、原始 HTML 区块的例外
 
 `{…}` 和 `:指令[…]` 只在**普通 Markdown** 中解析。若内容处在原始 HTML 区块里（`<table>`、`<div>`、独占一行的 `<span>`、`<!-- 注释 -->`），Markdown 不会解析，请直接用 HTML：
 
@@ -94,7 +112,7 @@ translate_key: ''
 
 `ff-*` 类名与上表指令一一对应：`:ong` ↔ `ff-ong`、`:jp` ↔ `ff-jp`、`:asebi` ↔ `ff-asebi`，以此类推。
 
-## 五、多语言
+## 六、多语言
 
 同一篇文章的各语言版本共享同一个 `translate_key`，页面顶部会自动出现语言切换条。新建翻译：
 
@@ -102,7 +120,7 @@ translate_key: ''
 pnpm new-translation <base-slug> <lang> --title="译文标题"
 ```
 
-## 六、常用命令
+## 七、常用命令
 
 ```sh
 pnpm new-post <filename> [--lang=ja] [--translate-key=key] [--category=…] [--tags=a,b] [--title="…"]

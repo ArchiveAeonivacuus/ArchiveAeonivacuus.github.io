@@ -17,18 +17,18 @@ translate_key: 'lantern-under-the-ochre-vault'
 
 若是常常来往地逸与露末教廷之间的教士一定知道，南地逸上空，就算是在穹顶以内，经常也能看到淡红色的天空。这样的景观尤是黄昏之时，远方地平线之上宛如有人得病，血迹涂抹。残红映照，让人疑心是夕阳诀别世界，空留这般色彩与钟声一同回响于大地。南地逸的诗人说：
 
-<div class="poet">
+:::poet
 
 Wann da Hacoromer Nebl kimmt,<br>
 werd aus'm zwielicht a roat's gedimmt.
 
-</div>
-<div class="shi">
+:::
+:::shi
 
 雾霭飘自诃古棱，<br>
 暮色时分尽染红。
 
-</div>
+:::
 
 而露末北部的乙林—婆但[^1]行省，在此地生息的乙林人早在数百年前就发现，若是白天在远处天际看到了血红色的界限，不出五日就要有寒流来袭。
 

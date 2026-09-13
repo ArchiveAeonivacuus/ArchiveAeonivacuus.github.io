@@ -212,6 +212,41 @@
   font-family: "DFKai-SB", serif;
 }
 
+/* 英文页面的诗体用斜体（原为 lantern_en 的局部 <style>） */
+html[lang="en"] .shi {
+  font-style: italic;
+}
+
+/* 常用小工具类（原为多篇文章重复的 <style>） */
+.graph-title {
+  text-align: center;
+}
+.rotate-text {
+  transform: rotate(270deg);
+  display: inline-block;
+}
+
+/* 文章级正文字体：在 frontmatter 里写 rootClass: font-ht */
+.font-ht p {
+  font-family: "HighTowerText", "Source Han Serif SC", "Source Han Serif JP", serif;
+}
+
+/* 行内颜色/标记工具类（原为文章内联 style） */
+.tx-blue {
+  color: #0075ff;
+}
+.tx-red {
+  color: #ff0000;
+}
+.tx-box {
+  display: inline;
+  border: 1px solid currentColor;
+  padding: 0 2px;
+}
+.tx-right {
+  text-align: right;
+}
+
 /* ============================================================
    行内字体指令：:jp[] :asebi[] :ong[] :olds[]
    :dfkai[] :ipa[] :ht[] :kai[] :msmincho[]

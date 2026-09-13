@@ -103,6 +103,12 @@ In addition to Astro's default support for [GitHub Flavored Markdown](https://gi
 :::ci / :::spellcard / :::poet / :::waka
 ```
 
+**链接卡片** —— 单行叶子指令，只有 `href` 必填；`title` 默认域名，`avatar` 默认站点 favicon：
+
+```markdown
+::card{href="https://example.com" title="标题" avatar="头像URL" desc="纯文本描述"}
+```
+
 > ⚠️ `{…}` 与 `:指令[…]` 只在普通 Markdown 中解析。在原始 HTML 区块（`<table>`、`<div>`、独占一行的 `<span>`、`<!-- -->`）内不会解析，那里请改用 `<ruby>` 或 `<span class="ff-ong">`（类名与上表指令一一对应，如 `:ong` ↔ `ff-ong`）。
 
 **多语言**：同一篇文章的各语言版本共享 `translate_key`，页面会自动出现语言切换条。

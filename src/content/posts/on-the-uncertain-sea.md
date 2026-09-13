@@ -7,19 +7,8 @@ tags: [设定, 於留根, 央额列, 息律, 世界模型, 树上萤火虫]
 category: '瀛寰'
 draft: false 
 lang: ''
+rootClass: 'font-ht'
 ---
-
-<style>
-
-.graph-title {
-    text-align: center;
-}
-
-p {
-  font-family: 'HighTowerText', 'Source Han Serif SC', 'Source Han Serif JP', serif;
-}
-
-</style>
 
 # :ong[An Dın Uncértus Márınen]
 # :ong[– Módel Lampyrídæ An Tray.]
@@ -184,7 +173,7 @@ p {
 
 ## :ong[Capıtulum 2] 浮世根须与息律
 
-南方的勇者<span style="display:inline; border:1px solid black; min-height:1em; padding: 1px 1px;">嘉田郁主</span>献出自己的生命，为世人揭示了浮世根须与稳定较高罗生—息律的作用[^4]，愿主保佑他。现在我们将目光投向这些神秘的造物。
+南方的勇者<span class="tx-box">嘉田郁主</span>献出自己的生命，为世人揭示了浮世根须与稳定较高罗生—息律的作用[^4]，愿主保佑他。现在我们将目光投向这些神秘的造物。
 
 科学不允许我们对海洋的底部一探究竟，不过我们还没有在海面检测到多少浮世根须的作用，因此暂且忽略其水生品种之作用不计。从汉苏·加连白（:ong[Hans Carenbach, 1213]）的统计数据，我们又知道陆上浮世根须附近，离浮世根须越近的地方罗生—息律值越高越稳定，但苦于於留根大陆的浮世根须大且芜杂，加连白并没有得出量化的结论。
 

@@ -1,22 +1,21 @@
 ---
+import { getCollection } from "astro:content";
 import path from "node:path";
 import Comments from "@components/Comment";
 import License from "@components/misc/License.astro";
 import Markdown from "@components/misc/Markdown.astro";
 import I18nKey from "@i18n/i18nKey";
-import { i18n } from "@i18n/translation";
+import { i18n, setPageLanguageOverride } from "@i18n/translation";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 import { getSortedPosts } from "@utils/content-utils";
-import { getCollection } from "astro:content";
 import { getDir, getPostUrlBySlug } from "@utils/url-utils";
 import { Icon } from "astro-icon/components";
 import { licenseConfig } from "src/config";
 import ImageWrapper from "../../components/misc/ImageWrapper.astro";
 import PostMetadata from "../../components/PostMeta.astro";
 import { profileConfig, siteConfig } from "../../config";
-import { formatDateToYYYYMMDD } from "../../utils/date-utils";
 import { LANGUAGE_MAP } from "../../constants/languages";
-import { setPageLanguageOverride } from "@i18n/translation";
+import { formatDateToYYYYMMDD } from "../../utils/date-utils";
 import "katex/dist/katex.css";
 
 export async function getStaticPaths() {
@@ -48,21 +47,24 @@ setPageLanguageOverride(currentLangCode);
 // 如果文章没有配置 translate_key，代表无翻译版本，默认向下兼容不显示切换条。
 const currentTranslateKey = entry.data.translate_key;
 
-const translations = (currentTranslateKey && currentTranslateKey.trim() !== "")
-	? allEntries.filter((p) => {
-		return p.data.translate_key === currentTranslateKey;
-	}).map((p) => {
-		const langCode = p.data.lang || "zh_CN";
-		const config = LANGUAGE_MAP[langCode];
-		return {
-			slug: p.slug,
-			langCode,
-			title: p.data.title,
-			url: getPostUrlBySlug(p.slug),
-			config,
-		};
-	})
-	: [];
+const translations =
+	currentTranslateKey && currentTranslateKey.trim() !== ""
+		? allEntries
+				.filter((p) => {
+					return p.data.translate_key === currentTranslateKey;
+				})
+				.map((p) => {
+					const langCode = p.data.lang || "zh_CN";
+					const config = LANGUAGE_MAP[langCode];
+					return {
+						slug: p.slug,
+						langCode,
+						title: p.data.title,
+						url: getPostUrlBySlug(p.slug),
+						config,
+					};
+				})
+		: [];
 
 // 按照配置中的顺序对多语言切换按键进行美观排序
 const sortedTranslations = translations.sort((a, b) => {
@@ -91,8 +93,8 @@ const jsonLd = {
 <MainGridLayout banner={entry.data.image} title={entry.data.title} description={entry.data.description} lang={entry.data.lang} setOGTypeArticle={true} headings={headings}>
     <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative mb-4">
-        <div id="post-container" class:list={["card-base z-10 px-6 md:px-9 pt-6 pb-4 relative w-full ",
-            {}
+        <div id="post-container" class:list={["card-base z-10 px-6 md:px-9 pt-6 pb-4 relative w-full",
+            entry.data.rootClass
         ]}>
             <!-- word count and reading time -->
             <div class="flex flex-row text-black/30 dark:text-white/30 gap-5 mb-3 transition onload-animation">

@@ -10,30 +10,23 @@ lang: 'en'
 translate_key: 'lantern-under-the-ochre-vault'
 ---
 
-<style>
-.shi {
-    text-align: center;
-    font-style: italic;
-}
-</style>
-
 # Lanterarium sub Firmamento Ochraceo
 # Lantern under the Ochre Vault
 
 Any cleric wont to travel oft between Taitchland and the Papacy Romo would surely know that above southern Taitchland, even within the vault, one may often behold a sky of pallid red. This sight is most striking at dusk, when above the far horizon it seems as though some ailing soul hath smeared the heavens with blood. The lingering crimson makes one suspect that the setting sun is bidding farewell to the world, leaving behind such hues to echo across the earth together with the sound of bells. A poet of southern Taitchland sang:
 
-<div class="poet">
+:::poet
 
 Wann da Hacoromer Nebl kimmt,<br>
 werd aus'm zwielicht a roat's gedimmt.
 
-</div>
-<div class="shi">
+:::
+:::shi
 
 When fog Hacorui comes drifting down,<br>
 The dusk is dyed a crimson brown.
 
-</div>
+:::
 
 And in the Ellin-Badan[^1] province of northern Roma, the Ellins who dwell there discovered several hundred years ago that should a blood-red boundary appears in the distant sky during the day, a cold wave would arrive within five days.
 
