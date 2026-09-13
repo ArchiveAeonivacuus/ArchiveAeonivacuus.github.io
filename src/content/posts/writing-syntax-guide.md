@@ -53,8 +53,8 @@ translate_key: ''
 ```markdown
 :ong[{赭|zhě}]         → 整个「赭（zhě）」用央语字体
 {赭|:ong[zhě]}         → 只给注音 zhě 用央语字体，基字保持默认
-{:asebi[糒]|かれいひ}   → 只给基字「糒」用 Asebi，注音保持默认
-:ipa[{皤|pó}{鄢|yān}]   → 相邻两个注音同属一种字体
+{:ja_old[糒]|かれいひ}   → 只给基字「糒」用 Asebi，注音保持默认
+:en[{皤|pó}{鄢|yān}]   → 相邻两个注音同属一种字体
 ```
 
 实测效果：:ong[{赭|zhě}]、{赭|:ong[zhě]}、{:asebi[糒]|かれいひ}、:ipa[{皤|pó}{鄢|yān}]。
@@ -106,11 +106,11 @@ translate_key: ''
 
 ```html
 <table>
-  <tr><td><span class="ff-jp"><ruby>迩岱空部<rt>ニタイカㇻペ</rt></ruby>の森</span></td></tr>
+  <tr><td><span class="ff-ja"><ruby>迩岱空部<rt>ニタイカㇻペ</rt></ruby>の森</span></td></tr>
 </table>
 ```
 
-`ff-*` 类名与上表指令一一对应：`:ong` ↔ `ff-ong`、`:jp` ↔ `ff-jp`、`:asebi` ↔ `ff-asebi`，以此类推。
+`ff-*` 类名与上表指令一一对应：`:ong` ↔ `ff-ong`、`:ja` ↔ `ff-ja`、`:ja_old` ↔ `ff-ja_old`，以此类推。
 
 ## 六、多语言
 
