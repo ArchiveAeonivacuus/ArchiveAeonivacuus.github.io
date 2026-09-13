@@ -107,7 +107,7 @@ lang: ''
 
 # 本篇持续更新中！！！
 
-# <span style="font-family: 'Source Han Serif JP'">ノチウ　コㇿ　ラムニンカ</span>
+# :jp[ノチウ　コㇿ　ラムニンカ]
 # nociw kor ramuninka
 # 星光留影——《我与星光同行》设定集
 
@@ -121,7 +121,7 @@ lang: ''
 
 ## 人物
 
-1.  <b>雪泽 阿部缘（<span style="font-family: 'Source Han Serif JP'"><ruby>雪沢<rt>ゆきさわ</rt></ruby> <ruby>阿部縁<rt>アペフチ</rt></ruby></span>）</b>
+1.  <b>雪泽 阿部缘（:jp[{雪沢|ゆきさわ} {阿部縁|アペフチ}]）</b>
 <div class="mh-hunter">
   <div data-label="出身地">仁汨村</div>
   <div data-label="种族">人类</div>
@@ -140,7 +140,7 @@ lang: ''
   <div class="mh-description" data-label="人物介绍">小说主角。</div>
 </div>
     
-2.  <b>平泽 池荣怒（<span style="font-family: 'Source Han Serif JP'"><ruby>平沢<rt>ひらさわ</rt></ruby> <ruby>池容怒<rt>チロンヌㇷ゚</rt></ruby></span>）</b>
+2.  <b>平泽 池荣怒（:jp[{平沢|ひらさわ} {池容怒|チロンヌㇷ゚}]）</b>
 <div class="mh-other">
   <div data-label="出身地">仁汨村</div>
   <div data-label="种族">人类</div>
@@ -148,7 +148,7 @@ lang: ''
   <div class="mh-description" data-label="人物介绍">调查时也进行物资采集的工作，来到新大陆后成为了接待员。原先当过骑士，但随行兽蓝速龙被斩龙杀死了。</div>
 </div>
 
-3.  <b>明日利玛（<span style="font-family: 'Source Han Serif JP'"><ruby>明日利瑪<rt>アシㇼパ</rt></ruby></span>）</b>
+3.  <b>明日利玛（:jp[{明日利瑪|アシㇼパ}]）</b>
 <div class="mh-hunter">
   <div data-label="出身地">阿里村</div>
   <div data-label="种族">人类</div>
@@ -169,7 +169,7 @@ lang: ''
 
 4.  <b>“天上来的第五期团”</b> 也就是MHW:I中的主角苍蓝星。
 
-5.  <b>一之濑 唯（<span style="font-family: 'Source Han Serif JP'"><ruby>一之瀬<rt>いちのせ</rt></ruby> <ruby>唯<rt>ゆい</rt></ruby></span>）</b>
+5.  <b>一之濑 唯（:jp[{一之瀬|いちのせ} {唯|ゆい}]）</b>
 <div class="mh-hunter">
   <div data-label="出身地">莫加村</div>
   <div data-label="种族">人类</div>
@@ -188,7 +188,7 @@ lang: ''
   <div class="mh-description" data-label="人物介绍">新大陆古龙调查团猎人，是雪泽阿部缘和平泽池荣怒的舍友。来自莫家村，擅长使用铳枪进行水战。攻击能够积攒月震值发动“深海月震击连段”。</div>
 </div>
 
-6.  <b>竹内琴音（<span style="font-family: 'Source Han Serif JP'"><ruby>竹内<rt>たけうち</rt></ruby> <ruby>琴音<rt>ことね</rt></ruby></span>）</b>
+6.  <b>竹内琴音（:jp[{竹内|たけうち} {琴音|ことね}]）</b>
 <div class="mh-hunter">
   <div data-label="出身地">未知</div>
   <div data-label="种族">人类</div>
@@ -300,173 +300,173 @@ lang: ''
   </thead>
   <tbody>
     <tr>
-      <td rowspan="7">迩岱空部森林<br><span style="font-family: 'Source Han Serif JP'"><ruby>迩岱空部<rt>ニタイカㇻペ</rt></ruby>の森</span></td>
-      <td>蓝速龙王<br><span style="font-family: 'Source Han Serif JP'">ドスランポス</span></td>
-      <td>雷狼龙<br><span style="font-family: 'Source Han Serif JP'">雷狼竜ジンオウガ</span></td>
-      <td>斩翼鸟<br><span style="font-family: 'Source Han Serif JP'">斬翼鳥タララヤック</span></td>
+      <td rowspan="7">迩岱空部森林<br><span class="ff-jp"><ruby>迩岱空部<rt>ニタイカㇻペ</rt></ruby>の森</span></td>
+      <td>蓝速龙王<br><span class="ff-jp">ドスランポス</span></td>
+      <td>雷狼龙<br><span class="ff-jp">雷狼竜ジンオウガ</span></td>
+      <td>斩翼鸟<br><span class="ff-jp">斬翼鳥タララヤック</span></td>
     </tr>
     <tr>
-      <td>青熊兽<br><span style="font-family: 'Source Han Serif JP'">青熊獣アオアシラ</span></td>
-      <td>樱火龙<br><span style="font-family: 'Source Han Serif JP'">桜火竜リオレイア亜種</span></td>
-      <td>茶兔兽<br><span style="font-family: 'Source Han Serif JP'">茶兎獣ウルクスス亜種</span></td>
+      <td>青熊兽<br><span class="ff-jp">青熊獣アオアシラ</span></td>
+      <td>樱火龙<br><span class="ff-jp">桜火竜リオレイア亜種</span></td>
+      <td>茶兔兽<br><span class="ff-jp">茶兎獣ウルクスス亜種</span></td>
     </tr>
     <tr>
-      <td>吼鹿<br><span style="font-family: 'Source Han Serif JP'">吼鹿エケルギツ</span></td>
-      <td>毒矢武将蟹<br><span style="font-family: 'Source Han Serif JP'">毒矢蟹ブショウイザミ亜種</span></td>
-      <td>茶熊兽<br><span style="font-family: 'Source Han Serif JP'">茶熊獣アオアシラ希少種</span></td>
+      <td>吼鹿<br><span class="ff-jp">吼鹿エケルギツ</span></td>
+      <td>毒矢武将蟹<br><span class="ff-jp">毒矢蟹ブショウイザミ亜種</span></td>
+      <td>茶熊兽<br><span class="ff-jp">茶熊獣アオアシラ希少種</span></td>
     </tr>
     <tr>
-      <td>舌毒蜗<br><span style="font-family: 'Source Han Serif JP'">舌毒蝸トクシマキマ</span></td>
-      <td>浓舌蜗<br><span style="font-family: 'Source Han Serif JP'">濃舌蝸トクシマキマ亜種</span></td>
-      <td>迅龙<br><span style="font-family: 'Source Han Serif JP'">迅竜ナルガクルガ</span></td>
+      <td>舌毒蜗<br><span class="ff-jp">舌毒蝸トクシマキマ</span></td>
+      <td>浓舌蜗<br><span class="ff-jp">濃舌蝸トクシマキマ亜種</span></td>
+      <td>迅龙<br><span class="ff-jp">迅竜ナルガクルガ</span></td>
     </tr>
     <tr>
-      <td>泡狐龙<br><span style="font-family: 'Source Han Serif JP'">泡狐竜タマミツネ</span></td>
-      <td><span style="color: #0075ff">霞龙<br><span style="font-family: 'Source Han Serif JP'">霞龍オオナズチ</span></span></td>
-      <td>绿迅龙<br><span style="font-family: 'Source Han Serif JP'">緑迅竜ナルガクルガ亜種</span></td>
+      <td>泡狐龙<br><span class="ff-jp">泡狐竜タマミツネ</span></td>
+      <td><span style="color: #0075ff">霞龙<br><span class="ff-jp">霞龍オオナズチ</span></span></td>
+      <td>绿迅龙<br><span class="ff-jp">緑迅竜ナルガクルガ亜種</span></td>
     </tr>
     <tr>
-      <td>武将矢蟹<br><span style="font-family: 'Source Han Serif JP'">矢蟹ブショウイザミ</span></td>
+      <td>武将矢蟹<br><span class="ff-jp">矢蟹ブショウイザミ</span></td>
       <td></td>
-      <td><span style="color: #0075ff">火神龙<br><span style="font-family: 'Source Han Serif JP'">火神龍アペフチ・カムイ</span></span></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td><span style="color: #ff0000">守望火神龙<br><span style="font-family: 'Source Han Serif JP'">インカルン・アペフチ・カムイ</span></span></td>
-    </tr>
-    <tr>
-      <td rowspan="8">卯桥留山部雪原<br><span style="font-family: 'Source Han Serif JP'"><ruby>卯橋留山部<rt>ウパㇱルヤンペ</rt></ruby>雪原</span></td>
-      <td>白熊兽<br><span style="font-family: 'Source Han Serif JP'">白熊獣アオアシラ亜種</span></td>
-      <td>雹狐龙<br><span style="font-family: 'Source Han Serif JP'">雹狐竜タマミツネ亜種</span></td>
-      <td>碎铳鹿<br><span style="font-family: 'Source Han Serif JP'">砕銃鹿エケエクス希少種</span></td>
-    </tr>
-    <tr>
-      <td>丹首鸟<br><span style="font-family: 'Source Han Serif JP'">丹首鳥グルスハケ</span></td>
-      <td>霙刃龙<br><span style="font-family: 'Source Han Serif JP'">霙刃竜セレルギオス亜種</span></td>
-      <td>狱狼龙<br><span style="font-family: 'Source Han Serif JP'">獄狼竜ジンオウガ亜種</span></td>
-    </tr>
-    <tr>
-      <td>冻海兽<br><span style="font-family: 'Source Han Serif JP'">凍海獣ポカラドン</span></td>
-      <td>霜锤龙<br><span style="font-family: 'Source Han Serif JP'">霜鎚竜ウラガンキン希少種</span></td>
-      <td>雪鬼兽<br><span style="font-family: 'Source Han Serif JP'">雪鬼獣ゴシャハギ</span></td>
-    </tr>
-    <tr>
-      <td>铳鹿<br><span style="font-family: 'Source Han Serif JP'">銃鹿エケエクス</span></td>
-      <td>激昂雪狮子<br><span style="font-family: 'Source Han Serif JP'">激昂したドドブランゴ</span></td>
-      <td>雪女兽<br><span style="font-family: 'Source Han Serif JP'">雪女獣ゴシャユキア</span></td>
-    </tr>
-    <tr>
-      <td>风漂龙<br><span style="font-family: 'Source Han Serif JP'">風漂竜レイギエナ</span></td>
-      <td><span style="color: #0075ff">钢龙<br><span style="font-family: 'Source Han Serif JP'">鋼龍クシャルダオラ</span></span></td>
-      <td>巨兽<br><span style="font-family: 'Source Han Serif JP'">巨獣ガムート</span></td>
-    </tr>
-    <tr>
-      <td>冰土砂龙<br><span style="font-family: 'Source Han Serif JP'">氷砕竜ボルボロス亜種</span></td>
-      <td><span style="color: #0075ff">杀戟龙<br><span style="font-family: 'Source Han Serif JP'">殺戟龍シャチホコ</span></span></td>
-      <td><span style="color: #ff0000">喙裂丹首鸟<br><span style="font-family: 'Source Han Serif JP'">喙裂けたグルスハケ</span></span></td>
-    </tr>
-    <tr>
-      <td>雪狮子<br><span style="font-family: 'Source Han Serif JP'">雪獅子ドドブランゴ</span></td>
-      <td></td>
-      <td><span style="color: #0075ff">麒麟<br><span style="font-family: 'Source Han Serif JP'">幻獣キリン</span></span></td>
+      <td><span style="color: #0075ff">火神龙<br><span class="ff-jp">火神龍アペフチ・カムイ</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><span style="color: #0075ff">吹雪龙<br><span style="font-family: 'Source Han Serif JP'">吹雪龍メ・ウウェチ</span></span></td>
+      <td><span style="color: #ff0000">守望火神龙<br><span class="ff-jp">インカルン・アペフチ・カムイ</span></span></td>
     </tr>
     <tr>
-      <td rowspan="9">乌美怒振火山<br><span style="font-family: 'Source Han Serif JP'"><ruby>烏美怒振<rt>ウフイヌプリ</rt></ruby>火山</td>
-      <td>炎铳鹿<br><span style="font-family: 'Source Han Serif JP'">炎銃鹿エケエクス亜種</span></td>
-      <td>火龙<br><span style="font-family: 'Source Han Serif JP'">火竜リオレウス</span></td>
-      <td>朱镰将军蟹<br><span style="font-family: 'Source Han Serif JP'">朱鎌蟹ショウグンギザミ亜種</span></td>
+      <td rowspan="8">卯桥留山部雪原<br><span class="ff-jp"><ruby>卯橋留山部<rt>ウパㇱルヤンペ</rt></ruby>雪原</span></td>
+      <td>白熊兽<br><span class="ff-jp">白熊獣アオアシラ亜種</span></td>
+      <td>雹狐龙<br><span class="ff-jp">雹狐竜タマミツネ亜種</span></td>
+      <td>碎铳鹿<br><span class="ff-jp">砕銃鹿エケエクス希少種</span></td>
     </tr>
     <tr>
-      <td>黑首鸟<br><span style="font-family: 'Source Han Serif JP'">黒首鳥グルスハケ亜種</span></td>
-      <td>苍火龙<br><span style="font-family: 'Source Han Serif JP'">蒼火竜リオレウス亜種</span></td>
-      <td>斩龙<br><span style="font-family: 'Source Han Serif JP'">斬竜ディノバルド</span></td>
+      <td>丹首鸟<br><span class="ff-jp">丹首鳥グルスハケ</span></td>
+      <td>霙刃龙<br><span class="ff-jp">霙刃竜セレルギオス亜種</span></td>
+      <td>狱狼龙<br><span class="ff-jp">獄狼竜ジンオウガ亜種</span></td>
     </tr>
     <tr>
-      <td>爆锤龙<br><span style="font-family: 'Source Han Serif JP'">爆鎚竜ウラガンキン</span></td>
-      <td>狱焰蛸<br><span style="font-family: 'Source Han Serif JP'">獄焔蛸ヌ・エグドラ</span></td>
-      <td>黑铠龙<br><span style="font-family: 'Source Han Serif JP'">黒鎧竜グラビモス亜種</span></td>
+      <td>冻海兽<br><span class="ff-jp">凍海獣ポカラドン</span></td>
+      <td>霜锤龙<br><span class="ff-jp">霜鎚竜ウラガンキン希少種</span></td>
+      <td>雪鬼兽<br><span class="ff-jp">雪鬼獣ゴシャハギ</span></td>
     </tr>
     <tr>
-      <td>岩蜗<br><span style="font-family: 'Source Han Serif JP'">岩蝸ルビマキマ</span></td>
-      <td><span style="color: #0075ff">炎王龙<br><span style="font-family: 'Source Han Serif JP'">炎王龍テオ・テスカトル</span></span></td>
-      <td>金火龙<br><span style="font-family: 'Source Han Serif JP'">金火竜リオレイア希少種</span></td>
+      <td>铳鹿<br><span class="ff-jp">銃鹿エケエクス</span></td>
+      <td>激昂雪狮子<br><span class="ff-jp">激昂したドドブランゴ</span></td>
+      <td>雪女兽<br><span class="ff-jp">雪女獣ゴシャユキア</span></td>
     </tr>
     <tr>
-      <td>铠龙<br><span style="font-family: 'Source Han Serif JP'">鎧竜グラビモス</span></td>
-      <td><span style="color: #0075ff">炎妃龙<br><span style="font-family: 'Source Han Serif JP'">炎妃龍ナナ・テスカトリ</span></span></td>
-      <td>银火龙<br><span style="font-family: 'Source Han Serif JP'">銀火竜リオレウス希少種</span></td>
+      <td>风漂龙<br><span class="ff-jp">風漂竜レイギエナ</span></td>
+      <td><span style="color: #0075ff">钢龙<br><span class="ff-jp">鋼龍クシャルダオラ</span></span></td>
+      <td>巨兽<br><span class="ff-jp">巨獣ガムート</span></td>
     </tr>
     <tr>
-      <td>将军镰蟹<br><span style="font-family: 'Source Han Serif JP'">鎌蟹ショウグンギザミ</span></td>
+      <td>冰土砂龙<br><span class="ff-jp">氷砕竜ボルボロス亜種</span></td>
+      <td><span style="color: #0075ff">杀戟龙<br><span class="ff-jp">殺戟龍シャチホコ</span></span></td>
+      <td><span style="color: #ff0000">喙裂丹首鸟<br><span class="ff-jp">喙裂けたグルスハケ</span></span></td>
+    </tr>
+    <tr>
+      <td>雪狮子<br><span class="ff-jp">雪獅子ドドブランゴ</span></td>
       <td></td>
-      <td><span style="color: #0075ff">幼熔山龙<br><span style="font-family: 'Source Han Serif JP'">幼きゾラ・マグダラオス</span></span></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td><span style="color: #0075ff">姬鬼龙<br><span style="font-family: 'Source Han Serif JP'">姫鬼龍フィジャ・サンクタ</span></span></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td><span style="color: #ff0000">爆炎渊源姬鬼龙<br><span style="font-family: 'Source Han Serif JP'">爆炎の淵源フィジャ・サンクタ</span></span></td>
+      <td><span style="color: #0075ff">麒麟<br><span class="ff-jp">幻獣キリン</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><span style="color: #ff0000">护死灭刃斩龙<br><span style="font-family: 'Source Han Serif JP'">護死滅刃ディノバルド</span></span></td>
+      <td><span style="color: #0075ff">吹雪龙<br><span class="ff-jp">吹雪龍メ・ウウェチ</span></span></td>
     </tr>
     <tr>
-      <td rowspan="9">琉绘山沙滩<br><span style="font-family: 'Source Han Serif JP'"><ruby>琉絵山<rt>ルウェサン</rt></ruby>砂浜</span></td>
-      <td>啮鱼龙<br><span style="font-family: 'Source Han Serif JP'">噛魚竜アラマキトス</span></td>
-      <td>白一角龙<br><span style="font-family: 'Source Han Serif JP'">白一角竜モノブロス亜種</span></td>
-      <td>刺鲀龙<br><span style="font-family: 'Source Han Serif JP'">刺魨竜テトラヴァルヌ</span></td>
+      <td rowspan="9">乌美怒振火山<br><span class="ff-jp"><ruby>烏美怒振<rt>ウフイヌプリ</rt></ruby>火山</td>
+      <td>炎铳鹿<br><span class="ff-jp">炎銃鹿エケエクス亜種</span></td>
+      <td>火龙<br><span class="ff-jp">火竜リオレウス</span></td>
+      <td>朱镰将军蟹<br><span class="ff-jp">朱鎌蟹ショウグンギザミ亜種</span></td>
     </tr>
     <tr>
-      <td>大名盾蟹<br><span style="font-family: 'Source Han Serif JP'">盾蟹ダイミョウザザミ</span></td>
-      <td>角龙<br><span style="font-family: 'Source Han Serif JP'">角竜ディアブロス</span></td>
-      <td>海龙<br><span style="font-family: 'Source Han Serif JP'">海竜ラギアクルス</span></td>
+      <td>黑首鸟<br><span class="ff-jp">黒首鳥グルスハケ亜種</span></td>
+      <td>苍火龙<br><span class="ff-jp">蒼火竜リオレウス亜種</span></td>
+      <td>斩龙<br><span class="ff-jp">斬竜ディノバルド</span></td>
     </tr>
     <tr>
-      <td>翔虎鸟<br><span style="font-family: 'Source Han Serif JP'">翔虎鳥ハリリタラサ</span></td>
-      <td>千刃龙<br><span style="font-family: 'Source Han Serif JP'">千刃竜セレルギオス</span></td>
-      <td>痹蛸<br><span style="font-family: 'Source Han Serif JP'">痺蛸オクエペケセ</span></td>
+      <td>爆锤龙<br><span class="ff-jp">爆鎚竜ウラガンキン</span></td>
+      <td>狱焰蛸<br><span class="ff-jp">獄焔蛸ヌ・エグドラ</span></td>
+      <td>黑铠龙<br><span class="ff-jp">黒鎧竜グラビモス亜種</span></td>
     </tr>
     <tr>
-      <td>一角龙<br><span style="font-family: 'Source Han Serif JP'">一角竜モノブロス</span></td>
-      <td>礁龙<br><span style="font-family: 'Source Han Serif JP'">礁竜コラエムプ</span></td>
-      <td>玄甲龟<br><span style="font-family: 'Source Han Serif JP'">玄甲亀カラパヴェス</span></td>
+      <td>岩蜗<br><span class="ff-jp">岩蝸ルビマキマ</span></td>
+      <td><span style="color: #0075ff">炎王龙<br><span class="ff-jp">炎王龍テオ・テスカトル</span></span></td>
+      <td>金火龙<br><span class="ff-jp">金火竜リオレイア希少種</span></td>
     </tr>
     <tr>
-      <td>土砂龙<br><span style="font-family: 'Source Han Serif JP'">土砂竜ボルボロス</span></td>
-      <td><span style="color: #0075ff">巨鲑龙<br><span style="font-family: 'Source Han Serif JP'">巨鮭龍カムイ・ペカンケル</span></span></td>
-      <td>黑角龙<br><span style="font-family: 'Source Han Serif JP'">黒角竜ディアブロス亜種</span></td>
+      <td>铠龙<br><span class="ff-jp">鎧竜グラビモス</span></td>
+      <td><span style="color: #0075ff">炎妃龙<br><span class="ff-jp">炎妃龍ナナ・テスカトリ</span></span></td>
+      <td>银火龙<br><span class="ff-jp">銀火竜リオレウス希少種</span></td>
+    </tr>
+    <tr>
+      <td>将军镰蟹<br><span class="ff-jp">鎌蟹ショウグンギザミ</span></td>
+      <td></td>
+      <td><span style="color: #0075ff">幼熔山龙<br><span class="ff-jp">幼きゾラ・マグダラオス</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td>振翼鸟<br><span style="font-family: 'Source Han Serif JP'">振翼鳥タララヤック亜種</span></td>
+      <td><span style="color: #0075ff">姬鬼龙<br><span class="ff-jp">姫鬼龍フィジャ・サンクタ</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><span style="color: #ff0000">载世巨鲑龙<br><span style="font-family: 'Source Han Serif JP'">世を載せるカムイ・ペカンケル</span></span></td>
+      <td><span style="color: #ff0000">爆炎渊源姬鬼龙<br><span class="ff-jp">爆炎の淵源フィジャ・サンクタ</span></span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><span style="color: #0075ff">溟波龙<br><span style="font-family: 'Source Han Serif JP'">溟波龍ネロミェール</span></span></td>
+      <td><span style="color: #ff0000">护死灭刃斩龙<br><span class="ff-jp">護死滅刃ディノバルド</span></span></td>
+    </tr>
+    <tr>
+      <td rowspan="9">琉绘山沙滩<br><span class="ff-jp"><ruby>琉絵山<rt>ルウェサン</rt></ruby>砂浜</span></td>
+      <td>啮鱼龙<br><span class="ff-jp">噛魚竜アラマキトス</span></td>
+      <td>白一角龙<br><span class="ff-jp">白一角竜モノブロス亜種</span></td>
+      <td>刺鲀龙<br><span class="ff-jp">刺魨竜テトラヴァルヌ</span></td>
+    </tr>
+    <tr>
+      <td>大名盾蟹<br><span class="ff-jp">盾蟹ダイミョウザザミ</span></td>
+      <td>角龙<br><span class="ff-jp">角竜ディアブロス</span></td>
+      <td>海龙<br><span class="ff-jp">海竜ラギアクルス</span></td>
+    </tr>
+    <tr>
+      <td>翔虎鸟<br><span class="ff-jp">翔虎鳥ハリリタラサ</span></td>
+      <td>千刃龙<br><span class="ff-jp">千刃竜セレルギオス</span></td>
+      <td>痹蛸<br><span class="ff-jp">痺蛸オクエペケセ</span></td>
+    </tr>
+    <tr>
+      <td>一角龙<br><span class="ff-jp">一角竜モノブロス</span></td>
+      <td>礁龙<br><span class="ff-jp">礁竜コラエムプ</span></td>
+      <td>玄甲龟<br><span class="ff-jp">玄甲亀カラパヴェス</span></td>
+    </tr>
+    <tr>
+      <td>土砂龙<br><span class="ff-jp">土砂竜ボルボロス</span></td>
+      <td><span style="color: #0075ff">巨鲑龙<br><span class="ff-jp">巨鮭龍カムイ・ペカンケル</span></span></td>
+      <td>黑角龙<br><span class="ff-jp">黒角竜ディアブロス亜種</span></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><span style="color: #0075ff">古机龙<br><span style="font-family: 'Source Han Serif JP'">古機龍イォンネット</span></span></td>
+      <td>振翼鸟<br><span class="ff-jp">振翼鳥タララヤック亜種</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><span style="color: #ff0000">载世巨鲑龙<br><span class="ff-jp">世を載せるカムイ・ペカンケル</span></span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><span style="color: #0075ff">溟波龙<br><span class="ff-jp">溟波龍ネロミェール</span></span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><span style="color: #0075ff">古机龙<br><span class="ff-jp">古機龍イォンネット</span></span></td>
     </tr>
   </tbody>
 </table>
@@ -678,7 +678,7 @@ spc --> spc_dep3
 
 3.  <b>流斩连段</b> MHR:S出现的大剑连段。在三次流斩攻击后可以派生强蓄力斩等动作的连段。
    
-4.  <b>神岚拖刀三连斩连段</b> <span style="font-family: 'Source Han Serif JP'">嵐曳三連斬り連携</span> 原创动作。基本动作是上捞斩—后撤拖刀蓄力—拖刀奔跑—颪斩1—颪斩2—岚斩。上捞斩后，能够后撤几步进入拖刀状态，拖刀状态下可蓄力最多三段，蓄满后可以消耗耐力进行拖刀奔跑。停止持续蓄力状态后可以打出神岚拖刀三连斩：先紧握刀身横砍两圈，再借助惯性跳起，重重砸在怪物身上。
+4.  <b>神岚拖刀三连斩连段</b> :jp[嵐曳三連斬り連携] 原创动作。基本动作是上捞斩—后撤拖刀蓄力—拖刀奔跑—颪斩1—颪斩2—岚斩。上捞斩后，能够后撤几步进入拖刀状态，拖刀状态下可蓄力最多三段，蓄满后可以消耗耐力进行拖刀奔跑。停止持续蓄力状态后可以打出神岚拖刀三连斩：先紧握刀身横砍两圈，再借助惯性跳起，重重砸在怪物身上。
 
 5. <b>飞身跃入横扫斩连段</b> 大概是MHW出现的连段。回避后可以立即使出飞身跃入横扫斩。
 
@@ -730,9 +730,9 @@ spc --> spc_dep3
 
 7.  <b>蓄力炮击连段</b> MHP3加入的连段。可以蓄力炮击，蓄力炮击后还可以快速装填弹药。
 
-8.  <b>深海月震击连段</b> <span style="font-family: 'Source Han Serif JP'">深海月震撃連携</span> 原创动作。灵感来自大海龙跃出水面的动作。基本动作是下砸—（月震值）新月踢—深海月震击。精准防御可以积攒月震值，月震值满后可以在下砸后派生新月踢，将铳枪狠狠插在地上，然后全力起跳，在空中朝着地面发射一发把猎人炸起来，用盾牌重重砸在怪物身上起跳，没有继续派生则会落地。新月踢后可派生深海月震击，在空中甩一下铳枪快速装弹，下落时将铳枪重重扎到怪物身上，进行全弹+龙击炮射击后，挥起铳枪下砸，后跳落地。
+8.  <b>深海月震击连段</b> :jp[深海月震撃連携] 原创动作。灵感来自大海龙跃出水面的动作。基本动作是下砸—（月震值）新月踢—深海月震击。精准防御可以积攒月震值，月震值满后可以在下砸后派生新月踢，将铳枪狠狠插在地上，然后全力起跳，在空中朝着地面发射一发把猎人炸起来，用盾牌重重砸在怪物身上起跳，没有继续派生则会落地。新月踢后可派生深海月震击，在空中甩一下铳枪快速装弹，下落时将铳枪重重扎到怪物身上，进行全弹+龙击炮射击后，挥起铳枪下砸，后跳落地。
 
-9.  <b>遮刺连段</b> <span style="font-family: 'Source Han Serif JP'">遮り突き連携</span> 原创动作。基本动作是防御突刺—位移遮刺。在防御突刺后可以刺向怪物，然后用盾牌击打怪物向后跳开。也可以向左向右位移。
+9.  <b>遮刺连段</b> :jp[遮り突き連携] 原创动作。基本动作是防御突刺—位移遮刺。在防御突刺后可以刺向怪物，然后用盾牌击打怪物向后跳开。也可以向左向右位移。
 
 ## 一些细节
 

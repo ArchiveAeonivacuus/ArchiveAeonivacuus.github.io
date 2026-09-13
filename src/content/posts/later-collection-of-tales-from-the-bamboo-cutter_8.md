@@ -9,27 +9,9 @@ draft: false
 lang: ''
 ---
 
-<style>
-.shi {
-    text-align: center;
-    font-family: KaiTi;
-}
-.ci {
-    font-family: KaiTi;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-/*.waka {
-    text-align: center;
-    font-family: DFKai-SB;
-}*/
-.spellcard {
-    text-align: center;
-    font-family: KaiTi;
-}
-</style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>八<rt>はち</rt></ruby>　<ruby>現世<rt>うつしよ</rt></ruby>と<ruby>常世<rt>とこよ</rt></ruby>とは<ruby>比良坂<rt>ひらさか</rt></ruby>にて<ruby>分<rt>わ</rt></ruby>かつ</span>
+
+# :asebi[{八|はち}　{現世|うつしよ}と{常世|とこよ}とは{比良坂|ひらさか}にて{分|わ}かつ]
 
 辉夜姬来于地上十二年八月朔，是日持统帝禅位于皇太子，后所谓文武天皇。
 

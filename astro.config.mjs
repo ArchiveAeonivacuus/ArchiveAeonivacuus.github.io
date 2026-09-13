@@ -22,7 +22,8 @@ import { pluginLanguageBadge } from "./src/plugins/expressive-code/language-badg
 import { AdmonitionComponent } from "./src/plugins/rehype-component-admonition.mjs";
 import { HyperlinkCardComponent } from "./src/plugins/rehype-component-custom-hyperlink.mjs";
 import { GithubCardComponent } from "./src/plugins/rehype-component-github-card.mjs";
-import { ClassBox, DialogComponent } from "./src/plugins/rehype-dialog.mjs";
+import { ClassBox, DialogComponent, FontSpan } from "./src/plugins/rehype-dialog.mjs";
+import { rehypeRuby } from "./src/plugins/rehype-ruby.mjs";
 import { parseDirectiveNode } from "./src/plugins/remark-directive-rehype.js";
 import { remarkExcerpt } from "./src/plugins/remark-excerpt.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
@@ -40,7 +41,9 @@ export default defineConfig({
         animationClass: "transition-swup-", // see https://swup.js.org/options/#animationselector
         // the default value `transition-` cause transition delay
         // when the Tailwind class `transition-all` is used
-        containers: ["main", "#toc"],
+        // 侧边栏（分类/标签）随文章语言变化，必须纳入 Swup 的替换容器，
+        // 否则切换语言后要刷新整页才会更新。
+        containers: ["main", "#toc", "#sidebar-sticky"],
         smoothScrolling: true,
         cache: true,
         preload: true,
@@ -124,6 +127,20 @@ export default defineConfig({
                         shi: ClassBox("shi"),
                         // 新增：把 :::ci 映射为 <div class="ci">
                         ci: ClassBox("ci"),
+                        // 新增：把 :::spellcard / :::poet / :::waka 映射为同名 div
+                        spellcard: ClassBox("spellcard"),
+                        poet: ClassBox("poet"),
+                        waka: ClassBox("waka"),
+                        // 新增：行内字体指令，例如 :ong[Linselotte Guenther]
+                        jp: FontSpan("ff-jp"),
+                        asebi: FontSpan("ff-asebi"),
+                        ong: FontSpan("ff-ong"),
+                        olds: FontSpan("ff-olds"),
+                        dfkai: FontSpan("ff-dfkai"),
+                        ipa: FontSpan("ff-ipa"),
+                        ht: FontSpan("ff-ht"),
+                        kai: FontSpan("ff-kai"),
+                        msmincho: FontSpan("ff-msmincho"),
                         note: (x, y) => AdmonitionComponent(x, y, "note"),
                         tip: (x, y) => AdmonitionComponent(x, y, "tip"),
                         important: (x, y) => AdmonitionComponent(x, y, "important"),
@@ -132,6 +149,7 @@ export default defineConfig({
                     },
                 },
             ],
+            rehypeRuby,
             [
                 rehypeAutolinkHeadings,
                 {

@@ -1,4 +1,6 @@
 ---
+// 注册服务端语言上下文（AsyncLocalStorage），需在页面渲染前加载
+import "../i18n/lang-context.server";
 import "../styles/custom-fonts.css";
 
 import ConfigCarrier from "@components/ConfigCarrier.astro";
@@ -14,6 +16,7 @@ import {
 	PAGE_WIDTH,
 } from "../constants/constants";
 import { defaultFavicons } from "../constants/icon";
+import { fontPreloadByLang, fontsCss } from "../generated/fonts";
 import type { Favicon } from "../types/config";
 import { pathsEqual, url } from "../utils/url-utils";
 
@@ -29,6 +32,7 @@ let { title, banner, description, lang, setOGTypeArticle } = Astro.props;
 
 // 页面级临时语言重写（利用 Astro 单个页面级周期的环境作用域，在最底层布局渲染前，如果显式传入了 lang，强制重写 I18n 重设）
 import { setPageLanguageOverride } from "@i18n/translation";
+
 setPageLanguageOverride(lang || null);
 
 // apply a class to the body element to decide the height of the banner, only used for initial page load
@@ -63,6 +67,7 @@ if (!lang) {
 	lang = `${siteConfig.lang}`;
 }
 const siteLang = lang.replace("_", "-");
+const fontPreloadUrls = fontPreloadByLang[lang] ?? [];
 
 const bannerOffsetByPosition = {
 	top: `${BANNER_HEIGHT_EXTEND}vh`,
@@ -147,27 +152,12 @@ const bannerOffset =
 
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
 
-		<!-- Font CSS: async loading via preload to avoid render-blocking; data-swup-persist prevents removal on page transitions -->
-		<link rel="preload" href="/fonts/split/source-han-serif-sc/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
-		<noscript><link rel="stylesheet" href="/fonts/split/source-han-serif-sc/index.css"/></noscript>
-		<link rel="preload" href="/fonts/split/source-han-serif-jp/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
-		<noscript><link rel="stylesheet" href="/fonts/split/source-han-serif-jp/index.css"/></noscript>
-		<link rel="preload" href="/fonts/split/asebi-mincho/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
-		<noscript><link rel="stylesheet" href="/fonts/split/asebi-mincho/index.css"/></noscript>
-		<link rel="preload" href="/fonts/split/kaiti/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
-		<noscript><link rel="stylesheet" href="/fonts/split/kaiti/index.css"/></noscript>
-		<link rel="preload" href="/fonts/split/dfkai-sb/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
-		<noscript><link rel="stylesheet" href="/fonts/split/dfkai-sb/index.css"/></noscript>
-		<link rel="preload" href="/fonts/split/source-han-serif-jp/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
-		<noscript><link rel="stylesheet" href="/fonts/split/source-han-serif-jp/index.css"/></noscript>
-		<link rel="preload" href="/fonts/split/source-han-serif-old/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
-		<noscript><link rel="stylesheet" href="/fonts/split/source-han-serif-old/index.css"/></noscript>
-		<link rel="preload" href="/fonts/split/old-english-onglisch/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
-		<noscript><link rel="stylesheet" href="/fonts/split/old-english-onglisch/index.css"/></noscript>
-		<link rel="preload" href="/fonts/split/hightowertext/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
-		<noscript><link rel="stylesheet" href="/fonts/split/hightowertext/index.css"/></noscript>
-		<link rel="preload" href="/fonts/split/hightowertext-italic/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" data-swup-persist/>
-		<noscript><link rel="stylesheet" href="/fonts/split/hightowertext-italic/index.css"/></noscript>
+		<!-- 按用字子集生成的 @font-face（内联，避免额外请求；文件名带哈希做缓存失效） -->
+		<style is:global set:html={fontsCss}></style>
+		<!-- 预加载当前语言的正文字体，避免首屏 FOUT -->
+		{fontPreloadUrls.map((href) => (
+			<link rel="preload" href={href} as="font" type="font/woff2" crossorigin data-swup-persist/>
+		))}
 
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}

@@ -15,10 +15,6 @@ translate_key: 'lantern-under-the-ochre-vault'
     text-align: center;
     font-style: italic;
 }
-.poet {
-    text-align: center;
-    font-family: Old English Onglisch;
-}
 </style>
 
 # Lanterarium sub Firmamento Ochraceo
@@ -467,7 +463,7 @@ Nivalia's trench coat, and Linselotte's cloak, fluttered in the wind.
 [^8]: Lunid-white Lily: *Lilium Lunicandidum*. This flower also exists on Earth, where it is called the "Casa Blanca lily," also known as the Perfume Lily or the Oriental Lily; legend says it grows by the Styx. Its flower language changes with the number of plants.
 [^9]: Nivalia: As mentioned earlier, Nivalia's name comes from the snowdrop.
 [^10]: Niv: An affectionate name for Nivalia.
-[^11]: Nivalia Mangusacia Carnstaen: Pronounced <span style="font-family:'Times New Roman'">/niʋaːlia.mãɣusaːkʲia.kaːɾ̩̃stãɪ̃/</span>.
+[^11]: Nivalia Mangusacia Carnstaen: Pronounced :ipa[/niʋaːlia.mãɣusaːkʲia.kaːɾ̩̃stãɪ̃/].
 [^12]: One step: 1.52 metres.
 [^13]: Baiarn: A geographical region in southern Taitchland, mainly hills when it comes to its terrain.
 [^14]: Muenichenn: The capital of Baiarn province.

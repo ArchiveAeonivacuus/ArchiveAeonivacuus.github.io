@@ -9,7 +9,7 @@ draft: false
 lang: ''
 ---
 
-# <span style="font-family: 'Source Han Serif JP'">ノチウ　クㇽ　トゥラ　カㇻパ</span>
+# :jp[ノチウ　クㇽ　トゥラ　カㇻパ]
 # nociw kur tura k=arpa
 # 我与星光同行
 
@@ -157,5 +157,5 @@ lang: ''
 
 我就这样，在铃达的清点声中睡着了。
 
-[^1]: 奇怪龙的学名是<span style="font-family: Source Han Serif JP">フルフル</span>（Furufuru），和毒妖鸟的学名结构很像（<span style="font-family: Source Han Serif JP">プケプケ</span>/Pukepuke），所以这么说；毒怪鸟是俗名和毒妖鸟很像。
-[^2]: 铃达：<span style="font-family: Source Han Serif JP">レタㇻ</span>（retar）。
+[^1]: 奇怪龙的学名是:jp[フルフル]（Furufuru），和毒妖鸟的学名结构很像（:jp[プケプケ]/Pukepuke），所以这么说；毒怪鸟是俗名和毒妖鸟很像。
+[^2]: 铃达：:jp[レタㇻ]（retar）。

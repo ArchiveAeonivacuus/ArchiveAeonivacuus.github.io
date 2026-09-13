@@ -1,49 +1,38 @@
-/* Split fonts - loaded asynchronously via <link> in Layout.astro */
-/* This file is kept for backward compatibility but imports have been moved to async loading */
+/* 字体 @font-face 由 scripts/font-subset.py 生成到 src/generated/fonts.ts，
+   并在 Layout.astro 中内联。这里只放字体族相关的排版规则。 */
 
-/* Latin fonts: Source Serif 4 (same latin source as Source Han Serif) for true upright + italic */
-@font-face {
-    font-family: 'Source Serif 4';
-    src: url('/fonts/SourceSerif4-Regular.woff2') format('woff2');
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
+/* 关闭浏览器合成粗体/斜体：自定义字体没提供对应字重时，
+   宁可用 400，也不要那种糊成一团的伪粗体。正文所用思源宋体有真粗体。 */
+html {
+	font-synthesis: none;
 }
 
-@font-face {
-    font-family: 'Source Serif 4';
-    src: url('/fonts/SourceSerif4-Italic.woff2') format('woff2');
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-}
-
-/* Use real italic for latin letters; CJK falls back to Source Han Serif upright */
+/* 真正的斜体：拉丁字母用 Source Serif 4 Italic，CJK 回落到思源宋体直立字形 */
 i, em {
-    font-family: 'Source Serif 4', 'Source Han Serif SC', 'Source Han Serif JP', serif;
-    font-style: italic;
+	font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", serif;
+	font-style: italic;
 }
 
 /* English pages: prefer Source Serif 4 for latin text, so quotes render as half-width curly quotes */
 html[lang="en"] body,
 html[lang="en"] .custom-md {
-    font-family: 'Source Serif 4', 'Source Han Serif SC', 'Source Han Serif JP', serif;
+	font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", serif;
 }
 
 /* A-ong (Onglisch) pages: prefer Old English Onglisch */
 html[lang="A-ong"] body,
 html[lang="A-ong"] .custom-md {
-    font-family: 'Old English Onglisch', 'Source Serif 4', 'Source Han Serif SC', serif;
+	font-family: "Old English Onglisch", "Source Serif 4", "Source Han Serif SC", serif;
 }
 
-/* A-zh_iang (大瀛漢語) pages: prefer Source Han Serif JP */
-html[lang="A-zh_iang"] body,
-html[lang="A-zh_iang"] .custom-md {
-    font-family: 'Source Han Serif JP', 'Source Han Serif Old', 'Source Han Serif SC', serif;
+/* A-zh_iang（大瀛漢語）页面渲染出的 lang 是 A-zh-iang，优先思源宋体 JP */
+html[lang="A-zh-iang"] body,
+html[lang="A-zh-iang"] .custom-md {
+	font-family: "Source Han Serif JP", "Source Han Serif Old", "Source Han Serif SC", serif;
 }
 
 /* Traditional Chinese (zh-TW) pages: prefer Source Han Serif Old */
 html[lang="zh-TW"] body,
 html[lang="zh-TW"] .custom-md {
-    font-family: 'Source Han Serif Old', 'Source Han Serif SC', 'Source Han Serif JP', serif;
+	font-family: "Source Han Serif Old", "Source Han Serif SC", "Source Han Serif JP", serif;
 }

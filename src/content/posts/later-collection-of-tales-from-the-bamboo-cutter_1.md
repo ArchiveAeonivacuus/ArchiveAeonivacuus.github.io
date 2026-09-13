@@ -9,27 +9,9 @@ draft: false
 lang: ''
 ---
 
-<style>
-.shi {
-    text-align: center;
-    font-family: KaiTi;
-}
-.ci {
-    font-family: KaiTi;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-/*.waka {
-    text-align: center;
-    font-family: DFKai-SB;
-}*/
-.spellcard {
-    text-align: center;
-    font-family: KaiTi;
-}
-</style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>一<rt>いち</rt></ruby>　<ruby>地上<rt>ちじやう</rt></ruby>に<ruby>初来<rt>しよらい</rt></ruby>す</span>
+
+# :asebi[{一|いち}　{地上|ちじやう}に{初来|しよらい}す]
 
 辉夜姬来于地上元年三月十六，无云可即望月。今夜月满如镜，不消吟诗，前人备述矣。
 

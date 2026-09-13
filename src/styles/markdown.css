@@ -171,3 +171,75 @@
     border-left: 2px solid #eee;
   }
 }
+
+/* ============================================================
+   全局写作样式类
+   原先每篇文章都要重复一份 <style>，现统一在此定义。
+   中日文页面才套用 KaiTi，避免影响英文/翁语页面的正文字体。
+   ============================================================ */
+.shi {
+  text-align: center;
+}
+.shi:lang(zh) {
+  font-family: KaiTi, serif;
+}
+
+.ci {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.ci:lang(zh) {
+  font-family: KaiTi, serif;
+}
+.ci p {
+  margin: 0.5em 0;
+}
+
+.spellcard {
+  text-align: center;
+}
+.spellcard:lang(zh) {
+  font-family: KaiTi, serif;
+}
+
+.poet {
+  text-align: center;
+  font-family: "Old English Onglisch", serif;
+}
+
+.waka {
+  text-align: center;
+  font-family: "DFKai-SB", serif;
+}
+
+/* ============================================================
+   行内字体指令：:jp[] :asebi[] :ong[] :olds[]
+   :dfkai[] :ipa[] :ht[] :kai[] :msmincho[]
+   ============================================================ */
+.ff-jp {
+  font-family: "Source Han Serif JP", serif;
+}
+.ff-asebi {
+  font-family: "Asebi Mincho", serif;
+}
+.ff-ong {
+  font-family: "Old English Onglisch", serif;
+}
+.ff-olds {
+  font-family: "Source Han Serif Old", serif;
+}
+.ff-dfkai {
+  font-family: "DFKai-SB", serif;
+}
+.ff-ipa {
+  font-family: "Times New Roman", serif;
+}
+.ff-ht {
+  font-family: "HighTowerText", serif;
+}
+.ff-kai {
+  font-family: KaiTi, serif;
+}
+.ff-msmincho {
+  font-family: "MS Mincho", serif;
+}

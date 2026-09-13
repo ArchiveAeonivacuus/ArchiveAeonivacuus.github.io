@@ -9,27 +9,9 @@ draft: false
 lang: ''
 ---
 
-<style>
-.shi {
-    text-align: center;
-    font-family: KaiTi;
-}
-.ci {
-    font-family: KaiTi;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-/*.waka {
-    text-align: center;
-    font-family: DFKai-SB;
-}*/
-.spellcard {
-    text-align: center;
-    font-family: KaiTi;
-}
-</style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>九<rt>きう</rt></ruby>　<ruby>追<rt>お</rt></ruby>はるる<ruby>罪者<rt>つみもの</rt></ruby>は<ruby>去<rt>さ</rt></ruby>るのみ</span>
+
+# :asebi[{九|きう}　{追|お}はるる{罪者|つみもの}は{去|さ}るのみ]
 
 辉夜姬来于地上十三年腊月晦。是日落雪纷扬，积雪盈尺。翌日将明，新年在即。
 
@@ -137,11 +119,11 @@ lang: ''
 
 我解绳取物，乃一折扇。上题辞画，画中窈窕女师伴笄年少女行于川上，薮椿烂漫枝头。回想起来，薮椿放处正是五十铃川上。
 
-扇面以<span style="font-family: Source Han Serif JP"><ruby>薮椿<rt>やぶつばき</rt></ruby></span>作藏头和歌一首。
+扇面以:jp[{薮椿|やぶつばき}]作藏头和歌一首。
 
 <div class="shi">
 
-<span style="font-family: 'DFKai-SB'">
+<span class="ff-dfkai">
 やすらへと　ふく風に言へど　つらきかも<br>
 遥かなればや　君に届かず</span><br>
 断喝狂风止，恛惶心又忡。<br>

@@ -10,31 +10,15 @@ lang: ''
 ---
 
 <style>
-/* 删除了旧的 dialog/name/line 样式，保留内容样式 */
-.shi {
-    text-align: center;
-    font-family: KaiTi;
-}
-.ci {
-    /*margin-left: 2em;
-    margin-right: 2em;*/
-    font-family: KaiTi;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-.ci p {
-    /* text-indent: 2em; /* 每个段落首行缩进两格 */
-    margin: 0.5em 0; /* 段落间距 */
-}
 .rotate-text {
     transform: rotate(270deg);
     display: inline-block; 
 }
 </style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>百代魂縛死靈櫻<rt>ひやくだいこんしばしりやうざくら</rt><ruby></span>
+# <span class="ff-asebi"><ruby>百代魂縛死靈櫻<rt>ひやくだいこんしばしりやうざくら</rt><ruby></span>
 
-## <span style="font-family: 'Asebi Mincho'">【上一】</span>
+## :asebi[【上一】]
 
 <table>
 <tr>
@@ -49,9 +33,9 @@ lang: ''
 </tr>
 </table>
 
-## <span style="font-family: 'Asebi Mincho'">【上二】</span>
+## :asebi[【上二】]
 
-<span style="font-family: 'Asebi Mincho'; font-weight: bold;">造リ物</span>　结幽岛云雾缭绕，薄暮时节。死灵樱惨白，间立于旁。波涛静，时抚岸边。
+:asebi[造リ物]　结幽岛云雾缭绕，薄暮时节。死灵樱惨白，间立于旁。波涛静，时抚岸边。
 
 :::dialog{p="璃"}
 
@@ -64,11 +48,11 @@ lang: ''
 
 </div>
 
-——<ruby>来<rt style="font-family: 'Asebi Mincho'">ヲイ</rt></ruby><ruby>来<rt style="font-family: 'Asebi Mincho'"><span class="rotate-text">〱</span></rt></ruby>，接引灯芯，死灵樱上乘三合气[^3]具，百圆何如？
+——<ruby>来<rt class="ff-asebi">ヲイ</rt></ruby><ruby>来<rt class="ff-asebi"><span class="rotate-text">〱</span></rt></ruby>，接引灯芯，死灵樱上乘三合气[^3]具，百圆何如？
 :::
 
 :::dialog{p="风见博之"}
-（上，寻状）<ruby>阿阿<rt style="font-family: 'Asebi Mincho'">アヽ</rt><ruby>，是此处。接引灯芯三本[^4]，三百圆非小可。少少贱一些罢。
+（上，寻状）<ruby>阿阿<rt class="ff-asebi">アヽ</rt><ruby>，是此处。接引灯芯三本[^4]，三百圆非小可。少少贱一些罢。
 :::
 
 :::dialog{p="璃"}
@@ -80,9 +64,9 @@ lang: ''
 
 <div class="ci">
 
-高远结幽寒甲瘦。霜冷滩涂、尤将长弓<ruby>彀<rt style="font-family: ''">gòu</rt></ruby>[^6]。曾是菅原麾下某[^7]，孤身今日林中叩。
+高远结幽寒甲瘦。霜冷滩涂、尤将长弓<ruby>彀<rt>gòu</rt></ruby>[^6]。曾是菅原麾下某[^7]，孤身今日林中叩。
 
-鬼手林樱寻血久[^8]，鉴影[^9]诸人、<ruby>恠<rt style="font-family: ''">guài</rt></ruby> [^10] <ruby>巉<rt style="font-family: ''">chán</rt></ruby>盘枝狩。买我千金风骨寿，灯笼接引残魂诱。
+鬼手林樱寻血久[^8]，鉴影[^9]诸人、<ruby>恠<rt>guài</rt></ruby> [^10] <ruby>巉<rt>chán</rt></ruby>盘枝狩。买我千金风骨寿，灯笼接引残魂诱。
 
 </div>
 
@@ -90,7 +74,7 @@ lang: ''
 :::
 
 :::dialog{p="璃"}
-<ruby>唉唉诚如是<rt style="font-family: 'Asebi Mincho'">アヽマコトニ</rt></ruby>。此地艰险，所言不虚。夜半时分，有一孤魂徘徊，武家可有所知？（博之讶状，三味线）夜半时分。
+<ruby>唉唉诚如是<rt class="ff-asebi">アヽマコトニ</rt></ruby>。此地艰险，所言不虚。夜半时分，有一孤魂徘徊，武家可有所知？（博之讶状，三味线）夜半时分。
 <div class="shi">
 
 月隐枝桠裂紫空[^11]，白花[^12]泣血缚残衷。  
@@ -103,16 +87,16 @@ lang: ''
 
 :::dialog{p="风见博之"}
 
-<ruby>噫呀罢了<rt style="font-family: 'Asebi Mincho'">イヤモウ</rt></ruby>，是我只知此地有法克怨灵[^15]，快些将买卖做妥，贱些儿与我罢。
+<ruby>噫呀罢了<rt class="ff-asebi">イヤモウ</rt></ruby>，是我只知此地有法克怨灵[^15]，快些将买卖做妥，贱些儿与我罢。
 
 :::
 
 :::dialog{p="璃"}
 
-<ruby>是是<rt style="font-family: 'Asebi Mincho'">ハイハイ</rt></ruby>，便贱些儿与武家则个。（递状，博之与璃传钱状）虽是我也不好过活，武家那克怨灵，可有说法。
+<ruby>是是<rt class="ff-asebi">ハイハイ</rt></ruby>，便贱些儿与武家则个。（递状，博之与璃传钱状）虽是我也不好过活，武家那克怨灵，可有说法。
 <div class="shi">
 
-<span style="font-family: 'DFKai-SB'">
+<span class="ff-dfkai">
 花瓣に　迷魂のみや　寄るべしと<br>嚇かす者を　散りやらぬ花
 </span>  
 
@@ -124,15 +108,15 @@ lang: ''
 
 :::dialog{p="风见博之"}
 
-<ruby>呵阿<rt style="font-family: 'Asebi Mincho'">ゲエ</rt></ruby>，我偏偏要度尽了此间所有哀怨，来定了此间阴阳[^17]，不教四苦八苦，催人潸然！
+<ruby>呵阿<rt class="ff-asebi">ゲエ</rt></ruby>，我偏偏要度尽了此间所有哀怨，来定了此间阴阳[^17]，不教四苦八苦，催人潸然！
 
-（言毕，狂风四起，璃下，博之执竹符笔见得[^18]）符笔一挥破<ruby>恠<rt>guài</rt></ruby><ruby>戢<rt>jí</rt></ruby>[^19]，定要赎尽残魂泣！（挥符笔状，下）
+（言毕，狂风四起，璃下，博之执竹符笔见得[^18]）符笔一挥破{恠|guài}{戢|jí}[^19]，定要赎尽残魂泣！（挥符笔状，下）
 
 :::
 
 ---
 
-## <span style="font-family: 'Asebi Mincho'">【中一】</span>
+## :asebi[【中一】]
 
 <table>
 <tr>
@@ -152,9 +136,9 @@ lang: ''
 </tr>
 </table>
 
-## <span style="font-family: 'Asebi Mincho'">【中二】</span>
+## :asebi[【中二】]
 
-<span style="font-family: 'Asebi Mincho'; font-weight: bold;">造リ物</span>　结幽岛电闪雷鸣，月上枝头。死灵樱惨白，间立于旁；一死灵樱猩红[^20]，使人不寒而栗。波涛汹涌，惊涛拍岸。
+:asebi[造リ物]　结幽岛电闪雷鸣，月上枝头。死灵樱惨白，间立于旁；一死灵樱猩红[^20]，使人不寒而栗。波涛汹涌，惊涛拍岸。
 
 :::dialog{p="宫崎文"}
 （不见其人，先闻其声，笛声响后，随三味线哭诉）<br>
@@ -163,14 +147,14 @@ lang: ''
 海神怒涛吞孤岛，谎言缚我作祭表。  
 津波龙腾难平定，反育血染死灵樱。  
 斫去枝头成符兆[^21]，终教鬼怪投枪缴。  
-百年恨意化猩华，<ruby>恠<rt style="font-family: ''">guài</rt></ruby>枝缠魂无终了！
+百年恨意化猩华，<ruby>恠<rt>guài</rt></ruby>枝缠魂无终了！
 
 </div>
-（自猩红死灵樱枝间垂落，白衣染血，发鬘苍白，哀怨随太鼓念状）<ruby>嗬阿<rt style="font-family: 'Asebi Mincho'">ホヲ</rt></ruby>——<br>
+（自猩红死灵樱枝间垂落，白衣染血，发鬘苍白，哀怨随太鼓念状）<ruby>嗬阿<rt class="ff-asebi">ホヲ</rt></ruby>——<br>
 
 <div class="shi">
 
-玄冥恶龙绵津见[^22]，翻了江海作<ruby>恚<rt style="font-family=''">huì</rt></ruby>乱。
+玄冥恶龙绵津见[^22]，翻了江海作<ruby>恚<rt>huì</rt></ruby>乱。
 要将苍生入孽渊，不悟无常海无边。
 恶人道是神社过，祭我希冀魔障破[^23]。
 枫松死樱交相和，岂容怨灵桠间卧[^24]？
@@ -181,9 +165,9 @@ lang: ''
 
 :::
 
-## <span style="font-family: 'Asebi Mincho'">【中三】</span>
+## :asebi[【中三】]
 
-<span style="font-family: 'Asebi Mincho'; font-weight: bold;">造リ物</span>　舞台回[^26]，接引枫与渡航松摇转而上，三木成森。堂幕升一层，以紫布示阴阳回转三木之间。璃与博之上，于两侧对峙。
+:asebi[造リ物]　舞台回[^26]，接引枫与渡航松摇转而上，三木成森。堂幕升一层，以紫布示阴阳回转三木之间。璃与博之上，于两侧对峙。
 
 :::dialog{p="璃"}
 （抛袖疾走状）强散怨灵，定要毁接引枫叶与渡航松根，一方生计化泡影——（大喝状）武家且慢！
@@ -201,11 +185,11 @@ lang: ''
 :::dialog{p="风见博之"}
 （符笔绘咒状，死灵樱枝如蛇缠璃与博之臂膀不能动，博之讶状）<br>
 <div class="shi">
-原是人心种祸痕，岂容樱<ruby>恠<rt style="font-family: ''">guài</rt></ruby>代天吞？<br>残魂若换归尘世，须断吟游万树根！
+原是人心种祸痕，岂容樱<ruby>恠<rt>guài</rt></ruby>代天吞？<br>残魂若换归尘世，须断吟游万树根！
 </div>
 :::
 
-<span style="font-family: 'Asebi Mincho'; font-weight: bold;">地謡合唱</span>　（太鼓鸣）
+:asebi[地謡合唱]　（太鼓鸣）
 <div class="shi">
 松动渡航凝凛根，枫声接引净魂痕。<br>共生三友阴阳系，一旦毁伤天地昏！<br>松动渡航凝凛根，枫声接引净魂痕。<br>共生三友阴阳系，一旦毁伤天地昏！
 </div>
@@ -214,7 +198,7 @@ lang: ''
 
 :::dialog{p="枫"}
 
-（红发老叟执剑，剑为红叶所化）<ruby>阿阿么<rt style="font-family:'Asebi Mincho'">アアモウ</rt></ruby>，不须言郎等[^29]，吾引千魂渡来此地！（剑切博之衣袖状）
+（红发老叟执剑，剑为红叶所化）<ruby>阿阿么<rt class="ff-asebi">アアモウ</rt></ruby>，不须言郎等[^29]，吾引千魂渡来此地！（剑切博之衣袖状）
 
 :::
 
@@ -230,7 +214,7 @@ lang: ''
 （声震云霄）
 <div class="shi">
 
-接引枫摇魂路绝，死灵樱枯<ruby>恠<rt style="font-family: ''">guài</rt></ruby>气生。<br>渡航松倒残魄溢，三木共殒瀛洲倾[^30]！
+接引枫摇魂路绝，死灵樱枯<ruby>恠<rt>guài</rt></ruby>气生。<br>渡航松倒残魄溢，三木共殒瀛洲倾[^30]！
 
 </div>
 :::
@@ -249,7 +233,7 @@ lang: ''
 
 :::dialog{p="宫崎文"}
 （逼退三木状，博之强跪状）
-樱非恶木，人自招灾。强扭阴阳，残魂不散。（红纸作血红花落）<ruby>恠<rt>guài</rt></ruby>枝为人所用，方成血光死樱。（三味线，释怀状）<ruby>我独愿<rt style="font-family: 'Asebi Mincho'">ネガハクハ</rt></ruby>)：<br>
+樱非恶木，人自招灾。强扭阴阳，残魂不散。（红纸作血红花落）{恠|guài}枝为人所用，方成血光死樱。（三味线，释怀状）<ruby>我独愿<rt class="ff-asebi">ネガハクハ</rt></ruby>)：<br>
 <div class="shi">
 
 了断残魂安草芥，纵然此命化清明。[^31]<br>身为春雪融恨海，不教执念焚千载。
@@ -260,7 +244,7 @@ lang: ''
 
 ---
 
-## <span style="font-family: 'Asebi Mincho'">【下一】</span>
+## :asebi[【下一】]
 
 <table>
 <tr>
@@ -280,17 +264,17 @@ lang: ''
 </tr>
 </table>
 
-## <span style="font-family: 'Asebi Mincho'">【下二】</span>
+## :asebi[【下二】]
 
-<span style="font-family: 'Asebi Mincho'; font-weight: bold;">造リ物</span>　结幽岛电闪雷鸣，月上枝头。死灵樱惨白，间立于旁；血染死灵樱黯然。波涛汹涌，惊涛拍岸。舞台中升起一呺然大渡航松。文引博之、璃上。
+:asebi[造リ物]　结幽岛电闪雷鸣，月上枝头。死灵樱惨白，间立于旁；血染死灵樱黯然。波涛汹涌，惊涛拍岸。舞台中升起一呺然大渡航松。文引博之、璃上。
 
 :::dialog{p="宫崎文"}
 （指尖轻触樱枝状，赤色花瓣纷纷而落，三味线缓声）<br>
 <div class="ci">
 
-绛樱衔怨沧溟[^32]立。碎魄结幽当<ruby>葺<rt style="font-family: ''">qì</rt></ruby>[^33]。蓝灯缚影，璇玑[^34]渡我，潮音暗泣。素发曾簪，无瑕美玉，神官斗笠[^35]。叹销魂此间，孤檠[^36]明灭，曾多少、红尘入[^37]。
+绛樱衔怨沧溟[^32]立。碎魄结幽当<ruby>葺<rt>qì</rt></ruby>[^33]。蓝灯缚影，璇玑[^34]渡我，潮音暗泣。素发曾簪，无瑕美玉，神官斗笠[^35]。叹销魂此间，孤檠[^36]明灭，曾多少、红尘入[^37]。
 
-堪折恠柯竟失。律符[^38]消，孽缘尽挹[^39]。松吟月咏，枫燃星咒，三光同迹。残照捻芯[^40]，溯归溟涬[^41]，雪留三尺。纵春融恨意，冰心长去，护娇娆<ruby>坼<rt style="font-family: ''">chè</rt></ruby>[^42]。
+堪折恠柯竟失。律符[^38]消，孽缘尽挹[^39]。松吟月咏，枫燃星咒，三光同迹。残照捻芯[^40]，溯归溟涬[^41]，雪留三尺。纵春融恨意，冰心长去，护娇娆<ruby>坼<rt>chè</rt></ruby>[^42]。
 
 </div>
 
@@ -310,9 +294,9 @@ lang: ''
 （点灯状）破此符咒，还用我这接引灯芯。如此，残樱魂方得入渡航松[^44]，归天地。
 :::
 
-## <span style="font-family: 'Asebi Mincho'">【下三】</span>
+## :asebi[【下三】]
 
-<span style="font-family: 'Asebi Mincho'; font-weight: bold;">造リ物</span>　血染死灵樱尽裂，一枝急插于地，成符笔。付律花[^45]降如吹雪，萧萧落尽结幽春。
+:asebi[造リ物]　血染死灵樱尽裂，一枝急插于地，成符笔。付律花[^45]降如吹雪，萧萧落尽结幽春。
 
 :::dialog{p="宫崎文"}
 
@@ -335,11 +319,11 @@ lang: ''
 
 :::dialog{p="宫崎文"}
 
-（不见其形，但有着服悬空）<ruby>来<rt style="font-family: 'Asebi Mincho'">サア</rt></ruby>，风见且看——樱华本无垢，人心染尽红。（文之染血白衣倏忽落地。渡航松悠悠，血染死灵樱裂为几树，树上花尽白）
+（不见其形，但有着服悬空）<ruby>来<rt class="ff-asebi">サア</rt></ruby>，风见且看——樱华本无垢，人心染尽红。（文之染血白衣倏忽落地。渡航松悠悠，血染死灵樱裂为几树，树上花尽白）
 
 :::
 
-<span style="font-family: 'Asebi Mincho'; font-weight: bold;">地謡合唱</span>　（笛鸣绵长）
+:asebi[地謡合唱]　（笛鸣绵长）
 <div class="shi">
 
 血华[^47]散尽月澄明，残魂归去阴阳平。<br>符笔深埋赎罪业，惟余风吟说旧情。[^48]<br>血华散尽月澄明，残魂归去阴阳平。<br>符笔深埋赎罪业，惟余风吟说旧情。
@@ -348,7 +332,7 @@ lang: ''
 
 ---
 
-## <span style="font-family: 'Asebi Mincho'">【終】</span>
+## :asebi[【終】]
 
 （博之插死灵樱木符笔于土中，璃拾灯芯残尘，染血白衣消散。堂幕[^49]皆降而骤暗，仅余符笔“赎魂”二字一闪）
 
@@ -356,13 +340,13 @@ lang: ''
 （不见其人，但闻其声）武家倒是痴人，赎尽残魂，新魂未免又将至。
 :::
 
-<span style="font-family: 'Asebi Mincho'; font-weight: bold;">合念</span>　（三味线）
+:asebi[合念]　（三味线）
 <div class="shi">
 此笔赎魂　死灵樱木<br>非为诛邪　实为诫心<br>
-我执愈深　人心愈<ruby>恠<rt style="font-family: ''">guài</rt></ruby><br>阴阳循环　流转不止<br>
+我执愈深　人心愈<ruby>恠<rt>guài</rt></ruby><br>阴阳循环　流转不止<br>
 </div>
 
-<span style="font-family: 'Asebi Mincho'"><ruby>百代魂縛死靈櫻<rt>ひやくだいこんしばしりやうざくら</rt></ruby>　<ruby>至<rt>いた</rt></ruby><ruby><sub>レ</sub><rt>リテ</rt></ruby><ruby>此<rt>ここ</rt></ruby><ruby> <rt>ニ</rt></ruby><ruby>終<rt>おは</rt></ruby><ruby> <rt>リナリ</rt></ruby></span>
+<span class="ff-asebi">{百代魂縛死靈櫻|ひやくだいこんしばしりやうざくら}　{至|いた}<ruby><sub>レ</sub><rt>リテ</rt></ruby>{此|ここ}<ruby> <rt>ニ</rt></ruby>{終|おは}<ruby> <rt>リナリ</rt></ruby></span>
 
 <!-- 添加了训读 -->
 
@@ -391,12 +375,12 @@ lang: ''
 [^23]: 献祭了宫崎文，想要藉此消灾。
 [^24]: 其实是指接引枫—死灵樱—渡航松的共生关系无法消解怨灵。
 [^25]: 受到怨气影响产生的血染死灵樱，结出接引晶。
-[^26]: 应当是指旋转舞台（<span style="font-family: 'Asebi Mincho'">廻り舞台</span>）。
+[^26]: 应当是指旋转舞台（:asebi[廻り舞台]）。
 [^27]: 凝凛根和净魂叶也是和消解灵有关的植物器官。
 [^28]: 残樱魂是死灵樱消解后的灵，濒临魂飞魄散状态。宫崎文的灵能够维持这么久是因为其他原因。
-[^29]: 蔑称，参考《平家物语》“<span style="font-family: 'Asebi Mincho'">言ふかひなき郎等</span>”
+[^29]: 蔑称，参考《平家物语》“:asebi[言ふかひなき郎等]”
 [^30]: 前三句分别交代了每种树木的功能，最后一句说的是森林的结构被破坏的后果。
-[^31]: 这句话用了踯躅香织的典。原文：<span style="font-family: 'Asebi Mincho'">悉忘過去難安事/尽失将来不解情/世謂身軽能更進/誰知縕衣亦難行/隆冬陋室忙焼火/盛夏紗衣暇賞桜/了断財源安草芥/縦然此命化清明</span>
+[^31]: 这句话用了踯躅香织的典。原文：:asebi[悉忘過去難安事/尽失将来不解情/世謂身軽能更進/誰知縕衣亦難行/隆冬陋室忙焼火/盛夏紗衣暇賞桜/了断財源安草芥/縦然此命化清明]
 [^32]: 大瀛附近的海今称南溟，沧溟是别称之一。
 [^33]: 修补。
 [^34]: 指星宿。施术和星宿有关，故此处指施术。

@@ -1,8 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import { navBarConfig, siteConfig } from "../config";
-import { LinkPresets } from "../constants/link-presets";
-import { LinkPreset, type NavBarLink } from "../types/config";
+import { getLinkPresets, type PresetNavLink } from "../constants/link-presets";
 import { url } from "../utils/url-utils";
 import LightDarkSwitch from "./LightDarkSwitch.svelte";
 import Search from "./Search.svelte";
@@ -11,14 +10,13 @@ import NavMenuPanel from "./widget/NavMenuPanel.astro";
 
 const className = Astro.props.class;
 
-let links: NavBarLink[] = navBarConfig.links.map(
-	(item: NavBarLink | LinkPreset): NavBarLink => {
-		if (typeof item === "number") {
-			return LinkPresets[item];
-		}
-		return item;
-	},
-);
+const presets = getLinkPresets();
+let links: PresetNavLink[] = navBarConfig.links.map((item): PresetNavLink => {
+	if (typeof item === "number") {
+		return presets[item];
+	}
+	return item;
+});
 ---
 <div id="navbar" class="z-50 onload-animation">
     <div class="absolute h-8 left-0 right-0 -top-8 bg-[var(--card-bg)] transition"></div> <!-- used for onload animation -->
@@ -37,7 +35,7 @@ let links: NavBarLink[] = navBarConfig.links.map(
                           class="btn-plain scale-animation rounded-lg h-11 font-bold px-5 active:scale-95"
                 >
                     <div class="flex items-center">
-                        {l.name}
+                        <span data-i18n-key={l.i18nKey}>{l.name}</span>
                         {l.external && <Icon name="fa6-solid:arrow-up-right-from-square" class="text-[0.875rem] transition -translate-y-[1px] ml-1 text-black/[0.2] dark:text-white/[0.2]"></Icon>}
                     </div>
                 </a>;
@@ -102,6 +100,47 @@ function loadButtonScript() {
 }
 
 loadButtonScript();
+</script>
+
+<script>
+import type I18nKey from "../i18n/i18nKey";
+import { getTranslation } from "../i18n/translation";
+
+// Swup 只替换 main / #toc / #sidebar-sticky，导航栏、搜索框、主题设置等
+// 都在容器外，且是 client:only 组件，页面切换时不会重新渲染。
+// 这里在 page:view 时按新页面语言更新它们的文案（只改文本/属性，不替换 DOM，
+// 以免破坏 Search / LightDarkSwitch 的 hydration）。
+//   data-i18n-key   -> 键
+//   data-i18n-attr  -> 可选；有则设该属性（如 placeholder / aria-label），否则设 textContent
+function applyI18n() {
+	const lang = document
+		.querySelector("main[data-page-lang]")
+		?.getAttribute("data-page-lang");
+	if (!lang) return;
+	const t = getTranslation(lang);
+	for (const el of document.querySelectorAll("[data-i18n-key]")) {
+		const key = el.getAttribute("data-i18n-key");
+		if (!key || !(key in t)) continue;
+		const value = t[key as I18nKey];
+		const attr = el.getAttribute("data-i18n-attr");
+		if (attr) {
+			el.setAttribute(attr, value);
+		} else {
+			el.textContent = value;
+		}
+	}
+}
+
+function setupI18n() {
+	if (!window.swup?.hooks) return;
+	window.swup.hooks.on("page:view", applyI18n);
+}
+
+if (window?.swup?.hooks) {
+	setupI18n();
+} else {
+	document.addEventListener("swup:enable", setupI18n);
+}
 </script>
 
 {import.meta.env.PROD && <script is:inline define:vars={{scriptUrl: url('/pagefind/pagefind.js')}}>

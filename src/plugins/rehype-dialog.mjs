@@ -25,3 +25,13 @@ export function ClassBox(className) {
 		return h("div", { class: className }, children);
 	};
 }
+
+/**
+ * 新增：行内字体工厂函数
+ * 用来把 :ong[文本] 之类的行内指令转成 <span class="className">文本</span>
+ */
+export function FontSpan(className) {
+	return (_properties, children) => {
+		return h("span", { class: className }, children);
+	};
+}

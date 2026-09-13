@@ -1,5 +1,6 @@
 import { siteConfig } from "../config";
 import type I18nKey from "./i18nKey";
+import { langStore } from "./lang-context";
 import { A_ong } from "./languages/A_ong";
 import { A_zh_iang } from "./languages/A_zh_iang";
 import { en } from "./languages/en";
@@ -54,15 +55,24 @@ export function getTranslation(lang: string): Translation {
 	return map[lang] || defaultTranslation;
 }
 
-// 页面级临时语言重写（利用 NodeJS 全局变量在 Astro 的每个单次渲染沙盒周期中进行隔离重写）
-let globalPageLangOverride: string | null = null;
-
+// 页面级语言覆盖。
+// 服务端：lang-context.server.ts 会用 AsyncLocalStorage 覆盖 langStore，
+// 从而在 SSG 并发渲染页面时隔离各页面的语言。
+// 客户端：langStore 是空实现，改为从页面上的 data-page-lang 读取。
 export function setPageLanguageOverride(lang: string | null) {
-	globalPageLangOverride = lang;
+	langStore.set(lang);
 }
 
 export function getCurrentPageLanguage(): string {
-	return globalPageLangOverride || siteConfig.lang || "zh_CN";
+	const stored = langStore.get();
+	if (stored) return stored;
+	if (typeof document !== "undefined") {
+		const domLang = document
+			.querySelector("main[data-page-lang]")
+			?.getAttribute("data-page-lang");
+		if (domLang) return domLang;
+	}
+	return siteConfig.lang || "zh_CN";
 }
 
 /**

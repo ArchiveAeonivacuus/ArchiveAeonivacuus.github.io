@@ -11,6 +11,9 @@
     "astro": "astro",
     "type-check": "tsc --noEmit --isolatedDeclarations",
     "new-post": "node scripts/new-post.js",
+    "new-translation": "node scripts/new-translation.js",
+    "migrate": "node scripts/migrate-shorthand.mjs",
+    "fonts": "python3 scripts/font-subset.py",
     "format": "biome format --write ./src",
     "lint": "biome check --write ./src",
     "preinstall": "npx only-allow pnpm"

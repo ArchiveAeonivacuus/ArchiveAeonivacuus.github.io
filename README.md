@@ -60,7 +60,8 @@ image: ./cover.jpg
 tags: [Foo, Bar]
 category: Front-end
 draft: false
-lang: jp      # Set only if the post's language differs from the site's language in `config.ts`
+lang: jp             # Set only if the post's language differs from the site's language in `config.ts`
+translate_key: my-first-blog-post   # Shared by all language versions of the same post; enables the language switcher
 ---
 ```
 
@@ -71,6 +72,50 @@ In addition to Astro's default support for [GitHub Flavored Markdown](https://gi
 - Admonitions ([Preview and Usage](https://fuwari.vercel.app/posts/markdown-extended/#admonitions))
 - GitHub repository cards ([Preview and Usage](https://fuwari.vercel.app/posts/markdown-extended/#github-repository-cards))
 - Enhanced code blocks with Expressive Code ([Preview](https://fuwari.vercel.app/posts/expressive-code/) / [Docs](https://expressive-code.com/))
+
+### 本站自定义写作语法
+
+**注音（ruby）** —— 用 `{基字|注音}`，可写多字：
+
+```markdown
+# 提灯于{赭|zhě}穹之下
+{妮媧利亜|ニヴァーリア}   →   <ruby>妮媧利亜<rt>ニヴァーリア</rt></ruby>
+```
+
+**行内字体** —— 用 `:指令[文本]`：
+
+| 指令 | 字体 | 指令 | 字体 |
+|:--|:--|:--|:--|
+| `:ong[…]` | Old English Onglisch | `:jp[…]` | Source Han Serif JP |
+| `:asebi[…]` | Asebi Mincho | `:olds[…]` | Source Han Serif Old |
+| `:dfkai[…]` | DFKai-SB | `:ipa[…]` | Times New Roman |
+| `:ht[…]` | HighTowerText | `:kai[…]` | KaiTi |
+| `:msmincho[…]` | MS Mincho | | |
+
+**诗/词盒子** —— 用容器指令（等价于 `<div class="…">`）：
+
+```markdown
+:::shi        ← 诗（居中；中日文页面自动用楷体）
+雾霭飘自诃古棱，<br>
+暮色时分尽染红。
+:::
+
+:::ci / :::spellcard / :::poet / :::waka
+```
+
+> ⚠️ `{…}` 与 `:指令[…]` 只在普通 Markdown 中解析。在原始 HTML 区块（`<table>`、`<div>`、独占一行的 `<span>`、`<!-- -->`）内不会解析，那里请改用 `<ruby>` 或 `<span class="ff-ong">`（类名与上表指令一一对应，如 `:ong` ↔ `ff-ong`）。
+
+**多语言**：同一篇文章的各语言版本共享 `translate_key`，页面会自动出现语言切换条。
+
+### 字体（按用字子集，自托管）
+
+- 源字体放在 `fonts-src/`（**不参与部署**）。
+- `pnpm fonts` 会扫描 `src/content`、`src/i18n`、`src/config.ts` 里实际用到的字，
+  为每个字重生成**一个** woff2（正文全量子集 + 粗体仅标题/strong 用字），写入
+  `public/fonts/web/` 和 `src/generated/fonts.ts`。
+- 生成结果需要提交。**Vercel/CI 只跑 `pnpm build`，不依赖 Python**；只有新增内容引入新字符时，才需要在本地重跑 `pnpm fonts` 并提交。
+- 正文思源宋体提供 **400/700 真粗体**；Asebi / KaiTi / DFKai / Onglisch / HighTower 只有单一字重，已用 `font-synthesis: none` 关闭伪粗体。
+- 相比旧的按 Unicode 区块分片（一页 80+ 请求、近 10MB），现在通常一页只需 1~2 个字体请求。
 
 ## ⚡ Commands
 
@@ -84,7 +129,11 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm preview`             | Preview your build locally, before deploying        |
 | `pnpm check`               | Run checks for errors in your code                  |
 | `pnpm format`              | Format your code using Biome                        |
-| `pnpm new-post <filename>` | Create a new post                                   |
+| `pnpm lint`                | Lint and auto-fix code using Biome                  |
+| `pnpm new-post <filename>` | Create a new post (`--lang` `--translate-key` `--category` `--tags` `--title`) |
+| `pnpm new-translation <base-slug> <lang>` | Create a translation by cloning the base post's front-matter |
+| `pnpm migrate [--dry-run]` | Convert old `<ruby>` / inline font styles to the shorthand syntax |
+| `pnpm fonts`               | Regenerate web-font subsets from `fonts-src/` (needs Python + fonttools) |
 | `pnpm astro ...`           | Run CLI commands like `astro add`, `astro check`    |
 | `pnpm astro --help`        | Get help using the Astro CLI                        |
 

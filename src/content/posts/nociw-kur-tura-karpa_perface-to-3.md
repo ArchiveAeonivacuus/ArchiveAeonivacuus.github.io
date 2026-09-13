@@ -10,7 +10,7 @@ lang: ''
 translate_key: ''
 ---
 
-# <span style="font-family: 'Source Han Serif JP'">ノチウ　クㇽ　トゥラ　カㇻパ</span>
+# :jp[ノチウ　クㇽ　トゥラ　カㇻパ]
 # nociw kur tura k=arpa
 # 我与星光同行
 
@@ -135,8 +135,8 @@ translate_key: ''
 
 这就是离开明日利玛教官的无助吗……我打定主意，明天一早先去武器加工处，看看能不能补救这件事。
 
-[^1]: 厚司：<span style="font-family: Source Han Serif JP">アットゥㇱ</span>（attus），阿伊努族的传统服饰。
-[^2]: 迩岱空部森林：<span style="font-family: Source Han Serif JP"><ruby>迩岱空部<rt>ニタイカㇻペ</rt></ruby>の森</span>。
-[^3]: 卯桥留山部雪原：<span style="font-family: Source Han Serif JP"><ruby>卯橋留山部<rt>ウパㇱルヤンペ</rt></ruby>雪原</span>。
-[^4]: 雹狐龙：<span style="font-family: Source Han Serif JP">雹狐竜タマミツネ亜種</span>，泡狐龙的亚种。
-[^5]: 丹首鸟：<span style="font-family: Source Han Serif JP">丹首鳥グルスハケ</span>，一种头部泛红的鸟龙种，生活在雪原。
+[^1]: 厚司：:jp[アットゥㇱ]（attus），阿伊努族的传统服饰。
+[^2]: 迩岱空部森林：:jp[{迩岱空部|ニタイカㇻペ}の森]。
+[^3]: 卯桥留山部雪原：:jp[{卯橋留山部|ウパㇱルヤンペ}雪原]。
+[^4]: 雹狐龙：:jp[雹狐竜タマミツネ亜種]，泡狐龙的亚种。
+[^5]: 丹首鸟：:jp[丹首鳥グルスハケ]，一种头部泛红的鸟龙种，生活在雪原。

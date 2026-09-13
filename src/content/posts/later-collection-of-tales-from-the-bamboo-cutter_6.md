@@ -9,27 +9,9 @@ draft: false
 lang: ''
 ---
 
-<style>
-.shi {
-    text-align: center;
-    font-family: KaiTi;
-}
-.ci {
-    font-family: KaiTi;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-/*.waka {
-    text-align: center;
-    font-family: DFKai-SB;
-}*/
-.spellcard {
-    text-align: center;
-    font-family: KaiTi;
-}
-</style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>六<rt>ろく</rt></ruby>　<ruby>相語<rt>あひかたら</rt></ruby>ふこと<ruby>御前<rt>ごぜん</rt></ruby>なり</span>
+
+# :asebi[{六|ろく}　{相語|あひかたら}ふこと{御前|ごぜん}なり]
 
 辉夜姬来于地上次年六月初十。是日已至于伊势，若诹访与左大臣问答之日，细雨中。虽是大暑，竟感天寒。可见朝颜层叠，或咲或垂。池边迟莲，抑含抑开。
 
@@ -96,7 +78,7 @@ lang: ''
 
 <div class="shi">
 
-<span style="font-family: 'DFKai-SB'">
+<span class="ff-dfkai">
 朝顔は　咲く期りなりに　ひさかたの<br>
 出でず消えにし　雨に臥い伏す</span><br>
 沉眠春卒至，痴待许朝颜。<br>
@@ -108,7 +90,7 @@ lang: ''
 
 <div class="shi">
 
-<span style="font-family: 'DFKai-SB'">
+<span class="ff-dfkai">
 朝顔の　期りといへば　昼ぞ越えぬ<br>
 雨降るゆゑや　臥うれど盛り</span><br>
 言称时节至，半日是朝颜。<br>

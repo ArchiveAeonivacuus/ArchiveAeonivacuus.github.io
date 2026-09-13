@@ -9,60 +9,49 @@ draft: false
 lang: ''
 ---
 
-<style>
-.shi {
-    text-align: center;
-    font-family: KaiTi;
-}
-.ci {
-    font-family: KaiTi;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-</style>
 
 
-# <span style="font-family: 'Asebi Mincho'"><ruby><span style="font-family: 'Source Han Serif Old'">瞱</span><rt>ひかす</rt></ruby>の山彦</span>
-# <ruby>瞱<rt>yè</rt></ruby>花的回音
+
+# <span class="ff-asebi"><ruby><span class="ff-olds">瞱</span><rt>ひかす</rt></ruby>の山彦</span>
+# {瞱|yè}花的回音
 
 <!--镇海谣
 
 <div class="shi">
 
-<span style="font-family: 'Asebi Mincho'"><ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br><ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br><ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ
+<span class="ff-asebi"><ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br><ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br><ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ
 <br><ruby>常世<rt>とこよ</rt></ruby><ruby>海<rt>うみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る</span>
 
 暗潮忽起　波震晚意　怒涛翻天亡魂船<br>栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>唤降天威　御柱忽落　八百万神镇坤乾<br>海中幽冥　神官退治　尽扫顽瘴澄海田
 
-<span style="font-family: 'Asebi Mincho'"><ruby>梅留山<rt>めるやま</rt></ruby>を　<ruby>呼<rt>よ</rt></ruby>びし<ruby>神罰<rt>しんばつ</rt></ruby>　<ruby>峯<rt>みね</rt></ruby>ぞ<ruby>受<rt>う</rt></ruby>くる<br><ruby>岩戸<rt>いはと</rt></ruby><ruby>開<rt>あ</rt></ruby>き　<ruby>雷霆<rt>らいてい</rt></ruby><ruby>万鈞<rt>ばんきん</rt></ruby>　<ruby>千尋<rt>ちひろ</rt></ruby><ruby>崩<rt>くづ</rt></ruby>る<br><ruby>砕<rt>くだ</rt></ruby>け<ruby>散<rt>ち</rt></ruby>る　<ruby>御殿<rt>みどの</rt></ruby><ruby>夢跡<rt>ゆめあと</rt></ruby>　なりにしうみが<br>しらたへの　<ruby>物<rt>もの</rt></ruby>の<ruby>怪<rt>け</rt></ruby><ruby>祓<rt>はら</rt></ruby>へ　<ruby>磯<rt>いそ</rt></ruby><ruby>残<rt>のこ</rt></ruby>る<ruby>濵<rt>はま</rt></ruby><br><ruby>紫気<rt>しき</rt></ruby><ruby>徒留<rt>どりう</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby>の<ruby>元<rt>もと</rt></ruby>　<ruby>社<rt>やしろ</rt></ruby>なりにし</span>
+<span class="ff-asebi"><ruby>梅留山<rt>めるやま</rt></ruby>を　<ruby>呼<rt>よ</rt></ruby>びし<ruby>神罰<rt>しんばつ</rt></ruby>　<ruby>峯<rt>みね</rt></ruby>ぞ<ruby>受<rt>う</rt></ruby>くる<br><ruby>岩戸<rt>いはと</rt></ruby><ruby>開<rt>あ</rt></ruby>き　<ruby>雷霆<rt>らいてい</rt></ruby><ruby>万鈞<rt>ばんきん</rt></ruby>　<ruby>千尋<rt>ちひろ</rt></ruby><ruby>崩<rt>くづ</rt></ruby>る<br><ruby>砕<rt>くだ</rt></ruby>け<ruby>散<rt>ち</rt></ruby>る　<ruby>御殿<rt>みどの</rt></ruby><ruby>夢跡<rt>ゆめあと</rt></ruby>　なりにしうみが<br>しらたへの　<ruby>物<rt>もの</rt></ruby>の<ruby>怪<rt>け</rt></ruby><ruby>祓<rt>はら</rt></ruby>へ　<ruby>磯<rt>いそ</rt></ruby><ruby>残<rt>のこ</rt></ruby>る<ruby>濵<rt>はま</rt></ruby><br><ruby>紫気<rt>しき</rt></ruby><ruby>徒留<rt>どりう</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby>の<ruby>元<rt>もと</rt></ruby>　<ruby>社<rt>やしろ</rt></ruby>なりにし</span>
 
 梅留山巅　一呼神罚　峰头震颤尘世惊<br>岩户訇开　雷霆万钧　崩灭屋宇榫卯倾<br>碎裂遗处　殿堂旧梦　居所都作海涛平<br>白砂堆矶　祓除妖祟　惟见无常诸行萦<br>紫气徒留　神柱之侧　镇海社起灵源<ruby>茔<rt style="fontfamily: ''">yíng</rt></ruby>
 
-<span style="font-family: 'Asebi Mincho'"><ruby>御霊代<rt>みたましろ</rt></ruby>　<ruby>高天<rt>たかま</rt></ruby>の<ruby>原<rt>はら</rt></ruby>を　<ruby>光<rt>ひかり</rt></ruby><ruby>照<rt>て</rt></ruby>る<br>さ<ruby>御霊<rt>みたま</rt></ruby>え　<ruby>元古<rt>げんこ</rt></ruby><ruby>先祖<rt>せんぞ</rt></ruby>が　<ruby>献身<rt>けんしん</rt></ruby><ruby>歌詠<rt>かえい</rt></ruby><br><ruby>落<rt>お</rt></ruby>ち<ruby>零<rt>こぼ</rt></ruby>れ　<ruby>小夜<rt>さよ</rt></ruby>の<ruby>磐<rt>いは</rt></ruby><ruby>船<rt>ぶね</rt></ruby>　<ruby>星<rt>ほし</rt></ruby><ruby>燦然<rt>さんぜん</rt></ruby><br><ruby>地<rt>つち</rt></ruby><ruby>刺<rt>さ</rt></ruby>さり　<ruby>神籬<rt>ひもろき</rt></ruby>と<ruby>為<rt>な</rt></ruby>り　<ruby>八方<rt>やかた</rt></ruby><ruby>守<rt>もり</rt></ruby><br><ruby>現世<rt>うつしよ</rt><ruby>の　<ruby>斎<rt>いは</rt></ruby>ふ<ruby>天<rt>あま</rt></ruby>たて　<ruby>矛<rt>ほこ</rt></ruby><ruby>持<rt>も</rt></ruby>つ<ruby>神<rt>かみ</rt></ruby>を　<ruby>黄泉路<rt>よみぢ</rt></ruby><ruby>在<rt>ましま</rt></ruby>す</span>
+<span class="ff-asebi"><ruby>御霊代<rt>みたましろ</rt></ruby>　<ruby>高天<rt>たかま</rt></ruby>の<ruby>原<rt>はら</rt></ruby>を　<ruby>光<rt>ひかり</rt></ruby><ruby>照<rt>て</rt></ruby>る<br>さ<ruby>御霊<rt>みたま</rt></ruby>え　<ruby>元古<rt>げんこ</rt></ruby><ruby>先祖<rt>せんぞ</rt></ruby>が　<ruby>献身<rt>けんしん</rt></ruby><ruby>歌詠<rt>かえい</rt></ruby><br><ruby>落<rt>お</rt></ruby>ち<ruby>零<rt>こぼ</rt></ruby>れ　<ruby>小夜<rt>さよ</rt></ruby>の<ruby>磐<rt>いは</rt></ruby><ruby>船<rt>ぶね</rt></ruby>　<ruby>星<rt>ほし</rt></ruby><ruby>燦然<rt>さんぜん</rt></ruby><br><ruby>地<rt>つち</rt></ruby><ruby>刺<rt>さ</rt></ruby>さり　<ruby>神籬<rt>ひもろき</rt></ruby>と<ruby>為<rt>な</rt></ruby>り　<ruby>八方<rt>やかた</rt></ruby><ruby>守<rt>もり</rt></ruby><br><ruby>現世<rt>うつしよ</rt><ruby>の　<ruby>斎<rt>いは</rt></ruby>ふ<ruby>天<rt>あま</rt></ruby>たて　<ruby>矛<rt>ほこ</rt></ruby><ruby>持<rt>も</rt></ruby>つ<ruby>神<rt>かみ</rt></ruby>を　<ruby>黄泉路<rt>よみぢ</rt></ruby><ruby>在<rt>ましま</rt></ruby>す</span>
 
-煌煌高天　神照八隅　仙灵绕行瀛寰宇<br>仙灵之名　元古先祖　献身歌咏成尘缕<br>夜磐零落　星舟坠渚　燦然漫天流火雨<br>神篱贯地　铜铁飞散　四方镇守拦异<ruby>罟<rt style="font-family:''">gǔ</rt></ruby><br>持矛立盾　执念末法　千秋万代凭国浒　塞彼黄泉承净土
+煌煌高天　神照八隅　仙灵绕行瀛寰宇<br>仙灵之名　元古先祖　献身歌咏成尘缕<br>夜磐零落　星舟坠渚　燦然漫天流火雨<br>神篱贯地　铜铁飞散　四方镇守拦异<ruby>罟<rt>gǔ</rt></ruby><br>持矛立盾　执念末法　千秋万代凭国浒　塞彼黄泉承净土
 
 </div>
 -->
 
 
-来玉送神社参拜之人，可能连神主姓名都不知晓。但只要提起那名巫女，每日回收接引灯芯，大家都知道叫甚么。并非是香客信众闲言碎语，而是名字实在有些独特——诹访园卯雪（<span style="font-family: 'Asebi Mincho'"><ruby>諏訪園<rt>すはぞのの</rt></ruby><ruby>卯雪<rt>うゆき</rt></ruby></span>），常常惹得善男信女浮想联翩，又或有诗兴大发。
+来玉送神社参拜之人，可能连神主姓名都不知晓。但只要提起那名巫女，每日回收接引灯芯，大家都知道叫甚么。并非是香客信众闲言碎语，而是名字实在有些独特——诹访园卯雪（:asebi[{諏訪園|すはぞのの}{卯雪|うゆき}]），常常惹得善男信女浮想联翩，又或有诗兴大发。
 晚樱如雪落于诹访园[^1]，自是四季风景颇有意趣。有诗言：
 
 <div class="shi">
 
 樱褪白红轻点萍，漫天作雪散香馨。<br>
 东风诹访神龛事，南苑多闻宫水泠。<br>
-玉送曾看春日整，香灰但掩岁光零。<br><ruby>闛<rt style="font-family:''">tāng</rt></ruby><ruby>闛<rt style="font-family:''">tāng</rt></ruby>[^2]破却浩声势，始道尘寰只一<ruby>醽<rt style="font-family:''">líng</rt></ruby>[^3]。
+玉送曾看春日整，香灰但掩岁光零。<br><ruby>闛<rt>tāng</rt></ruby><ruby>闛<rt>tāng</rt></ruby>[^2]破却浩声势，始道尘寰只一<ruby>醽<rt>líng</rt></ruby>[^3]。
 
 </div>
 
 诹访园原是贵族之姓氏，不过早已没落。至于从前老爷说，贵如诹访园才能为神社安民之首，现在看来自然也是与血脉无关，旧时只有诹访园一族显贵，得有知书达理还能文能武之暇罢了。现今玉送再无当年诹访园一般大族。权门上立足者，唯有宫崎、望月、石三姓了。
 
-言归正传，虽说各地神社只在新年之际回收护符[^4]，然而玉送地方接引灯芯常用易旧，故而常设旧灯芯收纳所。本社售出之接引灯芯免费回收，他处所得则需十圆一本。玉送地方阴阳武士[^5]，多是经玉送神社之手购得接引灯芯。而玉送神社，不时遣巫女与采花妖交易，以采花妖所需或是各类币券，换得接引灯芯之类阴阳用物。玉送有名贵符笔为死灵樱木所制，正是采花妖所<ruby>鬻<rt>yù</rt></ruby>[^6]。传言於毛日川上有武士之魂，便是招魂灯笼所引。那武士之身，早已不知养育了何处花草，同古战场共作了玉送流水。
+言归正传，虽说各地神社只在新年之际回收护符[^4]，然而玉送地方接引灯芯常用易旧，故而常设旧灯芯收纳所。本社售出之接引灯芯免费回收，他处所得则需十圆一本。玉送地方阴阳武士[^5]，多是经玉送神社之手购得接引灯芯。而玉送神社，不时遣巫女与采花妖交易，以采花妖所需或是各类币券，换得接引灯芯之类阴阳用物。玉送有名贵符笔为死灵樱木所制，正是采花妖所{鬻|yù}[^6]。传言於毛日川上有武士之魂，便是招魂灯笼所引。那武士之身，早已不知养育了何处花草，同古战场共作了玉送流水。
 
-古战场在玉送何方，早已无人知晓。<ruby>瞱<rt>yè</rt></ruby>花野放，或许能寻迹一二。然而结幽岛上遍地是传说，因而遍地是<ruby>瞱<rt>yè</rt></ruby>花。到底何处是古战场，何处是血染死灵樱，何处曾有鉴影会仓皇，何处有风见引残魂，早已扑朔迷离。正如玉送大小集上，道是甚么死灵樱花簪、三天忘樱木[^7]符，又或是辉京天然斋点心、蛇头路地洋货屋购得新鲜玩意，又有谁人能来辨真假呢？有《西江月》：
+古战场在玉送何方，早已无人知晓。{瞱|yè}花野放，或许能寻迹一二。然而结幽岛上遍地是传说，因而遍地是{瞱|yè}花。到底何处是古战场，何处是血染死灵樱，何处曾有鉴影会仓皇，何处有风见引残魂，早已扑朔迷离。正如玉送大小集上，道是甚么死灵樱花簪、三天忘樱木[^7]符，又或是辉京天然斋点心、蛇头路地洋货屋购得新鲜玩意，又有谁人能来辨真假呢？有《西江月》：
 
 <div class="ci">
 
@@ -79,14 +68,14 @@ lang: ''
 
 <div class="shi">
 
-<span style="font-family: 'Asebi Mincho'">
+<span class="ff-asebi">
 <ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>
 ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br>
 <ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br>
 <ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ<br>
 </span>
 <br>
-<span style="font-family: 'Asebi Mincho'">
+<span class="ff-asebi">
 <ruby>常世海<rt>とこようみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る
 
 </span>
@@ -99,11 +88,11 @@ lang: ''
 
 ---
 
-偶尔也有时节，不见卯雪。那时便是神月[^11]溟海祭，神社要派一巫女入山起式祭祷。玉送神社此事务，便交由卯雪来进行。虽难免有闲人闲话，攻<ruby>讦<rt>jié</rt></ruby>是旧权贵余孽，社内社外深晓卯雪用功，因而也不顾，仍是遣卯雪入林。
+偶尔也有时节，不见卯雪。那时便是神月[^11]溟海祭，神社要派一巫女入山起式祭祷。玉送神社此事务，便交由卯雪来进行。虽难免有闲人闲话，攻{讦|jié}是旧权贵余孽，社内社外深晓卯雪用功，因而也不顾，仍是遣卯雪入林。
 
 玉送之林并没有玉送城乡罗生，在天规[^12]之外。林中息律，采花妖即居于此。玉送每设式祭祀，亦会乘便与采花妖互易所需，因而采花妖与玉送神社早已熟络，其中还另有滥觞。
 
-卯雪一如昨年，收拾好干粮行囊，穿着草鞋，就随神主一同去了。这干粮是行路用，以枣泥蜂蜜为芯，裹了黑芝麻糯米等，再反复烹煮而得，一拳大小，每次食用捶成稍小块，用凉水送服，可顶半日不饥。这干粮神社才有，唤作行脚团子，若是寻常人赶路则是<ruby>糗<rt>qiǔ</rt></ruby>饼[^13]干<ruby>糒<rt>bèi</rt></ruby>[^14]，并无这般好用，单顶腹中有物罢了。灾年更有甚者，能将树皮甚而殍骨，䑛着石块咽下[^15]。因而这行路团子，算上等食粮。卯雪卸下行装之时，与神主闲谈：“今年听香客闲谈，收成又不佳。”神主只摇头不语，眼中尽是惋惜。
+卯雪一如昨年，收拾好干粮行囊，穿着草鞋，就随神主一同去了。这干粮是行路用，以枣泥蜂蜜为芯，裹了黑芝麻糯米等，再反复烹煮而得，一拳大小，每次食用捶成稍小块，用凉水送服，可顶半日不饥。这干粮神社才有，唤作行脚团子，若是寻常人赶路则是{糗|qiǔ}饼[^13]干{糒|bèi}[^14]，并无这般好用，单顶腹中有物罢了。灾年更有甚者，能将树皮甚而殍骨，䑛着石块咽下[^15]。因而这行路团子，算上等食粮。卯雪卸下行装之时，与神主闲谈：“今年听香客闲谈，收成又不佳。”神主只摇头不语，眼中尽是惋惜。
 
 却说二人疾步如飞，行了半日，将要黄昏时，却见今年景色不同往常，那是：
 
@@ -119,7 +108,7 @@ lang: ''
 
 斜辉艳紫[^16]。纤细遮阳指。息律暗波微漾水。轻褪芒麻草履。
 
-唐红怀里微燃。柔光<ruby>覼<rt>luó</rt></ruby><ruby>缕<rt>lǚ</rt></ruby>[^17]旧毡。挡雨遮风残壁。林中夜半参禅。
+唐红怀里微燃。柔光{覼|luó}{缕|lǚ}[^17]旧毡。挡雨遮风残壁。林中夜半参禅。
 
 </div>
 
@@ -129,7 +118,7 @@ lang: ''
 
 且说翌日，卯雪随神主来到玉送花妖镇。神主名唤平田森之助，也有本事一二，通掌花魂混流[^18]阴阳道，又与采花妖也多少有相识。此时二人是分头问询，与采花妖互报些要讯。只见花妖长老、掌兵勇者，这时正与森之助面露难色。
 
-只见长老眉头紧皱，说一字咳三咳，向相识来客支吾<ruby>嗫<rt>niè</rt></ruby><ruby>嚅<rt>rú</rt></ruby>，道是有一行人南北混杂[^19]，又是蓝肤海妖又是爱族巫祝[^20]，甚者有北族主教巫<ruby>㩵<rt>zá</rt></ruby>[^21]，着实骇人。卯雪与森之助亦摸不着头脑，近年北族大航海，是有不少人来瀛不错，如是阵仗却连神明都闻所未闻。一路残垣有所修缮二人固知，其中缘由，却无从得晓。
+只见长老眉头紧皱，说一字咳三咳，向相识来客支吾{嗫|niè}{嚅|rú}，道是有一行人南北混杂[^19]，又是蓝肤海妖又是爱族巫祝[^20]，甚者有北族主教巫{㩵|zá}[^21]，着实骇人。卯雪与森之助亦摸不着头脑，近年北族大航海，是有不少人来瀛不错，如是阵仗却连神明都闻所未闻。一路残垣有所修缮二人固知，其中缘由，却无从得晓。
 
 然而入山起式，不得不行，因而翌日一早，二人仍早早起身，自花妖村镇向东而去。
 
@@ -141,7 +130,7 @@ lang: ''
 
 <div class="ci">
 
-高山半壁，直矗波涛里。竦峙斧刀迹，环残垒。击削东风紧，峰<ruby>崿<rt>è</rt></ruby>若、狼牙毁。神社悬崖咫。强登险峻，<ruby>蹀<rt>dié</rt></ruby><ruby>躞<rt>xiè</rt></ruby>碎岩慢跬。
+高山半壁，直矗波涛里。竦峙斧刀迹，环残垒。击削东风紧，峰{崿|è}若、狼牙毁。神社悬崖咫。强登险峻，{蹀|dié}{躞|xiè}碎岩慢跬。
 
 千年旧往尘烟矣。谁晓天月碎，惊心史。若起追思意，徒扫洒、聊相寄。有酒今朝醉。迢迢浮世。自有祷祝巫吏[^22]。
 
@@ -153,21 +142,21 @@ lang: ''
 
 <div class="shi">
 
-<span style="font-family: 'Asebi Mincho'">
+<span class="ff-asebi">
 <ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>
 ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br>
 <ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br>
 <ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ<br>
 </span>
 <br>
-<span style="font-family: 'Asebi Mincho'">
+<span class="ff-asebi">
 <ruby>常世海<rt>とこようみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る
 
 </span>
 
 暗潮忽起　波震晚意　怒涛翻天亡魂船<br>栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>唤降天威　御柱忽落　八百万神镇坤乾<br>海中幽冥　神官退治　尽扫顽瘴澄海田
 
-<span style="font-family: 'Asebi Mincho'"><ruby>梅留山<rt>めるやま</rt></ruby>を　<ruby>呼<rt>よ</rt></ruby>びし<ruby>神罰<rt>しんばつ</rt></ruby>　<ruby>峯<rt>みね</rt></ruby>ぞ<ruby>受<rt>う</rt></ruby>くる<br><ruby>岩戸<rt>いはと</rt></ruby><ruby>開<rt>あ</rt></ruby>き　<ruby>雷霆<rt>らいてい</rt></ruby><ruby>万鈞<rt>ばんきん</rt></ruby>　<ruby>千尋<rt>ちひろ</rt></ruby><ruby>崩<rt>くづ</rt></ruby>る<br><ruby>砕<rt>くだ</rt></ruby>け<ruby>散<rt>ち</rt></ruby>る　<ruby>御殿<rt>みどの</rt></ruby><ruby>夢跡<rt>ゆめあと</rt></ruby>　なりにしうみが<br>しらたへの　<ruby>物<rt>もの</rt></ruby>の<ruby>怪<rt>け</rt></ruby><ruby>祓<rt>はら</rt></ruby>へ　<ruby>磯<rt>いそ</rt></ruby><ruby>残<rt>のこ</rt></ruby>る<ruby>濵<rt>はま</rt></ruby><br><ruby>紫気<rt>しき</rt></ruby><ruby>徒留<rt>どりう</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby>の<ruby>元<rt>もと</rt></ruby>　<ruby>社<rt>やしろ</rt></ruby>なりにし</span>
+<span class="ff-asebi">{梅留山|めるやま}を　{呼|よ}びし{神罰|しんばつ}　{峯|みね}ぞ{受|う}くる<br>{岩戸|いはと}{開|あ}き　{雷霆|らいてい}{万鈞|ばんきん}　{千尋|ちひろ}{崩|くづ}る<br>{砕|くだ}け{散|ち}る　{御殿|みどの}{夢跡|ゆめあと}　なりにしうみが<br>しらたへの　{物|もの}の{怪|け}{祓|はら}へ　{磯|いそ}{残|のこ}る{濵|はま}<br>{紫気|しき}{徒留|どりう}　{御柱|みはしら}の{元|もと}　{社|やしろ}なりにし</span>
 
 梅留山巅　一呼神罚　峰头震颤尘世惊<br>岩户訇开　雷霆万钧　崩灭屋宇榫卯倾<br>碎裂遗处　殿堂旧梦　居所都作海涛平<br>白砂堆矶　祓除妖祟　惟见无常诸行萦<br>紫气徒留　神柱之侧　镇海社起灵源<ruby>茔<rt style="fontfamily: ''">yíng</rt></ruby>
 
@@ -183,7 +172,7 @@ lang: ''
 
 于是二人换了登山屐[^23]，卯雪紧紧背囊带，森之助卯定登山屐齿。仰首望向梅留千仞绝壁，若鬼怪獠牙，倒插破青天。息律气动，山身隐现不可明察。卯雪以符咒燃起，微燃罗生之火如红豆，却于息律中成了星火四散，不留痕迹。森之助皱眉：“今年息律浓于往常。”
 
-残墙偶现，年代过久而止留墙根。唯墙根处而仍有<ruby>瞱<rt>yè</rt></ruby>花残留，光影留其间，而瞱<ruby>瞱<rt>yè</rt></ruby>花嚣然鼓噪，似走马灯浮物事于废墟之间。森之助拉着卯雪近看：
+残墙偶现，年代过久而止留墙根。唯墙根处而仍有{瞱|yè}花残留，光影留其间，而瞱{瞱|yè}花嚣然鼓噪，似走马灯浮物事于废墟之间。森之助拉着卯雪近看：
 
 <div class="shi">
 
@@ -197,38 +186,38 @@ lang: ''
 
 “来者何人？”森之助一声断喝，随即二人转身。森之助将腰间太刀一拔拦在卯雪身前。只见来人：
 
-三人行装各异，各自样貌不同。虽是异域风月，却见<ruby>勠<rt>lù</rt></ruby>力心通。森之助举刀之时，三人站位已互成犄角，可闻息律微动。
+三人行装各异，各自样貌不同。虽是异域风月，却见{勠|lù}力心通。森之助举刀之时，三人站位已互成犄角，可闻息律微动。
 
-来人不慌不忙，一甩加索长袍[^26]宽大衣袖，指尖定于身旁<ruby>瞱<rt>yè</rt></ruby>花：“今年，息律异动甚于往常。恁二位可知缘由？”
+来人不慌不忙，一甩加索长袍[^26]宽大衣袖，指尖定于身旁{瞱|yè}花：“今年，息律异动甚于往常。恁二位可知缘由？”
 
 森之助执刀之手一顿，犹豫应道：“想必是海中异相扰动……与外人说来又何用？”
 
-“在下无需避讳，北人主教，依吉丢。”依吉丢深深一作揖，退后两步，皙指一用力，按向<ruby>瞱<rt>yè</rt></ruby>花，凝神示像：“海中异相，无此大能。镇海废社，小有异常，需借恁等助力方可平。”
+“在下无需避讳，北人主教，依吉丢。”依吉丢深深一作揖，退后两步，皙指一用力，按向{瞱|yè}花，凝神示像：“海中异相，无此大能。镇海废社，小有异常，需借恁等助力方可平。”
 
 卯雪上前一步，只见：
 
 <div class="shi">
 
-紫<ruby>瞱<rt style="font-family: ''">yè</rt></ruby>咏文流转处，将呼灭净古波平。<br>吟游误判星<ruby>槎<rt style="font-family: ''">chá</rt></ruby>[^27]击，蛟撞龙翻海底鸣。
+紫<ruby>瞱<rt>yè</rt></ruby>咏文流转处，将呼灭净古波平。<br>吟游误判星<ruby>槎<rt>chá</rt></ruby>[^27]击，蛟撞龙翻海底鸣。
 </div>
 
 息律传事，只可意会。卯雪毕竟功课做实，问道：“咏言流转，当是期限将至？”见依吉丢颔首，又问：“北人又能奈何镇海废社？”
 
-依吉丢努嘴，一旁金发蓝肤之冰妖上前，呈一枝条状物，盘根遒结，梢挂晶莹小球，内中可见浮世众生，细节之处几微不可察。一行三人中金发蓝肤开口：“此物唤作‘育<ruby>㸰<rt>tuó</rt></ruby>’[^28]，当可通瀛寰各处废社之根柢。”言毕，将育<ruby>㸰<rt>tuó</rt></ruby>向<ruby>瞱<rt>yè</rt></ruby>花一抵，周遭轻泛波澜，如触水面。
+依吉丢努嘴，一旁金发蓝肤之冰妖上前，呈一枝条状物，盘根遒结，梢挂晶莹小球，内中可见浮世众生，细节之处几微不可察。一行三人中金发蓝肤开口：“此物唤作‘育{㸰|tuó}’[^28]，当可通瀛寰各处废社之根柢。”言毕，将育{㸰|tuó}向{瞱|yè}花一抵，周遭轻泛波澜，如触水面。
 
 神主森之助，此时才收刀入鞘，不忘残心[^29]四顾。
 
-于是五人重又上路。森之助目射寒光，大步流星独当先。腰间太刀，刀<ruby>镡<rt>xín</rt></ruby>始终不离手，若要将此间阴阳山径、息律流转劈裂。往年熟稔道路，此时尤其可疑。
+于是五人重又上路。森之助目射寒光，大步流星独当先。腰间太刀，刀{镡|xín}始终不离手，若要将此间阴阳山径、息律流转劈裂。往年熟稔道路，此时尤其可疑。
 
-五人所过之处，<ruby>瞱<rt>yè</rt></ruby>花无不敛起繁星仙舟、孔亟战况，惹得卯雪不时侧目：“育<ruby>㸰<rt>tuó</rt></ruby>……能抚<ruby>瞱<rt>yè</rt></ruby>花残响？”
+五人所过之处，{瞱|yè}花无不敛起繁星仙舟、孔亟战况，惹得卯雪不时侧目：“育{㸰|tuó}……能抚{瞱|yè}花残响？”
 
-蓝纹狩衣，爱族长相者开口，一口和语仍不流畅，其中寒意却切肤可感：“育<ruby>㸰<rt>tuó</rt></ruby>乃我族圣物，并不可安抚<ruby>瞱<rt>yè</rt></ruby>花与废社，其能与‘回音’相……相谈。”爱族巫祝轻抚枝条，末梢晶球凭风飘摇：“我等谐律人，不问出身种族。谐律不贪力，存人不毁域，承命不厌匿。”
+蓝纹狩衣，爱族长相者开口，一口和语仍不流畅，其中寒意却切肤可感：“育{㸰|tuó}乃我族圣物，并不可安抚{瞱|yè}花与废社，其能与‘回音’相……相谈。”爱族巫祝轻抚枝条，末梢晶球凭风飘摇：“我等谐律人，不问出身种族。谐律不贪力，存人不毁域，承命不厌匿。”
 
 森之助摇摇头：“这样怪事，闻所未闻。”
 
 此时五人到一陡坡前，依吉丢主教一整长袍，看向森之助，意味深长。依吉丢挥袖振臂，随后环臂胸前，顺势深深作揖，尔后开口：“神主仍有疑虑，玉送神社世代供奉梅留圣山，怎能反不如外人知晓内情？”
 
-森之助双唇张翕，却又不发一言，忽而徒然以手抓握刀<ruby>镡<rt>xín</rt></ruby>，顷刻却又放开。正是：
+森之助双唇张翕，却又不发一言，忽而徒然以手抓握刀{镡|xín}，顷刻却又放开。正是：
 
 <div class="ci">
 
@@ -242,7 +231,7 @@ lang: ''
 
 ---
 
-穿过鸟居，水舎净手漱口，便入神境。参道之上，育<ruby>㸰<rt>tuó</rt></ruby>竟泛红光，与石灯交相辉映。镇海废社并无<ruby>狛<rt>bó</rt></ruby>犬，五人徒然踩踏千年万年神门门槛之上。得益玉送神官年年洒扫，垣内物事尚整洁。走入本殿，墙壁蓝光隐显，可见脉络。<ruby>枵<rt>xiāo</rt></ruby>然殿内，巨柱横斜，不知其材，不明其度，似要与大殿一同轰塌，却又岿然不动。柱上雕刻，恰似满天星宿，璀璨其间，行星走斗，密密麻麻几不可辨。虽过漫长岁月，社内光洁如新。
+穿过鸟居，水舎净手漱口，便入神境。参道之上，育{㸰|tuó}竟泛红光，与石灯交相辉映。镇海废社并无{狛|bó}犬，五人徒然踩踏千年万年神门门槛之上。得益玉送神官年年洒扫，垣内物事尚整洁。走入本殿，墙壁蓝光隐显，可见脉络。{枵|xiāo}然殿内，巨柱横斜，不知其材，不明其度，似要与大殿一同轰塌，却又岿然不动。柱上雕刻，恰似满天星宿，璀璨其间，行星走斗，密密麻麻几不可辨。虽过漫长岁月，社内光洁如新。
 
 本殿深深，尽头神坛，上悬光玉。森之助与卯雪就地起式，于四处张贴神符，随后对神坛二拜二拍，又倒头一拜。随后起身，光玉已始明灭。可见《烛影摇红》：
 
@@ -250,16 +239,16 @@ lang: ''
 
 惨紫符文，挣开坛座融龙脉。残躯垂死裂痕中，灭净神图迫。
 
-幸识坤舆画迹。至少知、<ruby>彀<rt style="font-family: ''">gòu</rt></ruby>弓[^30]孰射。何能无恙，却惧御灵，难施除厄。
+幸识坤舆画迹。至少知、<ruby>彀<rt>gòu</rt></ruby>弓[^30]孰射。何能无恙，却惧御灵，难施除厄。
 
 </div>
 
 卯雪沉吟：“为之奈何？正如主教大人所言，玉送地方，都要‘灭净’了。”
-依吉丢从袋中取出育<ruby>㸰<rt>tuó</rt></ruby>浮世枝，跪于坛前，将育<ruby>㸰<rt>tuó</rt></ruby>奉上，一旁冰妖张口吟唱：
+依吉丢从袋中取出育{㸰|tuó}浮世枝，跪于坛前，将育{㸰|tuó}奉上，一旁冰妖张口吟唱：
 
 <div class="shi">
 
-<span style="font-family: 'Old English Onglisch'">Gnýr fjör-nætr en fold verjask,<br>lıms flugdrekar bíta stjörnu kjölta.<br>Blóðregn dregr úr beınum hımıns,<br>en brynjuð ský losa sıgr-hræ.<br>Seıð-brotın fjöll brjóta vængı fjanda,<br>en hold-særınn bræðır stál-rætr.<br>Nauðır tveggja heıma bera saman,<br>þar sem grátr hımıns mætır óttu jörðu.</span>
+<span class="ff-ong">Gnýr fjör-nætr en fold verjask,<br>lıms flugdrekar bíta stjörnu kjölta.<br>Blóðregn dregr úr beınum hımıns,<br>en brynjuð ský losa sıgr-hræ.<br>Seıð-brotın fjöll brjóta vængı fjanda,<br>en hold-særınn bræðır stál-rætr.<br>Nauðır tveggja heıma bera saman,<br>þar sem grátr hımıns mætır óttu jörðu.</span>
 
 夜啸生魂裂苍冥，飞龙刃翅啮洪荒。<br>穹庐骸雨遮天落，黑甲凶云释众丧。<br>道嶂法山擒敌翼，尸峰血海噬钢艎。<br>相逢凄绝灭两世，寰宇哭号携永怆。
 
@@ -277,13 +266,13 @@ lang: ''
 
 律者摇头：“‘灭净’不可逆，真伪不可知。若是后辈，当速离走。”
 
-“吟游律者大人，歌弥・文殿下。”依吉丢不再作揖，将育<ruby>㸰<rt>tuó</rt></ruby>举起，如若示兵。“请再行核准。以浮世之树，后生请律者重下判断。”依吉丢双目紧阖，育<ruby>㸰<rt>tuó</rt></ruby>随之迸发白光，众人脑中尖啸清晰可闻，纷纷抱头难耐。
+“吟游律者大人，歌弥・文殿下。”依吉丢不再作揖，将育{㸰|tuó}举起，如若示兵。“请再行核准。以浮世之树，后生请律者重下判断。”依吉丢双目紧阖，育{㸰|tuó}随之迸发白光，众人脑中尖啸清晰可闻，纷纷抱头难耐。
 
-律者眸中星点狂转，嗓音嘲哳：“‘灭净’之事……再行断决……重下判断……”此时律者身形波动，撕裂之时，忽而复归怡然，尖啸骤停。身后光球呼吸渐止，翻腾咏言归于平静。于是律者开口：“此事明了。”嗓音轻若耳语：“结幽无事，则‘回响’岿然。”一如年年入山所作常式过后，神坛所见光团所言。少顷，律者身形渐隐，化作咏言千万，如蝶翩翩，四散入墙，成黑幕四方。四方之上，正是上山途中所见，<ruby>瞱<rt>yè</rt></ruby>花所映情景：
+律者眸中星点狂转，嗓音嘲哳：“‘灭净’之事……再行断决……重下判断……”此时律者身形波动，撕裂之时，忽而复归怡然，尖啸骤停。身后光球呼吸渐止，翻腾咏言归于平静。于是律者开口：“此事明了。”嗓音轻若耳语：“结幽无事，则‘回响’岿然。”一如年年入山所作常式过后，神坛所见光团所言。少顷，律者身形渐隐，化作咏言千万，如蝶翩翩，四散入墙，成黑幕四方。四方之上，正是上山途中所见，{瞱|yè}花所映情景：
 
 <div class="shi">
 
-吟游误判星<ruby>槎<rt style="font-family: ''">chá</rt></ruby>击，蛟撞龙翻海底鸣。
+吟游误判星<ruby>槎<rt>chá</rt></ruby>击，蛟撞龙翻海底鸣。
 
 </div>
 
@@ -291,31 +280,31 @@ lang: ''
 
 <div class="shi">
 
-<span style="font-family: 'Asebi Mincho'">
+<span class="ff-asebi">
 <ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>
 ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br>
 <ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br>
 <ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ<br>
 </span>
 <br>
-<span style="font-family: 'Asebi Mincho'">
+<span class="ff-asebi">
 <ruby>常世海<rt>とこようみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る
 
 </span>
 
 暗潮忽起　波震晚意　怒涛翻天亡魂船<br>栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>唤降天威　御柱忽落　八百万神镇坤乾<br>海中幽冥　神官退治　尽扫顽瘴澄海田
 
-<span style="font-family: 'Asebi Mincho'"><ruby>梅留山<rt>めるやま</rt></ruby>を　<ruby>呼<rt>よ</rt></ruby>びし<ruby>神罰<rt>しんばつ</rt></ruby>　<ruby>峯<rt>みね</rt></ruby>ぞ<ruby>受<rt>う</rt></ruby>くる<br><ruby>岩戸<rt>いはと</rt></ruby><ruby>開<rt>あ</rt></ruby>き　<ruby>雷霆<rt>らいてい</rt></ruby><ruby>万鈞<rt>ばんきん</rt></ruby>　<ruby>千尋<rt>ちひろ</rt></ruby><ruby>崩<rt>くづ</rt></ruby>る<br><ruby>砕<rt>くだ</rt></ruby>け<ruby>散<rt>ち</rt></ruby>る　<ruby>御殿<rt>みどの</rt></ruby><ruby>夢跡<rt>ゆめあと</rt></ruby>　なりにしうみが<br>しらたへの　<ruby>物<rt>もの</rt></ruby>の<ruby>怪<rt>け</rt></ruby><ruby>祓<rt>はら</rt></ruby>へ　<ruby>磯<rt>いそ</rt></ruby><ruby>残<rt>のこ</rt></ruby>る<ruby>濵<rt>はま</rt></ruby><br><ruby>紫気<rt>しき</rt></ruby><ruby>徒留<rt>どりう</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby>の<ruby>元<rt>もと</rt></ruby>　<ruby>社<rt>やしろ</rt></ruby>なりにし</span>
+<span class="ff-asebi">{梅留山|めるやま}を　{呼|よ}びし{神罰|しんばつ}　{峯|みね}ぞ{受|う}くる<br>{岩戸|いはと}{開|あ}き　{雷霆|らいてい}{万鈞|ばんきん}　{千尋|ちひろ}{崩|くづ}る<br>{砕|くだ}け{散|ち}る　{御殿|みどの}{夢跡|ゆめあと}　なりにしうみが<br>しらたへの　{物|もの}の{怪|け}{祓|はら}へ　{磯|いそ}{残|のこ}る{濵|はま}<br>{紫気|しき}{徒留|どりう}　{御柱|みはしら}の{元|もと}　{社|やしろ}なりにし</span>
 
 梅留山巅　一呼神罚　峰头震颤尘世惊<br>岩户訇开　雷霆万钧　崩灭屋宇榫卯倾<br>碎裂遗处　殿堂旧梦　居所都作海涛平<br>白砂堆矶　祓除妖祟　惟见无常诸行萦<br>紫气徒留　神柱之侧　镇海社起灵源<ruby>茔<rt style="fontfamily: ''">yíng</rt></ruby>
 
-<span style="font-family: 'Asebi Mincho'"><ruby>御霊代<rt>みたましろ</rt></ruby>　<ruby>高天<rt>たかま</rt></ruby>の<ruby>原<rt>はら</rt></ruby>を　<ruby>光<rt>ひかり</rt></ruby><ruby>照<rt>て</rt></ruby>る<br>さ<ruby>御霊<rt>みたま</rt></ruby>え　<ruby>元古<rt>げんこ</rt></ruby><ruby>先祖<rt>せんぞ</rt></ruby>が　<ruby>献身<rt>けんしん</rt></ruby><ruby>歌詠<rt>かえい</rt></ruby><br><ruby>落<rt>お</rt></ruby>ち<ruby>零<rt>こぼ</rt></ruby>れ　<ruby>小夜<rt>さよ</rt></ruby>の<ruby>磐<rt>いは</rt></ruby><ruby>船<rt>ぶね</rt></ruby>　<ruby>星<rt>ほし</rt></ruby><ruby>燦然<rt>さんぜん</rt></ruby><br><ruby>地<rt>つち</rt></ruby><ruby>刺<rt>さ</rt></ruby>さり　<ruby>神籬<rt>ひもろき</rt></ruby>と<ruby>為<rt>な</rt></ruby>り　<ruby>八方<rt>やかた</rt></ruby><ruby>守<rt>もり</rt></ruby><br><ruby>現世<rt>うつしよ</rt><ruby>の　<ruby>斎<rt>いは</rt></ruby>ふ<ruby>天<rt>あま</rt></ruby>たて　<ruby>矛<rt>ほこ</rt></ruby><ruby>持<rt>も</rt></ruby>つ<ruby>神<rt>かみ</rt></ruby>を　<ruby>黄泉路<rt>よみぢ</rt></ruby><ruby>在<rt>ましま</rt></ruby>す</span>
+<span class="ff-asebi">{御霊代|みたましろ}　{高天|たかま}の{原|はら}を　{光|ひかり}{照|て}る<br>さ{御霊|みたま}え　{元古|げんこ}{先祖|せんぞ}が　{献身|けんしん}{歌詠|かえい}<br>{落|お}ち{零|こぼ}れ　{小夜|さよ}の{磐|いは}{船|ぶね}　{星|ほし}{燦然|さんぜん}<br>{地|つち}{刺|さ}さり　{神籬|ひもろき}と{為|な}り　{八方|やかた}{守|もり}<br><ruby>現世<rt>うつしよ</rt><ruby>の　{斎|いは}ふ{天|あま}たて　{矛|ほこ}{持|も}つ{神|かみ}を　{黄泉路|よみぢ}{在|ましま}す</span>
 
-煌煌高天　神照八隅　仙灵绕行瀛寰宇<br>仙灵之名　元古先祖　献身歌咏成尘缕<br>夜磐零落　星舟坠渚　燦然漫天流火雨<br>神篱贯地　铜铁飞散　四方镇守拦异<ruby>罟<rt style="font-family:''">gǔ</rt></ruby><br>持矛立盾　执念末法　千秋万代凭国浒　塞彼黄泉承净土
+煌煌高天　神照八隅　仙灵绕行瀛寰宇<br>仙灵之名　元古先祖　献身歌咏成尘缕<br>夜磐零落　星舟坠渚　燦然漫天流火雨<br>神篱贯地　铜铁飞散　四方镇守拦异<ruby>罟<rt>gǔ</rt></ruby><br>持矛立盾　执念末法　千秋万代凭国浒　塞彼黄泉承净土
 
 </div>
 
-森之助与卯雪如蒙揭谛，醍醐灌顶。此篇《镇海谣》方为全篇，末段失传于世已久，乃载上古之上古，有史之从前，现世未见之<ruby>艢<rt>qiáng</rt></ruby>橹游弋天外，御不可状之丑恶肉躯所成之敌，流坠于地。
+森之助与卯雪如蒙揭谛，醍醐灌顶。此篇《镇海谣》方为全篇，末段失传于世已久，乃载上古之上古，有史之从前，现世未见之{艢|qiáng}橹游弋天外，御不可状之丑恶肉躯所成之敌，流坠于地。
 
 依吉丢作揖：“外人何以知晓此间诸事？盖起源境遇全同。方才所诵海妖歌谣，极北言语，与南溟大瀛竟能不差分毫。”依吉丢摇头叹气：“世间诸人，或相压迫，或起争端，甚而有之，相互为敌，屠戮灭族。生于天地间，为过去将来、东西南北、息律罗生之一尘，不免息壤奔波，为凡夫俗子。好似在下，身为主教，以布施恩泽为名，行盘剥巧取之实。故亦有所希冀，百代千秋之后，千秋万代之后，能见俗人异相、南蛮北狄，瀛寰之中，‘残响’之下，当团结如一否？”言毕，缓缓折腰，抬手作揖，顿而又顿。爱族巫祝又开口：“二位神官可自行清扫之事，我等，不足为道。”
 
@@ -323,7 +312,7 @@ lang: ''
 
 <div class="ci">
 
-衣角狂，山云涩。离去影踪销万年，明朝举首观星<ruby>隰<rt style="font-family: ''">xǐ</rt></ruby>。
+衣角狂，山云涩。离去影踪销万年，明朝举首观星<ruby>隰<rt>xǐ</rt></ruby>。
 
 </div>
 
@@ -353,26 +342,26 @@ lang: ''
 [^6]: 卖。
 [^7]: 是忘樱岛的一棵樱树，有一则关于踯躅一族孤女踯躅香织的传说。树前供奉着一首息律。其木所制护符据传能够辟邪。
 [^8]: 魂魄被死灵樱吸引，一般是先被渡航松从远处引来。
-[^9]: “<span style="font-family: 'MS Mincho'">皐月待つ　花橘の　香を嗅げば　昔の人の　袖の香ぞする</span>”（丛锦待皐月　一来橘绿香　衷情难克已　怀旧袖中芳）句。
+[^9]: “:msmincho[皐月待つ　花橘の　香を嗅げば　昔の人の　袖の香ぞする]”（丛锦待皐月　一来橘绿香　衷情难克已　怀旧袖中芳）句。
 [^10]: 也有人唤息律为烟瘴。
-[^11]: <span style="font-family: 'Asebi Mincho'"><ruby>神月<rt>かむづき</rt></ruby></span>，大瀛诸神不似《古事记》中流窜出云，故而只有“神月”称，非“神无月”“神有月”。
+[^11]: :asebi[{神月|かむづき}]，大瀛诸神不似《古事记》中流窜出云，故而只有“神月”称，非“神无月”“神有月”。
 [^12]: 穹宇类聚落的息律维持部门。天规维持穹顶存在，保证中心区域息律的比良—娑加低（即息律环境低波动），保证生产生活。
-[^13]: <span  style="font-family: 'Asebi Mincho'"><ruby>糗<rt>はつたい</rt></ruby>・<ruby>麨<rt>むぎこがし</rt></ruby></span>，炒制面饼。
-[^14]: <ruby style="font-family: 'Asebi Mincho'">糒<rt>かれいひ</rt></ruby>，晒制饭团。
-[^15]: 《<ruby>锖<rt>qiāng</rt></ruby>卫志・采<ruby>藚<rt>xù</rt></ruby>》：“<span style="font-family: 'Asebi Mincho'">上<ruby><sub>二</sub><rt>グル</rt></ruby>状書<ruby><sub>一</sub><rt>ヲ</rt></ruby><ruby>事<rt>こと</rt></ruby>、曰<ruby> <rt>ク</rt></ruby>災民<ruby> <rt>ニ</rt></ruby>有<ruby><sub>二</sub><rt>リ</rt></ruby>甚<ruby> <rt>キ</rt></ruby><ruby>者<rt>もの</rt></ruby><sub>一</sub>、<ruby>樹皮<rt>じゆひ</rt></ruby>且<ruby> <rt>ツ</rt></ruby><ruby>殍骨<rt>へうこつ</rt></ruby><ruby> <rt>モ</rt></ruby><ruby>亦<rt>また</rt></ruby>䑛<ruby><sub>レ</sub><rt>メテ</rt></ruby>石<ruby> <rt>ヲ</rt></ruby>而嚥<ruby> <rt>ム</rt></ruby></span>……”舔舐石头是为了增加咸味。
+[^13]: <span class="ff-asebi">{糗|はつたい}・{麨|むぎこがし}</span>，炒制面饼。
+[^14]: <ruby class="ff-asebi">糒<rt>かれいひ</rt></ruby>，晒制饭团。
+[^15]: 《{锖|qiāng}卫志・采{藚|xù}》：“<span class="ff-asebi">上<ruby><sub>二</sub><rt>グル</rt></ruby>状書<ruby><sub>一</sub><rt>ヲ</rt></ruby>{事|こと}、曰<ruby> <rt>ク</rt></ruby>災民<ruby> <rt>ニ</rt></ruby>有<ruby><sub>二</sub><rt>リ</rt></ruby>甚<ruby> <rt>キ</rt></ruby>{者|もの}<sub>一</sub>、{樹皮|じゆひ}且<ruby> <rt>ツ</rt></ruby>{殍骨|へうこつ}<ruby> <rt>モ</rt></ruby>{亦|また}䑛<ruby><sub>レ</sub><rt>メテ</rt></ruby>石<ruby> <rt>ヲ</rt></ruby>而嚥<ruby> <rt>ム</rt></ruby></span>……”舔舐石头是为了增加咸味。
 [^16]: 息律本无色，但从人的视角看，一般觉得息律越高，视野越紫。
 [^17]: 弯弯曲曲。
 [^18]: 大瀛阴阳道按照施术的性质特点分“流”，花魂混流意思是花流和魂流的特点兼而有之。
 [^19]: 形容人类各族都有。瀛寰分三部分，南边的大瀛、西北方的於留根洲和东北方的阿比兰洲—悉根洲大陆。北方还有北洲，占地面积相对小。
-[^20]: 即图苏普（<ruby style="font-family: 'Asebi Mincho'">巫祝<rt>トゥスㇷ゚</rt></ruby>），爱族的神职人员。
+[^20]: 即图苏普（<ruby class="ff-asebi">巫祝<rt>トゥスㇷ゚</rt></ruby>），爱族的神职人员。
 [^21]: 以清理异相保护他人等收取报酬为生的北方职业。
 [^22]: 指各地神职人员。
 [^23]: 大瀛一种有齿的木屐，齿可拆卸，上山卸下前齿，下山卸下后齿，这样便于攀登，走起山路来更为舒适。
 [^24]: 非常紧急。孔，很；亟，紧急。
 [^25]: 奇怪得没法用语言描述。妙，奇怪。
-[^26]: <span style="font-family: 'HighTowerText'">Cassock</span>。质担主教、巫<ruby>㩵<rt>zá</rt></ruby>之正装。
-[^27]: 浮木、浮舟。星<ruby>槎<rt>chá</rt></ruby>大概是天外射来之物。
-[^28]: <span style="font-family: 'HighTowerText'">Yggdra</span>。
+[^26]: :ht[Cassock]。质担主教、巫{㩵|zá}之正装。
+[^27]: 浮木、浮舟。星{槎|chá}大概是天外射来之物。
+[^28]: :ht[Yggdra]。
 [^29]: 收太刀时应警惕四周，手不离刀柄，此为残心。
 [^30]: 搭弓。
 [^31]: 死灵樱之亚种也。花瓣为猩红色。

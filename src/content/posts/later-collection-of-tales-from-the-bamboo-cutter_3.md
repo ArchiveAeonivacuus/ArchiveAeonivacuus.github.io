@@ -9,27 +9,9 @@ draft: false
 lang: ''
 ---
 
-<style>
-.shi {
-    text-align: center;
-    font-family: KaiTi;
-}
-.ci {
-    font-family: KaiTi;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-/*.waka {
-    text-align: center;
-    font-family: DFKai-SB;
-}*/
-.spellcard {
-    text-align: center;
-    font-family: KaiTi;
-}
-</style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>三<rt>さん</rt></ruby>　<ruby>諏訪<rt>すわ</rt></ruby>の<ruby>勧請<rt>くわんじやう</rt></ruby></span>
+
+# :asebi[{三|さん}　{諏訪|すわ}の{勧請|くわんじやう}]
 
 辉夜姬来于地上次年五月初八，是日梅雨中。
 

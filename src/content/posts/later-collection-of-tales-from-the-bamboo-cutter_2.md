@@ -9,31 +9,13 @@ draft: false
 lang: ''
 ---
 
-<style>
-.shi {
-    text-align: center;
-    font-family: KaiTi;
-}
-.ci {
-    font-family: KaiTi;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-/*.waka {
-    text-align: center;
-    font-family: DFKai-SB;
-}*/
-.spellcard {
-    text-align: center;
-    font-family: KaiTi;
-}
-</style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>二<rt>に</rt></ruby>　<ruby>幽篁<rt>いうくわう</rt></ruby>の<ruby>仁術<rt>じんじゆつ</rt></ruby></span>
+
+# :asebi[{二|に}　{幽篁|いうくわう}の{仁術|じんじゆつ}]
 
 辉夜姬来于地上元年十月十三，是日红叶尽染，山雾弥漫。
 
-有月兔名琴（<span style="font-family: Asebi Mincho">コト</span>），在地上呼为“因幡琴音”。琴者月使之随从也，元在月都时，训练不以为惯常，常问理解，思虑过多，不得校官之喜。以阵前临兵，欲销之后快。
+有月兔名琴（:asebi[コト]），在地上呼为“因幡琴音”。琴者月使之随从也，元在月都时，训练不以为惯常，常问理解，思虑过多，不得校官之喜。以阵前临兵，欲销之后快。
 
 然而，我与师匠，不愿伤及跟队月兔。月由美入无常后，我们遣散月兔，让她们自归月都，报告“公主与师匠叛逃”。
 

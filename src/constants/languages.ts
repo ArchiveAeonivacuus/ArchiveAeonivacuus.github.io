@@ -44,6 +44,11 @@ export const LANGUAGE_MAP: Record<string, LanguageConfig> = {
 	},
 };
 
+// 除默认语言外，所有可作为文件名后缀的语言代码
+const LANG_SUFFIXES = Object.keys(LANGUAGE_MAP).filter(
+	(code) => code !== "zh_CN",
+);
+
 /**
  * 提取基础 Slug
  * 例如 "my-story_ja" -> "my-story"
@@ -51,11 +56,11 @@ export const LANGUAGE_MAP: Record<string, LanguageConfig> = {
  * "nociw-kur-tura-karpa_perface-to-3" -> "nociw-kur-tura-karpa_perface-to-3" (不被错误截断)
  */
 export function getBaseSlug(slug: string): string {
-	const langSuffixes = ["ja", "zh_TW", "en", "A-ong", "A-zh-iang"];
-	// 严格匹配结尾是 "_ja", "_en" 等在我们映射表中的语言代码后缀
-	const regex = new RegExp(
-		`_(${langSuffixes.map((s) => s.replace(/[-/\\^$*+?.()|[\]{}]/g, "\\$&")).join("|")})$`,
+	// 严格匹配结尾是 "_ja", "_A-zh_iang" 等映射表中的语言代码后缀
+	const escaped = LANG_SUFFIXES.map((s) =>
+		s.replace(/[-/\\^$*+?.()|[\]{}]/g, "\\$&"),
 	);
+	const regex = new RegExp(`_(${escaped.join("|")})$`);
 	return slug.replace(regex, "");
 }
 
@@ -65,6 +70,7 @@ export function getBaseSlug(slug: string): string {
  * "my-story" -> "zh_CN" (如果没有后缀，默认取配置文件的第一语言)
  */
 export function getLanguageSuffix(slug: string): string {
-	const match = slug.match(/_([a-zA-Z0-9-]+)$/);
-	return match ? match[1] : "zh_CN";
+	const match = slug.match(/_([a-zA-Z0-9_-]+)$/);
+	if (!match) return "zh_CN";
+	return LANG_SUFFIXES.includes(match[1]) ? match[1] : "zh_CN";
 }

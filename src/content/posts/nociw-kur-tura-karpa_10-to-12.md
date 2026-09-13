@@ -9,7 +9,7 @@ draft: false
 lang: ''
 ---
 
-# <span style="font-family: 'Source Han Serif JP'">ノチウ　クㇽ　トゥラ　カㇻパ</span>
+# :jp[ノチウ　クㇽ　トゥラ　カㇻパ]
 # nociw kur tura k=arpa
 # 我与星光同行
 
@@ -160,4 +160,4 @@ lang: ''
 
 “咱们快走！”希恩拉着我的手，我则装填了一发红色信号弹，向天空射击。
 
-[^1]: 这个口琴指<span style="font-family: Source Han Serif JP">ムックリ</span>/mukkuri，也就是阿伊努族那种木制的口琴。
+[^1]: 这个口琴指:jp[ムックリ]/mukkuri，也就是阿伊努族那种木制的口琴。

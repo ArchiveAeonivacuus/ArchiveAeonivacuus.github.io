@@ -9,27 +9,9 @@ draft: false
 lang: ''
 ---
 
-<style>
-.shi {
-    text-align: center;
-    font-family: KaiTi;
-}
-.ci {
-    font-family: KaiTi;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-/*.waka {
-    text-align: center;
-    font-family: DFKai-SB;
-}*/
-.spellcard {
-    text-align: center;
-    font-family: KaiTi;
-}
-</style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>五<rt>ご</rt></ruby>　<ruby>問答<rt>もんだふ</rt></ruby>しに<ruby>来<rt>きた</rt></ruby>る<ruby>身代<rt>みがはり</rt></ruby></span>
+
+# :asebi[{五|ご}　{問答|もんだふ}しに{来|きた}る{身代|みがはり}]
 
 辉夜姬来于地上次年五月廿九。是日大雨倾盆，漫天如隐帷幕之中。
 

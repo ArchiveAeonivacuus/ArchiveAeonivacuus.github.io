@@ -9,27 +9,9 @@ draft: false
 lang: ''
 ---
 
-<style>
-.shi {
-    text-align: center;
-    font-family: KaiTi;
-}
-.ci {
-    font-family: KaiTi;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-/*.waka {
-    text-align: center;
-    font-family: DFKai-SB;
-}*/
-.spellcard {
-    text-align: center;
-    font-family: KaiTi;
-}
-</style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>四<rt>し</rt></ruby>　<ruby>霊域<rt>れいゐき</rt></ruby>にて<ruby>齟齬<rt>そご</rt></ruby></span>
+
+# :asebi[{四|し}　{霊域|れいゐき}にて{齟齬|そご}]
 
 辉夜姬来于地上次年五月廿二。是日梅雨已渐息，湖上雾散去，远波碧透，可见重嶂皱皴。诹访大社修行已十日有余。今日卯末，有币使来社，与神官巫女起式拜殿。不知何处受灾，火急而至，实在不免扰人清梦。
 

@@ -9,27 +9,9 @@ draft: false
 lang: ''
 ---
 
-<style>
-.shi {
-    text-align: center;
-    font-family: KaiTi;
-}
-.ci {
-    font-family: KaiTi;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-/*.waka {
-    text-align: center;
-    font-family: DFKai-SB;
-}*/
-.spellcard {
-    text-align: center;
-    font-family: KaiTi;
-}
-</style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>七<rt>しち</rt></ruby>　<ruby>両儀<rt>りやうぎ</rt></ruby>して<ruby>撥平<rt>はつへい</rt></ruby>せむと</span>
+
+# :asebi[{七|しち}　{両儀|りやうぎ}して{撥平|はつへい}せむと]
 
 辉夜姬来于地上次年六月望，并六月晦。两日共书之。
 

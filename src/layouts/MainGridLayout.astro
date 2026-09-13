@@ -35,6 +35,7 @@ const {
 
 // 页面级临时语言重写（利用 Astro 单个页面级周期的环境作用域，在主布局渲染前强制重置页面级重写）
 import { setPageLanguageOverride } from "@i18n/translation";
+
 setPageLanguageOverride(lang || null);
 
 const hasBannerCredit =
@@ -87,7 +88,7 @@ const mainPanelTop = siteConfig.banner.enable
 
             <SideBar class="mb-4 row-start-2 row-end-3 col-span-2 lg:row-start-1 lg:row-end-2 lg:col-span-1 lg:max-w-[17.5rem] onload-animation" headings={headings}></SideBar>
 
-            <main id="swup-container" class="transition-swup-fade col-span-2 lg:col-span-1 overflow-hidden">
+            <main id="swup-container" data-page-lang={lang || siteConfig.lang} class="transition-swup-fade col-span-2 lg:col-span-1 overflow-hidden">
                 <div id="content-wrapper" class="onload-animation">
                     <!-- the overflow-hidden here prevent long text break the layout-->
                     <!-- make id different from windows.swup global property -->

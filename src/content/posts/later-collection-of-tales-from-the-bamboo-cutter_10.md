@@ -9,27 +9,9 @@ draft: true
 lang: ''
 ---
 
-<style>
-.shi {
-    text-align: center;
-    font-family: KaiTi;
-}
-.ci {
-    font-family: KaiTi;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-/*.waka {
-    text-align: center;
-    font-family: DFKai-SB;
-}*/
-.spellcard {
-    text-align: center;
-    font-family: KaiTi;
-}
-</style>
 
-# <span style="font-family: 'Asebi Mincho'"><ruby>十<rt>じふ</rt></ruby>　<ruby>淡海<rt>あふみ</rt></ruby>の<ruby>冬<rt>ふゆ</rt></ruby>を<ruby>渡<rt>わた</rt></ruby>りて</span>
+
+# :asebi[{十|じふ}　{淡海|あふみ}の{冬|ふゆ}を{渡|わた}りて]
 
 辉夜姬来于地上十四年正月廿四。是日车马颠簸，春寒。
 
