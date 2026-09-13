@@ -298,3 +298,10 @@ html[lang="en"] .shi {
 .ff-msmincho {
   font-family: "MS Mincho", "Source Han Serif JP", serif;
 }
+
+/* 选中复制时不带注音：rt/rp 不参与选区，只复制基字 */
+ruby rt,
+ruby rp {
+  user-select: none;
+  -webkit-user-select: none;
+}
