@@ -10,19 +10,19 @@ lang: 'en'
 translate_key: 'lantern-under-the-ochre-vault'
 ---
 
-# Lanterarium sub Firmamento Ochraceo
+# :rom[Lanterarium sub Firmamento Ochraceo]
 # Lantern under the Ochre Vault
 
 Any cleric wont to travel oft between Taitchland and the Papacy Romo would surely know that above southern Taitchland, even within the vault, one may often behold a sky of pallid red. This sight is most striking at dusk, when above the far horizon it seems as though some ailing soul hath smeared the heavens with blood. The lingering crimson makes one suspect that the setting sun is bidding farewell to the world, leaving behind such hues to echo across the earth together with the sound of bells. A poet of southern Taitchland sang:
 
-:::poet
+:::poem_ong
 
 Wann da Hacoromer Nebl kimmt,<br>
 werd aus'm zwielicht a roat's gedimmt.
 
 :::
 
-:::shi
+:::poem
 
 When fog Hacorui comes drifting down,<br>
 The dusk is dyed a crimson brown.
@@ -457,7 +457,7 @@ Nivalia's trench coat, and Linselotte's cloak, fluttered in the wind.
 [^8]: Lunid-white Lily: *Lilium Lunicandidum*. This flower also exists on Earth, where it is called the "Casa Blanca lily," also known as the Perfume Lily or the Oriental Lily; legend says it grows by the Styx. Its flower language changes with the number of plants.
 [^9]: Nivalia: As mentioned earlier, Nivalia's name comes from the snowdrop.
 [^10]: Niv: An affectionate name for Nivalia.
-[^11]: Nivalia Mangusacia Carnstaen: Pronounced :ipa[/niʋaːlia.mãɣusaːkʲia.kaːɾ̩̃stãɪ̃/].
+[^11]: Nivalia Mangusacia Carnstaen: Pronounced :en[/niʋaːlia.mãɣusaːkʲia.kaːɾ̩̃stãɪ̃/].
 [^12]: One step: 1.52 metres.
 [^13]: Baiarn: A geographical region in southern Taitchland, mainly hills when it comes to its terrain.
 [^14]: Muenichenn: The capital of Baiarn province.

@@ -9,14 +9,14 @@ draft: false
 lang: ''
 ---
 
-# :asebi[冥界で邯鄲の夢]
+# :ja_old[冥界で邯鄲の夢]
 # 冥界邯郸一梦
 
-> <ruby>MALSI<rt class="ff-asebi">慰藉</ruby></rt> <ruby>KULMI<rt class="ff-asebi">苦痛</ruby></rt>-I-<ruby>HUPIN<rt class="ff-asebi">動乱</ruby></rt> <ruby>JA<rt class="ff-asebi">柔軟</ruby></rt><br>
-> <ruby>KULMI<rt class="ff-asebi">苦痛</ruby></rt> 白き霧の中　独り径を探す<br>
-> <ruby>SAPU<rt class="ff-asebi">祈願</ruby></rt> :asebi[迷ひて迷ひたり　迷ひたる者]<br>
-> <ruby>SASU<rt class="ff-asebi">勧誘</ruby></rt> :asebi[心が導き　扉に軽く叩け]”
-
+> {MALSI|:ja_old[慰藉]} {KULMI|:ja_old[苦痛]}-I-{HUPIN|:ja_old[動乱]} {JA|:ja_old[柔軟]}<br>
+> {KULMI|:ja_old[苦痛]} :ja_old[白き霧の中　独り径を探す]<br>
+> {SAPU|:ja_old[祈願]} :ja_old[迷ひて迷ひたり　迷ひたる者]<br>
+> {SASU|:ja_old[勧誘]} :ja_old[心が導き　扉に軽く叩け]”
+> 
 > 慰藉·苦痛·动乱·柔和<br>
 > 苦痛：在白雾之中 独自寻路<br>
 > 祈求：迷茫着迷茫着 迷茫着的人<br>
@@ -54,11 +54,11 @@ lang: ''
 
 轻轻一句话仿佛击中了我的魂灵——我现在真是只有魂灵了吧？
 
-“<ruby>KANU<rt class="ff-asebi">憐憫</rt></ruby>，如此年轻吗？”
+“{KANU|:ja_old[憐憫]}，如此年轻吗？”
 
 不知如何应答，我沉默。
 
-“<ruby>UHAS<rt class="ff-asebi">猶予</rt></ruby>，您的息律不太对呢。您为何来了这里？”
+“{UHAS|:ja_old[猶予]}，您的息律不太对呢。您为何来了这里？”
 
 “我是……”我急忙回忆。
 
@@ -75,10 +75,10 @@ lang: ''
 另一人，身着黑服，轻摇着小船，在前方的黑暗中荡着。前方红色的血光，那漫世的{瞱|yè}哥别戛然而止，只剩无边的黑暗。
 “嗯？渡航否？”她说完，接着唱起歌谣。
 
-> <ruby>MALSI<rt class="ff-asebi">慰藉</rt></ruby> <ruby>KULMI<rt class="ff-asebi">苦痛</rt></ruby>-I-<ruby>HUPIN<rt class="ff-asebi">動乱</rt></ruby> <ruby>JAT<rt class="ff-asebi">柔軟</rt></ruby><br>
-> <ruby>HAJI<rt class="ff-asebi">悠然</rt></ruby> :asebi[黒き隙の中　二人川を渡る]<br>
-> <ruby>SUNA<rt class="ff-asebi">亢奮</rt></ruby> :asebi[揺らぎて揺らぎたり　揺らぎたる者]<br>
-> <ruby>SASU<rt class="ff-asebi">勧誘</rt></ruby> :asebi[船が漂ひ　彼方に永き恋を]<br>
+> {MALSI|:ja_old[慰藉]} {KULMI|:ja_old[苦痛]}-I-{HUPIN|:ja_old[動乱]} {JAT|:ja_old[柔軟]}<br>
+> {HAJI|:ja_old[悠然]} :ja_old[黒き隙の中　二人川を渡る]<br>
+> {SUNA|:ja_old[亢奮]} :ja_old[揺らぎて揺らぎたり　揺らぎたる者]<br>
+> {SASU|:ja_old[勧誘]} :ja_old[船が漂ひ　彼方に永き恋を]<br>
 
 > 慰藉·苦痛·动乱·柔和
 > 悠然：在黑隙之中 共同渡河
@@ -93,19 +93,19 @@ lang: ''
 
 “哦——”她不置可否地长吟一声。
 
-“<ruby>MANNA<rt class="ff-asebi">疑惑</rt></ruby>，少年何故至此？”
+“{MANNA|:ja_old[疑惑]}，少年何故至此？”
 
-“<ruby>SASU<rt class="ff-asebi">勧誘</rt></ruby>，由祂来验明汝身！”
+“{SASU|:ja_old[勧誘]}，由祂来验明汝身！”
 
 不知何时一位长者模样的人——也许，立在了身旁。我未曾见过年长的亲人，但他身上熟悉的感觉却与亲人相似。
 
 他向我耳语：“还是归还吧，未免过于年少。”
 
-此时黑衣女孩摇船近前，老者旋即消逝。“原来只是迷路了啊，<ruby>KANU<rt class="ff-asebi">憐憫</rt></ruby>，不啻归家去。”“<ruby>UHAS<rt class="ff-asebi">猶予</rt></ruby>，年长了些再来也不迟。”
+此时黑衣女孩摇船近前，老者旋即消逝。“原来只是迷路了啊，{KANU|:ja_old[憐憫]}，不啻归家去。”“{UHAS|:ja_old[猶予]}，年长了些再来也不迟。”
 
 “就在此别过——暂别当重逢！”
 
-“<ruby>MALSI<rt class="ff-asebi">慰藉</rt></ruby> <ruby>KULMI<rt class="ff-asebi">苦痛</rt></ruby>-I-<ruby>HUPIN<rt class="ff-asebi">動乱</rt></ruby> <ruby>JAT<rt class="ff-asebi">柔軟</rt></ruby><br>”
+“{MALSI|:ja_old[慰藉]} {KULMI|:ja_old[苦痛]}-I-{HUPIN|:ja_old[動乱]} {JAT|:ja_old[柔軟]}<br>”
 
 二重歌声中，之前轻柔的感觉消失，逐渐，身体变得沉重。这黑白梦幻交织之常世，崩裂般坍塌散开来。身体颤抖着捂住头，蜷缩着忍受脑中的巨响。手上的脉搏逐渐明显起来，耳膜内回响着心脏搏击的声音，疼痛一跳一跳鲜明起来。
 

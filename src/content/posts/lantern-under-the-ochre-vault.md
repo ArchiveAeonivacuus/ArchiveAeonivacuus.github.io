@@ -12,12 +12,12 @@ translate_key: 'lantern-under-the-ochre-vault'
 
 
 
-# Lanterarium sub Firmamento Ochraceo
+# :rom[Lanterarium sub Firmamento Ochraceo]
 # 提灯于{赭|zhě}穹之下
 
 若是常常来往地逸与露末教廷之间的教士一定知道，南地逸上空，就算是在穹顶以内，经常也能看到淡红色的天空。这样的景观尤是黄昏之时，远方地平线之上宛如有人得病，血迹涂抹。残红映照，让人疑心是夕阳诀别世界，空留这般色彩与钟声一同回响于大地。南地逸的诗人说：
 
-:::poet
+:::poem_ong
 
 Wann da Hacoromer Nebl kimmt,<br>
 werd aus'm zwielicht a roat's gedimmt.
@@ -445,12 +445,12 @@ werd aus'm zwielicht a roat's gedimmt.
 
 妮娲利亚的风衣，和林邪露谛的斗篷，在风中翻卷着。
 
-[^1]: 乙林—婆但：Ellin-Badan，露末西北临海的行省，几乎可以算是全於留根的文明发源地。
-[^2]: 诃古棱公国：Ducatus Hacolui，单独称呼“诃古棱”时则是Hacolum。据说这个词的意思是“那天窗”。
-[^3]: 阿布露：即Apollo，太阳神。
+[^1]: 乙林—婆但：:rom[Ellin-Badan]，露末西北临海的行省，几乎可以算是全於留根的文明发源地。
+[^2]: 诃古棱公国：:rom[Ducatus Hacolui]，单独称呼“诃古棱”时则是:rom[Hacolum]。据说这个词的意思是“那天窗”。
+[^3]: 阿布露：即:rom[Apollo]，太阳神。
 [^4]: 巨龙血树：*Draecana magno*，是一种类似龙血树，但树高可达一百米的植物。通过释放某种物质，在高空中变为深色的水雾，形成了诃古棱公国上方的深褐色天空景观。
-[^5]: 沱纳河：Danop，露末地区最重要的一条河流。
-[^6]: 占布岚：templum，古代废弃圣堂。据说是古文明遗迹。
+[^5]: 沱纳河：:rom[Danop]，露末地区最重要的一条河流。
+[^6]: 占布岚：:rom[templum]，古代废弃圣堂。据说是古文明遗迹。
 [^7]: 鲁迦·底捻鲁窣：Lucia Tenebrosus。
 [^8]: 芒偶佐其亚：Mangusacia。
 [^9]: 归咽河：Quies。
@@ -459,15 +459,15 @@ werd aus'm zwielicht a roat's gedimmt.
 [^12]: 叩露那·芒偶佐其亚：Chrona Mangusacia。
 [^13]: {妿|gē}迷罗·克伦须丹因：Carmilla Carnstaen。另外，{妿|gē}在现代汉语只有“ē”的读音，“gē”系另一个没有流传下来的中古汉语读音推导。参见《广韵》，妿分别有古俄切和乌阿切两种读音。
 [^14]: 雪花莲：*Galanthus nivalis*。注意后文中妮娲利亚的名字即来源于雪花莲。
-[^15]: 珂珑：Charon。
+[^15]: 珂珑：:rom[Charon]。
 [^16]: 胧白花：*Lilium Lunicandidum*。地球也有这种花，在地球称为“卡萨布兰卡花”，也叫香水百合，相传生长在冥河旁。花语随着植株数量的改变而改变。
 [^17]: 诺底苏：Noctis。
 [^18]: 妮娲利亚：Nivalia。前面曾提到，妮娲利亚的名字来源于雪花莲。
 [^19]: 妮芙：Niv。妮娲利亚的爱称。
 [^20]: 妮娲利亚·芒偶佐其亚·克伦须丹因：Nivalia Mangusacia Carnstaen。读音是:ipa[/niʋaːlia.mãɣusaːkʲia.kaːɾ̩̃stãɪ̃/]。
 [^21]: 一步：合1.52米。
-[^22]: 予天市：Othens。
+[^22]: 予天市：:rom[Othens]。
 [^23]: 林邪露谛·瑗体：:ong[Linselotte Guenther]。
 [^24]: {皤|pó}{鄢|yān}：:ong[Baiarn]。是地逸南部的一个地理范围，地形主要是丘陵。
-[^25]: 伊苏多剌市：Istras。
+[^25]: 伊苏多剌市：:rom[Istras]。
 [^26]: 未尼抻：:ong[Muenichenn]。是{皤|pó}{鄢|yān}州的首府。

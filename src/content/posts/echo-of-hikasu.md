@@ -12,23 +12,23 @@ lang: ''
 
 
 
-# <span class="ff-asebi"><ruby><span class="ff-olds">瞱</span><rt>ひかす</rt></ruby>の山彦</span>
+# :ja_old[{:cjk_old[瞱]|ひかす}の山彦]
 # {瞱|yè}花的回音
 
 <!--镇海谣
 
 :::shi
 
-<span class="ff-asebi"><ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br><ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br><ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ
+<span class="ff-ja_old"><ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br><ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br><ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ
 <br><ruby>常世<rt>とこよ</rt></ruby><ruby>海<rt>うみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る</span>
 
 暗潮忽起　波震晚意　怒涛翻天亡魂船<br>栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>唤降天威　御柱忽落　八百万神镇坤乾<br>海中幽冥　神官退治　尽扫顽瘴澄海田
 
-<span class="ff-asebi"><ruby>梅留山<rt>めるやま</rt></ruby>を　<ruby>呼<rt>よ</rt></ruby>びし<ruby>神罰<rt>しんばつ</rt></ruby>　<ruby>峯<rt>みね</rt></ruby>ぞ<ruby>受<rt>う</rt></ruby>くる<br><ruby>岩戸<rt>いはと</rt></ruby><ruby>開<rt>あ</rt></ruby>き　<ruby>雷霆<rt>らいてい</rt></ruby><ruby>万鈞<rt>ばんきん</rt></ruby>　<ruby>千尋<rt>ちひろ</rt></ruby><ruby>崩<rt>くづ</rt></ruby>る<br><ruby>砕<rt>くだ</rt></ruby>け<ruby>散<rt>ち</rt></ruby>る　<ruby>御殿<rt>みどの</rt></ruby><ruby>夢跡<rt>ゆめあと</rt></ruby>　なりにしうみが<br>しらたへの　<ruby>物<rt>もの</rt></ruby>の<ruby>怪<rt>け</rt></ruby><ruby>祓<rt>はら</rt></ruby>へ　<ruby>磯<rt>いそ</rt></ruby><ruby>残<rt>のこ</rt></ruby>る<ruby>濵<rt>はま</rt></ruby><br><ruby>紫気<rt>しき</rt></ruby><ruby>徒留<rt>どりう</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby>の<ruby>元<rt>もと</rt></ruby>　<ruby>社<rt>やしろ</rt></ruby>なりにし</span>
+<span class="ff-ja_old"><ruby>梅留山<rt>めるやま</rt></ruby>を　<ruby>呼<rt>よ</rt></ruby>びし<ruby>神罰<rt>しんばつ</rt></ruby>　<ruby>峯<rt>みね</rt></ruby>ぞ<ruby>受<rt>う</rt></ruby>くる<br><ruby>岩戸<rt>いはと</rt></ruby><ruby>開<rt>あ</rt></ruby>き　<ruby>雷霆<rt>らいてい</rt></ruby><ruby>万鈞<rt>ばんきん</rt></ruby>　<ruby>千尋<rt>ちひろ</rt></ruby><ruby>崩<rt>くづ</rt></ruby>る<br><ruby>砕<rt>くだ</rt></ruby>け<ruby>散<rt>ち</rt></ruby>る　<ruby>御殿<rt>みどの</rt></ruby><ruby>夢跡<rt>ゆめあと</rt></ruby>　なりにしうみが<br>しらたへの　<ruby>物<rt>もの</rt></ruby>の<ruby>怪<rt>け</rt></ruby><ruby>祓<rt>はら</rt></ruby>へ　<ruby>磯<rt>いそ</rt></ruby><ruby>残<rt>のこ</rt></ruby>る<ruby>濵<rt>はま</rt></ruby><br><ruby>紫気<rt>しき</rt></ruby><ruby>徒留<rt>どりう</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby>の<ruby>元<rt>もと</rt></ruby>　<ruby>社<rt>やしろ</rt></ruby>なりにし</span>
 
 梅留山巅　一呼神罚　峰头震颤尘世惊<br>岩户訇开　雷霆万钧　崩灭屋宇榫卯倾<br>碎裂遗处　殿堂旧梦　居所都作海涛平<br>白砂堆矶　祓除妖祟　惟见无常诸行萦<br>紫气徒留　神柱之侧　镇海社起灵源<ruby>茔<rt>yíng</rt></ruby>
 
-<span class="ff-asebi"><ruby>御霊代<rt>みたましろ</rt></ruby>　<ruby>高天<rt>たかま</rt></ruby>の<ruby>原<rt>はら</rt></ruby>を　<ruby>光<rt>ひかり</rt></ruby><ruby>照<rt>て</rt></ruby>る<br>さ<ruby>御霊<rt>みたま</rt></ruby>え　<ruby>元古<rt>げんこ</rt></ruby><ruby>先祖<rt>せんぞ</rt></ruby>が　<ruby>献身<rt>けんしん</rt></ruby><ruby>歌詠<rt>かえい</rt></ruby><br><ruby>落<rt>お</rt></ruby>ち<ruby>零<rt>こぼ</rt></ruby>れ　<ruby>小夜<rt>さよ</rt></ruby>の<ruby>磐<rt>いは</rt></ruby><ruby>船<rt>ぶね</rt></ruby>　<ruby>星<rt>ほし</rt></ruby><ruby>燦然<rt>さんぜん</rt></ruby><br><ruby>地<rt>つち</rt></ruby><ruby>刺<rt>さ</rt></ruby>さり　<ruby>神籬<rt>ひもろき</rt></ruby>と<ruby>為<rt>な</rt></ruby>り　<ruby>八方<rt>やかた</rt></ruby><ruby>守<rt>もり</rt></ruby><br><ruby>現世<rt>うつしよ</rt><ruby>の　<ruby>斎<rt>いは</rt></ruby>ふ<ruby>天<rt>あま</rt></ruby>たて　<ruby>矛<rt>ほこ</rt></ruby><ruby>持<rt>も</rt></ruby>つ<ruby>神<rt>かみ</rt></ruby>を　<ruby>黄泉路<rt>よみぢ</rt></ruby><ruby>在<rt>ましま</rt></ruby>す</span>
+<span class="ff-ja_old"><ruby>御霊代<rt>みたましろ</rt></ruby>　<ruby>高天<rt>たかま</rt></ruby>の<ruby>原<rt>はら</rt></ruby>を　<ruby>光<rt>ひかり</rt></ruby><ruby>照<rt>て</rt></ruby>る<br>さ<ruby>御霊<rt>みたま</rt></ruby>え　<ruby>元古<rt>げんこ</rt></ruby><ruby>先祖<rt>せんぞ</rt></ruby>が　<ruby>献身<rt>けんしん</rt></ruby><ruby>歌詠<rt>かえい</rt></ruby><br><ruby>落<rt>お</rt></ruby>ち<ruby>零<rt>こぼ</rt></ruby>れ　<ruby>小夜<rt>さよ</rt></ruby>の<ruby>磐<rt>いは</rt></ruby><ruby>船<rt>ぶね</rt></ruby>　<ruby>星<rt>ほし</rt></ruby><ruby>燦然<rt>さんぜん</rt></ruby><br><ruby>地<rt>つち</rt></ruby><ruby>刺<rt>さ</rt></ruby>さり　<ruby>神籬<rt>ひもろき</rt></ruby>と<ruby>為<rt>な</rt></ruby>り　<ruby>八方<rt>やかた</rt></ruby><ruby>守<rt>もり</rt></ruby><br><ruby>現世<rt>うつしよ</rt><ruby>の　<ruby>斎<rt>いは</rt></ruby>ふ<ruby>天<rt>あま</rt></ruby>たて　<ruby>矛<rt>ほこ</rt></ruby><ruby>持<rt>も</rt></ruby>つ<ruby>神<rt>かみ</rt></ruby>を　<ruby>黄泉路<rt>よみぢ</rt></ruby><ruby>在<rt>ましま</rt></ruby>す</span>
 
 煌煌高天　神照八隅　仙灵绕行瀛寰宇<br>仙灵之名　元古先祖　献身歌咏成尘缕<br>夜磐零落　星舟坠渚　燦然漫天流火雨<br>神篱贯地　铜铁飞散　四方镇守拦异<ruby>罟<rt>gǔ</rt></ruby><br>持矛立盾　执念末法　千秋万代凭国浒　塞彼黄泉承净土
 
@@ -36,14 +36,15 @@ lang: ''
 -->
 
 
-来玉送神社参拜之人，可能连神主姓名都不知晓。但只要提起那名巫女，每日回收接引灯芯，大家都知道叫甚么。并非是香客信众闲言碎语，而是名字实在有些独特——诹访园卯雪（:asebi[{諏訪園|すはぞのの}{卯雪|うゆき}]），常常惹得善男信女浮想联翩，又或有诗兴大发。
+来玉送神社参拜之人，可能连神主姓名都不知晓。但只要提起那名巫女，每日回收接引灯芯，大家都知道叫甚么。并非是香客信众闲言碎语，而是名字实在有些独特——诹访园卯雪（:ja_old[{諏訪園|すはぞのの}{卯雪|うゆき}]），常常惹得善男信女浮想联翩，又或有诗兴大发。
 晚樱如雪落于诹访园[^1]，自是四季风景颇有意趣。有诗言：
 
 :::shi
 
 樱褪白红轻点萍，漫天作雪散香馨。<br>
 东风诹访神龛事，南苑多闻宫水泠。<br>
-玉送曾看春日整，香灰但掩岁光零。<br><ruby>闛<rt>tāng</rt></ruby><ruby>闛<rt>tāng</rt></ruby>[^2]破却浩声势，始道尘寰只一<ruby>醽<rt>líng</rt></ruby>[^3]。
+玉送曾看春日整，香灰但掩岁光零。<br>
+{闛|tāng}{闛|tāng}[^2]破却浩声势，始道尘寰只一{醽|líng}[^3]。
 
 :::
 
@@ -68,19 +69,23 @@ lang: ''
 
 :::shi
 
-<span class="ff-asebi">
+<span class="ff-ja_old">
 <ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>
 ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br>
 <ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br>
 <ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ<br>
 </span>
 <br>
-<span class="ff-asebi">
+<span class="ff-ja_old">
 <ruby>常世海<rt>とこようみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る
 
 </span>
 
-暗潮忽起　波震晚意　怒涛翻天亡魂船<br>栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>唤降天威　御柱忽落　八百万神镇坤乾<br>海中幽冥　神官退治　尽扫顽瘴澄海田
+暗潮忽起　波震晚意　怒涛翻天亡魂船<br>
+栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>
+平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>
+唤降天威　御柱忽落　八百万神镇坤乾<br>
+海中幽冥　神官退治　尽扫顽瘴澄海田
 
 :::
 
@@ -142,23 +147,31 @@ lang: ''
 
 :::shi
 
-<span class="ff-asebi">
+<span class="ff-ja_old">
 <ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>
 ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br>
 <ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br>
 <ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ<br>
 </span>
 <br>
-<span class="ff-asebi">
+<span class="ff-ja_old">
 <ruby>常世海<rt>とこようみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る
 
 </span>
 
-暗潮忽起　波震晚意　怒涛翻天亡魂船<br>栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>唤降天威　御柱忽落　八百万神镇坤乾<br>海中幽冥　神官退治　尽扫顽瘴澄海田
+暗潮忽起　波震晚意　怒涛翻天亡魂船<br>
+栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>
+平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>
+唤降天威　御柱忽落　八百万神镇坤乾<br>
+海中幽冥　神官退治　尽扫顽瘴澄海田
 
-<span class="ff-asebi">{梅留山|めるやま}を　{呼|よ}びし{神罰|しんばつ}　{峯|みね}ぞ{受|う}くる<br>{岩戸|いはと}{開|あ}き　{雷霆|らいてい}{万鈞|ばんきん}　{千尋|ちひろ}{崩|くづ}る<br>{砕|くだ}け{散|ち}る　{御殿|みどの}{夢跡|ゆめあと}　なりにしうみが<br>しらたへの　{物|もの}の{怪|け}{祓|はら}へ　{磯|いそ}{残|のこ}る{濵|はま}<br>{紫気|しき}{徒留|どりう}　{御柱|みはしら}の{元|もと}　{社|やしろ}なりにし</span>
+<span class="ff-ja_old">{梅留山|めるやま}を　{呼|よ}びし{神罰|しんばつ}　{峯|みね}ぞ{受|う}くる<br>{岩戸|いはと}{開|あ}き　{雷霆|らいてい}{万鈞|ばんきん}　{千尋|ちひろ}{崩|くづ}る<br>{砕|くだ}け{散|ち}る　{御殿|みどの}{夢跡|ゆめあと}　なりにしうみが<br>しらたへの　{物|もの}の{怪|け}{祓|はら}へ　{磯|いそ}{残|のこ}る{濵|はま}<br>{紫気|しき}{徒留|どりう}　{御柱|みはしら}の{元|もと}　{社|やしろ}なりにし</span>
 
-梅留山巅　一呼神罚　峰头震颤尘世惊<br>岩户訇开　雷霆万钧　崩灭屋宇榫卯倾<br>碎裂遗处　殿堂旧梦　居所都作海涛平<br>白砂堆矶　祓除妖祟　惟见无常诸行萦<br>紫气徒留　神柱之侧　镇海社起灵源<ruby>茔<rt>yíng</rt></ruby>
+梅留山巅　一呼神罚　峰头震颤尘世惊<br>
+岩户訇开　雷霆万钧　崩灭屋宇榫卯倾<br>
+碎裂遗处　殿堂旧梦　居所都作海涛平<br>
+白砂堆矶　祓除妖祟　惟见无常诸行萦<br>
+紫气徒留　神柱之侧　镇海社起灵源{茔|yíng}
 
 :::
 
@@ -281,27 +294,39 @@ lang: ''
 
 :::shi
 
-<span class="ff-asebi">
+<span class="ff-ja_old">
 <ruby>潮騒<rt>しほさゐ</rt></ruby>や　<ruby>滾<rt>たぎ</rt></ruby>る<ruby>夕凪<rt>ゆふなぎ</rt></ruby>　<ruby>亡者<rt>まうじや</rt></ruby><ruby>船<rt>ぶね</rt></ruby><br>
 ぬばたまの　<ruby>櫂<rt>かひ</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>暗<rt>くら</rt></ruby>き　<ruby>怨霊<rt>をんりやう</rt></ruby><ruby>哀号<rt>あいがう</rt></ruby><br>
 <ruby>原<rt>はら</rt></ruby><ruby>震<rt>ふる</rt></ruby>ふ　<ruby>滔々濁浪<rt>たうたうだくらう</rt></ruby>　<ruby>鏖鬼<rt>あうき</rt></ruby>の<ruby>怒<rt>いか</rt></ruby>り<br>
 <ruby>八百万<rt>やほよろづ</rt></ruby>　<ruby>御柱<rt>みはしら</rt></ruby><ruby>落<rt>お</rt>とし　<ruby>鎮<rt>しづ</rt></ruby>めたまふ<br>
 </span>
 <br>
-<span class="ff-asebi">
+<span class="ff-ja_old">
 <ruby>常世海<rt>とこようみ</rt></ruby>　<ruby>神官<rt>しんくわん</rt></ruby><ruby>退治<rt>たいじ</rt></ruby>　<ruby>澄<rt>す</rt></ruby>み<ruby>渡<rt>わた</rt></ruby>る
 
 </span>
 
-暗潮忽起　波震晚意　怒涛翻天亡魂船<br>栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>唤降天威　御柱忽落　八百万神镇坤乾<br>海中幽冥　神官退治　尽扫顽瘴澄海田
+暗潮忽起　波震晚意　怒涛翻天亡魂船<br>
+栉棹尽染　墨色夜中　怨灵哀泣号声癫<br>
+平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄<br>
+唤降天威　御柱忽落　八百万神镇坤乾<br>
+海中幽冥　神官退治　尽扫顽瘴澄海田
 
-<span class="ff-asebi">{梅留山|めるやま}を　{呼|よ}びし{神罰|しんばつ}　{峯|みね}ぞ{受|う}くる<br>{岩戸|いはと}{開|あ}き　{雷霆|らいてい}{万鈞|ばんきん}　{千尋|ちひろ}{崩|くづ}る<br>{砕|くだ}け{散|ち}る　{御殿|みどの}{夢跡|ゆめあと}　なりにしうみが<br>しらたへの　{物|もの}の{怪|け}{祓|はら}へ　{磯|いそ}{残|のこ}る{濵|はま}<br>{紫気|しき}{徒留|どりう}　{御柱|みはしら}の{元|もと}　{社|やしろ}なりにし</span>
+<span class="ff-ja_old">{梅留山|めるやま}を　{呼|よ}びし{神罰|しんばつ}　{峯|みね}ぞ{受|う}くる<br>{岩戸|いはと}{開|あ}き　{雷霆|らいてい}{万鈞|ばんきん}　{千尋|ちひろ}{崩|くづ}る<br>{砕|くだ}け{散|ち}る　{御殿|みどの}{夢跡|ゆめあと}　なりにしうみが<br>しらたへの　{物|もの}の{怪|け}{祓|はら}へ　{磯|いそ}{残|のこ}る{濵|はま}<br>{紫気|しき}{徒留|どりう}　{御柱|みはしら}の{元|もと}　{社|やしろ}なりにし</span>
 
-梅留山巅　一呼神罚　峰头震颤尘世惊<br>岩户訇开　雷霆万钧　崩灭屋宇榫卯倾<br>碎裂遗处　殿堂旧梦　居所都作海涛平<br>白砂堆矶　祓除妖祟　惟见无常诸行萦<br>紫气徒留　神柱之侧　镇海社起灵源<ruby>茔<rt>yíng</rt></ruby>
+梅留山巅　一呼神罚　峰头震颤尘世惊<br>
+岩户訇开　雷霆万钧　崩灭屋宇榫卯倾<br>
+碎裂遗处　殿堂旧梦　居所都作海涛平<br>
+白砂堆矶　祓除妖祟　惟见无常诸行萦<br>
+紫气徒留　神柱之侧　镇海社起灵源{茔|yíng}
 
-<span class="ff-asebi">{御霊代|みたましろ}　{高天|たかま}の{原|はら}を　{光|ひかり}{照|て}る<br>さ{御霊|みたま}え　{元古|げんこ}{先祖|せんぞ}が　{献身|けんしん}{歌詠|かえい}<br>{落|お}ち{零|こぼ}れ　{小夜|さよ}の{磐|いは}{船|ぶね}　{星|ほし}{燦然|さんぜん}<br>{地|つち}{刺|さ}さり　{神籬|ひもろき}と{為|な}り　{八方|やかた}{守|もり}<br><ruby>現世<rt>うつしよ</rt><ruby>の　{斎|いは}ふ{天|あま}たて　{矛|ほこ}{持|も}つ{神|かみ}を　{黄泉路|よみぢ}{在|ましま}す</span>
+<span class="ff-ja_old">{御霊代|みたましろ}　{高天|たかま}の{原|はら}を　{光|ひかり}{照|て}る<br>さ{御霊|みたま}え　{元古|げんこ}{先祖|せんぞ}が　{献身|けんしん}{歌詠|かえい}<br>{落|お}ち{零|こぼ}れ　{小夜|さよ}の{磐|いは}{船|ぶね}　{星|ほし}{燦然|さんぜん}<br>{地|つち}{刺|さ}さり　{神籬|ひもろき}と{為|な}り　{八方|やかた}{守|もり}<br><ruby>現世<rt>うつしよ</rt><ruby>の　{斎|いは}ふ{天|あま}たて　{矛|ほこ}{持|も}つ{神|かみ}を　{黄泉路|よみぢ}{在|ましま}す</span>
 
-煌煌高天　神照八隅　仙灵绕行瀛寰宇<br>仙灵之名　元古先祖　献身歌咏成尘缕<br>夜磐零落　星舟坠渚　燦然漫天流火雨<br>神篱贯地　铜铁飞散　四方镇守拦异<ruby>罟<rt>gǔ</rt></ruby><br>持矛立盾　执念末法　千秋万代凭国浒　塞彼黄泉承净土
+煌煌高天　神照八隅　仙灵绕行瀛寰宇<br>
+仙灵之名　元古先祖　献身歌咏成尘缕<br>
+夜磐零落　星舟坠渚　燦然漫天流火雨<br>
+神篱贯地　铜铁飞散　四方镇守拦异{罟|gǔ}<br>
+持矛立盾　执念末法　千秋万代凭国浒　塞彼黄泉承净土
 
 :::
 
@@ -313,7 +338,7 @@ lang: ''
 
 :::ci
 
-衣角狂，山云涩。离去影踪销万年，明朝举首观星<ruby>隰<rt>xǐ</rt></ruby>。
+衣角狂，山云涩。离去影踪销万年，明朝举首观星{隰|xǐ}。
 
 :::
 
@@ -329,7 +354,8 @@ lang: ''
 
 :::shi
 
-帚扫残风尽，花妖劳作喧。<br>惨樱枝颤动，眉眼漏光温。
+帚扫残风尽，花妖劳作喧。<br>
+惨樱枝颤动，眉眼漏光温。
 
 :::
 
@@ -343,26 +369,26 @@ lang: ''
 [^6]: 卖。
 [^7]: 是忘樱岛的一棵樱树，有一则关于踯躅一族孤女踯躅香织的传说。树前供奉着一首息律。其木所制护符据传能够辟邪。
 [^8]: 魂魄被死灵樱吸引，一般是先被渡航松从远处引来。
-[^9]: “:msmincho[皐月待つ　花橘の　香を嗅げば　昔の人の　袖の香ぞする]”（丛锦待皐月　一来橘绿香　衷情难克已　怀旧袖中芳）句。
+[^9]: “:jp[皐月待つ　花橘の　香を嗅げば　昔の人の　袖の香ぞする]”（丛锦待皐月　一来橘绿香　衷情难克已　怀旧袖中芳）句。
 [^10]: 也有人唤息律为烟瘴。
-[^11]: :asebi[{神月|かむづき}]，大瀛诸神不似《古事记》中流窜出云，故而只有“神月”称，非“神无月”“神有月”。
+[^11]: :ja_old[{神月|かむづき}]，大瀛诸神不似《古事记》中流窜出云，故而只有“神月”称，非“神无月”“神有月”。
 [^12]: 穹宇类聚落的息律维持部门。天规维持穹顶存在，保证中心区域息律的比良—娑加低（即息律环境低波动），保证生产生活。
-[^13]: <span class="ff-asebi">{糗|はつたい}・{麨|むぎこがし}</span>，炒制面饼。
-[^14]: <ruby class="ff-asebi">糒<rt>かれいひ</rt></ruby>，晒制饭团。
-[^15]: 《{锖|qiāng}卫志・采{藚|xù}》：“<span class="ff-asebi">上<ruby><sub>二</sub><rt>グル</rt></ruby>状書<ruby><sub>一</sub><rt>ヲ</rt></ruby>{事|こと}、曰<ruby> <rt>ク</rt></ruby>災民<ruby> <rt>ニ</rt></ruby>有<ruby><sub>二</sub><rt>リ</rt></ruby>甚<ruby> <rt>キ</rt></ruby>{者|もの}<sub>一</sub>、{樹皮|じゆひ}且<ruby> <rt>ツ</rt></ruby>{殍骨|へうこつ}<ruby> <rt>モ</rt></ruby>{亦|また}䑛<ruby><sub>レ</sub><rt>メテ</rt></ruby>石<ruby> <rt>ヲ</rt></ruby>而嚥<ruby> <rt>ム</rt></ruby></span>……”舔舐石头是为了增加咸味。
+[^13]: :ja_old[{糗|はつたい}・{麨|むぎこがし}]，炒制面饼。
+[^14]: :ja_old[{糒|かれいひ}]，晒制饭团。
+[^15]: 《{锖|qiāng}卫志・采{藚|xù}》：“<span class="ff-ja_old">上<ruby><sub>二</sub><rt>グル</rt></ruby>状書<ruby><sub>一</sub><rt>ヲ</rt></ruby>{事|こと}、曰<ruby> <rt>ク</rt></ruby>災民<ruby> <rt>ニ</rt></ruby>有<ruby><sub>二</sub><rt>リ</rt></ruby>甚<ruby> <rt>キ</rt></ruby>{者|もの}<sub>一</sub>、{樹皮|じゆひ}且<ruby> <rt>ツ</rt></ruby>{殍骨|へうこつ}<ruby> <rt>モ</rt></ruby>{亦|また}䑛<ruby><sub>レ</sub><rt>メテ</rt></ruby>石<ruby> <rt>ヲ</rt></ruby>而嚥<ruby> <rt>ム</rt></ruby></span>……”舔舐石头是为了增加咸味。
 [^16]: 息律本无色，但从人的视角看，一般觉得息律越高，视野越紫。
 [^17]: 弯弯曲曲。
 [^18]: 大瀛阴阳道按照施术的性质特点分“流”，花魂混流意思是花流和魂流的特点兼而有之。
 [^19]: 形容人类各族都有。瀛寰分三部分，南边的大瀛、西北方的於留根洲和东北方的阿比兰洲—悉根洲大陆。北方还有北洲，占地面积相对小。
-[^20]: 即图苏普（<ruby class="ff-asebi">巫祝<rt>トゥスㇷ゚</rt></ruby>），爱族的神职人员。
+[^20]: 即图苏普（:ja_old[{巫祝|トゥスㇷ゚}]），爱族的神职人员。
 [^21]: 以清理异相保护他人等收取报酬为生的北方职业。
 [^22]: 指各地神职人员。
 [^23]: 大瀛一种有齿的木屐，齿可拆卸，上山卸下前齿，下山卸下后齿，这样便于攀登，走起山路来更为舒适。
 [^24]: 非常紧急。孔，很；亟，紧急。
 [^25]: 奇怪得没法用语言描述。妙，奇怪。
-[^26]: :ht[Cassock]。质担主教、巫{㩵|zá}之正装。
+[^26]: :rom[Cassock]。质担主教、巫{㩵|zá}之正装。
 [^27]: 浮木、浮舟。星{槎|chá}大概是天外射来之物。
-[^28]: :ht[Yggdra]。
+[^28]: :rom[Yggdra]。
 [^29]: 收太刀时应警惕四周，手不离刀柄，此为残心。
 [^30]: 搭弓。
 [^31]: 死灵樱之亚种也。花瓣为猩红色。

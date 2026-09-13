@@ -35,11 +35,11 @@ translate_key: ''
 
 | 指令 | 字体 | 指令 | 字体 |
 |:--|:--|:--|:--|
-| `:ong[…]` | Old English Onglisch | `:jp[…]` | Source Han Serif JP |
-| `:asebi[…]` | Asebi Mincho | `:olds[…]` | Source Han Serif Old |
-| `:dfkai[…]` | DFKai-SB | `:ipa[…]` | Times New Roman |
-| `:ht[…]` | HighTowerText | `:kai[…]` | KaiTi |
-| `:msmincho[…]` | MS Mincho | `:cn[…]` | Source Han Serif SC |
+| `:ong[…]` | Old English Onglisch | `:ja[…]` | Source Han Serif JP |
+| `:ja_old[…]` | Asebi Mincho | `:cjk_old[…]` | Source Han Serif Old |
+| `:dfkai[…]` | DFKai-SB | `:en[…]` | Times New Roman |
+| `:rom[…]` | HighTowerText | `:kai[…]` | KaiTi |
+| `:min[…]` | MS Mincho | `:zh_cn[…]` | Source Han Serif SC |
 
 > Asebi Mincho / KaiTi / DFKai-SB / Old English Onglisch / HighTowerText 都只有单一字重，
 > 页面已关闭字体合成（`font-synthesis: none`），所以它们不会出现伪粗体。真正需要粗体的是正文思源宋体，已提供真粗体。
@@ -51,8 +51,8 @@ translate_key: ''
 注音解析能识别内部的行内元素，因此**两种顺序都支持**：
 
 ```markdown
-:ong[{赭|zhě}]         → 整个「赭（zhě）」用翁语字体
-{赭|:ong[zhě]}         → 只给注音 zhě 用翁语字体，基字保持默认
+:ong[{赭|zhě}]         → 整个「赭（zhě）」用央语字体
+{赭|:ong[zhě]}         → 只给注音 zhě 用央语字体，基字保持默认
 {:asebi[糒]|かれいひ}   → 只给基字「糒」用 Asebi，注音保持默认
 :ipa[{皤|pó}{鄢|yān}]   → 相邻两个注音同属一种字体
 ```
@@ -73,7 +73,7 @@ translate_key: ''
 :::
 ```
 
-可用：`:::shi`（诗，居中；中日文页面自动用楷体）、`:::ci`（词，楷体，每段首行缩进两格）、`:::spellcard`、`:::poet`（翁语字体居中）、`:::waka`。
+可用：`:::shi`（诗，居中；中日文页面自动用楷体）、`:::ci`（词，楷体，每段首行缩进两格）、`:::spellcard`、`:::poet`（央语字体居中）、`:::waka`。
 
 > 容器内部一律按 Markdown 解析，所以 `{字|音}` / `:字体[]` 在盒子里也能用（旧的 `<div class="shi">` 紧跟正文时是 HTML 区块，Markdown 不解析，简写会失效）。
 >

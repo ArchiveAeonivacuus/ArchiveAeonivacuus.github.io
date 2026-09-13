@@ -9,7 +9,7 @@ draft: false
 lang: ''
 ---
 
-# :jp[ノチウ　クㇽ　トゥラ　カㇻパ]
+# :ja[ノチウ　クㇽ　トゥラ　カㇻパ]
 # nociw kur tura k=arpa
 # 我与星光同行
 

@@ -12,10 +12,10 @@ rootClass: 'font-ht'
 
 # :ong[An Dın Uncértus Márınen]
 # :ong[– Módel Lampyrídæ An Tray.]
-# :olds[論不定之海現象——樹上螢火蟲模型]
+# :cjk_old[論不定之海現象——樹上螢火蟲模型]
 
 ## :ong[Beı Charlıe Flamenco,]
-## :olds[察利·敷羅明可 著]
+## :cjk_old[察利·敷羅明可 著]
 
 ## :ong[Toyan Cíbıl]
 ## :ong[Iohan Murıe, Straso Céntrus]
@@ -33,15 +33,15 @@ rootClass: 'font-ht'
     <td style="border: 1px; padding: 8px;"></td>
     <td style="border: 1px; padding: 8px; text-align: center;">
       <div>Gordan</div>
-      <div class="ff-olds">葛弾号</div>
+      <div class="ff-cjk_old">葛弾号</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">
       <div>St. Yıllıam</div>
-      <div class="ff-olds">維連神佑船隊</div>
+      <div class="ff-cjk_old">維連神佑船隊</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">
       <div>Pflicht</div>
-      <div class="ff-olds">敷力多号</div>
+      <div class="ff-cjk_old">敷力多号</div>
     </td>
   </tr>
   
@@ -49,7 +49,7 @@ rootClass: 'font-ht'
   <tr>
     <td style="border: 1px; padding: 8px; text-align: left;">
       <div>lagnt</div>
-      <div class="ff-olds">全長</div>
+      <div class="ff-cjk_old">全長</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">152Mt</td>
     <td style="border: 1px; padding: 8px; text-align: center;">154.3Mt per</td>
@@ -59,7 +59,7 @@ rootClass: 'font-ht'
   <tr>
     <td style="border: 1px; padding: 8px; text-align: left;">
       <div>yıddt</div>
-      <div class="ff-olds">寛</div>
+      <div class="ff-cjk_old">寛</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">17.5Mt</td>
     <td style="border: 1px; padding: 8px; text-align: center;">18.2Mt per</td>
@@ -69,7 +69,7 @@ rootClass: 'font-ht'
   <tr>
     <td style="border: 1px; padding: 8px; text-align: left;">
       <div>foro drafton</div>
-      <div class="ff-olds">艏入水</div>
+      <div class="ff-cjk_old">艏入水</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">2.7Mt</td>
     <td style="border: 1px; padding: 8px; text-align: center;">2.35Mt per</td>
@@ -79,7 +79,7 @@ rootClass: 'font-ht'
   <tr>
     <td style="border: 1px; padding: 8px; text-align: left;">
       <div>aftoro drafton</div>
-      <div class="ff-olds">艉入水</div>
+      <div class="ff-cjk_old">艉入水</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">2.9Mt</td>
     <td style="border: 1px; padding: 8px; text-align: center;">2.57Mt per</td>
@@ -89,7 +89,7 @@ rootClass: 'font-ht'
   <tr>
     <td style="border: 1px; padding: 8px; text-align: left;">
       <div>vélo créatus</div>
-      <div class="ff-olds">計画速度</div>
+      <div class="ff-cjk_old">計画速度</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">9Vl</td>
     <td style="border: 1px; padding: 8px; text-align: center;">9.4Vl</td>
@@ -104,7 +104,7 @@ rootClass: 'font-ht'
   <tr>
     <td style="border: 1px; padding: 8px; text-align: left;">
       <div>normalı forsopoyar</div>
-      <div class="ff-olds">常規航力</div>
+      <div class="ff-cjk_old">常規航力</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">1500Fp</td>
     <td style="border: 1px; padding: 8px; text-align: center;">1473Fp</td>
@@ -114,7 +114,7 @@ rootClass: 'font-ht'
   <tr>
     <td style="border: 1px; padding: 8px; text-align: left;">
       <div>normalo vélo</div>
-      <div class="ff-olds">常規速度</div>
+      <div class="ff-cjk_old">常規速度</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">8.5Vl</td>
     <td style="border: 1px; padding: 8px; text-align: center;">8.93Vl</td>
@@ -124,7 +124,7 @@ rootClass: 'font-ht'
   <tr>
     <td style="border: 1px; padding: 8px; text-align: left;">
       <div>forsopoyar grándethı</div>
-      <div class="ff-olds">最大航力</div>
+      <div class="ff-cjk_old">最大航力</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">1700Fp</td>
     <td style="border: 1px; padding: 8px; text-align: center;">1638Fp</td>
@@ -134,7 +134,7 @@ rootClass: 'font-ht'
   <tr>
     <td style="border: 1px; padding: 8px; text-align: left;">
       <div>vélo grándeth</div>
-      <div class="ff-olds">最大速度</div>
+      <div class="ff-cjk_old">最大速度</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">9.1Vl</td>
     <td style="border: 1px; padding: 8px; text-align: center;">8.96Vl</td>

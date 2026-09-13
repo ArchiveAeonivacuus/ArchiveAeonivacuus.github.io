@@ -187,7 +187,7 @@
 /* ============================================================
    全局写作样式类
    原先每篇文章都要重复一份 <style>，现统一在此定义。
-   中日文页面才套用 KaiTi，避免影响英文/翁语页面的正文字体。
+   中日文页面才套用 KaiTi，避免影响英文/央语页面的正文字体。
    ============================================================ */
 .shi {
   text-align: center;
@@ -204,6 +204,9 @@
 .ci:lang(zh) {
   font-family: KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif;
 }
+.ci:lang(ja) {
+  font-family: "DFKai-SB", "Source Han Serif JP", "Source Han Serif SC", serif;
+}
 .ci p {
   text-indent: 2em; /* 首行缩进两格 */
   margin: 0.5em 0;
@@ -216,10 +219,19 @@
   font-family: KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif;
 }
 
-.poet {
+.poem {
   text-align: center;
+}
+.poem:lang(en) {
+  font-style: italic;
+}
+.poem_en {
+  font-style: italic;
+}
+.poem_ong {
   font-family: "Old English Onglisch", serif;
 }
+
 
 .waka {
   text-align: center;
@@ -242,7 +254,7 @@ html[lang="en"] .shi {
 
 /* 文章级正文字体：在 frontmatter 里写 rootClass: font-ht */
 .font-ht p {
-  font-family: "HighTowerText", "Source Han Serif SC", "Source Han Serif JP", serif;
+  font-family: "Source Han Serif SC", "Source Han Serif JP", serif;
 }
 
 /* 行内颜色/标记工具类（原为文章内联 style） */
@@ -262,39 +274,41 @@ html[lang="en"] .shi {
 }
 
 /* ============================================================
-   行内字体指令：:cn[] :jp[] :asebi[] :ong[] :olds[]
-   :dfkai[] :ipa[] :ht[] :kai[] :msmincho[]
+   行内字体指令：:zh_cn[] :ja[] :ja_old[] :ong[] :cjk_old[]
+   :dfkai[] :en[] :rom[] :kai[] :min[]
    ============================================================ */
-.ff-cn {
+.ff-zh_cn {
   font-family: "Source Han Serif SC", serif;
 }
-.ff-jp {
+.ff-ja {
   font-family: "Source Han Serif JP", serif;
 }
-.ff-asebi {
+.ff-ja_old {
   /* 缺 〱〲，回退思源宋体 */
-  font-family: "Asebi Mincho", "Source Han Serif JP", "Source Han Serif SC", serif;
+  font-family: "Asebi Mincho", "Source Han Serif JP", "Source Han Serif Old", serif;
+  font-synthesis: weight;
 }
 .ff-ong {
   font-family: "Old English Onglisch", serif;
 }
-.ff-olds {
+.ff-cjk_old {
   font-family: "Source Han Serif Old", "Source Han Serif SC", serif;
+  font-synthesis: weight;
 }
 .ff-dfkai {
   /* 標楷體缺 々〆〱〲〻〳〴〵：先回退楷体（々〆为楷体），再回退思源宋体 */
   font-family: "DFKai-SB", KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif;
 }
-.ff-ipa {
+.ff-en {
   font-family: "Times New Roman", serif;
 }
-.ff-ht {
+.ff-rom {
   font-family: "HighTowerText", serif;
 }
 .ff-kai {
   /* KaiTi 缺 〱〲〻〳〴〵，回退思源宋体 */
   font-family: KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif;
 }
-.ff-msmincho {
+.ff-min {
   font-family: "MS Mincho", "Source Han Serif JP", serif;
 }
