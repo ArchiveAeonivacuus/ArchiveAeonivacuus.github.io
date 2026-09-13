@@ -6,6 +6,24 @@
 		{
 			"source": "/sitemap-index.xml",
 			"headers": [{ "key": "Content-Type", "value": "application/xml" }]
+		},
+		{
+			"source": "/_astro/(.*)",
+			"headers": [
+				{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+			]
+		},
+		{
+			"source": "/fonts/web/(.*)",
+			"headers": [
+				{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+			]
+		},
+		{
+			"source": "/pagefind/(.*)",
+			"headers": [
+				{ "key": "Cache-Control", "value": "public, max-age=86400" }
+			]
 		}
 	]
 }
