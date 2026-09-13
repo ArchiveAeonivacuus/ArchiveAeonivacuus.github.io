@@ -304,6 +304,7 @@ html[lang="en"] .shi {
 }
 .ff-rom {
   font-family: "HighTowerText", serif;
+  font-synthesis: weight;
 }
 .ff-kai {
   /* KaiTi 缺 〱〲〻〳〴〵，回退思源宋体 */
