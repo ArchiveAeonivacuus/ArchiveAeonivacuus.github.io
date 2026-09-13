@@ -214,6 +214,9 @@ def subset_font(
     subsetter.populate(unicodes=[ord(c) for c in chars])
     subsetter.subset(font)
     font.flavor = "woff2"
+    # 必须关掉：fonttools 保存时会重新计算复合字形（CJK 汉字）的包围盒，
+    # 对 simkai / 標楷體 这类字体算错，导致汉字在字身框里左右错位、字距不均。
+    font.recalcBBoxes = False
     buf = io.BytesIO()
     font.save(buf)
     font.close()
