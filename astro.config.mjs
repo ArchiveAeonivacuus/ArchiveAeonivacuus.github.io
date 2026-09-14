@@ -30,7 +30,7 @@ import {
 } from "./src/plugins/rehype-dialog.mjs";
 import { rehypeRuby } from "./src/plugins/rehype-ruby.mjs";
 import { parseDirectiveNode } from "./src/plugins/remark-directive-rehype.js";
-import { remarkExcerpt } from "./src/plugins/remark-excerpt.js";
+import { rehypeExcerpt } from "./src/plugins/rehype-excerpt.mjs";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
 // https://astro.build/config
@@ -119,7 +119,6 @@ export default defineConfig({
 		remarkPlugins: [
 			remarkMath,
 			remarkReadingTime,
-			remarkExcerpt,
 			remarkGithubAdmonitionsToDirectives,
 			remarkDirective,
 			remarkSectionize,
@@ -167,6 +166,7 @@ export default defineConfig({
 				},
 			],
 			rehypeRuby,
+			rehypeExcerpt,
 			[
 				rehypeAutolinkHeadings,
 				{
