@@ -13,17 +13,17 @@ export const WORD_TRANSLATIONS: Record<string, Record<string, string>> = {
 	},
 	瀛寰: {
 		zh_CN: "瀛寰",
-		ja: "{瀛寰|えいかん}",
+		ja: "<ruby>瀛寰<rt>えいかん</rt></ruby>",
 		en: "Aeonivacuum",
 	},
 	於留根: {
 		zh_CN: "於留根",
-		ja: "{於留根|オルケン}",
+		ja: "<ruby>於留根<rt>オルケン</rt></ruby>",
 		en: "Orken",
 	},
 	诃古棱: {
 		zh_CN: "诃古棱",
-		ja: "{訶古稜|ハコロン}",
+		ja: "<ruby>訶古稜<rt>ハコロン</rt></ruby>",
 		en: "Hacorum",
 	},
 	血妖: {
@@ -75,12 +75,12 @@ export const WORD_TRANSLATIONS: Record<string, Record<string, string>> = {
 	},
 	央额列: {
 		zh_CN: "央额列",
-		ja: "{央額列|オングリシ}",
+		ja: "<ruby>央額列<rt>オングリシ</rt></ruby>",
 		en: "Ongland",
 	},
 	息律: {
 		zh_CN: "息律",
-		ja: "{息律|そくりち}",
+		ja: "<ruby>息律<rt>そくりち</rt></ruby>",
 		en: "Sihrut",
 	},
 	世界模型: {
@@ -95,12 +95,12 @@ export const WORD_TRANSLATIONS: Record<string, Record<string, string>> = {
 	},
 	瀛洲: {
 		zh_CN: "瀛洲",
-		ja: "{瀛洲|えいしゅう}",
+		ja: "<ruby>瀛洲<rt>えいしゅう</rt></ruby>",
 		en: "Iangdom Continent",
 	},
 	大瀛: {
 		zh_CN: "大瀛",
-		ja: "{大瀛|たいえい}",
+		ja: "<ruby>大瀛<rt>たいえい</rt></ruby>",
 		en: "Iangdom",
 	},
 	冥界: {
@@ -125,7 +125,7 @@ export const WORD_TRANSLATIONS: Record<string, Record<string, string>> = {
 	},
 	土行妖: {
 		zh_CN: "土行妖",
-		ja: "{土行|つちゆく}{妖|あやかし}",
+		ja: "<ruby>土行<rt>つちゆく</rt></ruby><ruby>妖<rt>あやかし</rt></ruby>",
 		en: "Homines Terrirepentes",
 	},
 	战争: {
@@ -135,17 +135,17 @@ export const WORD_TRANSLATIONS: Record<string, Record<string, string>> = {
 	},
 	采花妖: {
 		zh_CN: "采花妖",
-		ja: "{花摘|はなつむ}{妖|あやかし}",
+		ja: "<ruby>花摘<rt>はなつむ</rt></ruby><ruby>妖<rt>あやかし</rt></ruby>",
 		en: "Homines Meridiani",
 	},
 	死灵樱: {
 		zh_CN: "死灵樱",
-		ja: "{死霊|しりょう}{桜|ざくら}",
+		ja: "<ruby>死霊<rt>しりょう</rt></ruby><ruby>桜<rt>ざくら</rt></ruby>",
 		en: "Sakura Necromorphae",
 	},
 	瞱花: {
 		zh_CN: "瞱花",
-		ja: "{瞱|ひかす}",
+		ja: "<ruby>瞱<rt>ひかす</rt></ruby>",
 		en: "Hiwhasue",
 	},
 };
