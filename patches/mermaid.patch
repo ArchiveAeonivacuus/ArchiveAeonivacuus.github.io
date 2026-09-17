@@ -1,0 +1,13 @@
+diff --git a/dist/chunks/mermaid.core/chunk-QXUST7PY.mjs b/dist/chunks/mermaid.core/chunk-QXUST7PY.mjs
+index 3f9c9380af19aff80f09256d5abe62656ba1ac45..fc2c8a8fe5eca445352f1d4cdfcc039d3b137a9f 100644
+--- a/dist/chunks/mermaid.core/chunk-QXUST7PY.mjs
++++ b/dist/chunks/mermaid.core/chunk-QXUST7PY.mjs
+@@ -498,7 +498,7 @@ var insertEdge = /* @__PURE__ */ __name(function(elem, edge, clusterDb, diagramT
+     );
+     points.push(head.intersect(points[points.length - 1]));
+   }
+-  const pointsStr = btoa(JSON.stringify(points));
++  const pointsStr = btoa(unescape(encodeURIComponent(JSON.stringify(points))));
+   if (edge.toCluster) {
+     log.info("to cluster abc88", clusterDb.get(edge.toCluster));
+     points = cutPathAtIntersect(edge.points, clusterDb.get(edge.toCluster).node);

@@ -148,4 +148,9 @@ export const WORD_TRANSLATIONS: Record<string, Record<string, string>> = {
 		ja: "<ruby>瞱<rt>ひかす</rt></ruby>",
 		en: "Hiwhasue",
 	},
+	人造语言: {
+		zh_CN: "人造语言",
+		ja: "人工言語",
+		en: "Constructed Language",
+	},
 };

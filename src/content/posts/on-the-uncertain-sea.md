@@ -11,13 +11,13 @@ rootClass: 'font-ht'
 ---
 
 # :ong[An Dın Uncértus Márınen]
-# :ong[– Módel Lampyrídæ An Tray.]
+# :ong[– Módel Lampyrídæ An Traƿ.]
 # :cjk_old[論不定之海現象——樹上螢火蟲模型]
 
 ## :ong[Beı Charlıe Flamenco,]
 ## :cjk_old[察利·敷羅明可 著]
 
-## :ong[Toyan Cíbıl]
+## :ong[Toƿan Cíbıl]
 ## :ong[Iohan Murıe, Straso Céntrus]
 ## :ong[1258.]
 
@@ -36,7 +36,7 @@ rootClass: 'font-ht'
       <div class="ff-cjk_old">葛弾号</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">
-      <div>St. Yıllıam</div>
+      <div>St. Ƿıllıam</div>
       <div class="ff-cjk_old">維連神佑船隊</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">
@@ -58,7 +58,7 @@ rootClass: 'font-ht'
   
   <tr>
     <td style="border: 1px; padding: 8px; text-align: left;">
-      <div>yıddt</div>
+      <div>ƿıddt</div>
       <div class="ff-cjk_old">寛</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">17.5Mt</td>
@@ -103,7 +103,7 @@ rootClass: 'font-ht'
   
   <tr>
     <td style="border: 1px; padding: 8px; text-align: left;">
-      <div>normalı forsopoyar</div>
+      <div>normalı forsopoƿar</div>
       <div class="ff-cjk_old">常規航力</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">1500Fp</td>
@@ -123,7 +123,7 @@ rootClass: 'font-ht'
   
   <tr>
     <td style="border: 1px; padding: 8px; text-align: left;">
-      <div>forsopoyar grándethı</div>
+      <div>forsopoƿar grándethı</div>
       <div class="ff-cjk_old">最大航力</div>
     </td>
     <td style="border: 1px; padding: 8px; text-align: center;">1700Fp</td>
@@ -148,14 +148,14 @@ rootClass: 'font-ht'
 
 与其将目光紧盯在船只性能和乘组水平上，不如翻看一下他们的航海记录。笔者通过南方航海公司解约了葛弹号、敷力多号的航海日志，又在露末教廷图书馆找到了神佑船队的历次航海记录，将一些关键信息提取出来，整理成表。下表包括三者所记录的航程中罗生—息律情况，以及根据航海日志推断出的船队直线速度情况。直线速度根据现有的航海图以及其所依赖的传统测绘学观点，即我们所生活的地方、航海中所走的位置相对关系可以看做是一个球体和球体之上的位置关系，尽管后面我们将要重新商讨这一点。
 
-![維連神佑船隊毎日距離—羅生息律度](/images/distans-sihrut-St-Yilliam.png "Gráfıc 1 Dístans - Sıhrut St. Yıllıam 維連神佑船隊毎日距離—羅生息律度")
+![維連神佑船隊毎日距離—羅生息律度](/images/distans-sihrut-St-Yilliam.png "Gráfıc 1 Dístans - Sıhrut St. Ƿıllıam 維連神佑船隊毎日距離—羅生息律度")
 <div class="graph-title">
-<span class="ff-ong">Gráfıc 1 Dístans - Sıhrut St. Yıllıam</span> 維連神佑船隊毎日距離—羅生息律度
+<span class="ff-ong">Gráfıc 1 Dístans - Sıhrut St. Ƿıllıam</span> 維連神佑船隊毎日距離—羅生息律度
 </div>
 
 维连神佑船队每天所走的距离（黑色）和罗生—息律值（灰色）如图。[^2]
 
-![敷力多号毎日距離—羅生息律度](/images/distans-sihrut-Pflicht.png "Gráfıc 2 Dístans - Sıhrut St. Yıllıam 敷力多号毎日距離—羅生息律度")
+![敷力多号毎日距離—羅生息律度](/images/distans-sihrut-Pflicht.png "Gráfıc 2 Dístans - Sıhrut St. Ƿıllıam 敷力多号毎日距離—羅生息律度")
 :ong[Gráfıc 2 Dístans - Sıhrut Pflicht] 敷力多号毎日距離—羅生息律度
 </div>
 
@@ -185,17 +185,23 @@ rootClass: 'font-ht'
 
 上图是对蓬莱岛中央六仙根所作的息律等高线图。我们发现，在蓬莱岛这样简单的息律条件下，能够清晰地看出浮世根须对息律的影响非常规则。（该图的边缘部分略去了一些其他影响造成的息律变动）距离浮世根越近，罗生—息律就越高；而距离越远，浮世根须的影响几乎为零。不过需要注意的是，这张图不代表全部浮世根须的具体数值，只用作定性分析。
 
+……
+
 ## :ong[Capıtulum 3] 萤火虫与浮世根须
 
 由于多数浮世根须生长聚集的情况比较芜杂，上述船只（船队）的实际航行轨迹也无从考究，因此笔者并没有能力对其进行定量研究。但大致的结论可以从图表1-3得出，即“息律越低，走得越慢”。亚力知亚·乾都（:ong[Alexandrea Conde]）的研究[^5]表明，息律越高，人的认知越混乱。如果把促进人认知的罗生比作保持视野的光，那么浮世根须就像萤火虫一样，照亮阻碍人认知的黑暗。只不过光照不会影响意识与物质的互动，而息律会[^6]。
+
+……
 
 ## :ong[Capıtulum 4] 树上萤火虫模型
 
 综上，笔者认为，无论是确定位置式的航海图，还是其依据的地圆世界模型，都应当被摒弃，新的模型应当提出。我们认为，实际上世界的样貌应当不像想象中的那样是一张平板，也不是新近提出的地圆理论那样，是一个球形的聚合体。世界应当是——请允许我搬出先知以苏（愿主福安之）描绘的世界树，只不过它不是撑起平板的巨大支柱，而是浮世根须生长的依靠。浮世根须就像一只只树上的萤火虫，照亮着人类的认知，照出一片片人类易于认知的区域。一片一片可认知区域以目前尚不为人所知而不牢固的方式连接着，这就造成了息律越高，意识与物质互动越困难的现象。世界是一部分一部分的光辉连起来的结果，而非一个平板或一个球。
 
+……
+
 [^1]: 接送质担教神职人员的船队。
 [^2]: 这里的距离，姑且通过记录在航海图上的距离计算。
 [^3]: 因为当时的罗生—息律统计方法和现在不同，所以出现了小于`-5`的值。
 [^4]: :asebi[大瀛陰陽道学会『浮世根の作用に於くる破壊性研究報告（罪悚して之を謝る）』]
-[^5]: <span class="ff-ong">Conde, Alexandrea. <i>Der Einfluß des Sihıut uhf humanischen Wahınehmung</i></span>（息律对人认知的影响）
-[^6]: <span class="ff-ht">de Maupassant, Barnabé. <i>L'impacta de Sichrut sur l'interaction conscience – matière</i></span>（发那贝·都·毛巴散《息律对意识—物质互动的影响》）
+[^5]: <span class="ff-ong">Conde, Alexandrea. Der Einfluß des Sihıut uhf humanischen Wahınehmung</span>（息律对人认知的影响）
+[^6]: <span class="ff-rom">de Maupassant, Barnabé. <i>L'impacta de Sichrut sur l'interaction conscience – matière</i></span>（发那贝·都·毛巴散《息律对意识—物质互动的影响》）

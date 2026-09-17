@@ -103,7 +103,7 @@ FONTS = [
     },
     {
         "family": "Old English Onglisch",
-        "file": "Old English Onglisch.otf",
+        "file": "Old English Onglisch.ttf",
         "weight": "400",
         "style": "normal",
         "local": ["Old English Onglisch"],

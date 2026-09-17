@@ -20,6 +20,12 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install fonttools
+        run: pip install fonttools
       - name: Install, build, and upload your site
         uses: withastro/action@v5
         # with:

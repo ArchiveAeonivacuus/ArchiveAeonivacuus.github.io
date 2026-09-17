@@ -4,17 +4,17 @@ import type { Translation } from "../translation";
 export const A_zh_iang: Translation = {
 	[Key.home]: "扉葉",
 	[Key.about]: "述要",
-	[Key.archive]: "入檔",
+	[Key.archive]: "入档",
 	[Key.search]: "検索",
 
 	[Key.tags]: "標識",
 	[Key.categories]: "門類",
 	[Key.recentPosts]: "新篇",
 
-	[Key.comments]: "評價",
+	[Key.comments]: "評価",
 
 	[Key.untitled]: "無題",
-	[Key.uncategorized]: "未入門類",
+	[Key.uncategorized]: "門類未入",
 	[Key.noTags]: "無標識",
 
 	[Key.wordCount]: "字",
