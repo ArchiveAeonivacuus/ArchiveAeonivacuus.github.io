@@ -86,11 +86,11 @@ In addition to Astro's default support for [GitHub Flavored Markdown](https://gi
 
 | 指令 | 字体 | 指令 | 字体 |
 |:--|:--|:--|:--|
-| `:ong[…]` | Old English Onglisch | `:jp[…]` | Source Han Serif JP |
-| `:asebi[…]` | Asebi Mincho | `:olds[…]` | Source Han Serif Old |
-| `:dfkai[…]` | DFKai-SB | `:ipa[…]` | Times New Roman |
-| `:ht[…]` | HighTowerText | `:kai[…]` | KaiTi |
-| `:msmincho[…]` | MS Mincho | `:cn[…]` | Source Han Serif SC |
+| `:ong[…]` | Old English Onglisch | `:ja[…]` | Source Han Serif JP |
+| `:ja_old[…]` | Asebi Mincho | `:cjk_old[…]` | Source Han Serif Old |
+| `:dfkai[…]` | DFKai-SB | `:en[…]` | Times New Roman |
+| `:rom[…]` | HighTowerText | `:kai[…]` | KaiTi |
+| `:min[…]` | MS Mincho | `:zh_cn[…]` | Source Han Serif SC |
 
 **诗/词盒子** —— 用容器指令（等价于 `<div class="…">`）：
 
@@ -100,7 +100,7 @@ In addition to Astro's default support for [GitHub Flavored Markdown](https://gi
 暮色时分尽染红。
 :::
 
-:::ci / :::spellcard / :::poet / :::waka
+:::ci / :::spellcard / :::poem / :::waka
 ```
 
 **链接卡片** —— 单行叶子指令，只有 `href` 必填；`title` 默认域名，`avatar` 默认站点 favicon：
@@ -120,7 +120,7 @@ In addition to Astro's default support for [GitHub Flavored Markdown](https://gi
   为每个字重生成**一个** woff2（正文全量子集 + 粗体仅标题/strong 用字），写入
   `public/fonts/web/` 和 `src/generated/fonts.ts`。
 - 生成结果需要提交。**Vercel/CI 只跑 `pnpm build`，不依赖 Python**；只有新增内容引入新字符时，才需要在本地重跑 `pnpm fonts` 并提交。
-- 正文思源宋体提供 **400/700 真粗体**；Asebi / KaiTi / DFKai / Onglisch / HighTower 只有单一字重，已用 `font-synthesis: none` 关闭伪粗体。
+- 正文思源宋体提供 **400/700 真粗体**；Asebi / KaiTi / DFKai / Onglisch / HighTower 只有单一字重，出于排版考量，接受伪粗体。
 - 相比旧的按 Unicode 区块分片（一页 80+ 请求、近 10MB），现在通常一页只需 1~2 个字体请求。
 
 ## ⚡ Commands
