@@ -39,7 +39,8 @@ for (const py of candidates) {
   }
 }
 
-console.error(
-  "No usable Python found. Install Python 3 and run: pip install fonttools",
+// 3. 实在找不到 Python/fontTools：不阻断构建，退回使用已提交的字体
+console.warn(
+  "Warning: no usable Python/fontTools found; skipping font generation and using committed font files.",
 );
-process.exit(1);
+process.exit(0);
