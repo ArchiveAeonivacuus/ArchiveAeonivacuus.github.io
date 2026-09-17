@@ -25,7 +25,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install fonttools
-        run: pip install fonttools
+        run: pip install fonttools brotli
       - name: Install, build, and upload your site
         uses: withastro/action@v5
         # with:

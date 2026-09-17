@@ -28,9 +28,11 @@ function installFontTools(py) {
   return false;
 }
 
-// 1. 用已装 fontTools 的 Python 直接跑
+// 1. 用已装 fontTools + brotli 的 Python 直接跑
 for (const py of candidates) {
-  const probe = spawnSync(py, ["-c", "import fontTools"], { stdio: "ignore" });
+  const probe = spawnSync(py, ["-c", "import fontTools, brotli"], {
+    stdio: "ignore",
+  });
   if (probe.status === 0) {
     runSubset(py);
   }
