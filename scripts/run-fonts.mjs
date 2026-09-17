@@ -9,9 +9,17 @@ function runSubset(py) {
 
 function installFontTools(py) {
   const attempts = [
-    ["-m", "pip", "install", "--quiet", "fonttools"],
-    ["-m", "pip", "install", "--quiet", "--user", "fonttools"],
-    ["-m", "pip", "install", "--quiet", "--break-system-packages", "fonttools"],
+    ["-m", "pip", "install", "--quiet", "fonttools", "brotli"],
+    ["-m", "pip", "install", "--quiet", "--user", "fonttools", "brotli"],
+    [
+      "-m",
+      "pip",
+      "install",
+      "--quiet",
+      "--break-system-packages",
+      "fonttools",
+      "brotli",
+    ],
   ];
   for (const args of attempts) {
     const r = spawnSync(py, args, { stdio: "inherit" });
