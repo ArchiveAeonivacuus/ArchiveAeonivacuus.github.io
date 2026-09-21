@@ -100,7 +100,8 @@ translate_key: 'onglisch-grammar-note'
 
 例：
 (1) :ong[dı Contı de Mondanıa] 门怛尼亚县
-(2) :[órığın des hómon] 人类起源
+
+(2) :ong[órığın des hómon] 人类起源
 
 2. 复数
 
