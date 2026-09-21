@@ -5,7 +5,7 @@ description: ''
 image: ''
 tags: [故事, 东方, 月都, 蓬莱山辉夜]
 category: '竹取拾遗物语'
-draft: true 
+draft: false
 lang: ''
 ---
 
