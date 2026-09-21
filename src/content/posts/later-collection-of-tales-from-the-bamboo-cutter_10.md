@@ -1,6 +1,6 @@
 ---
 title: 竹取拾遗物语——十·渡淡海之冬
-published: 2026-09-04
+published: 2026-09-22
 description: ''
 image: ''
 tags: [故事, 东方, 月都, 蓬莱山辉夜]
