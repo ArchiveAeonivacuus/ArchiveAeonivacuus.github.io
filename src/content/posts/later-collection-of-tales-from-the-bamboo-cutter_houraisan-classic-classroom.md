@@ -1,6 +1,6 @@
 ---
 title: 竹取拾遗物语——外传·蓬莱山古文教室
-published: 2026-09-08
+published: 2026-09-22
 description: '八意永琳，曾经的“月之头脑”，或许现在也是。她望向桌子上一份一份的资料，仔细地确认着。'
 image: '/images/houraisan-classic-classroom.png'
 tags: [外传, 东方, 月都, 蓬莱山辉夜]
