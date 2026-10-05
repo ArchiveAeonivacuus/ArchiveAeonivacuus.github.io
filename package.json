@@ -13,6 +13,7 @@
     "new-post": "node scripts/new-post.js",
     "new-translation": "node scripts/new-translation.js",
     "migrate": "node scripts/migrate-shorthand.mjs",
+    "migrate:typst": "node scripts/migrate-posts-to-typst.mjs",
     "fonts": "node scripts/run-fonts.mjs",
     "format": "biome format --write ./src",
     "lint": "biome check --write ./src",
@@ -34,6 +35,9 @@
     "@iconify-json/fa6-regular": "^1.2.4",
     "@iconify-json/fa6-solid": "^1.2.4",
     "@iconify/svelte": "^4.2.0",
+    "@myriaddreamin/typst-ts-node-compiler": "^0.7.0-rc2",
+    "@myriaddreamin/typst-ts-renderer": "^0.7.0-rc2",
+    "@myriaddreamin/typst.ts": "0.7.0-rc2",
     "@swup/astro": "^1.7.0",
     "@tailwindcss/typography": "^0.5.19",
     "@types/react": "^19.2.7",
@@ -42,6 +46,7 @@
     "astro-expressive-code": "^0.41.3",
     "astro-icon": "^1.1.5",
     "astro-mermaid": "^1.2.0",
+    "astro-typst": "^0.12.4",
     "hast-util-to-html": "9.0.5",
     "hastscript": "^9.0.1",
     "katex": "^0.16.25",
@@ -82,8 +87,10 @@
     "@types/mdast": "^4.0.4",
     "@types/sanitize-html": "^2.16.0",
     "node-gyp": "^13.0.0",
+    "playwright": "^1.63.0",
     "postcss-import": "^16.1.1",
-    "postcss-nesting": "^13.0.2"
+    "postcss-nesting": "^13.0.2",
+    "yaml": "^2.9.1"
   },
   "packageManager": "pnpm@9.14.4",
   "pnpm": {

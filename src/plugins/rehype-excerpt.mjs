@@ -43,6 +43,11 @@ export function rehypeExcerpt() {
 			});
 			excerpt = excerpt.replace(/\s+/g, " ").trim();
 		}
-		file.data.astro.frontmatter.excerpt = excerpt;
+		// `astro-typst` also runs the configured rehype pipeline, but its virtual
+		// file does not carry Astro Markdown frontmatter. Excerpts only apply to
+		// content entries that expose that structure.
+		if (file.data.astro?.frontmatter) {
+			file.data.astro.frontmatter.excerpt = excerpt;
+		}
 	};
 }

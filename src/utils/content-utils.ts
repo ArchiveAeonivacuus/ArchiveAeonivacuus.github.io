@@ -1,17 +1,26 @@
-import { type CollectionEntry, getCollection } from "astro:content";
+import { getCollection } from "astro:content";
 import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import { getCategoryUrl } from "@utils/url-utils.ts";
 
 // // Retrieve posts and sort them by publication date
 async function getRawSortedPosts() {
-	const allBlogPosts = await getCollection("posts", ({ data }) => {
+	const markdownPosts = await getCollection("posts", ({ data }) => {
 		return import.meta.env.PROD ? data.draft !== true : true;
 	});
+	const typstPosts = await getCollection("typst-posts", ({ data }) => {
+		return import.meta.env.PROD ? data.draft !== true : true;
+	});
+	const normalizeTypstSlug = (slug: string) => slug;
+	const typstSlugs = new Set(typstPosts.map((post) => normalizeTypstSlug(post.slug)));
+	const allBlogPosts = [
+		...markdownPosts.filter((post) => !typstSlugs.has(post.slug)),
+		...typstPosts.map((post) => ({ ...post, slug: normalizeTypstSlug(post.slug) })),
+	];
 
 	// 【全站高精度 translate_key 去重（Translate-Key Based Deduplication）】
 	// 如果配置了同一个 translate_key，我们只在列表中展示默认（中文）的版本，过滤非默认翻译版
-	const uniquePosts: CollectionEntry<"posts">[] = [];
+	const uniquePosts: typeof allBlogPosts = [];
 	const seenTranslateKeys = new Set<string>();
 
 	for (const post of allBlogPosts) {
@@ -55,7 +64,7 @@ export async function getSortedPosts() {
 }
 export type PostForList = {
 	slug: string;
-	data: CollectionEntry<"posts">["data"];
+	data: (Awaited<ReturnType<typeof getRawSortedPosts>>)[number]["data"];
 };
 export async function getSortedPostsList(): Promise<PostForList[]> {
 	const sortedFullPosts = await getRawSortedPosts();

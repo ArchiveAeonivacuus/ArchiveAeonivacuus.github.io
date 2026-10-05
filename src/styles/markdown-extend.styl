@@ -1,10 +1,15 @@
 .custom-md
 
   blockquote.admonition
+    margin-top: 1.5rem
+    margin-bottom: 1.5rem
+    padding-top: 0.85rem
+    padding-bottom: 0.85rem
+
     .bdm-title
       display: flex
       align-items: center
-      margin-bottom: -.9rem
+      margin-bottom: 0.5rem
       font-weight: bold
 
       &:before
@@ -20,6 +25,21 @@
         mask-position: center
         mask-repeat: no-repeat
         transform: translateY(-0.0625rem)
+
+    .bdm-content
+      min-width: 0
+      margin-top: 0
+      margin-bottom: 0
+
+      > :first-child
+        margin-top: 0 !important
+
+      > :last-child
+        margin-bottom: 0 !important
+
+      > p:only-child
+        margin-top: 0 !important
+        margin-bottom: 0 !important
     &.bdm-tip
       .bdm-title
         color: var(--admonitions-color-tip)
@@ -277,7 +297,13 @@ a.card-hyperlink
     align-items: center
     flex-wrap: wrap
     gap: 0.75rem
-    margin-bottom: 0.5rem
+    margin-bottom: 0.35rem
+    p
+      display: contents
+
+    img, .hc-avatar
+      margin-top: 0
+      margin-bottom: 0
     .hc-avatar
       width: 2.5rem
       height: 2.5rem
@@ -301,6 +327,12 @@ a.card-hyperlink
     white-space: normal
     word-wrap: break-word
     overflow-wrap: break-word
+    margin-top: 0
+    margin-bottom: 0
+
+    p
+      margin-top: 0
+      margin-bottom: 0
 
 a.card-hyperlink.fetch-waiting
   pointer-events: none

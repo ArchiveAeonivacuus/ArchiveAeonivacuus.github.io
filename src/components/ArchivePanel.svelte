@@ -5,14 +5,11 @@ import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import { getPostUrlBySlug } from "../utils/url-utils";
 
-export let tags: string[];
-export let categories: string[];
+export let tags: string[] = [];
+export let categories: string[] = [];
 export let sortedPosts: Post[] = [];
 
-const params = new URLSearchParams(window.location.search);
-tags = params.has("tag") ? params.getAll("tag") : [];
-categories = params.has("category") ? params.getAll("category") : [];
-const uncategorized = params.get("uncategorized");
+let uncategorized: string | null = null;
 
 interface Post {
 	slug: string;
@@ -32,6 +29,7 @@ interface Group {
 let groups: Group[] = [];
 
 function formatDate(date: Date) {
+	date = new Date(date);
 	const month = (date.getMonth() + 1).toString().padStart(2, "0");
 	const day = date.getDate().toString().padStart(2, "0");
 	return `${month}-${day}`;
@@ -41,7 +39,7 @@ function formatTag(tagList: string[]) {
 	return tagList.map((t) => `#${t}`).join(" ");
 }
 
-onMount(async () => {
+function buildGroups() {
 	let filteredPosts: Post[] = sortedPosts;
 
 	if (tags.length > 0) {
@@ -64,7 +62,9 @@ onMount(async () => {
 
 	const grouped = filteredPosts.reduce(
 		(acc, post) => {
-			const year = post.data.published.getFullYear();
+			const date = new Date(post.data.published);
+			post.data.published = date;
+			const year = date.getFullYear();
 			if (!acc[year]) {
 				acc[year] = [];
 			}
@@ -82,6 +82,18 @@ onMount(async () => {
 	groupedPostsArray.sort((a, b) => b.year - a.year);
 
 	groups = groupedPostsArray;
+}
+
+// 同时用于 SSR 和 hydration：服务端传入的日期可能已经序列化，buildGroups
+// 会统一恢复为 Date。这样归档在 JavaScript 加载前也不会是空白。
+buildGroups();
+
+onMount(() => {
+	const params = new URLSearchParams(window.location.search);
+	tags = params.has("tag") ? params.getAll("tag") : [];
+	categories = params.has("category") ? params.getAll("category") : [];
+	uncategorized = params.get("uncategorized");
+	buildGroups();
 });
 </script>
 

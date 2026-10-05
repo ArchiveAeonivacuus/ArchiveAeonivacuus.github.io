@@ -1,0 +1,67 @@
+<script>
+function normalizeTypstCards(root: ParentNode = document) {
+	for (const card of root.querySelectorAll<HTMLElement>("article.typst-link-card")) {
+		const image = card.querySelector<HTMLImageElement>("img.typst-link-card-avatar");
+		const title = card.querySelector<HTMLElement>(".typst-link-card-title");
+		const description = card.querySelector<HTMLElement>(".typst-link-card-description");
+		const link = title?.querySelector<HTMLAnchorElement>("a");
+		if (!link || card.dataset.normalized === "true") continue;
+
+		const anchor = document.createElement("a");
+		anchor.className = "card-hyperlink no-styling";
+		anchor.href = link.href;
+		anchor.target = "_blank";
+		anchor.rel = "noopener";
+
+		const titlebar = document.createElement("div");
+		titlebar.className = "hc-titlebar";
+		if (image) {
+			image.className = "hc-avatar";
+			titlebar.append(image);
+		}
+		const titleText = document.createElement("div");
+		titleText.className = "hc-title";
+		titleText.textContent = link.textContent;
+		titlebar.append(titleText);
+		anchor.append(titlebar);
+
+		const desc = document.createElement("div");
+		desc.className = "hc-description";
+		desc.innerHTML = description?.innerHTML ?? "";
+		anchor.append(desc);
+
+		card.dataset.normalized = "true";
+		card.replaceWith(anchor);
+	}
+}
+
+normalizeTypstCards();
+document.addEventListener("astro:page-load", () => normalizeTypstCards());
+document.addEventListener("swup:contentReplaced", () => normalizeTypstCards());
+</script>
+
+<style is:global>
+	article.typst-link-card {
+		display: grid;
+		grid-template-columns: 2.5rem minmax(0, 1fr);
+		gap: 0.5rem 0.75rem;
+		align-items: center;
+		margin: 0.5rem 0;
+		padding: 1.1rem 1.5rem;
+		border-radius: var(--radius-large);
+		background: var(--license-block-bg);
+	}
+	article.typst-link-card > .typst-link-card-avatar {
+		grid-row: 1;
+		grid-column: 1;
+		width: 2.5rem;
+		height: 2.5rem;
+		margin: 0;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	article.typst-link-card > .typst-link-card-title,
+	article.typst-link-card > .typst-link-card-description {
+		margin: 0;
+	}
+</style>

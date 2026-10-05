@@ -16,15 +16,25 @@ import PostMetadata from "../../components/PostMeta.astro";
 import { profileConfig, siteConfig } from "../../config";
 import { LANGUAGE_MAP } from "../../constants/languages";
 import { formatDateToYYYYMMDD } from "../../utils/date-utils";
+import { getPostRenderInfo } from "../../utils/post-render-utils";
 import "katex/dist/katex.css";
 
 export async function getStaticPaths() {
 	// 重要：这里必须拉取全量未经去重过滤的原始文章集合！
 	// 这样不仅能确保每一篇翻译版文章（如日文版）都拥有自己独立的详情页面，
 	// 还能确保传入组件的 allEntries 中完好包含全部语言的数据，使 translations 配对成功并显现切换条！
-	const rawBlogEntries = await getCollection("posts", ({ data }) => {
+	const markdownEntries = await getCollection("posts", ({ data }) => {
 		return import.meta.env.PROD ? data.draft !== true : true;
 	});
+	const typstEntries = await getCollection("typst-posts", ({ data }) => {
+		return import.meta.env.PROD ? data.draft !== true : true;
+	});
+	const normalizeTypstSlug = (slug: string) => slug;
+	const typstSlugs = new Set(typstEntries.map((entry) => normalizeTypstSlug(entry.slug)));
+	const rawBlogEntries = [
+		...markdownEntries.filter((entry) => !typstSlugs.has(entry.slug)),
+		...typstEntries.map((entry) => ({ ...entry, slug: normalizeTypstSlug(entry.slug) })),
+	];
 	return rawBlogEntries.map((entry) => ({
 		params: { slug: entry.slug },
 		props: { entry, allEntries: rawBlogEntries },
@@ -34,7 +44,17 @@ export async function getStaticPaths() {
 const { entry, allEntries } = Astro.props;
 const { Content, headings } = await entry.render();
 
-const { remarkPluginFrontmatter } = await entry.render();
+// 邻篇信息原先依赖首页调用 getSortedPosts() 时对 data 的临时修改。
+// 静态页面各自构建后不会共享该修改，因此详情页必须显式取得排序结果。
+const navigationEntry = (await getSortedPosts()).find((post) => post.slug === entry.slug);
+if (navigationEntry) {
+	entry.data.prevSlug = navigationEntry.data.prevSlug;
+	entry.data.prevTitle = navigationEntry.data.prevTitle;
+	entry.data.nextSlug = navigationEntry.data.nextSlug;
+	entry.data.nextTitle = navigationEntry.data.nextTitle;
+}
+
+const renderInfo = await getPostRenderInfo(await entry.render(), entry.body);
 
 // 获取当前文章的语言
 const currentLangCode = entry.data.lang || "zh_CN";
@@ -102,14 +122,14 @@ const jsonLd = {
                     <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2">
                         <Icon name="material-symbols:notes-rounded"></Icon>
                     </div>
-                    <div class="text-sm">{remarkPluginFrontmatter.words} {" " + i18n(I18nKey.wordsCount)}</div>
+                    <div class="text-sm">{renderInfo.words} {" " + i18n(I18nKey.wordsCount)}</div>
                 </div>
                 <div class="flex flex-row items-center">
                     <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2">
                         <Icon name="material-symbols:schedule-outline-rounded"></Icon>
                     </div>
                     <div class="text-sm">
-                        {remarkPluginFrontmatter.minutes} {" " + i18n(remarkPluginFrontmatter.minutes === 1 ? I18nKey.minuteCount : I18nKey.minutesCount)}
+                        {renderInfo.minutes} {" " + i18n(renderInfo.minutes === 1 ? I18nKey.minuteCount : I18nKey.minutesCount)}
                     </div>
                 </div>
             </div>
@@ -182,7 +202,6 @@ const jsonLd = {
 
         </div>
     </div>
-    <Comments client:only="react" />
     <div class="flex flex-col md:flex-row justify-between mb-4 gap-4 overflow-hidden w-full">
         <a href={entry.data.nextSlug ? getPostUrlBySlug(entry.data.nextSlug) : "#"}
            class:list={["w-full font-bold overflow-hidden active:scale-95", {"pointer-events-none": !entry.data.nextSlug}]}>
@@ -204,5 +223,6 @@ const jsonLd = {
             </div>}
         </a>
     </div>
+    <Comments client:only="react" />
 
 </MainGridLayout>

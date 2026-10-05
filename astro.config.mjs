@@ -9,6 +9,7 @@ import { defineConfig } from "astro/config";
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import mermaid from "astro-mermaid";
+import { typst } from "astro-typst";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeComponents from "rehype-components"; /* Render the custom directive content */
 import rehypeKatex from "rehype-katex";
@@ -114,6 +115,14 @@ export default defineConfig({
 		sitemap(),
 		react(),
 		mermaid(),
+		typst({
+			target: (id) =>
+				id.includes("/content/typst-posts/") ||
+				id.includes("/content/spec-typst/") ||
+				id.endsWith("/astro-typst-prototype.typ")
+					? "html"
+					: "svg",
+		}),
 	],
 	markdown: {
 		remarkPlugins: [

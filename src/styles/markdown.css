@@ -60,6 +60,43 @@
         }
     }
 
+    /* Typst HTML 的 fenced code 是普通 pre > code，不经过 Expressive Code。
+       清除行内 code 的胶囊样式，同时保留语法高亮。 */
+    pre:not(.expressive-code pre) {
+        position: relative;
+        overflow-x: auto;
+        margin: 1rem 0;
+        padding: 1rem 1.25rem;
+        border-radius: 0.75rem;
+        background: var(--codeblock-bg);
+    }
+
+    pre:not(.expressive-code pre) > code {
+        display: block;
+        min-width: max-content;
+        padding: 0;
+        overflow: visible;
+        border-radius: 0;
+        background: transparent;
+        color: inherit;
+        line-height: 1.5rem;
+        white-space: pre;
+    }
+
+    pre:not(.expressive-code pre) > code > span,
+    pre:not(.expressive-code pre) > code strong,
+    pre:not(.expressive-code pre) > code strong > span {
+        padding: 0;
+        border-radius: 0;
+        background: transparent;
+        font-weight: inherit;
+    }
+
+    pre:not(.expressive-code pre) > code br {
+        display: block;
+        content: "";
+    }
+
     .copy-btn {
         all: initial;
         @apply btn-regular-dark opacity-0 shadow-lg shadow-black/50 absolute active:scale-90 h-8 w-8 top-3 right-3 text-sm rounded-lg transition-all ease-in-out z-20 cursor-pointer;
@@ -101,6 +138,7 @@
     /* 脚注引用/回跳：正文链接的 padding/负 margin/inline-block 会在
        右上角数字与文字之间撑出空隙，这里恢复成普通行内元素。 */
     sup > a[data-footnote-ref],
+    a[role="doc-noteref"],
     a[data-footnote-backref] {
         display: inline;
         padding: 0;

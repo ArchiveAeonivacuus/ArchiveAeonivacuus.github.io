@@ -1,6 +1,7 @@
 ---
 import "@fontsource-variable/jetbrains-mono";
 import "@fontsource-variable/jetbrains-mono/wght-italic.css";
+import TypstCardFixup from "./TypstCardFixup.astro";
 
 interface Props {
 	class: string;
@@ -12,6 +13,7 @@ const className = Astro.props.class;
     <!--<div class="max-w-none custom-md">-->
     <slot/>
 </div>
+<TypstCardFixup />
 
 <script>
 document.addEventListener("click", function (e: MouseEvent) {
