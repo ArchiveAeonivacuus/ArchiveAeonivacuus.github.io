@@ -56,3 +56,11 @@ fi
 
 # PDF fonts are vendored in `fonts-pdf/` (committed, self-hosted), so nothing to
 # download here. `build-pdf.mjs` points Typst at that directory.
+
+# Per-page web fonts are generated with fontTools + brotli.
+if ! python3 -c 'import fontTools, brotli' >/dev/null 2>&1; then
+  echo "==> installing fonttools"
+  python3 -m pip install --quiet --user fonttools brotli \
+    || python3 -m pip install --quiet --break-system-packages fonttools brotli
+fi
+python3 -c 'import fontTools, brotli; print("fonttools ready")'

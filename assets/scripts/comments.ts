@@ -1,9 +1,9 @@
 import { isDark } from "./settings";
 
-const REPO = "sakimidare/sakimidare.github.io";
-const REPO_ID = "R_kgDOPiar0w";
+const REPO = "ArchiveAeonivacuus/ArchiveAeonivacuus.github.io";
+const REPO_ID = "R_kgDOQb_VFw";
 const CATEGORY = "Announcements";
-const CATEGORY_ID = "DIC_kwDOPiar084CuhyB";
+const CATEGORY_ID = "DIC_kwDOQb_VF84Cy0te";
 
 function giscusTheme(): string {
   return isDark() ? "dark" : "light";

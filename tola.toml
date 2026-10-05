@@ -35,7 +35,7 @@ no_fouc = true
 # Favicon path (relative to site root).
 # icon = ""
 # CSS stylesheet paths (relative to site root).
-styles = ["assets/styles/fonts.css", "assets/styles/photoswipe.css", "assets/styles/fuwari.css"]
+styles = ["assets/styles/photoswipe.css", "assets/styles/fuwari.css"]
 # Script entries (relative to site root).
 scripts = [{ path = "assets/scripts/iconify.min.js", defer = true }, { path = "assets/scripts/fuwari.js", defer = true }]
 # Raw HTML elements to insert into head.

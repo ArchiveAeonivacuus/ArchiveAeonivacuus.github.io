@@ -884,10 +884,10 @@ function mountToc() {
 }
 
 // assets/scripts/comments.ts
-var REPO = "sakimidare/sakimidare.github.io";
-var REPO_ID = "R_kgDOPiar0w";
+var REPO = "ArchiveAeonivacuus/ArchiveAeonivacuus.github.io";
+var REPO_ID = "R_kgDOQb_VFw";
 var CATEGORY = "Announcements";
-var CATEGORY_ID = "DIC_kwDOPiar084CuhyB";
+var CATEGORY_ID = "DIC_kwDOQb_VF84Cy0te";
 function giscusTheme() {
   return isDark() ? "dark" : "light";
 }

@@ -7,11 +7,12 @@
     "build:client": "esbuild assets/scripts/fuwari.ts --bundle --format=esm --target=es2022 --outfile=assets/scripts/fuwari.js",
     "build:site": "tola build --clean",
     "build:site-info": "node scripts/build-site-info.mjs",
+    "build:pagefonts": "python3 scripts/build-page-fonts.py",
     "build:search": "pagefind --site public",
     "build:404": "node -e \"const fs=require('fs');const s='public/404/index.html';if(fs.existsSync(s))fs.copyFileSync(s,'public/404.html')\"",
     "build:sitemap": "node scripts/postprocess-sitemap.mjs",
     "build:pdf": "node scripts/build-pdf.mjs",
-    "build": "pnpm build:client && pnpm build:dino && pnpm build:stats && pnpm build:site-info && pnpm build:site && pnpm build:404 && pnpm build:sitemap && pnpm build:search && pnpm build:pdf",
+    "build": "pnpm build:client && pnpm build:dino && pnpm build:stats && pnpm build:site-info && pnpm build:site && pnpm build:pagefonts && pnpm build:404 && pnpm build:sitemap && pnpm build:search && pnpm build:pdf",
     "check": "pnpm typecheck && tola validate",
     "build:dino": "esbuild assets/scripts/dino/index.ts --bundle --format=esm --target=es2022 --outfile=assets/scripts/dino.js",
     "build:stats": "node scripts/build-stats.mjs"
