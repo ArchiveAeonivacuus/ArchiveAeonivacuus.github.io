@@ -221,7 +221,6 @@
         #_nav-link("/archive/", t.archive, key: "archive")
         #_nav-link("/about/", t.about, key: "about")
         #_nav-link("/friends/", t.friends, key: "friends")
-        #_nav-link("https://c.sakimidare.top", "C Programming", external: true)
       ]
       #html.elem("div", attrs: (class: "nav-actions"))[
         #html.elem("label", attrs: (id: "desktop-search", class: "desktop-search"))[#icon("material-symbols:search-rounded") #html.elem("input", attrs: (id: "desktop-search-input", type: "search", placeholder: t.search, autocomplete: "off", "aria-label": t.search, "data-i18n-placeholder": "search", "data-i18n-aria": "search"))]
@@ -239,7 +238,7 @@
         #html.elem("input", attrs: (id: "color-slider", type: "range", min: "0", max: "360", step: "5", "aria-label": t.themeColor, "data-i18n-aria": "themeColor"))
       ]
       #html.elem("nav", attrs: (id: "nav-menu-panel", class: "float-panel mobile-menu is-closed", "aria-label": "移动端导航"))[
-        #_nav-link("/", t.home, key: "home") #_nav-link("/archive/", t.archive, key: "archive") #_nav-link("/about/", t.about, key: "about") #_nav-link("/friends/", t.friends, key: "friends") #_nav-link("https://c.sakimidare.top", "C Programming", external: true)
+        #_nav-link("/", t.home, key: "home") #_nav-link("/archive/", t.archive, key: "archive") #_nav-link("/about/", t.about, key: "about") #_nav-link("/friends/", t.friends, key: "friends")
       ]
     ]
   ]
