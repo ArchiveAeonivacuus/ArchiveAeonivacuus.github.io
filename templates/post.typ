@@ -120,7 +120,7 @@
         #if words != none or minutes != none { html.elem("div", attrs: (class: "post-card-stats"), (if words != none { str(words) + " " + (if words == 1 { t.wordCount } else { t.wordsCount }) } else { "" }) + (if words != none and minutes != none { " | " } else { "" }) + (if minutes != none { str(minutes) + " " + (if minutes == 1 { t.minuteCount } else { t.minutesCount }) } else { "" })) }
       ]
       #if image != none and image != "" {
-        html.elem("a", attrs: (href: href, class: "post-card-cover", "aria-label": title), html.elem("img", attrs: (src: image, alt: "", loading: "lazy")) + html.elem("span", icon("material-symbols:chevron-right-rounded")))
+        html.elem("a", attrs: (href: href, class: "post-card-cover", "aria-label": title), html.elem("img", attrs: (src: image, alt: "", loading: "lazy")) + icon("material-symbols:chevron-right-rounded"))
       } else {
         html.elem("a", attrs: (href: href, class: "post-card-enter", "aria-label": title), icon("material-symbols:chevron-right-rounded"))
       }

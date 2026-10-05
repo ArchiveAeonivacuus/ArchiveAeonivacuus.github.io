@@ -224,17 +224,17 @@ html.is-home .sidebar-sticky { top: calc(1rem - (var(--banner-home) - var(--bann
    right — same layout as the Fuwari / Archive PostCard. */
 .post-card-cover { position: relative; height: 20vh; margin: 1rem 1rem -.5rem; overflow: hidden; border-radius: .75rem; }
 .post-card-cover img { width: 100%; height: 100%; object-fit: cover; }
-.post-card-cover span { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; background: rgb(0 0 0 / 0%); }
+.post-card-cover::before { content: ""; position: absolute; inset: 0; background: rgb(0 0 0 / 0%); transition: background 200ms ease; }
 @media (min-width: 40.01rem) {
   .post-card { flex-direction: column; }
   .post-card-body { width: calc(100% - 28% - 12px); padding: 1.75rem .5rem 1.5rem 2.25rem; }
   .post-card-cover { position: absolute; top: .75rem; bottom: .75rem; right: .75rem; width: 28%; height: auto; max-height: none; margin: 0; }
 }
-.post-card-cover .icon { font-size: 3rem; opacity: 0; transform: scale(.5); }
+.post-card-cover .icon { position: absolute; top: 50%; left: 50%; color: white; font-size: 3rem; opacity: 0; transform: translate(-50%, -50%) scale(.5); transition: opacity 200ms var(--ease-out), transform 260ms var(--ease-out); }
 .post-card-cover:hover { transform: scale(.99); }
 .post-card-cover:active { transform: scale(.95); }
-.post-card-cover:hover span { background: rgb(0 0 0 / 30%); }
-.post-card-cover:hover .icon { opacity: 1; transform: scale(1); }
+.post-card-cover:hover::before { background: rgb(0 0 0 / 30%); }
+.post-card-cover:hover .icon { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 
 .post-container { padding: 1.5rem 2.25rem 1rem; }
 .post-stats { display: flex; gap: 1.25rem; margin-bottom: .75rem; color: var(--text-30); font-size: .875rem; }
@@ -480,7 +480,7 @@ html.is-animating .transition-swup-fade { opacity: 0; transform: translateY(1rem
 .markdown-content .ff-ong { font-family: "Old English Onglisch", serif; }
 .markdown-content .ff-cjk_old { font-family: "Source Han Serif Old", "Source Han Serif SC", serif; font-synthesis: weight; }
 .markdown-content .ff-dfkai { font-family: "DFKai-SB", KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; }
-.markdown-content .ff-en { font-family: "Source Serif 4", "Times New Roman", serif; }
+.markdown-content .ff-en { font-family: "Source Serif 4", "Asebi Mincho", serif; }
 .markdown-content .ff-rom { font-family: "HighTowerText", serif; font-synthesis: weight; }
 .markdown-content .ff-kai { font-family: KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; }
 .markdown-content .ff-min { font-family: "Source Han Serif JP", "MS Mincho", serif; }

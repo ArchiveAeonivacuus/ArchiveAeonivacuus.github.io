@@ -45,7 +45,7 @@
           class: "footnote-backref",
           role: "doc-backlink",
           "aria-label": "返回正文",
-        ), "↩"))
+        ), "↑"))
       }
     ]
   ]

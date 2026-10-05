@@ -181,7 +181,7 @@
 #let ja(body) = font-span("ff-ja", "Source Han Serif JP", body)
 #let old-ja(body) = font-span("ff-ja_old", "Asebi Mincho", body)
 #let ong(body) = font-span("ff-ong", "Old English Onglisch", body)
-#let ipa(body) = font-span("ff-en", "Source Serif 4", body)
+#let ipa(body) = font-span("ff-en", ("Source Serif 4", "Asebi Mincho"), body)
 #let latin(body) = font-span("ff-rom", ("High Tower Text", "Source Serif 4"), body)
 #let zh(body) = font-span("ff-zh_cn", "Noto Serif SC", body)
 #let old-cjk(body) = font-span("ff-cjk_old", ("Source Han Serif Old Style", "Noto Serif SC"), body)

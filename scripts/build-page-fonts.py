@@ -110,6 +110,9 @@ def page_families(text, lang):
     for name, family in CLASS_FAMILY.items():
         if name in classes:
             families.add(family)
+    if "ff-en" in classes:
+        # Source Serif 4 lacks IPA extensions; Asebi has them.
+        families.add("Asebi Mincho")
     if {"poem", "ci", "spellcard"} & classes:
         families.add("KaiTi")
     if "waka" in classes:
