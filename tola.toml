@@ -37,10 +37,9 @@ no_fouc = true
 # CSS stylesheet paths (relative to site root).
 styles = ["assets/styles/fonts.css", "assets/styles/photoswipe.css", "assets/styles/fuwari.css"]
 # Script entries (relative to site root).
-scripts = ["assets/scripts/fuwari.js"]
+scripts = [{ path = "assets/scripts/iconify.min.js", defer = true }, { path = "assets/scripts/fuwari.js", defer = true }]
 # Raw HTML elements to insert into head.
 elements = [
-  "<script src=\"https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js\"></script>",
   "<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/assets/favicon/favicon-light-32.png\" media=\"(prefers-color-scheme: light)\">",
   "<link rel=\"icon\" type=\"image/png\" sizes=\"128x128\" href=\"/assets/favicon/favicon-light-128.png\" media=\"(prefers-color-scheme: light)\">",
   "<link rel=\"icon\" type=\"image/png\" sizes=\"180x180\" href=\"/assets/favicon/favicon-light-180.png\" media=\"(prefers-color-scheme: light)\">",

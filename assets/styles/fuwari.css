@@ -1,5 +1,6 @@
-@import url("https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Medium.min.css");
-@import url("https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Bold.min.css");
+/* MiSans was loaded via jsDelivr @import (render-blocking, often blocked in
+   China). The body font is Source Han Serif now, so MiSans is just an optional
+   local fallback — no remote @import. */
 
 :root {
   color-scheme: light;
