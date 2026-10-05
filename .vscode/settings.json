@@ -1,21 +1,14 @@
 {
-	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "biomejs.biome",
-	"[javascript]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[javascriptreact]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"editor.codeActionsOnSave": {
-		"source.fixAll.biome": "explicit"
-	},
-	"frontMatter.dashboard.openOnStart": false,
-	"diffEditor.renderSideBySide": true
+  "tinymist.rootPath": "${workspaceFolder}",
+  "tinymist.fontPaths": [
+    "${workspaceFolder}/fonts-pdf"
+  ],
+  "tinymist.systemFonts": false,
+  "tinymist.typstExtraArgs": [
+    "--features=html",
+    "--package-path=${workspaceFolder}/.tola/packages"
+  ],
+  "tinymist.projectResolution": "singleFile",
+  "tinymist.exportTarget": "paged",
+  "tinymist.lint.enabled": false
 }

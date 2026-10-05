@@ -1,154 +1,189 @@
-# 🍥Fuwari  
-![Node.js >= 20](https://img.shields.io/badge/node.js-%3E%3D20-brightgreen) 
-![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue) 
-[![DeepWiki](https://img.shields.io/badge/DeepWiki-saicaca%2Ffuwari-blue.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAyCAYAAAAnWDnqAAAAAXNSR0IArs4c6QAAA05JREFUaEPtmUtyEzEQhtWTQyQLHNak2AB7ZnyXZMEjXMGeK/AIi+QuHrMnbChYY7MIh8g01fJoopFb0uhhEqqcbWTp06/uv1saEDv4O3n3dV60RfP947Mm9/SQc0ICFQgzfc4CYZoTPAswgSJCCUJUnAAoRHOAUOcATwbmVLWdGoH//PB8mnKqScAhsD0kYP3j/Yt5LPQe2KvcXmGvRHcDnpxfL2zOYJ1mFwrryWTz0advv1Ut4CJgf5uhDuDj5eUcAUoahrdY/56ebRWeraTjMt/00Sh3UDtjgHtQNHwcRGOC98BJEAEymycmYcWwOprTgcB6VZ5JK5TAJ+fXGLBm3FDAmn6oPPjR4rKCAoJCal2eAiQp2x0vxTPB3ALO2CRkwmDy5WohzBDwSEFKRwPbknEggCPB/imwrycgxX2NzoMCHhPkDwqYMr9tRcP5qNrMZHkVnOjRMWwLCcr8ohBVb1OMjxLwGCvjTikrsBOiA6fNyCrm8V1rP93iVPpwaE+gO0SsWmPiXB+jikdf6SizrT5qKasx5j8ABbHpFTx+vFXp9EnYQmLx02h1QTTrl6eDqxLnGjporxl3NL3agEvXdT0WmEost648sQOYAeJS9Q7bfUVoMGnjo4AZdUMQku50McDcMWcBPvr0SzbTAFDfvJqwLzgxwATnCgnp4wDl6Aa+Ax283gghmj+vj7feE2KBBRMW3FzOpLOADl0Isb5587h/U4gGvkt5v60Z1VLG8BhYjbzRwyQZemwAd6cCR5/XFWLYZRIMpX39AR0tjaGGiGzLVyhse5C9RKC6ai42ppWPKiBagOvaYk8lO7DajerabOZP46Lby5wKjw1HCRx7p9sVMOWGzb/vA1hwiWc6jm3MvQDTogQkiqIhJV0nBQBTU+3okKCFDy9WwferkHjtxib7t3xIUQtHxnIwtx4mpg26/HfwVNVDb4oI9RHmx5WGelRVlrtiw43zboCLaxv46AZeB3IlTkwouebTr1y2NjSpHz68WNFjHvupy3q8TFn3Hos2IAk4Ju5dCo8B3wP7VPr/FGaKiG+T+v+TQqIrOqMTL1VdWV1DdmcbO8KXBz6esmYWYKPwDL5b5FA1a0hwapHiom0r/cKaoqr+27/XcrS5UwSMbQAAAABJRU5ErkJggg==)](https://deepwiki.com/saicaca/fuwari)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari?ref=badge_shield&issueType=license)
+# SakiMidare's Blog
 
-A static blog template built with [Astro](https://astro.build).
+基于 **Tola + Typst** 重建的个人博客，从 [Fuwari](https://github.com/saicaca/fuwari)（Astro 主题）迁移而来。内容用 Typst 编写，构建期生成静态 HTML、RSS、Sitemap、Pagefind 索引以及每页的 PDF。
 
-[**🖥️ Live Demo (Vercel)**](https://fuwari.vercel.app)
+## 技术栈
 
-![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png)
+| 环节 | 方案 |
+| --- | --- |
+| 站点生成 | Tola 0.7.1 + Typst |
+| 页面结构 | Typst 模板（`templates/`） |
+| 样式 | 手写 CSS（OKLCH 设计令牌，无框架） |
+| 客户端 | 原生 TypeScript（esbuild 打包） |
+| 增量导航 | Swup |
+| 全文搜索 | Pagefind |
+| 图片灯箱 | PhotoSwipe |
+| 评论 | Giscus |
+| PDF | Typst CLI |
 
-🌏 README in
-[**中文**](https://github.com/saicaca/fuwari/blob/main/docs/README.zh-CN.md) /
-[**日本語**](https://github.com/saicaca/fuwari/blob/main/docs/README.ja.md) /
-[**한국어**](https://github.com/saicaca/fuwari/blob/main/docs/README.ko.md) /
-[**Español**](https://github.com/saicaca/fuwari/blob/main/docs/README.es.md) /
-[**ไทย**](https://github.com/saicaca/fuwari/blob/main/docs/README.th.md) /
-[**Tiếng Việt**](https://github.com/saicaca/fuwari/blob/main/docs/README.vi.md) /
-[**Bahasa Indonesia**](https://github.com/saicaca/fuwari/blob/main/docs/README.id.md) (Provided by the community and may not always be up-to-date)
+## 功能
 
-## ✨ Features
+- **内容**：Typst 编写，支持代码高亮与行号、Admonition、GitHub 卡片、链接卡片、表格、数学公式、删除线
+- **页面**：首页、文章、归档时间轴、关于、友链、404（内嵌 T-Rex dino 小游戏，TypeScript 重构自 Chromium offline runner）
+- **归档筛选**：按标签 / 分类 / 未分类筛选
+- **搜索**：Pagefind 全文索引，客户端防抖检索
+- **目录**：客户端生成锚点与层级徽章，滚动高亮、自动跟随
+- **主题**：亮色 / 暗色 / 跟随系统，可调主题色（hue），持久化到 localStorage
+- **交互**：Swup 无刷新跳转、PhotoSwipe 灯箱、代码复制、返回顶部、移动端菜单
+- **动效**：Banner 首页/内页切换与裁切、侧栏 sticky、初次进入错峰动画，遵循 `prefers-reduced-motion`
+- **SEO**：RSS、Sitemap、Sitemap 索引、robots.txt、Open Graph / Twitter Card、favicon
+- **PDF**：每页构建期生成，文章页提供下载按钮
 
-- [x] Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com)
-- [x] Smooth animations and page transitions
-- [x] Light / dark mode
-- [x] Customizable theme colors & banner
-- [x] Responsive design
-- [x] Search functionality with [Pagefind](https://pagefind.app/)
-- [x] [Markdown extended features](https://github.com/saicaca/fuwari?tab=readme-ov-file#-markdown-extended-syntax)
-- [x] Table of contents
-- [x] RSS feed
+## 目录结构
 
-## 🚀 Getting Started
-
-1. Create your blog repository:
-    - [Generate a new repository](https://github.com/saicaca/fuwari/generate) from this template or fork this repository.
-    - Or run one of the following commands:
-       ```sh
-       npm create fuwari@latest
-       yarn create fuwari
-       pnpm create fuwari@latest
-       bun create fuwari@latest
-       deno run -A npm:create-fuwari@latest
-       ```
-2. To edit your blog locally, clone your repository, run `pnpm install` to install dependencies.
-    - Install [pnpm](https://pnpm.io) `npm install -g pnpm` if you haven't.
-3. Edit the config file `src/config.ts` to customize your blog.
-4. Run `pnpm new-post <filename>` to create a new post and edit it in `src/content/posts/`.
-5. Deploy your blog to Vercel, Netlify, GitHub Pages, etc. following [the guides](https://docs.astro.build/en/guides/deploy/). You need to edit the site configuration in `astro.config.mjs` before deployment.
-
-## 📝 Frontmatter of Posts
-
-```yaml
----
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
-image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
-draft: false
-lang: ja             # Set only if the post's language differs from the site's language in `config.ts`
-translate_key: my-first-blog-post   # Shared by all language versions of the same post; enables the language switcher
----
+```
+.
+├── content/                # Typst 内容源
+│   ├── index.typ           # 首页
+│   ├── archive.typ         # 归档
+│   ├── about.typ           # 关于
+│   ├── friends.typ         # 友链
+│   ├── 404.typ
+│   └── posts/              # 文章
+├── templates/
+│   ├── fuwari.typ          # 入口（barrel，再导出以下模块）
+│   ├── layout.typ          # 站点框架：导航、侧栏、Banner、页脚、TOC、SEO、PDF 排版
+│   ├── post.typ            # 文章页与文章卡片
+│   ├── components.typ      # 内容组件：quote-block、ruby、admonition、github/link 卡片等
+│   ├── archive.typ         # 归档时间轴
+│   └── tola.typ            # Tola 基础模板（自动生成，勿改）
+├── assets/
+│   ├── styles/             # fuwari.css、photoswipe.css
+│   ├── scripts/            # TypeScript 模块（入口 fuwari.ts）
+│   ├── images/             # 头像、Banner
+│   ├── favicon/
+│   ├── posts/              # 文章图片
+│   └── robots.txt
+├── scripts/
+│   ├── migrate-posts.mjs       # Markdown → Typst 转换器
+│   ├── build-pdf.mjs           # 逐页生成 PDF
+│   └── postprocess-sitemap.mjs # sitemap 清理与索引
+├── utils/tola.typ          # Tola 工具函数（自动生成，勿改）
+├── tola.toml               # 站点与构建配置
+└── package.json
 ```
 
-## 🧩 Markdown Extended Syntax
+## 环境要求
 
-In addition to Astro's default support for [GitHub Flavored Markdown](https://github.github.com/gfm/), several extra Markdown features are included:
+- [Tola](https://github.com/tola-rs/tola-ssg) 0.7.1+
+- [Typst](https://typst.app/) CLI（生成 PDF 需要）
+- Node.js 20+ 与 pnpm
 
-- Admonitions ([Preview and Usage](https://fuwari.vercel.app/posts/markdown-extended/#admonitions))
-- GitHub repository cards ([Preview and Usage](https://fuwari.vercel.app/posts/markdown-extended/#github-repository-cards))
-- Enhanced code blocks with Expressive Code ([Preview](https://fuwari.vercel.app/posts/expressive-code/) / [Docs](https://expressive-code.com/))
+## 开发
 
-### 本站自定义写作语法
-
-**注音（ruby）** —— 用 `{基字|注音}`，可写多字：
-
-```markdown
-# 提灯于{赭|zhě}穹之下
-{妮媧利亜|ニヴァーリア}   →   <ruby>妮媧利亜<rt>ニヴァーリア</rt></ruby>
+```bash
+pnpm install
+pnpm build:client   # 打包客户端脚本
+tola serve          # 本地预览 http://127.0.0.1:5277
 ```
 
-**行内字体** —— 用 `:指令[文本]`：
+## 构建
 
-| 指令 | 字体 | 指令 | 字体 |
-|:--|:--|:--|:--|
-| `:ong[…]` | Old English Onglisch | `:ja[…]` | Source Han Serif JP |
-| `:ja_old[…]` | Asebi Mincho | `:cjk_old[…]` | Source Han Serif Old |
-| `:dfkai[…]` | DFKai-SB | `:en[…]` | Times New Roman |
-| `:rom[…]` | HighTowerText | `:kai[…]` | KaiTi |
-| `:min[…]` | MS Mincho | `:zh_cn[…]` | Source Han Serif SC |
-
-**诗/词盒子** —— 用容器指令（等价于 `<div class="…">`）：
-
-```markdown
-:::shi        ← 诗（居中；中日文页面自动用楷体）
-雾霭飘自诃古棱，<br>
-暮色时分尽染红。
-:::
-
-:::ci / :::spellcard / :::poem / :::waka
+```bash
+pnpm build
 ```
 
-**链接卡片** —— 单行叶子指令，只有 `href` 必填；`title` 默认域名，`avatar` 默认站点 favicon：
+依次执行：
 
-```markdown
-::card{href="https://example.com" title="标题" avatar="头像URL" desc="纯文本描述"}
+1. `build:client` — esbuild 打包 `assets/scripts/fuwari.ts` → `fuwari.js`
+2. `build:dino` — esbuild 打包 404 的 T-Rex 游戏 → `dino.js`
+3. `build:site` — `tola build --clean` 生成 HTML、RSS、Sitemap
+4. `build:404` — 复制 `404/index.html` → `404.html`
+5. `build:sitemap` — 移除 404、补全 `lastmod`、生成 `sitemap-index.xml`
+6. `build:search` — Pagefind 建立全文索引
+7. `build:pdf` — 用 Typst 为每页生成 PDF（若存在 `assets/fonts/` 则以其作为字体路径）
+
+校验：
+
+```bash
+pnpm check   # tsc --noEmit + tola validate（链接与资源）
 ```
 
-> ⚠️ `{…}` 与 `:指令[…]` 只在普通 Markdown 中解析。在原始 HTML 区块（`<table>`、`<div>`、独占一行的 `<span>`、`<!-- -->`）内不会解析，那里请改用 `<ruby>` 或 `<span class="ff-ong">`（类名与上表指令一一对应，如 `:ong` ↔ `ff-ong`）。
+输出目录为 `public/`（已在 `.gitignore` 中忽略）。
 
-**多语言**：同一篇文章的各语言版本共享 `translate_key`，页面会自动出现语言切换条。
+## 写作
 
-### 字体（按用字子集，自托管）
+新建 `content/posts/<slug>.typ`：
 
-- 源字体放在 `fonts-src/`（**不参与部署**）。
-- `pnpm fonts` 会扫描 `src/content`、`src/i18n`、`src/config.ts` 里实际用到的字，
-  为每个字重生成**一个** woff2（正文全量子集 + 粗体仅标题/strong 用字），写入
-  `public/fonts/web/` 和 `src/generated/fonts.ts`。
-- 生成结果需要提交。**Vercel/CI 只跑 `pnpm build`，不依赖 Python**；只有新增内容引入新字符时，才需要在本地重跑 `pnpm fonts` 并提交。
-- 正文思源宋体提供 **400/700 真粗体**；Asebi / KaiTi / DFKai / Onglisch / HighTower 只有单一字重，出于排版考量，接受伪粗体。
-- 相比旧的按 Unicode 区块分片（一页 80+ 请求、近 10MB），现在通常一页只需 1~2 个字体请求。
+```typst
+#import "/templates/fuwari.typ": post
 
-## ⚡ Commands
+#show: post.with(
+  title: "标题",
+  date: "2026-10-05",
+  summary: "摘要",
+  tags: ("Tag",),
+  category: "Journals",
+)
 
-All commands are run from the root of the project, from a terminal:
+正文……
+```
 
-| Command                    | Action                                              |
-|:---------------------------|:----------------------------------------------------|
-| `pnpm install`             | Installs dependencies                               |
-| `pnpm dev`                 | Starts local dev server at `localhost:4321`         |
-| `pnpm build`               | Build your production site to `./dist/`             |
-| `pnpm preview`             | Preview your build locally, before deploying        |
-| `pnpm check`               | Run checks for errors in your code                  |
-| `pnpm format`              | Format your code using Biome                        |
-| `pnpm lint`                | Lint and auto-fix code using Biome                  |
-| `pnpm new-post <filename>` | Create a new post (`--lang` `--translate-key` `--category` `--tags` `--title`) |
-| `pnpm new-translation <base-slug> <lang>` | Create a translation by cloning the base post's front-matter |
-| `pnpm migrate [--dry-run]` | Convert old `<ruby>` / inline font styles to the shorthand syntax |
-| `pnpm fonts`               | Regenerate web-font subsets from `fonts-src/` (needs Python + fonttools) |
-| `pnpm astro ...`           | Run CLI commands like `astro add`, `astro check`    |
-| `pnpm astro --help`        | Get help using the Astro CLI                        |
+字数与阅读时长由构建期脚本自动统计（`scripts/build-stats.mjs` → `templates/stats.json`），无需在元数据里手写；如需覆盖可显式传 `words` / `minutes`。
 
-## ✏️ Contributing
+代码块使用 Typst 原生围栏（自动语法高亮）：
 
-Check out the [Contributing Guide](https://github.com/saicaca/fuwari/blob/main/CONTRIBUTING.md) for details on how to contribute to this project.
+````markdown
+```c
+int main(void) { return 0; }
+```
+````
 
-## 📄 License
+其他可用组件（在 `/templates/components.typ`，也可继续从 `/templates/fuwari.typ` 导入）：`admonition`、`quote-block`、`ruby`、`github-card`、`link-card`、`content-image`、`hr-line`、`empty-note`、`card-list`、`anchor`。
 
-This project is licensed under the MIT License.
+## 从 Fuwari 迁移
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari?ref=badge_large&issueType=license)
+原 Astro 文章通过 `scripts/migrate-posts.mjs` 自动转换为 Typst：
+
+```bash
+node scripts/migrate-posts.mjs
+```
+
+覆盖标题、段落、强调、删除线、链接、图片、列表、引用、表格、代码块（原生围栏）、数学公式、Admonition、GitHub / 链接卡片、站内锚点，并复制文章本地图片。
+
+## 部署
+
+`public/` 为纯静态产物，可部署到任意静态托管。
+
+构建依赖 **Tola** 与 **Typst CLI**。托管平台若没有预装，可在构建阶段自动下载官方二进制（见 `scripts/vercel-setup.sh`）。
+
+部署前请确认 `tola.toml` 中的 `site.info.url` 已设置为线上地址。
+
+### Vercel
+
+**`scripts/vercel-setup.sh`** 会把 Tola、Typst 以及 PDF 所需的中文字体（思源宋体 Noto Serif SC、JetBrains Mono）下载到 `./bin` 与 `assets/fonts`。
+
+```json
+{
+  "installCommand": "pnpm install",
+  "buildCommand": "bash scripts/vercel-setup.sh && PATH=$PWD/bin:$PATH pnpm run build",
+  "outputDirectory": "public"
+}
+```
+
+**方式一：Git 集成（推荐）**
+
+1. 打开 <https://vercel.com/new>，导入 `sakimidare/tola-blog`
+2. Framework Preset 选 **Other**（Vercel 会自动读取 `vercel.json`）
+3. 直接 Deploy；之后每次 push 到 `main` 会自动构建
+
+**方式二：CLI**
+
+```bash
+pnpm add -g vercel
+vercel login
+vercel link          # 关联项目
+vercel --prod        # 生产部署
+```
+
+**自定义域名**：在 Vercel 项目的 Settings → Domains 绑定域名，并把 `tola.toml` 的 `site.info.url` 改为该域名（影响 sitemap / RSS / OG 的绝对地址）。
+
+### 其他平台
+
+- **GitHub Pages / Cloudflare Pages**：同样在构建命令前安装 Tola 与 Typst，输出目录设为 `public`
+- **无构建环境**：本地 `pnpm build` 后，将 `public/` 作为静态站点直接上传
+
+## 致谢与许可
+
+- 主题与交互设计参考 [Fuwari](https://github.com/saicaca/fuwari)（MIT License，Copyright © 2024 saicaca）
+- 站点内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可

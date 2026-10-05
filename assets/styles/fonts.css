@@ -1,0 +1,17 @@
+/* Web fonts for the archive (ArchiveAeonivacuus) component set.
+   Subsetted woff2 files live in /assets/webfonts/ (committed to the repo). */
+
+@font-face {font-family:'Source Han Serif SC';src:local('Source Han Serif SC'),local('Source Han Serif CJK SC'),url('/assets/webfonts/source-han-serif-sc-400-normal.05b58dfa.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap;}
+@font-face {font-family:'Source Han Serif SC';src:local('Source Han Serif SC Bold'),local('Noto Serif CJK SC Bold'),url('/assets/webfonts/source-han-serif-sc-700-normal.8661d31a.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap;}
+@font-face {font-family:'Source Han Serif JP';src:local('Source Han Serif JP'),local('Source Han Serif CJK JP'),url('/assets/webfonts/source-han-serif-jp-400-normal.0deca4f8.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap;}
+@font-face {font-family:'Source Han Serif JP';src:local('Source Han Serif JP Bold'),local('Noto Serif CJK JP Bold'),url('/assets/webfonts/source-han-serif-jp-700-normal.e56d5b73.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap;}
+@font-face {font-family:'Source Han Serif Old';src:local('Source Han Serif Old'),url('/assets/webfonts/source-han-serif-old-400-normal.31024d8f.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap;}
+@font-face {font-family:'Asebi Mincho';src:local('Asebi Mincho'),local('馬酔木明朝'),url('/assets/webfonts/asebi-mincho-400-normal.d06a3717.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap;}
+@font-face {font-family:'KaiTi';src:local('KaiTi'),local('楷体'),local('Kaiti SC'),url('/assets/webfonts/kaiti-400-normal.7cd01b4c.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap;}
+@font-face {font-family:'DFKai-SB';src:local('DFKai-SB'),url('/assets/webfonts/dfkai-sb-400-normal.e71a4d63.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap;}
+@font-face {font-family:'Old English Onglisch';src:local('Old English Onglisch'),url('/assets/webfonts/old-english-onglisch-400-normal.e1802840.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap;}
+@font-face {font-family:'HighTowerText';src:url('/assets/webfonts/hightowertext-400-normal.b6af62df.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap;}
+@font-face {font-family:'HighTowerText';src:url('/assets/webfonts/hightowertext-400-italic.26a7c948.woff2') format('woff2');font-weight:400;font-style:italic;font-display:swap;}
+@font-face {font-family:'Source Serif 4';src:local('Source Serif 4'),url('/assets/webfonts/source-serif-4-400-normal.449fd890.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap;}
+@font-face {font-family:'Source Serif 4';src:local('Source Serif 4 Bold'),url('/assets/webfonts/source-serif-4-700-normal.d0315b3d.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap;}
+@font-face {font-family:'Source Serif 4';src:local('Source Serif 4 Italic'),url('/assets/webfonts/source-serif-4-400-italic.2d03619b.woff2') format('woff2');font-weight:400;font-style:italic;font-display:swap;}

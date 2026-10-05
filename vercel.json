@@ -1,29 +1,6 @@
 {
-	"rewrites": [
-		{ "source": "/sitemap-index.xml", "destination": "/sitemap-index.xml" }
-	],
-	"headers": [
-		{
-			"source": "/sitemap-index.xml",
-			"headers": [{ "key": "Content-Type", "value": "application/xml" }]
-		},
-		{
-			"source": "/_astro/(.*)",
-			"headers": [
-				{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-			]
-		},
-		{
-			"source": "/fonts/web/(.*)",
-			"headers": [
-				{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-			]
-		},
-		{
-			"source": "/pagefind/(.*)",
-			"headers": [
-				{ "key": "Cache-Control", "value": "public, max-age=86400" }
-			]
-		}
-	]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "pnpm install",
+  "buildCommand": "bash scripts/vercel-setup.sh && PATH=$PWD/bin:$PATH pnpm run build",
+  "outputDirectory": "public"
 }

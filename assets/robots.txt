@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sakimidare.top/sitemap.xml
+Sitemap: https://sakimidare.top/sitemap-index.xml

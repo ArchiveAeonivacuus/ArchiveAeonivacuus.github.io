@@ -1,0 +1,99 @@
+# Tola configuration file (v0.7.1)
+# https://github.com/tola-rs/tola-ssg
+
+# Site metadata for feed generation and Typst templates
+# Access in Typst via `#import "@tola/site:0.0.0": info`
+# For custom fields, use `[site.info.extra]` and access via `info.extra.xxx`
+[site.info]
+title = "Archive Aeonivacuus"  # Site title
+author = "Archive Aeonivacuus"  # Author name
+email = "1187625889@qq.com"  # Author email
+description = "漫步远乡 / ゑんきやうにありく"  # Site description
+url = "https://sakimidare.top/"  # Site URL, path used as prefix (e.g., "https://example.com/blog/docs")
+language = "zh-Hans"  # Language code (e.g., "en", "zh-Hans")
+copyright = ""  # Copyright notice
+
+# SEO configuration containing feed, sitemap, and OG tag settings
+[site.seo]
+auto_og = false  # Auto-inject OG meta tags (can be overridden in Typst)
+
+# Feed generation settings (RSS/Atom)
+[site.seo.feed]
+enable = true  # Enable feed generation
+path = "feed.xml"  # Output path for feed file
+format = "rss"  # Feed format: rss | atom
+
+# Sitemap generation settings
+[site.seo.sitemap]
+enable = true  # Enable sitemap generation
+path = "sitemap.xml"  # Output path for sitemap file
+
+[site.header]
+# Inject a dummy script to prevent FOUC (Flash of Unstyled Content).
+# The script blocks rendering briefly, giving CSS time to load.
+no_fouc = true
+# Favicon path (relative to site root).
+# icon = ""
+# CSS stylesheet paths (relative to site root).
+styles = ["assets/styles/fonts.css", "assets/styles/photoswipe.css", "assets/styles/fuwari.css"]
+# Script entries (relative to site root).
+scripts = ["assets/scripts/fuwari.js"]
+# Raw HTML elements to insert into head.
+elements = [
+  "<script src=\"https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js\"></script>",
+  "<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/assets/favicon/favicon-light-32.png\" media=\"(prefers-color-scheme: light)\">",
+  "<link rel=\"icon\" type=\"image/png\" sizes=\"128x128\" href=\"/assets/favicon/favicon-light-128.png\" media=\"(prefers-color-scheme: light)\">",
+  "<link rel=\"icon\" type=\"image/png\" sizes=\"180x180\" href=\"/assets/favicon/favicon-light-180.png\" media=\"(prefers-color-scheme: light)\">",
+  "<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/assets/favicon/favicon-light-192.png\" media=\"(prefers-color-scheme: light)\">",
+  "<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/assets/favicon/favicon-dark-32.png\" media=\"(prefers-color-scheme: dark)\">",
+  "<link rel=\"icon\" type=\"image/png\" sizes=\"128x128\" href=\"/assets/favicon/favicon-dark-128.png\" media=\"(prefers-color-scheme: dark)\">",
+  "<link rel=\"icon\" type=\"image/png\" sizes=\"180x180\" href=\"/assets/favicon/favicon-dark-180.png\" media=\"(prefers-color-scheme: dark)\">",
+  "<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/assets/favicon/favicon-dark-192.png\" media=\"(prefers-color-scheme: dark)\">",
+  "<script>(function(){var d=document.documentElement;var p=location.pathname;if(p==='/'||p==='')d.classList.add('is-home');var t='auto';try{t=localStorage.getItem('theme')||'auto';}catch(e){}if(t!=='light'&&t!=='dark')t='auto';d.dataset.theme=t;var dark=t==='dark'||(t==='auto'&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(dark)d.classList.add('dark');else d.classList.remove('dark');try{var h=localStorage.getItem('hue');if(h)d.style.setProperty('--hue',h);}catch(e){}})();</script>",
+  "<link rel=\"sitemap\" type=\"application/xml\" title=\"Sitemap\" href=\"/sitemap.xml\">",
+  "<link rel=\"alternate\" type=\"application/rss+xml\" title=\"SakiMidare's Blog\" href=\"/feed.xml\">"
+]
+
+[build.assets]
+# Nested directories (preserve structure).
+# Each directory is copied to `output/{basename}/`.
+# Files inside can be referenced as `/{basename}/path/to/file`.
+# Examples:
+# - `"assets"` -> `/assets/xxx`
+# - `"assets/styles"` -> `/styles/xxx`
+# - `{ dir = "vendor", as = "lib" }` -> `/lib/xxx`
+nested = ["assets"]
+# Flatten files (copy to output root).
+# Each file is copied directly to `output/{basename}`.
+# Examples:
+# - `"assets/CNAME"` -> `/CNAME`
+# - `{ file = "icons/fav.ico", as = "favicon.ico" }` -> `/favicon.ico`
+flatten = ["assets/robots.txt", "assets/google925bd1455c0bdd84.html"]
+
+# CSS processor hook (Only tailwind now)
+[build.hooks.css]
+enable = false  # Enable Tailwind CSS processing
+# Output asset path (also used as Tailwind input file location)
+# path = ""  # e.g. "assets/style/tailwind.css"
+command = ["tailwindcss"]  # e.g. ["npx", "tailwindcss"] if you want
+
+# Development server settings
+[serve]
+# Network interface to bind
+# - `127.0.0.1` (default): localhost only
+# - `0.0.0.0`: all interfaces (LAN accessible)
+interface = "127.0.0.1"
+port = 5277  # HTTP port number
+watch = true  # Enable file watcher for live reload
+# Respect path_prefix from site.url during local development
+# - `false` (default): Ignore prefix, access pages at `/`
+# - `true`: Keep prefix, access at `/my-project/`
+respect_prefix = false
+
+[validate.pages]
+enable = true  # Enable page link validation
+level = "error"  # Failure level: error | warn
+
+[validate.assets]
+enable = true  # Enable asset validation
+level = "error"  # Failure level: error | warn
