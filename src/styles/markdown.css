@@ -68,7 +68,8 @@
         margin: 1rem 0;
         padding: 1rem 1.25rem;
         border-radius: 0.75rem;
-        background: var(--codeblock-bg);
+        background: var(--inline-code-bg);
+        color: var(--tw-prose-body);
     }
 
     pre:not(.expressive-code pre) > code {
@@ -78,7 +79,7 @@
         overflow: visible;
         border-radius: 0;
         background: transparent;
-        color: inherit;
+        color: var(--tw-prose-body);
         line-height: 1.5rem;
         white-space: pre;
     }
@@ -90,6 +91,25 @@
         border-radius: 0;
         background: transparent;
         font-weight: inherit;
+    }
+
+    /* Typst HTML 会输出内联高亮颜色；这些颜色按亮色背景生成，暗色主题
+       由正文颜色兜底，避免黑色 token 在暗色背景上不可见。 */
+    :global(.dark) pre:not(.expressive-code pre) > code,
+    :global(.dark) pre:not(.expressive-code pre) > code > span,
+    :global(.dark) pre:not(.expressive-code pre) > code strong,
+    :global(.dark) pre:not(.expressive-code pre) > code strong > span {
+        color: var(--tw-prose-body) !important;
+    }
+
+    pre.mermaid,
+    .mermaid {
+        overflow-x: auto;
+        margin: 1rem 0;
+        padding: 1rem 1.25rem;
+        border-radius: 0.75rem;
+        background: var(--inline-code-bg);
+        color: var(--tw-prose-body);
     }
 
     pre:not(.expressive-code pre) > code br {

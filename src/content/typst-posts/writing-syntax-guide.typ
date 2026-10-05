@@ -86,6 +86,15 @@
 ]
 ```
 
+#dialogue(speaker: "璃")[
+  你终于来了。
+
+  #poem[
+    雾霭飘自诃古棱。\
+    暮色时分尽染红。
+  ]
+]
+
 `speaker` 是人物名。正文可以包含段落、诗词、脚注和提示框。
 
 == 五、提示框
@@ -95,7 +104,9 @@
   提示内容。
 ]
 ```
-
+#aside(kind: "note", title: "自定义标题")[
+  提示内容。
+]
 `kind` 可使用 `note`、`tip`、`important`、`warning`、`caution`。省略 `title` 时使用类型名。
 
 == 六、链接卡片
@@ -124,12 +135,20 @@ GitHub 简写：
 == 七、脚注、链接、图片与分隔线
 
 ```typst
-正文#footnote[脚注内容。]
+#footnote[脚注内容。]
 #link("https://typst.app")[Typst]
 #web-image(src: "/images/example.png", alt: "替代文本")
+#image("../../../public/images/NotFound.png")
 #caption[图一　示例图]
 #divider()
 ```
+
+#footnote[脚注内容。]
+#link("https://typst.app")[Typst]
+#web-image(src: "/images/example.png", alt: "替代文本")
+#image("../../../public/images/NotFound.png")
+#caption[图一　示例图]
+#divider()
 
 脚注在网页中提供回跳，在 PDF 中使用原生脚注。以 `/images/` 开头的 Web URL 在 PDF 预览中会略去；可随 PDF 编译的图片应直接使用 `image()`。
 
@@ -143,6 +162,12 @@ GitHub 简写：
 )
 ```
 
+#data-table(
+  columns: 3,
+  [名称], [中文], [读音],
+  [Aa], [字母 A], [/a/],
+)
+
 `#data-table` 同时支持网页和 PDF。网页端宽表格可横向滚动。不要在文章正文直接调用 `html.elem("table")`。
 
 == 九、图题、演员表与 Mermaid
@@ -152,6 +177,10 @@ GitHub 简写：
 #cast-list[璃：采花妖；风见博之：阴阳武士。]
 #mermaid("graph TD; A --> B")
 ```
+
+#caption[图一　示例图]
+#cast-list[璃：采花妖；风见博之：阴阳武士。]
+#mermaid("graph TD; A --> B")
 
 Mermaid 在 PDF 中以原始代码显示；复杂图建议导出成图片。
 
