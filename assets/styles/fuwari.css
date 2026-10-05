@@ -248,7 +248,7 @@ html.is-home .sidebar-sticky { top: calc(1rem - (var(--banner-home) - var(--bann
 .post-pdf:hover { background: var(--btn-regular-bg-hover); transform: translateY(-1px); }
 .post-pdf .icon { font-size: 1.1rem; }
 .post-cover { display: block; width: 100%; max-height: 32rem; margin: .5rem 0 2rem; border-radius: .75rem; object-fit: cover; cursor: zoom-in; }
-.markdown-content { color: var(--text-75); font-family: "Source Han Serif SC", "Source Han Serif JP", MiSans, "Noto Serif SC", serif; }
+.markdown-content { color: var(--text-75); }
 .markdown-content ul, .markdown-content ol { margin: 1rem 0; padding-left: 1.6rem; }
 .markdown-content ul { list-style: disc; }
 .markdown-content ol { list-style: decimal; }
@@ -556,12 +556,13 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 .footnotes li::marker { color: var(--primary); font-weight: 700; }
 .markdown-content a.footnote-backref { margin-left: .35rem !important; }
 
-/* Per-language article fonts (Archive translations). */
-#post-container[data-lang="en"] .markdown-content, #post-container[data-lang="en"] .post-header h1 { font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", serif; }
-#post-container[data-lang="ja"] .markdown-content, #post-container[data-lang="ja"] .post-header h1 { font-family: "Source Han Serif JP", "Source Han Serif SC", serif; }
-#post-container[data-lang="zh_TW"] .markdown-content, #post-container[data-lang="zh_TW"] .post-header h1 { font-family: "Source Han Serif SC", "Source Han Serif JP", serif; }
-#post-container[data-lang="ong"] .markdown-content, #post-container[data-lang="ong"] .post-header h1 { font-family: "Old English Onglisch", "Source Serif 4", "Source Han Serif SC", serif; }
-#post-container[data-lang="A-zh_iang"] .markdown-content, #post-container[data-lang="A-zh_iang"] .post-header h1 { font-family: "Source Han Serif JP", "Source Han Serif SC", serif; }
+/* The whole page — chrome included — follows the article's language font. */
+.site-shell { font-family: "Source Han Serif SC", "Source Han Serif JP", MiSans, Roboto, system-ui, sans-serif; }
+.site-shell[data-lang="en"] { font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", serif; }
+.site-shell[data-lang="ja"] { font-family: "Source Han Serif JP", "Source Han Serif SC", serif; }
+.site-shell[data-lang="zh_TW"] { font-family: "Source Han Serif SC", "Source Han Serif JP", serif; }
+.site-shell[data-lang="ong"] { font-family: "Old English Onglisch", "Source Serif 4", "Source Han Serif SC", serif; }
+.site-shell[data-lang="A-zh_iang"] { font-family: "Source Han Serif JP", "Source Han Serif SC", serif; }
 
 /* Translation switcher. */
 .post-translations { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem; margin: .85rem 0 0; padding: .5rem .75rem; border: 1px solid var(--line-divider); border-radius: .65rem; background: color-mix(in oklch, var(--btn-regular-bg) 55%, transparent); }

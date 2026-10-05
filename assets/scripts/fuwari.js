@@ -7286,6 +7286,8 @@ function resolveKey(lang) {
 }
 function applyI18n() {
   const main = document.querySelector("#swup-container");
+  const shell = document.querySelector(".site-shell");
+  if (shell) shell.dataset.lang = main?.dataset.pageLang ?? "";
   const key = resolveKey(main?.dataset.pageLang);
   const t = data[key] ?? data.zh_CN ?? {};
   document.querySelectorAll("[data-i18n]").forEach((el) => {

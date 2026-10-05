@@ -9,6 +9,7 @@ Usage:
 """
 
 import glob
+import hashlib
 import os
 import re
 from collections import Counter
@@ -132,9 +133,12 @@ def main():
         chunk = max(1, int(TARGET_BYTES / per_char))
         groups = [cps[i : i + chunk] for i in range(0, len(cps), chunk)]
         for index, group in enumerate(groups):
-            name = f"{stem}.{index}.woff2"
-            out = os.path.join(OUT_DIR, name)
-            subset(src, group, out)
+            tmp = os.path.join(OUT_DIR, f"{stem}.{index}.tmp.woff2")
+            subset(src, group, tmp)
+            with open(tmp, "rb") as handle:
+                digest = hashlib.sha1(handle.read()).hexdigest()[:8]
+            name = f"{stem}.{index}.{digest}.woff2"
+            os.replace(tmp, os.path.join(OUT_DIR, name))
             total_files += 1
             rules.append(
                 {

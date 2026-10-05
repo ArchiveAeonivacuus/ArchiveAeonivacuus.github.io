@@ -418,7 +418,7 @@
   let t = ui(lang)
   let view = context {
     if target() == "html" {
-      html.elem("div", attrs: (class: "site-shell", "data-page-kind": if article { "post" } else { "page" }))[
+      html.elem("div", attrs: (class: "site-shell", "data-page-kind": if article { "post" } else { "page" }, "data-lang": if lang == none { "" } else { str(lang) }))[
         #_navbar(t)
         #_banner()
         #html.elem("div", attrs: (class: "main-stage"))[

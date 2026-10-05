@@ -34,6 +34,9 @@ function resolveKey(lang: string | null | undefined): string {
 
 export function applyI18n(): void {
   const main = document.querySelector<HTMLElement>("#swup-container");
+  // The whole page (chrome included) follows the article language font.
+  const shell = document.querySelector<HTMLElement>(".site-shell");
+  if (shell) shell.dataset.lang = main?.dataset.pageLang ?? "";
   const key = resolveKey(main?.dataset.pageLang);
   const t = data[key] ?? data.zh_CN ?? {};
 
