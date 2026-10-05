@@ -14,12 +14,16 @@ import glob
 import hashlib
 import html
 import io
+import logging
 import os
 import re
-import sys
+from multiprocessing import Pool
 
 from fontTools.subset import Options, Subsetter
 from fontTools.ttLib import TTFont
+
+# The "meta NOT subset" notice is printed for every subset; it is harmless.
+logging.getLogger("fontTools").setLevel(logging.ERROR)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PUBLIC = os.path.join(ROOT, "public")
@@ -72,9 +76,8 @@ CLASS_FAMILY = {
     "ff-kai": "KaiTi",
 }
 
-_sources = {}  # source file -> raw bytes (read once)
-_cmaps = {}  # source file -> set of codepoints
-_subsets = {}  # (family, weight, style, chars-hash) -> output file name
+# Per-process caches (each worker keeps its own).
+_sources = {}
 
 
 def source_bytes(name):
@@ -85,11 +88,12 @@ def source_bytes(name):
 
 
 def source_cmap(name):
-    if name not in _cmaps:
+    key = "cmap:" + name
+    if key not in _sources:
         font = TTFont(io.BytesIO(source_bytes(name)), lazy=True)
-        _cmaps[name] = set(font.getBestCmap() or [])
+        _sources[key] = set(font.getBestCmap() or [])
         font.close()
-    return _cmaps[name]
+    return _sources[key]
 
 
 def page_chars(text):
@@ -114,10 +118,6 @@ def page_families(text, lang):
 
 
 def subset_file(family, weight, style, source, unicodes):
-    chars_hash = hashlib.sha1(",".join(map(str, unicodes)).encode()).hexdigest()
-    key = (family, weight, style, chars_hash)
-    if key in _subsets:
-        return _subsets[key]
     font = TTFont(io.BytesIO(source_bytes(source)))
     options = Options()
     options.flavor = "woff2"
@@ -134,12 +134,12 @@ def subset_file(family, weight, style, source, unicodes):
     buf = io.BytesIO()
     font.save(buf)
     font.close()
-    digest = hashlib.sha1(buf.getvalue()).hexdigest()[:10]
+    payload = buf.getvalue()
+    digest = hashlib.sha1(payload).hexdigest()[:10]
     slug = re.sub(r"[^a-z0-9]+", "-", family.lower()).strip("-")
     name = f"{slug}-{weight}-{style}-{digest}.woff2"
     with open(os.path.join(OUT, name), "wb") as handle:
-        handle.write(buf.getvalue())
-    _subsets[key] = name
+        handle.write(payload)
     return name
 
 
@@ -158,6 +158,35 @@ def rules_for_family(family, unicodes):
     return rules
 
 
+def process_page(path):
+    with open(path, encoding="utf-8") as handle:
+        text = handle.read()
+    lang = (re.search(r'class="site-shell"[^>]*data-lang="([^"]*)"', text) or [None, ""])[1]
+    chars = page_chars(text)
+    rules = []
+    for family in sorted(page_families(text, lang)):
+        rules.extend(rules_for_family(family, chars))
+    style_tag = "<style>" + "".join(rules) + "</style>"
+    # Inject inside the Swup container (not <head>) so client-side navigation
+    # swaps the @font-face rules together with the page content.
+    out = re.sub(
+        r'<main id="swup-container"[^>]*>',
+        lambda m: m.group(0) + style_tag,
+        text,
+        count=1,
+    )
+    if out == text:
+        out = re.sub(
+            r'<link rel="stylesheet" href="/assets/styles/fonts\.css[^"]*"\s*/?>',
+            style_tag,
+            text,
+            count=1,
+        )
+        if style_tag not in out:
+            out = text.replace("</head>", style_tag + "</head>", 1)
+    return path, out
+
+
 def main():
     pages = glob.glob(os.path.join(PUBLIC, "**", "*.html"), recursive=True)
     if not pages:
@@ -167,29 +196,15 @@ def main():
     for stale in glob.glob(os.path.join(OUT, "*.woff2")):
         os.remove(stale)
 
-    total_rules = 0
-    for path in pages:
-        with open(path, encoding="utf-8") as handle:
-            text = handle.read()
-        lang = (re.search(r'class="site-shell"[^>]*data-lang="([^"]*)"', text) or [None, ""])[1]
-        chars = page_chars(text)
-        rules = []
-        for family in sorted(page_families(text, lang)):
-            rules.extend(rules_for_family(family, chars))
-        total_rules += len(rules)
-        style_tag = "<style>" + "".join(rules) + "</style>"
-        text = re.sub(
-            r'<link rel="stylesheet" href="/assets/styles/fonts\.css[^"]*"\s*/?>',
-            style_tag,
-            text,
-            count=1,
-        )
-        if style_tag not in text:
-            text = text.replace("</head>", style_tag + "</head>", 1)
+    workers = min(os.cpu_count() or 4, 8)
+    with Pool(processes=workers) as pool:
+        results = pool.map(process_page, pages)
+    for path, text in results:
         with open(path, "w", encoding="utf-8") as handle:
             handle.write(text)
 
-    print(f"[pagefonts] {len(pages)} pages, {total_rules} rules, {len(_subsets)} distinct subsets")
+    files = glob.glob(os.path.join(OUT, "*.woff2"))
+    print(f"[pagefonts] {len(pages)} pages, {len(files)} subsets, {workers} workers")
 
 
 if __name__ == "__main__":

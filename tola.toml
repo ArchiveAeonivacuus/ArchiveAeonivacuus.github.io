@@ -50,7 +50,7 @@ elements = [
   "<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/assets/favicon/favicon-dark-192.png\" media=\"(prefers-color-scheme: dark)\">",
   "<script>(function(){var d=document.documentElement;var p=location.pathname;if(p==='/'||p==='')d.classList.add('is-home');var t='auto';try{t=localStorage.getItem('theme')||'auto';}catch(e){}if(t!=='light'&&t!=='dark')t='auto';d.dataset.theme=t;var dark=t==='dark'||(t==='auto'&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(dark)d.classList.add('dark');else d.classList.remove('dark');try{var h=localStorage.getItem('hue');if(h)d.style.setProperty('--hue',h);}catch(e){}})();</script>",
   "<link rel=\"sitemap\" type=\"application/xml\" title=\"Sitemap\" href=\"/sitemap.xml\">",
-  "<link rel=\"alternate\" type=\"application/rss+xml\" title=\"SakiMidare's Blog\" href=\"/feed.xml\">"
+  "<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Archive Aeonivacuus\" href=\"/feed.xml\">"
 ]
 
 [build.assets]
