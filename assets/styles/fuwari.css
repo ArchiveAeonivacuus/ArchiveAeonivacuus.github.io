@@ -575,3 +575,76 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 .translation-link { padding: .18rem .62rem; border: 1px solid var(--line-divider); border-radius: .5rem; color: var(--text-75); font-size: .85rem; font-weight: 700; transition: color 150ms ease, border-color 150ms ease, background-color 150ms ease; }
 .translation-link:hover { color: var(--primary); border-color: var(--primary); }
 .translation-link.is-current { color: #fff; background: var(--primary); border-color: transparent; pointer-events: none; }
+
+/* ===== Monster Hunter character cards (restored) ===== */
+.mh-hunter, .mh-other {
+  --mh-bg: #f8f5e6;
+  --mh-border: #8b4513;
+  --mh-label-color: #654321;
+  --mh-value-color: #222;
+  background: var(--mh-bg);
+  border: 2px solid var(--mh-border);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  max-width: 720px;
+  color: var(--mh-value-color);
+}
+.mh-hunter > div:not(.mh-title),
+.mh-other > div:not(.mh-title) {
+  position: relative;
+  padding-left: 120px;
+  margin: 8px 0;
+  color: var(--mh-value-color);
+}
+.mh-hunter > div:not(.mh-title)::before,
+.mh-other > div:not(.mh-title)::before {
+  content: attr(data-label) "：";
+  color: var(--mh-label-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 110px;
+  display: block;
+}
+.mh-equipment .armor-box {
+  background: #fff;
+  border: 1px dashed #cfcfcf;
+  padding: 10px;
+  border-radius: 6px;
+}
+.mh-equipment .armor-box > div { margin: 6px 0; }
+.mh-equipment .armor-box > div::before {
+  content: attr(data-part) "：";
+  color: var(--mh-label-color);
+  font-weight: bold;
+  display: inline-block;
+  min-width: 60px;
+  margin-right: 8px;
+}
+.mh-combo {
+  background: #fff8dc;
+  border-left: 3px solid #ffa500;
+  padding: 8px;
+  white-space: pre-line;
+}
+.mh-description {
+  border-top: 1px dashed #8b4513;
+  padding-top: 12px;
+  margin-top: 16px;
+  line-height: 1.5;
+}
+[data-theme="dark"] .mh-hunter,
+[data-theme="dark"] .mh-other {
+  --mh-bg: #2a2418;
+  --mh-border: #8b4513;
+  --mh-label-color: #c9a86a;
+  --mh-value-color: #e0d8c8;
+}
+[data-theme="dark"] .mh-equipment .armor-box { background: #1e1a12; border-color: #5a4a2a; }
+[data-theme="dark"] .mh-combo { background: #2a2418; }
+
+/* Text rotation / right alignment (replacing Typst rotate/align which are ignored in HTML export). */
+.rotate-270 { display: inline-block; transform: rotate(270deg); }
+.align-right { display: block; text-align: right; }

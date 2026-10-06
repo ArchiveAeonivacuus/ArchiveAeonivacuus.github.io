@@ -21,25 +21,78 @@
 也欢迎大家根据小说设定集，或是《怪物猎人 世界》和冰原DLC的内容，再或者其他所有怪物猎人的设定来捉虫！有的内容是经过考量后修改的，应该会在后面注明为什么这么修改；而有的内容则可能单纯是鲁鱼亥豕，或是记忆模糊造成的差错，更有甚者还可能是严重的事实错误等，还请多包涵。期待斧正！
 
 == 人物
-+ 雪泽 阿部缘（#ja[#ruby[雪沢][ゆきさわ] #ruby[阿部縁][アペフチ]]）  仁汨村 人类 太刀 飞龙刀【朱】   火龙S头盔 火龙S铠甲 收磨珠1 火龙S腕甲 收磨珠1 火龙S腰甲 收磨珠1 收磨珠1 火龙S腿甲 收磨珠1 体力Lv2   纵斩连段#linebreak()气刃三连斩连段#linebreak()武士道气刃无双斩连段#linebreak()弱勇气刚气刃斩连段#linebreak()勇气纳刀连段 小说主角。 
++ 雪泽 阿部缘（#ja[#ruby[雪沢][ゆきさわ] #ruby[阿部縁][アペフチ]]）
+  #mh-card(
+    (("出身地", [仁汨村]), ("种族", [人类]), ("武器类型", [太刀]), ("武器", [飞龙刀【朱】])),
+    equipment: (("头甲", [火龙S头盔]), ("胸甲", [火龙S铠甲 收磨珠1]), ("腕甲", [火龙S腕甲 收磨珠1]), ("腰甲", [火龙S腰甲 收磨珠1 收磨珠1]), ("腿甲", [火龙S腿甲 收磨珠1]), ("护石", [体力Lv2])),
+    combo: [纵斩连段#linebreak()气刃三连斩连段#linebreak()武士道气刃无双斩连段#linebreak()弱勇气刚气刃斩连段#linebreak()勇气纳刀连段],
+    desc: [小说主角。],
+  )
 
-+ 平泽 池荣怒（#ja[#ruby[平沢][ひらさわ] #ruby[池容怒][チロンヌㇷ゚]]）  仁汨村 人类 随行调查员 调查时也进行物资采集的工作，来到新大陆后成为了接待员。原先当过骑士，但随行兽蓝速龙被斩龙杀死了。 
++ 平泽 池荣怒（#ja[#ruby[平沢][ひらさわ] #ruby[池容怒][チロンヌㇷ゚]]）
+  #mh-card(
+    (("出身地", [仁汨村]), ("种族", [人类]), ("职业", [随行调查员])),
+    desc: [调查时也进行物资采集的工作，来到新大陆后成为了接待员。原先当过骑士，但随行兽蓝速龙被斩龙杀死了。],
+    cls: "mh-other",
+  )
 
-+ 明日利玛（#ja[#ruby[明日利瑪][アシㇼパ]]）  阿里村 人类 未设定 未设定   未设定 未设定 未设定 未设定 未设定   未设定 雪泽阿部缘的教官。是一名老猎人。 
++ 明日利玛（#ja[#ruby[明日利瑪][アシㇼパ]]）
+  #mh-card(
+    (("出身地", [阿里村]), ("种族", [人类]), ("武器类型", [未设定]), ("武器", [未设定])),
+    equipment: (("头甲", [未设定]), ("胸甲", [未设定]), ("腕甲", [未设定]), ("腰甲", [未设定]), ("腿甲", [未设定])),
+    combo: [未设定],
+    desc: [雪泽阿部缘的教官。是一名老猎人。],
+  )
 
 + “天上来的第五期团” 也就是MHW:I中的主角苍蓝星。
 
-+ 一之濑 唯（#ja[#ruby[一之瀬][いちのせ] #ruby[唯][ゆい]]）  莫加村 人类 铳枪 雷铳枪海龙   海龙S头盔 炮术珠1 海龙S铠甲 海龙S腕甲 炮术珠1 海龙S腰甲 炮术珠1 炮术珠1 海龙S腿甲 特攻珠1 自动防御+10   突刺下砸连段#linebreak()炮击连段#linebreak()龙击炮连段#linebreak()蓄力炮击连段#linebreak()（月震值）深海月震击连段 新大陆古龙调查团猎人，是雪泽阿部缘和平泽池荣怒的舍友。来自莫家村，擅长使用铳枪进行水战。攻击能够积攒月震值发动“深海月震击连段”。 
++ 一之濑 唯（#ja[#ruby[一之瀬][いちのせ] #ruby[唯][ゆい]]）
+  #mh-card(
+    (("出身地", [莫加村]), ("种族", [人类]), ("武器类型", [铳枪]), ("武器", [雷铳枪海龙])),
+    equipment: (("头甲", [海龙S头盔 炮术珠1]), ("胸甲", [海龙S铠甲]), ("腕甲", [海龙S腕甲 炮术珠1]), ("腰甲", [海龙S腰甲 炮术珠1 炮术珠1]), ("腿甲", [海龙S腿甲 特攻珠1]), ("护石", [自动防御+10])),
+    combo: [突刺下砸连段#linebreak()炮击连段#linebreak()龙击炮连段#linebreak()蓄力炮击连段#linebreak()（月震值）深海月震击连段],
+    desc: [新大陆古龙调查团猎人，是雪泽阿部缘和平泽池荣怒的舍友。来自莫家村，擅长使用铳枪进行水战。攻击能够积攒月震值发动“深海月震击连段”。],
+  )
 
-+ 温塔娜·瓦蕾利亚·斯库提菲拉·福尔米纳塔（Ventana Valeria Scutifera Fulminata）  未知 人类 盾斧 盾斧觜宿一改 达人珠1   千刃龙S头盔 达人珠1 千刃龙S铠甲 千刃龙S腕甲 达人珠3 千刃龙S护裙 达人珠1 千刃龙S护腿 达人珠1 研磨+5 达人珠1   剑·三连斩连段#linebreak()剑·蓄力二连斩连段#linebreak()装填连段#linebreak()盾突连段#linebreak()斧·纵斩连段#linebreak()属性解放斩连段#linebreak()变形斩连段#linebreak()莲华属性解放斩连段 新大陆古龙调查团猎人，猎人登记地点是旧大陆的东多尔玛，出身哪个村就不知道了。师从魁首猎人小队的某名猎人。 
++ 温塔娜·瓦蕾利亚·斯库提菲拉·福尔米纳塔（Ventana Valeria Scutifera Fulminata）
+  #mh-card(
+    (("出身地", [未知]), ("种族", [人类]), ("武器类型", [盾斧]), ("武器", [盾斧觜宿一改 达人珠1])),
+    equipment: (("头甲", [千刃龙S头盔 达人珠1]), ("胸甲", [千刃龙S铠甲]), ("腕甲", [千刃龙S腕甲 达人珠3]), ("腰甲", [千刃龙S护裙 达人珠1]), ("腿甲", [千刃龙S护腿 达人珠1]), ("护石", [研磨+5 达人珠1])),
+    combo: [剑·三连斩连段#linebreak()剑·蓄力二连斩连段#linebreak()装填连段#linebreak()盾突连段#linebreak()斧·纵斩连段#linebreak()属性解放斩连段#linebreak()变形斩连段#linebreak()莲华属性解放斩连段],
+    desc: [新大陆古龙调查团猎人，猎人登记地点是旧大陆的东多尔玛，出身哪个村就不知道了。师从魁首猎人小队的某名猎人。],
+  )
 
-+ 言渊  龙通村 人类 弓箭 未设定   未设定 未设定 未设定 未设定 未设定   未设定 新大陆古龙调查团猎人，黑发灰眼，穿着长袍，比较东方。 
++ 言渊
+  #mh-card(
+    (("出身地", [龙通村]), ("种族", [人类]), ("武器类型", [弓箭]), ("武器", [未设定])),
+    equipment: (("头甲", [未设定]), ("胸甲", [未设定]), ("腕甲", [未设定]), ("腰甲", [未设定]), ("腿甲", [未设定])),
+    combo: [未设定],
+    desc: [新大陆古龙调查团猎人，黑发灰眼，穿着长袍，比较东方。],
+  )
 
-+ 希恩·拉法叶尔（Siœn Raphaël）  埃尔迦德 人类 大剑/太刀 冷冻旗鱼   蔷薇头饰alpha 蔷薇服装alpha 蔷薇腕甲alpha 蔷薇皮带alpha 蔷薇靴alpha   真·蓄力斩连段#linebreak()强力横扫斩连段#linebreak()冲撞攻击连段#linebreak()冲撞攻击衍生连段#linebreak()防御连段#linebreak()飞身跃入斩连段#linebreak()神岚拖刀三连斩连段 新大陆古龙调查团猎人，黑发灰眼，穿着长袍，比较东方。 
++ 希恩·拉法叶尔（Siœn Raphaël）
+  #mh-card(
+    (("出身地", [埃尔迦德]), ("种族", [人类]), ("武器类型", [大剑/太刀]), ("武器", [冷冻旗鱼])),
+    equipment: (("头甲", [蔷薇头饰alpha]), ("胸甲", [蔷薇服装alpha]), ("腕甲", [蔷薇腕甲alpha]), ("腰甲", [蔷薇皮带alpha]), ("腿甲", [蔷薇靴alpha])),
+    combo: [真·蓄力斩连段#linebreak()强力横扫斩连段#linebreak()冲撞攻击连段#linebreak()冲撞攻击衍生连段#linebreak()防御连段#linebreak()飞身跃入斩连段#linebreak()神岚拖刀三连斩连段],
+    desc: [新大陆古龙调查团猎人，黑发灰眼，穿着长袍，比较东方。],
+  )
 
-+ “调查组组长” 扎伊德·戈登（Zaid Gordon）  新大陆 人类 大剑 龙颚剑   未设定 未设定 未设定 未设定 未设定   真·蓄力斩连段#linebreak()冲撞攻击连段#linebreak()冲撞攻击衍生连段#linebreak()强力横扫斩连段#linebreak()防御连段#linebreak()飞身跃入斩连段 新大陆古龙调查团猎人，也就是游戏里的调查组组长其人。 
++ “调查组组长” 扎伊德·戈登（Zaid Gordon）
+  #mh-card(
+    (("出身地", [新大陆]), ("种族", [人类]), ("武器类型", [大剑]), ("武器", [龙颚剑])),
+    equipment: (("头甲", [未设定]), ("胸甲", [未设定]), ("腕甲", [未设定]), ("腰甲", [未设定]), ("腿甲", [未设定])),
+    combo: [真·蓄力斩连段#linebreak()冲撞攻击连段#linebreak()冲撞攻击衍生连段#linebreak()强力横扫斩连段#linebreak()防御连段#linebreak()飞身跃入斩连段],
+    desc: [新大陆古龙调查团猎人，也就是游戏里的调查组组长其人。],
+  )
 
-+ 蕾姆·帕克林（Rem Pakline）  新大陆 人类 大剑 防卫队炎刃型大剑2   封印的龙骸布 惨爪alpha 未设定 未设定 未设定   真·蓄力斩连段#linebreak()冲撞攻击连段#linebreak()冲撞攻击衍生连段#linebreak()强力横扫斩连段#linebreak()防御连段#linebreak()飞身跃入斩连段 新大陆古龙调查团猎人，女性，穿着清凉。是阿部缘在新大陆的启蒙导师。 
++ 蕾姆·帕克林（Rem Pakline）
+  #mh-card(
+    (("出身地", [新大陆]), ("种族", [人类]), ("武器类型", [大剑]), ("武器", [防卫队炎刃型大剑2])),
+    equipment: (("头甲", [封印的龙骸布]), ("胸甲", [惨爪alpha]), ("腕甲", [未设定]), ("腰甲", [未设定]), ("腿甲", [未设定])),
+    combo: [真·蓄力斩连段#linebreak()冲撞攻击连段#linebreak()冲撞攻击衍生连段#linebreak()强力横扫斩连段#linebreak()防御连段#linebreak()飞身跃入斩连段],
+    desc: [新大陆古龙调查团猎人，女性，穿着清凉。是阿部缘在新大陆的启蒙导师。],
+  )
 
 == 怪物
 + 毁灭仁汨村的斩龙 暂定是一头不明原因发狂的护死灭刃斩龙，是斩龙的唯一高度特化特殊个体。
@@ -50,14 +103,39 @@
   columns: 4,
   [#strong[区域]], [#strong[下位]], [#strong[上位]], [#strong[G位]],
   [迩岱空部森林], [#monster(japanese: "ドスランポス")[蓝速龙王]], [#monster(japanese: "雷狼竜ジンオウガ")[雷狼龙]], [#monster(japanese: "斬翼鳥タララヤック")[斩翼鸟]],
+  [], [#monster(japanese: "青熊獣アオアシラ")[青熊兽]], [#monster(japanese: "桜火竜リオレイア亜種")[樱火龙]], [#monster(japanese: "茶兎獣ウルクスス亜種")[茶兔兽]],
+  [], [#monster(japanese: "吼鹿エケルギツ")[吼鹿]], [#monster(japanese: "毒矢蟹ブショウイザミ亜種")[毒矢武将蟹]], [#monster(japanese: "茶熊獣アオアシラ希少種")[茶熊兽]],
+  [], [#monster(japanese: "舌毒蝸トクシマキマ")[舌毒蜗]], [#monster(japanese: "濃舌蝸トクシマキマ亜種")[浓舌蜗]], [#monster(japanese: "迅竜ナルガクルガ")[迅龙]],
+  [], [#monster(japanese: "泡狐竜タマミツネ")[泡狐龙]], [#monster(japanese: "霞龍オオナズチ", kind: "blue")[霞龙]], [#monster(japanese: "緑迅竜ナルガクルガ亜種")[绿迅龙]],
+  [], [#monster(japanese: "矢蟹ブショウイザミ")[武将矢蟹]], [], [#monster(japanese: "火神龍アペフチ・カムイ", kind: "blue")[火神龙]],
+  [], [], [], [#monster(japanese: "インカルン・アペフチ・カムイ", kind: "red")[守望火神龙]],
   [卯桥留山部雪原], [#monster(japanese: "白熊獣アオアシラ亜種")[白熊兽]], [#monster(japanese: "雹狐竜タマミツネ亜種")[雹狐龙]], [#monster(japanese: "砕銃鹿エケエクス希少種")[碎铳鹿]],
+  [], [#monster(japanese: "丹首鳥グルスハケ")[丹首鸟]], [#monster(japanese: "霙刃竜セレルギオス亜種")[霙刃龙]], [#monster(japanese: "獄狼竜ジンオウガ亜種")[狱狼龙]],
+  [], [#monster(japanese: "凍海獣ポカラドン")[冻海兽]], [#monster(japanese: "霜鎚竜ウラガンキン希少種")[霜锤龙]], [#monster(japanese: "雪鬼獣ゴシャハギ")[雪鬼兽]],
+  [], [#monster(japanese: "銃鹿エケエクス")[铳鹿]], [#monster(japanese: "激昂したドドブランゴ")[激昂雪狮子]], [#monster(japanese: "雪女獣ゴシャユキア")[雪女兽]],
+  [], [#monster(japanese: "風漂竜レイギエナ")[风漂龙]], [#monster(japanese: "鋼龍クシャルダオラ", kind: "blue")[钢龙]], [#monster(japanese: "巨獣ガムート")[巨兽]],
+  [], [#monster(japanese: "氷砕竜ボルボロス亜種")[冰土砂龙]], [#monster(japanese: "殺戟龍シャチホコ", kind: "blue")[杀戟龙]], [#monster(japanese: "喙裂けたグルスハケ", kind: "red")[喙裂丹首鸟]],
+  [], [#monster(japanese: "雪獅子ドドブランゴ")[雪狮子]], [], [#monster(japanese: "幻獣キリン", kind: "blue")[麒麟]],
+  [], [], [], [#monster(japanese: "吹雪龍メ・ウウェチ", kind: "blue")[吹雪龙]],
   [乌美怒振火山], [#monster(japanese: "炎銃鹿エケエクス亜種")[炎铳鹿]], [#monster(japanese: "火竜リオレウス")[火龙]], [#monster(japanese: "朱鎌蟹ショウグンギザミ亜種")[朱镰将军蟹]],
+  [], [#monster(japanese: "黒首鳥グルスハケ亜種")[黑首鸟]], [#monster(japanese: "蒼火竜リオレウス亜種")[苍火龙]], [#monster(japanese: "斬竜ディノバルド")[斩龙]],
+  [], [#monster(japanese: "爆鎚竜ウラガンキン")[爆锤龙]], [#monster(japanese: "獄焔蛸ヌ・エグドラ")[狱焰蛸]], [#monster(japanese: "黒鎧竜グラビモス亜種")[黑铠龙]],
+  [], [#monster(japanese: "岩蝸ルビマキマ")[岩蜗]], [#monster(japanese: "炎王龍テオ・テスカトル", kind: "blue")[炎王龙]], [#monster(japanese: "金火竜リオレイア希少種")[金火龙]],
+  [], [#monster(japanese: "鎧竜グラビモス")[铠龙]], [#monster(japanese: "炎妃龍ナナ・テスカトリ", kind: "blue")[炎妃龙]], [#monster(japanese: "銀火竜リオレウス希少種")[银火龙]],
+  [], [#monster(japanese: "鎌蟹ショウグンギザミ")[将军镰蟹]], [], [#monster(japanese: "幼きゾラ・マグダラオス", kind: "blue")[幼熔山龙]],
+  [], [], [], [#monster(japanese: "姫鬼龍フィジャ・サンクタ", kind: "blue")[姬鬼龙]],
+  [], [], [], [#monster(japanese: "爆炎の淵源フィジャ・サンクタ", kind: "red")[爆炎渊源姬鬼龙]],
+  [], [], [], [#monster(japanese: "護死滅刃ディノバルド", kind: "red")[护死灭刃斩龙]],
   [琉绘山沙滩], [#monster(japanese: "噛魚竜アラマキトス")[啮鱼龙]], [#monster(japanese: "白一角竜モノブロス亜種")[白一角龙]], [#monster(japanese: "刺魨竜テトラヴァルヌ")[刺鲀龙]],
+  [], [#monster(japanese: "盾蟹ダイミョウザザミ")[大名盾蟹]], [#monster(japanese: "角竜ディアブロス")[角龙]], [#monster(japanese: "海竜ラギアクルス")[海龙]],
+  [], [#monster(japanese: "翔虎鳥ハリリタラサ")[翔虎鸟]], [#monster(japanese: "千刃竜セレルギオス")[千刃龙]], [#monster(japanese: "痺蛸オクエペケセ")[痹蛸]],
+  [], [#monster(japanese: "一角竜モノブロス")[一角龙]], [#monster(japanese: "礁竜コラエムプ")[礁龙]], [#monster(japanese: "玄甲亀カラパヴェス")[玄甲龟]],
+  [], [#monster(japanese: "土砂竜ボルボロス")[土砂龙]], [#monster(japanese: "巨鮭龍カムイ・ペカンケル", kind: "blue")[巨鲑龙]], [#monster(japanese: "黒角竜ディアブロス亜種")[黑角龙]],
+  [], [], [], [#monster(japanese: "振翼鳥タララヤック亜種")[振翼鸟]],
+  [], [], [], [#monster(japanese: "世を載せるカムイ・ペカンケル", kind: "red")[载世巨鲑龙]],
+  [], [], [], [#monster(japanese: "溟波龍ネロミェール", kind: "blue")[溟波龙]],
+  [], [], [], [#monster(japanese: "古機龍イォンネット", kind: "blue")[古机龙]],
 )
-
-#aside(kind: "note", title: "完整怪物名录")[
-  原表中的其余怪物条目将在后续设定更新中继续维护；区域和等级结构已迁移为原生 Typst 表格。
-]
 
 == 地点
 + 仁汨村 被毁灭的村子。雪泽阿部缘和平泽池荣怒的故乡。
@@ -78,7 +156,7 @@
 ]
 
 #quote(block: true)[
-绕行平原：1区的平原，中间的石头叫向导石。 水球苔湿地：5-2区的湿地。 拱桥台地：6区的小台地。 蚁塚平台：8区的平台，上面有很多大蚁塚。如果让响翼龙吵到在闪光洞穴的角龙，角龙就会狂暴地顶破这里。 圆台沼泽：9区的沼泽，土砂龙会在这里打滚或者睡觉。 险恶沼泽：10区的沼泽。 下沉走廊：11-2区的走廊。 燃烧洞穴：12区的洞穴。有一个飞龙的巢。 闪光洞穴：13区的洞穴。 流沙洞穴；14区的洞穴。 德特尔洞穴：15区的洞穴。
+绕行平原：1区的平原，中间的石头叫向导石。 \ 水球苔湿地：5-2区的湿地。 \ 拱桥台地：6区的小台地。 \ 蚁塚平台：8区的平台，上面有很多大蚁塚。如果让响翼龙吵到在闪光洞穴的角龙，角龙就会狂暴地顶破这里。 \ 圆台沼泽：9区的沼泽，土砂龙会在这里打滚或者睡觉。 \ 险恶沼泽：10区的沼泽。 \ 下沉走廊：11-2区的走廊。 \ 燃烧洞穴：12区的洞穴。有一个飞龙的巢。 \ 闪光洞穴：13区的洞穴。 \ 流沙洞穴；14区的洞穴。 \ 德特尔洞穴：15区的洞穴。
 ]
 
 == 新大陆古龙调查团
@@ -98,21 +176,21 @@
 + 一次任务的流程
 ]
 
-#aside(kind: "note", title: "流程图")[流程图源码已迁移，Web 端将由 Mermaid 组件渲染。]
+#mermaid("flowchart LR\n  A([任务内容确定<br>委托方提出要求并缴纳悬赏金]) --> B[任务准备<br>信息保障和后勤保障]\n  B --> C[任务进行<br>猎人工作和随行记录]\n  C --> D[任务报告<br>情报和所得上交]\n  D --> E[结果交割<br>登记入册与报酬发放]\n  D --> F([各项调整<br>包括调整作战战略、工作规划、资源配置等])")
 
 #block[
 #set enum(numbering: "1.", start: 4)
 + 任务报告的具体情形
 ]
 
-#aside(kind: "note", title: "流程图")[流程图源码已迁移，Web 端将由 Mermaid 组件渲染。]
+#mermaid("flowchart LR\nA([狩猎结束后撰写任务报告<br>其实也有狩猎的时候写的，这就是调查团！]) --> B{根据任务性质不同}\nB -->|关键委托| C[司令部]\nC -->|需要讨论| D[作战会议]\nB -->|指派委托| E[委托部门]\nE --> F[抄送生态研究所等相关部门]\nB -->|自由委托| G[司令部调度科]\nG --> H[转告委托人]\nB -->|调查委托| I[调查资源管理所]\nI --> J[抄送生态研究所等相关部门]\nB -->|活动委托| K[司令部活动科]\nK --> L[转告主办方]\nB -->|特别委托| M{内部/外部委托}\nM -->|内部委托| N[司令部调度科]\nN --> O[转告委托人或委托部门]\nM -->|外部委托| P[司令部联络科]\nC --> R([调查资源管理所物资班<br>发放报酬])\nE --> R\nG --> R\nI --> R\nK --> R\nN --> R\nP --> R")
 
 #block[
 #set enum(numbering: "1.", start: 5)
 + 组织架构
 ]
 
-#aside(kind: "note", title: "流程图")[流程图源码已迁移；网页端将由 Mermaid 组件渲染。]
+#mermaid("flowchart LR\nsubgraph \"司令部\"\n  cmd[司令官]\n  dep1[调度科]\n  dep2[联络科]\n  dep3[活动科]\n  dep4[指挥科]\n  dep5[保障科]\n  dep6[学术科]\nend\ncmd --> dep1\ncmd --> dep2\ncmd --> dep3\ncmd --> dep4\ncmd --> dep5\ncmd --> dep6\nsubgraph \"作战部\"\n  ops[作战指挥科]\n  ops_dep1[调查组<br>（也有翻译叫调查班）]\n  ops_dep2[作战组1]\n  ops_dep3[作战组2]\n  ops_dep4[...]\nend\ndep4 --> ops\nops --> ops_dep1\nops --> ops_dep2\nops --> ops_dep3\nops --> ops_dep4\nsubgraph \"集会所\"\n  hub[集会所管理员]\nend\ndep4 --> hub\nsubgraph \"调查资源管理所\"\n  irm[所长]\n  irm_dep1[物资班]\n  irm_dep2[技术班]\n  irm_dep3[研究班]\n  irm_dep4[水力管理系]\n  irm_dep5[蒸汽管理系]\nend\ndep5 --> irm\nirm --> irm_dep1\nirm --> irm_dep2\nirm --> irm_dep3\nirm_dep2 --> irm_dep4\nirm_dep2 --> irm_dep5\nsubgraph \"物资补给系\"\n  sup[系长]\n  sup_dep1[物资采购班]\n  sup_dep2[物资整理班]\n  sup_dep3[物资配送班]\nend\ndep5 --> sup\nsup --> sup_dep1\nsup --> sup_dep2\nsup --> sup_dep3\nsubgraph \"加工处\"\n  fac[加工屋<br>（二期团团长）]\n  fac_dep1[武具屋<br>（售卖武具）]\n  fac_dep2[学徒]\n  fac_dep3[气球开发员]\nend\ndep5 --> fac\nfac --> fac_dep1\nfac --> fac_dep2\nfac --> fac_dep3\nsubgraph \"用餐保障部\"\n  din[料理长]\n  din_dep1[食材采购班]\n  din_dep2[烹饪班]\nend\ndep5 --> din\ndin --> din_dep1\ndin --> din_dep2\nsubgraph \"生态研究所\"\n  eco[所长]\n  eco_dep1[生态班]\n  eco_dep2[环境班]\nend\ndep6 --> eco\neco --> eco_dep1\neco --> eco_dep2\nsubgraph \"植生研究所\"\n  pfl[所长]\nend\ndep6 --> pfl\nsubgraph \"三期团特遣队\"\n  spc[三期团团长]\n  spc_dep1[三期团随行学者等]\n  spc_dep2[三期团随行物资补给员]\n  spc_dep3[热气球操作手]\nend\ncmd --> spc\nspc --> spc_dep1\nspc --> spc_dep2\nspc --> spc_dep3")
 
 #block[
 #set enum(numbering: "1.", start: 5)

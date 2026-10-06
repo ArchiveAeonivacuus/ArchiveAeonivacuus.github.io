@@ -256,3 +256,39 @@
 
 // Maps the archive `aside` component onto our existing admonition styling.
 #let aside(kind: "note", title: none, body) = admonition(kind: kind, title: title, body)
+
+// Inline rotation (HTML uses CSS transform; PDF keeps native rotate).
+#let rot-270(body) = context {
+  if target() == "html" { html.elem("span", attrs: (class: "rotate-270"), body) } else { rotate(270deg, body) }
+}
+
+// Right-aligned block (HTML uses CSS text-align; PDF keeps native align).
+#let align-right(body) = context {
+  if target() == "html" { html.elem("span", attrs: (class: "align-right"), body) } else { align(right, body) }
+}
+
+// Monster Hunter character card (restored from old markdown `.mh-hunter`/`.mh-other`).
+// `fields` is an array of (label, content) pairs; `equipment` is an array of (part, content) pairs.
+#let mh-card(fields, equipment: (), combo: none, desc: none, cls: "mh-hunter") = context {
+  if target() != "html" {
+    block(inset: 10pt, radius: 6pt, stroke: 0.5pt + luma(60%))[
+      #for f in fields { [#strong[f.at(0) + "："] #f.at(1) ] }
+      #if equipment != () { [#strong[装备：] #for e in equipment { [#e.at(0)：#e.at(1) ] }] }
+      #if combo != none { [#strong[连招：] #combo] }
+      #if desc != none { [#strong[人物介绍：] #desc] }
+    ]
+  } else {
+    html.elem("div", attrs: (class: cls))[
+      #for f in fields { html.elem("div", attrs: ("data-label": f.at(0)), f.at(1)) }
+      #if equipment != () {
+        html.elem("div", attrs: (class: "mh-equipment", "data-label": "装备"))[
+          #html.elem("div", attrs: (class: "armor-box"))[
+            #for e in equipment { html.elem("div", attrs: ("data-part": e.at(0)), e.at(1)) }
+          ]
+        ]
+      }
+      #if combo != none { html.elem("div", attrs: (class: "mh-combo", "data-label": "连招"), combo) }
+      #if desc != none { html.elem("div", attrs: (class: "mh-description", "data-label": "人物介绍"), desc) }
+    ]
+  }
+}
