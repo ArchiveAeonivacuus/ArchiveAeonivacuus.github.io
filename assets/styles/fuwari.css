@@ -474,16 +474,18 @@ html.is-animating .transition-swup-fade { opacity: 0; transform: translateY(1rem
 
 /* Inline font directives: #zh / #ja / #old-ja / #ong / #old-cjk / #dfkai /
    #ipa / #latin / #kai / #mincho */
-.markdown-content .ff-zh_cn { font-family: "Source Han Serif SC", serif; }
-.markdown-content .ff-ja { font-family: "Source Han Serif JP", serif; }
-.markdown-content .ff-ja_old { font-family: "Asebi Mincho", "Source Han Serif JP", "Source Han Serif Old", serif; font-synthesis: weight; }
-.markdown-content .ff-ong { font-family: "Old English Onglisch", serif; }
-.markdown-content .ff-cjk_old { font-family: "Source Han Serif Old", "Source Han Serif SC", serif; font-synthesis: weight; }
-.markdown-content .ff-dfkai { font-family: "DFKai-SB", KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; }
-.markdown-content .ff-en { font-family: "Source Serif 4", "Asebi Mincho", serif; }
-.markdown-content .ff-rom { font-family: "HighTowerText", serif; font-synthesis: weight; }
-.markdown-content .ff-kai { font-family: KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; }
-.markdown-content .ff-min { font-family: "Source Han Serif JP", "MS Mincho", serif; }
+/* NOTE: the endnote list (.footnotes) lives *outside* .markdown-content, so its
+   font directives need the same rules — hence the :is() scope below. */
+:is(.markdown-content, .footnotes) .ff-zh_cn { font-family: "Source Han Serif SC", serif; }
+:is(.markdown-content, .footnotes) .ff-ja { font-family: "Source Han Serif JP", serif; }
+:is(.markdown-content, .footnotes) .ff-ja_old { font-family: "Asebi Mincho", "Source Han Serif JP", "Source Han Serif Old", serif; font-synthesis: weight; }
+:is(.markdown-content, .footnotes) .ff-ong { font-family: "Old English Onglisch", serif; }
+:is(.markdown-content, .footnotes) .ff-cjk_old { font-family: "Source Han Serif Old", "Source Han Serif SC", serif; font-synthesis: weight; }
+:is(.markdown-content, .footnotes) .ff-dfkai { font-family: "DFKai-SB", KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; }
+:is(.markdown-content, .footnotes) .ff-en { font-family: "Source Serif 4", "Asebi Mincho", serif; }
+:is(.markdown-content, .footnotes) .ff-rom { font-family: "HighTowerText", serif; font-synthesis: weight; }
+:is(.markdown-content, .footnotes) .ff-kai { font-family: KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; }
+:is(.markdown-content, .footnotes) .ff-min { font-family: "Source Han Serif JP", "MS Mincho", serif; }
 
 /* Ruby: 1-2-1 annotation distribution (W3C group-ruby: edge : between = 1 : 2). */
 ruby { ruby-position: over; ruby-align: space-around; }
