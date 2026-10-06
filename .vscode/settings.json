@@ -6,7 +6,7 @@
   "tinymist.systemFonts": false,
   "tinymist.typstExtraArgs": [
     "--features=html",
-    "--package-path=${workspaceFolder}/.tola/packages"
+    "--package-path=D:/repo/ArchiveAeonivacuus.github.io/.tola/packages"
   ],
   "tinymist.projectResolution": "singleFile",
   "tinymist.exportTarget": "paged",
