@@ -293,7 +293,4 @@
 
 ]
 
-#class-span("ff-ja_old")[#ruby[百代魂縛死靈櫻][ひやくだいこんしばしりやうざくら]　#ruby[至][いた]#ruby[レ][リテ]#ruby[此][ここ]#ruby[ ][ニ]#ruby[終][おは]#ruby[ ][リナリ]]
-
-
-
+#class-span("ff-ja_old")[#ruby[百代魂縛死靈櫻][ひやくだいこんしばしりやうざくら]　#ruby[至][いた]#ruby[#sub[レ]][リテ]#ruby[此][ここ]#ruby[ ][ニ]#ruby[終][おは]#ruby[ ][リナリ]]
