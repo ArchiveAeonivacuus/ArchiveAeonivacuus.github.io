@@ -179,6 +179,19 @@
     })
 }
 
+// Series (serialized) groups: posts sharing a non-empty `series` key, ordered
+// by `series_index` (so the reading order does not depend on the title wording).
+#let _series-index(p) = {
+  let idx = p.at("series_index", default: none)
+  if idx == none { 9999 } else if type(idx) == int { idx } else if type(idx) == float { int(idx) } else { int(str(idx)) }
+}
+
+#let _series(series) = {
+  if _str-of(series) == "" { return () }
+  let key = _str-of(series)
+  pages().filter(p => _str-of(p.at("series", default: "")) == key).sorted(key: _series-index)
+}
+
 #let _head(title: none, summary: none, image: none, article: false, date: none, update: none, tags: ()) = context {
   if target() != "html" { return [] }
   let page-title = if title == none or title == info.title { info.title + " - A personal blog site." } else { str(title) + " - " + info.title }
@@ -414,7 +427,7 @@
   }
 }
 
-#let fuwari-base(body, title: none, summary: none, date: none, update: none, tags: (), category: none, image: none, draft: false, words: none, minutes: none, lang: none, translate_key: none, article: false) = {
+#let fuwari-base(body, title: none, summary: none, date: none, update: none, tags: (), category: none, image: none, draft: false, words: none, minutes: none, lang: none, translate_key: none, series: none, series_index: none, article: false) = {
   let t = ui(lang)
   let view = context {
     if target() == "html" {
@@ -443,7 +456,7 @@
       ]
     }
   }
-  tola-page(title: title, summary: summary, date: date, update: update, tags: tags, draft: draft, words: words, minutes: minutes, category: category, image: image, lang: lang, translate_key: translate_key, head: _head(title: title, summary: summary, image: image, article: article, date: date, update: update, tags: tags))[#view]
+  tola-page(title: title, summary: summary, date: date, update: update, tags: tags, draft: draft, words: words, minutes: minutes, category: category, image: image, lang: lang, translate_key: translate_key, series: series, series_index: series_index, head: _head(title: title, summary: summary, image: image, article: article, date: date, update: update, tags: tags))[#view]
 }
 
 #let page-card(body) = context {

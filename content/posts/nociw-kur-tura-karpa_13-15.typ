@@ -6,6 +6,8 @@
   tags: ("故事", "怪物猎人", "同人"),
   category: "我与星光同行",
   draft: true,
+  series: "我与星光同行",
+  series_index: 5,
 )
 
 = #ja[ノチウ　クㇽ　トゥラ　カㇻパ]

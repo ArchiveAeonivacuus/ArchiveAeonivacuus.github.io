@@ -6,6 +6,8 @@
   tags: ("故事", "东方", "月都", "蓬莱山辉夜"),
   category: "竹取拾遗物语",
   draft: false,
+  series: "竹取拾遗物语",
+  series_index: 3,
 )
 
 = #old-ja[#ruby[二][に]　#ruby[幽篁][いうくわう]の#ruby[仁術][じんじゆつ]]

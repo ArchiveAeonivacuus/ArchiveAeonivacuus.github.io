@@ -1,5 +1,5 @@
 // Post page and post card.
-#import "/templates/layout.typ": fuwari-base, icon, _posts, _date, _tag-url, _category-url, stats-of, footnote-list, _translations, ui, word
+#import "/templates/layout.typ": fuwari-base, icon, _posts, _date, _tag-url, _category-url, stats-of, footnote-list, _translations, _series, ui, word
 #import "@tola/site:0.0.0": info
 #import "@tola/current:0.0.0": current-permalink, prev, next
 
@@ -24,7 +24,7 @@
   ]
 }
 
-#let post(title: none, summary: none, date: none, update: none, tags: (), category: none, image: none, draft: false, words: none, minutes: none, lang: none, translate_key: none, body) = {
+#let post(title: none, summary: none, date: none, update: none, tags: (), category: none, image: none, draft: false, words: none, minutes: none, lang: none, translate_key: none, series: none, series_index: none, body) = {
   let stat = stats-of(current-permalink)
   let t = ui(lang)
   let words = if words != none { words } else { stat.at("w", default: none) }
@@ -49,6 +49,38 @@
           }
         })
       )
+    } else { [] }
+  } else { [] }
+  let series-panel = context if target() == "html" {
+    let items = _series(series)
+    if items.len() > 1 {
+      let chapter-label = "共 " + str(items.len()) + " 篇"
+      html.elem("div", attrs: (class: "post-series"))[
+        #html.elem("div", attrs: (class: "series-heading"), icon("material-symbols:menu-book-outline-rounded") + html.elem("span", attrs: (class: "series-name"), str(series)) + html.elem("span", attrs: (class: "series-progress"), chapter-label))
+        #html.elem("details", attrs: (class: "series-toc"))[
+          #html.elem("summary", "章节目录")
+          #html.elem("ol", attrs: (class: "series-toc-list"))[
+            #for item in items {
+              let is-current = item.permalink == current-permalink
+              html.elem("li", html.elem("a", attrs: (href: item.permalink, class: if is-current { "is-current" } else { "" }, "aria-current": if is-current { "true" } else { "false" }), item.at("title", default: "")))
+            }
+          ]
+        ]
+      ]
+    } else { [] }
+  } else { [] }
+  let series-nav = context if target() == "html" {
+    let items = _series(series)
+    if items.len() > 1 {
+      let cur = items.position(p => p.permalink == current-permalink)
+      let prev-item = if cur != none and cur > 0 { items.at(cur - 1) } else { none }
+      let next-item = if cur != none and cur < items.len() - 1 { items.at(cur + 1) } else { none }
+      if prev-item != none or next-item != none {
+        html.elem("nav", attrs: (class: "series-navigation", "aria-label": "章节导航"))[
+          #if prev-item != none { html.elem("a", attrs: (href: prev-item.permalink, class: "series-nav-link series-nav-prev card-base"), icon("material-symbols:chevron-left-rounded") + html.elem("span", attrs: (class: "series-nav-text"), html.elem("small", "上一章") + html.elem("span", prev-item.at("title", default: "")))) }
+          #if next-item != none { html.elem("a", attrs: (href: next-item.permalink, class: "series-nav-link series-nav-next card-base"), html.elem("span", attrs: (class: "series-nav-text"), html.elem("small", "下一章") + html.elem("span", next-item.at("title", default: ""))) + icon("material-symbols:chevron-right-rounded")) }
+        ]
+      } else { [] }
     } else { [] }
   } else { [] }
   let navigation = context if target() == "html" {
@@ -80,6 +112,7 @@
           #html.elem("h1", title)
           #_post-meta(date: date, update: update, category: category, tags: tags, lang: lang)
           #translation-bar
+          #series-panel
           #if summary != none and summary != "" { html.elem("p", attrs: (class: "post-summary"), summary) }
         ]
         #if pdf-url != none {
@@ -93,10 +126,11 @@
         #license
       ]
       #html.elem("section", attrs: (id: "comments", class: "comments card-base", "aria-label": t.comments))
+      #series-nav
       #navigation
     ]
   } else { body }
-  fuwari-base(article-body, title: title, summary: summary, date: date, update: update, tags: tags, category: category, image: image, draft: draft, words: words, minutes: minutes, lang: lang, translate_key: translate_key, article: true)
+  fuwari-base(article-body, title: title, summary: summary, date: date, update: update, tags: tags, category: category, image: image, draft: draft, words: words, minutes: minutes, lang: lang, translate_key: translate_key, series: series, series_index: series_index, article: true)
 }
 
 #let post-card(item) = {
