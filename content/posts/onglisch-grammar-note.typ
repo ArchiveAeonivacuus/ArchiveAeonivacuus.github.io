@@ -3,6 +3,7 @@
 #show: post.with(
   title: "央额列语语法笔记",
   date: "2026-09-18",
+  summary: "已出现的央额列语语法记录。",
   tags: ("於留根", "人造语言", "央额列"),
   category: "瀛寰",
   translate_key: "onglisch-grammar-note",
@@ -19,19 +20,19 @@
 #data-table(
     columns: 10,
     [#ong[Aa]], [#ong[Bb]], [#ong[Cc]], [#ong[Dd]], [#ong[Ee]], [#ong[Ff]], [#ong[Gg]], [#ong[Hh]], [#ong[Iı]], [#ong[Ll]],
-    [#ipa[/a/]], [#ipa[/b~β/]], [#ipa[/k/]], [#ipa[/d/]], [#ipa[/e/]], [#ipa[/f/]], [#ipa[/ɡ/]], [-], [#ipa[/i~ɪ/]], [#ipa[/l/]],
+    [#en[/a/]], [#en[/b~β/]], [#en[/k/]], [#en[/d/]], [#en[/e/]], [#en[/f/]], [#en[/ɡ/]], [-], [#en[/i~ɪ/]], [#en[/l/]],
   )
 
 #data-table(
     columns: 10,
     [#ong[Mm]], [#ong[Nn]], [#ong[Oo]], [#ong[Pp]], [#ong[Rr]], [#ong[Ss]], [#ong[Tt]], [#ong[Uu]], [#ong[Yy]], [#ong[Zz]],
-    [#ipa[/m/]], [#ipa[/n/]], [#ipa[/o~ə/]], [#ipa[/p/]], [#ipa[/r/]], [#ipa[/s/]], [#ipa[/t/]], [#ipa[/u/]], [#ipa[/y/]], [#ipa[/ts/]],
+    [#en[/m/]], [#en[/n/]], [#en[/o~ə/]], [#en[/p/]], [#en[/r/]], [#en[/s/]], [#en[/t/]], [#en[/u/]], [#en[/y/]], [#en[/ts/]],
   )
 
 #data-table(
     columns: 7,
     [#ong[Ää]], [#ong[Ğğ]], [#ong[Öö]], [#ong[Üü]], [#ong[Ƿƿ]], [#ong[Ææ]], [#ong[Œœ]],
-    [#ipa[/ɛ/]], [#ipa[/dʒ/]], [#ipa[/ø/]], [#ipa[/y/]], [#ipa[/w/]], [#ipa[/ɛ/]], [#ipa[/ø/]],
+    [#en[/ɛ/]], [#en[/dʒ/]], [#en[/ø/]], [#en[/y/]], [#en[/w/]], [#en[/ɛ/]], [#en[/ø/]],
   )
 
 说明如下：
@@ -40,11 +41,11 @@
 
 \(2) #ong[Cc]只念/k/；
 
-\(3) #ong[Gg]只念#ipa[/ɡ/]，有专门的塞擦音变体字母#ong[Ğğ]；
+\(3) #ong[Gg]只念#en[/ɡ/]，有专门的塞擦音变体字母#ong[Ğğ]；
 
 \(4) #ong[Iı]可以作辅音字母，一般的写法不带点，这是为了给锐音符和长音符留位置；
 
-\(5) #ong[Zz]念#ipa[/ts/]；
+\(5) #ong[Zz]念#en[/ts/]；
 
 \(6) 单字母中有#ong[Ää Öö Üü]的#ong[umlaut]，可以对应地球英语的VCe结构，同时有#ong[Ææ]和#ong[Œœ]合字，读音和#ong[umlaut]字母一致，但是是更加斐令的用法，另外，这两个合字字母被认为是单个字母。
 
@@ -56,14 +57,14 @@
 #data-table(
     columns: 7,
     [#ong[Çç]], [#ong[Jj]], [#ong[Kk]], [#ong[Qq]], [#ong[Vv]], [#ong[Ww]], [#ong[Xx]],
-    [#ipa[/s/]], [#ipa[/j~ʒ/]], [#ipa[/k/]], [#ipa[/k/]], [#ipa[/w/]], [#ipa[/w/]], [#ipa[/ks/, /k/, /s/]],
+    [#en[/s/]], [#en[/j~ʒ/]], [#en[/k/]], [#en[/k/]], [#en[/w/]], [#en[/w/]], [#en[/ks/, /k/, /s/]],
   )
 
 说明如下：
 
 \(1) #ong[Qq]通常和#ong[u]连用：#ong[questíon], #ong[quotatíon]，读音下面会提及；
 
-\(2) #ong[(Vv), (Ww)]都念#ipa[/w/]，和#ong[Ƿƿ]一致，但#ong[Ƿƿ]是最正统也是最常用的；
+\(2) #ong[(Vv), (Ww)]都念#en[/w/]，和#ong[Ƿƿ]一致，但#ong[Ƿƿ]是最正统也是最常用的；
 
 \(3) #ong[Xx]有很多读音，根据其在来源语言中的读音决定。
 
@@ -75,34 +76,34 @@
 #data-table(
     columns: 17,
     [#ong[au]], [#ong[cc]], [#ong[cce]], [#ong[ch]], [#ong[dz]], [#ong[eu]], [#ong[gn]], [#ong[hƿ]], [#ong[ng]], [#ong[oı  ]], [#ong[ph]], [#ong[qu]], [#ong[sch]], [#ong[sı]], [#ong[tch]], [#ong[th]], [#ong[tı]],
-    [#ipa[/oː/]], [#ipa[/k/]], [#ipa[/ks/]], [#ipa[/k/]], [#ipa[/z/]], [#ipa[/ø/]], [#ipa[/ŋ/]], [#ipa[/ʍ/]], [#ipa[/ŋ/]], [#ipa[/wa/]], [#ipa[/f/]], [#ipa[/k/]], [#ipa[/ʃ/]], [#ipa[/ʃ/]], [#ipa[/tʃ/]], [#ipa[/θ/, /tʰ/]], [#ipa[/ʃ/]],
+    [#en[/oː/]], [#en[/k/]], [#en[/ks/]], [#en[/k/]], [#en[/z/]], [#en[/ø/]], [#en[/ŋ/]], [#en[/ʍ/]], [#en[/ŋ/]], [#en[/wa/]], [#en[/f/]], [#en[/k/]], [#en[/ʃ/]], [#en[/ʃ/]], [#en[/tʃ/]], [#en[/θ/, /tʰ/]], [#en[/ʃ/]],
   )
 
 说明如下：
 
-\(1) #ong[au]读#ipa[/oː/]是央语唯一一个非常明显地残留到拼写上的元音推移；
+\(1) #ong[au]读#en[/oː/]是央语唯一一个非常明显地残留到拼写上的元音推移；
 
-\(2) #ong[cc]（#ipa[/k/]）是更乙林来源的拼写；
+\(2) #ong[cc]（#en[/k/]）是更乙林来源的拼写；
 
-\(3) #ong[cce]是#ipa[/ks/]的央式拼法，所用甚少；
+\(3) #ong[cce]是#en[/ks/]的央式拼法，所用甚少；
 
-\(4) #ong[ch]（#ipa[/k/]）的拼法则是和地逸有关；
+\(4) #ong[ch]（#en[/k/]）的拼法则是和地逸有关；
 
 \(5) 对于/z/的缺位，采用#ong[dz]的拼写；
 
-\(6) 受外来语影响#ong[eu]读#ipa[/ø/]；
+\(6) 受外来语影响#ong[eu]读#en[/ø/]；
 
 \(7) /ŋ/拼作#ong[gn]更普遍（当然也有很多拼#ong[ng]的，比如#ong[Onglısch]）；
 
-\(8) 同样受外来语影响，#ong[oı]读#ipa[/wa/]；
+\(8) 同样受外来语影响，#ong[oı]读#en[/wa/]；
 
-\(9) #ong[ph]（#ipa[/f/]）是更乙林来源的拼写；
+\(9) #ong[ph]（#en[/f/]）是更乙林来源的拼写；
 
-\(10) 前面提过，#ong[qu]经常在一起连用，念#ipa[/k/]；
+\(10) 前面提过，#ong[qu]经常在一起连用，念#en[/k/]；
 
-\(11) #ipa[/ʃ/]拼作#ong[sch]更普遍，除此之外也有受借词影响的写法------后接元音的#ong[sı, tı]也是#ipa[/ʃ/]的拼法；
+\(11) #en[/ʃ/]拼作#ong[sch]更普遍，除此之外也有受借词影响的写法------后接元音的#ong[sı, tı]也是#en[/ʃ/]的拼法；
 
-\(12) #ong[th]读#ipa[/θ/]只出现在第二人称单数的变位，其余都是#ipa[/tʰ/]。
+\(12) #ong[th]读#en[/θ/]只出现在第二人称单数的变位，其余都是#en[/tʰ/]。
 
 == 二、名词
 + 词性及定冠词
@@ -144,7 +145,7 @@
     columns: 4,
     [], [单数], [复数], [尊敬],
     [第一人称], [#ong[ıc, mē]], [#ong[ƿır, ƿē]], [#ong[/]],
-    [第二人称], [#ong[tü, tœ]], [#ong[sü, sœ ]#footnote[#ong[sü]念作#ipa[/y/]。]], [#ong[sü, sœ ]#footnote[#ong[sü]念作#ipa[/y/]。]],
+    [第二人称], [#ong[tü, tœ]], [#ong[sü, sœ ]#footnote[#ong[sü]念作#en[/y/]。]], [#ong[sü, sœ ]#footnote[#ong[sü]念作#en[/y/]。]],
     [第三人称], [#ong[hē/schē, hı̄/schı̄]], [#ong[tmā, tmā]], [#ong[dzē, dzē]],
   )
 
@@ -160,7 +161,7 @@
     [], [单数], [复数], [尊敬],
     [第一人称], [#ong[mano, manı, mans]], [#ong[ƿoro, ƿorı, ƿors]], [/],
     [第二人称], [#ong[tœn, tœnı, tœns]], [#ong[sœn, sœnı, sœns]], [#ong[sœn, sœnı, sœns]],
-    [第三人称], [#ong[haro/scharo, harı/scharı, hars/schars]], [#ong[tmār, tmār, tmārs]], [#ong[dzēr, dzēr, dzērs]#footnote[#ong[dzēr, dzērs]分别念#ipa[/ɛr/, /ɛrs/]。]],
+    [第三人称], [#ong[haro/scharo, harı/scharı, hars/schars]], [#ong[tmār, tmār, tmārs]], [#ong[dzēr, dzēr, dzērs]#footnote[#ong[dzēr, dzērs]分别念#en[/ɛr/, /ɛrs/]。]],
   )
 
 #block[
@@ -177,7 +178,7 @@
     [], [单数], [复数], [尊敬],
     [第一人称], [#ong[manselb, m\(a\)]], [#ong[ƿorselb, ƿ\(or\)]], [#ong[/]],
     [第二人称], [#ong[tœnselb, t\(œ\)]], [#ong[sœnselb, s\(œ\)]], [#ong[sœnselb, s\(œ\)]],
-    [第三人称], [#ong[harselb/scharselb, h\(ar\)/sch\(ar\)]], [#ong[tmārselb, tmār]], [#ong[dzērselb, dz\(ēr\) ]#footnote[#ong[dzērselb, dzēr]和#ong[dz’]分别念#ipa[/ɛrselβ/, /ɛr/, /j/]。例如#ong[dz’ahhēlon] “怹康复” #ipa[/j.aheːlən/]。]],
+    [第三人称], [#ong[harselb/scharselb, h\(ar\)/sch\(ar\)]], [#ong[tmārselb, tmār]], [#ong[dzērselb, dz\(ēr\) ]#footnote[#ong[dzērselb, dzēr]和#ong[dz’]分别念#en[/ɛrselβ/, /ɛr/, /j/]。例如#ong[dz’ahhēlon] “怹康复” #en[/j.aheːlən/]。]],
   )
 
 == 四、动词
@@ -207,14 +208,14 @@
 
 #block[
 #set enum(numbering: "1.", start: 3)
-+ 进行式变位：将所有动词末尾的#ong[-on, -en]变为#ong[-gne]（念#ipa[/ŋ/]）。
++ 进行式变位：将所有动词末尾的#ong[-on, -en]变为#ong[-gne]（念#en[/ŋ/]）。
 ]
 
 例：#ong[Bırds sent tƿıstgne an do drō.] 鸟儿在树上鸣叫。
 
 #block[
 #set enum(numbering: "1.", start: 4)
-+ 完成式变位：完成式的动词一般在前面有#ong[ga-]前缀（念#ipa[/ə/]），结尾为#ong[-de]（念#ipa[/d/]）或#ong[-on/-en]。这类动词需要搭配#ong[ben, hābon]使用，表示状态变化的用前者，反之用后者。例：
++ 完成式变位：完成式的动词一般在前面有#ong[ga-]前缀（念#en[/ə/]），结尾为#ong[-de]（念#en[/d/]）或#ong[-on/-en]。这类动词需要搭配#ong[ben, hābon]使用，表示状态变化的用前者，反之用后者。例：
 ]
 
 #ong[Tü best gacamon to hōm.] 你回到家了。
@@ -223,7 +224,7 @@
 
 #block[
 #set enum(numbering: "1.", start: 5)
-+ 过去式变位：过去式的动词一般以#ong[-don]（念#ipa[/tən/]）结尾，并在此基础上进行变位。以#ong[ƿaron] “是”，#ong[hādon] “有”（#ipa[/haːtən/]），#ong[lıbdon] “居住”（#ipa[/liβtən/]）为例：
++ 过去式变位：过去式的动词一般以#ong[-don]（念#en[/tən/]）结尾，并在此基础上进行变位。以#ong[ƿaron] “是”，#ong[hādon] “有”（#en[/haːtən/]），#ong[lıbdon] “居住”（#en[/liβtən/]）为例：
 ]
 
 #data-table(
@@ -253,7 +254,7 @@
 + 二类形容词
 ]
 
-二类形容词通常是外来语，通常放在被修饰的词后。以#ong[beáu] “美的”（#ipa[/boː/]）为例：
+二类形容词通常是外来语，通常放在被修饰的词后。以#ong[beáu] “美的”（#en[/boː/]）为例：
 
 #data-table(
     columns: 4,

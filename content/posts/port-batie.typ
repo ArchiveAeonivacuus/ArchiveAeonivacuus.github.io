@@ -3,6 +3,7 @@
 #show: post.with(
   title: "巴提码头",
   date: "2025-11-24",
+  summary: "巴提渔家子弟出海记。",
   tags: ("故事", "於留根", "央额列"),
   category: "瀛寰",
   draft: false,

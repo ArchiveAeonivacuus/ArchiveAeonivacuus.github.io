@@ -10,7 +10,7 @@
   draft: false,
 )
 
-= #latin[Lanterarium sub Firmamento Ochraceo]
+= #rom[Lanterarium sub Firmamento Ochraceo]
 
 Any cleric wont to travel oft between Taitchland and the Papacy Romo would surely know that above southern Taitchland, even within the vault, one may often behold a sky of pallid red. This sight is most striking at dusk, when above the far horizon it seems as though some ailing soul hath smeared the heavens with blood. The lingering crimson makes one suspect that the setting sun is bidding farewell to the world, leaving behind such hues to echo across the earth together with the sound of bells. A poet of southern Taitchland sang:
 
@@ -22,7 +22,7 @@ Wann da Hacoromer Nebl kimmt,#linebreak() werd aus'm zwielicht a roat's gedimmt.
 
 #poem[
 
-When fog Hacorui comes drifting down,#linebreak() The dusk is dyed a crimson brown.
+#emph[When fog Hacorui comes drifting down,#linebreak() The dusk is dyed a crimson brown.]
 
 ]
 
@@ -176,7 +176,7 @@ The shape of a snowdrop, passed down through generations among the heads of the 
 
 Nivalia read through the library all night, amid the clamour of other servants running to and fro, from the first-generation head Chrona's notebook all the way unto the fourth-generation Noctis'.
 
-That year, Nivalia, Nivalia Mangusacia Carnstaen#footnote[Nivalia Mangusacia Carnstaen: Pronounced #ipa[/niʋaːlia.mãɣusaːkʲia.kaːɾ̩̃stãɪ̃/].], became the fifth-generation viscount.
+That year, Nivalia, Nivalia Mangusacia Carnstaen#footnote[Nivalia Mangusacia Carnstaen: Pronounced #en[/niʋaːlia.mãɣusaːkʲia.kaːɾ̩̃stãɪ̃/].], became the fifth-generation viscount.
 
 The head of the Mangusacia family must, from time to time, walk alone through every corner of the domain. Setting out from the castle, following the River Quies north a short way, unto the tree at the edge of the Schwarzwald, then east along the Schwarzwald's boundary, gazing at the foothills of the Joland Highlands, all the way unto that boundary stone, then south along the domain's border back unto the castle. There is no main road; walking upon the soft soil of the forest, walking beside the scattered gravel of the riverbank---this is called the “circuit of the domain.”
 

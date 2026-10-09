@@ -3,6 +3,7 @@
 #show: post.with(
   title: "论不定之海现象——树上萤火虫模型",
   date: "2025-12-02",
+  summary: "从航海习惯出发，对瀛寰世界结构的猜想研究。",
   tags: ("设定", "於留根", "央额列", "息律", "世界模型", "树上萤火虫"),
   category: "瀛寰",
   draft: false,
@@ -79,7 +80,7 @@
 ……
 
 == #ong[Capıtulum 3] 萤火虫与浮世根须
-由于多数浮世根须生长聚集的情况比较芜杂，上述船只（船队）的实际航行轨迹也无从考究，因此笔者并没有能力对其进行定量研究。但大致的结论可以从图表1-3得出，即“息律越低，走得越慢”。亚力知亚·乾都（#ong[Alexandrea Conde]）的研究#footnote[#class-span("ff-ong")[Conde, Alexandrea. Der Einfluß des Sihıut uhf humanischen Wahınehmung]（息律对人认知的影响）]表明，息律越高，人的认知越混乱。如果把促进人认知的罗生比作保持视野的光，那么浮世根须就像萤火虫一样，照亮阻碍人认知的黑暗。只不过光照不会影响意识与物质的互动，而息律会#footnote[#latin[de Maupassant, Barnabé. #emph[L'impacta de Sichrut sur l'interaction conscience – matière]]（发那贝·都·毛巴散《息律对意识---物质互动的影响》）]。
+由于多数浮世根须生长聚集的情况比较芜杂，上述船只（船队）的实际航行轨迹也无从考究，因此笔者并没有能力对其进行定量研究。但大致的结论可以从图表1-3得出，即“息律越低，走得越慢”。亚力知亚·乾都（#ong[Alexandrea Conde]）的研究#footnote[#class-span("ff-ong")[Conde, Alexandrea. Der Einfluß des Sihıut uhf humanischen Wahınehmung]（息律对人认知的影响）]表明，息律越高，人的认知越混乱。如果把促进人认知的罗生比作保持视野的光，那么浮世根须就像萤火虫一样，照亮阻碍人认知的黑暗。只不过光照不会影响意识与物质的互动，而息律会#footnote[#rom[de Maupassant, Barnabé. #emph[L'impacta de Sichrut sur l'interaction conscience – matière]]（发那贝·都·毛巴散《息律对意识---物质互动的影响》）]。
 
 ……
 

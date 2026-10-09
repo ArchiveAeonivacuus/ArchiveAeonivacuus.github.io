@@ -17,6 +17,7 @@ import io
 import logging
 import os
 import re
+import shutil
 from multiprocessing import Pool
 
 from fontTools.subset import Options, Subsetter
@@ -51,16 +52,20 @@ FAMILIES = {
         400: {"normal": "SourceSerif4-Regular.ttf", "italic": "SourceSerif4-Italic.ttf"},
         700: {"normal": "SourceSerif4-Bold.otf"},
     },
+    "Times New Roman": {
+        400: {"normal": "Times New Roman.TTF", "italic": "Times New Roman I.TTF"},
+        700: {"normal": "Times New Roman B.TTF", "italic": "Times New Roman BI.TTF"},
+    },
 }
 
 BODY_BY_LANG = {
-    "": ["Source Han Serif SC", "Source Han Serif JP"],
-    "zh_CN": ["Source Han Serif SC", "Source Han Serif JP"],
-    "zh_TW": ["Source Han Serif SC", "Source Han Serif JP"],
-    "ja": ["Source Han Serif JP", "Source Han Serif SC"],
+    "": ["Source Serif 4", "Source Han Serif SC", "Source Han Serif JP"],
+    "zh_CN": ["Source Serif 4", "Source Han Serif SC", "Source Han Serif JP"],
+    "zh_TW": ["Source Serif 4", "Source Han Serif Old", "Source Han Serif SC"],
+    "ja": ["Source Serif 4", "Source Han Serif JP", "Source Han Serif SC"],
     "en": ["Source Serif 4", "Source Han Serif SC", "Source Han Serif JP"],
     "ong": ["Old English Onglisch", "Source Serif 4", "Source Han Serif SC"],
-    "A-zh_iang": ["Source Han Serif JP", "Source Han Serif SC"],
+    "A-zh_iang": ["Source Serif 4", "Source Han Serif JP", "Source Han Serif SC"],
 }
 
 CLASS_FAMILY = {
@@ -68,12 +73,24 @@ CLASS_FAMILY = {
     "ff-min": "Source Han Serif JP",
     "ff-ja_old": "Asebi Mincho",
     "ff-ong": "Old English Onglisch",
-    "ff-en": "Source Serif 4",
+    "ff-en": "Times New Roman",
     "ff-rom": "HighTowerText",
     "ff-zh_cn": "Source Han Serif SC",
     "ff-cjk_old": "Source Han Serif Old",
     "ff-dfkai": "DFKai-SB",
     "ff-kai": "KaiTi",
+}
+
+# Language switcher labels (templates/post.typ `data-lang`) use each language's
+# own page font, so those faces must be subset as well.
+SWITCHER_LANG_FAMILY = {
+    "zh_CN": "Source Han Serif SC",
+    "zh_TW": "Source Han Serif Old",
+    "ja": "Source Han Serif JP",
+    "en": "Source Serif 4",
+    "ko": "Source Han Serif SC",
+    "ong": "Old English Onglisch",
+    "A-zh_iang": "Source Han Serif JP",
 }
 
 # Per-process caches (each worker keeps its own).
@@ -110,13 +127,14 @@ def page_families(text, lang):
     for name, family in CLASS_FAMILY.items():
         if name in classes:
             families.add(family)
-    if "ff-en" in classes:
-        # Source Serif 4 lacks IPA extensions; Asebi has them.
-        families.add("Asebi Mincho")
     if {"poem", "ci", "spellcard"} & classes:
         families.add("KaiTi")
     if "waka" in classes:
         families.add("DFKai-SB")
+    for match in re.finditer(r'data-lang="([^"]*)"', text):
+        family = SWITCHER_LANG_FAMILY.get(match.group(1))
+        if family:
+            families.add(family)
     return families
 
 
@@ -127,7 +145,7 @@ def subset_file(family, weight, style, source, unicodes):
     options.desubroutinize = True
     options.layout_features = ["*"]
     options.name_IDs = ["*"]
-    options.no_hinting = True
+    options.hinting = False
     options.notdef_outline = True
     subsetter = Subsetter(options=options)
     subsetter.populate(unicodes=unicodes)
@@ -208,6 +226,14 @@ def main():
 
     files = glob.glob(os.path.join(OUT, "*.woff2"))
     print(f"[pagefonts] {len(pages)} pages, {len(files)} subsets, {workers} workers")
+
+    # Drop the full local-preview fonts from the production output — the
+    # per-page subsets above are what actually get served. `assets/fonts/`
+    # stays in the source tree so `tola serve` still renders them locally.
+    full_fonts = os.path.join(PUBLIC, "assets", "fonts")
+    if os.path.isdir(full_fonts):
+        shutil.rmtree(full_fonts)
+        print("[pagefonts] removed full local-preview fonts from output")
 
 
 if __name__ == "__main__":

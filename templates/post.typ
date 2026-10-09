@@ -43,6 +43,7 @@
             html.elem("a", attrs: (
               href: item.permalink,
               class: "translation-link" + if is-current { " is-current" } else { "" },
+              "data-lang": item.lang,
               "aria-current": if is-current { "true" } else { "false" },
             ), item.label)
           }

@@ -31,12 +31,12 @@
   [指令], [字体], [指令], [字体],
   [`#ong[…]`], [Old English Onglisch], [`#ja[…]`], [Source Han Serif JP],
   [`#old-ja[…]`], [Asebi Mincho], [`#old-cjk[…]`], [Source Han Serif Old],
-  [`#dfkai[…]`], [DFKai-SB], [`#ipa[…]`], [Times New Roman],
-  [`#latin[…]`], [HighTowerText], [`#kai[…]`], [KaiTi],
+  [`#dfkai[…]`], [DFKai-SB], [`#en[…]`], [Times New Roman],
+  [`#rom[…]`], [HighTowerText], [`#kai[…]`], [KaiTi],
   [`#mincho[…]`], [MS Mincho], [`#zh[…]`], [Source Han Serif SC],
 )
 
-示例：於留根洲（#ong[Orken]）、#ja[ニヴァーリア]、#ipa[/niʋaːlia/]。
+示例：於留根洲（#ong[Orken]）、#ja[ニヴァーリア]、#en[/niʋaːlia/]。
 
 字体和注音可以互相嵌套：
 

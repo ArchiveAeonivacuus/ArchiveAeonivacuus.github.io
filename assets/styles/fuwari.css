@@ -79,7 +79,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { min-width: 20rem; scroll-behavior: smooth; background: var(--page-bg); line-height: 1.5; -webkit-text-size-adjust: 100%; overflow-x: clip; }
-body { min-width: 20rem; min-height: 100vh; margin: 0; background: var(--page-bg); color: var(--deep-text); font-family: "Source Han Serif SC", "Source Han Serif JP", MiSans, Roboto, system-ui, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+body { min-width: 20rem; min-height: 100vh; margin: 0; background: var(--page-bg); color: var(--deep-text); font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", MiSans, Roboto, system-ui, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; overflow-x: clip; }
 h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, pre { margin: 0; }
 ul, ol { margin: 0; padding: 0; }
 img, svg, video, canvas { display: block; vertical-align: middle; }
@@ -482,7 +482,7 @@ html.is-animating .transition-swup-fade { opacity: 0; transform: translateY(1rem
 :is(.markdown-content, .footnotes) .ff-ong { font-family: "Old English Onglisch", serif; }
 :is(.markdown-content, .footnotes) .ff-cjk_old { font-family: "Source Han Serif Old", "Source Han Serif SC", serif; font-synthesis: weight; }
 :is(.markdown-content, .footnotes) .ff-dfkai { font-family: "DFKai-SB", KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; }
-:is(.markdown-content, .footnotes) .ff-en { font-family: "Source Serif 4", "Asebi Mincho", serif; }
+:is(.markdown-content, .footnotes) .ff-en { font-family: "Times New Roman", serif; }
 :is(.markdown-content, .footnotes) .ff-rom { font-family: "HighTowerText", serif; font-synthesis: weight; }
 :is(.markdown-content, .footnotes) .ff-kai { font-family: KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; }
 :is(.markdown-content, .footnotes) .ff-min { font-family: "Source Han Serif JP", "MS Mincho", serif; }
@@ -559,13 +559,15 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 .footnotes li::marker { color: var(--primary); font-weight: 700; }
 .markdown-content a.footnote-backref { margin-left: .35rem !important; }
 
-/* The whole page — chrome included — follows the article's language font. */
-.site-shell { font-family: "Source Han Serif SC", "Source Han Serif JP", MiSans, Roboto, system-ui, sans-serif; }
+/* The whole page — chrome included — follows the article's language font.
+   "Source Serif 4" is listed first everywhere so Latin letters always use a
+   face with a true italic; CJK characters fall through to the Han fonts. */
+.site-shell { font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", MiSans, Roboto, system-ui, sans-serif; }
 .site-shell[data-lang="en"] { font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", serif; }
-.site-shell[data-lang="ja"] { font-family: "Source Han Serif JP", "Source Han Serif SC", serif; }
-.site-shell[data-lang="zh_TW"] { font-family: "Source Han Serif SC", "Source Han Serif JP", serif; }
+.site-shell[data-lang="ja"] { font-family: "Source Serif 4", "Source Han Serif JP", "Source Han Serif SC", serif; }
+.site-shell[data-lang="zh_TW"] { font-family: "Source Serif 4", "Source Han Serif Old", "Source Han Serif SC", serif; }
 .site-shell[data-lang="ong"] { font-family: "Old English Onglisch", "Source Serif 4", "Source Han Serif SC", serif; }
-.site-shell[data-lang="A-zh_iang"] { font-family: "Source Han Serif JP", "Source Han Serif SC", serif; }
+.site-shell[data-lang="A-zh_iang"] { font-family: "Source Serif 4", "Source Han Serif JP", "Source Han Serif SC", serif; }
 
 /* Translation switcher. */
 .post-translations { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem; margin: .85rem 0 0; padding: .5rem .75rem; border: 1px solid var(--line-divider); border-radius: .65rem; background: color-mix(in oklch, var(--btn-regular-bg) 55%, transparent); }
@@ -575,6 +577,17 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 .translation-link { padding: .18rem .62rem; border: 1px solid var(--line-divider); border-radius: .5rem; color: var(--text-75); font-size: .85rem; font-weight: 700; transition: color 150ms ease, border-color 150ms ease, background-color 150ms ease; }
 .translation-link:hover { color: var(--primary); border-color: var(--primary); }
 .translation-link.is-current { color: #fff; background: var(--primary); border-color: transparent; pointer-events: none; }
+
+/* Each language label uses its own page's main font (regular weight, since the
+   CJK faces only ship a regular cut — the bold JP/SC faces share one file),
+   regardless of the current page's language. */
+.translation-link[data-lang="zh_CN"] { font-family: "Source Han Serif SC", serif; font-weight: 400; }
+.translation-link[data-lang="zh_TW"] { font-family: "Source Han Serif Old", "Source Han Serif SC", serif; font-weight: 400; }
+.translation-link[data-lang="ja"] { font-family: "Source Han Serif JP", serif; font-weight: 400; }
+.translation-link[data-lang="en"] { font-family: "Source Serif 4", serif; font-weight: 400; }
+.translation-link[data-lang="ko"] { font-family: "Source Han Serif SC", serif; font-weight: 400; }
+.translation-link[data-lang="ong"] { font-family: "Old English Onglisch", serif; font-weight: 400; }
+.translation-link[data-lang="A-zh_iang"] { font-family: "Source Han Serif JP", serif; font-weight: 400; }
 
 /* ===== Monster Hunter character cards (restored) ===== */
 .mh-hunter, .mh-other {
@@ -671,4 +684,118 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
   font-style: normal;
   font-display: swap;
   src: url("/assets/fonts/SourceSerif4-Bold.otf") format("opentype");
+}
+
+/* High Tower Text (`#latin[..]` / `.ff-rom`) — same family name as the
+   production subsetter so local `tola serve` matches it too. */
+@font-face {
+  font-family: "HighTowerText";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/HTOWERT.TTF") format("truetype");
+}
+@font-face {
+  font-family: "HighTowerText";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/assets/fonts/HTOWERTI.TTF") format("truetype");
+}
+
+/* CJK body faces + the remaining specialty faces, mirroring the families the
+   production subsetter (scripts/build-page-fonts.py) emits, so local
+   `tola serve` renders the same fonts as the built site. */
+@font-face {
+  font-family: "Source Han Serif SC";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/NotoSerifSC-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif SC";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/NotoSerifSC-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif JP";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifJP-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif JP";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/NotoSerifSC-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif Old";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifOld-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Asebi Mincho";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/AsebiMin-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "KaiTi";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/simkai.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DFKai-SB";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/DFKai-SB.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Old English Onglisch";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/OldEnglishOnglisch.ttf") format("truetype");
+}
+
+/* Times New Roman (full R/B/I/BI family) for IPA / `.ff-en` (`#en[..]`). */
+@font-face {
+  font-family: "Times New Roman";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/Times New Roman.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Times New Roman";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/assets/fonts/Times New Roman I.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/Times New Roman B.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("/assets/fonts/Times New Roman BI.TTF") format("truetype");
 }

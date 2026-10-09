@@ -3,6 +3,7 @@
 #show: post.with(
   title: "冥界邯郸一梦",
   date: "2025-11-28",
+  summary: "冥界梦幻，亡魂暂归。",
   tags: ("故事", "瀛洲", "大瀛", "冥界", "息律"),
   category: "瀛寰",
   draft: false,

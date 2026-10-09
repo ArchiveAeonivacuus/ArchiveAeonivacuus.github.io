@@ -3,7 +3,7 @@
 #show: post.with(
   title: "竹取拾遗物语——外传·蓬莱山古文教室",
   date: "2026-09-08",
-  summary: "八意永琳，曾经的“月之头脑”，或许现在也是。她望向桌子上一份一份的资料，仔细地确认着。",
+  summary: "辉夜获得现代身份，并应聘补习班老师的故事。",
   image: "/assets/images/houraisan-classic-classroom.png",
   tags: ("外传", "东方", "月都", "蓬莱山辉夜"),
   category: "竹取拾遗物语",

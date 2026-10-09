@@ -3,6 +3,7 @@
 #show: post.with(
   title: "刺杀影子",
   date: "2025-11-28",
+  summary: "瀛斐战争中，一名大瀛士兵在息律的压迫下，经历了一场诡异的战斗。",
   tags: ("故事", "瀛洲", "大瀛", "战争", "息律"),
   category: "瀛寰",
   draft: false,

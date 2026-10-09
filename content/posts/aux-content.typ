@@ -3,6 +3,7 @@
 #show: post.with(
   title: "我打心底高兴！",
   date: "2025-11-25",
+  summary: "花园不二等一夜发家记。",
   tags: ("故事", "瀛洲", "大瀛"),
   category: "瀛寰",
   draft: false,
