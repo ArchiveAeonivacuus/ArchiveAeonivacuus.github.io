@@ -179,17 +179,26 @@
     })
 }
 
-// Series (serialized) groups: posts sharing a non-empty `series` key, ordered
-// by `series_index` (so the reading order does not depend on the title wording).
-#let _series-index(p) = {
+// Series (serialized) groups: posts sharing a non-empty `series` key.
+// Order: `series_position="before"` (置前) → numbered `series_index` →
+// `series_position="after"` (置后). Numbered parts keep autonomous sorting,
+// so a 置前 part (e.g. 序) does not consume the "1" number.
+#let _series-sort-key(p) = {
   let idx = p.at("series_index", default: none)
-  if idx == none { 9999 } else if type(idx) == int { idx } else if type(idx) == float { int(idx) } else { int(str(idx)) }
+  let pos = _str-of(p.at("series_position", default: ""))
+  let group = if pos == "before" { 0 } else if pos == "after" { 2 } else { 1 }
+  if group == 1 {
+    let num = if idx == none { 9999 } else if type(idx) == int { idx } else if type(idx) == float { int(idx) } else { int(str(idx)) }
+    (group, num)
+  } else {
+    (group, _str-of(idx))
+  }
 }
 
 #let _series(series) = {
   if _str-of(series) == "" { return () }
   let key = _str-of(series)
-  pages().filter(p => _str-of(p.at("series", default: "")) == key).sorted(key: _series-index)
+  pages().filter(p => _str-of(p.at("series", default: "")) == key).sorted(key: _series-sort-key)
 }
 
 #let _head(title: none, summary: none, image: none, article: false, date: none, update: none, tags: ()) = context {
@@ -427,7 +436,7 @@
   }
 }
 
-#let fuwari-base(body, title: none, summary: none, date: none, update: none, tags: (), category: none, image: none, draft: false, words: none, minutes: none, lang: none, translate_key: none, series: none, series_index: none, article: false) = {
+#let fuwari-base(body, title: none, summary: none, date: none, update: none, tags: (), category: none, image: none, draft: false, words: none, minutes: none, lang: none, translate_key: none, series: none, series_index: none, series_position: none, article: false) = {
   let t = ui(lang)
   let view = context {
     if target() == "html" {
@@ -456,7 +465,7 @@
       ]
     }
   }
-  tola-page(title: title, summary: summary, date: date, update: update, tags: tags, draft: draft, words: words, minutes: minutes, category: category, image: image, lang: lang, translate_key: translate_key, series: series, series_index: series_index, head: _head(title: title, summary: summary, image: image, article: article, date: date, update: update, tags: tags))[#view]
+  tola-page(title: title, summary: summary, date: date, update: update, tags: tags, draft: draft, words: words, minutes: minutes, category: category, image: image, lang: lang, translate_key: translate_key, series: series, series_index: series_index, series_position: series_position, head: _head(title: title, summary: summary, image: image, article: article, date: date, update: update, tags: tags))[#view]
 }
 
 #let page-card(body) = context {

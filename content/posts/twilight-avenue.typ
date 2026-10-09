@@ -2,7 +2,7 @@
 
 #show: post.with(
   title: "宵暗道中",
-  date: "2026-10-08",
+  date: "2026-10-09",
   tags: ("故事", "瀛洲", "大瀛", "阴阳馆"),
   category: "瀛寰",
   draft: true,

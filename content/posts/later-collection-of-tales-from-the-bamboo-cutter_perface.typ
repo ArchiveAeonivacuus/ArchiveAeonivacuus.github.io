@@ -7,7 +7,8 @@
   category: "竹取拾遗物语",
   draft: false,
   series: "竹取拾遗物语",
-  series_index: 1,
+  series_index: "序",
+  series_position: "before",
 )
 
 = #old-ja[#ruby[竹取拾遺物語][たけとりしふいものがたり]　#ruby[序][じよ]]

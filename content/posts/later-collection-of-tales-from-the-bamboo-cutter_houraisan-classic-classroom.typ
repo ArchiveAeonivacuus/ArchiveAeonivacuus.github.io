@@ -8,8 +8,9 @@
   tags: ("外传", "东方", "月都", "蓬莱山辉夜"),
   category: "竹取拾遗物语",
   draft: false,
-  series: "竹取拾遗物语·外传",
-  series_index: 1,
+  series: "竹取拾遗物语",
+  series_index: "外传",
+  series_position: "after",
 )
 
 #aside(kind: "note")[ 声明：本作在属于东方project二创的同时，是站内小说《竹取拾遗物语》的外传，含有《竹取拾遗物语》的部分相关设定（二设内容），并包含对现实世界中本作所提到相关事物的考证和适当架空。

@@ -79,7 +79,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { min-width: 20rem; scroll-behavior: smooth; background: var(--page-bg); line-height: 1.5; -webkit-text-size-adjust: 100%; overflow-x: clip; }
-body { min-width: 20rem; min-height: 100vh; margin: 0; background: var(--page-bg); color: var(--deep-text); font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", MiSans, Roboto, system-ui, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+body { min-width: 20rem; min-height: 100vh; margin: 0; background: var(--page-bg); color: var(--deep-text); font-family: "Source Han Serif SC", "Source Han Serif JP", "Source Serif 4", MiSans, Roboto, system-ui, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; overflow-x: clip; }
 h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, pre { margin: 0; }
 ul, ol { margin: 0; padding: 0; }
 img, svg, video, canvas { display: block; vertical-align: middle; }
@@ -584,14 +584,19 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 .markdown-content a.footnote-backref { margin-left: .35rem !important; }
 
 /* The whole page — chrome included — follows the article's language font.
-   "Source Serif 4" is listed first everywhere so Latin letters always use a
-   face with a true italic; CJK characters fall through to the Han fonts. */
-.site-shell { font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", MiSans, Roboto, system-ui, sans-serif; }
+    CJK fonts are listed first so quotes/punctuation stay full-width in
+    Chinese/Japanese; Latin italic switches to "Source Serif 4" via the
+    `em`/`i` rule below. English/ong keep "Source Serif 4" first. */
+.site-shell { font-family: "Source Han Serif SC", "Source Han Serif JP", "Source Serif 4", MiSans, Roboto, system-ui, sans-serif; }
 .site-shell[data-lang="en"] { font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", serif; }
-.site-shell[data-lang="ja"] { font-family: "Source Serif 4", "Source Han Serif JP", "Source Han Serif SC", serif; }
-.site-shell[data-lang="zh_TW"] { font-family: "Source Serif 4", "Source Han Serif Old", "Source Han Serif SC", serif; }
+.site-shell[data-lang="ja"] { font-family: "Source Han Serif JP", "Source Han Serif SC", "Source Serif 4", serif; }
+.site-shell[data-lang="zh_TW"] { font-family: "Source Han Serif Old", "Source Han Serif SC", "Source Serif 4", serif; }
 .site-shell[data-lang="ong"] { font-family: "Old English Onglisch", "Source Serif 4", "Source Han Serif SC", serif; }
-.site-shell[data-lang="A-zh_iang"] { font-family: "Source Serif 4", "Source Han Serif JP", "Source Han Serif SC", serif; }
+.site-shell[data-lang="A-zh_iang"] { font-family: "Source Han Serif JP", "Source Han Serif SC", "Source Serif 4", serif; }
+
+/* Italic Latin letters use a face with a true italic (Source Serif 4); CJK
+   inside italics still falls through to the Han fonts. */
+:is(.markdown-content, .footnotes) em, :is(.markdown-content, .footnotes) i { font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", serif; }
 
 /* Translation switcher. */
 .post-translations { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem; margin: .85rem 0 0; padding: .5rem .75rem; border: 1px solid var(--line-divider); border-radius: .65rem; background: color-mix(in oklch, var(--btn-regular-bg) 55%, transparent); }

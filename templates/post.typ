@@ -24,7 +24,7 @@
   ]
 }
 
-#let post(title: none, summary: none, date: none, update: none, tags: (), category: none, image: none, draft: false, words: none, minutes: none, lang: none, translate_key: none, series: none, series_index: none, body) = {
+#let post(title: none, summary: none, date: none, update: none, tags: (), category: none, image: none, draft: false, words: none, minutes: none, lang: none, translate_key: none, series: none, series_index: none, series_position: none, body) = {
   let stat = stats-of(current-permalink)
   let t = ui(lang)
   let words = if words != none { words } else { stat.at("w", default: none) }
@@ -130,7 +130,7 @@
       #navigation
     ]
   } else { body }
-  fuwari-base(article-body, title: title, summary: summary, date: date, update: update, tags: tags, category: category, image: image, draft: draft, words: words, minutes: minutes, lang: lang, translate_key: translate_key, series: series, series_index: series_index, article: true)
+  fuwari-base(article-body, title: title, summary: summary, date: date, update: update, tags: tags, category: category, image: image, draft: draft, words: words, minutes: minutes, lang: lang, translate_key: translate_key, series: series, series_index: series_index, series_position: series_position, article: true)
 }
 
 #let post-card(item) = {

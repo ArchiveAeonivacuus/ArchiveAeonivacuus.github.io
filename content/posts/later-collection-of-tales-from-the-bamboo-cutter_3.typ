@@ -7,7 +7,7 @@
   category: "竹取拾遗物语",
   draft: false,
   series: "竹取拾遗物语",
-  series_index: 4,
+  series_index: 3,
 )
 
 = #old-ja[#ruby[三][さん]　#ruby[諏訪][すわ]の#ruby[勧請][くわんじやう]]
