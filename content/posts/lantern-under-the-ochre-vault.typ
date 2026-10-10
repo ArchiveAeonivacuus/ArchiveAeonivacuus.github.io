@@ -16,13 +16,15 @@
 
 #poem(lang: "ong")[
 
-Wann da Hacoromer Nebl kimmt,#linebreak() werd aus\'m zwielicht a roat\'s gedimmt.
+Wann da Hacoromer Nebl kimmt, \ 
+werd aus'm zwielicht a roat's gedimmt.
 
 ]
 
 #poem[
 
-雾霭飘自诃古棱，#linebreak() 暮色时分尽染红。
+雾霭飘自诃古棱， \ 
+暮色时分尽染红。
 
 ]
 

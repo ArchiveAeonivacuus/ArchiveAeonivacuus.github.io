@@ -20,16 +20,33 @@
 // endnote list. Paged/PDF output keeps the native footnote behaviour.
 // ---------------------------------------------------------------------------
 #let _footnotes = state("fuwari-footnotes", ())
+#let _fn-refs = state("fuwari-fn-refs", ())
 
-#let footnote-ref(body) = context {
+#let footnote-ref(body, label: none) = context {
   if target() != "html" { return [] }
   let index = _footnotes.get().len() + 1
   _footnotes.update(list => list + (body,))
+  if label != none {
+    _fn-refs.update(list => list + ((repr(label), index),))
+  }
   html.elem("sup", attrs: (class: "footnote-ref"), html.elem("a", attrs: (
     id: "fnref-" + str(index),
     href: "#fn-" + str(index),
     role: "doc-noteref",
   ), str(index)))
+}
+
+#let footnote-reuse(ref-name: "") = context {
+  if target() != "html" { return [] }
+  let pair = _fn-refs.get().find(p => p.at(0) == ref-name)
+  let idx = if pair == none { none } else { pair.at(1) }
+  if idx != none {
+    html.elem("sup", attrs: (class: "footnote-ref"), html.elem("a", attrs: (
+      id: "fnref-" + str(idx),
+      href: "#fn-" + str(idx),
+      role: "doc-noteref",
+    ), str(idx)))
+  } else { [] }
 }
 
 #let footnote-list() = context {
@@ -448,7 +465,13 @@
             #_sidebar(t, lang)
             #html.elem("main", attrs: (id: "swup-container", class: "main-column transition-swup-fade", "data-page-lang": if lang == none { "zh_CN" } else { str(lang) }))[
               #html.elem("div", attrs: (id: "content-wrapper", class: "content-wrapper onload-animation"), {
-                show footnote: it => if target() == "html" { footnote-ref(it.body) } else { it }
+                show footnote: it => if target() == "html" {
+                  if type(it.body) == label {
+                    footnote-reuse(ref-name: repr(it.body))
+                  } else {
+                    footnote-ref(it.body, label: it.fields().at("label", default: none))
+                  }
+                } else { it }
                 body
               })
               #_footer()

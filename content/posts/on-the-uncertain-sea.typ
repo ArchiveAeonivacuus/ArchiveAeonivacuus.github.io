@@ -13,11 +13,11 @@
 
 = #ong[– Módel Lampyrídæ An Traƿ.]
 
-= #old-cjk[論不定之海現象——樹上螢火蟲模型]
+= #old-ja[論不定之海現象——樹上螢火蟲模型]
 
 == #ong[Beı Charlıe Flamenco,]
 
-== #old-cjk[察利·敷羅明可 著]
+== #old-ja[察利·敷羅明可 著]
 
 == #ong[Toƿan Cíbıl]
 
@@ -33,16 +33,16 @@
 
 #data-table(
   columns: 4,
-  [], [#ong[Gordan]#linebreak()#old-cjk[葛弾号]], [#ong[St. Ƿıllıam]#linebreak()#old-cjk[維連神佑船隊]], [#ong[Pflicht]#linebreak()#old-cjk[敷力多号]],
-  [#ong[lagnt]#linebreak()#old-cjk[全長]], [152Mt], [154.3Mt per], [150Mt],
-  [#ong[ƿıddt]#linebreak()#old-cjk[寛]], [17.5Mt], [18.2Mt per], [16Mt],
-  [#ong[foro drafton]#linebreak()#old-cjk[艏入水]], [2.7Mt], [2.35Mt per], [2.3Mt],
-  [#ong[aftoro drafton]#linebreak()#old-cjk[艉入水]], [2.9Mt], [2.57Mt per], [2.6Mt],
-  [#ong[vélo créatus]#linebreak()#old-cjk[計画速度]], [9Vl], [9.4Vl], [10Vl],
-  [#ong[normalı forsopoƿar]#linebreak()#old-cjk[常規航力]], [1500Fp], [1473Fp], [1550Fp],
-  [#ong[normalo vélo]#linebreak()#old-cjk[常規速度]], [8.5Vl], [8.93Vl], [9.22Vl],
-  [#ong[forsopoƿar grándethı]#linebreak()#old-cjk[最大航力]], [1700Fp], [1638Fp], [1820Fp],
-  [#ong[vélo grándeth]#linebreak()#old-cjk[最大速度]], [9.1Vl], [8.96Vl], [10.2Vl],
+  [], [#ong[Gordan] \ #old-ja[葛弾号]], [#ong[St. Ƿıllıam] \ #old-ja[維連神佑船隊]], [#ong[Pflicht] \ #old-ja[敷力多号]],
+  [#ong[lagnt] \ #old-ja[全長]], [152#ong[Mt]], [154.3#ong[Mt per]], [150#ong[Mt]],
+  [#ong[ƿıddt] \ #old-ja[寛]], [17.5#ong[Mt]], [18.2#ong[Mt per]], [16#ong[Mt]],
+  [#ong[foro drafton] \ #old-ja[艏入水]], [2.7#ong[Mt]], [2.35#ong[Mt per]], [2.3#ong[Mt]],
+  [#ong[aftoro drafton] \ #old-ja[艉入水]], [2.9#ong[Mt]], [2.57#ong[Mt per]], [2.6#ong[Mt]],
+  [#ong[vélo créatus] \ #old-ja[計画速度]], [9#ong[Vl]], [9.4#ong[Vl]], [10#ong[Vl]],
+  [#ong[normalı forsopoƿar] \ #old-ja[常規航力]], [1500#ong[Fp]], [1473#ong[Fp]], [1550#ong[Fp]],
+  [#ong[normalo vélo] \ #old-ja[常規速度]], [8.5#ong[Vl]], [8.93#ong[Vl]], [9.22#ong[Vl]],
+  [#ong[forsopoƿar grándethı] \ #old-ja[最大航力]], [1700#ong[Fp]], [1638#ong[Fp]], [1820#ong[Fp]],
+  [#ong[vélo grándeth] \ #old-ja[最大速度]], [9.1#ong[Vl]], [8.96#ong[Vl]], [10.2#ong[Vl]],
 )
 
 又是什么造成这样的惊人差异，现在变成了整个世界都绕不过去的难题。如果说后两者的差异可以归咎于航海图，那么前两者又该怎么解释呢？
@@ -50,15 +50,15 @@
 == #ong[Capıtulum 1] 息律与航海
 与其将目光紧盯在船只性能和乘组水平上，不如翻看一下他们的航海记录。笔者通过南方航海公司解约了葛弹号、敷力多号的航海日志，又在露末教廷图书馆找到了神佑船队的历次航海记录，将一些关键信息提取出来，整理成表。下表包括三者所记录的航程中罗生---息律情况，以及根据航海日志推断出的船队直线速度情况。直线速度根据现有的航海图以及其所依赖的传统测绘学观点，即我们所生活的地方、航海中所走的位置相对关系可以看做是一个球体和球体之上的位置关系，尽管后面我们将要重新商讨这一点。
 
-#web-image(src: "/images/distans-sihrut-St-Yilliam.png", alt: "維連神佑船隊毎日距離—羅生息律度") #caption[#class-span("ff-ong")[Gráfıc 1 Dístans - Sıhrut St. Ƿıllıam] 維連神佑船隊毎日距離---羅生息律度]
+#web-image(src: "/images/distans-sihrut-St-Yilliam.png", alt: "維連神佑船隊毎日距離—羅生息律度") #caption[#ong[Gráfıc 1 Dístans - Sıhrut St. Ƿıllıam] #old-ja[維連神佑船隊毎日距離---羅生息律度]]
 
 维连神佑船队每天所走的距离（黑色）和罗生---息律值（灰色）如图。#footnote[这里的距离，姑且通过记录在航海图上的距离计算。]
 
-#web-image(src: "/images/distans-sihrut-Pflicht.png", alt: "敷力多号毎日距離—羅生息律度") #ong[Gráfıc 2 Dístans - Sıhrut Pflicht] 敷力多号毎日距離---羅生息律度
+#web-image(src: "/images/distans-sihrut-Pflicht.png", alt: "敷力多号毎日距離—羅生息律度") #ong[Gráfıc 2 Dístans - Sıhrut Pflicht] #old-ja[敷力多号毎日距離---羅生息律度]
 
 敷力多号每天所走的距离（黑色）和罗生---息律值（灰色）如图。
 
-#web-image(src: "/images/distans-sihrut-Gordon.png", alt: "葛弾号毎日距離—羅生息律度") #ong[Gráfıc 3 Dístans - Sıhrut Gordon] 葛弾号毎日距離---羅生息律度
+#web-image(src: "/images/distans-sihrut-Gordon.png", alt: "葛弾号毎日距離—羅生息律度") #ong[Gráfıc 3 Dístans - Sıhrut Gordon] #old-ja[葛弾号毎日距離---羅生息律度]
 
 葛弹号每天所走的距离（黑色）和罗生---息律值（灰色）#footnote[因为当时的罗生---息律统计方法和现在不同，所以出现了小于`-5`的值。]如图。
 
@@ -67,7 +67,7 @@
 似乎假使我们相信息律表的结果的话，那么便能够得出这样的结论：航海，乃至任何形式的人类对世界的探索，都受到罗生---息律的制约。这种关系具体是什么样的，有待于更多依托精确数学方法的论证。
 
 == #ong[Capıtulum 2] 浮世根须与息律
-南方的勇者#class-span("tx-box")[嘉田郁主]献出自己的生命，为世人揭示了浮世根须与稳定较高罗生---息律的作用#footnote[#old-ja[大瀛陰陽道学会『浮世根の作用に於くる破壊性研究報告（罪悚して之を謝る）』]]，愿主保佑他。现在我们将目光投向这些神秘的造物。
+南方的勇者#boxed[嘉田郁主]献出自己的生命，为世人揭示了浮世根须与稳定较高罗生---息律的作用#footnote[#old-ja[大瀛陰陽道学会『浮世根の作用に於くる破壊性研究報告（罪悚して之を謝る）』]]，愿主保佑他。现在我们将目光投向这些神秘的造物。
 
 科学不允许我们对海洋的底部一探究竟，不过我们还没有在海面检测到多少浮世根须的作用，因此暂且忽略其水生品种之作用不计。从汉苏·加连白（#ong[Hans Carenbach, 1213]）的统计数据，我们又知道陆上浮世根须附近，离浮世根须越近的地方罗生---息律值越高越稳定，但苦于於留根大陆的浮世根须大且芜杂，加连白并没有得出量化的结论。
 
@@ -80,7 +80,7 @@
 ……
 
 == #ong[Capıtulum 3] 萤火虫与浮世根须
-由于多数浮世根须生长聚集的情况比较芜杂，上述船只（船队）的实际航行轨迹也无从考究，因此笔者并没有能力对其进行定量研究。但大致的结论可以从图表1-3得出，即“息律越低，走得越慢”。亚力知亚·乾都（#ong[Alexandrea Conde]）的研究#footnote[#class-span("ff-ong")[Conde, Alexandrea. Der Einfluß des Sihıut uhf humanischen Wahınehmung]（息律对人认知的影响）]表明，息律越高，人的认知越混乱。如果把促进人认知的罗生比作保持视野的光，那么浮世根须就像萤火虫一样，照亮阻碍人认知的黑暗。只不过光照不会影响意识与物质的互动，而息律会#footnote[#rom[de Maupassant, Barnabé. #emph[L'impacta de Sichrut sur l'interaction conscience – matière]]（发那贝·都·毛巴散《息律对意识---物质互动的影响》）]。
+由于多数浮世根须生长聚集的情况比较芜杂，上述船只（船队）的实际航行轨迹也无从考究，因此笔者并没有能力对其进行定量研究。但大致的结论可以从图表1-3得出，即“息律越低，走得越慢”。亚力知亚·乾都（#ong[Alexandrea Conde]）的研究#footnote[#ong[Conde, Alexandrea. Der Einfluß des Sihıut uhf humanischen Wahınehmung]（息律对人认知的影响）]表明，息律越高，人的认知越混乱。如果把促进人认知的罗生比作保持视野的光，那么浮世根须就像萤火虫一样，照亮阻碍人认知的黑暗。只不过光照不会影响意识与物质的互动，而息律会#footnote[#rom[de Maupassant, Barnabé. #emph[L'impacta de Sichrut sur l'interaction conscience – matière]]（发那贝·都·毛巴散《息律对意识---物质互动的影响》）]。
 
 ……
 

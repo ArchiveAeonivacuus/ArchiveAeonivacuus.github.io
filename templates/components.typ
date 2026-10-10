@@ -132,6 +132,13 @@
 #let class-span(class, body) = span(class, body)
 #let raw-html(source) = html-or(none, () => html.elem("span", attrs: ("data-raw-html": source)))
 
+// Inline bordered box (e.g. highlighting a name): HTML uses `.tx-box`,
+// PDF/paged keeps the native `box(stroke: …)`.
+#let boxed(body) = html-or(
+  box(stroke: 0.5pt, inset: 1pt, body),
+  () => html.elem("span", attrs: (class: "tx-box"), body),
+)
+
 #let divider() = html-or(line(length: 100%, stroke: 0.5pt + gray), () => html.elem("hr"))
 
 // Archive posts reference images as `/images/...`; our assets live under

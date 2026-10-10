@@ -16,13 +16,16 @@
 
 #poem(lang: "ong")[
 
-Wann da Hacoromer Nebl kimmt,#linebreak() werd aus\'m zwielicht a roat\'s gedimmt.
+Wann da Hacoromer Nebl kimmt, \ 
+werd aus'm zwielicht a roat's gedimmt.
 
 ]
 
 #waka[
 
-きり渡る#linebreak() #ruby[訶古稜][ハコロン]より来て#linebreak() 紅に染む
+きり渡る \ 
+#ruby[訶古稜][ハコロン]より来て \ 
+紅に染む
 
 ]
 

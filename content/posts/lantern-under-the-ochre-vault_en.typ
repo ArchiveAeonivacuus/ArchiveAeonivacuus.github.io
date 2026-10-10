@@ -16,13 +16,15 @@ Any cleric wont to travel oft between Taitchland and the Papacy Romo would surel
 
 #poem(lang: "ong")[
 
-Wann da Hacoromer Nebl kimmt,#linebreak() werd aus'm zwielicht a roat's gedimmt.
+Wann da Hacoromer Nebl kimmt, \ 
+werd aus'm zwielicht a roat's gedimmt.
 
 ]
 
 #poem[
 
-#emph[When fog Hacorui comes drifting down,#linebreak() The dusk is dyed a crimson brown.]
+#emph[When fog Hacorui comes drifting down, \ 
+The dusk is dyed a crimson brown.]
 
 ]
 
