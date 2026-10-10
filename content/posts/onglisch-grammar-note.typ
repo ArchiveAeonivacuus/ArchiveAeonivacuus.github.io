@@ -15,7 +15,7 @@
 
 #set heading(numbering: (..nums) => {
   let n = nums.pos()
-  if n.len() == 2 { numbering("一、", n.last()) } else { numbering("1.", n.last()) }
+  if n.len() == 2 { numbering("一、", n.last()) } else if n.len() == 3 { numbering("1.", n.last()) }
 })
 
 = #ong[Grámmatıco Nóts de Onglısch]
