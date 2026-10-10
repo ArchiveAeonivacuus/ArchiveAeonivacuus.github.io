@@ -18,7 +18,7 @@
   if n.len() == 2 { numbering("一、", n.last()) } else { numbering("1.", n.last()) }
 })
 
-#ong[Grámmatıco Nóts de Onglısch]
+= #ong[Grámmatıco Nóts de Onglısch]
 
 这是迄今为止出现过的央语语法记录。
 
