@@ -4,7 +4,7 @@ const COPY_LABEL = "复制";
 const DONE_LABEL = "已复制";
 
 export function mountCodeCopy(): void {
-  const blocks = Array.from(document.querySelectorAll<HTMLElement>(".markdown-content pre"));
+  const blocks = Array.from(document.querySelectorAll<HTMLElement>(".markdown-content pre:not(.mermaid)"));
   if (blocks.length === 0) return;
 
   const cleanups: Array<() => void> = [];

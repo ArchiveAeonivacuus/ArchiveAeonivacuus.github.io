@@ -37,7 +37,7 @@ no_fouc = true
 # CSS stylesheet paths (relative to site root).
 styles = ["assets/styles/photoswipe.css", "assets/styles/fuwari.css"]
 # Script entries (relative to site root).
-scripts = [{ path = "assets/scripts/iconify.min.js", defer = true }, { path = "assets/scripts/fuwari.js", defer = true }]
+scripts = [{ path = "assets/scripts/iconify.min.js", defer = true }, { path = "assets/scripts/mermaid.min.js", defer = true }, { path = "assets/scripts/fuwari.js", defer = true }]
 # Raw HTML elements to insert into head.
 elements = [
   "<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/assets/favicon/favicon-light-32.png\" media=\"(prefers-color-scheme: light)\">",

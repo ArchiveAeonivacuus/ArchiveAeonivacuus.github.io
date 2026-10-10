@@ -6644,7 +6644,7 @@ function mountLightbox() {
 var COPY_LABEL = "\u590D\u5236";
 var DONE_LABEL = "\u5DF2\u590D\u5236";
 function mountCodeCopy() {
-  const blocks = Array.from(document.querySelectorAll(".markdown-content pre"));
+  const blocks = Array.from(document.querySelectorAll(".markdown-content pre:not(.mermaid)"));
   if (blocks.length === 0) return;
   const cleanups2 = [];
   for (const pre of blocks) {
@@ -7311,6 +7311,28 @@ function applyI18n() {
   });
 }
 
+// assets/scripts/mermaid.ts
+var initialized = false;
+function isDark2() {
+  return document.documentElement.classList.contains("dark");
+}
+function mountMermaid() {
+  const mermaid = window.mermaid;
+  if (!mermaid) return;
+  const nodes = Array.from(document.querySelectorAll(".markdown-content pre.mermaid"));
+  if (nodes.length === 0) return;
+  if (!initialized) {
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "loose",
+      theme: isDark2() ? "dark" : "default",
+      flowchart: { useMaxWidth: false, htmlLabels: true, diagramPadding: 240 }
+    });
+    initialized = true;
+  }
+  mermaid.run({ nodes });
+}
+
 // assets/scripts/fuwari.ts
 function syncBodyState() {
   document.documentElement.classList.toggle("is-home", location.pathname === "/" || location.pathname === "");
@@ -7327,6 +7349,7 @@ function mountPage() {
   mountComments();
   mountArchiveFilter();
   mountGithubCards();
+  mountMermaid();
 }
 function mountGlobal() {
   document.querySelector("#banner")?.classList.add("is-ready");

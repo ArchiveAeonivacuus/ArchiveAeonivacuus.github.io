@@ -556,7 +556,8 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 /* #card / #github render through the shared .card-hyperlink component above. */
 
 /* Mermaid diagrams. */
-.markdown-content pre.mermaid { margin: 1.25rem 0; padding: 1rem; border-radius: .75rem; background: var(--card-block-bg); text-align: center; }
+.markdown-content pre.mermaid { margin: 1.25rem 0; padding: 1rem; border-radius: .75rem; background: var(--card-block-bg); text-align: center; overflow-x: auto; }
+.markdown-content svg[aria-roledescription="flowchart"], .markdown-content svg[aria-roledescription="flowchart-v2"] { display: block; max-width: 1000px; height: auto; margin: 1.25rem auto; }
 
 /* Footnotes (rendered by the custom HTML show rule). */
 /* Footnotes (rendered by the custom HTML show rule). The body link styling

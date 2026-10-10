@@ -11,6 +11,7 @@ import { syncDataHrefs } from "./links";
 import { mountGithubCards } from "./github";
 import { applyI18n } from "./i18n";
 import { cleanupPage } from "./lifecycle";
+import { mountMermaid } from "./mermaid";
 
 function syncBodyState(): void {
   document.documentElement.classList.toggle("is-home", location.pathname === "/" || location.pathname === "");
@@ -28,6 +29,7 @@ function mountPage(): void {
   mountComments();
   mountArchiveFilter();
   mountGithubCards();
+  mountMermaid();
 }
 
 function mountGlobal(): void {
