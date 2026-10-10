@@ -24,7 +24,7 @@
   ]
 }
 
-#let post(title: none, summary: none, date: none, update: none, tags: (), category: none, image: none, draft: false, words: none, minutes: none, lang: none, translate_key: none, series: none, series_index: none, series_position: none, body) = {
+#let post(title: none, summary: none, date: none, update: none, updating: false, update_note: none, tags: (), category: none, image: none, draft: false, words: none, minutes: none, lang: none, translate_key: none, series: none, series_index: none, series_position: none, body) = {
   let stat = stats-of(current-permalink)
   let t = ui(lang)
   let words = if words != none { words } else { stat.at("w", default: none) }
@@ -104,6 +104,14 @@
     let p = str(current-permalink)
     (if p.ends-with("/") { p.slice(0, p.len() - 1) } else { p }) + ".pdf"
   }
+  let update-banner = context if target() == "html" {
+    if updating or (update_note != none and update_note != "") {
+      html.elem("div", attrs: (class: "post-update"))[
+        #if updating { html.elem("span", attrs: (class: "post-update-badge"), icon("material-symbols:sync-rounded") + html.elem("span", "该内容还在更新")) }
+        #if update_note != none and update_note != "" { html.elem("span", attrs: (class: "post-update-note"), html.elem("span", attrs: (class: "post-update-note-label"), "最近更新") + html.elem("span", update_note)) }
+      ]
+    } else { [] }
+  } else { [] }
   let article-body = context if target() == "html" {
     [
       #html.elem("article", attrs: (id: "post-container", class: "post-container card-base", "data-lang": if lang == none { "" } else { str(lang) }))[
@@ -111,6 +119,7 @@
         #html.elem("header", attrs: (class: "post-header onload-animation"))[
           #html.elem("h1", title)
           #_post-meta(date: date, update: update, category: category, tags: tags, lang: lang)
+          #update-banner
           #translation-bar
           #series-panel
           #if summary != none and summary != "" { html.elem("p", attrs: (class: "post-summary"), summary) }
@@ -130,7 +139,7 @@
       #navigation
     ]
   } else { body }
-  fuwari-base(article-body, title: title, summary: summary, date: date, update: update, tags: tags, category: category, image: image, draft: draft, words: words, minutes: minutes, lang: lang, translate_key: translate_key, series: series, series_index: series_index, series_position: series_position, article: true)
+  fuwari-base(article-body, title: title, summary: summary, date: date, update: update, updating: updating, update_note: update_note, tags: tags, category: category, image: image, draft: draft, words: words, minutes: minutes, lang: lang, translate_key: translate_key, series: series, series_index: series_index, series_position: series_position, article: true)
 }
 
 #let post-card(item) = {
@@ -142,6 +151,7 @@
   let tags = item.at("tags", default: ())
   let category = item.at("category", default: none)
   let image = item.at("image", default: none)
+  let updating = item.at("updating", default: false)
   let stat = stats-of(href)
   let words = item.at("words", default: stat.at("w", default: none))
   let minutes = item.at("minutes", default: stat.at("m", default: none))
@@ -150,6 +160,7 @@
     html.elem("article", attrs: (class: "post-card card-base onload-animation"))[
       #html.elem("div", attrs: (class: "post-card-body"))[
         #html.elem("h2", html.elem("a", attrs: (href: href, class: "post-card-link"), title))
+        #if updating { html.elem("div", attrs: (class: "post-card-updating"), icon("material-symbols:sync-rounded") + html.elem("span", "该内容还在更新")) }
         #_post-meta(date: date, update: update, category: category, tags: tags, hide-tags-mobile: true)
         #if summary != none and summary != "" { html.elem("p", attrs: (class: "post-card-summary"), summary) }
         #if words != none or minutes != none { html.elem("div", attrs: (class: "post-card-stats"), (if words != none { str(words) + " " + (if words == 1 { t.wordCount } else { t.wordsCount }) } else { "" }) + (if words != none and minutes != none { " | " } else { "" }) + (if minutes != none { str(minutes) + " " + (if minutes == 1 { t.minuteCount } else { t.minutesCount }) } else { "" })) }

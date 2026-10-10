@@ -109,7 +109,7 @@ img { max-width: 100%; }
 .navbar-hidden { opacity: 0; transform: translateY(-4rem); pointer-events: none; }
 .brand { z-index: 0; height: 3.25rem; gap: .55rem; padding: 0 1.25rem; color: var(--primary); font-weight: 700; white-space: nowrap; }
 .navbar > p, .brand > p, .nav-links a > p { display: contents; margin: 0; }
-a > p, h2 > p, button > p, .meta-item > p { display: contents; margin: 0; }
+a > p, h2 > p, button > p, .meta-item > p, .post-update-badge > p, .post-update-note > p, .post-card-updating > p { display: contents; margin: 0; }
 .brand .brand-name { display: inline-block; }
 .nav-links .nav-label { display: inline-block; }
 .brand .icon { font-size: 1.75rem; }
@@ -244,6 +244,17 @@ html.is-home .sidebar-sticky { top: calc(1rem - (var(--banner-home) - var(--bann
 .post-header .post-meta { margin-bottom: 1.25rem; }
 .post-header h1 { position: relative; margin: 0 0 .85rem; color: var(--text-90); font-size: clamp(2rem, 4vw, 2.25rem); line-height: 1.25; }
 .post-summary { margin: 1rem 0 0; color: var(--text-50); }
+
+/* "Still updating" banner + recent-update note (article top). */
+.post-update { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .75rem; margin: 0 0 1rem; }
+.post-update-badge { display: inline-flex; align-items: center; gap: .35rem; padding: .2rem .6rem; border-radius: .45rem; color: var(--btn-content); background: var(--btn-regular-bg); font-size: .8rem; font-weight: 700; }
+.post-update-badge .icon { font-size: 1rem; }
+.post-update-note { display: inline-flex; align-items: center; gap: .4rem; color: var(--text-50); font-size: .875rem; line-height: 1.5; }
+.post-update-note-label { flex: 0 0 auto; padding: .15rem .45rem; border-radius: .35rem; color: var(--text-75); background: color-mix(in oklch, var(--btn-regular-bg) 70%, transparent); font-size: .75rem; font-weight: 700; }
+
+/* Homepage card "still updating" badge. */
+.post-card-updating { display: inline-flex; align-items: center; gap: .3rem; margin: 0 0 .6rem; padding: .15rem .5rem; border-radius: .45rem; color: var(--btn-content); background: var(--btn-regular-bg); font-size: .75rem; font-weight: 700; }
+.post-card-updating .icon { font-size: .95rem; }
 .post-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin: .9rem 0 0; }
 .post-pdf { display: inline-flex; height: 2.25rem; align-items: center; gap: .4rem; padding: 0 .9rem; border-radius: .6rem; color: var(--btn-content); background: var(--btn-regular-bg); font-size: .85rem; font-weight: 700; }
 .post-pdf:hover { background: var(--btn-regular-bg-hover); transform: translateY(-1px); }

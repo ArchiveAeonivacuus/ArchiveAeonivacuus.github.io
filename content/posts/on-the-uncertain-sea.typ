@@ -54,11 +54,11 @@
 
 维连神佑船队每天所走的距离（黑色）和罗生---息律值（灰色）如图。#footnote[这里的距离，姑且通过记录在航海图上的距离计算。]
 
-#web-image(src: "/images/distans-sihrut-Pflicht.png", alt: "敷力多号毎日距離—羅生息律度") #ong[Gráfıc 2 Dístans - Sıhrut Pflicht] #old-ja[敷力多号毎日距離---羅生息律度]
+#web-image(src: "/images/distans-sihrut-Pflicht.png", alt: "敷力多号毎日距離—羅生息律度") #caption[#ong[Gráfıc 2 Dístans - Sıhrut Pflicht] #old-ja[敷力多号毎日距離---羅生息律度]]
 
 敷力多号每天所走的距离（黑色）和罗生---息律值（灰色）如图。
 
-#web-image(src: "/images/distans-sihrut-Gordon.png", alt: "葛弾号毎日距離—羅生息律度") #ong[Gráfıc 3 Dístans - Sıhrut Gordon] #old-ja[葛弾号毎日距離---羅生息律度]
+#web-image(src: "/images/distans-sihrut-Gordon.png", alt: "葛弾号毎日距離—羅生息律度") #caption[#ong[Gráfıc 3 Dístans - Sıhrut Gordon] #old-ja[葛弾号毎日距離---羅生息律度]]
 
 葛弹号每天所走的距离（黑色）和罗生---息律值（灰色）#footnote[因为当时的罗生---息律统计方法和现在不同，所以出现了小于`-5`的值。]如图。
 
@@ -73,7 +73,7 @@
 
 笔者选取南方的小岛------蓬莱岛最中心的浮世根须作样本。该岛屿的浮世根须分布情况非常简单，周围浮世根须的影响也易于用公式来推算。
 
-#web-image(src: "/images/sihrut-medi-hecceo-consu-di-Ponrai-islo.png", alt: "蓬莱島中央六仙根羅生—息律") #ong[Gráfıc 4 Sıhrut Médı-hecceo-Consu dı Ponraı Íslo] 蓬莱島中央六仙根羅生---息律
+#web-image(src: "/images/sihrut-medi-hecceo-consu-di-Ponrai-islo.png", alt: "蓬莱島中央六仙根羅生—息律") #caption[#ong[Gráfıc 4 Sıhrut Médı-hecceo-Consu dı Ponraı Íslo] #old-ja[蓬莱島中央六仙根羅生---息律]]
 
 上图是对蓬莱岛中央六仙根所作的息律等高线图。我们发现，在蓬莱岛这样简单的息律条件下，能够清晰地看出浮世根须对息律的影响非常规则。（该图的边缘部分略去了一些其他影响造成的息律变动）距离浮世根越近，罗生---息律就越高；而距离越远，浮世根须的影响几乎为零。不过需要注意的是，这张图不代表全部浮世根须的具体数值，只用作定性分析。
 

@@ -154,7 +154,11 @@
     })
     unique.push(if main == none { group.at(0) } else { main })
   }
-  unique.sorted(key: p => str(p.date)).rev()
+  // Sort by `update` (last-modified) when present, otherwise by `date`.
+  unique.sorted(key: p => {
+    let u = p.at("update", default: none)
+    str(if u != none { u } else { p.date })
+  }).rev()
 }
 
 #let _date(value) = if value == none { "" } else if type(value) == datetime { value.display("[year]-[month]-[day]") } else { str(value) }
@@ -453,7 +457,7 @@
   }
 }
 
-#let fuwari-base(body, title: none, summary: none, date: none, update: none, tags: (), category: none, image: none, draft: false, words: none, minutes: none, lang: none, translate_key: none, series: none, series_index: none, series_position: none, article: false) = {
+#let fuwari-base(body, title: none, summary: none, date: none, update: none, updating: false, update_note: none, tags: (), category: none, image: none, draft: false, words: none, minutes: none, lang: none, translate_key: none, series: none, series_index: none, series_position: none, article: false) = {
   let t = ui(lang)
   let view = context {
     if target() == "html" {
@@ -488,7 +492,7 @@
       ]
     }
   }
-  tola-page(title: title, summary: summary, date: date, update: update, tags: tags, draft: draft, words: words, minutes: minutes, category: category, image: image, lang: lang, translate_key: translate_key, series: series, series_index: series_index, series_position: series_position, head: _head(title: title, summary: summary, image: image, article: article, date: date, update: update, tags: tags))[#view]
+  tola-page(title: title, summary: summary, date: date, update: update, updating: updating, update_note: update_note, tags: tags, draft: draft, words: words, minutes: minutes, category: category, image: image, lang: lang, translate_key: translate_key, series: series, series_index: series_index, series_position: series_position, head: _head(title: title, summary: summary, image: image, article: article, date: date, update: update, tags: tags))[#view]
 }
 
 #let page-card(body) = context {

@@ -3,6 +3,9 @@
 #show: post.with(
   title: "星光留影——《我与星光同行》设定集",
   date: "2025-12-08",
+  update: "2026-10-10",
+  updating: true,
+  update_note: "补充设定与连段条目",
   tags: ("设定", "怪物猎人", "同人"),
   category: "我与星光同行",
   draft: false,

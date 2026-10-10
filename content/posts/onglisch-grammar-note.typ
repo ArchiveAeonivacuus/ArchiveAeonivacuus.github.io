@@ -3,6 +3,9 @@
 #show: post.with(
   title: "央额列语语法笔记",
   date: "2026-09-18",
+  update: "2026-10-10",
+  updating: true,
+  update_note: "补充语法条目",
   summary: "已出现的央额列语语法记录。",
   tags: ("於留根", "人造语言", "央额列"),
   category: "瀛寰",
