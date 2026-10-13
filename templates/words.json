@@ -148,5 +148,20 @@
     "zh_CN": "人造语言",
     "ja": "人工言語",
     "en": "Constructed Language"
+  }, 
+  "写作": {
+    "zh_CN": "写作",
+    "ja": "執筆",
+    "en": "Writing"
+  },
+  "站务": {
+    "zh_CN": "站务",
+    "ja": "運営",
+    "en": "Site Management"
+  },
+  "语法": {
+    "zh_CN": "语法",
+    "ja": "文法",
+    "en": "Grammar"
   }
 }

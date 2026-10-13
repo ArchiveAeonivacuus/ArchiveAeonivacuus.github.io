@@ -10,7 +10,7 @@
   draft: true,
 )
 
-本站正文使用 Typst。`draft: true` 的文章只在开发模式显示，正式构建会排除。
+本站正文使用 Typst。`draft: true` 的文章只在开发模式显示，正式构建会排除。（当前疑似开发模式也不显示）
 
 == 一、注音
 
@@ -30,10 +30,12 @@
   columns: 4,
   [指令], [字体], [指令], [字体],
   [`#ong[…]`], [Old English Onglisch], [`#ja[…]`], [Source Han Serif JP],
-  [`#old-ja[…]`], [Asebi Mincho], [`#old-cjk[…]`], [Source Han Serif Old],
+  [`#old-ja[…]`], [Asebi Mincho], [`#kr[…]`], [Source Han Serif KR],
+  [`#old-cjk[…]`], [Source Han Serif C], [`#zh-tw[…]`], [Source Han Serif TC],
   [`#dfkai[…]`], [DFKai-SB], [`#en[…]`], [Times New Roman],
   [`#rom[…]`], [HighTowerText], [`#kai[…]`], [KaiTi],
   [`#mincho[…]`], [MS Mincho], [`#zh[…]`], [Source Han Serif SC],
+  [`#ar[…]`], [Amiri], [], [],
 )
 
 示例：於留根洲（#ong[Orken]）、#ja[ニヴァーリア]、#en[/niʋaːlia/]。

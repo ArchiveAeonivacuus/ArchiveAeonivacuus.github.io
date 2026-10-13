@@ -5,8 +5,8 @@
 # Access in Typst via `#import "@tola/site:0.0.0": info`
 # For custom fields, use `[site.info.extra]` and access via `info.extra.xxx`
 [site.info]
-title = "Archive Aeonivacuus"  # Site title
-author = "Archive Aeonivacuus"  # Author name
+title = "Archive Æonivacuus"  # Site title
+author = "忘樱谭夜魔乐团"  # Author name
 email = "1187625889@qq.com"  # Author email
 description = "漫步远乡 / ゑんきやうにありく"  # Site description
 url = "https://www.瀛寰.cn/"  # Site URL, path used as prefix (e.g., "https://example.com/blog/docs")

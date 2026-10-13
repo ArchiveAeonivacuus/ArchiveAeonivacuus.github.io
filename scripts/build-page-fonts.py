@@ -34,19 +34,39 @@ OUT = os.path.join(PUBLIC, "assets", "pagefonts")
 # css family -> {weight -> {style -> source file}}
 FAMILIES = {
     "Source Han Serif SC": {
-        400: {"normal": "NotoSerifSC-Regular.otf"},
-        700: {"normal": "NotoSerifSC-Bold.otf"},
+        300: {"normal": "SourceHanSerifSC-Light.otf"},
+        400: {"normal": "SourceHanSerifSC-Regular.otf"},
+        500: {"normal": "SourceHanSerifSC-Medium.otf"},
+        700: {"normal": "SourceHanSerifSC-Bold.otf"},
     },
     "Source Han Serif JP": {
+        300: {"normal": "SourceHanSerifJP-Light.otf"},
         400: {"normal": "SourceHanSerifJP-Regular.otf"},
-        # No separate JP bold available; SC bold shares the design.
-        700: {"normal": "NotoSerifSC-Bold.otf"},
+        500: {"normal": "SourceHanSerifJP-Medium.otf"},
+        700: {"normal": "SourceHanSerifJP-Bold.otf"},
     },
-    "Source Han Serif Old": {400: {"normal": "SourceHanSerifOld-Light.otf"}},
+    "Source Han Serif KR": {
+        300: {"normal": "SourceHanSerifKR-Light.otf"},
+        400: {"normal": "SourceHanSerifKR-Regular.otf"},
+        500: {"normal": "SourceHanSerifKR-Medium.otf"},
+        700: {"normal": "SourceHanSerifKR-Bold.otf"},
+    },
+    "Source Han Serif TC": {
+        300: {"normal": "SourceHanSerifTC-Light.otf"},
+        400: {"normal": "SourceHanSerifTC-Regular.otf"},
+        500: {"normal": "SourceHanSerifTC-Medium.otf"},
+        700: {"normal": "SourceHanSerifTC-Bold.otf"},
+    },
+    "Source Han Serif C": {
+        300: {"normal": "SourceHanSerifC-Light.otf"},
+        400: {"normal": "SourceHanSerifC-Regular.otf"},
+        500: {"normal": "SourceHanSerifC-Medium.otf"},
+        700: {"normal": "SourceHanSerifC-Bold.otf"},
+    },
     "Asebi Mincho": {400: {"normal": "AsebiMin-Light.ttf"}},
     "KaiTi": {400: {"normal": "simkai.ttf"}},
     "DFKai-SB": {400: {"normal": "標楷體.ttf"}},
-    "Old English Onglisch": {400: {"normal": "Old English Onglisch.ttf"}},
+    "Old English Onglisch": {400: {"normal": "Old English Onglisch.otf"}},
     "HighTowerText": {400: {"normal": "HTOWERT.TTF", "italic": "HTOWERTI.TTF"}},
     "Source Serif 4": {
         400: {"normal": "SourceSerif4-Regular.ttf", "italic": "SourceSerif4-Italic.ttf"},
@@ -56,27 +76,36 @@ FAMILIES = {
         400: {"normal": "Times New Roman.TTF", "italic": "Times New Roman I.TTF"},
         700: {"normal": "Times New Roman B.TTF", "italic": "Times New Roman BI.TTF"},
     },
+    "Amiri": {
+        400: {"normal": "Amiri-Regular.ttf", "italic": "Amiri-Italic.ttf"},
+        700: {"normal": "Amiri-Bold.ttf", "italic": "Amiri-BoldItalic.ttf"},
+    },
 }
 
 BODY_BY_LANG = {
     "": ["Source Serif 4", "Source Han Serif SC", "Source Han Serif JP"],
     "zh_CN": ["Source Serif 4", "Source Han Serif SC", "Source Han Serif JP"],
-    "zh_TW": ["Source Serif 4", "Source Han Serif Old", "Source Han Serif SC"],
+    "zh_TW": ["Source Serif 4", "Source Han Serif TC", "Source Han Serif SC"],
     "ja": ["Source Serif 4", "Source Han Serif JP", "Source Han Serif SC"],
+    "ko": ["Source Serif 4", "Source Han Serif KR", "Source Han Serif SC"],
     "en": ["Source Serif 4", "Source Han Serif SC", "Source Han Serif JP"],
+    "ar": ["Amiri", "Source Serif 4", "Source Han Serif SC"],
     "ong": ["Old English Onglisch", "Source Serif 4", "Source Han Serif SC"],
     "A-zh_iang": ["Source Serif 4", "Source Han Serif JP", "Source Han Serif SC"],
 }
 
 CLASS_FAMILY = {
     "ff-ja": "Source Han Serif JP",
+    "ff-kr": "Source Han Serif KR",
     "ff-min": "Source Han Serif JP",
     "ff-ja_old": "Asebi Mincho",
     "ff-ong": "Old English Onglisch",
     "ff-en": "Times New Roman",
+    "ff-ar": "Amiri",
     "ff-rom": "HighTowerText",
     "ff-zh_cn": "Source Han Serif SC",
-    "ff-cjk_old": "Source Han Serif Old",
+    "ff-zh_tw": "Source Han Serif TC",
+    "ff-cjk_old": "Source Han Serif C",
     "ff-dfkai": "DFKai-SB",
     "ff-kai": "KaiTi",
 }
@@ -85,10 +114,11 @@ CLASS_FAMILY = {
 # own page font, so those faces must be subset as well.
 SWITCHER_LANG_FAMILY = {
     "zh_CN": "Source Han Serif SC",
-    "zh_TW": "Source Han Serif Old",
+    "zh_TW": "Source Han Serif TC",
     "ja": "Source Han Serif JP",
     "en": "Source Serif 4",
-    "ko": "Source Han Serif SC",
+    "ko": "Source Han Serif KR",
+    "ar": "Amiri",
     "ong": "Old English Onglisch",
     "A-zh_iang": "Source Han Serif JP",
 }

@@ -8,7 +8,7 @@
 #page-card[
   #context { if target() == "html" { heading(level: 1)[About] } }
 
-  Wandering in the Aeonivacuum, even the gravel will become steepest cliff, and last forever.
+  Wandering in the Æonivacuum, even the gravel will become steepest cliff, and last forever.
 
   #old-ja[幻の　#ruby[遠郷][ゑんきやう] 歩く　さざれ石　巌なりけるを　永久にゐる]
 

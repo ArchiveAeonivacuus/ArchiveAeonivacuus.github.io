@@ -186,12 +186,15 @@
 }
 
 #let ja(body) = font-span("ff-ja", "Source Han Serif JP", body)
+#let kr(body) = font-span("ff-kr", "Source Han Serif KR", body)
 #let old-ja(body) = font-span("ff-ja_old", "Asebi Mincho", body)
 #let ong(body) = font-span("ff-ong", "Old English Onglisch", body)
 #let en(body) = font-span("ff-en", "Times New Roman", body)
+#let ar(body) = font-span("ff-ar", "Amiri", body)
 #let rom(body) = font-span("ff-rom", ("High Tower Text", "Source Serif 4"), body)
-#let zh(body) = font-span("ff-zh_cn", "Noto Serif SC", body)
-#let old-cjk(body) = font-span("ff-cjk_old", ("Source Han Serif Old Style", "Noto Serif SC"), body)
+#let zh(body) = font-span("ff-zh_cn", "Source Han Serif SC", body)
+#let zh-tw(body) = font-span("ff-zh_tw", "Source Han Serif TC", body)
+#let old-cjk(body) = font-span("ff-cjk_old", ("Source Han Serif C", "Source Han Serif SC"), body)
 #let dfkai(body) = font-span("ff-dfkai", "DFKai-SB", body)
 #let kai(body) = font-span("ff-kai", "KaiTi", body)
 #let mincho(body) = font-span("ff-min", "Source Han Serif JP", body)
@@ -218,17 +221,17 @@
 #let poem(lang: none, body) = centered-box(
   if lang == none { "poem" } else { "poem poem_" + lang },
   body,
-  font: if lang == "ong" { ("Old English Onglisch", "Source Serif 4") } else { ("KaiTi", "Source Han Serif JP", "Noto Serif SC") },
+  font: if lang == "ong" { ("Old English Onglisch", "Source Serif 4") } else { ("KaiTi", "Source Han Serif JP", "Source Han Serif SC") },
 )
 #let lyrics(body) = context {
   if target() == "html" {
     html.elem("div", attrs: (class: "ci"), body)
   } else {
-    block(width: 100%, inset: (x: 1.5em), text(font: ("KaiTi", "Source Han Serif JP", "Noto Serif SC"), body))
+    block(width: 100%, inset: (x: 1.5em), text(font: ("KaiTi", "Source Han Serif JP", "Source Han Serif SC"), body))
   }
 }
-#let spell(body) = centered-box("spellcard", body, font: ("KaiTi", "Source Han Serif JP", "Noto Serif SC"))
-#let waka(body) = centered-box("waka", body, font: ("DFKai-SB", "KaiTi", "Source Han Serif JP", "Noto Serif SC"))
+#let spell(body) = centered-box("spellcard", body, font: ("KaiTi", "Source Han Serif JP", "Source Han Serif SC"))
+#let waka(body) = centered-box("waka", body, font: ("DFKai-SB", "KaiTi", "Source Han Serif JP", "Source Han Serif SC"))
 
 // Renders as the site's hyperlink card (avatar + title + description), which is
 // what the archive site's client-side card fixup turned these into.

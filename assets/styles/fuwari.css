@@ -513,11 +513,14 @@ html.is-animating .transition-swup-fade { opacity: 0; transform: translateY(1rem
    font directives need the same rules — hence the :is() scope below. */
 :is(.markdown-content, .footnotes) .ff-zh_cn { font-family: "Source Han Serif SC", serif; }
 :is(.markdown-content, .footnotes) .ff-ja { font-family: "Source Han Serif JP", serif; }
-:is(.markdown-content, .footnotes) .ff-ja_old { font-family: "Asebi Mincho", "Source Han Serif JP", "Source Han Serif Old", serif; font-synthesis: weight; }
+:is(.markdown-content, .footnotes) .ff-kr { font-family: "Source Han Serif KR", serif; }
+:is(.markdown-content, .footnotes) .ff-ja_old { font-family: "Asebi Mincho", "Source Han Serif JP", "Source Han Serif TC", serif; font-synthesis: weight; }
 :is(.markdown-content, .footnotes) .ff-ong { font-family: "Old English Onglisch", serif; }
-:is(.markdown-content, .footnotes) .ff-cjk_old { font-family: "Source Han Serif Old", "Source Han Serif SC", serif; font-synthesis: weight; }
+:is(.markdown-content, .footnotes) .ff-cjk_old { font-family: "Source Han Serif C", "Source Han Serif SC", serif; font-synthesis: weight; }
+:is(.markdown-content, .footnotes) .ff-zh_tw { font-family: "Source Han Serif TC", serif; }
 :is(.markdown-content, .footnotes) .ff-dfkai { font-family: "DFKai-SB", KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; }
 :is(.markdown-content, .footnotes) .ff-en { font-family: "Times New Roman", serif; }
+:is(.markdown-content, .footnotes) .ff-ar { font-family: "Amiri", serif; direction: rtl; unicode-bidi: isolate; }
 :is(.markdown-content, .footnotes) .ff-rom { font-family: "HighTowerText", serif; font-synthesis: weight; }
 :is(.markdown-content, .footnotes) .ff-kai { font-family: KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; }
 :is(.markdown-content, .footnotes) .ff-min { font-family: "Source Han Serif JP", "MS Mincho", serif; }
@@ -602,7 +605,9 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 .site-shell { font-family: "Source Han Serif SC", "Source Han Serif JP", "Source Serif 4", MiSans, Roboto, system-ui, sans-serif; }
 .site-shell[data-lang="en"] { font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", serif; }
 .site-shell[data-lang="ja"] { font-family: "Source Han Serif JP", "Source Han Serif SC", "Source Serif 4", serif; }
-.site-shell[data-lang="zh_TW"] { font-family: "Source Han Serif Old", "Source Han Serif SC", "Source Serif 4", serif; }
+.site-shell[data-lang="zh_TW"] { font-family: "Source Han Serif TC", "Source Han Serif SC", "Source Serif 4", serif; }
+.site-shell[data-lang="ko"] { font-family: "Source Han Serif KR", "Source Han Serif SC", "Source Serif 4", serif; }
+.site-shell[data-lang="ar"] { font-family: "Amiri", "Source Serif 4", "Source Han Serif SC", serif; }
 .site-shell[data-lang="ong"] { font-family: "Old English Onglisch", "Source Serif 4", "Source Han Serif SC", serif; }
 .site-shell[data-lang="A-zh_iang"] { font-family: "Source Han Serif JP", "Source Han Serif SC", "Source Serif 4", serif; }
 
@@ -623,10 +628,11 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
    CJK faces only ship a regular cut — the bold JP/SC faces share one file),
    regardless of the current page's language. */
 .translation-link[data-lang="zh_CN"] { font-family: "Source Han Serif SC", serif; font-weight: 400; }
-.translation-link[data-lang="zh_TW"] { font-family: "Source Han Serif Old", "Source Han Serif SC", serif; font-weight: 400; }
+.translation-link[data-lang="zh_TW"] { font-family: "Source Han Serif TC", "Source Han Serif SC", serif; font-weight: 400; }
 .translation-link[data-lang="ja"] { font-family: "Source Han Serif JP", serif; font-weight: 400; }
 .translation-link[data-lang="en"] { font-family: "Source Serif 4", serif; font-weight: 400; }
-.translation-link[data-lang="ko"] { font-family: "Source Han Serif SC", serif; font-weight: 400; }
+.translation-link[data-lang="ko"] { font-family: "Source Han Serif KR", serif; font-weight: 400; }
+.translation-link[data-lang="ar"] { font-family: "Amiri", serif; font-weight: 400; }
 .translation-link[data-lang="ong"] { font-family: "Old English Onglisch", serif; font-weight: 400; }
 .translation-link[data-lang="A-zh_iang"] { font-family: "Source Han Serif JP", serif; font-weight: 400; }
 
@@ -746,20 +752,44 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 
 /* CJK body faces + the remaining specialty faces, mirroring the families the
    production subsetter (scripts/build-page-fonts.py) emits, so local
-   `tola serve` renders the same fonts as the built site. */
+   `tola serve` renders the same fonts as the built site.
+
+   Source Han Serif 1.001R (SubsetOTF regional faces). Weights: 300 Light,
+   400 Regular, 500 Medium, 700 Bold. */
+@font-face {
+  font-family: "Source Han Serif SC";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifSC-Light.otf") format("opentype");
+}
 @font-face {
   font-family: "Source Han Serif SC";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("/assets/fonts/NotoSerifSC-Regular.otf") format("opentype");
+  src: url("/assets/fonts/SourceHanSerifSC-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif SC";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifSC-Medium.otf") format("opentype");
 }
 @font-face {
   font-family: "Source Han Serif SC";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("/assets/fonts/NotoSerifSC-Bold.otf") format("opentype");
+  src: url("/assets/fonts/SourceHanSerifSC-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif JP";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifJP-Light.otf") format("opentype");
 }
 @font-face {
   font-family: "Source Han Serif JP";
@@ -770,17 +800,101 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 }
 @font-face {
   font-family: "Source Han Serif JP";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifJP-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif JP";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("/assets/fonts/NotoSerifSC-Bold.otf") format("opentype");
+  src: url("/assets/fonts/SourceHanSerifJP-Bold.otf") format("opentype");
 }
 @font-face {
-  font-family: "Source Han Serif Old";
+  font-family: "Source Han Serif KR";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifKR-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif KR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("/assets/fonts/SourceHanSerifOld-Light.otf") format("opentype");
+  src: url("/assets/fonts/SourceHanSerifKR-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif KR";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifKR-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif KR";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifKR-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif TC";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifTC-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif TC";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifTC-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif TC";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifTC-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif TC";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifTC-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif C";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifC-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif C";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifC-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif C";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifC-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Source Han Serif C";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/SourceHanSerifC-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: "Asebi Mincho";
@@ -808,7 +922,7 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("/assets/fonts/OldEnglishOnglisch.ttf") format("truetype");
+  src: url("/assets/fonts/Old English Onglisch.otf") format("opentype");
 }
 
 /* Times New Roman (full R/B/I/BI family) for IPA / `.ff-en` (`#en[..]`). */
@@ -839,4 +953,34 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
   font-style: italic;
   font-display: swap;
   src: url("/assets/fonts/Times New Roman BI.TTF") format("truetype");
+}
+
+/* Amiri (Arabic, `#ar[..]`) — full R/B/I/BI family. */
+@font-face {
+  font-family: "Amiri";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/Amiri-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Amiri";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/assets/fonts/Amiri-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Amiri";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/Amiri-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Amiri";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("/assets/fonts/Amiri-BoldItalic.ttf") format("truetype");
 }

@@ -174,11 +174,12 @@
   "ja": "日本語",
   "en": "English",
   "ko": "한국어",
+  "ar": "العربية",
   "ong": "Onglisch",
   "A-zh_iang": "大瀛漢語",
 )
 
-#let _language-order = ("zh_CN", "zh_TW", "ja", "en", "ko", "ong", "A-zh_iang")
+#let _language-order = ("zh_CN", "zh_TW", "ja", "en", "ko", "ar", "ong", "A-zh_iang")
 
 #let _translations(translate_key) = {
   if _str-of(translate_key) == "" { return () }
@@ -356,11 +357,11 @@
   ]
 }
 
-#let pdf-fonts = ("Noto Serif SC",)
+#let pdf-fonts = ("Source Han Serif SC",)
 
-#let pdf-heading-fonts = ("Noto Serif SC",)
+#let pdf-heading-fonts = ("Source Han Serif SC",)
 
-#let pdf-mono-fonts = ("JetBrains Mono", "Noto Sans Mono CJK SC", "Noto Serif SC")
+#let pdf-mono-fonts = ("JetBrains Mono", "Source Han Serif SC")
 
 #let _join-strings(list) = list.fold("", (acc, item) => acc + (if acc == "" { "" } else { ", " }) + str(item))
 
@@ -371,13 +372,17 @@
   let site-title = if _str-of(info.title) == "" { _site-data.at("title", default: "") } else { info.title }
   let site-author = if _str-of(info.author) == "" { _site-data.at("author", default: "") } else { info.author }
   let base-fonts = if lang == "en" {
-    ("Source Serif 4", "Noto Serif SC")
+    ("Source Serif 4", "Source Han Serif SC")
   } else if lang == "ja" {
-    ("Source Han Serif JP", "Noto Serif SC")
+    ("Source Han Serif JP", "Source Han Serif SC")
+  } else if lang == "ko" {
+    ("Source Han Serif KR", "Source Han Serif SC")
+  } else if lang == "ar" {
+    ("Amiri", "Source Han Serif SC")
   } else if lang == "ong" {
-    ("Old English Onglisch", "Source Serif 4", "Noto Serif SC")
+    ("Old English Onglisch", "Source Serif 4", "Source Han Serif SC")
   } else if lang == "A-zh_iang" {
-    ("Source Han Serif JP", "Noto Serif SC")
+    ("Source Han Serif JP", "Source Han Serif SC")
   } else {
     pdf-fonts
   }
