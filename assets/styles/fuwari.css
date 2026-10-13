@@ -614,6 +614,10 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 /* Italic Latin letters use a face with a true italic (Source Serif 4); CJK
    inside italics still falls through to the Han fonts. */
 :is(.markdown-content, .footnotes) em, :is(.markdown-content, .footnotes) i { font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", serif; }
+/* Specialty faces with their own italic keep it instead of Source Serif 4. */
+:is(.markdown-content, .footnotes) .ff-rom em, :is(.markdown-content, .footnotes) .ff-rom i { font-family: "HighTowerText", serif; }
+:is(.markdown-content, .footnotes) .ff-en em, :is(.markdown-content, .footnotes) .ff-en i { font-family: "Times New Roman", serif; }
+:is(.markdown-content, .footnotes) .ff-ar em, :is(.markdown-content, .footnotes) .ff-ar i { font-family: "Amiri", serif; }
 
 /* Translation switcher. */
 .post-translations { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem; margin: .85rem 0 0; padding: .5rem .75rem; border: 1px solid var(--line-divider); border-radius: .65rem; background: color-mix(in oklch, var(--btn-regular-bg) 55%, transparent); }
@@ -642,6 +646,7 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
   --mh-border: #8b4513;
   --mh-label-color: #654321;
   --mh-value-color: #222;
+  --mh-deco-color: #2e6da4;
   background: var(--mh-bg);
   border: 2px solid var(--mh-border);
   border-radius: 8px;
@@ -668,20 +673,34 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
   width: 110px;
   display: block;
 }
+.mh-hunter > div.mh-equipment,
+.mh-other > div.mh-equipment {
+  padding-left: 0;
+  padding-top: 1.7em;
+}
 .mh-equipment .armor-box {
   background: #fff;
   border: 1px dashed #cfcfcf;
   padding: 10px;
   border-radius: 6px;
 }
-.mh-equipment .armor-box > div { margin: 6px 0; }
-.mh-equipment .armor-box > div::before {
-  content: attr(data-part) "：";
+.mh-equipment .armor-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 6px 0;
+}
+.mh-equipment .armor-part {
+  flex: 0 0 110px;
   color: var(--mh-label-color);
   font-weight: bold;
-  display: inline-block;
-  min-width: 60px;
-  margin-right: 8px;
+}
+.mh-equipment .armor-part::after { content: "："; }
+.mh-equipment .armor-name { color: var(--mh-value-color); }
+.mh-deco {
+  color: var(--mh-deco-color);
+  font-size: .9em;
 }
 .mh-combo {
   background: #fff8dc;
@@ -701,6 +720,7 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
   --mh-border: #8b4513;
   --mh-label-color: #c9a86a;
   --mh-value-color: #e0d8c8;
+  --mh-deco-color: #6da8d4;
 }
 [data-theme="dark"] .mh-equipment .armor-box { background: #1e1a12; border-color: #5a4a2a; }
 [data-theme="dark"] .mh-combo { background: #2a2418; }

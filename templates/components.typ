@@ -282,18 +282,39 @@
 #let mh-card(fields, equipment: (), combo: none, desc: none, cls: "mh-hunter") = context {
   if target() != "html" {
     block(inset: 10pt, radius: 6pt, stroke: 0.5pt + luma(60%))[
-      #for f in fields { [#strong[f.at(0) + "："] #f.at(1) ] }
-      #if equipment != () { [#strong[装备：] #for e in equipment { [#e.at(0)：#e.at(1) ] }] }
+      #for f in fields {
+        let deco = if f.len() > 2 { f.at(2) } else { none }
+        [#strong[f.at(0) + "："] #f.at(1) #if deco != none { [〔#deco〕] } ]
+      }
+      #if equipment != () {
+        [#strong[装备：] #for e in equipment {
+          let deco = if e.len() > 2 { e.at(2) } else { none }
+          [#e.at(0)：#e.at(1) #if deco != none { [〔#deco〕] } ]
+        }]
+      }
       #if combo != none { [#strong[连招：] #combo] }
       #if desc != none { [#strong[人物介绍：] #desc] }
     ]
   } else {
     html.elem("div", attrs: (class: cls))[
-      #for f in fields { html.elem("div", attrs: ("data-label": f.at(0)), f.at(1)) }
+      #for f in fields {
+        let deco = if f.len() > 2 { f.at(2) } else { none }
+        html.elem("div", attrs: ("data-label": f.at(0)))[
+          #f.at(1)
+          #if deco != none { html.elem("span", attrs: (class: "mh-deco"), deco) }
+        ]
+      }
       #if equipment != () {
         html.elem("div", attrs: (class: "mh-equipment", "data-label": "装备"))[
           #html.elem("div", attrs: (class: "armor-box"))[
-            #for e in equipment { html.elem("div", attrs: ("data-part": e.at(0)), e.at(1)) }
+            #for e in equipment {
+              let deco = if e.len() > 2 { e.at(2) } else { none }
+              html.elem("div", attrs: (class: "armor-row"))[
+                #html.elem("span", attrs: (class: "armor-part"), e.at(0))
+                #html.elem("span", attrs: (class: "armor-name"), e.at(1))
+                #if deco != none { html.elem("span", attrs: (class: "mh-deco"), deco) }
+              ]
+            }
           ]
         ]
       }
