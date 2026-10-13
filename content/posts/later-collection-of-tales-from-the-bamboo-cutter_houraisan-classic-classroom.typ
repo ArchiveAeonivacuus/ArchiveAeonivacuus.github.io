@@ -21,6 +21,8 @@
 
 #card(href: "https://www.bilibili.com/opus/1245531925966225413?spm_id_from=333.1035.0.0", title: "哔哩哔哩", avatar: "https://www.bilibili.com/favicon.ico")[竹取拾遗物语——外传·蓬莱山古文教室]
 
+#divider()
+
 八意永琳，曾经的“月之头脑”，或许现在也是。她望向桌子上一份一份的资料，仔细地确认着。
 
 德国文理中学的成绩单、毕业证书和在学证明，在德国的居住证明，Abitur资格证书……
