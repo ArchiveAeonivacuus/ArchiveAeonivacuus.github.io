@@ -3,6 +3,7 @@
 #show: post.with(
   title: "死灵樱：幽暗斜月的惨白明灭",
   date: "2026-10-13",
+  summary: "死灵樱科普读物。",
   tags: ("设定", "瀛洲", "大瀛", "死灵樱"),
   category: "瀛寰",
   draft: false,
