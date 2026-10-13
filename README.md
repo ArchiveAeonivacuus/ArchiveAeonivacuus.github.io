@@ -20,7 +20,7 @@
 
 ## 功能
 
-- **内容**：Typst 原生语法；注音 `#ruby`（网页端 1-2-1 分布，PDF 端手工 1:2:1）、行内字体（`#ja` / `#old-ja` / `#ong` / `#latin` / `#dfkai` / `#kai` / `#old-cjk` 等）、诗词 / 歌词 / 符卡 / 和歌、对话、提示框、卡片、表格、脚注、Mermaid
+- **内容**：Typst 原生语法；注音 `#ruby`（网页端 1-2-1 分布，PDF 端手工 1:2:1）、行内字体（`#ja` / `#old-ja` / `#ong` / `#latin` / `#lxgw` / `#kai` / `#old-cjk` 等）、诗词 / 歌词 / 符卡 / 和歌、对话、提示框、卡片、表格、脚注、Mermaid
 - **多语言**：UI 跟随文章 `lang`（内置 12 种语言词表）；分类 / 标签按语言显示（含日语 ruby）；译文以 `translate_key` 关联，首页 / 归档只显示主版本
 - **页面**：首页、文章、归档时间轴、关于、友链、404（内嵌 T-Rex dino 小游戏，TypeScript 重构自 Chromium offline runner）
 - **归档筛选**：按标签 / 分类 / 未分类筛选
@@ -141,7 +141,7 @@ pnpm check   # tsc --noEmit + tola validate（链接与资源）
 - 代码块使用 Typst 原生围栏（自动语法高亮）。
 
 内容组件在 `templates/components.typ`（可从 `/templates/fuwari.typ` 导入），例如：
-`ruby`、`ja` / `old-ja` / `ong` / `latin` / `dfkai` / `kai` / `old-cjk`、`poem` / `lyrics` / `spell` / `waka`、`dialogue`、`aside`、`data-table`、`card`、`github`、`caption`、`cast-list`、`monster`、`divider`、`web-image`、`admonition`、`quote-block`、`github-card`、`link-card` 等。
+`ruby`、`ja` / `old-ja` / `ong` / `latin` / `lxgw` / `kai` / `old-cjk`、`poem` / `lyrics` / `spell` / `waka`、`dialogue`、`aside`、`data-table`、`card`、`github`、`caption`、`cast-list`、`monster`、`divider`、`web-image`、`admonition`、`quote-block`、`github-card`、`link-card` 等。
 
 ## 内容来源
 

@@ -32,7 +32,7 @@
   [`#ong[…]`], [Old English Onglisch], [`#ja[…]`], [Source Han Serif JP],
   [`#old-ja[…]`], [Asebi Mincho], [`#kr[…]`], [Source Han Serif KR],
   [`#old-cjk[…]`], [Source Han Serif C], [`#zh-tw[…]`], [Source Han Serif TC],
-  [`#dfkai[…]`], [DFKai-SB], [`#en[…]`], [Times New Roman],
+  [`#lxgw[…]`], [LXGW WenKai], [`#en[…]`], [Times New Roman],
   [`#rom[…]`], [HighTowerText], [`#kai[…]`], [KaiTi],
   [`#mincho[…]`], [MS Mincho], [`#zh[…]`], [Source Han Serif SC],
   [`#ar[…]`], [Amiri], [], [],

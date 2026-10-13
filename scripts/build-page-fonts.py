@@ -65,7 +65,10 @@ FAMILIES = {
     },
     "Asebi Mincho": {400: {"normal": "AsebiMin-Light.ttf"}},
     "KaiTi": {400: {"normal": "simkai.ttf"}},
-    "DFKai-SB": {400: {"normal": "標楷體.ttf"}},
+    "LXGW WenKai": {
+        400: {"normal": "LXGWWenKai-Regular.ttf"},
+        700: {"normal": "LXGWWenKai-Bold.ttf"},
+    },
     "Old English Onglisch": {400: {"normal": "Old English Onglisch.otf"}},
     "HighTowerText": {400: {"normal": "HTOWERT.TTF", "italic": "HTOWERTI.TTF"}},
     "Source Serif 4": {
@@ -106,7 +109,7 @@ CLASS_FAMILY = {
     "ff-zh_cn": "Source Han Serif SC",
     "ff-zh_tw": "Source Han Serif TC",
     "ff-cjk_old": "Source Han Serif C",
-    "ff-dfkai": "DFKai-SB",
+    "ff-lxgw": "LXGW WenKai",
     "ff-kai": "KaiTi",
 }
 
@@ -160,7 +163,7 @@ def page_families(text, lang):
     if {"poem", "ci", "spellcard"} & classes:
         families.add("KaiTi")
     if "waka" in classes:
-        families.add("DFKai-SB")
+        families.add("LXGW WenKai")
     for match in re.finditer(r'data-lang="([^"]*)"', text):
         family = SWITCHER_LANG_FAMILY.get(match.group(1))
         if family:

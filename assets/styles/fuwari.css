@@ -294,6 +294,10 @@ html.is-home .sidebar-sticky { top: calc(1rem - (var(--banner-home) - var(--bann
 .markdown-content p:has(> a[id]:only-child) { display: contents; }
 .markdown-content table { width: 100%; border-collapse: collapse; }
 .markdown-content th, .markdown-content td { padding: .6rem .75rem; border: 1px solid var(--line-divider); }
+/* Borderless gloss tables (word-by-word example sentences, #gloss): direct
+   children of .markdown-content, so they are not the wrapped #data-table tables. */
+.markdown-content > table { width: auto; border-collapse: separate; border-spacing: 1.6em .15em; }
+.markdown-content > table td { padding: 0; border: none; }
 .post-license { position: relative; overflow: hidden; margin-top: 2rem; padding: 1.25rem 1.5rem; border-radius: .75rem; background: color-mix(in oklch, var(--btn-regular-bg) 75%, transparent); }
 .post-license::after { position: absolute; top: 50%; right: 1rem; color: var(--primary); content: "©"; font-size: 7rem; line-height: 1; opacity: .08; transform: translateY(-50%); }
 .post-license > strong, .license-url { display: block; }
@@ -507,7 +511,7 @@ html.is-animating .transition-swup-fade { opacity: 0; transform: translateY(1rem
    Archive (ArchiveAeonivacuus) component styles
    ========================================================================== */
 
-/* Inline font directives: #zh / #ja / #old-ja / #ong / #old-cjk / #dfkai /
+/* Inline font directives: #zh / #ja / #old-ja / #ong / #old-cjk / #lxgw /
    #ipa / #latin / #kai / #mincho */
 /* NOTE: the endnote list (.footnotes) lives *outside* .markdown-content, so its
    font directives need the same rules — hence the :is() scope below. */
@@ -518,7 +522,7 @@ html.is-animating .transition-swup-fade { opacity: 0; transform: translateY(1rem
 :is(.markdown-content, .footnotes) .ff-ong { font-family: "Old English Onglisch", serif; }
 :is(.markdown-content, .footnotes) .ff-cjk_old { font-family: "Source Han Serif C", "Source Han Serif SC", serif; font-synthesis: weight; }
 :is(.markdown-content, .footnotes) .ff-zh_tw { font-family: "Source Han Serif TC", serif; }
-:is(.markdown-content, .footnotes) .ff-dfkai { font-family: "DFKai-SB", KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; }
+:is(.markdown-content, .footnotes) .ff-lxgw { font-family: "LXGW WenKai", KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; }
 :is(.markdown-content, .footnotes) .ff-en { font-family: "Times New Roman", serif; }
 :is(.markdown-content, .footnotes) .ff-ar { font-family: "Amiri", serif; direction: rtl; unicode-bidi: isolate; }
 :is(.markdown-content, .footnotes) .ff-rom { font-family: "HighTowerText", serif; font-synthesis: weight; }
@@ -538,11 +542,11 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
   font-family: KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif;
 }
 #post-container[data-lang="ja"] :is(.poem:not(.poem_ong), .ci, .spellcard) {
-  font-family: "DFKai-SB", KaiTi, "Source Han Serif JP", "Source Han Serif SC", serif;
+  font-family: "LXGW WenKai", KaiTi, "Source Han Serif JP", "Source Han Serif SC", serif;
 }
 .ci { padding-left: 1.5em; padding-right: 1.5em; }
 .ci p { margin: .5em 0; text-indent: 2em; }
-.waka { font-family: "DFKai-SB", KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; text-align: center; }
+.waka { font-family: "LXGW WenKai", KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; text-align: center; }
 .graph-title { text-align: center; }
 .cast-list { text-align: center; color: var(--text-50); }
 .rotate-text { display: inline-block; transform: rotate(270deg); }
@@ -931,11 +935,18 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
   src: url("/assets/fonts/simkai.ttf") format("truetype");
 }
 @font-face {
-  font-family: "DFKai-SB";
+  font-family: "LXGW WenKai";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("/assets/fonts/DFKai-SB.ttf") format("truetype");
+  src: url("/assets/fonts/LXGWWenKai-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LXGW WenKai";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/LXGWWenKai-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Old English Onglisch";

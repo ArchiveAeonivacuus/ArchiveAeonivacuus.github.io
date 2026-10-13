@@ -16,7 +16,7 @@
     href: "https://www.sakimidare.top/",
     title: "咲乱SakiMidare",
     avatar: "http://q.qlogo.cn/headimg_dl?dst_uin=3285956207&spec=640",
-  )[心臓は点滅するかしら……]
+  )[#ja[心臓は点滅するかしら……]]
 
   没有他就没有这个博客。TT
 

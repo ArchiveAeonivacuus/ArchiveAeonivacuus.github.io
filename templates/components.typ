@@ -170,6 +170,13 @@
   ],
 )
 
+// Word-by-word gloss (example sentences): a borderless, minimum-width table
+// so each word column only takes as much width as it needs.
+#let gloss(columns: 3, ..cells) = html-or(
+  table(columns: (auto,) * columns, stroke: none, inset: (x: 0pt, y: 1pt), column-gutter: 1.6em, row-gutter: 0.15em, ..cells.pos()),
+  () => table(columns: (auto,) * columns, stroke: none, inset: (x: 0pt, y: 1pt), column-gutter: 1.6em, row-gutter: 0.15em, ..cells.pos()),
+)
+
 #let web-table(columns: 1, header: (), cells: ()) = html-or(
   table(columns: columns, ..header, ..cells),
   () => html.elem("div", attrs: (class: "typst-table-wrap"))[
@@ -195,7 +202,7 @@
 #let zh(body) = font-span("ff-zh_cn", "Source Han Serif SC", body)
 #let zh-tw(body) = font-span("ff-zh_tw", "Source Han Serif TC", body)
 #let old-cjk(body) = font-span("ff-cjk_old", ("Source Han Serif C", "Source Han Serif SC"), body)
-#let dfkai(body) = font-span("ff-dfkai", "DFKai-SB", body)
+#let lxgw(body) = font-span("ff-lxgw", "LXGW WenKai", body)
 #let kai(body) = font-span("ff-kai", "KaiTi", body)
 #let mincho(body) = font-span("ff-min", "Source Han Serif JP", body)
 
@@ -231,7 +238,7 @@
   }
 }
 #let spell(body) = centered-box("spellcard", body, font: ("KaiTi", "Source Han Serif JP", "Source Han Serif SC"))
-#let waka(body) = centered-box("waka", body, font: ("DFKai-SB", "KaiTi", "Source Han Serif JP", "Source Han Serif SC"))
+#let waka(body) = centered-box("waka", body, font: ("LXGW WenKai", "KaiTi", "Source Han Serif JP", "Source Han Serif SC"))
 
 // Renders as the site's hyperlink card (avatar + title + description), which is
 // what the archive site's client-side card fixup turned these into.
