@@ -111,6 +111,7 @@ CLASS_FAMILY = {
     "ff-cjk_old": "Source Han Serif C",
     "ff-lxgw": "LXGW WenKai",
     "ff-kai": "KaiTi",
+    "kanbun": "Source Han Serif JP",
 }
 
 # Language switcher labels (templates/post.typ `data-lang`) use each language's

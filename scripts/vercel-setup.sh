@@ -57,6 +57,12 @@ fi
 # PDF fonts are vendored in `fonts-pdf/` (committed, self-hosted), so nothing to
 # download here. `build-pdf.mjs` points Typst at that directory.
 
+# Typst `@preview` packages are gitignored (in `.tola/packages/`), so fetch the
+# ones the site uses into the package cache on every build.
+mkdir -p "$PWD/.tola/packages/preview/hundouk/0.1.0"
+download "https://packages.typst.org/preview/hundouk-0.1.0.tar.gz" /tmp/hundouk.tar.gz
+tar -xzf /tmp/hundouk.tar.gz -C "$PWD/.tola/packages/preview/hundouk/0.1.0"
+
 # Per-page web fonts are generated with fontTools + brotli.
 if ! python3 -c 'import fontTools, brotli' >/dev/null 2>&1; then
   echo "==> installing fonttools"

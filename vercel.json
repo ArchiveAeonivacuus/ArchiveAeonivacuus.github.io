@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "pnpm install",
-  "buildCommand": "bash scripts/vercel-setup.sh && PATH=$PWD/bin:$PATH pnpm run build",
+  "buildCommand": "bash scripts/vercel-setup.sh && PATH=$PWD/bin:$PATH TYPST_PACKAGE_CACHE_PATH=$PWD/.tola/packages pnpm run build",
   "outputDirectory": "public"
 }

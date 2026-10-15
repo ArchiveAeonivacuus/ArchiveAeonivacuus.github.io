@@ -7,7 +7,7 @@
   tags: ("写作", "语法", "站务"),
   category: "站务",
   lang: "zh_CN",
-  draft: true,
+  draft: false,
 )
 
 本站正文使用 Typst。`draft: true` 的文章只在开发模式显示，正式构建会排除。（当前疑似开发模式也不显示）
@@ -68,6 +68,32 @@
   雾霭飘自诃古棱，#linebreak()
   暮色时分尽染红。
 ]
+
+=== 汉文训读（漢文訓読）
+
+```typst
+#kanbun(
+  "蓋(けだ)シ時ニ有リ[二]古=今[一]，地ニ有リ[二]南=北[一]。",
+  writing-direction: ttb,
+  height: 8em,
+)
+```
+
+#kanbun(
+  "蓋(けだ)シ時ニ有リ[二]古=今[一]，地ニ有リ[二]南=北[一]。",
+  writing-direction: ttb,
+  height: 8em,
+)
+
+汉文训读由 `hundouk` 包驱动，标注语法：
+
+- `(読み)`：汉字读音（振り仮名），如 `蓋(けだ)`。
+- `[二]`、`[一]`、`[上]`、`[下]`、`[レ]` 等：返り点。
+- `=`：连字符（ハイフン）。
+- `writing-direction: ttb` 纵排（默认），`ltr` 横排；`height` 是纵排自动换行的高度上限。
+- `use-unicode-kanbun: false` 可改用 `レ` 等兼容字符代替 Unicode 汉文符号。
+
+网页端显示训读文（読み下し），PDF/打印端渲染完整的返り点纵排。
 
 == 四、对话
 

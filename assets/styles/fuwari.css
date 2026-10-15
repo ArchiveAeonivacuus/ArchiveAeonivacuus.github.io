@@ -547,6 +547,7 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 .ci { padding-left: 1.5em; padding-right: 1.5em; }
 .ci p { margin: .5em 0; text-indent: 2em; }
 .waka { font-family: "LXGW WenKai", KaiTi, "Source Han Serif SC", "Source Han Serif JP", serif; text-align: center; }
+.kanbun { font-family: "Source Han Serif JP", "Source Han Serif SC", serif; }
 .graph-title { text-align: center; }
 .cast-list { text-align: center; color: var(--text-50); }
 .rotate-text { display: inline-block; transform: rotate(270deg); }

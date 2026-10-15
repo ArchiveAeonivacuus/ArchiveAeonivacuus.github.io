@@ -1,6 +1,8 @@
 // Reusable content components for page sources.
 // Usage: #import "/templates/components.typ": quote-block, ruby, ...
 
+#import "@preview/hundouk:0.1.0": kanbun as _kanbun-render, yomikudasi as _kanbun-yomikudasi
+
 #let _admonition-title(kind) = if kind == "tip" { "提示" } else if kind == "important" { "重要" } else if kind == "warning" { "警告" } else if kind == "caution" { "注意" } else { "笔记" }
 
 #let admonition(kind: "note", title: none, body) = context {
@@ -239,6 +241,13 @@
 }
 #let spell(body) = centered-box("spellcard", body, font: ("KaiTi", "Source Han Serif JP", "Source Han Serif SC"))
 #let waka(body) = centered-box("waka", body, font: ("LXGW WenKai", "KaiTi", "Source Han Serif JP", "Source Han Serif SC"))
+
+// Kanbun kundoku (漢文訓読) via the `hundouk` package. PDF renders the kunten
+// marks in pseudo-vertical layout; HTML falls back to the kundoku reading (訓読文).
+#let kanbun(body, ..named) = html-or(
+  text(font: ("Source Han Serif JP", "Source Han Serif SC"), _kanbun-render(body, ..named)),
+  () => html.elem("span", attrs: (class: "kanbun"), text(_kanbun-yomikudasi(body))),
+)
 
 // Renders as the site's hyperlink card (avatar + title + description), which is
 // what the archive site's client-side card fixup turned these into.
