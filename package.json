@@ -25,6 +25,7 @@
     "typescript": "^5.7.0"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^2.0.0",
     "photoswipe": "^5.4.4",
     "swup": "^4.10.0"
   }

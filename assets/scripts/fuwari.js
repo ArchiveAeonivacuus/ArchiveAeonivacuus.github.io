@@ -3522,13 +3522,13 @@ var UIElement = class {
    */
   constructor(pswp, data2) {
     var _container;
-    const name = data2.name || data2.className;
+    const name2 = data2.name || data2.className;
     let elementHTML = data2.html;
-    if (pswp.options[name] === false) {
+    if (pswp.options[name2] === false) {
       return;
     }
-    if (typeof pswp.options[name + "SVG"] === "string") {
-      elementHTML = pswp.options[name + "SVG"];
+    if (typeof pswp.options[name2 + "SVG"] === "string") {
+      elementHTML = pswp.options[name2 + "SVG"];
     }
     pswp.dispatch("uiElementCreate", {
       data: data2
@@ -3554,8 +3554,8 @@ var UIElement = class {
       const {
         ariaLabel
       } = data2;
-      if (typeof pswp.options[name + "Title"] === "string") {
-        title = pswp.options[name + "Title"];
+      if (typeof pswp.options[name2 + "Title"] === "string") {
+        title = pswp.options[name2 + "Title"];
       }
       if (title) {
         element.title = title;
@@ -3900,29 +3900,29 @@ var Eventable = class {
    * @param {PhotoSwipeFiltersMap[T]} fn
    * @param {number} priority
    */
-  addFilter(name, fn, priority = 100) {
+  addFilter(name2, fn, priority = 100) {
     var _this$_filters$name, _this$_filters$name2, _this$pswp;
-    if (!this._filters[name]) {
-      this._filters[name] = [];
+    if (!this._filters[name2]) {
+      this._filters[name2] = [];
     }
-    (_this$_filters$name = this._filters[name]) === null || _this$_filters$name === void 0 || _this$_filters$name.push({
+    (_this$_filters$name = this._filters[name2]) === null || _this$_filters$name === void 0 || _this$_filters$name.push({
       fn,
       priority
     });
-    (_this$_filters$name2 = this._filters[name]) === null || _this$_filters$name2 === void 0 || _this$_filters$name2.sort((f1, f2) => f1.priority - f2.priority);
-    (_this$pswp = this.pswp) === null || _this$pswp === void 0 || _this$pswp.addFilter(name, fn, priority);
+    (_this$_filters$name2 = this._filters[name2]) === null || _this$_filters$name2 === void 0 || _this$_filters$name2.sort((f1, f2) => f1.priority - f2.priority);
+    (_this$pswp = this.pswp) === null || _this$pswp === void 0 || _this$pswp.addFilter(name2, fn, priority);
   }
   /**
    * @template {keyof PhotoSwipeFiltersMap} T
    * @param {T} name
    * @param {PhotoSwipeFiltersMap[T]} fn
    */
-  removeFilter(name, fn) {
-    if (this._filters[name]) {
-      this._filters[name] = this._filters[name].filter((filter) => filter.fn !== fn);
+  removeFilter(name2, fn) {
+    if (this._filters[name2]) {
+      this._filters[name2] = this._filters[name2].filter((filter) => filter.fn !== fn);
     }
     if (this.pswp) {
-      this.pswp.removeFilter(name, fn);
+      this.pswp.removeFilter(name2, fn);
     }
   }
   /**
@@ -3931,9 +3931,9 @@ var Eventable = class {
    * @param {Parameters<PhotoSwipeFiltersMap[T]>} args
    * @returns {Parameters<PhotoSwipeFiltersMap[T]>[0]}
    */
-  applyFilters(name, ...args) {
+  applyFilters(name2, ...args) {
     var _this$_filters$name3;
-    (_this$_filters$name3 = this._filters[name]) === null || _this$_filters$name3 === void 0 || _this$_filters$name3.forEach((filter) => {
+    (_this$_filters$name3 = this._filters[name2]) === null || _this$_filters$name3 === void 0 || _this$_filters$name3.forEach((filter) => {
       args[0] = filter.fn.apply(this, args);
     });
     return args[0];
@@ -3943,25 +3943,25 @@ var Eventable = class {
    * @param {T} name
    * @param {EventCallback<T>} fn
    */
-  on(name, fn) {
+  on(name2, fn) {
     var _this$_listeners$name, _this$pswp2;
-    if (!this._listeners[name]) {
-      this._listeners[name] = [];
+    if (!this._listeners[name2]) {
+      this._listeners[name2] = [];
     }
-    (_this$_listeners$name = this._listeners[name]) === null || _this$_listeners$name === void 0 || _this$_listeners$name.push(fn);
-    (_this$pswp2 = this.pswp) === null || _this$pswp2 === void 0 || _this$pswp2.on(name, fn);
+    (_this$_listeners$name = this._listeners[name2]) === null || _this$_listeners$name === void 0 || _this$_listeners$name.push(fn);
+    (_this$pswp2 = this.pswp) === null || _this$pswp2 === void 0 || _this$pswp2.on(name2, fn);
   }
   /**
    * @template {keyof PhotoSwipeEventsMap} T
    * @param {T} name
    * @param {EventCallback<T>} fn
    */
-  off(name, fn) {
+  off(name2, fn) {
     var _this$pswp3;
-    if (this._listeners[name]) {
-      this._listeners[name] = this._listeners[name].filter((listener) => fn !== listener);
+    if (this._listeners[name2]) {
+      this._listeners[name2] = this._listeners[name2].filter((listener) => fn !== listener);
     }
-    (_this$pswp3 = this.pswp) === null || _this$pswp3 === void 0 || _this$pswp3.off(name, fn);
+    (_this$pswp3 = this.pswp) === null || _this$pswp3 === void 0 || _this$pswp3.off(name2, fn);
   }
   /**
    * @template {keyof PhotoSwipeEventsMap} T
@@ -3969,16 +3969,16 @@ var Eventable = class {
    * @param {PhotoSwipeEventsMap[T]} [details]
    * @returns {AugmentedEvent<T>}
    */
-  dispatch(name, details) {
+  dispatch(name2, details) {
     var _this$_listeners$name2;
     if (this.pswp) {
-      return this.pswp.dispatch(name, details);
+      return this.pswp.dispatch(name2, details);
     }
     const event = (
       /** @type {AugmentedEvent<T>} */
-      new PhotoSwipeEvent(name, details)
+      new PhotoSwipeEvent(name2, details)
     );
-    (_this$_listeners$name2 = this._listeners[name]) === null || _this$_listeners$name2 === void 0 || _this$_listeners$name2.forEach((listener) => {
+    (_this$_listeners$name2 = this._listeners[name2]) === null || _this$_listeners$name2 === void 0 || _this$_listeners$name2.forEach((listener) => {
       listener.call(this, event);
     });
     return event;
@@ -5544,29 +5544,29 @@ var Eventable2 = class {
    * @param {PhotoSwipeFiltersMap[T]} fn
    * @param {number} priority
    */
-  addFilter(name, fn, priority = 100) {
+  addFilter(name2, fn, priority = 100) {
     var _this$_filters$name, _this$_filters$name2, _this$pswp;
-    if (!this._filters[name]) {
-      this._filters[name] = [];
+    if (!this._filters[name2]) {
+      this._filters[name2] = [];
     }
-    (_this$_filters$name = this._filters[name]) === null || _this$_filters$name === void 0 || _this$_filters$name.push({
+    (_this$_filters$name = this._filters[name2]) === null || _this$_filters$name === void 0 || _this$_filters$name.push({
       fn,
       priority
     });
-    (_this$_filters$name2 = this._filters[name]) === null || _this$_filters$name2 === void 0 || _this$_filters$name2.sort((f1, f2) => f1.priority - f2.priority);
-    (_this$pswp = this.pswp) === null || _this$pswp === void 0 || _this$pswp.addFilter(name, fn, priority);
+    (_this$_filters$name2 = this._filters[name2]) === null || _this$_filters$name2 === void 0 || _this$_filters$name2.sort((f1, f2) => f1.priority - f2.priority);
+    (_this$pswp = this.pswp) === null || _this$pswp === void 0 || _this$pswp.addFilter(name2, fn, priority);
   }
   /**
    * @template {keyof PhotoSwipeFiltersMap} T
    * @param {T} name
    * @param {PhotoSwipeFiltersMap[T]} fn
    */
-  removeFilter(name, fn) {
-    if (this._filters[name]) {
-      this._filters[name] = this._filters[name].filter((filter) => filter.fn !== fn);
+  removeFilter(name2, fn) {
+    if (this._filters[name2]) {
+      this._filters[name2] = this._filters[name2].filter((filter) => filter.fn !== fn);
     }
     if (this.pswp) {
-      this.pswp.removeFilter(name, fn);
+      this.pswp.removeFilter(name2, fn);
     }
   }
   /**
@@ -5575,9 +5575,9 @@ var Eventable2 = class {
    * @param {Parameters<PhotoSwipeFiltersMap[T]>} args
    * @returns {Parameters<PhotoSwipeFiltersMap[T]>[0]}
    */
-  applyFilters(name, ...args) {
+  applyFilters(name2, ...args) {
     var _this$_filters$name3;
-    (_this$_filters$name3 = this._filters[name]) === null || _this$_filters$name3 === void 0 || _this$_filters$name3.forEach((filter) => {
+    (_this$_filters$name3 = this._filters[name2]) === null || _this$_filters$name3 === void 0 || _this$_filters$name3.forEach((filter) => {
       args[0] = filter.fn.apply(this, args);
     });
     return args[0];
@@ -5587,25 +5587,25 @@ var Eventable2 = class {
    * @param {T} name
    * @param {EventCallback<T>} fn
    */
-  on(name, fn) {
+  on(name2, fn) {
     var _this$_listeners$name, _this$pswp2;
-    if (!this._listeners[name]) {
-      this._listeners[name] = [];
+    if (!this._listeners[name2]) {
+      this._listeners[name2] = [];
     }
-    (_this$_listeners$name = this._listeners[name]) === null || _this$_listeners$name === void 0 || _this$_listeners$name.push(fn);
-    (_this$pswp2 = this.pswp) === null || _this$pswp2 === void 0 || _this$pswp2.on(name, fn);
+    (_this$_listeners$name = this._listeners[name2]) === null || _this$_listeners$name === void 0 || _this$_listeners$name.push(fn);
+    (_this$pswp2 = this.pswp) === null || _this$pswp2 === void 0 || _this$pswp2.on(name2, fn);
   }
   /**
    * @template {keyof PhotoSwipeEventsMap} T
    * @param {T} name
    * @param {EventCallback<T>} fn
    */
-  off(name, fn) {
+  off(name2, fn) {
     var _this$pswp3;
-    if (this._listeners[name]) {
-      this._listeners[name] = this._listeners[name].filter((listener) => fn !== listener);
+    if (this._listeners[name2]) {
+      this._listeners[name2] = this._listeners[name2].filter((listener) => fn !== listener);
     }
-    (_this$pswp3 = this.pswp) === null || _this$pswp3 === void 0 || _this$pswp3.off(name, fn);
+    (_this$pswp3 = this.pswp) === null || _this$pswp3 === void 0 || _this$pswp3.off(name2, fn);
   }
   /**
    * @template {keyof PhotoSwipeEventsMap} T
@@ -5613,16 +5613,16 @@ var Eventable2 = class {
    * @param {PhotoSwipeEventsMap[T]} [details]
    * @returns {AugmentedEvent<T>}
    */
-  dispatch(name, details) {
+  dispatch(name2, details) {
     var _this$_listeners$name2;
     if (this.pswp) {
-      return this.pswp.dispatch(name, details);
+      return this.pswp.dispatch(name2, details);
     }
     const event = (
       /** @type {AugmentedEvent<T>} */
-      new PhotoSwipeEvent2(name, details)
+      new PhotoSwipeEvent2(name2, details)
     );
-    (_this$_listeners$name2 = this._listeners[name]) === null || _this$_listeners$name2 === void 0 || _this$_listeners$name2.forEach((listener) => {
+    (_this$_listeners$name2 = this._listeners[name2]) === null || _this$_listeners$name2 === void 0 || _this$_listeners$name2.forEach((listener) => {
       listener.call(this, event);
     });
     return event;
@@ -6569,20 +6569,20 @@ var PhotoSwipeLightbox = class extends PhotoSwipeBase2 {
     const pswp = typeof module === "object" ? new module.default(this.options) : new module(this.options);
     this.pswp = pswp;
     window.pswp = pswp;
-    Object.keys(this._listeners).forEach((name) => {
+    Object.keys(this._listeners).forEach((name2) => {
       var _this$_listeners$name;
-      (_this$_listeners$name = this._listeners[name]) === null || _this$_listeners$name === void 0 || _this$_listeners$name.forEach((fn) => {
+      (_this$_listeners$name = this._listeners[name2]) === null || _this$_listeners$name === void 0 || _this$_listeners$name.forEach((fn) => {
         pswp.on(
-          name,
+          name2,
           /** @type {EventCallback<typeof name>} */
           fn
         );
       });
     });
-    Object.keys(this._filters).forEach((name) => {
+    Object.keys(this._filters).forEach((name2) => {
       var _this$_filters$name;
-      (_this$_filters$name = this._filters[name]) === null || _this$_filters$name === void 0 || _this$_filters$name.forEach((filter) => {
-        pswp.addFilter(name, filter.fn, filter.priority);
+      (_this$_filters$name = this._filters[name2]) === null || _this$_filters$name === void 0 || _this$_filters$name.forEach((filter) => {
+        pswp.addFilter(name2, filter.fn, filter.priority);
       });
     });
     if (this._preloadedContent) {
@@ -7275,6 +7275,26 @@ var words_default = {
     zh_CN: "\u8BED\u6CD5",
     ja: "\u6587\u6CD5",
     en: "Grammar"
+  },
+  \u963F\u4F0A\u52AA\u8BED: {
+    zh_CN: "\u963F\u4F0A\u52AA\u8BED",
+    ja: "\u30A2\u30A4\u30CC\u8A9E",
+    en: "Aynu Language"
+  },
+  \u7FFB\u8BD1: {
+    zh_CN: "\u7FFB\u8BD1",
+    ja: "\u7FFB\u8A33",
+    en: "Translation"
+  },
+  \u8BED\u8A00\u5B66\u4E60: {
+    zh_CN: "\u8BED\u8A00\u5B66\u4E60",
+    ja: "\u8A9E\u5B66",
+    en: "Language Learning"
+  },
+  \u6C99\u6D41\u65B9\u8A00: {
+    zh_CN: "\u6C99\u6D41\u65B9\u8A00",
+    ja: "\u6C99\u6D41\u65B9\u8A00",
+    en: "Saru Dialect"
   }
 };
 
@@ -7364,7 +7384,119 @@ function mountKanbun() {
   }
 }
 
+// node_modules/.pnpm/@vercel+speed-insights@2.0.0/node_modules/@vercel/speed-insights/dist/index.mjs
+var initQueue = () => {
+  if (window.si) return;
+  window.si = function a2(...params) {
+    window.siq = window.siq || [];
+    window.siq.push(params);
+  };
+};
+var name = "@vercel/speed-insights";
+var version = "2.0.0";
+function isBrowser() {
+  return typeof window !== "undefined";
+}
+function detectEnvironment() {
+  try {
+    const env = "development";
+    if (env === "development" || env === "test") {
+      return "development";
+    }
+  } catch {
+  }
+  return "production";
+}
+function isDevelopment() {
+  return detectEnvironment() === "development";
+}
+function getScriptSrc(props) {
+  if (props.scriptSrc) {
+    return makeAbsolute(props.scriptSrc);
+  }
+  if (isDevelopment()) {
+    return "https://va.vercel-scripts.com/v1/speed-insights/script.debug.js";
+  }
+  if (props.dsn) {
+    return "https://va.vercel-scripts.com/v1/speed-insights/script.js";
+  }
+  if (props.basePath) {
+    return makeAbsolute(`${props.basePath}/speed-insights/script.js`);
+  }
+  return "/_vercel/speed-insights/script.js";
+}
+function loadProps(explicitProps, confString) {
+  var _a;
+  let props = explicitProps;
+  if (confString) {
+    try {
+      props = {
+        ...(_a = JSON.parse(confString)) == null ? void 0 : _a.speedInsights,
+        ...explicitProps
+      };
+    } catch {
+    }
+  }
+  const dataset = {
+    sdkn: name + (props.framework ? `/${props.framework}` : ""),
+    sdkv: version
+  };
+  if (props.sampleRate) {
+    dataset.sampleRate = props.sampleRate.toString();
+  }
+  if (props.route) {
+    dataset.route = props.route;
+  }
+  if (isDevelopment() && props.debug === false) {
+    dataset.debug = "false";
+  }
+  if (props.dsn) {
+    dataset.dsn = props.dsn;
+  }
+  if (props.endpoint) {
+    dataset.endpoint = makeAbsolute(props.endpoint);
+  } else if (props.basePath) {
+    dataset.endpoint = makeAbsolute(`${props.basePath}/speed-insights/vitals`);
+  }
+  return {
+    src: getScriptSrc(props),
+    beforeSend: props.beforeSend,
+    dataset
+  };
+}
+function makeAbsolute(url) {
+  return url.startsWith("http://") || url.startsWith("https://") || url.startsWith("/") ? url : `/${url}`;
+}
+function injectSpeedInsights(props = {}, confString) {
+  var _a;
+  if (!isBrowser() || props.route === null) return null;
+  initQueue();
+  const { beforeSend, src, dataset } = loadProps(props, confString);
+  if (document.head.querySelector(`script[src*="${src}"]`)) return null;
+  if (beforeSend) {
+    (_a = window.si) == null ? void 0 : _a.call(window, "beforeSend", beforeSend);
+  }
+  const script = document.createElement("script");
+  script.src = src;
+  script.defer = true;
+  for (const [key, value] of Object.entries(dataset)) {
+    script.dataset[key] = value;
+  }
+  script.onerror = () => {
+    console.log(
+      `[Vercel Speed Insights] Failed to load script from ${src}. Please check if any content blockers are enabled and try again.`
+    );
+  };
+  document.head.appendChild(script);
+  return {
+    setRoute: (route) => {
+      script.dataset.route = route ?? void 0;
+    }
+  };
+}
+
 // assets/scripts/fuwari.ts
+injectSpeedInsights();
 function syncBodyState() {
   document.documentElement.classList.toggle("is-home", location.pathname === "/" || location.pathname === "");
   document.querySelector("#navbar-wrapper")?.classList.remove("navbar-hidden");
