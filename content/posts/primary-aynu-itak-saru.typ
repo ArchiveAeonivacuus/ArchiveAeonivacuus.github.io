@@ -2,8 +2,8 @@
 
 #show: post.with(
   title: "初级阿伊努语·沙流方言",
-  date: "2026-10-13",
-  update: "2026-10-13",
+  date: "2026-10-16",
+  update: "2026-10-16",
   updating: true,
   update_note: "初版。",
   summary: "《初级阿伊努语_沙流》中译本，持续更新。",
