@@ -12,6 +12,7 @@ import { mountGithubCards } from "./github";
 import { applyI18n } from "./i18n";
 import { cleanupPage } from "./lifecycle";
 import { mountMermaid } from "./mermaid";
+import { mountKanbun } from "./kanbun";
 
 function syncBodyState(): void {
   document.documentElement.classList.toggle("is-home", location.pathname === "/" || location.pathname === "");
@@ -30,6 +31,7 @@ function mountPage(): void {
   mountArchiveFilter();
   mountGithubCards();
   mountMermaid();
+  mountKanbun();
 }
 
 function mountGlobal(): void {

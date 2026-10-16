@@ -1,7 +1,7 @@
 // Reusable content components for page sources.
 // Usage: #import "/templates/components.typ": quote-block, ruby, ...
 
-#import "@preview/hundouk:0.1.0": kanbun as _kanbun-render, yomikudasi as _kanbun-yomikudasi
+#import "@preview/hundouk:0.1.0": kanbun as _kanbun-render
 
 #let _admonition-title(kind) = if kind == "tip" { "提示" } else if kind == "important" { "重要" } else if kind == "warning" { "警告" } else if kind == "caution" { "注意" } else { "笔记" }
 
@@ -165,12 +165,15 @@
 #let caption(body) = html-or(align(center, body), () => html.elem("div", attrs: (class: "graph-title"), body))
 #let cast-list(body) = html-or(body, () => html.elem("p", attrs: (class: "cast-list"), body))
 
-#let data-table(columns: 4, ..cells) = html-or(
-  table(columns: columns, ..cells.pos()),
-  () => html.elem("div", attrs: (class: "typst-table-wrap"))[
-    #table(columns: columns, ..cells.pos())
-  ],
-)
+#let data-table(columns: 4, align: left, ..cells) = {
+  let cols = if type(columns) == int { (auto,) * columns } else { columns }
+  html-or(
+    table(columns: cols, align: align, ..cells.pos()),
+    () => html.elem("div", attrs: (class: "typst-table-wrap"))[
+      #table(columns: cols, align: align, ..cells.pos())
+    ],
+  )
+}
 
 // Word-by-word gloss (example sentences): a borderless, minimum-width table
 // so each word column only takes as much width as it needs.
@@ -242,12 +245,43 @@
 #let spell(body) = centered-box("spellcard", body, font: ("KaiTi", "Source Han Serif JP", "Source Han Serif SC"))
 #let waka(body) = centered-box("waka", body, font: ("LXGW WenKai", "KaiTi", "Source Han Serif JP", "Source Han Serif SC"))
 
-// Kanbun kundoku (漢文訓読) via the `hundouk` package. PDF renders the kunten
-// marks in pseudo-vertical layout; HTML falls back to the kundoku reading (訓読文).
-#let kanbun(body, ..named) = html-or(
-  text(font: ("Source Han Serif JP", "Source Han Serif SC"), _kanbun-render(body, ..named)),
-  () => html.elem("span", attrs: (class: "kanbun"), text(_kanbun-yomikudasi(body))),
-)
+// Kanbun kundoku (漢文訓読). Web renders via the vendored kanbunHTML library
+// (AGPL-3.0, see assets/scripts/kanbun.LICENSE); PDF renders via `hundouk`.
+// Both accept the same kanbunHTML annotation syntax:
+//   (振り仮名)  {送り仮名}  [返り点]  ‹再読振仮名›  «再読送仮名»
+#let kanbun(body, font: "jp", tight: false, horizontal: false, inline: false, ..named) = {
+  let fonts = (
+    "jp": ("Source Han Serif JP", "Source Han Serif SC"),
+    "c": ("Source Han Serif C", "Source Han Serif SC"),
+    "asebi": ("Asebi Mincho", "Source Han Serif JP"),
+  )
+  let stack = fonts.at(font, default: fonts.at("jp"))
+  let font-class = if font == "c" {
+    " kanbun-c"
+  } else if font == "asebi" {
+    " kanbun-asebi"
+  } else {
+    ""
+  }
+  let classes = "kanbun" + font-class + (if tight { " betagumi" } else { "" }) + (if horizontal { " kanbun-ltr" } else { "" }) + (if inline { " kanbun-inline" } else { "" })
+  let direction = if horizontal { ltr } else { ttb }
+  html-or(
+    text(font: stack, _kanbun-render(body, tight: tight, writing-direction: direction, ..named)),
+    () => {
+      if inline {
+        html.elem("span", attrs: (class: classes))[
+          #html.elem("span", body)
+        ]
+      } else {
+        html.elem("div", attrs: (class: classes))[
+          #for line in body.split("\n") {
+            html.elem("p", line)
+          }
+        ]
+      }
+    },
+  )
+}
 
 // Renders as the site's hyperlink card (avatar + title + description), which is
 // what the archive site's client-side card fixup turned these into.

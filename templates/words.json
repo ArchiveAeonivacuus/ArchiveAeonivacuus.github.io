@@ -163,5 +163,25 @@
     "zh_CN": "语法",
     "ja": "文法",
     "en": "Grammar"
+  },
+  "阿伊努语": {
+    "zh_CN": "阿伊努语",
+    "ja": "アイヌ語",
+    "en": "Aynu Language"
+  },
+  "翻译": {
+    "zh_CN": "翻译",
+    "ja": "翻訳",
+    "en": "Translation"
+  },
+  "语言学习": {
+    "zh_CN": "语言学习",
+    "ja": "語学",
+    "en": "Language Learning"
+  },
+  "沙流方言": {
+    "zh_CN": "沙流方言",
+    "ja": "沙流方言",
+    "en": "Saru Dialect"
   }
 }

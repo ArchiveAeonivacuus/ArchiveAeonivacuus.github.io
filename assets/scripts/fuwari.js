@@ -7260,6 +7260,21 @@ var words_default = {
     zh_CN: "\u4EBA\u9020\u8BED\u8A00",
     ja: "\u4EBA\u5DE5\u8A00\u8A9E",
     en: "Constructed Language"
+  },
+  \u5199\u4F5C: {
+    zh_CN: "\u5199\u4F5C",
+    ja: "\u57F7\u7B46",
+    en: "Writing"
+  },
+  \u7AD9\u52A1: {
+    zh_CN: "\u7AD9\u52A1",
+    ja: "\u904B\u55B6",
+    en: "Site Management"
+  },
+  \u8BED\u6CD5: {
+    zh_CN: "\u8BED\u6CD5",
+    ja: "\u6587\u6CD5",
+    en: "Grammar"
   }
 };
 
@@ -7333,6 +7348,22 @@ function mountMermaid() {
   mermaid.run({ nodes });
 }
 
+// assets/scripts/kanbun.ts
+function mountKanbun() {
+  const convert = window.convertKanbunDiv;
+  if (typeof convert !== "function") return;
+  const divs = Array.from(
+    document.querySelectorAll(".kanbun:not(.kanbun-converted)")
+  );
+  for (const div of divs) {
+    try {
+      convert(div);
+      div.classList.add("kanbun-converted");
+    } catch {
+    }
+  }
+}
+
 // assets/scripts/fuwari.ts
 function syncBodyState() {
   document.documentElement.classList.toggle("is-home", location.pathname === "/" || location.pathname === "");
@@ -7350,6 +7381,7 @@ function mountPage() {
   mountArchiveFilter();
   mountGithubCards();
   mountMermaid();
+  mountKanbun();
 }
 function mountGlobal() {
   document.querySelector("#banner")?.classList.add("is-ready");

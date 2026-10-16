@@ -570,7 +570,7 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 
 /* Tables rendered by #data-table / #web-table. */
 .typst-table-wrap { width: 100%; margin: 1.25rem 0; overflow-x: auto; }
-.typst-table-wrap table { width: 100%; border-collapse: collapse; }
+.typst-table-wrap table { width: auto; max-width: 100%; border-collapse: collapse; }
 
 /* #card / #github render through the shared .card-hyperlink component above. */
 
