@@ -7348,24 +7348,44 @@ function applyI18n() {
 
 // assets/scripts/mermaid.ts
 var initialized = false;
+var mermaidPromise = null;
 function isDark2() {
   return document.documentElement.classList.contains("dark");
 }
-function mountMermaid() {
-  const mermaid = window.mermaid;
-  if (!mermaid) return;
-  const nodes = Array.from(document.querySelectorAll(".markdown-content pre.mermaid"));
-  if (nodes.length === 0) return;
-  if (!initialized) {
-    mermaid.initialize({
-      startOnLoad: false,
-      securityLevel: "loose",
-      theme: isDark2() ? "dark" : "default",
-      flowchart: { useMaxWidth: false, htmlLabels: true, diagramPadding: 240 }
+function loadMermaid() {
+  if (!mermaidPromise) {
+    mermaidPromise = new Promise((resolve, reject) => {
+      const existing = window.mermaid;
+      if (existing) return resolve(existing);
+      const script = document.createElement("script");
+      script.src = "/assets/scripts/mermaid.min.js";
+      script.async = true;
+      script.onload = () => resolve(window.mermaid);
+      script.onerror = () => reject(new Error("mermaid failed to load"));
+      document.head.appendChild(script);
     });
-    initialized = true;
   }
-  mermaid.run({ nodes });
+  return mermaidPromise;
+}
+function mountMermaid() {
+  const nodes = Array.from(
+    document.querySelectorAll(".markdown-content pre.mermaid")
+  );
+  if (nodes.length === 0) return;
+  void loadMermaid().then((mermaid) => {
+    if (!mermaid) return;
+    if (!initialized) {
+      mermaid.initialize({
+        startOnLoad: false,
+        securityLevel: "loose",
+        theme: isDark2() ? "dark" : "default",
+        flowchart: { useMaxWidth: false, htmlLabels: true, diagramPadding: 240 }
+      });
+      initialized = true;
+    }
+    mermaid.run({ nodes });
+  }).catch(() => {
+  });
 }
 
 // assets/scripts/kanbun.ts

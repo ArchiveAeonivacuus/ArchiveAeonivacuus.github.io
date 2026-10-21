@@ -266,7 +266,15 @@
 
 .kanbun.kanbun-ltr .unit {
   grid-template-rows: 0.6em 1.1em 0.6em;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1em 1em;
+}
+
+.kanbun.kanbun-ltr.betagumi .unit {
+  grid-template-columns: 1em auto;
+}
+
+.kanbun.kanbun-ltr:not(.betagumi) .unit {
+  margin: 0 0.125em;
 }
 
 .kanbun.kanbun-ltr .kanji {
@@ -314,7 +322,7 @@
 
 /* Multi-kanji ruby (compound title) in horizontal mode. */
 .kanbun.kanbun-ltr .unit.has-multiple-kanji {
-  grid-template-rows: 0.6em 1.1em;
+  grid-template-rows: 0.6em 1.1em 0.6em;
   grid-template-columns: auto;
 }
 
@@ -326,4 +334,27 @@
 .kanbun.kanbun-ltr .unit.has-multiple-kanji .furigana {
   grid-row: 1;
   grid-column: 1;
+  justify-self: stretch;
+  padding: 0 0.25em;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+/* Nested per-character `.unit` boxes inside a multi-kanji ruby.
+   疏排: fixed-width inline-block so the compound keeps the same inter-character
+         spacing as the rest (2em per char). inline-block keeps a normal text
+         baseline, avoiding the inline-grid baseline offset that caused the drop.
+   密排: inline (adjacent, auto width) — no reserved space. */
+.kanbun.kanbun-ltr:not(.betagumi) .has-multiple-kanji .unit {
+  display: inline-block;
+  width: 2em;
+  height: auto;
+  margin: 0;
+  vertical-align: baseline;
+}
+.kanbun.kanbun-ltr.betagumi .has-multiple-kanji .unit {
+  display: inline;
+  height: auto;
+  margin: 0;
+  vertical-align: baseline;
 }

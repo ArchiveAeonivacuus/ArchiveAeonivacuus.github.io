@@ -5,7 +5,7 @@
   date: "2025-12-08",
   update: "2026-10-13",
   updating: true,
-  update_note: "增加装饰品显示栏。",
+  update_note: "更新样式。",
   tags: ("设定", "怪物猎人", "同人"),
   category: "我与星光同行",
   draft: false,

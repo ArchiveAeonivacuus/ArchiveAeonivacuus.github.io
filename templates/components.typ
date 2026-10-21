@@ -2,6 +2,7 @@
 // Usage: #import "/templates/components.typ": quote-block, ruby, ...
 
 #import "@preview/hundouk:0.1.0": kanbun as _kanbun-render
+#import "/utils/tola.typ": to-string
 
 #let _admonition-title(kind) = if kind == "tip" { "提示" } else if kind == "important" { "重要" } else if kind == "warning" { "警告" } else if kind == "caution" { "注意" } else { "笔记" }
 
@@ -212,9 +213,11 @@
 #let mincho(body) = font-span("ff-min", "Source Han Serif JP", body)
 
 #let monster(name, japanese: "", kind: none) = {
-  let value = [#name]
-  if japanese != "" { value += linebreak() + ja(japanese) }
-  if kind == none { value } else { class-span("tx-" + kind, value) }
+  let cls = if kind == "blue" { " monster-blue" } else if kind == "red" { " monster-red" } else { "" }
+  html.elem("span", attrs: (class: "monster" + cls))[
+    #html.elem("span", attrs: (class: "monster-zh"), name)
+    #if japanese != "" { html.elem("span", attrs: (class: "monster-ja"), ja(japanese)) }
+  ]
 }
 
 #let mermaid(source) = html-or(
@@ -329,6 +332,34 @@
 
 // Monster Hunter character card (restored from old markdown `.mh-hunter`/`.mh-other`).
 // `fields` is an array of (label, content) pairs; `equipment` is an array of (part, content) pairs.
+#let _weapon-icon = (
+  "大剑": "greatsword",
+  "太刀": "katana",
+  "单手剑": "sns",
+  "双剑": "dualblades",
+  "大锤": "hammer",
+  "狩猎笛": "huntinghorn",
+  "长枪": "lance",
+  "铳枪": "gunlance",
+  "斩击斧": "switchaxe",
+  "盾斧": "chargeblade",
+  "充能斧": "chargeblade",
+  "操虫棍": "insectglaive",
+  "轻弩炮": "lightbowgun",
+  "重弩炮": "heavybowgun",
+  "弓": "bow",
+  "弓箭": "bow",
+  "大剑/太刀": "greatsword",
+)
+#let _armor-icon = (
+  "头甲": "head",
+  "胸甲": "chest",
+  "腕甲": "arm",
+  "腰甲": "waist",
+  "腿甲": "leg",
+)
+#let _mh-icon(key) = html.elem("span", attrs: (class: "mh-icon mh-icon-" + key, "aria-hidden": "true"))
+
 #let mh-card(fields, equipment: (), combo: none, desc: none, cls: "mh-hunter") = context {
   if target() != "html" {
     block(inset: 10pt, radius: 6pt, stroke: 0.5pt + luma(60%))[
@@ -348,10 +379,17 @@
   } else {
     html.elem("div", attrs: (class: cls))[
       #for f in fields {
+        let label = f.at(0)
         let deco = if f.len() > 2 { f.at(2) } else { none }
-        html.elem("div", attrs: ("data-label": f.at(0)))[
+        let wicon = if label == "武器类型" { _weapon-icon.at(to-string(f.at(1)), default: none) } else { none }
+        html.elem("div", attrs: ("data-label": label))[
+          #if wicon != none { _mh-icon(wicon) }
           #f.at(1)
-          #if deco != none { html.elem("span", attrs: (class: "mh-deco"), deco) }
+          #if deco != none {
+            for d in to-string(deco).split(" ") {
+              if d != "" { html.elem("span", attrs: (class: "mh-deco"), d) }
+            }
+          }
         ]
       }
       #if equipment != () {
@@ -359,10 +397,18 @@
           #html.elem("div", attrs: (class: "armor-box"))[
             #for e in equipment {
               let deco = if e.len() > 2 { e.at(2) } else { none }
+              let aicon = _armor-icon.at(to-string(e.at(0)), default: none)
               html.elem("div", attrs: (class: "armor-row"))[
-                #html.elem("span", attrs: (class: "armor-part"), e.at(0))
+                #html.elem("span", attrs: (class: "armor-part"))[
+                  #if aicon != none { _mh-icon(aicon) }
+                  #e.at(0)
+                ]
                 #html.elem("span", attrs: (class: "armor-name"), e.at(1))
-                #if deco != none { html.elem("span", attrs: (class: "mh-deco"), deco) }
+                #if deco != none {
+                  for d in to-string(deco).split(" ") {
+                    if d != "" { html.elem("span", attrs: (class: "mh-deco"), d) }
+                  }
+                }
               ]
             }
           ]

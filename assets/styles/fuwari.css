@@ -471,8 +471,9 @@ html.is-animating .transition-swup-fade { opacity: 0; transform: translateY(1rem
   :root { --banner-home: 38vh; --banner-page: 28vh; }
   .top-row { padding: 0 .75rem; }
   .navbar { padding-inline: .5rem; }
-  .brand { padding-inline: .65rem; }
-  .brand .brand-name { display: none; }
+  .brand { padding-inline: .65rem; white-space: normal; }
+  .brand .brand-name { display: inline-block; min-width: 0; font-size: .75rem; line-height: 1.15; }
+  .brand .icon { font-size: 1.3rem; }
   .main-stage { margin-top: calc(var(--banner-page) - 1rem - 4.5rem); padding-inline: .75rem; }
   .post-card h2 { font-size: 1.45rem; }
   .post-card h2::before { display: none; }
@@ -532,6 +533,11 @@ html.is-animating .transition-swup-fade { opacity: 0; transform: translateY(1rem
 /* Ruby: 1-2-1 annotation distribution (W3C group-ruby: edge : between = 1 : 2). */
 ruby { ruby-position: over; ruby-align: space-around; }
 ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none; }
+/* Pinyin in kaishu contexts: KaiTi's tone-marked Latin glyphs are full-width
+   (ugly), so render the ruby text with the Latin serif instead. */
+:is(.poem, .ci, .spellcard, .ff-kai) ruby rt {
+  font-family: "Source Serif 4", "Times New Roman", serif;
+}
 
 /* Literary layouts. Verse is kaishu for CJK content; scope by the post's
    language so English poems stay serif and `ong` poems stay Old English. */
@@ -645,90 +651,200 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 .translation-link[data-lang="ong"] { font-family: "Old English Onglisch", serif; font-weight: 400; }
 .translation-link[data-lang="A-zh_iang"] { font-family: "Source Han Serif JP", serif; font-weight: 400; }
 
-/* ===== Monster Hunter character cards (restored) ===== */
+/* ===== Monster Hunter character cards ===== */
 .mh-hunter, .mh-other {
-  --mh-bg: #f8f5e6;
-  --mh-border: #8b4513;
-  --mh-label-color: #654321;
-  --mh-value-color: #222;
-  --mh-deco-color: #2e6da4;
-  background: var(--mh-bg);
-  border: 2px solid var(--mh-border);
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px 0;
-  max-width: 720px;
-  color: var(--mh-value-color);
+  --mh-paper: #f5eeda;
+  --mh-paper-deep: #eadfc3;
+  --mh-ink: #2a2316;
+  --mh-muted: #77674b;
+  --mh-frame: #57452b;
+  --mh-frame-light: #a08a5f;
+  --mh-accent: #a97a28;
+  --mh-accent-deep: #7c3f28;
+  --mh-deco: #2e6d99;
+  --mh-slot: #fbf7ec;
+  position: relative;
+  background: linear-gradient(170deg, var(--mh-paper) 0%, var(--mh-paper-deep) 100%);
+  border: 1px solid var(--mh-frame);
+  border-radius: 3px;
+  padding: 1.6rem 1.7rem 1.3rem;
+  margin: 1.25rem 0;
+  max-width: 760px;
+  color: var(--mh-ink);
+  box-shadow:
+    0 0 0 2px var(--mh-paper),
+    0 0 0 3px var(--mh-frame-light),
+    0 0 0 4px var(--mh-frame),
+    0 4px 12px rgb(0 0 0 / 14%);
 }
 .mh-hunter > div:not(.mh-title),
 .mh-other > div:not(.mh-title) {
   position: relative;
-  padding-left: 120px;
-  margin: 8px 0;
-  color: var(--mh-value-color);
+  padding-left: 128px;
+  margin: .55rem 0;
+  color: var(--mh-ink);
+  line-height: 1.7;
 }
 .mh-hunter > div:not(.mh-title)::before,
 .mh-other > div:not(.mh-title)::before {
-  content: attr(data-label) "：";
-  color: var(--mh-label-color);
-  font-weight: bold;
+  content: attr(data-label);
+  color: var(--mh-accent-deep);
+  font-weight: 700;
+  letter-spacing: .03em;
   position: absolute;
   left: 0;
   top: 0;
-  width: 110px;
-  display: block;
+  width: 118px;
+  padding-right: .7rem;
+  text-align: right;
+}
+.mh-hunter > div:not(.mh-title)::after,
+.mh-other > div:not(.mh-title)::after {
+  content: "";
+  position: absolute;
+  left: 120px;
+  top: .65em;
+  width: .4em;
+  height: .4em;
+  background: var(--mh-accent);
+  transform: rotate(45deg);
 }
 .mh-hunter > div.mh-equipment,
 .mh-other > div.mh-equipment {
   padding-left: 0;
   padding-top: 1.7em;
 }
+.mh-hunter > div.mh-equipment::after,
+.mh-other > div.mh-equipment::after {
+  display: none;
+}
 .mh-equipment .armor-box {
-  background: #fff;
-  border: 1px dashed #cfcfcf;
-  padding: 10px;
-  border-radius: 6px;
+  background: var(--mh-slot);
+  border: 1px solid var(--mh-frame-light);
+  border-radius: 3px;
+  padding: .55rem .9rem;
 }
 .mh-equipment .armor-row {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 8px;
-  margin: 6px 0;
+  gap: .5rem .9rem;
+  margin: .35rem 0;
+  padding: .25rem 0;
+  border-bottom: 1px dashed rgb(0 0 0 / 14%);
 }
+.mh-equipment .armor-row:last-child { border-bottom: 0; }
 .mh-equipment .armor-part {
-  flex: 0 0 110px;
-  color: var(--mh-label-color);
-  font-weight: bold;
+  flex: 0 0 92px;
+  color: var(--mh-accent-deep);
+  font-weight: 700;
 }
-.mh-equipment .armor-part::after { content: "："; }
-.mh-equipment .armor-name { color: var(--mh-value-color); }
+.mh-equipment .armor-name { color: var(--mh-ink); }
 .mh-deco {
-  color: var(--mh-deco-color);
-  font-size: .9em;
+  color: var(--mh-deco);
+  font-size: .85em;
+  padding: .05rem .45rem;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  background: rgb(46 109 153 / 8%);
 }
 .mh-combo {
-  background: #fff8dc;
-  border-left: 3px solid #ffa500;
-  padding: 8px;
+  background: rgb(169 122 40 / 10%);
+  border-left: 3px solid var(--mh-accent);
+  border-radius: 0 3px 3px 0;
+  padding: .6rem .9rem;
   white-space: pre-line;
+  line-height: 1.7;
 }
+.mh-combo br { content: " "; display: block; margin: .35rem 0; border-top: 1px dashed rgb(0 0 0 / 16%); }
+[data-theme="dark"] .mh-combo br { border-top-color: rgb(255 255 255 / 16%); }
 .mh-description {
-  border-top: 1px dashed #8b4513;
-  padding-top: 12px;
-  margin-top: 16px;
-  line-height: 1.5;
+  border-top: 1px solid var(--mh-frame-light);
+  padding-top: .9rem;
+  margin-top: 1rem;
+  line-height: 1.7;
 }
 [data-theme="dark"] .mh-hunter,
 [data-theme="dark"] .mh-other {
-  --mh-bg: #2a2418;
-  --mh-border: #8b4513;
-  --mh-label-color: #c9a86a;
-  --mh-value-color: #e0d8c8;
-  --mh-deco-color: #6da8d4;
+  --mh-paper: #2c261b;
+  --mh-paper-deep: #241f15;
+  --mh-ink: #e7ddc7;
+  --mh-muted: #a8946d;
+  --mh-frame: #8a6f45;
+  --mh-frame-light: #5c4a2c;
+  --mh-accent: #c89a3f;
+  --mh-accent-deep: #c98a5e;
+  --mh-deco: #6fa8cf;
+  --mh-slot: #1f1a11;
 }
-[data-theme="dark"] .mh-equipment .armor-box { background: #1e1a12; border-color: #5a4a2a; }
-[data-theme="dark"] .mh-combo { background: #2a2418; }
+[data-theme="dark"] .mh-equipment .armor-row { border-bottom-color: rgb(255 255 255 / 12%); }
+
+/* Weapon / armor slot icons: the actual in-game icons, rendered through a CSS
+   mask so they inherit the surrounding text colour (works in both themes). */
+.mh-icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: .4em;
+  vertical-align: -.28em;
+  background-color: currentColor;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.mh-icon-greatsword { -webkit-mask-image: url("/assets/images/mh-icons/weapons/greatsword.png"); mask-image: url("/assets/images/mh-icons/weapons/greatsword.png"); }
+.mh-icon-katana { -webkit-mask-image: url("/assets/images/mh-icons/weapons/katana.png"); mask-image: url("/assets/images/mh-icons/weapons/katana.png"); }
+.mh-icon-sns { -webkit-mask-image: url("/assets/images/mh-icons/weapons/sns.png"); mask-image: url("/assets/images/mh-icons/weapons/sns.png"); }
+.mh-icon-dualblades { -webkit-mask-image: url("/assets/images/mh-icons/weapons/dualblades.png"); mask-image: url("/assets/images/mh-icons/weapons/dualblades.png"); }
+.mh-icon-hammer { -webkit-mask-image: url("/assets/images/mh-icons/weapons/hammer.png"); mask-image: url("/assets/images/mh-icons/weapons/hammer.png"); }
+.mh-icon-huntinghorn { -webkit-mask-image: url("/assets/images/mh-icons/weapons/huntinghorn.png"); mask-image: url("/assets/images/mh-icons/weapons/huntinghorn.png"); }
+.mh-icon-lance { -webkit-mask-image: url("/assets/images/mh-icons/weapons/lance.png"); mask-image: url("/assets/images/mh-icons/weapons/lance.png"); }
+.mh-icon-gunlance { -webkit-mask-image: url("/assets/images/mh-icons/weapons/gunlance.png"); mask-image: url("/assets/images/mh-icons/weapons/gunlance.png"); }
+.mh-icon-switchaxe { -webkit-mask-image: url("/assets/images/mh-icons/weapons/switchaxe.png"); mask-image: url("/assets/images/mh-icons/weapons/switchaxe.png"); }
+.mh-icon-chargeblade { -webkit-mask-image: url("/assets/images/mh-icons/weapons/chargeblade.png"); mask-image: url("/assets/images/mh-icons/weapons/chargeblade.png"); }
+.mh-icon-insectglaive { -webkit-mask-image: url("/assets/images/mh-icons/weapons/insectglaive.png"); mask-image: url("/assets/images/mh-icons/weapons/insectglaive.png"); }
+.mh-icon-lightbowgun { -webkit-mask-image: url("/assets/images/mh-icons/weapons/lightbowgun.png"); mask-image: url("/assets/images/mh-icons/weapons/lightbowgun.png"); }
+.mh-icon-heavybowgun { -webkit-mask-image: url("/assets/images/mh-icons/weapons/heavybowgun.png"); mask-image: url("/assets/images/mh-icons/weapons/heavybowgun.png"); }
+.mh-icon-bow { -webkit-mask-image: url("/assets/images/mh-icons/weapons/bow.png"); mask-image: url("/assets/images/mh-icons/weapons/bow.png"); }
+.mh-icon-head { -webkit-mask-image: url("/assets/images/mh-icons/armor/head.png"); mask-image: url("/assets/images/mh-icons/armor/head.png"); }
+.mh-icon-chest { -webkit-mask-image: url("/assets/images/mh-icons/armor/chest.png"); mask-image: url("/assets/images/mh-icons/armor/chest.png"); }
+.mh-icon-arm { -webkit-mask-image: url("/assets/images/mh-icons/armor/arm.png"); mask-image: url("/assets/images/mh-icons/armor/arm.png"); }
+.mh-icon-waist { -webkit-mask-image: url("/assets/images/mh-icons/armor/waist.png"); mask-image: url("/assets/images/mh-icons/armor/waist.png"); }
+.mh-icon-leg { -webkit-mask-image: url("/assets/images/mh-icons/armor/leg.png"); mask-image: url("/assets/images/mh-icons/armor/leg.png"); }
+
+/* Monster list entries: Chinese name on top, Japanese (with ruby) below.
+   blue = elder dragon, red = special individual (matches the legend). */
+.monster { display: inline-flex; flex-direction: column; line-height: 1.45; }
+.monster-zh { font-weight: 600; color: var(--text-90); }
+.monster-ja { font-size: .82em; color: var(--text-50); }
+.monster-blue .monster-zh { color: #0075ff; }
+.monster-red .monster-zh { color: #e60012; }
+[data-theme="dark"] .monster-blue .monster-zh { color: #6ea8ff; }
+[data-theme="dark"] .monster-red .monster-zh { color: #ff6b6b; }
+
+/* Narrow screens: stack the MH card label above its value. */
+@media (max-width: 480px) {
+  .mh-hunter > div:not(.mh-title),
+  .mh-other > div:not(.mh-title) {
+    padding-left: 0;
+    padding-top: 1.4em;
+  }
+  .mh-hunter > div:not(.mh-title)::before,
+  .mh-other > div:not(.mh-title)::before {
+    position: static;
+    display: block;
+    width: auto;
+    padding-right: 0;
+    text-align: left;
+  }
+  .mh-hunter > div:not(.mh-title)::after,
+  .mh-other > div:not(.mh-title)::after {
+    display: none;
+  }
+}
 
 /* Text rotation / right alignment (replacing Typst rotate/align which are ignored in HTML export). */
 .rotate-270 { display: inline-block; transform: rotate(270deg); }
