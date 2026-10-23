@@ -206,7 +206,69 @@ GitHub 简写：
 
 Mermaid 在 PDF 中以原始代码显示；复杂图建议导出成图片。
 
-== 十、HTML/PDF 双目标
+== 十、怪物猎人卡片与图标
+
+人物卡使用 `mh-card`：
+
+```typst
+#mh-card(
+  (
+    ("出身地", [仁汨村]),
+    ("种族", [人类]),
+    ("武器类型", [太刀]),
+    ("武器", [飞龙刀【朱】]),
+  ),
+  equipment: (
+    ("头甲", [火龙S头盔]),
+    ("胸甲", [火龙S铠甲], [收磨珠1]),
+  ),
+  combo: [纵斩连段#linebreak()气刃三连斩连段],
+  desc: [小说主角。],
+  weapon: "long-sword",
+)
+```
+
+- `fields`：`(标签, 内容[, 装饰])` 数组。
+- `equipment`：`(部位, 名称[, 装饰])` 数组；部位可用 `头甲`、`胸甲`、`腕甲`、`腰甲`、`腿甲`。
+- `combo` / `desc`：网页卡片中的连招与人物介绍。
+- `weapon`：显式指定武器图标；一个角色使用多种武器时传数组，例如 `weapon: ("great-sword", "long-sword")`。省略时会按 `武器类型` 的文本查 `_weapon-icon` 字典兜底。
+- `cls`：非猎人卡片可传 `"mh-other"`。
+
+武器、防具图标也可以脱离卡片单独调用，放在正文任意位置：
+
+```typst
+#mh-weapon("long-sword")
+#mh-armor("head")
+```
+
+武器 key 使用官方英文 slug：
+
+| key | 中文 | key | 中文 |
+| --- | --- | --- | --- |
+| `great-sword` | 大剑 | `long-sword` | 太刀 |
+| `sword-and-shield` | 单手剑 | `dual-blades` | 双剑 / 双刀 |
+| `hammer` | 大锤 | `hunting-horn` | 狩猎笛 |
+| `lance` | 长枪 | `gunlance` | 铳枪 |
+| `switch-axe` | 斩击斧 | `charge-blade` | 盾斧 / 充能斧 |
+| `insect-glaive` | 操虫棍 | `light-bowgun` | 轻弩炮 |
+| `heavy-bowgun` | 重弩炮 | `bow` | 弓 / 弓箭 |
+
+图标文件分别在 `assets/images/mh-icons/weapons/<key>.png` 和 `assets/images/mh-icons/armor/<key>.png`。新增图标时按 key 命名放入对应目录即可，不需要再改 CSS。
+
+要修改“武器类型文本 → 默认图标”的对应关系，编辑 `templates/components.typ` 中的 `_weapon-icon` 字典：
+
+```typst
+#let _weapon-icon = (
+  "大剑": "great-sword",
+  "太刀": "long-sword",
+  "单手剑": "sword-and-shield",
+  // ……
+)
+```
+
+图标是普通 `<img>`，会保留原图的白色填充与黑色描边，不再通过 CSS mask 着色。
+
+== 十一、HTML/PDF 双目标
 
 `blog-components.typ` 根据 `target()` 自动切换：
 
@@ -220,7 +282,7 @@ Mermaid 在 PDF 中以原始代码显示；复杂图建议导出成图片。
 
 ```
 
-== 十一、文章元数据
+== 十二、文章元数据
 
 ```typst
 #metadata((
@@ -242,7 +304,7 @@ Mermaid 在 PDF 中以原始代码显示；复杂图建议导出成图片。
 - `description` 留空时首页自动提取摘要。
 - `rootClass` 用于文章根节点附加样式类。
 
-== 十二、多语言
+== 十三、多语言
 
 同组译文使用相同的 `translate_key`，各文件填写正确的 `lang`。新建译文可复制现有 `.typ` 后修改 metadata：
 
@@ -250,7 +312,7 @@ Mermaid 在 PDF 中以原始代码显示；复杂图建议导出成图片。
 cp src/content/typst-posts/base.typ src/content/typst-posts/base_ja.typ
 ```
 
-== 十三、目录和命名
+== 十四、目录和命名
 
 - 文章：`src/content/typst-posts/<slug>.typ`
 - About/Friends：`src/content/spec-typst/*.typ`
@@ -258,7 +320,7 @@ cp src/content/typst-posts/base.typ src/content/typst-posts/base_ja.typ
 - 文件名就是 URL slug，不使用 `.html.typ`。
 - 同名 Markdown 存在时优先使用 Typst。
 
-== 十四、常用命令
+== 十五、常用命令
 
 ```sh
 pnpm dev
@@ -270,7 +332,7 @@ pnpm migrate:typst  # 会覆盖生成的迁移内容，谨慎使用
 typst compile --root . src/content/typst-posts/example.typ example.pdf
 ```
 
-== 十五、发布检查
+== 十六、发布检查
 
 - 将 `draft` 改为 `false`。
 - 同时检查网页和 Tinymist/PDF。

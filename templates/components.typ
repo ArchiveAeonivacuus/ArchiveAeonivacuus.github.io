@@ -335,26 +335,56 @@
   if target() == "html" { html.elem("span", attrs: (class: "align-right"), body) } else { align(right, body) }
 }
 
-// Monster Hunter character card (restored from old markdown `.mh-hunter`/`.mh-other`).
-// `fields` is an array of (label, content) pairs; `equipment` is an array of (part, content) pairs.
+// Monster Hunter card icons. Weapon keys are the official English slugs and
+// map 1:1 to `assets/images/mh-icons/weapons/<key>.png`; call `mh-weapon(...)`
+// anywhere in a document. `mh-card(weapon: ...)` accepts one key or an array.
+#let mh-weapon(key) = context {
+  if target() == "html" {
+    html.elem("img", attrs: (
+      class: "mh-icon mh-weapon",
+      src: "/assets/images/mh-icons/weapons/" + key + ".png",
+      alt: "",
+      "aria-hidden": "true",
+      loading: "lazy",
+      decoding: "async",
+    ))
+  }
+}
+
+#let mh-armor(key) = context {
+  if target() == "html" {
+    html.elem("img", attrs: (
+      class: "mh-icon mh-armor",
+      src: "/assets/images/mh-icons/armor/" + key + ".png",
+      alt: "",
+      "aria-hidden": "true",
+      loading: "lazy",
+      decoding: "async",
+    ))
+  }
+}
+
+// Fallback for `mh-card` when `weapon:` is omitted: Chinese label -> official
+// key. Prefer passing `weapon:` explicitly; a label such as 大剑/太刀 is
+// ambiguous and should use an array instead.
 #let _weapon-icon = (
-  "大剑": "greatsword",
-  "太刀": "katana",
-  "单手剑": "sns",
-  "双剑": "dualblades",
+  "大剑": "great-sword",
+  "太刀": "long-sword",
+  "单手剑": "sword-and-shield",
+  "双剑": "dual-blades",
+  "双刀": "dual-blades",
   "大锤": "hammer",
-  "狩猎笛": "huntinghorn",
+  "狩猎笛": "hunting-horn",
   "长枪": "lance",
   "铳枪": "gunlance",
-  "斩击斧": "switchaxe",
-  "盾斧": "chargeblade",
-  "充能斧": "chargeblade",
-  "操虫棍": "insectglaive",
-  "轻弩炮": "lightbowgun",
-  "重弩炮": "heavybowgun",
+  "斩击斧": "switch-axe",
+  "盾斧": "charge-blade",
+  "充能斧": "charge-blade",
+  "操虫棍": "insect-glaive",
+  "轻弩炮": "light-bowgun",
+  "重弩炮": "heavy-bowgun",
   "弓": "bow",
   "弓箭": "bow",
-  "大剑/太刀": "greatsword",
 )
 #let _armor-icon = (
   "头甲": "head",
@@ -363,9 +393,8 @@
   "腰甲": "waist",
   "腿甲": "leg",
 )
-#let _mh-icon(key) = html.elem("span", attrs: (class: "mh-icon mh-icon-" + key, "aria-hidden": "true"))
 
-#let mh-card(fields, equipment: (), combo: none, desc: none, cls: "mh-hunter") = context {
+#let mh-card(fields, equipment: (), combo: none, desc: none, cls: "mh-hunter", weapon: none) = context {
   if target() != "html" {
     block(inset: 10pt, radius: 6pt, stroke: 0.5pt + luma(60%))[
       #for f in fields {
@@ -382,13 +411,29 @@
       #if desc != none { [#strong[人物介绍：] #desc] }
     ]
   } else {
+    let weapon-keys = if weapon == none {
+      ()
+    } else if type(weapon) == array {
+      weapon
+    } else {
+      (weapon,)
+    }
     html.elem("div", attrs: (class: cls))[
       #for f in fields {
         let label = f.at(0)
         let deco = if f.len() > 2 { f.at(2) } else { none }
-        let wicon = if label == "武器类型" { _weapon-icon.at(to-string(f.at(1)), default: none) } else { none }
+        let wicons = if label == "武器类型" {
+          if weapon-keys.len() > 0 {
+            weapon-keys
+          } else {
+            let fallback = _weapon-icon.at(to-string(f.at(1)), default: none)
+            if fallback != none { (fallback,) } else { () }
+          }
+        } else {
+          ()
+        }
         html.elem("div", attrs: ("data-label": label))[
-          #if wicon != none { _mh-icon(wicon) }
+          #for w in wicons { mh-weapon(w) }
           #f.at(1)
           #if deco != none {
             for d in to-string(deco).split(" ") {
@@ -405,7 +450,7 @@
               let aicon = _armor-icon.at(to-string(e.at(0)), default: none)
               html.elem("div", attrs: (class: "armor-row"))[
                 #html.elem("span", attrs: (class: "armor-part"))[
-                  #if aicon != none { _mh-icon(aicon) }
+                  #if aicon != none { mh-armor(aicon) }
                   #e.at(0)
                 ]
                 #html.elem("span", attrs: (class: "armor-name"), e.at(1))

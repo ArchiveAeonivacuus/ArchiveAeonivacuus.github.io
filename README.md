@@ -150,6 +150,38 @@ pnpm check   # tsc --noEmit + tola validate（链接与资源）
 
 新增或替换 `icon("...")` 后运行一次 `node scripts/build-icons.mjs`，把用到的图标写进 `assets/icons/`；构建本身不会访问 Iconify API。
 
+### 怪物猎人图标
+
+武器图标位于 `assets/images/mh-icons/weapons/<key>.png`，文件名使用官方英文 slug：
+
+| key | 中文 | key | 中文 |
+| --- | --- | --- | --- |
+| `great-sword` | 大剑 | `long-sword` | 太刀 |
+| `sword-and-shield` | 单手剑 | `dual-blades` | 双剑 / 双刀 |
+| `hammer` | 大锤 | `hunting-horn` | 狩猎笛 |
+| `lance` | 长枪 | `gunlance` | 铳枪 |
+| `switch-axe` | 斩击斧 | `charge-blade` | 盾斧 / 充能斧 |
+| `insect-glaive` | 操虫棍 | `light-bowgun` | 轻弩炮 |
+| `heavy-bowgun` | 重弩炮 | `bow` | 弓 / 弓箭 |
+
+在正文任意位置直接调用：
+
+```typst
+#mh-weapon("long-sword")
+#mh-armor("head")
+```
+
+人物卡片推荐显式传入，避免中文标签歧义；需要多个图标时传数组：
+
+```typst
+#mh-card(
+  (("武器类型", [大剑/太刀]),),
+  weapon: ("great-sword", "long-sword"),
+)
+```
+
+未传 `weapon:` 时，卡片会回退到 `templates/components.typ` 里的 `_weapon-icon` 中文映射；要改“名称 → 图标”的对应关系，编辑该字典即可。图标是普通 `<img>`，靠 PNG 自带的白色填充和黑色描边显示，不再使用 CSS mask。
+
 ## 内容来源
 
 文章来自 Archive Aeonivacuus 的 Typst 稿，可用 `scripts/migrate-archive-posts.mjs` 重新迁入（会重写元数据为 `post.with(...)` 并清理转换残留）。

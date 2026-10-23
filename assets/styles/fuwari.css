@@ -685,6 +685,14 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
   color: var(--mh-ink);
   line-height: 1.7;
 }
+/* Typst wraps a field value in <p>; keep it on the same line as the slot icon. */
+.mh-hunter > div[data-label]:not(.mh-equipment):not(.mh-combo):not(.mh-description) > p,
+.mh-other > div[data-label]:not(.mh-equipment):not(.mh-combo):not(.mh-description) > p,
+.mh-equipment .armor-part > p,
+.mh-equipment .armor-name > p {
+  display: inline;
+  margin: 0;
+}
 .mh-hunter > div:not(.mh-title)::before,
 .mh-other > div:not(.mh-title)::before {
   content: attr(data-label);
@@ -779,41 +787,25 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
 }
 [data-theme="dark"] .mh-equipment .armor-row { border-bottom-color: rgb(255 255 255 / 12%); }
 
-/* Weapon / armor slot icons: the actual in-game icons, rendered through a CSS
-   mask so they inherit the surrounding text colour (works in both themes). */
+/* Weapon / armor slot icons: the actual in-game icons, rendered as images so
+   the white fill and dark outline survive (a CSS mask would flatten them to a
+   solid currentColor silhouette). */
 .mh-icon {
   display: inline-block;
   width: 1.25em;
   height: 1.25em;
   margin-right: .4em;
   vertical-align: -.28em;
-  background-color: currentColor;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: contain;
-  mask-size: contain;
+  object-fit: contain;
 }
-.mh-icon-greatsword { -webkit-mask-image: url("/assets/images/mh-icons/weapons/greatsword.png"); mask-image: url("/assets/images/mh-icons/weapons/greatsword.png"); }
-.mh-icon-katana { -webkit-mask-image: url("/assets/images/mh-icons/weapons/katana.png"); mask-image: url("/assets/images/mh-icons/weapons/katana.png"); }
-.mh-icon-sns { -webkit-mask-image: url("/assets/images/mh-icons/weapons/sns.png"); mask-image: url("/assets/images/mh-icons/weapons/sns.png"); }
-.mh-icon-dualblades { -webkit-mask-image: url("/assets/images/mh-icons/weapons/dualblades.png"); mask-image: url("/assets/images/mh-icons/weapons/dualblades.png"); }
-.mh-icon-hammer { -webkit-mask-image: url("/assets/images/mh-icons/weapons/hammer.png"); mask-image: url("/assets/images/mh-icons/weapons/hammer.png"); }
-.mh-icon-huntinghorn { -webkit-mask-image: url("/assets/images/mh-icons/weapons/huntinghorn.png"); mask-image: url("/assets/images/mh-icons/weapons/huntinghorn.png"); }
-.mh-icon-lance { -webkit-mask-image: url("/assets/images/mh-icons/weapons/lance.png"); mask-image: url("/assets/images/mh-icons/weapons/lance.png"); }
-.mh-icon-gunlance { -webkit-mask-image: url("/assets/images/mh-icons/weapons/gunlance.png"); mask-image: url("/assets/images/mh-icons/weapons/gunlance.png"); }
-.mh-icon-switchaxe { -webkit-mask-image: url("/assets/images/mh-icons/weapons/switchaxe.png"); mask-image: url("/assets/images/mh-icons/weapons/switchaxe.png"); }
-.mh-icon-chargeblade { -webkit-mask-image: url("/assets/images/mh-icons/weapons/chargeblade.png"); mask-image: url("/assets/images/mh-icons/weapons/chargeblade.png"); }
-.mh-icon-insectglaive { -webkit-mask-image: url("/assets/images/mh-icons/weapons/insectglaive.png"); mask-image: url("/assets/images/mh-icons/weapons/insectglaive.png"); }
-.mh-icon-lightbowgun { -webkit-mask-image: url("/assets/images/mh-icons/weapons/lightbowgun.png"); mask-image: url("/assets/images/mh-icons/weapons/lightbowgun.png"); }
-.mh-icon-heavybowgun { -webkit-mask-image: url("/assets/images/mh-icons/weapons/heavybowgun.png"); mask-image: url("/assets/images/mh-icons/weapons/heavybowgun.png"); }
-.mh-icon-bow { -webkit-mask-image: url("/assets/images/mh-icons/weapons/bow.png"); mask-image: url("/assets/images/mh-icons/weapons/bow.png"); }
-.mh-icon-head { -webkit-mask-image: url("/assets/images/mh-icons/armor/head.png"); mask-image: url("/assets/images/mh-icons/armor/head.png"); }
-.mh-icon-chest { -webkit-mask-image: url("/assets/images/mh-icons/armor/chest.png"); mask-image: url("/assets/images/mh-icons/armor/chest.png"); }
-.mh-icon-arm { -webkit-mask-image: url("/assets/images/mh-icons/armor/arm.png"); mask-image: url("/assets/images/mh-icons/armor/arm.png"); }
-.mh-icon-waist { -webkit-mask-image: url("/assets/images/mh-icons/armor/waist.png"); mask-image: url("/assets/images/mh-icons/armor/waist.png"); }
-.mh-icon-leg { -webkit-mask-image: url("/assets/images/mh-icons/armor/leg.png"); mask-image: url("/assets/images/mh-icons/armor/leg.png"); }
+/* The MH card lives inside `.markdown-content`, whose img rule is more
+   specific and would turn slot icons into centered block images. */
+.markdown-content .mh-icon {
+  display: inline-block;
+  margin: 0 .4em 0 0;
+  border-radius: 0;
+  cursor: default;
+}
 
 /* Monster list entries: Chinese name on top, Japanese (with ruby) below.
    blue = elder dragon, red = special individual (matches the legend). */

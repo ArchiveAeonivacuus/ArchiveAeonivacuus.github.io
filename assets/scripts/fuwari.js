@@ -6611,11 +6611,11 @@ var PhotoSwipeLightbox = class extends PhotoSwipeBase2 {
 
 // assets/scripts/lightbox.ts
 function mountLightbox() {
-  const images = document.querySelectorAll(".markdown-content img, #post-cover");
+  const images = document.querySelectorAll(".markdown-content img:not(.mh-icon), #post-cover");
   if (images.length === 0) return;
   const lightbox = new PhotoSwipeLightbox({
     gallery: ".post-container",
-    children: "img",
+    children: "img:not(.mh-icon)",
     pswpModule: () => Promise.resolve({ default: PhotoSwipe }),
     padding: { top: 24, bottom: 24, left: 24, right: 24 },
     wheelToZoom: true,
