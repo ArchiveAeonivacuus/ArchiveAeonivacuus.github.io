@@ -57,6 +57,7 @@
 ├── assets/
 │   ├── styles/             # fuwari.css、fonts.css、photoswipe.css
 │   ├── scripts/            # TypeScript 模块（入口 fuwari.ts）
+│   ├── icons/              # 自托管 Iconify 图标数据（按图标集拆 JSON）
 │   ├── webfonts/           # 网页字体（woff2 子集，自托管）
 │   ├── images/             # 头像、Banner、文章图片
 │   ├── favicon/
@@ -65,6 +66,8 @@
 ├── scripts/
 │   ├── build-stats.mjs          # 统计字数 / 阅读时长 → templates/stats.json
 │   ├── build-site-info.mjs      # 导出站点信息 → templates/site-info.json
+│   ├── build-icons.mjs          # 重新抓取自托管 Iconify 图标数据
+│   ├── optimize-images.py       # 生成响应式 WebP 并改写页面
 │   ├── build-pdf.mjs            # 逐页生成 PDF（--ignore-system-fonts + fonts-pdf）
 │   ├── postprocess-sitemap.mjs  # sitemap 清理与索引
 │   ├── gen-i18n.mjs / gen-words.mjs  # 生成语言词表 / 词条翻译
@@ -103,10 +106,12 @@ pnpm build
 3. `build:stats` — 统计字数 / 阅读时长 → `templates/stats.json`
 4. `build:site-info` — 导出站点信息 → `templates/site-info.json`
 5. `build:site` — `tola build --clean` 生成 HTML、RSS、Sitemap
-6. `build:404` — 复制 `404/index.html` → `404.html`
-7. `build:sitemap` — 移除 404、补全 `lastmod`、生成 `sitemap-index.xml`
-8. `build:search` — Pagefind 建立全文索引
-9. `build:pdf` — 用 Typst 为每页生成 PDF（`--font-path fonts-pdf --ignore-system-fonts`，跳过草稿）
+6. `build:images` — 为封面 / 正文图片生成响应式 WebP，并改写页面 `srcset`
+7. `build:pagefonts` — 逐页生成字体子集，移除仅本地预览用的全量字体声明
+8. `build:404` — 复制 `404/index.html` → `404.html`
+9. `build:sitemap` — 移除 404、补全 `lastmod`、生成 `sitemap-index.xml`
+10. `build:search` — Pagefind 建立全文索引
+11. `build:pdf` — 用 Typst 为每页生成 PDF（`--font-path fonts-pdf --ignore-system-fonts`，跳过草稿）
 
 校验：
 
@@ -142,6 +147,8 @@ pnpm check   # tsc --noEmit + tola validate（链接与资源）
 
 内容组件在 `templates/components.typ`（可从 `/templates/fuwari.typ` 导入），例如：
 `ruby`、`ja` / `old-ja` / `ong` / `latin` / `lxgw` / `kai` / `old-cjk`、`poem` / `lyrics` / `spell` / `waka`、`dialogue`、`aside`、`data-table`、`card`、`github`、`caption`、`cast-list`、`monster`、`divider`、`web-image`、`admonition`、`quote-block`、`github-card`、`link-card` 等。
+
+新增或替换 `icon("...")` 后运行一次 `node scripts/build-icons.mjs`，把用到的图标写进 `assets/icons/`；构建本身不会访问 Iconify API。
 
 ## 内容来源
 

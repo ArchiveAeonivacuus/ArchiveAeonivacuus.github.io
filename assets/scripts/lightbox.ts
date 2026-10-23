@@ -22,10 +22,13 @@ export function mountLightbox(): void {
 
   lightbox.addFilter("domItemData", (itemData, element) => {
     if (element instanceof HTMLImageElement) {
-      itemData.src = element.currentSrc || element.src;
-      itemData.w = Number(element.naturalWidth || window.innerWidth);
-      itemData.h = Number(element.naturalHeight || window.innerHeight);
-      itemData.msrc = itemData.src;
+      const displaySrc = element.currentSrc || element.src;
+      // The page shows a small WebP; open the original only when the lightbox
+      // actually opens, so zoom keeps full detail without costing first load.
+      itemData.src = element.dataset.fullSrc || displaySrc;
+      itemData.w = Number(element.dataset.fullWidth || element.naturalWidth || window.innerWidth);
+      itemData.h = Number(element.dataset.fullHeight || element.naturalHeight || window.innerHeight);
+      itemData.msrc = displaySrc;
       itemData.alt = element.alt;
     }
     return itemData;

@@ -101,9 +101,14 @@
   }
 }
 
+#let _looks-like-image(url) = {
+  let u = lower(url)
+  (".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg", ".avif").any(ext => u.ends-with(ext))
+}
+
 #let link-card(href, title, avatar: none, description: none) = context {
   if target() != "html" { link(href, title) } else {
-    let avatar-node = if avatar != none and avatar != "" {
+    let avatar-node = if avatar != none and avatar != "" and _looks-like-image(avatar) {
       html.elem("span", attrs: (class: "hc-avatar", style: "background-image:url('" + avatar + "');"))
     } else {
       html.elem("span", attrs: (class: "hc-avatar"))

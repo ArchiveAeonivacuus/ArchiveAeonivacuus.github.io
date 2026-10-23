@@ -242,6 +242,32 @@ def process_page(path):
     return path, out
 
 
+def strip_full_font_faces():
+    """Remove the local-preview @font-face rules that point at assets/fonts.
+
+    The production output no longer contains those files, so leaving the rules
+    in makes the browser request eight missing fonts per page and wait for each
+    404 before it falls back to the next family.
+    """
+    pattern = re.compile(
+        r"@font-face\{[^{}]*?url\(\s*[\"']?/assets/fonts/[^{}]*?\}",
+        re.S,
+    )
+    total = 0
+    for path in glob.glob(os.path.join(PUBLIC, "assets", "styles", "*.css")):
+        with open(path, encoding="utf-8") as handle:
+            css = handle.read()
+        stripped, count = pattern.subn("", css)
+        if count:
+            with open(path, "w", encoding="utf-8") as handle:
+                handle.write(stripped)
+            total += count
+    if total:
+        print(f"[pagefonts] stripped {total} full-font @font-face rules")
+    else:
+        print("[pagefonts] no full-font @font-face rules to strip")
+
+
 def main():
     pages = glob.glob(os.path.join(PUBLIC, "**", "*.html"), recursive=True)
     if not pages:
@@ -268,6 +294,8 @@ def main():
     if os.path.isdir(full_fonts):
         shutil.rmtree(full_fonts)
         print("[pagefonts] removed full local-preview fonts from output")
+
+    strip_full_font_faces()
 
 
 if __name__ == "__main__":

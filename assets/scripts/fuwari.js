@@ -6628,10 +6628,11 @@ function mountLightbox() {
   });
   lightbox.addFilter("domItemData", (itemData, element) => {
     if (element instanceof HTMLImageElement) {
-      itemData.src = element.currentSrc || element.src;
-      itemData.w = Number(element.naturalWidth || window.innerWidth);
-      itemData.h = Number(element.naturalHeight || window.innerHeight);
-      itemData.msrc = itemData.src;
+      const displaySrc = element.currentSrc || element.src;
+      itemData.src = element.dataset.fullSrc || displaySrc;
+      itemData.w = Number(element.dataset.fullWidth || element.naturalWidth || window.innerWidth);
+      itemData.h = Number(element.dataset.fullHeight || element.naturalHeight || window.innerHeight);
+      itemData.msrc = displaySrc;
       itemData.alt = element.alt;
     }
     return itemData;

@@ -63,10 +63,11 @@ mkdir -p "$PWD/.tola/packages/preview/hundouk/0.1.0"
 download "https://packages.typst.org/preview/hundouk-0.1.0.tar.gz" /tmp/hundouk.tar.gz
 tar -xzf /tmp/hundouk.tar.gz -C "$PWD/.tola/packages/preview/hundouk/0.1.0"
 
-# Per-page web fonts are generated with fontTools + brotli.
-if ! python3 -c 'import fontTools, brotli' >/dev/null 2>&1; then
-  echo "==> installing fonttools"
-  python3 -m pip install --quiet --user fonttools brotli \
-    || python3 -m pip install --quiet --break-system-packages fonttools brotli
+# Per-page web fonts are generated with fontTools + brotli; cover images are
+# converted to WebP with Pillow.
+if ! python3 -c 'import fontTools, brotli, PIL' >/dev/null 2>&1; then
+  echo "==> installing fonttools + pillow"
+  python3 -m pip install --quiet --user fonttools brotli pillow \
+    || python3 -m pip install --quiet --break-system-packages fonttools brotli pillow
 fi
-python3 -c 'import fontTools, brotli; print("fonttools ready")'
+python3 -c 'import fontTools, brotli, PIL; print("fonttools + pillow ready")'
