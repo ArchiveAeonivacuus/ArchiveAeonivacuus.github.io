@@ -101,9 +101,20 @@
   }
 }
 
+// Avatars are often served from endpoints without an image extension
+// (e.g. qlogo.cn/headimg_dl?dst_uin=...), so only skip URLs that clearly
+// point at a non-image file. Query strings and fragments are ignored.
+#let _non-image-ext = (
+  ".pdf", ".zip", ".7z", ".rar", ".mp4", ".webm", ".mp3", ".wav",
+  ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".epub",
+)
+
 #let _looks-like-image(url) = {
-  let u = lower(url)
-  (".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg", ".avif").any(ext => u.ends-with(ext))
+  let query = lower(url).split("?")
+  let base = if query.len() > 0 { query.at(0) } else { "" }
+  let fragment = base.split("#")
+  let path = if fragment.len() > 0 { fragment.at(0) } else { base }
+  not _non-image-ext.any(ext => path.ends-with(ext))
 }
 
 #let link-card(href, title, avatar: none, description: none) = context {
