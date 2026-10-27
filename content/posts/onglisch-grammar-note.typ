@@ -110,6 +110,7 @@
     columns: 4,
     [], [阳性通格], [阴性通格], [属格（不分阴阳性）],
     [单数], [#ong[do]], [#ong[dı]], [#ong[de]],
+    [复数], [#ong[don]], [#ong[dın]], [#ong[des]],
   )
 
 例：
@@ -124,7 +125,7 @@
     columns: 5,
     [情况], [元音结尾], [以#ong[n, s]结尾], [以其他辅音结尾], [部分外来语],
     [变化], [#ong[-n]], [#ong[-on]], [#ong[-s]], [根据来源有特殊变法],
-    [例], [#ong[hómo,<br>hómon]], [#ong[mōn,<br>mōnon]], [#ong[cart,<br>carts]], [#ong[fungus,<br>fungı]],
+    [例], [#ong[hómo,<br>hómon]], [#ong[mun,<br>munon]], [#ong[cart,<br>carts]], [#ong[fungus,<br>fungı]],
   )
 
 需要注意的是，有些固有词的复数形式可能会将#ong[a, o, u]变为其对应的#ong[umlaut]字母。
@@ -213,7 +214,7 @@
 
 #ong[Tü best gacamon to hōm.] 你回到家了。
 
-#ong[Tmār hābon do schıp gabaıde.] 他们买了那船。
+#ong[Tmār hābon dı schıp gabaıde.] 他们买了那船。
 
 === 过去式变位
 
