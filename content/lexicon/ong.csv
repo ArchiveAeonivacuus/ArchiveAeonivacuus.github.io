@@ -7,7 +7,7 @@ abauton,prep.,,,关于
 Abılam,name,,,阿比兰洲
 acıdus,adj. I,,,酸的
 acön,adj. I,,,能够的
-acquérıon,v. I,,词源：外来-学得,得到
+acquérıon,v. I,,,得到
 acroz,prep.,,,横过
 afor,prep.,,,之前
 after,prep.,,,之后
@@ -25,7 +25,7 @@ Almıtoƿ,name,,,米图
 alsƿā,conj.,,,如同
 amagnst,prep.,,,在…中
 an,art.,,,一个
-andsƿaron,v. I,,原词性 n，原义“回答”；按 -on/-en 动词义改,回答
+andsƿaron,v. I,,,回答
 ap,prep.,,,向上
 apel,n. m.,,,苹果
 appēlen,v. selb,,,叫做
@@ -33,7 +33,7 @@ arm,n. m.,,,手臂
 art,n. f.,,,艺术
 at,prep.,,,在
 atıre,adj. I,,,疲倦的
-attacon,v. I,,原词性 n，原义“攻击”；按 -on/-en 动词义改,攻击
+attacon,v. I,,,攻击
 aut,adv.,,,外面
 aux,part.,/oːs/,,从
 āƿacno,adj. I,,,醒着的
@@ -54,16 +54,16 @@ bel,n. f.,,,铃
 ben,v. irr.,,"ƿaron, ben",是（系动词）
 berg,n. m.,,,山
 berı,n. f.,,,浆果
-berston,v. I,,原词性 n，原义“爆裂”；按 -on/-en 动词义改,爆裂
+berston,v. I,,,爆裂
 betƿect,prep.,,,之间
 beu,n. f.,,,蜜蜂
-bıblıothéque,n. f.,,词源：外来-学得,图书馆
+bıblıothéque,n. f.,,,图书馆
 bílatıc,n. f.,/βilatik/,,村子
 bırd,n. f.,,,鸟
 bısıgnes,n. f.,,,生意
 bıt,n. m.,,,一点
 bıter,adj. I,,,苦的
-bıton,v. I,,原词性 n，原义“咬”；按 -on/-en 动词义改,咬
+bıton,v. I,,,咬
 blac,adj. I,,,黑色的
 blad,n. f.,,,刀刃
 blınd,adj. I,,,盲目；瞎的
@@ -79,7 +79,7 @@ bras,n. f.,,,黄铜
 brēd,n. f.,,,面包
 brēt,n. m.,,,呼吸
 brığ,n. f.,,,桥
-brınon,v. I,,原词性 n，原义“燃烧”；按 -on/-en 动词义改,燃烧
+brınon,v. I,,,燃烧
 brocon,adj. I,,,破碎的
 brudor,n. m.,,,兄弟
 brūn,adj. I,,,棕色的
@@ -88,7 +88,7 @@ buc,n. f.,,,书
 but,n. f.,,,靴子
 bƿelgne,adj. I,,,沸腾的
 cald,adj. I,,,冷的
-cálm,adj. II,,词源：外来-通俗,安静的
+cálm,adj. II,,,安静的
 camb,n. m.,,,梳子
 capıtulum,n. f.,,capıtula,章节
 caro,n. f.,,,关心
@@ -99,11 +99,11 @@ caus,n. f.,,,原因
 cēıg,n. f.,,,钥匙
 céntrus,n. f.,,céntren,中心
 cēpon,v. I,,,保持
-cértus,adj. II,,词源：外来-通俗,确定的
+cértus,adj. II,,,确定的
 cest,n. m.,,,箱子
 cetıl,n. m.,,,水壶
-chéf,adj. II,,词源：外来-通俗,主要的
-chémık,adj. II,,词源：外来-通俗,化学的
+chéf,adj. II,,,主要的
+chémık,adj. II,,,化学的
 cíbıl,n. f.,/siβil/,,城市；城
 cın,n. f.,,,下巴
 cırıc,n. f.,,,教堂
@@ -122,9 +122,9 @@ cóntent,n. m.,,,心里；心中；想法；内心；里面；内容
 contı,n. f.,,,县；郡
 cop,n. f.,,,杯子
 coper,n. f.,,,铜
-córpor,adj. II,,词源：外来-通俗,身体的
-coson,v. I,,原词性 n，原义“亲吻”；按 -on/-en 动词义改,亲吻
-cracen,v. II,,原词性 n，原义“裂缝”；按 -on/-en 动词义改（兼名词）,裂开
+córpor,adj. II,,,身体的
+coson,v. I,,,亲吻
+cracen,v. II,,（兼名词）,裂开
 créat,adj. II,,,计划
 cuc,n. m.,,,厨师
 cul,n. f.,,,煤
@@ -149,7 +149,7 @@ Domınan,name,,,多米赧
 döp,adj. I,,,深的
 dost,n. f.,,,灰尘
 drafton,n. f.,,,入水；深度
-drēnen,v. II,,原词性 n，原义“下水道”；按 -on/-en 动词义改（兼名词）,排水
+drēnen,v. II,,（兼名词）,排水
 drıg,adj. I,,,干的
 drincan,n. m.,,,饮料
 drō,n. m.,,继承层,树
@@ -163,7 +163,7 @@ ebnon,adv.,,,甚至
 ēfor,adv.,,,曾经
 ēg,n. f.,,,蛋
 eğ,n. f.,,,边缘
-égal,adj. II,,词源：外来-通俗,相等的
+égal,adj. II,,,相等的
 ēge,n. f.,,,眼睛
 end,n. m.,,,结束
 ēnıg,pron.,,,任何
@@ -173,19 +173,19 @@ enuıg,adv.,,,足够
 erte,n. f.,,,地球
 ēson,v. I,,"ōsd, galōson",吃
 ēst,n. m.,,,东方
-éur,n. f.,,词源：外来-通俗,小时
+éur,n. f.,,,小时
 fader,n. m.,,,父亲
 faır,n. f.,,,火
-falon,v. I,,原词性 n，原义“秋天”；按 -on/-en 动词义改,落下
-fálsus,adj. II,,词源：外来-通俗,错误的
+falon,v. I,,,落下
+fálsus,adj. II,,,错误的
 famılī,n. f.,,,家庭
-faron,v. I,,原词性 n，原义“恐惧”；按 -on/-en 动词义改,害怕
+faron,v. I,,,害怕
 fast,adj. I,,,快
 fat,adj. I,,,胖的
 fect,n. m.,,,战斗
 feder,n. f.,,,羽毛
 feld,n. m.,,,田野
-fenson,v. I,,原词性 n，原义“喷嚏”；按 -on/-en 动词义改,打喷嚏
+fenson,v. I,,,打喷嚏
 féro,n. f.,,,铁
 fers,n. m.,,,诗句
 fıc,adj. I,,,固定的
@@ -195,7 +195,7 @@ fısı,n. m.,/fiʃ/,,鱼
 fıt,adj. I,,,健康的
 flet,adj. I,,,平的
 flıct,n. m.,,,飞行
-flōgon,v. I,,原词性 n，原义“飞”；按 -on/-en 动词义改,飞
+flōgon,v. I,,,飞
 flur,n. m.,,,地板
 fogel,n. m.,,,家禽
 fol,adj. I,,,满的
@@ -207,12 +207,12 @@ fors,n. m.,,förson,马
 forsopoƿar,n. f.,,,马力
 forƿard,adv.,,,向前
 fp,abbr.,,,马力
-framen,v. II,,原词性 n，原义“框架”；按 -on/-en 动词义改（兼名词）,构建
+framen,v. II,,（兼名词）,构建
 freond,n. m.,,,朋友
 freu,adj. I,,,自由的
 frıgn,n. m.,,,戒指
 fruf,n. f.,,,屋顶
-frúıt,adj. II,,词源：外来-通俗,肥沃的
+frúıt,adj. II,,,肥沃的
 frœnd,n. m.,,,朋友
 fuda,n. m.,,,食物
 fungus,n. f.,,fungı,蘑菇
@@ -221,7 +221,7 @@ gabırd,n. f.,,,出生
 gacutde,adj. I,,,切割的
 gacynd,adj. I,,,亲切的
 galēf,n. m.,,,信念
-gamarıérde,adj. II,,词源：外来-学得,已婚的
+gamarıérde,adj. II,,,已婚的
 gāon,v. I,,,去
 gār,n. f.,,,年
 gasond,n. f.,,,声音
@@ -242,11 +242,13 @@ greāt,adj. I,,,伟大的
 grēd,adj. I,,,贪婪的
 grēn,adj. I,,,绿色的
 grupp,n. m.,,,组合
-gud,adj. I,,例外：中世加缀,好的
+gud,adj. I,,语音演变中的例外：中世加缀,好的
 hābon,v. irr.,,"hādon, gahāde",有
 hād,n. m.,,,早晨
-hād,adj. I,,同形 hād“早晨”,快乐的
-hagne,adj. I,,原型动词hagnon,悬挂的
+hād,adj. I,,,快乐的
+hād,n. m.,,,早晨
+hagne,adj. I,,,悬挂的
+hagnon,v. I,,,悬挂
 hamor,n. m.,,,锤子
 hand,n. f.,,,手
 hard,adj. I,,,困难的
@@ -257,9 +259,9 @@ hē,pron.,,,他
 hēc,adj. I,,,高的
 hecceo,adj. II,,,六个
 hēfed,n. f.,,,头
-helpon,v. I,,原词性 n，原义“帮助”；按 -on/-en 动词义改,帮助
+helpon,v. I,,,帮助
 hēr,adv.,,,这里
-hēr,n. f.,,同形 hēr“这里”,头发
+hēr,n. f.,,,头发
 herte,n. f.,,,心脏
 het,n. m.,,,仇恨
 hēto,n. f.,,,热量
@@ -270,11 +272,11 @@ hloƿ,adj. I,,,低的
 hnec,n. m.,,,脖子
 hnoto,n. f.,,,坚果
 hoc,n. m.,,,钩子
-holen,v. II,,原词性 n，原义“洞”；按 -on/-en 动词义改（兼名词）,打洞
+holen,v. II,,（兼名词）,打洞
 holoƿ,adj. I,,,中空的
-hōm,n. m.,,例外：中世加缀,家
+hōm,n. m.,,语音演变中的例外：中世加缀,家
 hómınes,n. f.,,,人；妖
-hómo,n. m.,,词源：外来-通俗,人
+hómo,n. m.,,,人
 hopo,n. m.,,,希望
 horn,n. f.,,,号角
 hōron,v. I,,"hörd, gahöron",听
@@ -286,13 +288,13 @@ hƿār,adv.,,,哪里
 hƿēl,n. m.,,,轮子
 hƿı,adv.,,,为什么
 hƿıl,conj.,,,当…时
-hƿıstlon,v. I,,原词性 n，原义“哨子”；按 -on/-en 动词义改,吹哨
+hƿıstlon,v. I,,,吹哨
 hƿīt,adj. I,,,白色的
 ıb,conj.,,,如果
 ıc,pron.,,,我
 ıestron,adv.,,,昨天
 ıll,adj. I,,,生病的
-ımportánt,adj. II,,词源：外来-学得,重要的
+ımportánt,adj. II,,,重要的
 ın,prep.,,,在…内
 Iognıs,name,,,瀛洲
 ıren,n. f.,,,铁
@@ -304,12 +306,12 @@ lampyrídæ,n. f.,,lampyrída,萤火虫
 land,n. f.,,,土地
 lät,adj. I,,,晚的
 latost,adj. I,,,最后的
-laucon,v. I,,原词性 n，原义“笑”；按 -on/-en 动词义改,笑
+laucon,v. I,,,笑
 leāf,n. f.,,,叶子
-lēdon,v. I,,原词性 n，原义“领导”；按 -on/-en 动词义改,领导
+lēdon,v. I,,,领导
 lernon,n. f.,,,学习
 leter,n. f.,,,皮革
-léter,n. m.,,词源：外来-通俗,信件
+léter,n. m.,,,信件
 lēton,v. I,,,让
 lıbon,v. I,/liβən/,,居住
 lıct,adj. I,,,明亮的
@@ -321,12 +323,12 @@ lıppon,n. f.,,,嘴唇
 lısens,n. m.,,,许可证
 lıst,n. f.,,,列表
 lıtel,pron.,,,少许
-locon,v. I,,原词性 n，原义“锁”；按 -on/-en 动词义改,锁上
-lofon,v. I,,原词性 n，原义“爱”；按 -on/-en 动词义改,爱
+locon,v. I,,,锁上
+lofon,v. I,,,爱
 loıaltı,n. f.,,,忠诚
 lōs,adj. I,,,松的
 los,n. f.,,,损失
-lucen,v. II,,原词性 n，原义“看”；按 -on/-en 动词义改,看
+lucen,v. II,,,看
 macen,v. II,,,制造
 magıcum,n. f.,,,魔法
 mağuct,adj. I,,,魔法的
@@ -348,7 +350,7 @@ místre,n. m.,,,先生
 místress,n. f.,,,女士
 mix,adj. I,,,混合的
 módel,n. m.,,,模型
-Mondanıa,name,,,门怛尼亚（世界）
+Mondanıa,name,,,门怛尼亚
 mónıta,n. m.,,,钱
 mt,abbr.,,,米
 mudor,n. f.,,,母亲
@@ -361,7 +363,7 @@ nam,n. m.,,,名字
 nān,pron.,,,没有
 naroƿ,adj. I,,,狭窄的
 nēdl,n. f.,,,针
-nēdon,v. I,,原词性 n，原义“需要”；按 -on/-en 动词义改,需要
+nēdon,v. I,,,需要
 nēr,adv.,,,附近
 net,n. f.,,,网
 neƿ,adv.,,,现在
@@ -389,27 +391,28 @@ Orken,name,,,於留根
 Oson,n. m.,,,食物
 ot,conj.,,,或者
 panıc,adj. I,,,恐慌；害怕
-pen,v. II,,原词性 n，原义“笔”；按 -on/-en 动词义改（兼名词）,写
+pen,n. m.,,,笔
 per,part.,,,每
-phrúıt,n. f.,,词源：外来-通俗,水果
+phrúıt,n. f.,,,水果
 pın,n. m.,,,别针
-pıpen,v. II,,原词性 n，原义“管子”；按 -on/-en 动词义改（兼名词）,用管道输送
+pıpen,n. m.,,,管道
 pīso,n. m.,,,碎片
 plant,n. f.,,,植物
 pleasánt,n. f.,/plesã/,,愉快；很好；你好
 pleg,n. m.,,,戏剧
 pleƿ,n. m.,,,危险
-polen,v. II,,原词性 n，原义“拉”；按 -on/-en 动词义改,拉
+polen,v. II,,,拉
 polstergaust,n. m.,,,骚灵
 port,n. f.,,,港口
 post,n. m.,,,帖子
 pot,n. m.,,,锅
 poten,v. II,,,放置
 poƿar,n. f.,,,力量
-preıon,v. I,,表示祈使语气用preıs,请
+preıon,v. I,,,请
+preıs, adv.,,,请
 Prosıa,name,,,普罗些
 psýchınes,n. f.,,,魔
-públıc,adj. II,,词源：外来-通俗,公共的
+públıc,adj. II,,,公共的
 publischon,v. I,,,出版
 pūr,adj. I,,,简单的
 Quakapa,name,,,戈可波
@@ -418,18 +421,19 @@ questíon,n. f.,,,问题
 quıt,adv.,,,相当，非常
 quotatíon,n. f.,,,引言
 rād,n. f.,,,道路
-rannon,v. I,,"rond, garonnon；原词性 n，原义“跑”；按 -on/-en 动词义改",跑
-raston,v. I,,原词性 n，原义“休息”；按 -on/-en 动词义改,休息
+rannon,v. I,,"rond, garonnon",跑
+raston,v. I,,,休息
 rat,n. f.,,,老鼠
-ráu,adj. II,,可能比较难认，这是外来语；词源：外来-通俗,灰色的
+ráu,adj. II,,,灰色的
 rauc,adj. I,,,粗糙的
 raum,n. m.,,,房间
 Réalıstıcum,n. f.,,,罗生
 rēd,adj. I,,,红色的
 rēdo,adj. I,,,准备好的
-rēdon,v. I,,原词性 n，原义“阅读”；按 -on/-en 动词义改,阅读
+rēdon,v. I,,,阅读
 regardon,v. I,,,评论
-regnon,v. I,,原词性 n，原义“雨”；按 -on/-en 动词义改（兼名词）,下雨
+regon,n. f.,,,雨
+regnon,v. I,,,下雨
 rıct,adj. I,,,正确的
 rod,n. m.,,,杆
 rōra,n. m.,,,嚎叫
@@ -438,13 +442,13 @@ sad,adj. I,,,悲伤的
 sagn,n. m.,,,歌曲
 sáınt,adj. II,,,圣
 saıto,n. f.,,,网站
-salton,v. I,,原词性 n，原义“盐”；按 -on/-en 动词义改（兼名词）,腌制
+salton,n. m.,,,盐
 sampo,n. m.,,,沼泽
 sanc,n. f.,,,腿
 sand,n. m.,,,沙子
 sāpo,n. f.,,,肥皂
 saut,n. m.,,,南方
-schacon,v. I,,原词性 n，原义“摇动”；按 -on/-en 动词义改,摇动
+schacon,v. I,,,摇动
 schado,n. f.,,,阴影
 schamo,n. f.,,,羞耻
 scharp,adj. I,,,锋利的
@@ -460,7 +464,7 @@ scrippon,v. I,,,写
 scrippor,n. m.,,,作者
 sē,n. f.,,,海
 sēcon,v. I,,,寻找
-sécond,adj. I,/sekõ/,词源：外来-通俗,第二的
+sécond,adj. I,/sekõ/,,第二的
 sēd,n. f.,,,种子
 segel,n. f.,,,帆
 segon,v. I,,,说
@@ -477,7 +481,7 @@ Sırcon,name,,,悉根洲
 sıu,n. m.,,,鞋子
 slāƿ,adj. I,,,慢的
 slēpan,n. m.,,,睡眠
-slıpon,v. I,,原词性 n，原义“滑倒”；按 -on/-en 动词义改,滑倒
+slıpon,v. I,,,滑倒
 smal,adj. I,,,小的
 smut,adj. I,,,光滑的
 snac,n. m.,,,蛇
@@ -493,14 +497,14 @@ spírıtunes,n. f.,,,灵
 sponğ,n. f.,,,海绵
 spraco,n. m.,,,语言
 spracon,v. I,,,说
-sprıgnon,v. I,,原词性 n，原义“春天”；按 -on/-en 动词义改（兼名词）,跳
+sprıgnon,v. I,,（兼名词）,跳
 spun,n. m.,,,勺子
 stān,n. m.,,,石头
 standon,v. I,,,站立
 stēm,n. m.,,,蒸汽
-stemon,v. I,,原词性 n，原义“茎”；按 -on/-en 动词义改（兼名词）,阻止
-stempon,v. I,,原词性 n，原义“邮票”；按 -on/-en 动词义改（兼名词）,跺
-stencon,v. I,,原词性 n，原义“闻”；按 -on/-en 动词义改,闻
+stemon,v. I,,（兼名词）,阻止
+stempon,v. I,,（兼名词）,跺
+stencon,v. I,,,闻
 step,n. m.,,,走，踏
 sterra,n. m.,,,星星
 stıc,n. m.,,,缝合
@@ -510,12 +514,12 @@ stıl,adv.,,,仍然
 stīl,n. f.,,,钢
 stoco,n. f.,,,长袜
 stōn,adj. I,,,严肃的
-stopen,v. II,,原词性 n，原义“停止”；按 -on/-en 动词义改,停止
+stopen,v. II,,,停止
 stragn,adj. I,,,强壮的
 straso,n. m.,,,大街；大道；（尤）商业街
 strect,adj. I,,,直的
 streıt,n. m.,,,街道
-stretchon,v. I,,原词性 n，原义“伸展”；按 -on/-en 动词义改,伸展
+stretchon,v. I,,,伸展
 sü,pron.,/y/,,你们
 sü,pron.,/y/,,您
 sub,prep.,,,跟随
@@ -527,7 +531,7 @@ sƿestor,n. f.,,,姐妹
 sƿēt,adj. I,,,甜的
 sƿetol,adj. I,,,清晰的
 sƿıltch,adj. I,,,这样的
-sƿımon,v. I,,原词性 n，原义“游泳”；按 -on/-en 动词义改,游泳
+sƿımon,v. I,,,游泳
 systém,n. f.,,,系统
 tā,n. m.,,,脚趾
 tacen,v. II,,,拿
@@ -553,21 +557,21 @@ tıgn,n. f.,,,事物
 tıllen,prep.,,,直到
 tım,n. m.,,,时间
 tın,n. f.,,,锡
-tın,adj. I,,同形 tın“锡”,薄的
+tın,adj. I,,,薄的
 tmā,pron.,,,他们
 to,prep.,,,到
 togader,adv.,,,一起
 ton,prep.,,,比
 tonor,n. m.,,,雷声
 top,n. m.,,,顶部
-tornen,v. II,,原词性 n，原义“转弯”；按 -on/-en 动词义改,转
+tornen,v. II,,,转
 Toƿan,name,,,土宛
-traƿ,n. m.,,回借/另一层,树（高大）
+traƿ,n. m.,,方言回借,（高大的）树
 trēd,n. m.,,,线
-tredon,v. I,,原词性 n，原义“贸易”；按 -on/-en 动词义改,交易
+tredon,v. I,,,交易
 tréncho,n. m.,,,海沟
 trēƿ,n. m.,,,托盘
-trēƿ,adj. I,,同形 trēƿ“托盘”,真实的
+trēƿ,adj. I,,,真实的
 trōg,prep.,,,穿过
 trot,n. m.,,,喉咙
 tü,pron.,,,你
@@ -585,21 +589,21 @@ uncértu,adj. II,,,不确定的
 utor,pron.,,,其他
 vélo,n. m.,,,速度
 vl,abbr.,,,标准速度（米每秒）
-vulgár,adj. II,,词源：外来-学得,常见的
+vulgár,adj. II,,,常见的
 ƿætch,n. f.,,,手表
-ƿagen,v. II,,原词性 n，原义“波浪”；按 -on/-en 动词义改,挥手
+ƿagen,v. II,,,挥手
 ƿal,n. m.,,,墙
-ƿalgon,v. I,,原词性 n，原义“步行”；按 -on/-en 动词义改,走
+ƿalgon,v. I,,,走
 Ƿalhala,name,,,斡诃罗
 ƿarm,adj. I,,,温暖的
 ƿartgne,adj. I,,,等待的
-ƿaschon,v. I,,原词性 n，原义“洗”；按 -on/-en 动词义改,洗
+ƿaschon,v. I,,,洗
 ƿator,n. f.,,,水
 ƿax,n. f.,,,蜡
 ƿeder,n. f.,,,天气
 ƿeıg,n. m.,,,道路
 ƿel,adv.,,,好
-ƿercon,v. I,,原词性 n，原义“工作”；按 -on/-en 动词义改,工作
+ƿercon,v. I,,,工作
 ƿest,n. m.,,,西方
 ƿēton,adj. I,,,湿的
 ƿıd,adj. I,,,宽的
@@ -608,8 +612,9 @@ vulgár,adj. II,,词源：外来-学得,常见的
 ƿıllcoman,phrase,,,欢迎光临
 ƿıllon,v. model,,"ƿollon, gaƿollde",想要（情态动词）
 ƿīn,n. m.,,,葡萄酒
-ƿındon,v. I,,原词性 n，原义“风”；按 -on/-en 动词义改（兼名词）,缠绕
-ƿınstr,adj. I,,,左边的
+ƿındon,n. f.,,,风
+ƿındon,v. I,,,缠绕
+ƿınstor,adj. I,,,左边的
 ƿınter,n. m.,,,冬天
 ƿır,n. m.,,,电线
 ƿıro,n. m.,,,战争

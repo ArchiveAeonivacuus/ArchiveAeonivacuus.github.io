@@ -7524,7 +7524,7 @@ function mountLexicon() {
         <label class="lex-select"><span>\u6392\u5E8F</span><select id="lex-sort" aria-label="\u6392\u5E8F\u65B9\u5F0F"></select></label>
       </div>
       <div class="lex-posbar" id="lex-pos" role="group" aria-label="\u6309\u8BCD\u6027\u7B5B\u9009"></div>
-      <div class="lex-summary"><span id="lex-count" aria-live="polite"></span><span id="lex-hint">\u6309 <kbd>/</kbd> \u805A\u7126\u641C\u7D22 \xB7 \u70B9\u51FB\u8BCD\u6761\u67E5\u770B\u8BE6\u60C5</span></div>
+      <div class="lex-summary"><span id="lex-count" aria-live="polite"></span><span id="lex-hint">\u6309 <kbd>/</kbd> \u952E\u8DF3\u5230\u641C\u7D22\u6846\uFF1B\u70B9\u51FB\u8BCD\u6761\u67E5\u770B\u8BE6\u60C5</span></div>
       <div class="lex-table-wrap" id="lex-table-wrap">
         <table class="lex-table">
           <thead id="lex-head"><tr></tr></thead>

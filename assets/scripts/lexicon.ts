@@ -161,7 +161,7 @@ export function mountLexicon(): void {
         <label class="lex-select"><span>排序</span><select id="lex-sort" aria-label="排序方式"></select></label>
       </div>
       <div class="lex-posbar" id="lex-pos" role="group" aria-label="按词性筛选"></div>
-      <div class="lex-summary"><span id="lex-count" aria-live="polite"></span><span id="lex-hint">按 <kbd>/</kbd> 聚焦搜索 · 点击词条查看详情</span></div>
+      <div class="lex-summary"><span id="lex-count" aria-live="polite"></span><span id="lex-hint">按 <kbd>/</kbd> 键跳到搜索框；点击词条查看详情</span></div>
       <div class="lex-table-wrap" id="lex-table-wrap">
         <table class="lex-table">
           <thead id="lex-head"><tr></tr></thead>
