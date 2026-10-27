@@ -243,6 +243,10 @@
     [复数], [#ong[onnos]], [#ong[onnıs]], [#ong[onnes]],
   )
 
+一类形容词单独作谓语时，通常处于系动词后方。例：
+
+#ong[Hƿanar ıc ƿar blınd.] 我曾经看不见。
+
 === 二类形容词
 
 二类形容词通常是外来语，通常放在被修饰的词后。以#ong[beáu] “美的”（#en[/boː/]）为例：
@@ -253,6 +257,10 @@
     [单数], [#ong[beáu]], [#ong[beáulı]], [#ong[beáule]],
     [复数], [#ong[beáus]], [#ong[beáulıs]], [#ong[beáules]],
   )
+
+二类形容词单独作谓语时，则处于系动词前方。例：
+
+#ong[Dı mun an márıne beáu est.] 海上明月如此美丽。
 
 == 副词
 
