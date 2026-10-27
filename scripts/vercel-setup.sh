@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Download the Tola and Typst CLI binaries needed by the build.
-# Used by the Vercel build step (see vercel.json).
+# Used by both the Vercel build (vercel.json) and GitHub Actions (.github/workflows/build.yml).
 set -euo pipefail
 
 BIN_DIR="${PWD}/bin"

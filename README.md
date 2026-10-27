@@ -106,13 +106,12 @@ pnpm build
 3. `build:stats` — 统计字数 / 阅读时长 → `templates/stats.json`
 4. `build:site-info` — 导出站点信息 → `templates/site-info.json`
 5. `build:lexicon` — 把 `content/lexicon/*.csv` 转成 `assets/lexicon/*.json`
-6. `build:site` — `tola build --clean` 生成 HTML、RSS、Sitemap
+6. `build:site` — `tola build --clean`，随后自动运行逐页字体子集（含词表 JSON 中的全部词条）
 7. `build:images` — 为封面 / 正文图片生成响应式 WebP，并改写页面 `srcset`
-8. `build:pagefonts` — 逐页生成字体子集，移除仅本地预览用的全量字体声明
-9. `build:404` — 复制 `404/index.html` → `404.html`
-10. `build:sitemap` — 移除 404、补全 `lastmod`、生成 `sitemap-index.xml`
-11. `build:search` — Pagefind 建立全文索引
-12. `build:pdf` — 用 Typst 为每页生成 PDF（`--font-path fonts-pdf --ignore-system-fonts`，跳过草稿）
+8. `build:404` — 复制 `404/index.html` → `404.html`
+9. `build:sitemap` — 移除 404、补全 `lastmod`、生成 `sitemap-index.xml`
+10. `build:search` — Pagefind 建立全文索引
+11. `build:pdf` — 用 Typst 为每页生成 PDF（`--font-path fonts-pdf --ignore-system-fonts`，跳过草稿）
 
 校验：
 
@@ -224,6 +223,14 @@ pnpm build:lexicon
 ## 部署
 
 `public/` 为纯静态产物，可部署到任意静态托管。构建依赖 **Tola** 与 **Typst CLI**；托管平台若没有预装，可在构建阶段自动下载官方二进制（见 `scripts/vercel-setup.sh`，PDF 字体已随仓库自托管，无需下载）。
+
+### GitHub Pages
+
+仓库已包含 [.github/workflows/build.yml](.github/workflows/build.yml)：push 到 `main` 后会自动安装 Node、pnpm、Python，运行 `scripts/vercel-setup.sh`，再执行 `pnpm build`，最后把 `public/` 上传到 GitHub Pages。
+
+- 首次使用时，在仓库 **Settings → Pages** 把 Source 设为 **GitHub Actions**。
+- `pnpm build` 里的 `build:site` 已经包含逐页字体子集（包括词表 JSON 的全部词条），无需额外步骤。
+- 如果 GitHub Pages 之前用分支部署，切换到 GitHub Actions 后再 push 一次。
 
 ### Vercel
 

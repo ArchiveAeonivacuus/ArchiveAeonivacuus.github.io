@@ -14,6 +14,7 @@ import glob
 import hashlib
 import html
 import io
+import json
 import logging
 import os
 import re
@@ -172,6 +173,57 @@ def page_families(text, lang):
     return families
 
 
+_LEXICON_CACHE = None
+
+
+def lexicon_text_and_classes():
+    """All text rendered by the client-side lexicon table.
+
+    The table rows come from JSON at runtime, so they are absent from the
+    static HTML that page_chars() normally scans. Include them explicitly so
+    the page-specific font subsets contain every word/meaning glyph.
+    """
+    global _LEXICON_CACHE
+    if _LEXICON_CACHE is not None:
+        return _LEXICON_CACHE
+
+    parts = []
+    classes = set()
+    index_path = os.path.join(PUBLIC, "assets", "lexicon", "index.json")
+    if not os.path.isfile(index_path):
+        _LEXICON_CACHE = ("", classes)
+        return _LEXICON_CACHE
+
+    with open(index_path, encoding="utf-8") as handle:
+        index = json.load(handle)
+
+    for language in index.get("languages", []):
+        for key in ("name", "native", "description"):
+            value = language.get(key)
+            if value:
+                parts.append(str(value))
+        for key in ("wordClass", "nativeClass"):
+            value = language.get(key)
+            if value:
+                classes.add(str(value))
+
+        data_path = os.path.join(PUBLIC, "assets", "lexicon", str(language.get("file", "")))
+        if not os.path.isfile(data_path):
+            continue
+        with open(data_path, encoding="utf-8") as handle:
+            data = json.load(handle)
+        for field in data.get("fields", []):
+            parts.append(str(field.get("label", "")))
+        for entry in data.get("entries", []):
+            for key in ("word", "phonetic", "pos", "meaning", "notes"):
+                value = entry.get(key)
+                if value:
+                    parts.append(str(value))
+
+    _LEXICON_CACHE = ("\n".join(parts), classes)
+    return _LEXICON_CACHE
+
+
 def subset_file(family, weight, style, source, unicodes):
     font = TTFont(io.BytesIO(source_bytes(source)))
     options = Options()
@@ -218,8 +270,21 @@ def process_page(path):
         text = handle.read()
     lang = (re.search(r'class="site-shell"[^>]*data-lang="([^"]*)"', text) or [None, ""])[1]
     chars = page_chars(text)
+    families = set(page_families(text, lang))
+
+    # The lexicon rows are injected by JavaScript from assets/lexicon/*.json,
+    # so include their glyphs and configured format classes here.
+    if 'id="lexicon-app"' in text:
+        lexicon_text, lexicon_classes = lexicon_text_and_classes()
+        if lexicon_text:
+            chars |= page_chars(lexicon_text)
+        for css_class in lexicon_classes:
+            family = CLASS_FAMILY.get(css_class)
+            if family:
+                families.add(family)
+
     rules = []
-    for family in sorted(page_families(text, lang)):
+    for family in sorted(families):
         rules.extend(rules_for_family(family, chars))
     style_tag = "<style>" + "".join(rules) + "</style>"
     # Inject inside the Swup container (not <head>) so client-side navigation
