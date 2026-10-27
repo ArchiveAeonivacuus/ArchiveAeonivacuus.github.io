@@ -150,8 +150,14 @@ def source_cmap(name):
 
 def page_chars(text):
     text = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", text, flags=re.S | re.I)
+    # CSS pseudo-elements such as MH card labels render from attributes, so the
+    # characters are not present in the stripped text. Include data-label values.
+    attribute_text = " ".join(
+        re.findall(r'data-label\s*=\s*["\']([^"\']*)["\']', text, flags=re.I)
+    )
     text = re.sub(r"<[^>]+>", "", text)
-    return {ord(c) for c in html.unescape(text) if not c.isspace()}
+    text = html.unescape(attribute_text + " " + text)
+    return {ord(c) for c in text if not c.isspace()}
 
 
 def page_families(text, lang):

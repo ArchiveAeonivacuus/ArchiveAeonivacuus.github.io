@@ -188,7 +188,7 @@
 
 .lex-stat strong {
   color: var(--text-90);
-  font-family: "Source Serif 4", "Source Han Serif SC", serif;
+  font-family: inherit;
   font-size: 1.15rem;
   font-variant-numeric: tabular-nums;
 }
