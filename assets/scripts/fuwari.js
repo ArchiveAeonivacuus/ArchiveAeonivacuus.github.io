@@ -6798,7 +6798,8 @@ var i18n_default = {
     author: "Scrippor",
     publishedAt: "gapubl\u0131schde an",
     license: "L\u0131sens",
-    friends: "Fr\u0153nds"
+    friends: "Fr\u0153nds",
+    lexicon: "\u01F7ordl\xEDst"
   },
   A_zh_iang: {
     home: "\u6249\u8449",
@@ -6826,7 +6827,8 @@ var i18n_default = {
     author: "\u4F5C\u8005",
     publishedAt: "\u8F09\u65BC",
     license: "\u8A31\u53EF\u79D1\u6761",
-    friends: "\u53CB\u9396"
+    friends: "\u53CB\u9396",
+    lexicon: "\u8A5E\u8868"
   },
   en: {
     home: "Home",
@@ -6854,7 +6856,8 @@ var i18n_default = {
     author: "Author",
     publishedAt: "Published at",
     license: "License",
-    friends: "Friends"
+    friends: "Friends",
+    lexicon: "Lexicon"
   },
   es: {
     home: "Inicio",
@@ -6882,7 +6885,8 @@ var i18n_default = {
     author: "Autor",
     publishedAt: "Publicado el",
     license: "Licencia",
-    friends: "Amigos"
+    friends: "Amigos",
+    lexicon: "L\xE9xico"
   },
   id: {
     home: "Beranda",
@@ -6910,7 +6914,8 @@ var i18n_default = {
     author: "Penulis",
     publishedAt: "Diterbitkan pada",
     license: "Lisensi",
-    friends: "Teman-teman"
+    friends: "Teman-teman",
+    lexicon: "Leksikon"
   },
   ja: {
     home: "\u30DB\u30FC\u30E0",
@@ -6938,7 +6943,8 @@ var i18n_default = {
     author: "\u4F5C\u8005",
     publishedAt: "\u516C\u958B\u65E5",
     license: "\u30E9\u30A4\u30BB\u30F3\u30B9",
-    friends: "\u304A\u53CB\u9054"
+    friends: "\u304A\u53CB\u9054",
+    lexicon: "\u8A9E\u5F59"
   },
   ko: {
     home: "\uD648",
@@ -6966,7 +6972,8 @@ var i18n_default = {
     author: "\uC800\uC790",
     publishedAt: "\uAC8C\uC2DC\uC77C",
     license: "\uB77C\uC774\uC120\uC2A4",
-    friends: "\uCE5C\uAD6C\uB4E4"
+    friends: "\uCE5C\uAD6C\uB4E4",
+    lexicon: "\uC5B4\uD718"
   },
   th: {
     home: "\u0E2B\u0E19\u0E49\u0E32\u0E41\u0E23\u0E01",
@@ -6994,7 +7001,8 @@ var i18n_default = {
     author: "\u0E1C\u0E39\u0E49\u0E40\u0E02\u0E35\u0E22\u0E19",
     publishedAt: "\u0E40\u0E1C\u0E22\u0E41\u0E1E\u0E23\u0E48\u0E40\u0E21\u0E37\u0E48\u0E2D",
     license: "\u0E2A\u0E31\u0E0D\u0E0D\u0E32\u0E2D\u0E19\u0E38\u0E0D\u0E32\u0E15",
-    friends: "\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E19\u0E46"
+    friends: "\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E19\u0E46",
+    lexicon: "\u0E28\u0E31\u0E1E\u0E17\u0E4C"
   },
   tr: {
     home: "Anasayfa",
@@ -7022,7 +7030,8 @@ var i18n_default = {
     author: "Yazar",
     publishedAt: "Yay\u0131nlanma:",
     license: "Lisans",
-    friends: "Arkada\u015Flar"
+    friends: "Arkada\u015Flar",
+    lexicon: "S\xF6zl\xFCk"
   },
   vi: {
     home: "Trang ch\u1EE7",
@@ -7050,7 +7059,8 @@ var i18n_default = {
     author: "T\xE1c gi\u1EA3",
     publishedAt: "\u0110\u0103ng v\xE0o l\xFAc",
     license: "Gi\u1EA5y ph\xE9p b\u1EA3n quy\u1EC1n",
-    friends: "B\u1EA1n"
+    friends: "B\u1EA1n",
+    lexicon: "T\u1EEB v\u1EF1ng"
   },
   zh_CN: {
     home: "\u4E3B\u9875",
@@ -7078,7 +7088,8 @@ var i18n_default = {
     author: "\u4F5C\u8005",
     publishedAt: "\u53D1\u5E03\u4E8E",
     license: "\u8BB8\u53EF\u534F\u8BAE",
-    friends: "\u53CB\u94FE"
+    friends: "\u53CB\u94FE",
+    lexicon: "\u8BCD\u8868"
   },
   zh_TW: {
     home: "\u9996\u9801",
@@ -7106,7 +7117,8 @@ var i18n_default = {
     author: "\u4F5C\u8005",
     publishedAt: "\u767C\u4F48\u65BC",
     license: "\u8A31\u53EF\u5354\u8B70",
-    friends: "\u53CB\u93C8"
+    friends: "\u53CB\u93C8",
+    lexicon: "\u8A5E\u8868"
   }
 };
 
@@ -7405,6 +7417,657 @@ function mountKanbun() {
   }
 }
 
+// assets/scripts/lexicon.ts
+var PAGE_SIZE = 50;
+var FIELD_KEYS = ["word", "phonetic", "pos", "meaning", "notes"];
+var SORT_OPTIONS = [
+  { value: "word-asc", label: "\u8BCD\u5F62 A \u2192 Z" },
+  { value: "word-desc", label: "\u8BCD\u5F62 Z \u2192 A" },
+  { value: "meaning-asc", label: "\u91CA\u4E49" },
+  { value: "pos-asc", label: "\u8BCD\u6027" },
+  { value: "length-asc", label: "\u8BCD\u5F62\u957F\u5EA6" }
+];
+var SPECIAL_FOLDS = [
+  [/[ƿǷ]/g, "w"],
+  [/ı/g, "i"],
+  [/ſ/g, "s"],
+  [/æ/g, "ae"],
+  [/œ/g, "oe"],
+  [/þ/g, "th"],
+  [/ð/g, "d"],
+  [/ŋ/g, "ng"],
+  [/ꞅ/g, "s"],
+  [/ƀ/g, "b"],
+  [/ȝ/g, "g"],
+  [/ƕ/g, "hv"]
+];
+function fold(input) {
+  let value = input.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+  for (const [pattern, replacement] of SPECIAL_FOLDS) value = value.replace(pattern, replacement);
+  return value;
+}
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+function highlight(text, tokens) {
+  const fragment = document.createDocumentFragment();
+  const active = tokens.filter(Boolean).sort((a2, b2) => b2.length - a2.length);
+  if (active.length === 0) {
+    fragment.append(text);
+    return fragment;
+  }
+  const pattern = new RegExp(`(${active.map(escapeRegExp).join("|")})`, "gi");
+  let last = 0;
+  let match;
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > last) fragment.append(text.slice(last, match.index));
+    const mark = document.createElement("mark");
+    mark.textContent = match[0];
+    fragment.append(mark);
+    last = match.index + match[0].length;
+    if (match[0].length === 0) pattern.lastIndex += 1;
+  }
+  if (last < text.length) fragment.append(text.slice(last));
+  return fragment;
+}
+async function fetchJson(url, signal) {
+  const response = await fetch(url, { signal });
+  if (!response.ok) throw new Error(`${url} -> ${response.status}`);
+  return await response.json();
+}
+function mountLexicon() {
+  const app = document.querySelector("#lexicon-app");
+  if (!app || app.dataset.mounted === "true") return;
+  app.dataset.mounted = "true";
+  const root2 = app;
+  const controller = new AbortController();
+  register(() => controller.abort());
+  const state = {
+    index: null,
+    data: null,
+    rows: [],
+    lang: "",
+    query: "",
+    field: "all",
+    pos: "all",
+    sort: "word-asc",
+    page: 1
+  };
+  const cache = /* @__PURE__ */ new Map();
+  let activeEntry = null;
+  let searchTimer = 0;
+  root2.innerHTML = `
+    <div class="lex-loading" id="lex-loading" role="status">
+      <div class="lex-skeleton lex-skeleton-head"></div>
+      <div class="lex-skeleton-row"></div>
+      <div class="lex-skeleton-row"></div>
+      <div class="lex-skeleton-row"></div>
+      <div class="lex-skeleton-row"></div>
+    </div>
+    <div id="lex-content" hidden>
+      <div class="lex-langbar">
+        <div class="lex-langs" id="lex-langs" role="tablist" aria-label="\u8BED\u8A00"></div>
+        <div class="lex-stats" id="lex-stats"></div>
+      </div>
+      <p class="lex-lang-note" id="lex-lang-note" hidden></p>
+      <div class="lex-toolbar">
+        <label class="lex-search" for="lex-q">
+          <span class="lex-search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="6.3"></circle><path d="m15.5 15.5 4.2 4.2"></path></svg>
+          </span>
+          <input id="lex-q" type="search" autocomplete="off" spellcheck="false" placeholder="\u641C\u7D22\u8BCD\u5F62\u3001\u8BFB\u97F3\u3001\u91CA\u4E49\u6216\u6CE8\u91CA\u2026" aria-label="\u641C\u7D22\u8BCD\u8868" />
+          <button id="lex-clear" class="lex-clear" type="button" aria-label="\u6E05\u7A7A\u641C\u7D22" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m7 7 10 10M17 7 7 17"></path></svg>
+          </button>
+        </label>
+        <label class="lex-select"><span>\u5B57\u6BB5</span><select id="lex-field" aria-label="\u641C\u7D22\u5B57\u6BB5"></select></label>
+        <label class="lex-select"><span>\u6392\u5E8F</span><select id="lex-sort" aria-label="\u6392\u5E8F\u65B9\u5F0F"></select></label>
+      </div>
+      <div class="lex-posbar" id="lex-pos" role="group" aria-label="\u6309\u8BCD\u6027\u7B5B\u9009"></div>
+      <div class="lex-summary"><span id="lex-count" aria-live="polite"></span><span id="lex-hint">\u6309 <kbd>/</kbd> \u805A\u7126\u641C\u7D22 \xB7 \u70B9\u51FB\u8BCD\u6761\u67E5\u770B\u8BE6\u60C5</span></div>
+      <div class="lex-table-wrap" id="lex-table-wrap">
+        <table class="lex-table">
+          <thead id="lex-head"><tr></tr></thead>
+          <tbody id="lex-body"></tbody>
+        </table>
+      </div>
+      <div class="lex-empty" id="lex-empty" hidden>
+        <span class="lex-empty-glyph" aria-hidden="true">\u01BF</span>
+        <strong>\u6CA1\u6709\u627E\u5230\u5339\u914D\u7684\u8BCD\u6761</strong>
+        <span>\u6362\u4E00\u4E2A\u5173\u952E\u8BCD\uFF0C\u6216\u6E05\u9664\u5F53\u524D\u7B5B\u9009\u3002</span>
+        <button class="lex-button" id="lex-reset" type="button">\u6E05\u9664\u7B5B\u9009</button>
+      </div>
+      <nav class="lex-pager" id="lex-pager" aria-label="\u8BCD\u8868\u5206\u9875"></nav>
+    </div>
+    <dialog class="lex-dialog" id="lex-dialog">
+      <div class="lex-dialog-card">
+        <button class="lex-dialog-close" id="lex-dialog-close" type="button" aria-label="\u5173\u95ED">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+        </button>
+        <p class="lex-dialog-kicker">LEXICON ENTRY</p>
+        <h3 id="lex-dialog-word"></h3>
+        <p class="lex-dialog-phon" id="lex-dialog-phon"></p>
+        <span class="lex-pos-badge" id="lex-dialog-pos"></span>
+        <p class="lex-dialog-meaning" id="lex-dialog-meaning"></p>
+        <div class="lex-dialog-notes" id="lex-dialog-notes"></div>
+        <button class="lex-button lex-copy" id="lex-copy" type="button">\u590D\u5236\u8BCD\u6761</button>
+      </div>
+    </dialog>
+  `;
+  function get(selector) {
+    const node = root2.querySelector(selector);
+    if (!node) throw new Error(`lexicon: missing ${selector}`);
+    return node;
+  }
+  const ui = {
+    loading: get("#lex-loading"),
+    content: get("#lex-content"),
+    langs: get("#lex-langs"),
+    stats: get("#lex-stats"),
+    langNote: get("#lex-lang-note"),
+    search: get("#lex-q"),
+    clear: get("#lex-clear"),
+    field: get("#lex-field"),
+    sort: get("#lex-sort"),
+    posbar: get("#lex-pos"),
+    count: get("#lex-count"),
+    tableWrap: get("#lex-table-wrap"),
+    head: get("#lex-head"),
+    body: get("#lex-body"),
+    empty: get("#lex-empty"),
+    pager: get("#lex-pager"),
+    reset: get("#lex-reset"),
+    dialog: get("#lex-dialog"),
+    dialogWord: get("#lex-dialog-word"),
+    dialogPhon: get("#lex-dialog-phon"),
+    dialogPos: get("#lex-dialog-pos"),
+    dialogMeaning: get("#lex-dialog-meaning"),
+    dialogNotes: get("#lex-dialog-notes"),
+    dialogClose: get("#lex-dialog-close"),
+    copy: get("#lex-copy")
+  };
+  function makeRows(data2) {
+    return data2.entries.map((entry) => {
+      const fields = {
+        word: entry.word,
+        pos: entry.pos,
+        phonetic: entry.phonetic,
+        notes: entry.notes,
+        meaning: entry.meaning
+      };
+      const folded = {
+        all: fold(FIELD_KEYS.map((key) => fields[key]).join(" ")),
+        word: fold(fields.word),
+        pos: fold(fields.pos),
+        phonetic: fold(fields.phonetic),
+        notes: fold(fields.notes),
+        meaning: fold(fields.meaning)
+      };
+      return { entry, folded };
+    });
+  }
+  function readUrl() {
+    const params = new URLSearchParams(location.search);
+    state.query = params.get("q") ?? "";
+    const field = params.get("field");
+    if (field === "all" || field && FIELD_KEYS.includes(field)) {
+      state.field = field;
+    }
+    const sort = params.get("sort");
+    if (SORT_OPTIONS.some((option) => option.value === sort)) state.sort = sort;
+    const page = Number(params.get("page") ?? "1");
+    state.page = Number.isFinite(page) && page > 0 ? Math.floor(page) : 1;
+    state.lang = params.get("lang") ?? "";
+    state.pos = params.get("pos") ?? "all";
+  }
+  function syncUrl() {
+    const params = new URLSearchParams(location.search);
+    const set = (key, value, fallback) => {
+      if (value && value !== fallback) params.set(key, value);
+      else params.delete(key);
+    };
+    set("lang", state.lang, state.index?.languages[0]?.id ?? "");
+    set("q", state.query, "");
+    set("field", state.field, "all");
+    set("pos", state.pos, "all");
+    set("sort", state.sort, "word-asc");
+    set("page", state.page > 1 ? String(state.page) : "", "");
+    const query = params.toString();
+    history.replaceState(null, "", `${location.pathname}${query ? `?${query}` : ""}${location.hash}`);
+  }
+  function renderLanguageTabs() {
+    if (!state.index) return;
+    ui.langs.replaceChildren();
+    for (const language of state.index.languages) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "lex-lang";
+      button.setAttribute("role", "tab");
+      button.setAttribute("aria-selected", String(language.id === state.lang));
+      button.classList.toggle("is-active", language.id === state.lang);
+      const name2 = document.createElement("span");
+      name2.textContent = language.name;
+      button.append(name2);
+      if (language.native && language.native !== language.name) {
+        const native = document.createElement("small");
+        native.textContent = language.native;
+        if (language.nativeClass) native.className = language.nativeClass;
+        button.append(native);
+      }
+      button.addEventListener("click", () => {
+        if (language.id === state.lang) return;
+        state.query = "";
+        state.field = "all";
+        state.pos = "all";
+        state.page = 1;
+        ui.search.value = "";
+        void selectLanguage(language.id);
+      }, { signal: controller.signal });
+      ui.langs.append(button);
+    }
+  }
+  function renderStats() {
+    if (!state.data) return;
+    const { stats } = state.data;
+    const items = [
+      [String(stats.entries), "\u8BCD\u6761"],
+      [String(stats.uniqueWords), "\u8BCD\u5F62"],
+      [String(stats.pos), "\u8BCD\u6027"],
+      [String(stats.notes), "\u6CE8\u91CA"]
+    ];
+    ui.stats.replaceChildren(
+      ...items.map(([value, label]) => {
+        const item = document.createElement("span");
+        item.className = "lex-stat";
+        const strong = document.createElement("strong");
+        strong.textContent = value;
+        const text = document.createElement("span");
+        text.textContent = label;
+        item.append(strong, text);
+        return item;
+      })
+    );
+  }
+  function renderLanguageNote() {
+    if (!state.data) return;
+    ui.langNote.hidden = !state.data.description;
+    ui.langNote.textContent = state.data.description ?? "";
+  }
+  function renderFieldOptions() {
+    if (!state.data) return;
+    ui.field.replaceChildren();
+    const all = document.createElement("option");
+    all.value = "all";
+    all.textContent = "\u5168\u90E8\u5B57\u6BB5";
+    ui.field.append(all);
+    for (const field of state.data.fields) {
+      const option = document.createElement("option");
+      option.value = field.key;
+      option.textContent = field.label;
+      ui.field.append(option);
+    }
+    if (!state.data.fields.some((field) => field.key === state.field)) state.field = "all";
+    ui.field.value = state.field;
+    const active = state.data.fields.find((field) => field.key === state.field);
+    ui.search.placeholder = active ? `\u641C\u7D22${active.label}\u2026` : "\u641C\u7D22\u8BCD\u5F62\u3001\u8BFB\u97F3\u3001\u91CA\u4E49\u6216\u6CE8\u91CA\u2026";
+  }
+  function renderPos() {
+    if (!state.data) return;
+    if (!state.data.pos.some((item) => item.value === state.pos)) state.pos = "all";
+    ui.posbar.replaceChildren();
+    const makeChip = (value, label, count) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "lex-chip";
+      button.classList.toggle("is-active", value === state.pos);
+      button.setAttribute("aria-pressed", String(value === state.pos));
+      const text = document.createElement("span");
+      text.textContent = label;
+      const badge = document.createElement("span");
+      badge.className = "lex-chip-count";
+      badge.textContent = String(count);
+      button.append(text, badge);
+      button.addEventListener("click", () => {
+        state.pos = value;
+        state.page = 1;
+        renderPos();
+        render();
+        syncUrl();
+      }, { signal: controller.signal });
+      return button;
+    };
+    ui.posbar.append(makeChip("all", "\u5168\u90E8", state.data.entries.length));
+    for (const item of state.data.pos) ui.posbar.append(makeChip(item.value, item.value, item.count));
+  }
+  function fieldLabel(key) {
+    return state.data?.fields.find((field) => field.key === key)?.label ?? key;
+  }
+  function renderHead() {
+    if (!state.data) return;
+    const row = document.createElement("tr");
+    for (const key of FIELD_KEYS) {
+      const th = document.createElement("th");
+      th.scope = "col";
+      th.textContent = fieldLabel(key);
+      row.append(th);
+    }
+    ui.head.replaceChildren(row);
+  }
+  function cell(label, content, field) {
+    const td = document.createElement("td");
+    td.dataset.label = label;
+    if (field) td.dataset.field = field;
+    if (typeof content === "string") td.textContent = content;
+    else td.append(content);
+    return td;
+  }
+  function wordCell(entry, tokens) {
+    const wrap = document.createElement("div");
+    wrap.className = "lex-word-cell";
+    const word = document.createElement("span");
+    word.className = "lex-word";
+    if (state.data?.wordClass) word.classList.add(state.data.wordClass);
+    word.append(highlight(entry.word, tokens));
+    wrap.append(word);
+    return wrap;
+  }
+  function openDetail(entry) {
+    activeEntry = entry;
+    ui.dialogWord.textContent = entry.word;
+    ui.dialogWord.className = state.data?.wordClass ?? "";
+    ui.dialogPhon.textContent = entry.phonetic || "\u672A\u6807\u6CE8\u7279\u6B8A\u8BFB\u97F3";
+    ui.dialogPhon.hidden = false;
+    ui.dialogPos.textContent = entry.pos || "\u672A\u6807\u6CE8";
+    ui.dialogMeaning.textContent = entry.meaning || "\u6682\u65E0\u91CA\u4E49";
+    ui.dialogNotes.replaceChildren();
+    ui.dialogNotes.hidden = !entry.notes;
+    if (entry.notes) {
+      const label = document.createElement("span");
+      label.className = "lex-dialog-notes-label";
+      label.textContent = fieldLabel("notes");
+      const text = document.createElement("p");
+      text.textContent = entry.notes;
+      ui.dialogNotes.append(label, text);
+    }
+    ui.copy.textContent = "\u590D\u5236\u8BCD\u6761";
+    ui.dialog.showModal();
+  }
+  function renderTable(rows, tokens) {
+    ui.body.replaceChildren();
+    for (const row of rows) {
+      const { entry } = row;
+      const tr = document.createElement("tr");
+      tr.tabIndex = 0;
+      tr.setAttribute("role", "button");
+      tr.setAttribute("aria-label", `\u67E5\u770B ${entry.word} \u7684\u8BE6\u7EC6\u91CA\u4E49`);
+      tr.append(cell(fieldLabel("word"), wordCell(entry, tokens), "word"));
+      const phonetic = document.createElement("span");
+      phonetic.className = entry.phonetic ? "lex-phonetic-cell" : "lex-phonetic-cell is-empty";
+      phonetic.textContent = entry.phonetic || "\u2014";
+      phonetic.title = entry.phonetic || "\u8BCD\u8868\u672A\u6807\u6CE8\u7279\u6B8A\u8BFB\u97F3";
+      tr.append(cell(fieldLabel("phonetic"), phonetic, "phonetic"));
+      const pos = document.createElement("span");
+      pos.className = "lex-pos-badge";
+      pos.textContent = entry.pos || "\u2014";
+      tr.append(cell(fieldLabel("pos"), pos, "pos"));
+      const meaning = document.createElement("span");
+      meaning.append(highlight(entry.meaning || "\u2014", tokens));
+      tr.append(cell(fieldLabel("meaning"), meaning, "meaning"));
+      const notes = document.createElement("span");
+      notes.className = entry.notes ? "lex-note" : "lex-note is-empty";
+      notes.append(highlight(entry.notes || "\u2014", tokens));
+      if (entry.notes) notes.title = entry.notes;
+      tr.append(cell(fieldLabel("notes"), notes, "notes"));
+      tr.addEventListener("click", () => openDetail(entry), { signal: controller.signal });
+      tr.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openDetail(entry);
+        }
+      }, { signal: controller.signal });
+      ui.body.append(tr);
+    }
+  }
+  function renderPager(totalPages) {
+    ui.pager.replaceChildren();
+    ui.pager.hidden = totalPages <= 1;
+    if (totalPages <= 1) return;
+    const makeButton = (label, page, disabled = false, active = false) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "lex-page";
+      button.classList.toggle("is-active", active);
+      button.textContent = label;
+      button.disabled = disabled;
+      if (active) button.setAttribute("aria-current", "page");
+      button.addEventListener("click", () => {
+        if (disabled || page === state.page) return;
+        state.page = page;
+        render();
+        syncUrl();
+        ui.tableWrap.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, { signal: controller.signal });
+      return button;
+    };
+    ui.pager.append(makeButton("\u2039", state.page - 1, state.page <= 1));
+    const wanted = /* @__PURE__ */ new Set([1, totalPages, state.page - 1, state.page, state.page + 1]);
+    const pages = [...wanted].filter((page) => page >= 1 && page <= totalPages).sort((a2, b2) => a2 - b2);
+    let previous = 0;
+    for (const page of pages) {
+      if (previous > 0 && page > previous + 1) {
+        const gap = document.createElement("span");
+        gap.className = "lex-page-gap";
+        gap.textContent = "\u2026";
+        ui.pager.append(gap);
+      }
+      ui.pager.append(makeButton(String(page), page, false, page === state.page));
+      previous = page;
+    }
+    ui.pager.append(makeButton("\u203A", state.page + 1, state.page >= totalPages));
+  }
+  function render() {
+    if (!state.data) return;
+    const tokens = state.query.trim().split(/\s+/).filter(Boolean);
+    const foldedTokens = tokens.map(fold).filter(Boolean);
+    const filtered = state.rows.filter((row) => {
+      if (state.pos !== "all" && row.entry.pos !== state.pos) return false;
+      if (foldedTokens.length === 0) return true;
+      const haystack = state.field === "all" ? row.folded.all : row.folded[state.field];
+      return foldedTokens.every((token) => haystack.includes(token));
+    });
+    const collator = new Intl.Collator(["zh-Hans", "en"], { numeric: true, sensitivity: "base" });
+    filtered.sort((a2, b2) => {
+      switch (state.sort) {
+        case "word-desc":
+          return collator.compare(b2.entry.word, a2.entry.word) || collator.compare(a2.entry.pos, b2.entry.pos);
+        case "meaning-asc":
+          return collator.compare(a2.entry.meaning, b2.entry.meaning) || collator.compare(a2.entry.word, b2.entry.word);
+        case "pos-asc":
+          return collator.compare(a2.entry.pos, b2.entry.pos) || collator.compare(a2.entry.word, b2.entry.word);
+        case "length-asc":
+          return a2.entry.word.length - b2.entry.word.length || collator.compare(a2.entry.word, b2.entry.word);
+        default:
+          return collator.compare(a2.entry.word, b2.entry.word) || collator.compare(a2.entry.pos, b2.entry.pos);
+      }
+    });
+    const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+    state.page = Math.min(Math.max(1, state.page), totalPages);
+    const start = (state.page - 1) * PAGE_SIZE;
+    const visible = filtered.slice(start, start + PAGE_SIZE);
+    const filteredActive = tokens.length > 0 || state.pos !== "all";
+    ui.count.textContent = filteredActive ? `\u627E\u5230 ${filtered.length} \u6761 \xB7 \u7B2C ${state.page} / ${totalPages} \u9875` : `\u5171 ${filtered.length} \u6761 \xB7 \u7B2C ${state.page} / ${totalPages} \u9875`;
+    ui.clear.hidden = state.query.length === 0;
+    ui.empty.hidden = filtered.length > 0;
+    ui.tableWrap.hidden = filtered.length === 0;
+    renderTable(visible, tokens);
+    renderPager(totalPages);
+  }
+  async function selectLanguage(id) {
+    if (!state.index) return;
+    const meta = state.index.languages.find((language) => language.id === id);
+    if (!meta) return;
+    state.lang = meta.id;
+    renderLanguageTabs();
+    let data2 = cache.get(meta.file);
+    try {
+      if (!data2) {
+        data2 = await fetchJson(`/assets/lexicon/${meta.file}`, controller.signal);
+        if (controller.signal.aborted) return;
+        cache.set(meta.file, data2);
+      }
+      state.data = data2;
+      state.rows = makeRows(data2);
+      if (!data2.pos.some((item) => item.value === state.pos)) state.pos = "all";
+      ui.loading.hidden = true;
+      ui.content.hidden = false;
+      renderFieldOptions();
+      renderPos();
+      renderStats();
+      renderLanguageNote();
+      renderHead();
+      render();
+      syncUrl();
+      root2.setAttribute("aria-busy", "false");
+    } catch (error) {
+      if (controller.signal.aborted) return;
+      ui.loading.hidden = true;
+      ui.content.hidden = true;
+      ui.loading.replaceChildren();
+      const message = document.createElement("div");
+      message.className = "lex-error";
+      const title = document.createElement("strong");
+      title.textContent = "\u8BCD\u8868\u52A0\u8F7D\u5931\u8D25";
+      const detail = document.createElement("span");
+      detail.textContent = error instanceof Error ? error.message : String(error);
+      const retry = document.createElement("button");
+      retry.type = "button";
+      retry.className = "lex-button";
+      retry.textContent = "\u91CD\u65B0\u52A0\u8F7D";
+      retry.addEventListener("click", () => location.reload());
+      message.append(title, detail, retry);
+      ui.loading.append(message);
+      ui.loading.hidden = false;
+    }
+  }
+  async function boot() {
+    readUrl();
+    try {
+      const index = await fetchJson(`/assets/lexicon/index.json?v=${Date.now()}`, controller.signal);
+      if (controller.signal.aborted) return;
+      if (!index.languages.length) throw new Error("index.json contains no languages");
+      state.index = index;
+      const initial = index.languages.some((language) => language.id === state.lang) ? state.lang : index.languages[0]?.id ?? "";
+      if (!initial) throw new Error("no default language");
+      await selectLanguage(initial);
+      bindEvents();
+    } catch (error) {
+      if (controller.signal.aborted) return;
+      ui.loading.hidden = false;
+      ui.loading.replaceChildren();
+      const message = document.createElement("div");
+      message.className = "lex-error";
+      const title = document.createElement("strong");
+      title.textContent = "\u8BCD\u8868\u52A0\u8F7D\u5931\u8D25";
+      const detail = document.createElement("span");
+      detail.textContent = error instanceof Error ? error.message : String(error);
+      message.append(title, detail);
+      ui.loading.append(message);
+    }
+  }
+  function bindEvents() {
+    ui.sort.replaceChildren();
+    for (const option of SORT_OPTIONS) {
+      const node = document.createElement("option");
+      node.value = option.value;
+      node.textContent = option.label;
+      ui.sort.append(node);
+    }
+    ui.search.addEventListener("input", () => {
+      window.clearTimeout(searchTimer);
+      searchTimer = window.setTimeout(() => {
+        state.query = ui.search.value;
+        state.page = 1;
+        render();
+        syncUrl();
+      }, 120);
+    }, { signal: controller.signal });
+    ui.clear.addEventListener("click", () => {
+      ui.search.value = "";
+      state.query = "";
+      state.page = 1;
+      render();
+      syncUrl();
+      ui.search.focus();
+    }, { signal: controller.signal });
+    ui.field.addEventListener("change", () => {
+      state.field = ui.field.value;
+      state.page = 1;
+      renderFieldOptions();
+      render();
+      syncUrl();
+    }, { signal: controller.signal });
+    ui.sort.addEventListener("change", () => {
+      state.sort = ui.sort.value;
+      state.page = 1;
+      render();
+      syncUrl();
+    }, { signal: controller.signal });
+    ui.reset.addEventListener("click", () => {
+      ui.search.value = "";
+      state.query = "";
+      state.field = "all";
+      state.pos = "all";
+      state.page = 1;
+      renderFieldOptions();
+      renderPos();
+      render();
+      syncUrl();
+      ui.search.focus();
+    }, { signal: controller.signal });
+    document.addEventListener("keydown", (event) => {
+      if (event.key !== "/" || event.ctrlKey || event.metaKey || event.altKey) return;
+      const target = event.target;
+      if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)) return;
+      event.preventDefault();
+      ui.search.focus();
+    }, { signal: controller.signal });
+    ui.dialogClose.addEventListener("click", () => ui.dialog.close(), { signal: controller.signal });
+    ui.dialog.addEventListener("click", (event) => {
+      if (event.target === ui.dialog) ui.dialog.close();
+    }, { signal: controller.signal });
+    ui.copy.addEventListener("click", async () => {
+      if (!activeEntry) return;
+      const text = [activeEntry.word, activeEntry.pos, activeEntry.meaning].filter(Boolean).join("	") + (activeEntry.notes ? `
+${activeEntry.notes}` : "");
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        const area = document.createElement("textarea");
+        area.value = text;
+        area.style.position = "fixed";
+        area.style.opacity = "0";
+        document.body.append(area);
+        area.select();
+        document.execCommand("copy");
+        area.remove();
+      }
+      ui.copy.textContent = "\u5DF2\u590D\u5236";
+      window.setTimeout(() => {
+        ui.copy.textContent = "\u590D\u5236\u8BCD\u6761";
+      }, 1400);
+    }, { signal: controller.signal });
+    for (const [key, value] of [
+      ["field", state.field],
+      ["sort", state.sort]
+    ]) {
+      const select = key === "field" ? ui.field : ui.sort;
+      select.value = value;
+    }
+    ui.search.value = state.query;
+  }
+  void boot();
+}
+
 // node_modules/.pnpm/@vercel+speed-insights@2.0.0/node_modules/@vercel/speed-insights/dist/index.mjs
 var initQueue = () => {
   if (window.si) return;
@@ -7535,6 +8198,7 @@ function mountPage() {
   mountGithubCards();
   mountMermaid();
   mountKanbun();
+  mountLexicon();
 }
 function mountGlobal() {
   document.querySelector("#banner")?.classList.add("is-ready");

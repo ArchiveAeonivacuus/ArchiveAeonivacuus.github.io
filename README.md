@@ -89,7 +89,7 @@
 ```bash
 pnpm install
 pnpm build:client   # 打包客户端脚本
-pnpm build:site-info build:stats   # 生成站点信息与统计
+pnpm build:site-info build:stats build:lexicon   # 生成站点信息、统计与词表 JSON
 tola serve          # 本地预览 http://127.0.0.1:5277
 ```
 
@@ -105,13 +105,14 @@ pnpm build
 2. `build:dino` — esbuild 打包 404 的 T-Rex 游戏 → `dino.js`
 3. `build:stats` — 统计字数 / 阅读时长 → `templates/stats.json`
 4. `build:site-info` — 导出站点信息 → `templates/site-info.json`
-5. `build:site` — `tola build --clean` 生成 HTML、RSS、Sitemap
-6. `build:images` — 为封面 / 正文图片生成响应式 WebP，并改写页面 `srcset`
-7. `build:pagefonts` — 逐页生成字体子集，移除仅本地预览用的全量字体声明
-8. `build:404` — 复制 `404/index.html` → `404.html`
-9. `build:sitemap` — 移除 404、补全 `lastmod`、生成 `sitemap-index.xml`
-10. `build:search` — Pagefind 建立全文索引
-11. `build:pdf` — 用 Typst 为每页生成 PDF（`--font-path fonts-pdf --ignore-system-fonts`，跳过草稿）
+5. `build:lexicon` — 把 `content/lexicon/*.csv` 转成 `assets/lexicon/*.json`
+6. `build:site` — `tola build --clean` 生成 HTML、RSS、Sitemap
+7. `build:images` — 为封面 / 正文图片生成响应式 WebP，并改写页面 `srcset`
+8. `build:pagefonts` — 逐页生成字体子集，移除仅本地预览用的全量字体声明
+9. `build:404` — 复制 `404/index.html` → `404.html`
+10. `build:sitemap` — 移除 404、补全 `lastmod`、生成 `sitemap-index.xml`
+11. `build:search` — Pagefind 建立全文索引
+12. `build:pdf` — 用 Typst 为每页生成 PDF（`--font-path fonts-pdf --ignore-system-fonts`，跳过草稿）
 
 校验：
 
@@ -181,6 +182,36 @@ pnpm check   # tsc --noEmit + tola validate（链接与资源）
 ```
 
 未传 `weapon:` 时，卡片会回退到 `templates/components.typ` 里的 `_weapon-icon` 中文映射；要改“名称 → 图标”的对应关系，编辑该字典即可。图标是普通 `<img>`，靠 PNG 自带的白色填充和黑色描边显示，不再使用 CSS mask。
+
+### 造语词表
+
+词表源码放在 `content/lexicon/`。每种语言一个 CSV，文件自己描述语言信息；`scripts/build-lexicon.mjs` 会自动扫描并生成 `assets/lexicon/*.json`，页面 `/lexicon/` 再读取这些 JSON 提供搜索与筛选。
+
+`content/lexicon/ong.csv` 开头：
+
+```csv
+# name: 央额列语
+# native: Onglısch
+# format: ong
+# description: 央额列王国的官方语言。
+word,pos,phonetic,notes,meaning
+abauton,prep.,,,关于
+```
+
+- `# key: value` 行是语言元数据，只出现在文件开头。
+- 第一条非 `#` 行是**通用列标签**：`word,pos,phonetic,notes,meaning`。
+- 数据行沿用这些列；引号、逗号规则与普通 CSV 相同。
+- `phonetic` 放特殊读音；没有就留空，页面显示 `—`。
+
+新增一种语言：复制一个 CSV 到 `content/lexicon/`，改 `# name`、`# native`、`# format`，然后运行：
+
+```bash
+pnpm build:lexicon
+```
+
+不需要 `languages.json`，也不需要手动维护 `index.json`。页面顶部的语言标签、统计、表头都会自动出现。`format` 使用正文行内字体组件的短名（如 `ong`、`old-cjk`、`zh-tw`），对应 `#ong`、`#old-cjk` 等格式；也可以直接写 `ff-*` 类名。单文件内还可用 `# wordclass:` / `# nativeclass:` 覆盖词条或语言名的格式，用 `# order:` 控制标签顺序。
+
+`assets/lexicon/` 下的 JSON 是生成产物，不要手动编辑；`index.json` 也是自动生成的。
 
 ## 内容来源
 

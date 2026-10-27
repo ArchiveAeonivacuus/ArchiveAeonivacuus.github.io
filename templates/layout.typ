@@ -263,6 +263,7 @@
       #html.elem("nav", attrs: (class: "nav-links", "aria-label": "主导航"))[
         #_nav-link("/", t.home, key: "home")
         #_nav-link("/archive/", t.archive, key: "archive")
+        #_nav-link("/lexicon/", t.lexicon, key: "lexicon")
         #_nav-link("/about/", t.about, key: "about")
         #_nav-link("/friends/", t.friends, key: "friends")
       ]
@@ -282,7 +283,7 @@
         #html.elem("input", attrs: (id: "color-slider", type: "range", min: "0", max: "360", step: "5", "aria-label": t.themeColor, "data-i18n-aria": "themeColor"))
       ]
       #html.elem("nav", attrs: (id: "nav-menu-panel", class: "float-panel mobile-menu is-closed", "aria-label": "移动端导航"))[
-        #_nav-link("/", t.home, key: "home") #_nav-link("/archive/", t.archive, key: "archive") #_nav-link("/about/", t.about, key: "about") #_nav-link("/friends/", t.friends, key: "friends")
+        #_nav-link("/", t.home, key: "home") #_nav-link("/archive/", t.archive, key: "archive") #_nav-link("/lexicon/", t.lexicon, key: "lexicon") #_nav-link("/about/", t.about, key: "about") #_nav-link("/friends/", t.friends, key: "friends")
       ]
     ]
   ]

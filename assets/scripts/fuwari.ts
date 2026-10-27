@@ -13,6 +13,7 @@ import { applyI18n } from "./i18n";
 import { cleanupPage } from "./lifecycle";
 import { mountMermaid } from "./mermaid";
 import { mountKanbun } from "./kanbun";
+import { mountLexicon } from "./lexicon";
 import { injectSpeedInsights } from "@vercel/speed-insights";
 
 injectSpeedInsights();
@@ -35,6 +36,7 @@ function mountPage(): void {
   mountGithubCards();
   mountMermaid();
   mountKanbun();
+  mountLexicon();
 }
 
 function mountGlobal(): void {

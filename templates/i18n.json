@@ -25,7 +25,8 @@
     "author": "Scrippor",
     "publishedAt": "gapublıschde an",
     "license": "Lısens",
-    "friends": "Frœnds"
+    "friends": "Frœnds",
+    "lexicon": "Ƿordlíst"
   },
   "A_zh_iang": {
     "home": "扉葉",
@@ -53,7 +54,8 @@
     "author": "作者",
     "publishedAt": "載於",
     "license": "許可科条",
-    "friends": "友鎖"
+    "friends": "友鎖",
+    "lexicon": "詞表"
   },
   "en": {
     "home": "Home",
@@ -81,7 +83,8 @@
     "author": "Author",
     "publishedAt": "Published at",
     "license": "License",
-    "friends": "Friends"
+    "friends": "Friends",
+    "lexicon": "Lexicon"
   },
   "es": {
     "home": "Inicio",
@@ -109,7 +112,8 @@
     "author": "Autor",
     "publishedAt": "Publicado el",
     "license": "Licencia",
-    "friends": "Amigos"
+    "friends": "Amigos",
+    "lexicon": "Léxico"
   },
   "id": {
     "home": "Beranda",
@@ -137,7 +141,8 @@
     "author": "Penulis",
     "publishedAt": "Diterbitkan pada",
     "license": "Lisensi",
-    "friends": "Teman-teman"
+    "friends": "Teman-teman",
+    "lexicon": "Leksikon"
   },
   "ja": {
     "home": "ホーム",
@@ -165,7 +170,8 @@
     "author": "作者",
     "publishedAt": "公開日",
     "license": "ライセンス",
-    "friends": "お友達"
+    "friends": "お友達",
+    "lexicon": "語彙"
   },
   "ko": {
     "home": "홈",
@@ -193,7 +199,8 @@
     "author": "저자",
     "publishedAt": "게시일",
     "license": "라이선스",
-    "friends": "친구들"
+    "friends": "친구들",
+    "lexicon": "어휘"
   },
   "th": {
     "home": "หน้าแรก",
@@ -221,7 +228,8 @@
     "author": "ผู้เขียน",
     "publishedAt": "เผยแพร่เมื่อ",
     "license": "สัญญาอนุญาต",
-    "friends": "เพื่อนๆ"
+    "friends": "เพื่อนๆ",
+    "lexicon": "ศัพท์"
   },
   "tr": {
     "home": "Anasayfa",
@@ -249,7 +257,8 @@
     "author": "Yazar",
     "publishedAt": "Yayınlanma:",
     "license": "Lisans",
-    "friends": "Arkadaşlar"
+    "friends": "Arkadaşlar",
+    "lexicon": "Sözlük"
   },
   "vi": {
     "home": "Trang chủ",
@@ -277,7 +286,8 @@
     "author": "Tác giả",
     "publishedAt": "Đăng vào lúc",
     "license": "Giấy phép bản quyền",
-    "friends": "Bạn"
+    "friends": "Bạn",
+    "lexicon": "Từ vựng"
   },
   "zh_CN": {
     "home": "主页",
@@ -305,7 +315,8 @@
     "author": "作者",
     "publishedAt": "发布于",
     "license": "许可协议",
-    "friends": "友链"
+    "friends": "友链",
+    "lexicon": "词表"
   },
   "zh_TW": {
     "home": "首頁",
@@ -333,6 +344,7 @@
     "author": "作者",
     "publishedAt": "發佈於",
     "license": "許可協議",
-    "friends": "友鏈"
+    "friends": "友鏈",
+    "lexicon": "詞表"
   }
 }
