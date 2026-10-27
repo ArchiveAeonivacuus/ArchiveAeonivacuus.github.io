@@ -16,7 +16,14 @@ import { mountKanbun } from "./kanbun";
 import { mountLexicon } from "./lexicon";
 import { injectSpeedInsights } from "@vercel/speed-insights";
 
-injectSpeedInsights();
+// Keep the analytics request off the critical path. Vercel's development build
+// otherwise fetches a remote debug script before `load`, adding ~0.5s locally.
+function scheduleSpeedInsights(): void {
+  window.setTimeout(() => injectSpeedInsights(), 2000);
+}
+
+if (document.readyState === "complete") scheduleSpeedInsights();
+else window.addEventListener("load", scheduleSpeedInsights, { once: true });
 
 function syncBodyState(): void {
   document.documentElement.classList.toggle("is-home", location.pathname === "/" || location.pathname === "");

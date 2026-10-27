@@ -87,12 +87,12 @@ FAMILIES = {
 }
 
 BODY_BY_LANG = {
-    "": ["Source Serif 4", "Source Han Serif SC", "Source Han Serif JP"],
-    "zh_CN": ["Source Serif 4", "Source Han Serif SC", "Source Han Serif JP"],
+    "": ["Source Serif 4", "Source Han Serif SC"],
+    "zh_CN": ["Source Serif 4", "Source Han Serif SC"],
     "zh_TW": ["Source Serif 4", "Source Han Serif TC", "Source Han Serif SC"],
     "ja": ["Source Serif 4", "Source Han Serif JP", "Source Han Serif SC"],
     "ko": ["Source Serif 4", "Source Han Serif KR", "Source Han Serif SC"],
-    "en": ["Source Serif 4", "Source Han Serif SC", "Source Han Serif JP"],
+    "en": ["Source Serif 4", "Source Han Serif SC"],
     "ar": ["Amiri", "Source Serif 4", "Source Han Serif SC"],
     "ong": ["Old English Onglisch", "Source Serif 4", "Source Han Serif SC"],
     "A-zh_iang": ["Source Serif 4", "Source Han Serif JP", "Source Han Serif SC"],

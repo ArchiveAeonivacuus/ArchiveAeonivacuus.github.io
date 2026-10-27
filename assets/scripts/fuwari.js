@@ -8180,7 +8180,11 @@ function injectSpeedInsights(props = {}, confString) {
 }
 
 // assets/scripts/fuwari.ts
-injectSpeedInsights();
+function scheduleSpeedInsights() {
+  window.setTimeout(() => injectSpeedInsights(), 2e3);
+}
+if (document.readyState === "complete") scheduleSpeedInsights();
+else window.addEventListener("load", scheduleSpeedInsights, { once: true });
 function syncBodyState() {
   document.documentElement.classList.toggle("is-home", location.pathname === "/" || location.pathname === "");
   document.querySelector("#navbar-wrapper")?.classList.remove("navbar-hidden");
