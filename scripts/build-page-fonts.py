@@ -183,21 +183,23 @@ _LEXICON_CACHE = None
 
 
 def lexicon_text_and_classes():
-    """All text rendered by the client-side lexicon table.
+    """Text and font classes rendered by the client-side lexicon table.
 
     The table rows come from JSON at runtime, so they are absent from the
-    static HTML that page_chars() normally scans. Include them explicitly so
-    the page-specific font subsets contain every word/meaning glyph.
+    static HTML that page_chars() normally scans. Return the full text for
+    normal-weight faces and a smaller bold subset: only headings, labels,
+    word forms and digits are rendered at weight 700, not the 621 meanings.
     """
     global _LEXICON_CACHE
     if _LEXICON_CACHE is not None:
         return _LEXICON_CACHE
 
-    parts = []
+    parts = ["0123456789"]
+    bold_parts = ["0123456789", "全部", "没有找到匹配的词条", "清除筛选", "复制词条"]
     classes = set()
     index_path = os.path.join(PUBLIC, "assets", "lexicon", "index.json")
     if not os.path.isfile(index_path):
-        _LEXICON_CACHE = ("", classes)
+        _LEXICON_CACHE = ("", set(), "")
         return _LEXICON_CACHE
 
     with open(index_path, encoding="utf-8") as handle:
@@ -208,6 +210,8 @@ def lexicon_text_and_classes():
             value = language.get(key)
             if value:
                 parts.append(str(value))
+                if key in ("name", "native"):
+                    bold_parts.append(str(value))
         for key in ("wordClass", "nativeClass"):
             value = language.get(key)
             if value:
@@ -219,14 +223,18 @@ def lexicon_text_and_classes():
         with open(data_path, encoding="utf-8") as handle:
             data = json.load(handle)
         for field in data.get("fields", []):
-            parts.append(str(field.get("label", "")))
+            label = str(field.get("label", ""))
+            parts.append(label)
+            bold_parts.append(label)
         for entry in data.get("entries", []):
             for key in ("word", "phonetic", "pos", "meaning", "notes"):
                 value = entry.get(key)
                 if value:
                     parts.append(str(value))
+                    if key in ("word", "pos"):
+                        bold_parts.append(str(value))
 
-    _LEXICON_CACHE = ("\n".join(parts), classes)
+    _LEXICON_CACHE = ("\n".join(parts), classes, "\n".join(bold_parts))
     return _LEXICON_CACHE
 
 
@@ -256,11 +264,12 @@ def subset_file(family, weight, style, source, unicodes):
     return name
 
 
-def rules_for_family(family, unicodes):
+def rules_for_family(family, unicodes, bold_unicodes=None):
     rules = []
     for weight, styles in FAMILIES[family].items():
         for style, source in styles.items():
-            keep = sorted(c for c in unicodes if c in source_cmap(source))
+            selected = bold_unicodes if (bold_unicodes is not None and weight >= 600) else unicodes
+            keep = sorted(c for c in selected if c in source_cmap(source))
             if not keep:
                 continue
             name = subset_file(family, weight, style, source, keep)
@@ -277,21 +286,28 @@ def process_page(path):
     lang = (re.search(r'class="site-shell"[^>]*data-lang="([^"]*)"', text) or [None, ""])[1]
     chars = page_chars(text)
     families = set(page_families(text, lang))
+    bold_chars = None
 
     # The lexicon rows are injected by JavaScript from assets/lexicon/*.json,
     # so include their glyphs and configured format classes here.
     if 'id="lexicon-app"' in text:
-        lexicon_text, lexicon_classes = lexicon_text_and_classes()
+        lexicon_text, lexicon_classes, lexicon_bold_text = lexicon_text_and_classes()
         if lexicon_text:
             chars |= page_chars(lexicon_text)
+        if lexicon_bold_text:
+            bold_chars = page_chars(text) | page_chars(lexicon_bold_text)
         for css_class in lexicon_classes:
             family = CLASS_FAMILY.get(css_class)
             if family:
                 families.add(family)
+        # The lexicon UI is Chinese and has no #ja spans. SC already covers its
+        # kana, so skip the large JP fallback subset on this page.
+        if "ff-ja" not in text and "ff-ja_old" not in text:
+            families.discard("Source Han Serif JP")
 
     rules = []
     for family in sorted(families):
-        rules.extend(rules_for_family(family, chars))
+        rules.extend(rules_for_family(family, chars, bold_chars))
     style_tag = "<style>" + "".join(rules) + "</style>"
     # Inject inside the Swup container (not <head>) so client-side navigation
     # swaps the @font-face rules together with the page content.
