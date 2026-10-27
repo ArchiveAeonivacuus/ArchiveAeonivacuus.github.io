@@ -79,7 +79,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { min-width: 20rem; scroll-behavior: smooth; background: var(--page-bg); line-height: 1.5; -webkit-text-size-adjust: 100%; overflow-x: clip; }
-body { min-width: 20rem; min-height: 100vh; margin: 0; background: var(--page-bg); color: var(--deep-text); font-family: "Source Han Serif SC", "Source Serif 4", MiSans, Roboto, system-ui, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+body { min-width: 20rem; min-height: 100vh; margin: 0; background: var(--page-bg); color: var(--deep-text); font-family: "Source Han Serif SC", "Source Han Serif JP", "Source Serif 4", MiSans, Roboto, system-ui, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; overflow-x: clip; }
 h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, pre { margin: 0; }
 ul, ol { margin: 0; padding: 0; }
 img, svg, video, canvas { display: block; vertical-align: middle; }
@@ -613,8 +613,8 @@ ruby rt, ruby rp { font-size: .5em; user-select: none; -webkit-user-select: none
     CJK fonts are listed first so quotes/punctuation stay full-width in
     Chinese/Japanese; Latin italic switches to "Source Serif 4" via the
     `em`/`i` rule below. English/ong keep "Source Serif 4" first. */
-.site-shell { font-family: "Source Han Serif SC", "Source Serif 4", MiSans, Roboto, system-ui, sans-serif; }
-.site-shell[data-lang="en"] { font-family: "Source Serif 4", "Source Han Serif SC", serif; }
+.site-shell { font-family: "Source Han Serif SC", "Source Han Serif JP", "Source Serif 4", MiSans, Roboto, system-ui, sans-serif; }
+.site-shell[data-lang="en"] { font-family: "Source Serif 4", "Source Han Serif SC", "Source Han Serif JP", serif; }
 .site-shell[data-lang="ja"] { font-family: "Source Han Serif JP", "Source Han Serif SC", "Source Serif 4", serif; }
 .site-shell[data-lang="zh_TW"] { font-family: "Source Han Serif TC", "Source Han Serif SC", "Source Serif 4", serif; }
 .site-shell[data-lang="ko"] { font-family: "Source Han Serif KR", "Source Han Serif SC", "Source Serif 4", serif; }

@@ -87,12 +87,12 @@ FAMILIES = {
 }
 
 BODY_BY_LANG = {
-    "": ["Source Serif 4", "Source Han Serif SC"],
-    "zh_CN": ["Source Serif 4", "Source Han Serif SC"],
+    "": ["Source Serif 4", "Source Han Serif SC", "Source Han Serif JP"],
+    "zh_CN": ["Source Serif 4", "Source Han Serif SC", "Source Han Serif JP"],
     "zh_TW": ["Source Serif 4", "Source Han Serif TC", "Source Han Serif SC"],
     "ja": ["Source Serif 4", "Source Han Serif JP", "Source Han Serif SC"],
     "ko": ["Source Serif 4", "Source Han Serif KR", "Source Han Serif SC"],
-    "en": ["Source Serif 4", "Source Han Serif SC"],
+    "en": ["Source Serif 4", "Source Han Serif SC", "Source Han Serif JP"],
     "ar": ["Amiri", "Source Serif 4", "Source Han Serif SC"],
     "ong": ["Old English Onglisch", "Source Serif 4", "Source Han Serif SC"],
     "A-zh_iang": ["Source Serif 4", "Source Han Serif JP", "Source Han Serif SC"],
@@ -345,10 +345,6 @@ def process_page(path):
             family = CLASS_FAMILY.get(css_class)
             if family:
                 families.add(family)
-        # The lexicon UI is Chinese and has no #ja spans. SC already covers its
-        # kana, so skip the large JP fallback subset on this page.
-        if "ff-ja" not in text and "ff-ja_old" not in text:
-            families.discard("Source Han Serif JP")
 
     rules = []
     for family in sorted(families):
