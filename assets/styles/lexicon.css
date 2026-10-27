@@ -375,8 +375,12 @@
   gap: .4rem 1rem;
   margin: .3rem 0 .45rem;
   color: var(--text-50);
-  font-family: "Source Serif 4", "Source Han Serif SC", serif;
+  font-family: inherit;
   font-size: .76rem;
+}
+
+#lex-count {
+  font-family: "Source Serif 4", "Source Han Serif SC", serif;
 }
 
 .lex-summary kbd {

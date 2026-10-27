@@ -181,6 +181,42 @@ def page_families(text, lang):
 
 _LEXICON_CACHE = None
 
+# Text created by lexicon.ts at runtime. It is not present in the static HTML,
+# so include it explicitly for complete search/hint/button glyph coverage.
+LEXICON_UI_TEXT = """
+全部字段
+全部
+字段
+排序
+搜索字段
+排序方式
+按词性筛选
+搜索词形、读音、释义或注释…
+搜索词表
+清空搜索
+按 / 聚焦搜索 · 点击词条查看详情
+共 找到 条 第 页
+词条 词形 词性 注释
+词形 A → Z
+词形 Z → A
+词形长度
+释义 读音
+没有找到匹配的词条
+换一个关键词，或清除当前筛选。
+清除筛选
+复制词条
+已复制
+词表分页
+关闭
+语言
+暂无释义
+未标注
+未标注特殊读音
+词表未标注特殊读音
+词表加载失败
+重新加载
+"""
+
 
 def lexicon_text_and_classes():
     """Text and font classes rendered by the client-side lexicon table.
@@ -194,8 +230,17 @@ def lexicon_text_and_classes():
     if _LEXICON_CACHE is not None:
         return _LEXICON_CACHE
 
-    parts = ["0123456789"]
-    bold_parts = ["0123456789", "全部", "没有找到匹配的词条", "清除筛选", "复制词条"]
+    parts = ["0123456789", LEXICON_UI_TEXT]
+    bold_parts = [
+        "0123456789",
+        LEXICON_UI_TEXT,
+        "全部",
+        "没有找到匹配的词条",
+        "清除筛选",
+        "复制词条",
+        "已复制",
+        "重新加载",
+    ]
     classes = set()
     index_path = os.path.join(PUBLIC, "assets", "lexicon", "index.json")
     if not os.path.isfile(index_path):
