@@ -168,6 +168,8 @@ def page_families(text, lang):
     for name, family in CLASS_FAMILY.items():
         if name in classes:
             families.add(family)
+    if "poem_ong" in classes:
+        families.add("Old English Onglisch")
     if {"poem", "ci", "spellcard"} & classes:
         families.add("KaiTi")
     if "waka" in classes:
