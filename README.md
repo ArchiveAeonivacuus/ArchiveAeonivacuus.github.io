@@ -185,31 +185,43 @@ pnpm check   # tsc --noEmit + tola validate（链接与资源）
 
 ### 造语词表
 
-词表源码放在 `content/lexicon/`。每种语言一个 CSV，文件自己描述语言信息；`scripts/build-lexicon.mjs` 会自动扫描并生成 `assets/lexicon/*.json`，页面 `/lexicon/` 再读取这些 JSON 提供搜索与筛选。
+词表源码放在 `content/lexicon/`。每种语言使用一个 `.lex` 文件（旧的 `.csv` 仍然兼容）；`scripts/build-lexicon.mjs` 会自动扫描并生成 `assets/lexicon/*.json`，页面 `/lexicon/` 再读取这些 JSON 提供搜索与筛选。
 
-`content/lexicon/ong.csv` 开头：
+`content/lexicon/ong.lex` 开头：
 
-```csv
+```text
 # name: 央额列语
 # native: Onglısch
 # format: ong
-# description: 央额列王国的官方语言。
-word,pos,phonetic,notes,meaning
-abauton,prep.,,,关于
+#column word ong
+#column phonetic en
+
+word | phonetic | pos | meaning | notes
+abauton |  | prep. | 关于 | 
 ```
 
-- `# key: value` 行是语言元数据，只出现在文件开头。
-- 第一条非 `#` 行是**通用列标签**：`word,pos,phonetic,notes,meaning`。
-- 数据行沿用这些列；引号、逗号规则与普通 CSV 相同。
-- `phonetic` 放特殊读音；没有就留空，页面显示 `—`。
+- `# key: value` 行是语言元数据。
+- `#column 字段 样式` 给整列指定字体函数/样式。
+- 行首 `@样式` 给整行指定样式。
+- 单元格里的 `#ong[...]` 给局部文字指定样式。
+- 优先级：局部 `#ong[...]` > 行 `@...` > 列 `#column` > 语言默认 `format`。
+- `|` 分隔单元格；单元格内的 `\|` 表示字面竖线。
 
-新增一种语言：复制一个 CSV 到 `content/lexicon/`，改 `# name`、`# native`、`# format`，然后运行：
+新增一种语言：复制一个 `.lex` 文件到 `content/lexicon/`，改开头的 `# name`、`# native`、`# format`，然后运行：
 
 ```bash
 pnpm build:lexicon
 ```
 
-不需要 `languages.json`，也不需要手动维护 `index.json`。页面顶部的语言标签、统计、表头都会自动出现。`format` 使用正文行内字体组件的短名（如 `ong`、`old-cjk`、`zh-tw`），对应 `#ong`、`#old-cjk` 等格式；也可以直接写 `ff-*` 类名。单文件内还可用 `# wordclass:` / `# nativeclass:` 覆盖词条或语言名的格式，用 `# order:` 控制标签顺序。
+从 CSV 迁移：
+
+```bash
+pnpm convert:lexicon
+```
+
+该命令读取 `content/lexicon/ong.csv`，生成 `content/lexicon/ong.lex`；不会直接修改 CSV。`<ong>...</ong>` 会转换成 `#ong[...]`。如果目标文件已经存在，需要加 `-- --force` 才会覆盖。
+
+`format` 使用正文行内字体组件的短名（如 `ong`、`old-cjk`、`zh-tw`），对应 `#ong`、`#old-cjk` 等格式；也可以直接写 `ff-*` 类名。单文件内还可用 `# wordclass:` / `# nativeclass:` 覆盖词条或语言名的格式，用 `# order:` 控制标签顺序。
 
 `assets/lexicon/` 下的 JSON 是生成产物，不要手动编辑；`index.json` 也是自动生成的。
 

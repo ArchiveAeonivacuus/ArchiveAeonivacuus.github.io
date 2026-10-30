@@ -2,51 +2,19 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  DEFAULT_LABELS,
+  FIELD_ORDER,
+  fieldForHeader,
+  parseInlineRuns,
+  parseLex,
+  plainText,
+  styleClass,
+} from "./lex-format.mjs";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const SOURCE = path.join(ROOT, "content", "lexicon");
 const OUT = path.join(ROOT, "assets", "lexicon");
-
-const FIELD_ORDER = ["word", "phonetic", "pos", "meaning", "notes"];
-const DEFAULT_LABELS = {
-  word: "词形",
-  pos: "词性",
-  phonetic: "读音",
-  notes: "注释",
-  meaning: "释义",
-};
-
-// Header labels are deliberately generic so a word list needs no separate
-// manifest. Legacy exports with the old labels are still accepted.
-const HEADER_ALIASES = {
-  word: ["word", "词形", "詞形", "ƿörds"],
-  pos: ["pos", "词性", "詞性", "parts des spracs"],
-  phonetic: ["phonetic", "读音", "讀音", "phónen spézıalıs"],
-  notes: ["notes", "注释", "註釋", "nóts"],
-  meaning: ["meaning", "释义", "釋義", "地球汉语", "Térrano Kanzocan"],
-};
-
-// `format` uses the same short names as the Typst inline-font components.
-// Raw `ff-*` class names pass through unchanged for other project styles.
-const FORMAT_CLASSES = {
-  ja: "ff-ja",
-  kr: "ff-kr",
-  "old-ja": "ff-ja_old",
-  ong: "ff-ong",
-  en: "ff-en",
-  ar: "ff-ar",
-  rom: "ff-rom",
-  zh: "ff-zh_cn",
-  "zh-tw": "ff-zh_tw",
-  "old-cjk": "ff-cjk_old",
-  lxgw: "ff-lxgw",
-  kai: "ff-kai",
-  mincho: "ff-min",
-};
-
-function formatClass(value) {
-  return FORMAT_CLASSES[value] ?? (value.startsWith("ff-") ? value : `ff-${value}`);
-}
 
 function parseCsv(text) {
   const rows = [];
@@ -89,28 +57,15 @@ function parseCsv(text) {
   return rows;
 }
 
-function fieldForHeader(value) {
-  const text = value.trim();
-  const lower = text.toLowerCase();
-  for (const [key, aliases] of Object.entries(HEADER_ALIASES)) {
-    if (aliases.some((alias) => alias.toLowerCase() === lower || alias === text)) return key;
-  }
-  return null;
-}
-
-function readSource(file) {
+function readCsv(file) {
   const raw = fs.readFileSync(file, "utf8").replace(/^\uFEFF/, "");
   const lines = raw.split(/\r?\n/);
   const meta = {};
-
-  // Leading `# key: value` lines describe the language. The first non-# row
-  // is the generic column header.
   while (lines.length > 0 && lines[0].trimStart().startsWith("#")) {
     const line = lines.shift().replace(/^#\s*/, "").trim();
     const colon = line.indexOf(":");
     if (colon > 0) meta[line.slice(0, colon).trim().toLowerCase()] = line.slice(colon + 1).trim();
   }
-
   const rows = parseCsv(lines.join("\n"));
   if (rows.length === 0) throw new Error(`${file}: empty CSV`);
   const header = rows[0].map((value) => value.trim());
@@ -125,12 +80,18 @@ function hashJson(value) {
   return crypto.createHash("sha1").update(JSON.stringify(value)).digest("hex").slice(0, 10);
 }
 
-const files = fs
-  .readdirSync(SOURCE)
-  .filter((file) => file.toLowerCase().endsWith(".csv"))
+const allFiles = fs.readdirSync(SOURCE).filter((file) => /\.(lex|csv)$/i.test(file));
+const lexIds = new Set(
+  allFiles.filter((file) => file.toLowerCase().endsWith(".lex")).map((file) => path.basename(file, path.extname(file))),
+);
+const files = allFiles
+  .filter((file) => {
+    const id = path.basename(file, path.extname(file));
+    return file.toLowerCase().endsWith(".lex") || !lexIds.has(id);
+  })
   .sort((a, b) => a.localeCompare(b, "zh-Hans"));
 
-if (files.length === 0) throw new Error(`${SOURCE}: no CSV word lists`);
+if (files.length === 0) throw new Error(`${SOURCE}: no .lex or .csv word lists`);
 
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });
@@ -140,13 +101,20 @@ let total = 0;
 
 for (const file of files) {
   const id = path.basename(file, path.extname(file));
-  const { meta, header, rows } = readSource(path.join(SOURCE, file));
+  const source = path.join(SOURCE, file);
+  const isLex = file.toLowerCase().endsWith(".lex");
+  const parsed = isLex ? parseLex(source) : null;
+  const csv = parsed ? null : readCsv(source);
+
+  const meta = parsed?.meta ?? csv.meta;
+  const header = parsed?.header ?? csv.header;
+  const rows = parsed?.rows ?? csv.rows;
+  const columnStyles = parsed?.columnStyles ?? {};
+
   const positions = {};
   for (const key of FIELD_ORDER) {
     const at = header.findIndex((value) => fieldForHeader(value) === key);
-    if (at < 0) {
-      throw new Error(`${file}: missing a column for "${key}". Use header: word,pos,phonetic,notes,meaning`);
-    }
+    if (at < 0) throw new Error(`${file}: missing a column for "${key}".`);
     positions[key] = at;
   }
 
@@ -154,13 +122,31 @@ for (const file of files) {
   const native = meta.native || name;
   const description = meta.description || "";
   const format = meta.format || "";
-  const wordClass = meta.wordclass || (format ? formatClass(format) : "");
-  const nativeClass = meta.nativeclass || (format ? formatClass(format) : "");
+  const wordClass = meta.wordclass || (format ? styleClass(format) : "");
+  const nativeClass = meta.nativeclass || (format ? styleClass(format) : "");
 
   const entries = [];
   for (const row of rows) {
-    const entry = Object.fromEntries(FIELD_ORDER.map((key) => [key, cell(row, positions[key])]));
+    const cells = parsed ? row.cells : row;
+    const rowStyle = parsed ? row.style : null;
+    const entry = Object.fromEntries(FIELD_ORDER.map((key) => [key, cell(cells, positions[key])]));
     if (!entry.word && !entry.meaning) continue;
+
+    if (parsed) {
+      // Only keep runs when a cell actually contains inline markup; column and
+      // row styles are applied later by the renderer.
+      const runs = {};
+      for (const key of FIELD_ORDER) {
+        const value = parseInlineRuns(entry[key]);
+        if (value.some((run) => run.style)) runs[key] = value;
+      }
+      if (rowStyle) entry.rowStyle = rowStyle;
+      if (Object.keys(runs).length > 0) {
+        entry.runs = runs;
+        for (const key of Object.keys(runs)) entry[key] = plainText(runs[key]);
+      }
+    }
+
     entries.push(entry);
   }
 
@@ -191,6 +177,7 @@ for (const file of files) {
     pos,
     entries,
   };
+  if (Object.keys(columnStyles).length > 0) data.columnStyles = columnStyles;
 
   const hash = hashJson(data);
   const output = `${id}-${hash}.json`;

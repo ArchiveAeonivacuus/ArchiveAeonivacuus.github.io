@@ -7,6 +7,7 @@
     "build:client": "esbuild assets/scripts/fuwari.ts --bundle --format=esm --target=es2022 --outfile=assets/scripts/fuwari.js",
     "build:site": "tola build --clean && python3 scripts/build-page-fonts.py",
     "build:lexicon": "node scripts/build-lexicon.mjs",
+    "convert:lexicon": "node scripts/convert-lexicon-csv.mjs",
     "build:site-info": "node scripts/build-site-info.mjs",
     "build:pagefonts": "python3 scripts/build-page-fonts.py",
     "build:images": "python3 scripts/optimize-images.py",

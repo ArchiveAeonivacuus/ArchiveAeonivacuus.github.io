@@ -4,12 +4,19 @@ type FieldKey = "word" | "pos" | "phonetic" | "notes" | "meaning";
 type FieldFilter = "all" | FieldKey;
 type SortKey = "word-asc" | "word-desc" | "meaning-asc" | "pos-asc" | "length-asc";
 
+interface Run {
+  text: string;
+  style: string | null;
+}
+
 interface Entry {
   word: string;
   pos: string;
   phonetic: string;
   notes: string;
   meaning: string;
+  rowStyle?: string | null;
+  runs?: Partial<Record<FieldKey, Run[]>>;
 }
 
 interface LanguageData {
@@ -19,6 +26,7 @@ interface LanguageData {
   nativeClass?: string;
   wordClass?: string;
   description: string;
+  columnStyles?: Partial<Record<FieldKey, string>>;
   fields: { key: FieldKey; label: string }[];
   stats: { entries: number; uniqueWords: number; pos: number; notes: number };
   pos: { value: string; count: number }[];
@@ -56,8 +64,27 @@ const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: "length-asc", label: "词形长度" },
 ];
 
-const SPECIAL_FOLDS: [RegExp, string][] = [
-  [/[ƿǷ]/g, "w"],
+const STYLE_CLASSES: Record<string, string> = {
+  ja: "ff-ja",
+  kr: "ff-kr",
+  "old-ja": "ff-ja_old",
+  ong: "ff-ong",
+  en: "ff-en",
+  ar: "ff-ar",
+  rom: "ff-rom",
+  zh: "ff-zh_cn",
+  "zh-tw": "ff-zh_tw",
+  "old-cjk": "ff-cjk_old",
+  lxgw: "ff-lxgw",
+  kai: "ff-kai",
+  mincho: "ff-min",
+};
+
+function styleClass(style: string): string {
+  return STYLE_CLASSES[style] ?? (style.startsWith("ff-") ? style : `ff-${style}`);
+}
+
+const SPECIAL_FOLDS: [RegExp, string][] = [  [/[ƿǷ]/g, "w"],
   [/ı/g, "i"],
   [/ſ/g, "s"],
   [/æ/g, "ae"],
@@ -101,6 +128,29 @@ function highlight(text: string, tokens: string[]): DocumentFragment {
   }
   if (last < text.length) fragment.append(text.slice(last));
   return fragment;
+}
+
+function renderRuns(
+  target: HTMLElement,
+  entry: Entry,
+  field: FieldKey,
+  tokens: string[],
+  fallback: string,
+  columnStyle?: string | null,
+): void {
+  const runs = entry.runs?.[field] ?? [{ text: entry[field] || fallback, style: null }];
+  const baseStyle = entry.rowStyle ?? columnStyle ?? null;
+  for (const run of runs) {
+    const style = run.style ?? baseStyle;
+    if (style) {
+      const span = document.createElement("span");
+      span.className = styleClass(style);
+      span.append(highlight(run.text, tokens));
+      target.append(span);
+    } else {
+      target.append(highlight(run.text, tokens));
+    }
+  }
 }
 
 async function fetchJson<T>(url: string, signal: AbortSignal): Promise<T> {
@@ -419,19 +469,23 @@ export function mountLexicon(): void {
     const word = document.createElement("span");
     word.className = "lex-word";
     if (state.data?.wordClass) word.classList.add(state.data.wordClass);
-    word.append(highlight(entry.word, tokens));
+    renderRuns(word, entry, "word", tokens, "", state.data?.columnStyles?.word);
     wrap.append(word);
     return wrap;
   }
 
   function openDetail(entry: Entry): void {
     activeEntry = entry;
-    ui.dialogWord.textContent = entry.word;
+    ui.dialogWord.replaceChildren();
     ui.dialogWord.className = state.data?.wordClass ?? "";
-    ui.dialogPhon.textContent = entry.phonetic || "未标注特殊读音";
+    renderRuns(ui.dialogWord, entry, "word", [], "", state.data?.columnStyles?.word);
+    ui.dialogPhon.replaceChildren();
+    renderRuns(ui.dialogPhon, entry, "phonetic", [], "未标注特殊读音", state.data?.columnStyles?.phonetic);
     ui.dialogPhon.hidden = false;
-    ui.dialogPos.textContent = entry.pos || "未标注";
-    ui.dialogMeaning.textContent = entry.meaning || "暂无释义";
+    ui.dialogPos.replaceChildren();
+    renderRuns(ui.dialogPos, entry, "pos", [], "未标注", state.data?.columnStyles?.pos);
+    ui.dialogMeaning.replaceChildren();
+    renderRuns(ui.dialogMeaning, entry, "meaning", [], "暂无释义", state.data?.columnStyles?.meaning);
     ui.dialogNotes.replaceChildren();
     ui.dialogNotes.hidden = !entry.notes;
     if (entry.notes) {
@@ -439,7 +493,7 @@ export function mountLexicon(): void {
       label.className = "lex-dialog-notes-label";
       label.textContent = fieldLabel("notes");
       const text = document.createElement("p");
-      text.textContent = entry.notes;
+      renderRuns(text, entry, "notes", [], "", state.data?.columnStyles?.notes);
       ui.dialogNotes.append(label, text);
     }
     ui.copy.textContent = "复制词条";
@@ -457,19 +511,19 @@ export function mountLexicon(): void {
       tr.append(cell(fieldLabel("word"), wordCell(entry, tokens), "word"));
       const phonetic = document.createElement("span");
       phonetic.className = entry.phonetic ? "lex-phonetic-cell" : "lex-phonetic-cell is-empty";
-      phonetic.textContent = entry.phonetic || "—";
+      renderRuns(phonetic, entry, "phonetic", tokens, "—", state.data?.columnStyles?.phonetic);
       phonetic.title = entry.phonetic || "词表未标注特殊读音";
       tr.append(cell(fieldLabel("phonetic"), phonetic, "phonetic"));
       const pos = document.createElement("span");
       pos.className = "lex-pos-badge";
-      pos.textContent = entry.pos || "—";
+      renderRuns(pos, entry, "pos", tokens, "—", state.data?.columnStyles?.pos);
       tr.append(cell(fieldLabel("pos"), pos, "pos"));
       const meaning = document.createElement("span");
-      meaning.append(highlight(entry.meaning || "—", tokens));
+      renderRuns(meaning, entry, "meaning", tokens, "—", state.data?.columnStyles?.meaning);
       tr.append(cell(fieldLabel("meaning"), meaning, "meaning"));
       const notes = document.createElement("span");
       notes.className = entry.notes ? "lex-note" : "lex-note is-empty";
-      notes.append(highlight(entry.notes || "—", tokens));
+      renderRuns(notes, entry, "notes", tokens, "—", state.data?.columnStyles?.notes);
       if (entry.notes) notes.title = entry.notes;
       tr.append(cell(fieldLabel("notes"), notes, "notes"));
       tr.addEventListener("click", () => openDetail(entry), { signal: controller.signal });

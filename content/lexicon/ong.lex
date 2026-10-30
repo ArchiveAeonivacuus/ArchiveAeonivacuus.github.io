@@ -1,0 +1,634 @@
+# name: 央额列语
+# native: Onglısch
+# format: ong
+# description: 央额列王国的官方语言。
+#column word ong
+#column phonetic en
+#column notes ong
+
+word | phonetic | pos | meaning | notes
+abauton |  | prep. | 关于 | 
+Abılam |  | name | 阿比兰洲 | 
+acıdus |  | adj. I | 酸的 | 
+acön |  | adj. I | 能够的 | 
+acquérıon |  | v. I | 得到 | 
+acroz |  | prep. | 横过 | 
+afor |  | prep. | 之前 | 
+after |  | prep. | 之后 | 
+aftor |  | adj. I | 后 | 
+aftor |  | part. | 在…后 | 
+agnel |  | n. m. | 角 | 
+agnēnst |  | prep. | 对抗 | 
+āgon |  | adv. | 再次 | 
+al |  | pron. | 所有 | 
+ald |  | adj. I | 老的 | 
+alıc |  | adj. I | 相似的 | 
+almast |  | adv. | 几乎 | 
+Almıtoƿ |  | name | 米图 | 
+álphabeta |  | n. f. | 字母表 | 
+alsƿā |  | conj. | 如同 | 
+amagnst |  | prep. | 在…中 | 
+an |  | art. | 一个 | 
+andsƿaron |  | v. I | 回答 | andsƿäron, andsƿäron
+ap |  | prep. | 向上 | 
+apel |  | n. m. | 苹果 | 
+appēlen |  | v. selb | 叫做 | 
+arm |  | n. m. | 手臂 | 
+art |  | n. f. | 艺术 | 
+at |  | prep. | 在 | 
+atıre |  | adj. I | 疲倦的 | 
+attacon |  | v. I | 攻击 | attäcon, attäcon
+aut |  | adv. | 外面 | 
+aux | /oːs/ | part. | 从 | 
+āƿacno |  | adj. I | 醒着的 | 
+bac |  | n. f. | 背部 | 
+bad |  | adj. I | 坏的 | 
+baı |  | prep. | 通过 | 
+baıon |  | v. I | 买 | 
+bān |  | n. f. | 骨头 | 
+bat |  | n. f. | 浴缸 | 
+bāt |  | n. m. | 船 | 
+Batıe |  | name | 巴提 | 
+baut |  | conj. | 但是 | 
+beáu | /boː/ | adj. II | 美的 | 
+becaus |  | conj. | 因为 | 
+bed |  | n. f. | 床 | 
+beı |  | part. | 由…完成；临近 | 
+bel |  | n. f. | 铃 | 
+ben |  | v. irr. | 是（系动词） | ƿaron, ben
+berg |  | n. m. | 山 | 
+berı |  | n. f. | 浆果 | 
+berston |  | v. I | 爆裂 | 
+betƿect |  | prep. | 之间 | 
+beu |  | n. f. | 蜜蜂 | 
+bıblıothéque | /biβliot⁽ʰ⁾ek/ | n. f. | 图书馆 | 
+bílatıc | /βilatik/ | n. f. | 村子 | 
+bırd |  | n. f. | 鸟 | 
+bısıgnes |  | n. f. | 生意 | 
+bıt |  | n. m. | 一点 | 
+bıter |  | adj. I | 苦的 | 
+bıton |  | v. I | 咬 | 
+blac |  | adj. I | 黑色的 | 
+blad |  | n. f. | 刀刃 | 
+blınd |  | adj. I | 盲目；瞎的 | 
+blū |  | adj. I | 蓝色的 | 
+blud |  | n. f. | 血液 | 
+boc |  | n. f. | 盒子 | 
+bodıg |  | n. f. | 身体 | 
+bón | /bɔ̃/ | adj. II | 好 | 
+bord |  | n. f. | 板 | 
+boter |  | n. f. | 黄油 | 
+bragon |  | n. f. | 大脑 | 
+bras |  | n. f. | 黄铜 | 
+brēd |  | n. f. | 面包 | 
+brēt |  | n. m. | 呼吸 | 
+brığ |  | n. f. | 桥 | 
+brınon |  | v. I | 燃烧 | 
+brocon |  | adj. I | 破碎的 | 
+brudor |  | n. m. | 兄弟 | 
+brūn |  | adj. I | 棕色的 | 
+bryct |  | adj. I | 明亮的 | 
+buc |  | n. f. | 书 | 
+but |  | n. f. | 靴子 | 
+bƿelgne |  | adj. I | 沸腾的 | 
+cald |  | adj. I | 冷的 | 
+cálm |  | adj. II | 安静的 | 
+camb |  | n. m. | 梳子 | 
+capıtulum |  | n. f. | 章节 | capıtula
+caro |  | n. f. | 关心 | 
+cart |  | n. f. | 卡片 | 
+cat |  | n. m. | 猫 | 
+cau |  | n. f. | 牛 | 
+caus |  | n. f. | 原因 | 
+cēıg |  | n. f. | 钥匙 | 
+céntrus |  | n. f. | 中心 | céntren
+cēpon |  | v. I | 保持 | 
+cértus |  | adj. II | 确定的 | 
+cest |  | n. m. | 箱子 | 
+cetıl |  | n. m. | 水壶 | 
+chéf | /ʃef/ | adj. II | 主要的 | 
+chémık |  | adj. II | 化学的 | 
+cíbıl | /siβil/ | n. f. | 城市；城 | 
+cın |  | n. f. | 下巴 | 
+cırıc |  | n. f. | 教堂 | 
+clāt |  | n. m. | 布料 | 
+claud |  | n. m. | 云 | 
+clēn |  | adj. I | 干净的 | 
+clıbor |  | adj. I | 粘的 | 
+cneu |  | n. f. | 膝盖 | 
+cnıf |  | n. f. | 刀 | 
+cnoto |  | n. m. | 结 | 
+coğıtant |  | adj. I | 有意识的 | 
+comon |  | v. I | 来 | cam, gacamon
+complec |  | adj. I | 复杂的 | 
+consu |  | n. m. | 浮世根须 | 
+cóntent | /kɔ̃tã/ | n. m. | 心里；心中；想法；内心；里面；内容 | 
+contı |  | n. f. | 县；郡 | 
+cop |  | n. f. | 杯子 | 
+coper |  | n. f. | 铜 | 
+córpor |  | adj. II | 身体的 | 
+coson |  | v. I | 亲吻 | cöson, gacöson
+cracen |  | v. II | 裂开 | （兼名词）
+créat |  | adj. II | 计划 | 
+cuc |  | n. m. | 厨师 | 
+cul |  | n. f. | 煤 | 
+cƿıc |  | adj. I | 快的 | 
+cygn |  | n. m. | 王 | 
+cygndom |  | n. f. | 王国 | 
+cyss |  | n. m. | 奶酪 | 
+dā |  | pron. | 那个 | 
+dag |  | n. m. | 日子 | 
+darc |  | adj. I | 黑暗的 | 
+de |  | art. | 定冠词（属格） | 
+deād |  | adj. I | 死的 | 
+deāt |  | n. m. | 死亡 | 
+deur |  | adj. I | 亲爱的 | 
+dévınomes |  | n. f. | 怪 | 
+dı |  | art. | 定冠词（阴性） | 
+dístans |  | n. m. | 距离 | 
+do |  | art. | 定冠词（阳性） | 
+doğ |  | n. m. | 狗 | 
+dohtor |  | n. f. | 女儿 | 
+Domınan |  | name | 多米赧 | 
+döp |  | adj. I | 深的 | 
+dost |  | n. f. | 灰尘 | 
+drafton |  | n. f. | 入水；深度 | 
+drēnen |  | v. II | 排水 | （兼名词）
+drıg |  | adj. I | 干的 | 
+drıncon |  | v. I | 喝 | drancon, gadruncon
+drō |  | n. m. | 树 | 继承层
+drop |  | n. m. | 水滴 | 
+dun |  | v. irr. | 做 | dun, dan
+dūn |  | prep. | 向下 | 
+dur |  | n. f. | 门 | 
+dyu |  | n. f. | 颜色；染色 | dyon
+dzē |  | pron. | 怹 | 
+ebnon |  | adv. | 甚至 | 
+ēfor |  | adv. | 曾经 | 
+ēg |  | n. f. | 蛋 | 
+eğ |  | n. f. | 边缘 | 
+égal |  | adj. II | 相等的 | 
+ēge |  | n. f. | 眼睛 | 
+end |  | n. m. | 结束 | 
+ēnıg |  | pron. | 任何 | 
+enuıg |  | adv. | 足够 | 
+ēre |  | n. f. | 耳朵 | 
+ērlıc |  | adj. I | 早的 | 
+erte |  | n. f. | 地球 | 
+ēson |  | v. I | 吃 | ōsdon, galōson
+ēst |  | n. m. | 东方 | 
+éur |  | n. f. | 小时 | 
+fader |  | n. m. | 父亲 | 
+faır |  | n. f. | 火 | 
+falon |  | v. I | 落下 | foldon, gafälon
+fálsus |  | adj. II | 错误的 | 
+famılī |  | n. f. | 家庭 | 
+faron |  | v. I | 害怕 | färdon, gafäron
+fast |  | adj. I | 快 | 
+fat |  | adj. I | 胖的 | 
+fect |  | n. m. | 战斗 | 
+feder |  | n. f. | 羽毛 | 
+feld |  | n. m. | 田野 | 
+fenson |  | v. I | 打喷嚏 | 
+féro |  | n. f. | 铁 | 
+fers |  | n. m. | 诗句 | 
+fıc |  | adj. I | 固定的 | 
+fınger |  | n. m. | 手指 | 
+fırst |  | adj. I | 第一的 | 
+fısı | /fiʃ/ | n. m. | 鱼 | 
+fıt |  | adj. I | 健康的 | 
+flet |  | adj. I | 平的 | 
+flıct |  | n. m. | 飞行 | 
+flōgon |  | v. I | 飞 | 
+flur |  | n. m. | 地板 | 
+fogel |  | n. m. | 家禽 | 
+fol |  | adj. I | 满的 | 
+for |  | adj. I | 前 | 
+for |  | prep. | 为了 | 
+fōr |  | adv. | 远 | 
+forc |  | n. f. | 叉子 | 
+fors |  | n. m. | 马 | förson
+forsopoƿar |  | n. f. | 马力 | 
+forƿard |  | adv. | 向前 | 
+fp |  | abbr. | 马力 | 
+framen |  | v. II | 构建 | （兼名词）
+freond |  | n. m. | 朋友 | 
+freu |  | adj. I | 自由的 | 
+frıgn |  | n. m. | 戒指 | 
+fruf |  | n. f. | 屋顶 | 
+frúıt |  | adj. II | 肥沃的 | 
+frœnd |  | n. m. | 朋友 | 
+fuda |  | n. m. | 食物 | 
+fungus |  | n. f. | 蘑菇 | fungı
+fut |  | n. m. | 脚 | 
+gabırd |  | n. f. | 出生 | 
+gacutde |  | adj. I | 切割的 | 
+gacynd |  | adj. I | 亲切的 | 
+galēf |  | n. m. | 信念 | 
+gamarıérde |  | adj. II | 已婚的 | 
+gāon |  | v. I | 去 | 
+gār |  | n. f. | 年 | 
+gasond |  | n. f. | 声音 | 
+gāt |  | n. f. | 山羊 | 
+gaust |  | n. m. | 鬼怪 | 
+geloƿ |  | adj. I | 黄色的 | 
+geográpfıe |  | n. f. | 地理 | 
+Ğerco |  | name | 杰科 | 
+gıebon |  | v. I | 给予 | gebdon, gagıebde
+gıs |  | adv. | 是 | 
+glas |  | n. f. | 玻璃 | 
+gōgn |  | adj. I | 年轻的 | 
+gold |  | n. f. | 黄金 | 
+gráfıc |  | n. m. | 图表 | 
+gránd | /grã/ | adj. II | 大的 | 
+gras |  | n. f. | 草 | 
+greāt |  | adj. I | 伟大的 | 
+grēd |  | adj. I | 贪婪的 | 
+grēn |  | adj. I | 绿色的 | 
+grupp |  | n. m. | 组合 | 
+gud |  | adj. I | 好的 | 语音演变中的例外：中世加缀
+hābon |  | v. irr. | 有 | hādon, gahāde
+hād |  | n. m. | 早晨 | 
+hād |  | adj. I | 快乐的 | 
+hād |  | n. m. | 早晨 | 
+hagne |  | adj. I | 悬挂的 | 
+hagnon |  | v. I | 悬挂 | hägndon, gahägnon
+hamor |  | n. m. | 锤子 | 
+hand |  | n. f. | 手 | 
+hard |  | adj. I | 困难的 | 
+hat |  | n. m. | 帽子 | 
+hau |  | adv. | 如何 | 
+haus |  | n. m. | 房子 | 
+hē |  | pron. | 他 | 
+hēc |  | adj. I | 高的 | 
+hecceo |  | adj. II | 六个 | 
+hēfed |  | n. f. | 头 | 
+helpon |  | v. I | 帮助 | 
+hēr |  | adv. | 这里 | 
+hēr |  | n. f. | 头发 | 
+herte |  | n. f. | 心脏 | 
+het |  | n. m. | 仇恨 | 
+hēto |  | n. f. | 热量 | 
+hıt |  | pron. | 这 | 
+hıt | /is/ | pron. | 这个 | 
+hlaud |  | adj. I | 大声的 | 
+hloƿ |  | adj. I | 低的 | 
+hnec |  | n. m. | 脖子 | 
+hnoto |  | n. f. | 坚果 | 
+hoc |  | n. m. | 钩子 | 
+holen |  | v. II | 打洞 | （兼名词）
+holoƿ |  | adj. I | 中空的 | 
+hōm |  | n. m. | 家 | 语音演变中的例外：中世加缀
+hómınes |  | n. f. | 人；妖 | 
+hómo |  | n. m. | 人 | 
+hopo |  | n. m. | 希望 | 
+horn |  | n. f. | 号角 | 
+hōron |  | v. I | 听 | hörd, gahöron
+hƿā |  | pron. | 谁 | 
+hƿan |  | adv. | 何时 | 
+hƿanar |  | n. m. | 过去 | 
+hƿanar |  | part. | 尽管 | 
+hƿār |  | adv. | 哪里 | 
+hƿēl |  | n. m. | 轮子 | 
+hƿı |  | adv. | 为什么 | 
+hƿıl |  | conj. | 当…时 | 
+hƿıstlon |  | v. I | 吹哨 | 
+hƿīt |  | adj. I | 白色的 | 
+ıb |  | conj. | 如果 | 
+ıc |  | pron. | 我 | 
+ıestron |  | adv. | 昨天 | 
+ıll |  | adj. I | 生病的 | 
+ımportánt |  | adj. II | 重要的 | 
+ın |  | prep. | 在…内 | 
+Iognıs |  | name | 瀛洲 | 
+ıren |  | n. f. | 铁 | 
+íslo |  | n. f. | 岛屿 | ísla
+lagn |  | adj. I | 长 | 
+lagnt |  | n. f. | 长度 | 
+lago |  | n. f. | 法律 | 
+lampyrídæ |  | n. f. | 萤火虫 | lampyrída
+land |  | n. f. | 土地 | 
+lät |  | adj. I | 晚的 | 
+latost |  | adj. I | 最后的 | 
+laucon |  | v. I | 笑 | 
+leāf |  | n. f. | 叶子 | 
+lēdon |  | v. I | 领导 | 
+lernon |  | n. f. | 学习 | 
+leter |  | n. f. | 皮革 | 
+léter |  | n. m. | 信件 | 
+lēton |  | v. I | 让 | 
+lıbon | /liβən/ | v. I | 居住 | 
+lıct |  | adj. I | 明亮的 | 
+lıct |  | n. f. | 灯 | 
+lıfıend |  | adj. I | 活的 | 
+lıft |  | n. m. | 天空 | 
+lın |  | n. f. | 线 | 
+lıppon |  | n. f. | 嘴唇 | 
+lısens |  | n. m. | 许可证 | 
+lıst |  | n. f. | 列表 | 
+lıtel |  | pron. | 少许 | 
+locon |  | v. I | 锁上 | löcdon, galöcon
+lofon |  | v. I | 爱 | löfdon, gafölon
+loıaltı |  | n. f. | 忠诚 | 
+lōs |  | adj. I | 松的 | 
+los |  | n. f. | 损失 | 
+lucen |  | v. II | 看 | 
+macen |  | v. II | 制造 | 
+magıcum |  | n. f. | 魔法 | 
+mağuct |  | adj. I | 魔法的 | 
+man |  | n. m. | 男人 | 
+mār |  | adj. I | 更多的 | 
+marc |  | n. f. | 标记 | 
+márın |  | adj. II | 海洋的 | 
+márıne |  | n. f. | 大海 | 
+mas |  | n. f. | 质量 | 
+match |  | n. f. | 火柴 | 
+médı |  | adj. II | 中间的 | 
+mēıg |  | v. model | 可以 | mēıgd, mēıgd
+melc |  | n. f. | 牛奶 | 
+melo |  | n. f. | 餐 | 
+mēt |  | n. f. | 肉 | 
+mın |  | n. f. | 矿 | 
+mıst |  | n. m. | 薄雾 | 
+místre |  | n. m. | 先生 | 
+místress |  | n. f. | 女士 | 
+mícce | /miks/ | adj. I | 混合的 | 
+módel |  | n. m. | 模型 | 
+Mondanıa |  | name | 门怛尼亚 | 
+mónıta |  | n. m. | 钱 | 
+mt |  | abbr. | 米 | 
+mudor |  | n. f. | 母亲 | 
+mun |  | n. f. | 月亮 | 
+mut |  | n. m. | 嘴 | 
+mutchel |  | pron. | 很多 | 
+nağan |  | n. m. | 吟游律者 | 
+nagol |  | n. m. | 指甲 | 
+nam |  | n. m. | 名字 | 
+nān |  | pron. | 没有 | 
+naroƿ |  | adj. I | 狭窄的 | 
+nēdl |  | n. f. | 针 | 
+nēdon |  | v. I | 需要 | 
+nēr |  | adv. | 附近 | 
+net |  | n. f. | 网 | 
+neƿ |  | adv. | 现在 | 
+nıct |  | n. f. | 夜晚 | 
+nīƿ |  | adj. I | 新的 | 
+noct |  | adv. | 不 | 
+Nóctıstıcum |  | n. f. | 整然 | 
+normal |  | adj. I | 正常的；普通的 | 
+nort |  | n. m. | 北方 | 
+nosu |  | n. f. | 鼻子 | 
+number |  | n. f. | 数字 | 
+ob |  | prep. | 的 | 
+oben |  | n. m. | 烤箱 | 
+of |  | prep. | 离开 | 
+on |  | adj. I | 仅有的 | 
+ond |  | conj. | 和 | 
+onder |  | prep. | 在…下 | 
+Ongland |  | name | 央额列 | 
+Onglısch |  | adj. I | 央额列的 | 
+open |  | adj. I | 开放的 | 
+orcestrá |  | n. f. | 乐队 | 
+ord |  | n. m. | 地方 | 
+órığın |  | n. f. | 起源 | 
+Orken |  | name | 於留根 | 
+Oson |  | n. m. | 食物 | 
+ot |  | conj. | 或者 | 
+panıc |  | adj. I | 恐慌；害怕 | 
+pen |  | n. m. | 笔 | 
+per |  | part. | 每 | 
+phrúıt |  | n. f. | 水果 | 
+pın |  | n. m. | 别针 | 
+pıpen |  | n. m. | 管道 | 
+pīso |  | n. m. | 碎片 | 
+plant |  | n. f. | 植物 | 
+pleasánt | /plesã/ | n. f. | 愉快；很好；你好 | 
+pleg |  | n. m. | 戏剧 | 
+pleƿ |  | n. m. | 危险 | 
+polen |  | v. II | 拉 | 
+polstergaust |  | n. m. | 骚灵 | 
+port |  | n. f. | 港口 | 
+post |  | n. m. | 帖子 | 
+pot |  | n. m. | 锅 | 
+poten |  | v. II | 放置 | 
+poƿar |  | n. f. | 力量 | 
+preıon |  | v. I | 请 | 
+preıs |  | adv. | 请 | 
+Prosıa |  | name | 普罗些 | 
+psýchınes |  | n. f. | 魔 | 
+públıc |  | adj. II | 公共的 | 
+publíschon |  | v. I | 出版 | 
+pūr |  | adj. I | 简单的 | 
+Quakapa |  | name | 戈可波 | 
+Quaporo |  | name | 戈波罗 | 
+questíon |  | n. f. | 问题 | 
+quıt |  | adv. | 相当，非常 | 
+quotatíon |  | n. f. | 引言 | 
+rād |  | n. f. | 道路 | 
+rannon |  | v. I | 跑 | rond, garonnon
+raston |  | v. I | 休息 | 
+rat |  | n. f. | 老鼠 | 
+ráu |  | adj. II | 灰色的 | 
+rauc |  | adj. I | 粗糙的 | 
+raum |  | n. m. | 房间 | 
+Réalıstıcum |  | n. f. | 罗生 | 
+rēd |  | adj. I | 红色的 | 
+rēdo |  | adj. I | 准备好的 | 
+rēdon |  | v. I | 阅读 | 
+regardon |  | v. I | 评论 | 
+regon |  | n. f. | 雨 | 
+regnon |  | v. I | 下雨 | 
+rıct |  | adj. I | 正确的 | 
+rod |  | n. m. | 杆 | 
+rōra |  | n. m. | 嚎叫 | 
+rund |  | adj. I | 圆的 | 
+sad |  | adj. I | 悲伤的 | 
+sagn |  | n. m. | 歌曲 | 
+sáınt |  | adj. II | 圣 | 
+saıto |  | n. f. | 网站 | 
+salton |  | n. m. | 盐 | 
+sampo |  | n. m. | 沼泽 | 
+sanc |  | n. f. | 腿 | 
+sand |  | n. m. | 沙子 | 
+sāpo |  | n. f. | 肥皂 | 
+saut |  | n. m. | 南方 | 
+schacon |  | v. I | 摇动 | 
+schado |  | n. f. | 阴影 | 
+schamo |  | n. f. | 羞耻 | 
+scharp |  | adj. I | 锋利的 | 
+schē |  | pron. | 她 | 
+schēp |  | n. f. | 羊 | 
+schınn |  | n. f. | 皮肤 | 
+schıp |  | n. f. | 船 | 
+Schnoc |  | name | 史诺科 | 
+schōrt |  | adj. I | 短的 | 
+schyton |  | adj. I | 关闭的 | 
+scrıppgne |  | n. f. | 写作 | 
+scrıppon |  | v. I | 写 | 
+scrıppor |  | n. m. | 作者 | 
+sē |  | n. f. | 海 | 
+sēcon |  | v. I | 寻找 | 
+sécond | /sekõ/ | adj. I | 第二的 | 
+sēd |  | n. f. | 种子 | 
+segel |  | n. f. | 帆 | 
+segon |  | v. I | 说 | 
+selb |  | n. f. | 自我 | 
+selbor |  | n. f. | 银 | 
+seloc |  | n. m. | 丝绸 | 
+sēmbler |  | v. irr. | 似乎 | 
+sendon |  | v. I | 发送 | 
+sēon |  | v. I | 看见 | sō, gasōnde
+sıdo |  | n. f. | 侧面 | 
+sıhrut |  | n. f. | 息律 | 
+sıırt |  | n. f. | 衬衫 | 
+Sırcon |  | name | 悉根洲 | 
+sıu |  | n. m. | 鞋子 | 
+slāƿ |  | adj. I | 慢的 | 
+slēpan |  | n. m. | 睡眠 | 
+slıpon |  | v. I | 滑倒 | 
+smal |  | adj. I | 小的 | 
+smut |  | adj. I | 光滑的 | 
+snac |  | n. m. | 蛇 | 
+snāƿ |  | n. m. | 雪 | 
+soc |  | n. m. | 袜子 | 
+soddon |  | adj. I | 突然的 | 
+sólar |  | n. m. | 太阳（神圣的） | 
+som |  | pron. | 一些 | 
+somor |  | n. m. | 夏天 | 
+spado |  | n. f. | 铁锹 | 
+spézıal |  | adj. II | 特殊的 | 
+spírıtunes |  | n. f. | 灵 | 
+sponğ |  | n. f. | 海绵 | 
+spraco |  | n. m. | 语言 | 
+spracon |  | v. I | 说 | 
+sprıgnon |  | v. I | 跳 | （兼名词）
+spun |  | n. m. | 勺子 | 
+stān |  | n. m. | 石头 | 
+standon |  | v. I | 站立 | stondeon, gastondon
+stēm |  | n. m. | 蒸汽 | 
+stemon |  | v. I | 阻止 | （兼名词）
+stempon |  | v. I | 跺 | （兼名词）
+stencon |  | v. I | 闻 | 
+step |  | n. m. | 走，踏 | 
+sterra |  | n. m. | 星星 | 
+stıc |  | n. m. | 缝合 | 
+stıco |  | n. m. | 棍子 | 
+stıf |  | adj. I | 僵硬的 | 
+stıl |  | adv. | 仍然 | 
+stīl |  | n. f. | 钢 | 
+stoco |  | n. f. | 长袜 | 
+stōn |  | adj. I | 严肃的 | 
+stopen |  | v. II | 停止 | 
+stragn |  | adj. I | 强壮的 | 
+straso |  | n. m. | 大街；大道；（尤）商业街 | 
+strect |  | adj. I | 直的 | 
+streıt |  | n. m. | 街道 | 
+stretchon |  | v. I | 伸展 | 
+sü | /y/ | pron. | 你们 | 
+sü | /y/ | pron. | 您 | 
+sub |  | prep. | 跟随 | 
+suft |  | adj. I | 柔软的 | 
+sun |  | n. m. | 儿子 | 
+sunne |  | n. f. | 太阳 | 
+sƿā |  | adj. I | 相同的 | 
+sƿestor |  | n. f. | 姐妹 | 
+sƿēt |  | adj. I | 甜的 | 
+sƿetol |  | adj. I | 清晰的 | 
+sƿıltch |  | adj. I | 这样的 | 
+sƿımon |  | v. I | 游泳 | sƿamon, gasƿomde
+systém |  | n. f. | 系统 | 
+tā |  | n. m. | 脚趾 | 
+tacen |  | v. II | 拿 | tocen, tocen
+tagg |  | n. m. | 标签 | 
+tāh |  | conj. | 虽然 | 
+taıl |  | n. m. | 尾巴 | 
+Tamrá |  | name | 谭魔罗 | 
+tan |  | adv. | 然后 | 
+Tara |  | name | 多罗 | 
+taum |  | n. m. | 拇指 | 
+taun |  | n. m. | 城镇 | 
+tchalc |  | n. m. | 粉笔 | 
+tchēp |  | adj. I | 便宜的 | 
+tēcon |  | v. I | 拿 | tōcdon, gatōcon
+tēr |  | adv. | 那里 | 
+tēron |  | v. I | 撕裂 | 
+tētchon |  | n. f. | 教学 | 
+thema |  | n. f. | 主题 | 
+thymōn |  | adj. I | 生气的 | 
+tıc |  | adj. I | 厚的 | 
+tıct |  | adj. I | 紧的 | 
+tıgn |  | n. f. | 事物 | 
+tıllen |  | prep. | 直到 | 
+tım |  | n. m. | 时间 | 
+tın |  | n. f. | 锡 | 
+tın |  | adj. I | 薄的 | 
+tmā |  | pron. | 他们 | 
+to |  | prep. | 到 | 
+togader |  | adv. | 一起 | 
+ton |  | prep. | 比 | 
+tonor |  | n. m. | 雷声 | 
+top |  | n. m. | 顶部 | 
+tornen |  | v. II | 转 | 
+Toƿan |  | name | 土宛 | 
+traƿ |  | n. m. | （高大的）树 | 方言回借
+trēd |  | n. m. | 线 | 
+tredon |  | v. I | 交易 | 
+tréncho |  | n. m. | 海沟 | 
+trēƿ |  | n. m. | 托盘 | 
+trēƿ |  | adj. I | 真实的 | 
+trōg |  | prep. | 穿过 | 
+trot |  | n. m. | 喉咙 | 
+tü |  | pron. | 你 | 
+tuct |  | n. m. | 想法 | 
+tumorgen |  | adv. | 明天 | 
+tung |  | n. f. | 舌头 | 
+tut |  | n. m. | 牙齿 | tüt
+tƿıst |  | n. m. | 扭曲 | 
+tƿıston |  | v. I | 鸣叫 | 
+üfer |  | prep. | 在…上方 | 
+ugland |  | n. f. | 岛屿 | 
+umlaut |  | n. f. | 带两点的字母；变音字母 | 
+umlaut |  | adj. I | 带两点的；变音的 | 
+uncértu |  | adj. II | 不确定的 | 
+utor |  | pron. | 其他 | 
+vélo |  | n. m. | 速度 | 
+vl |  | abbr. | 标准速度（米每秒） | 
+vulgár |  | adj. II | 常见的 | 
+ƿætch |  | n. f. | 手表 | 
+ƿagen |  | v. II | 挥手 | 
+ƿal |  | n. m. | 墙 | 
+ƿalgon |  | v. I | 走 | 
+Ƿalhala |  | name | 斡诃罗 | 
+ƿarm |  | adj. I | 温暖的 | 
+ƿartgne |  | adj. I | 等待的 | 
+ƿaschon |  | v. I | 洗 | 
+ƿator |  | n. f. | 水 | 
+ƿax |  | n. f. | 蜡 | 
+ƿeder |  | n. f. | 天气 | 
+ƿeıg |  | n. m. | 道路 | 
+ƿel |  | adv. | 好 | 
+ƿercon |  | v. I | 工作 | 
+ƿest |  | n. m. | 西方 | 
+ƿēton |  | adj. I | 湿的 | 
+ƿıd |  | adj. I | 宽的 | 
+ƿıddt | /wit/ | n. f. | 宽度 | 
+ƿıfman |  | n. f. | 女人 | 
+ƿıllcoman |  | phrase | 欢迎光临 | 
+ƿıllon |  | v. model | 想要（情态动词） | ƿollon, gaƿollde
+ƿīn |  | n. m. | 葡萄酒 | 
+ƿındon |  | n. f. | 风 | 
+ƿındon |  | v. I | 缠绕 | 
+ƿınstor |  | adj. I | 左边的 | 
+ƿınter |  | n. m. | 冬天 | 
+ƿıro |  | n. m. | 战争 | 
+ƿıs |  | adj. I | 明智的 | 
+ƿoco |  | n. f. | 星期 | 
+ƿol |  | n. f. | 羊毛 | 
+ƿolfan |  | n. m. | 狼 | ƿölfan
+ƿond |  | n. f. | 伤口 | 
+ƿorm |  | n. m. | 虫子 | 
+ƿrogn |  | adj. I | 错误的 | #en[/rwoŋ/]
+ƿrut |  | n. f. | 根 | 
+ƿudu |  | n. f. | 木头 | 
+ynlıc |  | adv. | 仅仅 | 
+Zanısch |  | name | 查尼史 | 

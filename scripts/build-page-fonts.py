@@ -219,6 +219,26 @@ LEXICON_UI_TEXT = """
 重新加载
 """
 
+STYLE_CLASSES = {
+    "ja": "ff-ja",
+    "kr": "ff-kr",
+    "old-ja": "ff-ja_old",
+    "ong": "ff-ong",
+    "en": "ff-en",
+    "ar": "ff-ar",
+    "rom": "ff-rom",
+    "zh": "ff-zh_cn",
+    "zh-tw": "ff-zh_tw",
+    "old-cjk": "ff-cjk_old",
+    "lxgw": "ff-lxgw",
+    "kai": "ff-kai",
+    "mincho": "ff-min",
+}
+
+
+def style_css_class(style):
+    return STYLE_CLASSES.get(style, style if style.startswith("ff-") else "ff-" + style)
+
 
 def lexicon_text_and_classes():
     """Text and font classes rendered by the client-side lexicon table.
@@ -273,13 +293,29 @@ def lexicon_text_and_classes():
             label = str(field.get("label", ""))
             parts.append(label)
             bold_parts.append(label)
+        for style in (data.get("columnStyles") or {}).values():
+            classes.add(style_css_class(str(style)))
         for entry in data.get("entries", []):
+            row_style = entry.get("rowStyle")
+            if row_style:
+                classes.add(style_css_class(str(row_style)))
             for key in ("word", "phonetic", "pos", "meaning", "notes"):
                 value = entry.get(key)
                 if value:
                     parts.append(str(value))
                     if key in ("word", "pos"):
                         bold_parts.append(str(value))
+            runs = entry.get("runs") or {}
+            for key, field_runs in runs.items():
+                for run in field_runs:
+                    value = run.get("text")
+                    if value:
+                        parts.append(str(value))
+                        if key in ("word", "pos"):
+                            bold_parts.append(str(value))
+                    style = run.get("style")
+                    if style:
+                        classes.add(style_css_class(str(style)))
 
     _LEXICON_CACHE = ("\n".join(parts), classes, "\n".join(bold_parts))
     return _LEXICON_CACHE

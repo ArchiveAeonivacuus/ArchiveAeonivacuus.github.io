@@ -7427,6 +7427,24 @@ var SORT_OPTIONS = [
   { value: "pos-asc", label: "\u8BCD\u6027" },
   { value: "length-asc", label: "\u8BCD\u5F62\u957F\u5EA6" }
 ];
+var STYLE_CLASSES = {
+  ja: "ff-ja",
+  kr: "ff-kr",
+  "old-ja": "ff-ja_old",
+  ong: "ff-ong",
+  en: "ff-en",
+  ar: "ff-ar",
+  rom: "ff-rom",
+  zh: "ff-zh_cn",
+  "zh-tw": "ff-zh_tw",
+  "old-cjk": "ff-cjk_old",
+  lxgw: "ff-lxgw",
+  kai: "ff-kai",
+  mincho: "ff-min"
+};
+function styleClass(style) {
+  return STYLE_CLASSES[style] ?? (style.startsWith("ff-") ? style : `ff-${style}`);
+}
 var SPECIAL_FOLDS = [
   [/[ƿǷ]/g, "w"],
   [/ı/g, "i"],
@@ -7469,6 +7487,21 @@ function highlight(text, tokens) {
   }
   if (last < text.length) fragment.append(text.slice(last));
   return fragment;
+}
+function renderRuns(target, entry, field, tokens, fallback, columnStyle) {
+  const runs = entry.runs?.[field] ?? [{ text: entry[field] || fallback, style: null }];
+  const baseStyle = entry.rowStyle ?? columnStyle ?? null;
+  for (const run of runs) {
+    const style = run.style ?? baseStyle;
+    if (style) {
+      const span = document.createElement("span");
+      span.className = styleClass(style);
+      span.append(highlight(run.text, tokens));
+      target.append(span);
+    } else {
+      target.append(highlight(run.text, tokens));
+    }
+  }
 }
 async function fetchJson(url, signal) {
   const response = await fetch(url, { signal });
@@ -7767,18 +7800,22 @@ function mountLexicon() {
     const word = document.createElement("span");
     word.className = "lex-word";
     if (state.data?.wordClass) word.classList.add(state.data.wordClass);
-    word.append(highlight(entry.word, tokens));
+    renderRuns(word, entry, "word", tokens, "", state.data?.columnStyles?.word);
     wrap.append(word);
     return wrap;
   }
   function openDetail(entry) {
     activeEntry = entry;
-    ui.dialogWord.textContent = entry.word;
+    ui.dialogWord.replaceChildren();
     ui.dialogWord.className = state.data?.wordClass ?? "";
-    ui.dialogPhon.textContent = entry.phonetic || "\u672A\u6807\u6CE8\u7279\u6B8A\u8BFB\u97F3";
+    renderRuns(ui.dialogWord, entry, "word", [], "", state.data?.columnStyles?.word);
+    ui.dialogPhon.replaceChildren();
+    renderRuns(ui.dialogPhon, entry, "phonetic", [], "\u672A\u6807\u6CE8\u7279\u6B8A\u8BFB\u97F3", state.data?.columnStyles?.phonetic);
     ui.dialogPhon.hidden = false;
-    ui.dialogPos.textContent = entry.pos || "\u672A\u6807\u6CE8";
-    ui.dialogMeaning.textContent = entry.meaning || "\u6682\u65E0\u91CA\u4E49";
+    ui.dialogPos.replaceChildren();
+    renderRuns(ui.dialogPos, entry, "pos", [], "\u672A\u6807\u6CE8", state.data?.columnStyles?.pos);
+    ui.dialogMeaning.replaceChildren();
+    renderRuns(ui.dialogMeaning, entry, "meaning", [], "\u6682\u65E0\u91CA\u4E49", state.data?.columnStyles?.meaning);
     ui.dialogNotes.replaceChildren();
     ui.dialogNotes.hidden = !entry.notes;
     if (entry.notes) {
@@ -7786,7 +7823,7 @@ function mountLexicon() {
       label.className = "lex-dialog-notes-label";
       label.textContent = fieldLabel("notes");
       const text = document.createElement("p");
-      text.textContent = entry.notes;
+      renderRuns(text, entry, "notes", [], "", state.data?.columnStyles?.notes);
       ui.dialogNotes.append(label, text);
     }
     ui.copy.textContent = "\u590D\u5236\u8BCD\u6761";
@@ -7803,19 +7840,19 @@ function mountLexicon() {
       tr.append(cell(fieldLabel("word"), wordCell(entry, tokens), "word"));
       const phonetic = document.createElement("span");
       phonetic.className = entry.phonetic ? "lex-phonetic-cell" : "lex-phonetic-cell is-empty";
-      phonetic.textContent = entry.phonetic || "\u2014";
+      renderRuns(phonetic, entry, "phonetic", tokens, "\u2014", state.data?.columnStyles?.phonetic);
       phonetic.title = entry.phonetic || "\u8BCD\u8868\u672A\u6807\u6CE8\u7279\u6B8A\u8BFB\u97F3";
       tr.append(cell(fieldLabel("phonetic"), phonetic, "phonetic"));
       const pos = document.createElement("span");
       pos.className = "lex-pos-badge";
-      pos.textContent = entry.pos || "\u2014";
+      renderRuns(pos, entry, "pos", tokens, "\u2014", state.data?.columnStyles?.pos);
       tr.append(cell(fieldLabel("pos"), pos, "pos"));
       const meaning = document.createElement("span");
-      meaning.append(highlight(entry.meaning || "\u2014", tokens));
+      renderRuns(meaning, entry, "meaning", tokens, "\u2014", state.data?.columnStyles?.meaning);
       tr.append(cell(fieldLabel("meaning"), meaning, "meaning"));
       const notes = document.createElement("span");
       notes.className = entry.notes ? "lex-note" : "lex-note is-empty";
-      notes.append(highlight(entry.notes || "\u2014", tokens));
+      renderRuns(notes, entry, "notes", tokens, "\u2014", state.data?.columnStyles?.notes);
       if (entry.notes) notes.title = entry.notes;
       tr.append(cell(fieldLabel("notes"), notes, "notes"));
       tr.addEventListener("click", () => openDetail(entry), { signal: controller.signal });

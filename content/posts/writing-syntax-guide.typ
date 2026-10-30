@@ -270,36 +270,41 @@ Mermaid 在 PDF 中以原始代码显示；复杂图建议导出成图片。
 
 == 十一、造语词表维护
 
-站点词表页是 `/lexicon/`。每种语言只需要维护**一个 CSV**：文件开头用 `# 键: 值` 描述语言，第一条非 `#` 行是通用列标签，之后是词条。构建脚本会自动扫描 `content/lexicon/` 下的所有 CSV，自动生成 `assets/lexicon/index.json` 和各语言 JSON，不需要单独的清单或手动索引。
+站点词表页是 `/lexicon/`。每种语言使用一个 `.lex` 文件，文件开头描述语言和列样式，之后每行一个词条。构建脚本会自动扫描 `content/lexicon/`，自动生成 `assets/lexicon/index.json` 和各语言 JSON，不需要单独的清单或手动索引。
 
 === 文件
 
 | 文件 | 用途 |
 | --- | --- |
-| `content/lexicon/ong.csv` | 央额列语词条 + 语言元数据 |
-| `scripts/build-lexicon.mjs` | 扫描 CSV，生成 `assets/lexicon/*.json` |
+| `content/lexicon/ong.lex` | 央额列语词条 + 语言元数据 |
+| `scripts/build-lexicon.mjs` | 扫描 `.lex` / `.csv`，生成 `assets/lexicon/*.json` |
+| `scripts/convert-lexicon-csv.mjs` | 把旧 CSV 转成 `.lex` |
 | `assets/lexicon/*.json` | 自动生成，不要手改 |
-| `assets/scripts/lexicon.ts` | 搜索、筛选、分页、弹窗 |
+| `assets/scripts/lexicon.ts` | 搜索、筛选、分页、弹窗、样式渲染 |
 | `assets/styles/lexicon.css` | 词表页样式、读音样式 |
 
-=== CSV 格式
+=== .lex 格式
 
-```csv
+```text
 # name: 央额列语
 # native: Onglısch
 # format: ong
-# description: 央额列王国的官方语言。
-word,pos,phonetic,notes,meaning
-abauton,prep.,,,关于
-fısı,n. f.,/fiʃ/,,鱼
+#column word ong
+#column phonetic en
+
+word | phonetic | pos | meaning | notes
+abauton |  | prep. | 关于 | 
+@rom | Arcanum | /arˈkaːnum/ | n. | 秘仪 | 注释里有 #ong[Onglısch] 这个词
 ```
 
-- 文件开头连续的 `# 键: 值` 行是语言元数据。
-- 第一条非 `#` 行是通用表头，推荐固定为 `word,pos,phonetic,notes,meaning`。
-- 之后每行一个词条；字段内有逗号时用双引号包起来。
+- 文件开头的 `# 键: 值` 是语言元数据。
+- `#column 字段 样式` 给整列指定样式。
+- 行首 `@样式` 给整行指定样式。
+- 单元格里的 `#样式[...]` 只给局部文字指定样式。
+- 优先级：`#样式[...]` > 行 `@...` > 列 `#column` > 语言默认 `format`。
+- `|` 分隔单元格；单元格内写字面竖线时用 `\|`。
+- 空单元格直接留空，不需要引号。
 - 用 UTF-8 保存；带不带 BOM 均可。
-- `phonetic` 只放特殊读音；没有就留空，页面显示 `—`。
-- 旧表头（如 `ƿörds`、`Térrano Kanzocan`）也能识别，但建议统一成通用表头。
 
 支持的元数据：
 
@@ -307,7 +312,7 @@ fısı,n. f.,/fiʃ/,,鱼
 | --- | --- |
 | `name` | 页面上的语言显示名 |
 | `native` | 语言自称 |
-| `format` | 词条和自称的字体格式 |
+| `format` | 词条和自称的默认字体格式 |
 | `description` | 语言标签下方的说明 |
 | `order` | 多语言时的排序号，可选 |
 | `wordclass` | 只覆盖词条格式，可选 |
@@ -317,7 +322,7 @@ fısı,n. f.,/fiʃ/,,鱼
 
 === 修改词条
 
-1. 编辑 `content/lexicon/ong.csv`；
+1. 编辑 `content/lexicon/ong.lex`；
 2. 运行：
 
 ```bash
@@ -328,17 +333,27 @@ pnpm build:lexicon
 
 `assets/lexicon/` 下的 JSON 和 `index.json` 都是生成产物，文件名带内容哈希；不要手动编辑，也不要手动改 `public/`。
 
+=== 从 CSV 迁移
+
+旧 CSV 仍能读取。需要转换时运行：
+
+```bash
+pnpm convert:lexicon
+```
+
+默认把 `content/lexicon/ong.csv` 转成 `content/lexicon/ong.lex`。转换器会把备注里的 `<ong>...</ong>` 转成 `#ong[...]`，不会直接修改 CSV；目标文件已存在时需加 `-- --force` 才覆盖。
+
 === 新增或删除语言
 
-新增：复制一个 CSV 到 `content/lexicon/`，修改开头的 `# name`、`# native`、`# format` 等元数据，运行 `pnpm build:lexicon`。页面语言标签会自动出现。
+新增：复制一个 `.lex` 文件到 `content/lexicon/`，修改开头的 `# name`、`# native`、`# format` 等元数据，运行 `pnpm build:lexicon`。页面语言标签会自动出现。
 
-删除：直接删除对应 CSV，再运行 `pnpm build:lexicon`。`assets/lexicon/` 会被整体重建，不需要手动清理索引。
+删除：直接删除对应 `.lex` 文件，再运行 `pnpm build:lexicon`。`assets/lexicon/` 会被整体重建。
 
-=== 词条格式
+=== 词条样式
 
-`format` 使用正文行内字体组件的短名，会同时作用于词条和语言自称：
+`format`、`#column`、`@行` 和 `#样式[...]` 都使用正文行内字体组件的短名：
 
-| format | 对应正文 |
+| 名称 | 对应正文 |
 | --- | --- |
 | `ong` | `#ong` |
 | `old-cjk` | `#old-cjk` |
@@ -348,7 +363,7 @@ pnpm build:lexicon
 | `lxgw` | `#lxgw` |
 | `kai` | `#kai` |
 
-也可以直接写 `ff-*` 类名。短名到 CSS 类的映射在 `scripts/build-lexicon.mjs` 的 `FORMAT_CLASSES`。
+也可以直接写 `ff-*` 类名。短名到 CSS 类的映射在 `scripts/lex-format.mjs` 的 `STYLE_CLASSES`。
 
 === 读取与样式
 
@@ -356,12 +371,13 @@ pnpm build:lexicon
 - 详情弹窗读音：同文件的 `.lex-dialog-phon`。
 - 当前两处都没有斜体；改字体、字号、颜色直接改这两个选择器。
 - 搜索字段是通用的五列；特殊字符折叠规则在 `assets/scripts/lexicon.ts` 的 `SPECIAL_FOLDS`。
+- 字体子集会从 `.lex` 生成的数据中收集行/列/局部样式对应的字体。
 
 === 注意
 
-- 只改词条或加同结构语言：只改 CSV。
-- 新增超过现有五列的新字段（如例句、词源分类）：需要同时改 `build-lexicon.mjs` 和 `lexicon.ts`。
-- `phonetic` 目前只收特殊读音；要让所有词都显示 IPA，需要在 CSV 里补齐该列，程序不会按拼写自动生成。
+- 只改词条或加同结构语言：只改 `.lex`。
+- 新增超过现有五列的新字段（如例句、词源分类）：需要同时改 `lex-format.mjs`、`build-lexicon.mjs` 和 `lexicon.ts`。
+- `phonetic` 目前只收特殊读音；要让所有词都显示 IPA，需要在 `.lex` 里补齐该列。
 
 == 十二、HTML/PDF 双目标
 

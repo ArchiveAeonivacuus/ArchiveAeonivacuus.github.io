@@ -19,6 +19,10 @@
     "w": 170,
     "m": 1
   },
+  "/lexicon/": {
+    "w": 130,
+    "m": 1
+  },
   "/posts/assassinate-shadow/": {
     "w": 812,
     "m": 3
@@ -32,7 +36,7 @@
     "m": 16
   },
   "/posts/echo-of-hikasu/": {
-    "w": 7343,
+    "w": 7348,
     "m": 24
   },
   "/posts/former-resident-of-dragon/": {
@@ -40,7 +44,7 @@
     "m": 5
   },
   "/posts/hyakudaikonshibashiryouzakura/": {
-    "w": 3133,
+    "w": 3134,
     "m": 10
   },
   "/posts/lantern-under-the-ochre-vault_en/": {
@@ -96,7 +100,7 @@
     "m": 8
   },
   "/posts/later-collection-of-tales-from-the-bamboo-cutter_houraisan-classic-classroom/": {
-    "w": 10687,
+    "w": 10685,
     "m": 36
   },
   "/posts/later-collection-of-tales-from-the-bamboo-cutter_perface/": {
@@ -128,27 +132,35 @@
     "m": 16
   },
   "/posts/nociw-kur-tura-karpa_settings/": {
-    "w": 7940,
-    "m": 26
+    "w": 8063,
+    "m": 27
   },
   "/posts/on-the-uncertain-sea/": {
-    "w": 2159,
+    "w": 2180,
     "m": 7
   },
   "/posts/onglisch-grammar-note/": {
-    "w": 1829,
+    "w": 1949,
     "m": 6
   },
   "/posts/port-batie/": {
     "w": 1835,
     "m": 6
   },
+  "/posts/primary-aynu-itak-saru/": {
+    "w": 7707,
+    "m": 26
+  },
+  "/posts/shiyouzakura/": {
+    "w": 1663,
+    "m": 6
+  },
   "/posts/twilight-avenue/": {
-    "w": 1060,
+    "w": 1291,
     "m": 4
   },
   "/posts/writing-syntax-guide/": {
-    "w": 764,
-    "m": 3
+    "w": 2147,
+    "m": 7
   }
 }
