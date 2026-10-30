@@ -42,6 +42,7 @@
 │   ├── about.typ           # 关于
 │   ├── friends.typ         # 友链
 │   ├── 404.typ
+│   ├── lexicon/            # 造语词表（*.csv）
 │   └── posts/              # 文章（*.typ）
 ├── templates/
 │   ├── fuwari.typ          # 入口（barrel，再导出以下模块）
