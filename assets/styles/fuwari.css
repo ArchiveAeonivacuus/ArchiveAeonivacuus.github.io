@@ -91,7 +91,7 @@ body, body * { transition-property: color, background-color, border-color, opaci
 a { color: inherit; text-decoration: none; }
 button, input { color: inherit; font: inherit; }
 button { border: 0; }
-img { max-width: 100%; }
+img { max-width: 100%; height: auto; }
 .icon { display: inline-flex; width: 1em; height: 1em; align-items: center; justify-content: center; flex: none; font-size: 1.35rem; }
 .icon > svg, iconify-icon > svg { display: block; width: 1em; height: 1em; }
 .external-icon { width: 1em; height: 1em; margin-left: .35rem; color: var(--text-30); font-size: .75rem; }
@@ -287,7 +287,7 @@ html.is-home .sidebar-sticky { top: calc(1rem - (var(--banner-home) - var(--bann
 .markdown-content blockquote { position: relative; margin: 1rem 0; padding-left: 1.25rem; color: var(--text-50); }
 .markdown-content blockquote::before { position: absolute; top: 0; bottom: 0; left: 0; width: .25rem; border-radius: 999px; background: var(--btn-regular-bg); content: ""; }
 .markdown-content li::marker { color: var(--primary); }
-.markdown-content img { display: block; margin: 1.5rem auto; border-radius: .75rem; cursor: zoom-in; }
+.markdown-content img { display: block; max-height: 80vh; margin: 1.5rem auto; border-radius: .75rem; object-fit: contain; cursor: zoom-in; }
 .markdown-content div[role="math"], .markdown-content div.tola-block-math { display: flex; justify-content: center; width: 100%; margin: 1em 0; overflow-x: auto; overflow-y: hidden; }
 .markdown-content div[role="math"] > svg, .markdown-content div.tola-block-math > svg { max-width: 100%; height: auto; }
 .markdown-content span[role="math"], .markdown-content span.tola-inline-math { display: inline; }
