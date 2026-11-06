@@ -16,23 +16,23 @@ Any cleric wont to travel oft between Taitchland and the Papacy Romo would surel
 
 #poem(lang: "ong")[
 
-Wann da Hacoromer Nebl kimmt, \ 
+Wann da Hacolomer Nebl kimmt, \ 
 werd aus'm zwielicht a roat's gedimmt.
 
 ]
 
 #poem[
 
-#emph[When fog Hacorui comes drifting down, \ 
+#emph[When fog Hacolui comes drifting down, \ 
 The dusk is dyed a crimson brown.]
 
 ]
 
 And in the Ellin-Badan#footnote[Ellin-Badan: A coastal province in the northwest Roma, almost the cradle of civilization for all Orken.] province of northern Roma, the Ellins who dwell there discovered several hundred years ago that should a blood-red boundary appears in the distant sky during the day, a cold wave would arrive within five days.
 
-What then is this red mist? No need to fear it an ill omen, nor yet a plague of insects sweeping through the fields. Though maps of the region Romo are ever loath to mark it, those reared in these lands cannot ignore the non-human realm to the west---the Duchy Hacorui#footnote[Duchy Hacorui: Ducatus Hacorui; when referred to simply, it is Hacorum as a noun instead of adjective. It is said this word means "that skylight."].
+What then is this red mist? No need to fear it an ill omen, nor yet a plague of insects sweeping through the fields. Though maps of the region Romo are ever loath to mark it, those reared in these lands cannot ignore the non-human realm to the west---the Duchy Hacolui#footnote[Duchy Hacolui: Ducatus Hacolui; when referred to simply, it is Hacolum as a noun instead of adjective. It is said this word means "that skylight."].
 
-Beneath the dark brown sky, beyond the reach of grace Apollinis, lies the land hominum sanguineorum, the Duchy Hacorui. Throughout the duchy, towering giant dragon trees#footnote[Giant dragon tree: #emph[Draecana magno], a plant similar to the dragon tree, but whose height can reach one hundred metres. By releasing a certain substance, it becomes a dark mist high in the air, forming the dark brown sky above the Duchy Hacorui.] stand on every hand. It is these lofty trees that, by means unknown, sustain this dark brown sky. Dwelling in such gloom, homines sanguinei are far more sensitive to light than any other race that walks the surface of the Orken continent. Therefore this dark brown sky, in the eyes hominum sanguineorum, is an ochre vault.
+Beneath the dark brown sky, beyond the reach of grace Apollinis, lies the land hominum sanguineorum, the Duchy Hacolui. Throughout the duchy, towering giant dragon trees#footnote[Giant dragon tree: #emph[Draecana magno], a plant similar to the dragon tree, but whose height can reach one hundred metres. By releasing a certain substance, it becomes a dark mist high in the air, forming the dark brown sky above the Duchy Hacolui.] stand on every hand. It is these lofty trees that, by means unknown, sustain this dark brown sky. Dwelling in such gloom, homines sanguinei are far more sensitive to light than any other race that walks the surface of the Orken continent. Therefore this dark brown sky, in the eyes hominum sanguineorum, is an ochre vault.
 
 The #emph[Bicentennial Pandemic] of six to eight hundred years past in region Romo was perhaps the catastrophe that historians Romo least wished to speak of, yet could not avoid. War raged without end, famine and plague alternated in their ravages, and in some quarters corpses lay strewn across the land. A long two hundred years---enough, were it today, for a respectable gentleman to live three lifetimes over.
 
@@ -50,7 +50,7 @@ The Papacy misread the providence and declared that this was Iahovuni testing th
 
 Yet the plague did not stay; it paid the Aeonivacuum no heed.
 
-In such a hell upon earth, the templa#footnote[Templum: Ancient abandoned holy halls. Said to be ruins of an ancient civilization. The plural form "templa", and adjective form "templi, templorum" in single and plural form.] awoke. When too many had died in a region, the ancient script templorum would slowly begin to glow. The transparent blood cocoon templi began to breed, and a batch of vates sanguinei rose up. Vates sanguinei were much like vatis, yet they no longer tuned; they shrieked across the fields. When the dying heard the shrieks of the vates sanguinei, they would stumble out of their homes, past the care of fearless physicians; those who could walk walked, those who could not crawled, and by the time they reached the templum some were already a bloody ruin, white bone showing at the knees.
+In such a hell upon earth, the templa#footnote[Templum: an ancient abandoned holy hall, said to be a ruin of an ancient civilisation. Its plural is templa. When it qualifies another noun the genitive follows it---templi for one hall, templorum for many.] awoke. When too many had died in a region, the ancient script templorum would slowly begin to glow. The transparent blood cocoon templi began to breed, and a batch of vates sanguinei rose up. Vates sanguinei were much like vatis, yet they no longer tuned; they shrieked across the fields. When the dying heard the shrieks of the vates sanguinei, they would stumble out of their homes, past the care of fearless physicians; those who could walk walked, those who could not crawled, and by the time they reached the templum some were already a bloody ruin, white bone showing at the knees.
 
 Originally no human knew what had come to pass; let us pay respect to those who dared to investigate the matter, together with the physicians of that time. The vates sanguinei led these people toward the blood cocoon, where they were pierced by countless blades. Chant-script, like maggots, crawled all over their skin. They convulsed and twisted within the blood cocoon, trembling in unconsciousness---
 
@@ -66,23 +66,23 @@ So the homines sanguinei were driven from villages, expelled from civils, stripp
 
 The homines sanguinei merely fled, fled their former dwellings, fled everything in their memories.
 
-Later, much later---at the end of the #emph[Bicentennial Pandemic], the Duchess Lucia Tenebrosus, who had been transformed into a homo sanguinis, found a way to create a "vault" using the giant dragon trees, so that homines sanguinei could have a place to live a wholly normal life. These people, who had snatched their lives back from the plague, developed animal husbandry in the Duchy Hacorui established by Duchess Tenebrosus. After solving their food source, they at last set their own society in motion. Homines sanguinei reproduce through a special absorption of paternal blood, with the mother completing gestation. Thus the lineage hominum sanguineorum is almost entirely carried by mothers, and the society hominum sanguineorum became a matrilineal society dominated by female.
+Later, much later---at the end of the #emph[Bicentennial Pandemic], the Duchess Lucia Tenebrosus, who had been transformed into a homo sanguinis, found a way to create a "vault" using the giant dragon trees, so that homines sanguinei could have a place to live a wholly normal life. These people, who had snatched their lives back from the plague, developed animal husbandry in the Duchy Hacolui established by Duchess Tenebrosus. After solving their food source, they at last set their own society in motion. Homines sanguinei reproduce through a special absorption of paternal blood, with the mother completing gestation. Thus the lineage hominum sanguineorum is almost entirely carried by mothers, and the society hominum sanguineorum became a matrilineal society dominated by female.
 
-This is the origin of the Duchy Hacorui.
+This is the origin of the Duchy Hacolui.
 
 #divider()
 
-In the northwest of the Duchy Hacorui, against a backdrop of towering beeches, a great river winds. Most of its course runs flat, but at one bend it scours out a cliff. Should one look from the opposite bank, one may descry a pointed castle atop that lonely, sheer precipice; separated by the harsh lighting beneath the ochre vault, only a bleak outline is visible. Though the river's current is not swift, on windy days one can always hear rustling upon rustling, as the trees of the Schwarzwald entangle one another, whispering to exchange the few pieces of fresh news in this land.
+In the northwest of the Duchy Hacolui, against a backdrop of towering beeches, a great river winds. Most of its course runs flat, but at one bend it scours out a cliff. Should one look from the opposite bank, one may descry a pointed castle atop that lonely, sheer precipice; separated by the harsh lighting beneath the ochre vault, only a bleak outline is visible. Though the river's current is not swift, on windy days one can always hear rustling upon rustling, as the trees of the Schwarzwald entangle one another, whispering to exchange the few pieces of fresh news in this land.
 
-Looking up, the castle seems very large. In truth, by size, Mangusacia Manor is not particularly outstanding within the Duchy Hacorui. This is the edge of the Schwarzwald in the duchy's northwest, beside the River Quies at the foot of the highland mountains. Further east, the River Quies is called the Quiei Venatus. This river is also called the Styx; homines sanguinei believe that when a homo sanguinis dies, its soul must follow the River Quies back to the region Romo.
+Looking up, the castle seems very large. In truth, by size, Mangusacia Manor is not particularly outstanding within the Duchy Hacolui. This is the edge of the Schwarzwald in the duchy's northwest, beside the River Quies at the foot of the highland mountains. Further east, the River Quies is called the Quiei Venatus. This river is also called the Styx; homines sanguinei believe that when a homo sanguinis dies, its soul must follow the River Quies back to the region Romo.
 
 The Mangusacia domain, unlike the nobles hominum sanguineorum of the south, does not possess vast pastures and scattered settlements. The roots of the Schwarzwald's trees seem quite stubborn, affecting the livelihood of the Mangusacia domain. They live scattered around the castle, raising a modest number of livestock, occasionally hunting beasts and monsters in the forest, gathering fruit from the beeches, or dealing with merchant ships passing on the River Quies.
 
-The surname Mangusacia is not among the "since ancient times" surnames of the duchy. Six hundred years ago, Duchess Tenebrosus formed the Sisterhood Hacorui; thereafter the great families of the duchy gradually took shape, among them the renown of the Carnstaen family. A hundred years later, when the Taitch armies pressed upon the eastern border to "suppress heresy," the Carnstaen family of the duchy's northeast, to preserve themselves, split off a portion of their people who came to the far side of the Schwarzwald, upstream on the River Quies, and established the branch family Mangusacia, gazing at the Carnstaen main family from afar. For five hundred years, Mangusacia has ever maintained its status as a branch of Carnstaen, and when the Carnstaen main family holds its annual evening banquet, they still send people to attend, fulfilling their duty as a branch family.
+The surname Mangusacia is not among the "since ancient times" surnames of the duchy. Six hundred years ago, Duchess Tenebrosus formed the Sisterhood Hacolui; thereafter the great families of the duchy gradually took shape, among them the renown of the Carnstaen family. A hundred years later, when the Taitch armies pressed upon the eastern border to "suppress heresy," the Carnstaen family of the duchy's northeast, to preserve themselves, split off a portion of their people who came to the far side of the Schwarzwald, upstream on the River Quies, and established the branch family Mangusacia, gazing at the Carnstaen main family from afar. For five hundred years, Mangusacia has ever maintained its status as a branch of Carnstaen, and when the Carnstaen main family holds its annual evening banquet, they still send people to attend, fulfilling their duty as a branch family.
 
 The duty of the Mangusacia branch requires a bit more explanation.
 
-The pioneer of the Mangusacia family, Chrona Mangusacia (still called Chrona Carnstaen then), received orders from the family head Carmilla Carnstaen to travel north, to the edge of the Schwarzwald on the border Hacorui, and found an abandoned castle. It is said this was once the domain of a certain family; on a full moon, after this family set out east on an expedition, no one ever returned. The few homines sanguinei left behind---the aged family head and a few loyal servants---turned to dust in loneliness.
+The pioneer of the Mangusacia family, Chrona Mangusacia (still called Chrona Carnstaen then), received orders from the family head Carmilla Carnstaen to travel north, to the edge of the Schwarzwald on the border Hacolui, and found an abandoned castle. It is said this was once the domain of a certain family; on a full moon, after this family set out east on an expedition, no one ever returned. The few homines sanguinei left behind---the aged family head and a few loyal servants---turned to dust in loneliness.
 
 Chrona came to this place with the mission given by Carmilla, renovated the castle, and fenced off a garden in the open space near the castle---though it was not truly a garden, only a specific area where flowers and plants were artificially planted. It was this area that was filled with pure white snowdrops#footnote[Snowdrop: #emph[Galanthus nivalis]. Note that Nivalia's name later comes from the snowdrop.]. A plant originally born in high mountains thus bloomed across the dark red plain. On thick stems, every flower drooped, opening toward the ground. The petals, three layers inside and out, looked somewhat sparse from afar, both beautiful and regrettable on the land covered by the ochre vault. It is said this flower was Carmilla's favourite; now that she is gone, there is naturally no way to verify it.
 
@@ -206,7 +206,7 @@ Since seeking is itself the meaning.
 
 She wished to leave---not to flee, nor to give up, neither to depart. She simply wished to go out, to look about the duchy's border. To see things not yet recorded in her notebook, to see the "seeking" Carmilla spoke of, to see what it was like before the ancestor Tenebrosus set down the ochre vault. She placed a stone at the stone circle where the River Quiei Venatus reached the southeastern boundary of the domain, without carving a single letter.
 
-So, just as every head of the family suddenly attains insight, she applied to the Sisterhood Hacorui for periodic leave. The Carnstaen main family stood as guarantor. The family head said, let her go; their branch has ever been thus.
+So, just as every head of the family suddenly attains insight, she applied to the Sisterhood Hacolui for periodic leave. The Carnstaen main family stood as guarantor. The family head said, let her go; their branch has ever been thus.
 
 From then on, every year there was a season when the head of Mangusacia went out again. She stood at the gate of Mangusacia with a lantern, gave final instructions for the year's remaining affairs, turned, and walked into the ochre vault.
 
@@ -218,7 +218,7 @@ When going out, Nivalia would put on a somewhat loose beige trench coat. The coa
 
 Nivalia had a Mangusacia short sword, originally given by Carmilla to Chrona. The blade was serrated, the body silver-plated; Nivalia used it for self-defence. Nivalia also had a one-step#footnote[One step: 1.52 metres.] long, broad-bladed Zweihänder Quies, usually hidden under her trench coat. Since she began training in swordsmanship at twenty, this Zweihänder had often accompanied her on distant journeys.
 
-Nivalia left Hacorum for the third time, following the River Quies through the duchy's interior, heading southeast.
+Nivalia left Hacolum for the third time, following the River Quies through the duchy's interior, heading southeast.
 
 She wanted to see what the place the River Quies flowed back to was really like.
 
@@ -250,7 +250,7 @@ Nivalia obediently approached the campfire under the threat of the blade. The pe
 
 The person tied Nivalia to a tree, roughly pulled off her hood, and sat across the campfire watching her all night, her hand repeatedly touching the short sword she had put back at her waist, then lowering it.
 
-At dawn, she picked up the short sword and walked toward Nivalia. Just as Nivalia was recalling her life---or rather, her \*vita hominis #emph[sanguinei]---the ropes binding her were cut by the short sword.
+At dawn, she picked up the short sword and walked toward Nivalia. Just as Nivalia was recalling her life---or rather, her vita hominis sanguinei---the ropes binding her were cut by the short sword.
 
 “What's your name?”
 
@@ -266,9 +266,9 @@ Nivalia smiled slightly. “Might I ask your name?”
 
 “Get lost.”
 
-Even after the war between Taitchland and Hacorum receded into the long river of history, direct conflict on the border gradually decreased. Even the long-lived homines sanguinei, through inheritance, forgot many grudges along with humans. Gradually, homines sanguinei dissatisfied with the duchy's system wandered into human territory occasionally, and some of those unable to make a living secretly killed people and drank blood to survive. To hunt such homines sanguinei, hunters hominum sanguineorum were born. What Nivalia met that night was probably one such hunter hominum sanguineorum.
+Even after the war between Taitchland and Hacolum receded into the long river of history, direct conflict on the border gradually decreased. Even the long-lived homines sanguinei, through inheritance, forgot many grudges along with humans. Gradually, homines sanguinei dissatisfied with the duchy's system wandered into human territory occasionally, and some of those unable to make a living secretly killed people and drank blood to survive. To hunt such homines sanguinei, hunters hominum sanguineorum were born. What Nivalia met that night was probably one such hunter hominum sanguineorum.
 
-This hunter hominum sanguineorum seemed to have followed Nivalia to Othens. Nivalia did not mind; she was only searching Othens for traces related to Carmilla. Fortunately, Carmilla's whereabouts back then were not entirely without trace. There were actually legends hominum sanguineorum in various places, legends that during the war between Taitchland and Hacorum, a magician hominis sanguinei had dealings with a noblewoman, met her in secret at night, drained the noblewoman's blood, and left the city. After half a month investigating legends hominum sanguineorum in various places, Nivalia set out, preparing to go to the outskirts of Urbs Romo to search.
+This hunter hominum sanguineorum seemed to have followed Nivalia to Othens. Nivalia did not mind; she was only searching Othens for traces related to Carmilla. Fortunately, Carmilla's whereabouts back then were not entirely without trace. There were actually legends hominum sanguineorum in various places, legends that during the war between Taitchland and Hacolum, a magician hominis sanguinei had dealings with a noblewoman, met her in secret at night, drained the noblewoman's blood, and left the city. After half a month investigating legends hominum sanguineorum in various places, Nivalia set out, preparing to go to the outskirts of Urbs Romo to search.
 
 On the way she still encountered the hunter hominum sanguineorum from half a month before. Not travelling together, but Nivalia could feel someone following far behind.
 
@@ -398,7 +398,7 @@ Linselotte also fell silent.
 
 "Where are you going next?"
 
-"It is like this." Nivalia smiled, folding her hands at her side. "I am going back to the Duchy Hacorui."
+"It is like this." Nivalia smiled, folding her hands at her side. "I am going back to the Duchy Hacolui."
 
 "You… not going to look anymore?" Linselotte's voice even sounded a little lost.
 
@@ -418,7 +418,7 @@ Linselotte's expression relaxed a little: "'Next time'?"
 
 The two parted outside the city gate of Othens.
 
-The walls of Othens waxed dim in the gloaming, so that none might tell whether they were of old blue-grey or yellow-brown. In the crenellations the westward sun yet strove to linger. Already one might feel the wind blowing from the northwest, bearing the breath of autumn from Ellin-Badan. The Danop River flowed down, bearing the fragrant soil of the upper reaches. Nivalia felt upon the wind a burning smell, haply from distant wheat-fields burning stubble; no such smell had the Duchy Hacorui. She reached out her hand, letting the wind pass through her fingers, thinking that haply it was this wind that pushed the great blood-red clouds high in the sky, rolling toward Othens.
+The walls of Othens waxed dim in the gloaming, so that none might tell whether they were of old blue-grey or yellow-brown. In the crenellations the westward sun yet strove to linger. Already one might feel the wind blowing from the northwest, bearing the breath of autumn from Ellin-Badan. The Danop River flowed down, bearing the fragrant soil of the upper reaches. Nivalia felt upon the wind a burning smell, haply from distant wheat-fields burning stubble; no such smell had the Duchy Hacolui. She reached out her hand, letting the wind pass through her fingers, thinking that haply it was this wind that pushed the great blood-red clouds high in the sky, rolling toward Othens.
 
 The two walked upon the cart tracks without the city gate. Given that Linselotte was not for the same road, yet she would still insist on seeing Nivalia off a stretch. Nivalia's hood was blown off by the wind; she straightway put it back on with her hand, covering her chestnut-black long hair. Then the silent Linselotte spoke:
 

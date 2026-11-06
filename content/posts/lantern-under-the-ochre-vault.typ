@@ -16,7 +16,7 @@
 
 #poem(lang: "ong")[
 
-Wann da Hacoromer Nebl kimmt, \ 
+Wann da Hacolomer Nebl kimmt, \ 
 werd aus'm zwielicht a roat's gedimmt.
 
 ]
