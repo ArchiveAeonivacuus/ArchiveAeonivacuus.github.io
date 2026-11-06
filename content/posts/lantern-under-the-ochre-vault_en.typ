@@ -28,7 +28,7 @@ The dusk is dyed a crimson brown.]
 
 ]
 
-And in the Ellin-Badan#footnote[Ellin-Badan: A coastal province in the northwest Roma, almost the cradle of civilization for all Orken.] province of northern Roma, the Ellins who dwell there discovered several hundred years ago that should a blood-red boundary appears in the distant sky during the day, a cold wave would arrive within five days.
+And in the Ellin-Badan#footnote[Ellin-Badan: A coastal province in the northwest Roma, almost the cradle of civilisation for all Orken.] province of northern Roma, the Ellins who dwell there discovered several hundred years ago that should a blood-red boundary appears in the distant sky during the day, a cold wave would arrive within five days.
 
 What then is this red mist? No need to fear it an ill omen, nor yet a plague of insects sweeping through the fields. Though maps of the region Romo are ever loath to mark it, those reared in these lands cannot ignore the non-human realm to the west---the Duchy Hacolui#footnote[Duchy Hacolui: Ducatus Hacolui; when referred to simply, it is Hacolum as a noun instead of adjective. It is said this word means "that skylight."].
 
@@ -278,7 +278,7 @@ At first, it was one person following. Probably that hunter hominum sanguineorum
 
 But this time, from some unknown moment, Nivalia felt there might be others following as well. And unlike that hunter, she could sense killing intent from these people.
 
-Hunters hominum sanguineorum are all hunters specializing in exterminating homines sanguinei; their weapons and combat skills are specialized against homines sanguinei, and because they are not allowed to harm humans nor to train to do so, when fighting humans they usually only have a slight advantage over ordinary people. Nivalia could not help but worry a little.
+Hunters hominum sanguineorum are all hunters specialising in exterminating homines sanguinei; their weapons and combat skills are specialised against homines sanguinei, and because they are not allowed to harm humans nor to train to do so, when fighting humans they usually only have a slight advantage over ordinary people. Nivalia could not help but worry a little.
 
 The hunter lit a campfire and began to dine. She could sense Nivalia sitting on a branch above her.
 
