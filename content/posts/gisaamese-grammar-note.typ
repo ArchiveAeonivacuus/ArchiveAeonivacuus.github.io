@@ -3,7 +3,7 @@
 #show: post.with(
   title: "姬圣语语法纲要",
   date: "2026-11-09",
-  update: "2026-10-10",
+  update: "2026-11-09",
   updating: true,
   update_note: "创立本语法纲要",
   summary: "迄今为止已经发现的姬圣语语法记录。",
