@@ -39,7 +39,7 @@
 
 #poem[
 
-#old-ja[#ruby[潮騒][しほさゐ]や　#ruby[滾][たぎ]る#ruby[夕凪][ゆふなぎ]　#ruby[亡者][まうじや]#ruby[船][ぶね]#linebreak() ぬばたまの　#ruby[櫂][かひ]#ruby[濡][ぬ]れ#ruby[暗][くら]き　#ruby[怨霊][をんりやう]#ruby[哀号][あいがう]#linebreak() #ruby[原][はら]#ruby[震][ふる]ふ　#ruby[滔々濁浪][たうたうだくらう]　#ruby[鏖鬼][あうき]の#ruby[怒][いか]り#linebreak() #ruby[八百万][やほよろづ]　#ruby[御柱][みはしら]#ruby[落][お]とし　#ruby[鎮][しづ]めたまふ#linebreak()] #linebreak() #ruby[常世海][とこようみ]　#ruby[神官][しんくわん]#ruby[退治][たいじ]　#ruby[澄][す]み#ruby[渡][わた]る
+#old-ja[#ruby[潮騒][しほさゐ]や　#ruby[滾][たぎ]る#ruby[夕凪][ゆふなぎ]　#ruby[亡者][まうじや]#ruby[船][ぶね]#linebreak() ぬばたまの　#ruby[櫂][かひ]#ruby[濡][ぬ]れ#ruby[暗][くら]き　#ruby[怨霊][をんりやう]#ruby[哀号][あいがう]#linebreak() #ruby[原][はら]#ruby[震][ふる]ふ　#ruby[滔々濁浪][たうたうだくらう]　#ruby[鏖鬼][あうき]の#ruby[怒][いか]り#linebreak() #ruby[八百万][やほよろづ]　#ruby[御柱][みはしら]#ruby[落][お]とし　#ruby[鎮][しづ]めたまふ#linebreak() #ruby[常世海][とこようみ]　#ruby[神官][しんくわん]#ruby[退治][たいじ]　#ruby[澄][す]み#ruby[渡][わた]る]
 
 
 暗潮忽起　波震晚意　怒涛翻天亡魂船#linebreak() 栉棹尽染　墨色夜中　怨灵哀泣号声癫#linebreak() 平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄#linebreak() 唤降天威　御柱忽落　八百万神镇坤乾#linebreak() 海中幽冥　神官退治　尽扫顽瘴澄海田
@@ -104,7 +104,7 @@
 
 #poem[
 
-#old-ja[#ruby[潮騒][しほさゐ]や　#ruby[滾][たぎ]る#ruby[夕凪][ゆふなぎ]　#ruby[亡者][まうじや]#ruby[船][ぶね]#linebreak() ぬばたまの　#ruby[櫂][かひ]#ruby[濡][ぬ]れ#ruby[暗][くら]き　#ruby[怨霊][をんりやう]#ruby[哀号][あいがう]#linebreak() #ruby[原][はら]#ruby[震][ふる]ふ　#ruby[滔々濁浪][たうたうだくらう]　#ruby[鏖鬼][あうき]の#ruby[怒][いか]り#linebreak() #ruby[八百万][やほよろづ]　#ruby[御柱][みはしら]#ruby[落][お]とし　#ruby[鎮][しづ]めたまふ#linebreak()] #linebreak() #ruby[常世海][とこようみ]　#ruby[神官][しんくわん]#ruby[退治][たいじ]　#ruby[澄][す]み#ruby[渡][わた]る
+#old-ja[#ruby[潮騒][しほさゐ]や　#ruby[滾][たぎ]る#ruby[夕凪][ゆふなぎ]　#ruby[亡者][まうじや]#ruby[船][ぶね]#linebreak() ぬばたまの　#ruby[櫂][かひ]#ruby[濡][ぬ]れ#ruby[暗][くら]き　#ruby[怨霊][をんりやう]#ruby[哀号][あいがう]#linebreak() #ruby[原][はら]#ruby[震][ふる]ふ　#ruby[滔々濁浪][たうたうだくらう]　#ruby[鏖鬼][あうき]の#ruby[怒][いか]り#linebreak() #ruby[八百万][やほよろづ]　#ruby[御柱][みはしら]#ruby[落][お]とし　#ruby[鎮][しづ]めたまふ#linebreak() #ruby[常世海][とこようみ]　#ruby[神官][しんくわん]#ruby[退治][たいじ]　#ruby[澄][す]み#ruby[渡][わた]る]
 
 
 暗潮忽起　波震晚意　怒涛翻天亡魂船#linebreak() 栉棹尽染　墨色夜中　怨灵哀泣号声癫#linebreak() 平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄#linebreak() 唤降天威　御柱忽落　八百万神镇坤乾#linebreak() 海中幽冥　神官退治　尽扫顽瘴澄海田
@@ -233,7 +233,7 @@
 
 #poem[
 
-#old-ja[#ruby[潮騒][しほさゐ]や　#ruby[滾][たぎ]る#ruby[夕凪][ゆふなぎ]　#ruby[亡者][まうじや]#ruby[船][ぶね]#linebreak() ぬばたまの　#ruby[櫂][かひ]#ruby[濡][ぬ]れ#ruby[暗][くら]き　#ruby[怨霊][をんりやう]#ruby[哀号][あいがう]#linebreak() #ruby[原][はら]#ruby[震][ふる]ふ　#ruby[滔々濁浪][たうたうだくらう]　#ruby[鏖鬼][あうき]の#ruby[怒][いか]り#linebreak() #ruby[八百万][やほよろづ]　#ruby[御柱][みはしら]#ruby[落][お]とし　#ruby[鎮][しづ]めたまふ#linebreak()] #linebreak() #ruby[常世海][とこようみ]　#ruby[神官][しんくわん]#ruby[退治][たいじ]　#ruby[澄][す]み#ruby[渡][わた]る
+#old-ja[#ruby[潮騒][しほさゐ]や　#ruby[滾][たぎ]る#ruby[夕凪][ゆふなぎ]　#ruby[亡者][まうじや]#ruby[船][ぶね]#linebreak() ぬばたまの　#ruby[櫂][かひ]#ruby[濡][ぬ]れ#ruby[暗][くら]き　#ruby[怨霊][をんりやう]#ruby[哀号][あいがう]#linebreak() #ruby[原][はら]#ruby[震][ふる]ふ　#ruby[滔々濁浪][たうたうだくらう]　#ruby[鏖鬼][あうき]の#ruby[怒][いか]り#linebreak() #ruby[八百万][やほよろづ]　#ruby[御柱][みはしら]#ruby[落][お]とし　#ruby[鎮][しづ]めたまふ#linebreak() #ruby[常世海][とこようみ]　#ruby[神官][しんくわん]#ruby[退治][たいじ]　#ruby[澄][す]み#ruby[渡][わた]る]
 
 
 暗潮忽起　波震晚意　怒涛翻天亡魂船#linebreak() 栉棹尽染　墨色夜中　怨灵哀泣号声癫#linebreak() 平野摇撼　滔滔浊浪　鏖鬼尖啸撕阴玄#linebreak() 唤降天威　御柱忽落　八百万神镇坤乾#linebreak() 海中幽冥　神官退治　尽扫顽瘴澄海田
